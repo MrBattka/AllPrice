@@ -3,7 +3,7 @@ import { read, utils } from "xlsx";
 import "./App.css";
 import IndexHi from "./component/Hi/IndexHi";
 import icon from "./source/icon/icon.png";
-import Apple from "./component/Unimtrn/Apple";
+import Apple from "./component/Unimtrn/indexUNIMTRN";
 
 const App = () => {
   const [dataMain, setDataMain] = useState([]);
