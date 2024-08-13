@@ -1,7 +1,7 @@
 {
   "name": "all-price",
   "version": "0.1.0",
-  "homepage": "https://mrbattka.github.io/all-price",
+  "homepage": "https://mrbattka.github.io/AllPrice",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
