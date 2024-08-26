@@ -44,7 +44,7 @@ const App = () => {
         if (sheets.length) {
           const rowsUNIMTRN = utils.sheet_to_json(wb.Sheets[sheets[0]]);
           setDataUNIMTRN(rowsUNIMTRN);
-          const rowHi = utils.sheet_to_json(wb.Sheets[sheets[2]]);
+          const rowHi = utils.sheet_to_json(wb.Sheets[sheets[1]]);
           setDataHi(rowHi);
         }
       };
