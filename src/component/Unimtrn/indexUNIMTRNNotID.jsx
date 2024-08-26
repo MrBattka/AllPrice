@@ -10,19 +10,19 @@ import { returnGameConsole } from "./GameConsole/gameConsole";
 import { returnOtherProduct } from "./OtherProduct/otherProduct";
 import { returnSamsung } from "./Samsung/samsung";
 import style from "./styles.module.css";
-import { fixNameUnimtrn } from "./helpers/helpers.js";
+import { fixNameUnimtrn } from "./helpers/helpers";
 
-const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
+const IndexUnimtrnNotID = ({ el, dataUNIMTRN }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
   el.map((unimtrn) => {
-    console.log(unimtrn.Товар);
     if (
-      unimtrn.Товар &&
-      returnIDApple(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !== 'No match' &&
-      isOpen &&
       baseFix(unimtrn) &&
+      returnIDApple(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) ===
+        "No match" &&
+      unimtrn.Товар &&
+      isOpen &&
       (returnApple(unimtrn) ||
         returnDyson(unimtrn) ||
         returnSamsung(unimtrn) ||
@@ -44,7 +44,7 @@ const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Метреон ▲" : "Метреон ▼"}
+            {isOpen ? "Метреон Not ID ▲" : "Метреон Not ID ▼"}
           </span>
         )}
       </div>
@@ -57,4 +57,4 @@ const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
   );
 };
 
-export default IndexUnimtrn;
+export default IndexUnimtrnNotID;

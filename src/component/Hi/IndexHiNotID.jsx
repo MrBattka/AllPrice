@@ -16,8 +16,8 @@ import { returnSamsung } from "./Samsung/samsung";
 import style from "./styles.module.css";
 import { returnXiaomi } from "./Xiaomi/xiaomi";
 
-const IndexHi = ({ el, hi, main }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const IndexHiNotID = ({ el, hi, main }) => {
+  const [isOpenNotID, setIsOpenNotID] = useState(false)
   const resultArr = [];
 
   hi.map((hi) => {
@@ -25,7 +25,7 @@ const IndexHi = ({ el, hi, main }) => {
       hi.name &&
       typeof hi.name === "string" &&
       baseFixHi(hi) &&
-      isOpen &&
+      isOpenNotID &&
       (returnApple(hi.name) ||
         returnSamsung(hi.name) ||
         returnXiaomi(hi.name) ||
@@ -34,7 +34,7 @@ const IndexHi = ({ el, hi, main }) => {
         returnDyson(hi.name))
     ) {
       return (
-        returnIDApple(fixName(hi.name)) !== 'No match' &&
+        returnIDApple(fixName(hi.name)) === 'No match' &&
         returnExtraPrice(hi.name) &&
         returnStockPrice(hi.name) &&
         resultArr.push({
@@ -52,13 +52,12 @@ const IndexHi = ({ el, hi, main }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Hi (Сема) ▲" : "Hi (Сема) ▼"}
+          <span className={style.title} onClick={() => setIsOpenNotID(!isOpenNotID)}>
+            {isOpenNotID ? "Hi (Сема) Not ID ▲" : "Hi (Сема) Not ID ▼"}
           </span>
         )}
       </div>
-
-      {isOpen && (
+      {isOpenNotID && (
         <div className={style.row}>
           <BasicTable resultArr={resultArr} />
         </div>
@@ -67,4 +66,4 @@ const IndexHi = ({ el, hi, main }) => {
   );
 };
 
-export default IndexHi;
+export default IndexHiNotID;

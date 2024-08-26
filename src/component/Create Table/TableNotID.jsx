@@ -22,7 +22,7 @@ const COLUMNS = [
   {
     Header: "Provider",
     accessor: "provider",
-  }
+  },
 ];
 
 const copyTable = () => {
@@ -53,7 +53,7 @@ const copyTable = () => {
   console.log("Element Copied! Paste it in a file");
 };
 
-const BasicTable = ({ resultArr }) => {
+const BasicTableNotID = ({ resultArr }) => {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => resultArr, []);
 
@@ -90,11 +90,18 @@ const BasicTable = ({ resultArr }) => {
             prepareRow(row);
             return (
               <tr {...row.getRowProps()}>
-                {row.cells.map((cell) => {
-                  return (
-                    <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
-                  );
-                })}
+                {row.original.id === "No match" &&
+                  row.cells.map((cell) => {
+                    return (
+                      <>
+                        {
+                          <td {...cell.getCellProps()}>
+                            {cell.render("Cell")}
+                          </td>
+                        }
+                      </>
+                    );
+                  })}
               </tr>
             );
           })}
@@ -104,4 +111,4 @@ const BasicTable = ({ resultArr }) => {
   );
 };
 
-export default BasicTable;
+export default BasicTableNotID;

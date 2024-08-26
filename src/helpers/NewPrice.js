@@ -265,7 +265,7 @@ export const newPriceHi = (HiName, HiPrice) => {
         UNIMETRNName.Товар.indexOf("HomePod") != -1 ||
         UNIMETRNName.Товар.indexOf("Redmi Buds") != -1
       ) {
-        return Number(UNIMETRNName.Стоимость) + 400;
+        return UNIMETRNName.Стоимость ? Number(UNIMETRNName.Стоимость) + 400 : Number(UNIMETRNName.Cтоимость) + 400
       } else if (
        UNIMETRNName.Товар.indexOf("Watch SE") != -1 ||
        UNIMETRNName.Товар.indexOf("SE (2023) Gen") != -1 ||
@@ -307,7 +307,7 @@ export const newPriceHi = (HiName, HiPrice) => {
        UNIMETRNName.Товар.indexOf("Camon ") != -1 ||
        UNIMETRNName.Товар.indexOf("Spark ") != -1
       ) {
-        return Number(UNIMETRNName.Стоимость) + 500;
+        return UNIMETRNName.Стоимость ? Number(UNIMETRNName.Стоимость) + 500 : Number(UNIMETRNName.Cтоимость) + 500
       } else if (
         UNIMETRNName.Товар.indexOf("iPad 9") != -1 ||
         UNIMETRNName.Товар.indexOf("iPad 10") != -1 ||
@@ -333,6 +333,7 @@ export const newPriceHi = (HiName, HiPrice) => {
         UNIMETRNName.Товар.indexOf("Paddle Brush") != -1 ||
         UNIMETRNName.Товар.indexOf("Supersonic Hair") != -1 ||
         UNIMETRNName.Товар.indexOf("Air Purifier") != -1 ||
+        UNIMETRNName.Товар.indexOf("Cleaner Micro") != -1 ||
         UNIMETRNName.Товар.indexOf("Nintendo") != -1 ||
         UNIMETRNName.Товар.indexOf("Oculus") != -1 ||
         UNIMETRNName.Товар.indexOf("Playstation") != -1 ||
@@ -361,7 +362,7 @@ export const newPriceHi = (HiName, HiPrice) => {
         UNIMETRNName.Товар.indexOf("Xiaomi Pad") != -1 ||
         UNIMETRNName.Товар.indexOf("Watch") != -1
       ) {
-        return Number(UNIMETRNName.Стоимость) + 600;
+        return UNIMETRNName.Стоимость ? Number(UNIMETRNName.Стоимость) + 600 : Number(UNIMETRNName.Cтоимость) + 600
       } else if (
         UNIMETRNName.Товар.indexOf("SE (2022) Gen") != -1 ||
         UNIMETRNName.Товар.indexOf("SE2 4") != -1 ||
@@ -437,7 +438,7 @@ export const newPriceHi = (HiName, HiPrice) => {
         UNIMETRNName.Товар.indexOf("Xiaomi 13T ") != -1 ||
         UNIMETRNName.Товар.indexOf("Xiaomi 14 ") != -1 
        ) {
-        return Number(UNIMETRNName.Стоимость) + 700;
+        return UNIMETRNName.Стоимость ? Number(UNIMETRNName.Стоимость) + 700 : Number(UNIMETRNName.Cтоимость) + 700
       } else if (
         UNIMETRNName.Товар.indexOf("15 Plus 128") != -1 ||
         UNIMETRNName.Товар.indexOf("15 Plus 256") != -1 ||
@@ -462,7 +463,7 @@ export const newPriceHi = (HiName, HiPrice) => {
         UNIMETRNName.Товар.indexOf("PRO 11") != -1 ||
         UNIMETRNName.Товар.indexOf("AIR 5") != -1
       ) {
-        return Number(UNIMETRNName.Стоимость) + 800;
+        return UNIMETRNName.Стоимость ? Number(UNIMETRNName.Стоимость) + 800 : Number(UNIMETRNName.Cтоимость) + 800
       } else if (
         UNIMETRNName.Товар.indexOf("Macbook") != -1 ||
         UNIMETRNName.Товар.indexOf("Book ") != -1 ||
@@ -475,7 +476,7 @@ export const newPriceHi = (HiName, HiPrice) => {
         UNIMETRNName.Товар.indexOf("MGN") != -1 ||
         UNIMETRNName.Товар.indexOf("Vision Pro") != -1
       ) {
-        return Number(UNIMETRNName.Стоимость) + 1200;
+        return UNIMETRNName.Стоимость ? Number(UNIMETRNName.Стоимость) + 1200 : Number(UNIMETRNName.Cтоимость) + 1200
       } else {
         return `${UNIMETRNName.Стоимость} 🟥 `;
       }

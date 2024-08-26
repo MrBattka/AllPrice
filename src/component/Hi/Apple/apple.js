@@ -45,6 +45,8 @@ export const returnApple = (name) => {
     name.indexOf("iPad Pro") != -1 ||
     name.indexOf("PRO 12.9") != -1 ||
     name.indexOf("PRO 11") != -1 ||
+    name.indexOf("AIR 11") != -1 ||
+    name.indexOf("AIR 13") != -1 ||
     name.indexOf("AIR 5") != -1 ||
     name.indexOf("AW Series 9") != -1 ||
     name.indexOf("AW 9") != -1 ||

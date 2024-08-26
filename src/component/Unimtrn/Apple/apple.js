@@ -47,9 +47,6 @@ export const returnApple = (el) => {
     el.Товар.indexOf("AW Series 9") != -1 ||
     el.Товар.indexOf("AW 9") != -1 ||
     el.Товар.indexOf("AW  9") != -1 ||
-    el.Товар.indexOf("AW Series 8") != -1 ||
-    el.Товар.indexOf("AW 8") != -1 ||
-    el.Товар.indexOf("AW  8") != -1 ||
     el.Товар.indexOf("Mac") != -1 ||
     el.Товар.indexOf("15 Plus 128") != -1 ||
     el.Товар.indexOf("15 Plus 256") != -1 ||
@@ -75,7 +72,6 @@ export const returnApple = (el) => {
     el.Товар.indexOf("15 M") != -1 ||
     el.Товар.indexOf("MGN") != -1 ||
     el.Товар.indexOf("Vision Pro") != -1 ||
-    el.Товар.indexOf("Watch S8") != -1 ||
     el.Товар.indexOf("Watch S9") != -1 ||
     el.Товар.indexOf("IPad 9") != -1 ||
     el.Товар.indexOf("Magic Keyboard") != -1 ||

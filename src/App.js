@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { read, utils } from "xlsx";
 import "./App.css";
 import IndexHi from "./component/Hi/IndexHi";
+import IndexHiNotID from "./component/Hi/IndexHiNotID";
+import IndexUnimtrn from "./component/Unimtrn/indexUNIMTRN";
+import IndexUnimtrnNotID from "./component/Unimtrn/indexUNIMTRNNotID";
 import icon from "./source/icon/icon.png";
-import Apple from "./component/Unimtrn/indexUNIMTRN";
 
 const App = () => {
   const [dataMain, setDataMain] = useState([]);
@@ -20,11 +22,7 @@ const App = () => {
 
   dataHi.map((hiEl) => {
     hiEl.Hi &&
-      // h.Hi !== "    " &&
-      // h.Hi !== "   " &&
-      // h.Hi !== "  " &&
       typeof hiEl.Hi === "string" &&
-      // h.Hi.length &&
       hi.push({ name: hiEl.Hi });
   });
   console.log(main);
@@ -86,6 +84,7 @@ const App = () => {
       </div>
       <div className="wrapper_cat">
         <IndexHi el={dataHi} hi={hi} main={main} />
+        <IndexHiNotID el={dataHi} hi={hi} main={main} />
         {/* Met
         <Dyson el={dataUNIMTRN} />
         <GarminGoProDji el={dataUNIMTRN} />
@@ -96,7 +95,8 @@ const App = () => {
         <Samsung el={dataUNIMTRN} />
         <OtherProduct el={dataUNIMTRN} /> 
         <Xiaomi el={dataUNIMTRN} />*/}
-        <Apple el={dataUNIMTRN} />
+        <IndexUnimtrn el={dataUNIMTRN} />
+        <IndexUnimtrnNotID el={dataUNIMTRN} />
         
       </div>
     </div>
