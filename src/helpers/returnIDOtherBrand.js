@@ -128,9 +128,25 @@ export const returnIDOtherBrand = (name) => {
   ) {
     return 27087;
   } else if (name.indexOf("hd12 professional salon edition silver") != -1) {
-    return 27087;
+    return 27096;
   } else if (name.indexOf("purifier humidify+cool formaldehyde ph04") != -1) {
-    return 27087;
+    return 27107;
+  } else if (name.indexOf("gen 5 detect") != -1) {
+    return 28207;
+  } else if (name.indexOf("hd15 ceramic pop") != -1) {
+    return 34741;
+  } else if (name.indexOf("hs05 airwrap long barrel ceramic pop") != -1) {
+    return 34764;
+  } else if (name.indexOf("hs05 airwrap long barrel nickel/copper") != -1) {
+    return 27088;
+  } else if (
+    name.indexOf("hs05 airwrap long barrel prussian blue/topaz orange") != -1
+  ) {
+    return 34763;
+  } else if (name.indexOf("v12 detect slim") != -1) {
+    return 35670;
+  } else if (name.indexOf("v15s detect submarine") != -1) {
+    return 35670;
 
     // Go Pro
   } else if (name.indexOf("hero 11") != -1) {
@@ -296,6 +312,11 @@ export const returnIDOtherBrand = (name) => {
   } else if (name.indexOf("nord ce2 lite 6/128 black") != -1) {
     return 22812;
   } else if (name.indexOf("nord ce2 lite 6/128 blue") != -1) {
+    return 22813;
+  } else if (
+    name.indexOf("nord 3 16/256 tempest gray") != -1 ||
+    name.indexOf("nord 3 16/256 gray") != -1
+  ) {
     return 22813;
   } else if (name.indexOf("ace 12/256 black") != -1) {
     return 22796;
@@ -737,6 +758,8 @@ export const returnIDOtherBrand = (name) => {
     return 36310;
   } else if (name.indexOf("xperia 10 vi 8/128 white") != -1) {
     return 36315;
+  } else if (name.indexOf("xperia 5 v 8/256 blue") != -1) {
+    return 28470;
 
     // ZTE
   } else if (name.indexOf("red magic 8 pro 12/256 transparent") != -1) {

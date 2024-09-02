@@ -268,6 +268,8 @@ export const returnIDApple = (name) => {
     return 28298;
 
     // pencil
+  } else if (name.indexOf("pencil type-c") != -1) {
+    return 36571;
   } else if (name.indexOf("pencil 1") != -1) {
     return 2072;
   } else if (name.indexOf("pencil 2") != -1) {
@@ -278,19 +280,23 @@ export const returnIDApple = (name) => {
     // ipad 9
   } else if (name.indexOf("ipad 9 64 silver wi-fi") != -1) {
     return 20659;
-  } else if (name.indexOf("ipad 9 64 gray wi-fi") != -1) {
+  } else if (name.indexOf("ipad 9 64 gray wi-fi") != -1 ||
+  name.indexOf("ipad 9 64 grey wi-fi") != -1) {
     return 20658;
   } else if (name.indexOf("ipad 9 64 silver lte") != -1) {
     return 20664;
-  } else if (name.indexOf("ipad 9 64 gray lte") != -1) {
+  } else if (name.indexOf("ipad 9 64 gray lte") != -1 ||
+  name.indexOf("ipad 9 64 grey lte") != -1) {
     return 20662;
   } else if (name.indexOf("ipad 9 256 silver wi-fi") != -1) {
     return 20660;
-  } else if (name.indexOf("ipad 9 256 gray wi-fi") != -1) {
+  } else if (name.indexOf("ipad 9 256 gray wi-fi") != -1 ||
+  name.indexOf("ipad 9 256 grey wi-fi") != -1) {
     return 20661;
   } else if (name.indexOf("ipad 9 256 silver lte") != -1) {
     return 20665;
-  } else if (name.indexOf("ipad 9 256 gray lte") != -1) {
+  } else if (name.indexOf("ipad 9 256 gray lte") != -1 ||
+  name.indexOf("ipad 9 256 grey lte") != -1) {
     return 20666;
   } else if (name.indexOf("ipad 10 256 silver wi-fi") != -1) {
     return 24837;
@@ -474,56 +480,56 @@ export const returnIDApple = (name) => {
     return 36260;
   } else if (
     name.indexOf("pro 13 m4 1tb space blue wi-fi") != -1 ||
-    name.indexOf("pro 13 m4 1tb space black wi-fi") != -1
+    name.indexOf("pro 13 m4 1tb black wi-fi") != -1
   ) {
     return 36261;
   } else if (name.indexOf("pro 13 m4 1tb silver lte") != -1) {
     return 36262;
   } else if (
     name.indexOf("pro 13 m4 1tb space blue lte") != -1 ||
-    name.indexOf("pro 13 m4 1tb space black lte") != -1
+    name.indexOf("pro 13 m4 1tb black lte") != -1
   ) {
     return 36263;
   } else if (name.indexOf("pro 13 m4 2tb silver wi-fi") != -1) {
     return 36268;
   } else if (
     name.indexOf("pro 13 m4 2tb space blue wi-fi") != -1 ||
-    name.indexOf("pro 13 m4 2tb space black wi-fi") != -1
+    name.indexOf("pro 13 m4 2tb black wi-fi") != -1
   ) {
     return 36269;
   } else if (name.indexOf("pro 13 m4 2tb silver lte") != -1) {
     return 36270;
   } else if (
     name.indexOf("pro 13 m4 2tb space blue lte") != -1 ||
-    name.indexOf("pro 13 m4 2tb space black lte") != -1
+    name.indexOf("pro 13 m4 2tb black lte") != -1
   ) {
     return 36271;
   } else if (name.indexOf("pro 13 m4 256 silver wi-fi") != -1) {
     return 36176;
   } else if (
     name.indexOf("pro 13 m4 256 space blue wi-fi") != -1 ||
-    name.indexOf("pro 13 m4 256 space black wi-fi") != -1
+    name.indexOf("pro 13 m4 256 black wi-fi") != -1
   ) {
     return 36250;
   } else if (name.indexOf("pro 13 m4 256 silver lte") != -1) {
     return 36177;
   } else if (
     name.indexOf("pro 13 m4 256 space blue lte") != -1 ||
-    name.indexOf("pro 13 m4 256 space black lte") != -1
+    name.indexOf("pro 13 m4 256 black lte") != -1
   ) {
     return 36251;
   } else if (name.indexOf("pro 13 m4 512 silver wi-fi") != -1) {
     return 36256;
   } else if (
     name.indexOf("pro 13 m4 512 space blue wi-fi") != -1 ||
-    name.indexOf("pro 13 m4 512 space black wi-fi") != -1
+    name.indexOf("pro 13 m4 512 black wi-fi") != -1
   ) {
     return 36257;
   } else if (name.indexOf("pro 13 m4 512 silver lte") != -1) {
     return 36258;
   } else if (
     name.indexOf("pro 13 m4 512 space blue lte") != -1 ||
-    name.indexOf("pro 13 m4 512 space black lte") != -1
+    name.indexOf("pro 13 m4 512 black lte") != -1
   ) {
     return 36259;
   } else if (name.indexOf("mini 6 64 pink wi-fi") != -1) {

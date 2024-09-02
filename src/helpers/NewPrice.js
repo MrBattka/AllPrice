@@ -1,9 +1,7 @@
-export const productHI = []
 
 export const newPriceHi = (HiName, HiPrice) => {
   let removeSpace =
         HiPrice[HiPrice.length - 1] === " " ? HiPrice.slice(0, -1) : HiPrice;
-        productHI.push({productName: HiName, priceTag: removeSpace})
     if (
       HiName.indexOf("JBL") != -1 ||
       HiName.indexOf("Marshall") != -1 ||
@@ -481,3 +479,243 @@ export const newPriceHi = (HiName, HiPrice) => {
         return `${UNIMETRNName.Стоимость} 🟥 `;
       }
     };
+
+    export const newPriceMihonor = (mihonorName, mihonorPrice) => {
+            if (
+              mihonorName.indexOf("jbl") != -1 ||
+              mihonorName.indexOf("marshall") != -1 ||
+              mihonorName.indexOf("nothing ear") != -1 ||
+              mihonorName.indexOf("nothing ear") != -1 ||
+              mihonorName.indexOf("nothing cmf") != -1 ||
+              mihonorName.indexOf("galaxy buds") != -1 ||
+              mihonorName.indexOf("galaxy smart tag") != -1 ||
+              mihonorName.indexOf("airpods pro") != -1 ||
+              mihonorName.indexOf("airpods pro") != -1 ||
+              mihonorName.indexOf("air pods pro") != -1 ||
+              mihonorName.indexOf("air pods 2") != -1 ||
+              mihonorName.indexOf("airpods 1") != -1 ||
+              mihonorName.indexOf("airpods 2") != -1 ||
+              mihonorName.indexOf("airpods 2") != -1 ||
+              mihonorName.indexOf("air pods 3") != -1 ||
+              mihonorName.indexOf("airpods 3") != -1 ||
+              mihonorName.indexOf("airpods 3") != -1 ||
+              mihonorName.indexOf("pencil") != -1 ||
+              mihonorName.indexOf("homepod") != -1 ||
+              mihonorName.indexOf("redmi buds") != -1
+              ) {
+              return Number(mihonorPrice) + 400;
+              } else if (
+              mihonorName.indexOf("watch se") != -1 ||
+              mihonorName.indexOf("se (2023) gen") != -1 ||
+              mihonorName.indexOf("asus") != -1 ||
+              mihonorName.indexOf("zenfone") != -1 ||
+              mihonorName.indexOf("agm") != -1 ||
+              mihonorName.indexOf("blackview") != -1 ||
+              mihonorName.indexOf("insta ") != -1 ||
+              mihonorName.indexOf("huawei") != -1 ||
+              mihonorName.indexOf("huawei") != -1 ||
+              mihonorName.indexOf("fujifilm") != -1 ||
+              mihonorName.indexOf("beats") != -1 ||
+              mihonorName.indexOf("infinix") != -1 ||
+              mihonorName.indexOf("tecno") != -1 ||
+              mihonorName.indexOf("realme") != -1 ||
+              mihonorName.indexOf("polaroid") != -1 ||
+              mihonorName.indexOf("zenfone") != -1 ||
+              mihonorName.indexOf("a03s") != -1 ||
+              mihonorName.indexOf("a05s ") != -1 ||
+              mihonorName.indexOf("a05 ") != -1 ||
+              mihonorName.indexOf("a15 ") != -1 ||
+              mihonorName.indexOf("a25 ") != -1 ||
+              mihonorName.indexOf("a24 ") != -1 ||
+              mihonorName.indexOf("a54 ") != -1 ||
+              mihonorName.indexOf("a35 ") != -1 ||
+              mihonorName.indexOf("a34 ") != -1 ||
+              mihonorName.indexOf("m34 ") != -1 ||
+              mihonorName.indexOf("m54 ") != -1 ||
+              mihonorName.indexOf("a55 ") != -1 ||
+              mihonorName.indexOf("a550 ") != -1 ||
+              mihonorName.indexOf("galaxy watch") != -1 ||
+              mihonorName.indexOf("mi ") != -1 ||
+              mihonorName.indexOf("mi ") != -1 ||
+              mihonorName.indexOf("poco") != -1 ||
+              mihonorName.indexOf("poco") != -1 ||
+              mihonorName.indexOf("m6") != -1 ||
+              mihonorName.indexOf("x6") != -1 ||
+              mihonorName.indexOf("f6") != -1 ||
+              mihonorName.indexOf("camon ") != -1 ||
+              mihonorName.indexOf("spark ") != -1
+              ) {
+              return Number(mihonorPrice) + 500;
+              } else if (
+              mihonorName.indexOf("ipad 9") != -1 ||
+              mihonorName.indexOf("ipad 10") != -1 ||
+              mihonorName.indexOf("ipad 9") != -1 ||
+              mihonorName.indexOf("ipad 9") != -1 ||
+              mihonorName.indexOf("magic keyboard") != -1 ||
+              mihonorName.indexOf("magic mouse") != -1 ||
+              mihonorName.indexOf("airwrap ") != -1 ||
+              mihonorName.indexOf("v1") != -1 ||
+              mihonorName.indexOf("vented") != -1 ||
+              mihonorName.indexOf("hd0") != -1 ||
+              mihonorName.indexOf("hd1") != -1 ||
+              mihonorName.indexOf("gen5 detect") != -1 ||
+              mihonorName.indexOf("gen 5 detect") != -1 ||
+              mihonorName.indexOf("rb0") != -1 ||
+              mihonorName.indexOf("ht0") != -1 ||
+              mihonorName.indexOf("hs0") != -1 ||
+              mihonorName.indexOf("hs-05") != -1 ||
+              mihonorName.indexOf("designed") != -1 ||
+              mihonorName.indexOf("heapdphone") != -1 ||
+              mihonorName.indexOf("ph04") != -1 ||
+              mihonorName.indexOf("wash g1 ") != -1 ||
+              mihonorName.indexOf("paddle brush") != -1 ||
+              mihonorName.indexOf("supersonic hair") != -1 ||
+              mihonorName.indexOf("air purifier") != -1 ||
+              mihonorName.indexOf("nintendo") != -1 ||
+              mihonorName.indexOf("oculus") != -1 ||
+              mihonorName.indexOf("playstation") != -1 ||
+              mihonorName.indexOf("playstation") != -1 ||
+              mihonorName.indexOf("xbox") != -1 ||
+              mihonorName.indexOf("ps5") != -1 ||
+              mihonorName.indexOf("pico") != -1 ||
+              mihonorName.indexOf("steam") != -1 ||
+              mihonorName.indexOf("djl ") != -1 ||
+              mihonorName.indexOf("dji ") != -1 ||
+              mihonorName.indexOf("dji ") != -1 ||
+              mihonorName.indexOf("dji ") != -1 ||
+              mihonorName.indexOf("garmin") != -1 ||
+              mihonorName.indexOf("google") != -1 ||
+              mihonorName.indexOf("pixel") != -1 ||
+              mihonorName.indexOf("xperia") != -1 ||
+              mihonorName.indexOf("rog") != -1 ||
+              mihonorName.indexOf("rog") != -1 ||
+              mihonorName.indexOf("sony wireless") != -1 ||
+              mihonorName.indexOf("wireless wh") != -1 ||
+              mihonorName.indexOf("watch 6") != -1 ||
+              mihonorName.indexOf("tab a") != -1 ||
+              mihonorName.indexOf("redmi note") != -1 ||
+              mihonorName.indexOf("redmi") != -1 ||
+              mihonorName.indexOf("note") != -1 ||
+              mihonorName.indexOf("xiaomi pad") != -1 ||
+              mihonorName.indexOf("watch") != -1
+              ) {
+              return Number(mihonorPrice) + 600;
+              } else if (
+              mihonorName.indexOf("se (2022) gen") != -1 ||
+              mihonorName.indexOf("se2 4") != -1 ||
+              mihonorName.indexOf("se 2") != -1 ||
+              mihonorName.indexOf("se3") != -1 ||
+              mihonorName.indexOf("se 64") != -1 ||
+              mihonorName.indexOf("se 128") != -1 ||
+              mihonorName.indexOf("se 256") != -1 ||
+              mihonorName.indexOf("xr 64") != -1 ||
+              mihonorName.indexOf("11 64") != -1 ||
+              mihonorName.indexOf("11 128") != -1 ||
+              mihonorName.indexOf("12 mini") != -1 ||
+              mihonorName.indexOf("12 64") != -1 ||
+              mihonorName.indexOf("12 128") != -1 ||
+              mihonorName.indexOf("12 256") != -1 ||
+              mihonorName.indexOf("12 pro ") != -1 ||
+              mihonorName.indexOf("12 pro max") != -1 ||
+              mihonorName.indexOf("13 mini") != -1 ||
+              mihonorName.indexOf("13 128") != -1 ||
+              mihonorName.indexOf("13 256") != -1 ||
+              mihonorName.indexOf("13 512") != -1 ||
+              mihonorName.indexOf("14 128") != -1 ||
+              mihonorName.indexOf("14 256") != -1 ||
+              mihonorName.indexOf("14 512") != -1 ||
+              mihonorName.indexOf("14 plus") != -1 ||
+              mihonorName.indexOf("14 pro 128") != -1 ||
+              mihonorName.indexOf("14 pro 256") != -1 ||
+              mihonorName.indexOf("14 pro 512") != -1 ||
+              mihonorName.indexOf("14 pro 1tb") != -1 ||
+              mihonorName.indexOf("14 pro 1tb") != -1 ||
+              mihonorName.indexOf("14 pro max") != -1 ||
+              mihonorName.indexOf("15 128") != -1 ||
+              mihonorName.indexOf("15 256") != -1 ||
+              mihonorName.indexOf("15 512") != -1 ||
+              mihonorName.indexOf("ipad mini") != -1 ||
+              mihonorName.indexOf("ipad air") != -1 ||
+              mihonorName.indexOf("ipad pro") != -1 ||
+              mihonorName.indexOf("aw series 9") != -1 ||
+              mihonorName.indexOf("mac") != -1 ||
+              mihonorName.indexOf("s 9 ") != -1 ||
+              mihonorName.indexOf("aw 9") != -1 ||
+              mihonorName.indexOf("aw 9") != -1 ||
+              mihonorName.indexOf("s 8 ") != -1 ||
+              mihonorName.indexOf("aw series 8") != -1 ||
+              mihonorName.indexOf("aw 8") != -1 ||
+              mihonorName.indexOf("aw 8") != -1 ||
+              mihonorName.indexOf("watch s8") != -1 ||
+              mihonorName.indexOf("ul ") != -1 ||
+              mihonorName.indexOf("airpods max") != -1 ||
+              mihonorName.indexOf("air pods max") != -1 ||
+              mihonorName.indexOf("airpods max") != -1 ||
+              mihonorName.indexOf("airpods max") != -1 ||
+              mihonorName.indexOf("gopro") != -1 ||
+              mihonorName.indexOf("acer") != -1 ||
+              mihonorName.indexOf("msi") != -1 ||
+              mihonorName.indexOf("asus") != -1 ||
+              mihonorName.indexOf("lenovo") != -1 ||
+              mihonorName.indexOf("rayban") != -1 ||
+              mihonorName.indexOf("oppo") != -1 ||
+              mihonorName.indexOf("motorola") != -1 ||
+              mihonorName.indexOf("oneplus") != -1 ||
+              mihonorName.indexOf("redmagic") != -1 ||
+              mihonorName.indexOf("nubia") != -1 ||
+              mihonorName.indexOf("nothing phone") != -1 ||
+              mihonorName.indexOf("honor") != -1 ||
+              mihonorName.indexOf("s20") != -1 ||
+              mihonorName.indexOf("s21") != -1 ||
+              mihonorName.indexOf("s22") != -1 ||
+              mihonorName.indexOf("s23") != -1 ||
+              mihonorName.indexOf("s24") != -1 ||
+              mihonorName.indexOf("z flip") != -1 ||
+              mihonorName.indexOf("z fold") != -1 ||
+              mihonorName.indexOf("xiaomi 13t ") != -1 ||
+              mihonorName.indexOf("xiaomi 14 ") != -1
+              ) {
+              return Number(mihonorPrice) + 700;
+              } else if (
+              mihonorName.indexOf("15 plus 128") != -1 ||
+              mihonorName.indexOf("15 plus 256") != -1 ||
+              mihonorName.indexOf("15 plus 512") != -1 ||
+              mihonorName.indexOf("15 pro 128") != -1 ||
+              mihonorName.indexOf("15 pro 256") != -1 ||
+              mihonorName.indexOf("15 pro 512") != -1 ||
+              mihonorName.indexOf("15 pro 1tb") != -1 ||
+              mihonorName.indexOf("15 promax 256") != -1 ||
+              mihonorName.indexOf("15 promax 512") != -1 ||
+              mihonorName.indexOf("15 promax 1tb") != -1 ||
+              mihonorName.indexOf("15 pro max 256") != -1 ||
+              mihonorName.indexOf("15 pro max 512") != -1 ||
+              mihonorName.indexOf("15 pro max 1tb") != -1 ||
+              mihonorName.indexOf("15 pro max 1tb") != -1 ||
+              mihonorName.indexOf("15 pro max 1tb") != -1 ||
+              mihonorName.indexOf("ipad pro 12.9") != -1 ||
+              mihonorName.indexOf("ultra 2") != -1 ||
+              mihonorName.indexOf("mini 6 64") != -1 ||
+              mihonorName.indexOf("tab s") != -1 ||
+              mihonorName.indexOf("pro 12.9") != -1 ||
+              mihonorName.indexOf("pro 11") != -1 ||
+              mihonorName.indexOf("air 5") != -1
+              ) {
+              return Number(mihonorPrice) + 800;
+              } else if (
+              mihonorName.indexOf("macbook") != -1 ||
+              mihonorName.indexOf("book ") != -1 ||
+              mihonorName.indexOf("mb") != -1 ||
+              mihonorName.indexOf("13.6 m") != -1 ||
+              mihonorName.indexOf("air 13 (") != -1 ||
+              mihonorName.indexOf("air 15 (") != -1 ||
+              mihonorName.indexOf("pro 13 (") != -1 ||
+              mihonorName.indexOf("15 m") != -1 ||
+              mihonorName.indexOf("mgn") != -1 ||
+              mihonorName.indexOf("vision pro") != -1
+              ) {
+              
+          return Number(mihonorPrice) + 1200;
+        } else {
+          return `${mihonorPrice} 🟥 `;
+        }
+      };

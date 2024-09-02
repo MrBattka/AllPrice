@@ -17,7 +17,6 @@ const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
   const resultArr = [];
 
   el.map((unimtrn) => {
-    console.log(unimtrn.Товар);
     if (
       unimtrn.Товар &&
       returnIDApple(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !== 'No match' &&

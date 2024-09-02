@@ -497,5 +497,11 @@ export const fixName = (name) => {
   const fixZFold512512 = fixZFold5121.replace("z fold 5 12/512 iceblue", "	z fold 5 12/512 icy blue");
   const fixZFold12256 = fixZFold512512.replace("z fold 5 12/256 iceblue", "	z fold 5 12/256 icy blue");
 
-  return fixZFold12256.replace("s24 8/128 black", "s24 8/128 onyx black");
+  const removeLightGreen = fixZFold12256.replace("light green", "green");
+  const removeLightViolet = removeLightGreen.replace("light violet", "violet");
+
+  const fixBlueBlack = removeLightViolet.replace("blue black", "blue/black");
+
+
+  return fixBlueBlack.replace("s24 8/128 black", "s24 8/128 onyx black");
 };

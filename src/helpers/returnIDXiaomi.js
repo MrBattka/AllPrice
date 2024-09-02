@@ -613,6 +613,12 @@ export const returnIDXiaomi = (name) => {
     return 30891;
   } else if (name.indexOf("note 13r pro 12/256 gold") != -1) {
     return 30890;
+  } else if (name.indexOf("mi 12 lite 8/128 black") != -1) {
+    return 23306;
+  } else if (name.indexOf("mi 12 lite 8/128 pink") != -1) {
+    return 23308;
+  } else if (name.indexOf("mi 12 lite 8/128 green") != -1) {
+    return 23307;
   } else if (name.indexOf("xiaomi 13 ultra 12/256 black") != -1) {
     return 27291;
   } else if (name.indexOf("xiaomi 13 ultra 12/256 olive green") != -1) {

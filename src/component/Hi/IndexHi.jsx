@@ -16,7 +16,7 @@ import { returnSamsung } from "./Samsung/samsung";
 import style from "./styles.module.css";
 import { returnXiaomi } from "./Xiaomi/xiaomi";
 
-const IndexHi = ({ el, hi, main }) => {
+const IndexHi = ({ el, hi }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 

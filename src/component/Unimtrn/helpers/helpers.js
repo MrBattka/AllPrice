@@ -53,7 +53,8 @@ let realme = /T.Realme/gi;
 export const fixNameUnimtrn = (el) => {
   const fixGb = el.Товар?.replace(gb, "");
   const fixIPad9 = fixGb.replace(IPad9, "iPad 9");
-  const fixWatchS8 = fixIPad9.replace(watchS8, "S8");
+  const fixWiSpaceFi = fixIPad9.replace("Wi Fi", "Wi-Fi");
+  const fixWatchS8 = fixWiSpaceFi.replace(watchS8, "S8");
   const fixWiFi = fixWatchS8.replace(wiFi, "Wi-Fi");
   const fixAWS9Space = fixWiFi.replace(aw9Space, "S9");
   const fixAWS9 = fixAWS9Space.replace(aws9, "S9");
@@ -139,29 +140,47 @@ export const fixNameUnimtrn = (el) => {
   const fixxqde72 = fixcnx769j.replace("XQ-DE72 ", "");
   const fixs916b = fixxqde72.replace("S916B ", "");
   const fixUltra2SM = fixs916b.replace("Ultra 2 S/M ", "ultra 2 ");
-  const fixGreenGray = fixUltra2SM.replace("ultra 2 Green/Gray", "ultra 2 gray");
+  const fixGreenGray = fixUltra2SM.replace(
+    "ultra 2 Green/Gray",
+    "ultra 2 gray"
+  );
   const fixX510 = fixGreenGray.replace("X510 ", "");
-  const fixWifi = fixX510.replace("Wi-Fi ", "");
-  const fixTitaniumBlack = fixWifi.replace("Titanium Blaсk", "Black");
+  // const fixWifi = fixX510.replace("Wi-Fi ", "");
+  const fixTitaniumBlack = fixX510.replace("Titanium Blaсk", "Black");
   const fixf741b = fixTitaniumBlack.replace("F741B ", "");
   const fixf956b = fixf741b.replace("F956B ", "");
-  const fixmpq93 = fixf956b.replace("Blue MPQ93 ", "blue wi-fi");
+  const fixmpq93 = fixf956b.replace("MPQ93 ", "");
   const fixx910 = fixmpq93.replace("X910 ", "");
+  const fixiPad9 = fixx910.replace("iPad 9 (2021)", "ipad 9");
+  const fixmk2n3 = fixiPad9.replace("MK2N3 ", "");
+  const fixmk2p3 = fixmk2n3.replace("MK2P3 ", "");
 
- 
-  const replaceiPadPink64 = fixx910.replace(
-    "Wi-Fi 64 Pink",
-    "64 Pink Wi-Fi"
+  const replaceSpaceGrey = fixmk2p3.replace(
+    "Space Grey",
+    "Grey"
   );
+  const replaceSpaceGray = replaceSpaceGrey.replace("Space Gray", "Grey");
+  const replaceSpaceBlack = replaceSpaceGray.replace("Space Black", "Black");
+  const replaceGrey = replaceSpaceBlack.replace("Grey", "Gray");
+
+  const replaceiPadPink64 = replaceGrey.replace("Wi-Fi 64 Pink", "64 Pink Wi-Fi");
   const replaceiPadSilver64 = replaceiPadPink64.replace(
     "Wi-Fi 64 Silver",
     "64 Silver Wi-Fi"
   );
-  const replaceiPadBlue64 = replaceiPadSilver64.replace(
+  const replaceiPadSpaceGray64 = replaceiPadSilver64.replace(
+    "Wi-Fi 64 Gray",
+    "64 Gray Wi-Fi"
+  );
+  const replaceiPadBlue64 = replaceiPadSpaceGray64.replace(
     "Wi-Fi 64 Blue",
     "64 Blue Wi-Fi"
   );
-  const replaceiPadYellow64 = replaceiPadBlue64.replace(
+  const replaceiPadPurple64 = replaceiPadBlue64.replace(
+    "Wi-Fi 64 Purple",
+    "64 Purple Wi-Fi"
+  );
+  const replaceiPadYellow64 = replaceiPadPurple64.replace(
     "Wi-Fi 64 Yellow",
     "64 Yellow Wi-Fi"
   );
@@ -185,7 +204,15 @@ export const fixNameUnimtrn = (el) => {
     "Wi-Fi 128 Pink",
     "128 Pink Wi-Fi"
   );
-  const replaceiPadSilver128 = replaceiPadPink128.replace(
+  const replaceiPadPurple128 = replaceiPadPink128.replace(
+    "Wi-Fi 128 Purple",
+    "128 Purple Wi-Fi"
+  );
+  const replaceiPadSpaceGrey128 = replaceiPadPurple128.replace(
+    "Wi-Fi 128 Gray",
+    "128 Gray Wi-Fi"
+  );
+  const replaceiPadSilver128 = replaceiPadSpaceGrey128.replace(
     "Wi-Fi 128 Silver",
     "128 Silver Wi-Fi"
   );
@@ -217,7 +244,15 @@ export const fixNameUnimtrn = (el) => {
     "Wi-Fi 256 Pink",
     "256 Pink Wi-Fi"
   );
-  const replaceiPadSilver256 = replaceiPadPink256.replace(
+  const replaceiPadPurple256 = replaceiPadPink256.replace(
+    "Wi-Fi 256 Purple",
+    "256 Purple Wi-Fi"
+  );
+  const replaceiPadSpaceGrey256 = replaceiPadPurple256.replace(
+    "Wi-Fi 256 Gray",
+    "256 Gray Wi-Fi"
+  );
+  const replaceiPadSilver256 = replaceiPadSpaceGrey256.replace(
     "Wi-Fi 256 Silver",
     "256 Silver Wi-Fi"
   );
@@ -246,14 +281,22 @@ export const fixNameUnimtrn = (el) => {
     "256 Yellow LTE"
   );
   const replaceiPadPink512 = replaceiPadYellowLTE256.replace(
-    "Wi-Fi 256 Pink",
-    "256 Pink Wi-Fi"
+    "Wi-Fi 512 Pink",
+    "512 Pink Wi-Fi"
   );
-  const replaceiPadSilver512 = replaceiPadPink512.replace(
+  const replaceiPadPurple512 = replaceiPadPink512.replace(
+    "Wi-Fi 512 Purple",
+    "512 Purple Wi-Fi"
+  );
+  const replaceiPadSilver512 = replaceiPadPurple512.replace(
     "Wi-Fi 512 Silver",
     "512 Silver Wi-Fi"
   );
-  const replaceiPadBlue512 = replaceiPadSilver512.replace(
+  const replaceiPadSpaceGrey512 = replaceiPadSilver512.replace(
+    "Wi-Fi 512 Gray",
+    "512 Gray Wi-Fi"
+  );
+  const replaceiPadBlue512 = replaceiPadSpaceGrey512.replace(
     "Wi-Fi 512 Blue",
     "512 Blue Wi-Fi"
   );
@@ -281,7 +324,11 @@ export const fixNameUnimtrn = (el) => {
     "Wi-Fi 1Tb Pink",
     "1Tb Pink Wi-Fi"
   );
-  const replaceiPadSilver1Tb = replaceiPadPink1Tb.replace(
+  const replaceiPadSpaceGrey1Tb = replaceiPadPink1Tb.replace(
+    "Wi-Fi 1Tb Gray",
+    "1Tb Gray Wi-Fi"
+  );
+  const replaceiPadSilver1Tb = replaceiPadSpaceGrey1Tb.replace(
     "Wi-Fi 1Tb Silver",
     "1Tb Silver Wi-Fi"
   );
@@ -328,8 +375,8 @@ export const fixNameUnimtrn = (el) => {
     "Purple Wi-Fi"
   );
   const replaceiPadSpaceBlack = replaceiPadPurple.replace(
-    "Wi-Fi Space Black",
-    "Space Black Wi-Fi"
+    "Wi-Fi Black",
+    "Black Wi-Fi"
   );
   const replaceiPadPinkLTE = replaceiPadSpaceBlack.replace(
     "LTE Pink",
@@ -352,10 +399,16 @@ export const fixNameUnimtrn = (el) => {
     "Purple LTE"
   );
   const replaceiPadSpaceBlackLTE = replaceiPadPurpleLTE.replace(
-    "LTE Space Black",
-    "Space Black LTE"
+    "LTE Black",
+    "Black LTE"
   );
+
   const fixProMax = replaceiPadSpaceBlackLTE.replace(proMax, "Pro Max");
 
-  return fixProMax.toLowerCase();
+  const toLowerCase = fixProMax.toLowerCase();
+
+  const removeLightGreen = toLowerCase.replace("light green", "green");
+  const removeLightViolet = removeLightGreen.replace("light violet", "violet");
+
+  return removeLightViolet;
 };
