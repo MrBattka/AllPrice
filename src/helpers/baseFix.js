@@ -138,3 +138,16 @@ export const baseFixVsemi = (el) => {
     (toLowerCase === "jbl" ? toLowerCase.indexOf("jbl") == -1 : toLowerCase)
   );
 };
+
+export const baseFixSuperPrice = (el) => {
+  let toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("⭕️") == -1 &&
+    toLowerCase.indexOf("📷") == -1 &&
+    toLowerCase.indexOf("🍏") == -1 &&
+    toLowerCase.indexOf("➖") == -1 &&
+    toLowerCase.indexOf("🇪🇺 xiaomi 🇪🇺") == -1 &&
+    (toLowerCase === "huawei" ? toLowerCase.indexOf("huawei") == -1 : toLowerCase) &&
+    (toLowerCase === "airpods 2" ? toLowerCase.indexOf("airpods 2") == -1 : toLowerCase)
+  );
+};

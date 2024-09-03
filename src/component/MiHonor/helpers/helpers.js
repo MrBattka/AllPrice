@@ -1,6 +1,6 @@
 import { newPrice } from "../../../helpers/NewPrice";
 
-const scrollingText = (str) => {
+const fixFlags = (str) => {
   const result = [];
 
   let current = str;
@@ -20,7 +20,7 @@ export const returnNameInArr = (name) => {
   let splitPrice = /\s(.+)/.exec(removeRUB)[1];
   let reverseBackStrName = splitPrice.split("").reverse().join("");
 
-  return scrollingText(reverseBackStrName);
+  return fixFlags(reverseBackStrName);
 };
 
 export const returnExtraPrice = (name) => {

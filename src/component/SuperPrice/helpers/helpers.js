@@ -1,0 +1,28 @@
+export const fixName = (name) => {
+    const toLowerCase = name.toLowerCase()
+    const fixS24 = toLowerCase.replace("s24 +", "s24+")
+    const fixA25 = fixS24.replace("a25 5g", "a25")
+    const fixA35 = fixA25.replace("a35 5g", "a35")
+    const fixA54 = fixA35.replace("a54 5g", "a54")
+    const fixA55 = fixA54.replace("a55 5g", "a55")
+    const fixGB = fixA55.replace("gb", "")
+    const fixIceBlue = fixGB.replace("ice blue", "iceblue")
+    const fixSandstone = fixIceBlue.replace("sandstore", "sandstone")
+    const fixGrey = fixSandstone.replace("grey", "gray")
+    const fixzFold6 = fixGrey.replace("z fold6", "z fold 6")
+    const fixzFlip6 = fixzFold6.replace("z flip6", "z flip 6")
+    const fixzFold5 = fixzFlip6.replace("z fold5", "z fold 5")
+    const fixzFlip5 = fixzFold5.replace("z flip5", "z flip 5")
+    const fixWatch5 = fixzFlip5.replace("watch5", "watch 5")
+    const fixWatch6 = fixWatch5.replace("watch6", "watch 6")
+    const fixmm = fixWatch6.replace("mm", "")
+    const fix125g = fixmm.replace("12 5g", "12")
+    const fix12pro4g = fix125g.replace("12 pro 5g", "12 pro")
+    const fix135g = fix12pro4g.replace("13 5g", "13")
+    const fix13t5g = fix135g.replace("13t 5g", "13t")
+    const fix13tpro5g = fix13t5g.replace("13t pro 5g", "13t pro")
+    const fix145g = fix13tpro5g.replace("14 5g", "14")
+    const fix14ultra5g = fix145g.replace("14 ultra 5g", "14 ultra")
+
+    return fix14ultra5g
+}

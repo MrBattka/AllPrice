@@ -10,17 +10,21 @@ import IndexMiHonor from "./component/MiHonor/indexMiHonor";
 import IndexMiHonorNotID from "./component/MiHonor/indexMiHonorNotID copy";
 import IndexVseMi from "./component/VseMi/indexVseMi";
 import IndexVseMiNotID from "./component/VseMi/indexVseMiNotID";
+import IndexSuperPrice from "./component/SuperPrice/indexSuperPrice";
+import IndexSuperPriceNotID from "./component/SuperPrice/indexSuperPriceNotID";
 
 const App = () => {
   const [dataHi, setDataHi] = useState([]);
   const [dataUNIMTRN, setDataUNIMTRN] = useState([]);
   const [dataMihonor, setDataMihonor] = useState([]);
   const [dataVsemi, setDataVseMi] = useState([]);
+  const [dataSuperprice, setDataSuperprice] = useState([])
 
   const unimtrn = [];
   const hi = [];
   const mihonor = [];
   const vsemi = [];
+  const superprice = []
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -43,6 +47,12 @@ const App = () => {
       vsemi.push({ name: vsemiEl.VseMi });
   });
 
+  dataSuperprice.map((superpriceEl) => {
+    superpriceEl.Наименование &&
+      typeof superpriceEl.Наименование === "string" &&
+      superprice.push({ name: superpriceEl.Наименование, price: superpriceEl.Прайс || superpriceEl.Опт });
+  });
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -61,6 +71,8 @@ const App = () => {
           setDataMihonor(rowMihonor);
           const rowVseMi = utils.sheet_to_json(wb.Sheets[sheets[3]]);
           setDataVseMi(rowVseMi);
+          const rowSuperprice = utils.sheet_to_json(wb.Sheets[sheets[4]]);
+          setDataSuperprice(rowSuperprice);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -110,6 +122,9 @@ const App = () => {
         {/* VseMi */}
         <IndexVseMi el={dataVsemi} vsemiData={vsemi} />
         <IndexVseMiNotID el={dataVsemi} vsemiData={vsemi} />
+        {/* Super Price */}
+        <IndexSuperPrice el={dataSuperprice} superpriceData={superprice} />
+        <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} /> 
       </div>
     </div>
   );

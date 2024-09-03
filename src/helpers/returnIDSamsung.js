@@ -182,6 +182,7 @@ export const returnIDSamsung = (name) => {
 
   } else if (
     name.indexOf("a35 6/128 iceblue") != -1 ||
+    name.indexOf("a35 6/128 blue") != -1 ||
     name.indexOf("a35 6/128 blue") != -1
   ) {
     return 35917;
