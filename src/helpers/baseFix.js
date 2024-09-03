@@ -123,6 +123,7 @@ export const baseFixVsemi = (el) => {
   return (
     toLowerCase.indexOf("консоли | геймпады") == -1 &&
     toLowerCase.indexOf("мятые") == -1 &&
+    toLowerCase.indexOf("прайс") == -1 &&
     toLowerCase.indexOf("скидка") == -1 &&
     toLowerCase.indexOf("наушники") == -1 &&
     (toLowerCase === "steam deck"

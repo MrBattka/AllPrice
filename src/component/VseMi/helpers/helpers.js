@@ -33,6 +33,7 @@ export const fixName = (name) => {
   const replacer940 = replacer920.replace("r940 ", "");
   const replacemm = replacer940.replace("mm", "");
   const replacehd08 = replacemm.replace("gift set vinca ", "");
+  
 
   return replacehd08;
 };
