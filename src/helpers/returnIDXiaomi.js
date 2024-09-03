@@ -875,6 +875,221 @@ export const returnIDXiaomi = (name) => {
     return 35855;
   } else if (name.indexOf("xiaomi 14 ultra 16/512 white") != -1) {
     return 35858;
+
+    // Redmi Pad
+  } else if (name.indexOf("redmi pad 3/64 graphite gray") != -1) {
+    return 23941;
+  } else if (name.indexOf("redmi pad 3/64 mint green") != -1) {
+    return 23947;
+  } else if (name.indexOf("redmi pad 3/64 moonlight silver") != -1) {
+    return 23944;
+  } else if (name.indexOf("redmi pad 4/128 graphite gray") != -1) {
+    return 23942;
+  } else if (name.indexOf("redmi pad 4/128 mint green") != -1) {
+    return 23948;
+  } else if (name.indexOf("redmi pad 4/128 moonlight silver") != -1) {
+    return 23945;
+  } else if (name.indexOf("redmi pad 6/128 graphite gray") != -1) {
+    return 23943;
+  } else if (name.indexOf("redmi pad 6/128 mint green") != -1) {
+    return 23949;
+  } else if (name.indexOf("redmi pad 6/128 moonlight silver") != -1) {
+    return 23946;
+  } else if (name.indexOf("redmi pad se 4/128 graphite gray") != -1) {
+    return 30200;
+  } else if (name.indexOf("redmi pad se 4/128 lavender purple") != -1) {
+    return 30203;
+  } else if (name.indexOf("redmi pad se 4/128 mint green") != -1) {
+    return 30206;
+  } else if (name.indexOf("redmi pad se 6/128 graphite gray") != -1) {
+    return 30201;
+  } else if (name.indexOf("redmi pad se 6/128 lavender purple") != -1) {
+    return 30204;
+  } else if (name.indexOf("redmi pad se 6/128 mint green") != -1) {
+    return 30207;
+  } else if (name.indexOf("redmi pad se 8/128 graphite gray") != -1) {
+    return 30202;
+  } else if (name.indexOf("redmi pad se 8/128 lavender purple") != -1) {
+    return 30205;
+  } else if (name.indexOf("redmi pad se 8/128 mint green") != -1) {
+    return 30208;
+  } else if (name.indexOf("redmi pad se 8/256 graphite gray") != -1) {
+    return 30966;
+  } else if (name.indexOf("redmi pad se 8/256 lavender purple") != -1) {
+    return 30967;
+  } else if (name.indexOf("redmi pad se 8/256 mint green") != -1) {
+    return 30968;
+  } else if (name.indexOf("redmi pad 3/64 gray") != -1) {
+    return 23941;
+  } else if (
+    name.indexOf("redmi pad 3/64 green") != -1 ||
+    name.indexOf("redmi pad 3/64 mint") != -1
+  ) {
+    return 23947;
+  } else if (name.indexOf("redmi pad 3/64 silver") != -1) {
+    return 23944;
+  } else if (name.indexOf("redmi pad 4/128 gray") != -1) {
+    return 23942;
+  } else if (
+    name.indexOf("redmi pad 4/128 green") != -1 ||
+    name.indexOf("redmi pad 4/128 mint") != -1
+  ) {
+    return 23948;
+  } else if (name.indexOf("redmi pad 4/128 silver") != -1) {
+    return 23945;
+  } else if (name.indexOf("redmi pad 6/128 gray") != -1) {
+    return 23943;
+  } else if (
+    name.indexOf("redmi pad 6/128 green") != -1 ||
+    name.indexOf("redmi pad 6/128 mint") != -1
+  ) {
+    return 23949;
+  } else if (name.indexOf("redmi pad 6/128 silver") != -1) {
+    return 23946;
+  } else if (name.indexOf("redmi pad se 4/128 gray") != -1) {
+    return 30200;
+  } else if (name.indexOf("redmi pad se 4/128 purple") != -1) {
+    return 30203;
+  } else if (
+    name.indexOf("redmi pad se 4/128 green") != -1 ||
+    name.indexOf("redmi pad se 4/128 mint") != -1
+  ) {
+    return 30206;
+  } else if (name.indexOf("redmi pad se 6/128 gray") != -1) {
+    return 30201;
+  } else if (name.indexOf("redmi pad se 6/128 purple") != -1) {
+    return 30204;
+  } else if (
+    name.indexOf("redmi pad se 6/128 green") != -1 ||
+    name.indexOf("redmi pad se 6/128 mint") != -1
+  ) {
+    return 30207;
+  } else if (name.indexOf("redmi pad se 8/128 gray") != -1) {
+    return 30202;
+  } else if (name.indexOf("redmi pad se 8/128 purple") != -1) {
+    return 30205;
+  } else if (
+    name.indexOf("redmi pad se 8/128 green") != -1 ||
+    name.indexOf("redmi pad se 8/128 mint") != -1
+  ) {
+    return 30208;
+  } else if (name.indexOf("redmi pad se 8/256 gray") != -1) {
+    return 30966;
+  } else if (name.indexOf("redmi pad se 8/256 purple") != -1) {
+    return 30967;
+  } else if (
+    name.indexOf("redmi pad se 8/256 green") != -1 ||
+    name.indexOf("redmi pad se 8/256 mint") != -1
+  ) {
+    return 30968;
+  } else if (name.indexOf("xiaomi pad 3/64 graphite gray") != -1) {
+    return 23941;
+  } else if (
+    name.indexOf("xiaomi pad 3/64 mint green") != -1 ||
+    name.indexOf("xiaomi pad 3/64 mint mint") != -1
+  ) {
+    return 23947;
+  } else if (name.indexOf("xiaomi pad 3/64 moonlight silver") != -1) {
+    return 23944;
+  } else if (name.indexOf("xiaomi pad 4/128 graphite gray") != -1) {
+    return 23942;
+  } else if (name.indexOf("xiaomi pad 4/128 mint green") != -1) {
+    return 23948;
+  } else if (name.indexOf("xiaomi pad 4/128 moonlight silver") != -1) {
+    return 23945;
+  } else if (name.indexOf("xiaomi pad 6/128 graphite gray") != -1) {
+    return 23943;
+  } else if (name.indexOf("xiaomi pad 6/128 mint green") != -1) {
+    return 23949;
+  } else if (name.indexOf("xiaomi pad 6/128 moonlight silver") != -1) {
+    return 23946;
+  } else if (name.indexOf("xiaomi pad se 4/128 graphite gray") != -1) {
+    return 30200;
+  } else if (name.indexOf("xiaomi pad se 4/128 lavender purple") != -1) {
+    return 30203;
+  } else if (name.indexOf("xiaomi pad se 4/128 mint green") != -1) {
+    return 30206;
+  } else if (name.indexOf("xiaomi pad se 6/128 graphite gray") != -1) {
+    return 30201;
+  } else if (name.indexOf("xiaomi pad se 6/128 lavender purple") != -1) {
+    return 30204;
+  } else if (name.indexOf("xiaomi pad se 6/128 mint green") != -1) {
+    return 30207;
+  } else if (name.indexOf("xiaomi pad se 8/128 graphite gray") != -1) {
+    return 30202;
+  } else if (name.indexOf("xiaomi pad se 8/128 lavender purple") != -1) {
+    return 30205;
+  } else if (name.indexOf("xiaomi pad se 8/128 mint green") != -1) {
+    return 30208;
+  } else if (name.indexOf("xiaomi pad se 8/256 graphite gray") != -1) {
+    return 30966;
+  } else if (name.indexOf("xiaomi pad se 8/256 lavender purple") != -1) {
+    return 30967;
+  } else if (name.indexOf("xiaomi pad se 8/256 mint green") != -1) {
+    return 30968;
+  } else if (name.indexOf("xiaomi pad 3/64 gray") != -1) {
+    return 23941;
+  } else if (
+    name.indexOf("xiaomi pad 3/64 green") != -1 ||
+    name.indexOf("xiaomi pad 3/64 mint") != -1
+  ) {
+    return 23947;
+  } else if (name.indexOf("xiaomi pad 3/64 silver") != -1) {
+    return 23944;
+  } else if (name.indexOf("xiaomi pad 4/128 gray") != -1) {
+    return 23942;
+  } else if (
+    name.indexOf("xiaomi pad 4/128 green") != -1 ||
+    name.indexOf("xiaomi pad 4/128 mint") != -1
+  ) {
+    return 23948;
+  } else if (name.indexOf("xiaomi pad 4/128 silver") != -1) {
+    return 23945;
+  } else if (name.indexOf("xiaomi pad 6/128 gray") != -1) {
+    return 23943;
+  } else if (
+    name.indexOf("xiaomi pad 6/128 green") != -1 ||
+    name.indexOf("xiaomi pad 6/128 mint") != -1
+  ) {
+    return 23949;
+  } else if (name.indexOf("xiaomi pad 6/128 silver") != -1) {
+    return 23946;
+  } else if (name.indexOf("xiaomi pad se 4/128 gray") != -1) {
+    return 30200;
+  } else if (name.indexOf("xiaomi pad se 4/128 purple") != -1) {
+    return 30203;
+  } else if (
+    name.indexOf("xiaomi pad se 4/128 green") != -1 ||
+    name.indexOf("xiaomi pad se 4/128 mint") != -1
+  ) {
+    return 30206;
+  } else if (name.indexOf("xiaomi pad se 6/128 gray") != -1) {
+    return 30201;
+  } else if (name.indexOf("xiaomi pad se 6/128 purple") != -1) {
+    return 30204;
+  } else if (
+    name.indexOf("xiaomi pad se 6/128 green") != -1 ||
+    name.indexOf("xiaomi pad se 6/128 mint") != -1
+  ) {
+    return 30207;
+  } else if (name.indexOf("xiaomi pad se 8/128 gray") != -1) {
+    return 30202;
+  } else if (name.indexOf("xiaomi pad se 8/128 purple") != -1) {
+    return 30205;
+  } else if (
+    name.indexOf("xiaomi pad se 8/128 green") != -1 ||
+    name.indexOf("xiaomi pad se 8/128 mint") != -1
+  ) {
+    return 30208;
+  } else if (name.indexOf("xiaomi pad se 8/256 gray") != -1) {
+    return 30966;
+  } else if (name.indexOf("xiaomi pad se 8/256 purple") != -1) {
+    return 30967;
+  } else if (
+    name.indexOf("xiaomi pad se 8/256 green") != -1 ||
+    name.indexOf("xiaomi pad se 8/256 mint") != -1
+  ) {
+    return 30968;
   } else {
     return "No match";
   }

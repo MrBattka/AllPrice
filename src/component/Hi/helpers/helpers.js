@@ -1,5 +1,4 @@
-import { flags } from "../../../helpers/fixPrice";
-import { newPriceHi } from "../../../helpers/NewPrice";
+import { newPrice } from "../../../helpers/NewPrice";
 
 export const returnNameInArr = (name) => {
   if (
@@ -160,7 +159,7 @@ export const returnExtraPrice = (name) => {
     let fixMacbook = fixAirPods.replace("💻", "");
     let fixAppleName = fixMacbook.replace("Apple", "");
 
-    return newPriceHi(fixAppleName, fixCar);
+    return newPrice(fixAppleName, fixCar);
   } else {
     let fixLemonPrice = name.replace("🍏 ", "");
     let fixDoubleCarPrice = fixLemonPrice.replace(" 🏎", "");
@@ -199,7 +198,7 @@ export const returnExtraPrice = (name) => {
     let splitPriceEU = /\s(.+)/.exec(removeSpaceName3)[1];
     let reverseBackStrName = splitPriceEU.split("").reverse().join("");
 
-    return newPriceHi(reverseBackStrName, fixCar);
+    return newPrice(reverseBackStrName, fixCar);
   }
 };
 
@@ -483,25 +482,59 @@ export const fixName = (name) => {
   const fixLavender = fixIceBlue.replace("lavander", "lavender");
   const fixZFold5 = fixLavender.replace("z fold5", "z fold 5");
   const fix13C = fixZFold5.replace("13с", "13c");
-  
+
   const fixA256128 = fix13C.replace("a25 6/128 black", "a25 6/128 blue/black");
-  const fixA258128 = fixA256128.replace("a25 8/128 black", "a25 8/128 blue/black");
-  const fixF258256 = fixA258128.replace("a25 8/256 black", "a25 8/256 blue/black");
+  const fixA258128 = fixA256128.replace(
+    "a25 8/128 black",
+    "a25 8/128 blue/black"
+  );
+  const fixF258256 = fixA258128.replace(
+    "a25 8/256 black",
+    "a25 8/256 blue/black"
+  );
 
-  const fixS248128 = fixF258256.replace("s24 8/128 yellow", "s24 8/128 amber yellow");
-  const fixS248256 = fixS248128.replace("s24 8/256 yellow", "s24 8/256 amber yellow");
-  const fixS248512 = fixS248256.replace("s24 8/512 yellow", "s24 8/512 amber yellow");
-  const fixS2412256 = fixS248512.replace("s24 12/256 yellow", "s24 12/256 amber yellow");
+  const fixS248128 = fixF258256.replace(
+    "s24 8/128 yellow",
+    "s24 8/128 amber yellow"
+  );
+  const fixS248256 = fixS248128.replace(
+    "s24 8/256 yellow",
+    "s24 8/256 amber yellow"
+  );
+  const fixS248512 = fixS248256.replace(
+    "s24 8/512 yellow",
+    "s24 8/512 amber yellow"
+  );
+  const fixS2412256 = fixS248512.replace(
+    "s24 12/256 yellow",
+    "s24 12/256 amber yellow"
+  );
 
-  const fixZFold5121 = fixS2412256.replace("z fold 5 12/1tb iceblue", "	z fold 5 12/1tb icy blue");
-  const fixZFold512512 = fixZFold5121.replace("z fold 5 12/512 iceblue", "	z fold 5 12/512 icy blue");
-  const fixZFold12256 = fixZFold512512.replace("z fold 5 12/256 iceblue", "	z fold 5 12/256 icy blue");
+  const fixZFold5121 = fixS2412256.replace(
+    "z fold 5 12/1tb iceblue",
+    "	z fold 5 12/1tb icy blue"
+  );
+  const fixZFold512512 = fixZFold5121.replace(
+    "z fold 5 12/512 iceblue",
+    "	z fold 5 12/512 icy blue"
+  );
+  const fixZFold12256 = fixZFold512512.replace(
+    "z fold 5 12/256 iceblue",
+    "	z fold 5 12/256 icy blue"
+  );
 
   const removeLightGreen = fixZFold12256.replace("light green", "green");
   const removeLightViolet = removeLightGreen.replace("light violet", "violet");
 
-  const fixBlueBlack = removeLightViolet.replace("blue black", "blue/black");
+  const removeWatch4 = removeLightViolet.replace("watch4", "watch 4");
+  const removeWatch5 = removeWatch4.replace("watch5", "watch 5");
+  const removeWatch6 = removeWatch5.replace("watch6", "watch 6");
+  const removeWatch7 = removeWatch6.replace("watch7", "watch 7");
 
+  const removeWatchS8 = removeWatch7.replace("s 8 ", "s8 ");
+  const removeWatchS9 = removeWatchS8.replace("s 9 ", "s9 ");
+
+  const fixBlueBlack = removeWatchS9.replace("blue black", "blue/black");
 
   return fixBlueBlack.replace("s24 8/128 black", "s24 8/128 onyx black");
 };

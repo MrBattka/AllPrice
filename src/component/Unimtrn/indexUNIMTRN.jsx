@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import { baseFix } from "../../helpers/baseFix";
 import { returnFixPrice } from "../../helpers/fixPrice";
-import { newPriceUNIMETRN } from "../../helpers/NewPrice";
+import { newPrice } from "../../helpers/NewPrice";
 import { returnIDApple } from "../../helpers/returnIDApple";
 import BasicTable from "../Create Table/Table";
 import { returnApple } from "./Apple/apple";
 import { returnDyson } from "./Dyson/dyson";
 import { returnGameConsole } from "./GameConsole/gameConsole";
+import { fixNameUnimtrn } from "./helpers/helpers.js";
 import { returnOtherProduct } from "./OtherProduct/otherProduct";
 import { returnSamsung } from "./Samsung/samsung";
 import style from "./styles.module.css";
-import { fixNameUnimtrn } from "./helpers/helpers.js";
 
 const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,7 @@ const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
       resultArr.push({
         id: returnIDApple(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
         name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
-        extraPrice: newPriceUNIMETRN(unimtrn),
+        extraPrice: newPrice(unimtrn.Товар, unimtrn.Стоимость || unimtrn.Cтоимость),
         stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость,
         provider: "Метреон",
       });

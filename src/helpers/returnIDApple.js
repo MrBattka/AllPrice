@@ -85,9 +85,9 @@ export const returnIDApple = (name) => {
     name.indexOf("se2 44 black") != -1 ||
     name.indexOf("se 2 44 black") != -1 ||
     name.indexOf("se (2022) gen 2 44 midnight") != -1 ||
-    name.indexOf("se (2022) gen 2 44 black") != -1  ||
+    name.indexOf("se (2022) gen 2 44 black") != -1 ||
     name.indexOf("se (2023) gen 2 44 midnight") != -1 ||
-    name.indexOf("se (2023) gen 2 44 black") != -1 
+    name.indexOf("se (2023) gen 2 44 black") != -1
   ) {
     return 34316;
   } else if (
@@ -109,31 +109,41 @@ export const returnIDApple = (name) => {
   ) {
     return 34318;
 
+    // aw s8
+
     // aw s9
-  } else if (name.indexOf("s9 41 gold s.steel") != -1) {
-    return 28292;
-  } else if (name.indexOf("s9 41 graphite s.steel") != -1) {
-    return 28294;
-  } else if (name.indexOf("s9 41 midnight") != -1) {
-    return 28284;
-  } else if (name.indexOf("s9 41 pink") != -1) {
-    return 28282;
-  } else if (name.indexOf("s9 41 red") != -1) {
-    return 28286;
-  } else if (name.indexOf("s9 41 silver") != -1) {
-    return 28288;
-  } else if (name.indexOf("s9 41 silver s.steel") != -1) {
-    return 28296;
-  } else if (name.indexOf("s9 41 starlight") != -1) {
-    return 28290;
-  } else if (name.indexOf("s9 45 gold s.steel") != -1) {
-    return 28293;
-  } else if (name.indexOf("s9 45 graphite s.steel") != -1) {
-    return 28295;
-  } else if (name.indexOf("s9 45 midnight") != -1) {
-    return 28285;
-  } else if (name.indexOf("s9 45 pink") != -1) {
-    return 28283;
+  } else if (name.indexOf("s8 41 gold") != -1) {
+    return 23461;
+  } else if (name.indexOf("s8 41 graphite") != -1) {
+    return 23519;
+  } else if (
+    name.indexOf("s8 41 midnight") != -1 ||
+    name.indexOf("s8 41 black") != -1
+  ) {
+    return 23518;
+  } else if (name.indexOf("s8 41 red") != -1) {
+    return 23547;
+  } else if (
+    name.indexOf("s8 41 starlight") != -1 ||
+    name.indexOf("s8 41 white") != -1
+  ) {
+    return 23517;
+  } else if (name.indexOf("s8 45 gold") != -1) {
+    return 23520;
+  } else if (
+    name.indexOf("s8 45 midnight") != -1 ||
+    name.indexOf("s8 45 black") != -1
+  ) {
+    return 23522;
+  } else if (name.indexOf("s8 45 red") != -1) {
+    return 23548;
+  } else if (name.indexOf("s8 45 silver") != -1) {
+    return 23523;
+  } else if (
+    name.indexOf("s8 45 starlight") != -1 ||
+    name.indexOf("s8 45 white") != -1
+  ) {
+    return 23524;
   } else if (name.indexOf("s9 45 red") != -1) {
     return 28287;
   } else if (name.indexOf("s9 45 silver") != -1) {
@@ -142,43 +152,43 @@ export const returnIDApple = (name) => {
     return 28297;
   } else if (name.indexOf("s9 45 starlight") != -1) {
     return 28291;
-  } else if (name.indexOf("s 9 41 silver") != -1) {
+  } else if (name.indexOf("s9 41 silver") != -1) {
     return 28296;
-  } else if (name.indexOf("s 9 41 graphite") != -1) {
+    } else if (name.indexOf("s9 41 graphite") != -1) {
     return 28294;
-  } else if (name.indexOf("s 9 41 gold") != -1) {
+    } else if (name.indexOf("s9 41 gold") != -1) {
     return 28292;
-  } else if (name.indexOf("s 9 45 silver") != -1) {
+    } else if (name.indexOf("s9 45 silver") != -1) {
     return 28297;
-  } else if (name.indexOf("s 9 45 graphite") != -1) {
+    } else if (name.indexOf("s9 45 graphite") != -1) {
     return 28295;
-  } else if (name.indexOf("s 9 45 gold") != -1) {
+    } else if (name.indexOf("s9 45 gold") != -1) {
     return 28293;
-  } else if (
-    name.indexOf("s 9 41 starlight") != -1 ||
-    name.indexOf("s 9 41 white") != -1
-  ) {
+    } else if (
+    name.indexOf("s9 41 starlight") != -1 ||
+    name.indexOf("s9 41 white") != -1
+    ) {
     return 28290;
-  } else if (name.indexOf("s 9 41 silver") != -1) {
+    } else if (name.indexOf("s9 41 silver") != -1) {
     return 28288;
-  } else if (name.indexOf("s 9 41 red") != -1) {
+    } else if (name.indexOf("s9 41 red") != -1) {
     return 28286;
-  } else if (name.indexOf("s 9 41 midnight") != -1) {
+    } else if (name.indexOf("s9 41 midnight") != -1) {
     return 28284;
-  } else if (name.indexOf("s 9 41 pink") != -1) {
+    } else if (name.indexOf("s9 41 pink") != -1) {
     return 28282;
-  } else if (
-    name.indexOf("s 9 45 starlight") != -1 ||
-    name.indexOf("s 9 45 white") != -1
-  ) {
+    } else if (
+    name.indexOf("s9 45 starlight") != -1 ||
+    name.indexOf("s9 45 white") != -1
+    ) {
     return 28291;
-  } else if (name.indexOf("s 9 45 silver") != -1) {
+    } else if (name.indexOf("s9 45 silver") != -1) {
     return 28289;
-  } else if (name.indexOf("s 9 45 red") != -1) {
+    } else if (name.indexOf("s9 45 red") != -1) {
     return 28287;
-  } else if (name.indexOf("s 9 45 midnight") != -1) {
+    } else if (name.indexOf("s9 45 midnight") != -1) {
     return 28285;
-  } else if (name.indexOf("s 9 45 pink") != -1) {
+    } else if (name.indexOf("s9 45 pink") != -1) {
     return 28283;
 
     // aw ultra
@@ -280,23 +290,31 @@ export const returnIDApple = (name) => {
     // ipad 9
   } else if (name.indexOf("ipad 9 64 silver wi-fi") != -1) {
     return 20659;
-  } else if (name.indexOf("ipad 9 64 gray wi-fi") != -1 ||
-  name.indexOf("ipad 9 64 grey wi-fi") != -1) {
+  } else if (
+    name.indexOf("ipad 9 64 gray wi-fi") != -1 ||
+    name.indexOf("ipad 9 64 grey wi-fi") != -1
+  ) {
     return 20658;
   } else if (name.indexOf("ipad 9 64 silver lte") != -1) {
     return 20664;
-  } else if (name.indexOf("ipad 9 64 gray lte") != -1 ||
-  name.indexOf("ipad 9 64 grey lte") != -1) {
+  } else if (
+    name.indexOf("ipad 9 64 gray lte") != -1 ||
+    name.indexOf("ipad 9 64 grey lte") != -1
+  ) {
     return 20662;
   } else if (name.indexOf("ipad 9 256 silver wi-fi") != -1) {
     return 20660;
-  } else if (name.indexOf("ipad 9 256 gray wi-fi") != -1 ||
-  name.indexOf("ipad 9 256 grey wi-fi") != -1) {
+  } else if (
+    name.indexOf("ipad 9 256 gray wi-fi") != -1 ||
+    name.indexOf("ipad 9 256 grey wi-fi") != -1
+  ) {
     return 20661;
   } else if (name.indexOf("ipad 9 256 silver lte") != -1) {
     return 20665;
-  } else if (name.indexOf("ipad 9 256 gray lte") != -1 ||
-  name.indexOf("ipad 9 256 grey lte") != -1) {
+  } else if (
+    name.indexOf("ipad 9 256 gray lte") != -1 ||
+    name.indexOf("ipad 9 256 grey lte") != -1
+  ) {
     return 20666;
   } else if (name.indexOf("ipad 10 256 silver wi-fi") != -1) {
     return 24837;

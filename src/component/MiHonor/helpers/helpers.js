@@ -1,4 +1,4 @@
-import { newPriceMihonor } from "../../../helpers/NewPrice";
+import { newPrice } from "../../../helpers/NewPrice";
 
 const scrollingText = (str) => {
   const result = [];
@@ -32,7 +32,7 @@ export const returnExtraPrice = (name) => {
   let splitPrice = removeRUB.split(' ')[0]
   let reverseBackStrName = splitPrice.split("").reverse().join("");
 
-  return newPriceMihonor(returnNameInArr(name), reverseBackStrName);
+  return newPrice(returnNameInArr(name), reverseBackStrName);
 };
 
 export const returnStockPrice = (name) => {
@@ -73,7 +73,10 @@ export const fixName = (name) => {
 
   const fixMi = returnNameInArr(name.toLowerCase())[0] === "m" ? remove162.replace("mi ", "xiaomi ") : remove162
 
-  const removeLightGreen = fixMi.replace("light green", "green");
+  const remove874g = fixMi.replace("8.7 4g ", "");
+  const remove874wifi = remove874g.replace("8.7 wi fi ", "");
+
+  const removeLightGreen = remove874wifi.replace("light green", "green");
   const removeLightViolet = removeLightGreen.replace("light violet", "violet");
   
   return removeLightViolet;

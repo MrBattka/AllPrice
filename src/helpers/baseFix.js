@@ -99,7 +99,7 @@ export const baseFixHi = (el) => {
 };
 
 export const baseFixMiHonor = (el) => {
-  let toLowerCase = el.name?.toLowerCase()
+  let toLowerCase = el.name?.toLowerCase();
   return (
     toLowerCase.indexOf("оптом") == -1 &&
     toLowerCase.indexOf("———") == -1 &&
@@ -115,5 +115,25 @@ export const baseFixMiHonor = (el) => {
     toLowerCase.indexOf("*") == -1 &&
     toLowerCase.indexOf("от") == -1 &&
     toLowerCase.indexOf("электросамокат") == -1
+  );
+};
+
+export const baseFixVsemi = (el) => {
+  let toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("консоли | геймпады") == -1 &&
+    toLowerCase.indexOf("мятые") == -1 &&
+    toLowerCase.indexOf("скидка") == -1 &&
+    toLowerCase.indexOf("наушники") == -1 &&
+    (toLowerCase === "steam deck"
+      ? toLowerCase.indexOf("steam deck") == -1
+      : toLowerCase) &&
+    (toLowerCase === "gopro"
+      ? toLowerCase.indexOf("gopro") == -1
+      : toLowerCase) &&
+    (toLowerCase === "vr" ? toLowerCase.indexOf("vr") == -1 : toLowerCase) &&
+    (toLowerCase === "samsung" ? toLowerCase.indexOf("samsung") == -1 : toLowerCase) &&
+    (toLowerCase === "dyson" ? toLowerCase.indexOf("dyson") == -1 : toLowerCase) &&
+    (toLowerCase === "jbl" ? toLowerCase.indexOf("jbl") == -1 : toLowerCase)
   );
 };

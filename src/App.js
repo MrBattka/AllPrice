@@ -8,18 +8,27 @@ import IndexUnimtrnNotID from "./component/Unimtrn/indexUNIMTRNNotID";
 import icon from "./source/icon/icon.png";
 import IndexMiHonor from "./component/MiHonor/indexMiHonor";
 import IndexMiHonorNotID from "./component/MiHonor/indexMiHonorNotID copy";
+import IndexVseMi from "./component/VseMi/indexVseMi";
+import IndexVseMiNotID from "./component/VseMi/indexVseMiNotID";
 
 const App = () => {
   const [dataHi, setDataHi] = useState([]);
   const [dataUNIMTRN, setDataUNIMTRN] = useState([]);
   const [dataMihonor, setDataMihonor] = useState([]);
+  const [dataVsemi, setDataVseMi] = useState([]);
 
   const unimtrn = [];
   const hi = [];
   const mihonor = [];
+  const vsemi = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
+  });
+
+  dataUNIMTRN.map((unimtrnEl) => {
+    unimtrnEl.Товар &&
+      unimtrn.push({ name: unimtrnEl.Товар, price: unimtrnEl.Стоимость });
   });
 
   dataMihonor.map((mihonorEl) => {
@@ -28,9 +37,10 @@ const App = () => {
       mihonor.push({ name: mihonorEl.MiHonor });
   });
 
-  dataUNIMTRN.map((unimtrnEl) => {
-    unimtrnEl.Товар &&
-      unimtrn.push({ name: unimtrnEl.Товар, price: unimtrnEl.Стоимость });
+  dataVsemi.map((vsemiEl) => {
+    vsemiEl.VseMi &&
+      typeof vsemiEl.VseMi === "string" &&
+      vsemi.push({ name: vsemiEl.VseMi });
   });
 
   const handleImport = ($event) => {
@@ -43,12 +53,14 @@ const App = () => {
         const sheets = wb.SheetNames;
 
         if (sheets.length) {
-          const rowsUNIMTRN = utils.sheet_to_json(wb.Sheets[sheets[3]]);
+          const rowsUNIMTRN = utils.sheet_to_json(wb.Sheets[sheets[0]]);
           setDataUNIMTRN(rowsUNIMTRN);
           const rowHi = utils.sheet_to_json(wb.Sheets[sheets[1]]);
           setDataHi(rowHi);
-          const rowMihonor = utils.sheet_to_json(wb.Sheets[sheets[4]]);
+          const rowMihonor = utils.sheet_to_json(wb.Sheets[sheets[2]]);
           setDataMihonor(rowMihonor);
+          const rowVseMi = utils.sheet_to_json(wb.Sheets[sheets[3]]);
+          setDataVseMi(rowVseMi);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -95,6 +107,9 @@ const App = () => {
         {/* MiHonor */}
         <IndexMiHonor el={dataMihonor} mihonorData={mihonor} />
         <IndexMiHonorNotID el={dataMihonor} mihonorData={mihonor} />
+        {/* VseMi */}
+        <IndexVseMi el={dataVsemi} vsemiData={vsemi} />
+        <IndexVseMiNotID el={dataVsemi} vsemiData={vsemi} />
       </div>
     </div>
   );
