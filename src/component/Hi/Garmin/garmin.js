@@ -1,3 +1,3 @@
-export const returnGarmin = (name) => {
+export const returnGarminHi = (name) => {
     return name.indexOf("Garmin") != -1
 }

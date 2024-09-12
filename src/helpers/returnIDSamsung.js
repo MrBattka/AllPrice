@@ -775,7 +775,8 @@ export const returnIDSamsung = (name) => {
     return 30982;
   } else if (name.indexOf("s24 8/128 onyx black") != -1) {
     return 30973;
-  } else if (name.indexOf("s24 8/128 sandstone orange") != -1) {
+  } else if (name.indexOf("s24 8/128 sandstone orange") != -1 ||
+  name.indexOf("s24 8/128 sandstore orange") != -1) {
     return 35774;
   } else if (name.indexOf("s24 8/128 sapphire blue") != -1) {
     return 35825;

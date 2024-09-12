@@ -1,4 +1,4 @@
-export const returnApple = (name) => {
+export const returnAppleHi = (name) => {
   return (
     name.indexOf("AirPods") != -1 ||
     name.indexOf("Airpods") != -1 ||

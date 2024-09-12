@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import style from "./styles.module.css";
-import { fixName } from "./helpers/helpers";
 import { baseFixSuperPrice } from "../../helpers/baseFix";
-import { returnIDApple } from "../../helpers/returnIDApple";
 import { newPrice } from "../../helpers/NewPrice";
+import { returnIDApple } from "../../helpers/returnIDApple";
 import BasicTable from "../Create Table/Table";
+import { fixNameSuperPrice } from "./helpers/helpers";
+import style from "./styles.module.css";
 
 const IndexSuperPriceNotID = ({ el, superpriceData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,13 +19,13 @@ const IndexSuperPriceNotID = ({ el, superpriceData }) => {
     )
      {
       return (
-        returnIDApple(fixName(superprice.name)) === 'No match' &&
+        returnIDApple(fixNameSuperPrice(superprice.name)) === 'No match' &&
         newPrice(superprice.name, superprice.price) &&
         superprice.price &&
         resultArr.push({
-          id: returnIDApple(fixName(superprice.name)),
-          name: fixName(superprice.name),
-          extraPrice: newPrice(fixName(superprice.name), superprice.price),
+          id: returnIDApple(fixNameSuperPrice(superprice.name)),
+          name: fixNameSuperPrice(superprice.name),
+          extraPrice: newPrice(fixNameSuperPrice(superprice.name), superprice.price),
           stockPrice: superprice.price,
           provider: "Super Price",
         })

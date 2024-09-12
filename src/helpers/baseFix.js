@@ -151,3 +151,20 @@ export const baseFixSuperPrice = (el) => {
     (toLowerCase === "airpods 2" ? toLowerCase.indexOf("airpods 2") == -1 : toLowerCase)
   );
 };
+
+export const baseFixGarmin = (el) => {
+  let toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("———") == -1 &&
+    toLowerCase.indexOf("кабель") == -1 &&
+    toLowerCase.indexOf("артикул") == -1 &&
+    toLowerCase.indexOf("связи") == -1 &&
+    toLowerCase.indexOf("khalidvu_opt") == -1 &&
+    toLowerCase.indexOf("ссылка") == -1 &&
+    toLowerCase.indexOf("t.me") == -1 &&
+    toLowerCase.indexOf("горбушка") == -1 &&
+    toLowerCase.indexOf("павильон") == -1 &&
+    toLowerCase.indexOf("apple_garmin") == -1 &&
+    toLowerCase.indexOf("карабин") == -1 
+  );
+};

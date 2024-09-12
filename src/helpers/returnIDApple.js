@@ -1,6 +1,7 @@
 import { returnIDSamsung } from "./returnIDSamsung";
 
-export const returnIDApple = (name) => {
+export const returnIDApple = (nameStock) => {
+  const name = nameStock.toLowerCase()
   //  AirPods
   if (name.indexOf("airpods 2 ") != -1) {
     return 12529;

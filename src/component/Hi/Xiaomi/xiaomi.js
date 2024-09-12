@@ -1,4 +1,4 @@
-export const returnXiaomi = (name) => {
+export const returnXiaomiHi = (name) => {
   return (
     name.indexOf("Redmi Buds") != -1 ||
     name.indexOf("Mi ") != -1 ||

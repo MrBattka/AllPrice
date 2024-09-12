@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { baseFixMiHonor } from "../../helpers/baseFix";
-import style from "./styles.module.css";
-import {
-  fixName,
-  returnExtraPrice,
-  returnNameInArr,
-  returnStockPrice,
-} from "./helpers/helpers";
 import { returnIDApple } from "../../helpers/returnIDApple";
 import BasicTable from "../Create Table/Table";
+import {
+  fixNameMihonor,
+  returnExtraPriceMihonor,
+  returnNameInArrMihonor,
+  returnStockPriceMihonor
+} from "./helpers/helpers";
+import style from "./styles.module.css";
 
 const IndexMiHonorNotID = ({ el, mihonorData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
   mihonorData.map((mihonor) => {
-    baseFixMiHonor(mihonor) && returnStockPrice(fixName(mihonor.name));
-    baseFixMiHonor(mihonor) && returnExtraPrice(fixName(mihonor.name));
+    baseFixMiHonor(mihonor) && returnStockPriceMihonor(fixNameMihonor(mihonor.name));
+    baseFixMiHonor(mihonor) && returnExtraPriceMihonor(fixNameMihonor(mihonor.name));
     if (
       mihonor.name &&
       typeof mihonor.name === "string" &&
@@ -25,14 +25,14 @@ const IndexMiHonorNotID = ({ el, mihonorData }) => {
     )
      {
       return (
-        returnIDApple(fixName(mihonor.name)) === 'No match' &&
-        returnExtraPrice(mihonor.name) &&
-        returnStockPrice(mihonor.name) &&
+        returnIDApple(fixNameMihonor(mihonor.name)) === 'No match' &&
+        returnExtraPriceMihonor(mihonor.name) &&
+        returnStockPriceMihonor(mihonor.name) &&
         resultArr.push({
-          id: returnIDApple(returnNameInArr(fixName(mihonor.name))),
-          name: returnNameInArr(fixName(mihonor.name)),
-          extraPrice: returnExtraPrice(fixName(mihonor.name)),
-          stockPrice: returnStockPrice(fixName(mihonor.name)),
+          id: returnIDApple(returnNameInArrMihonor(fixNameMihonor(mihonor.name))),
+          name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
+          extraPrice: returnExtraPriceMihonor(fixNameMihonor(mihonor.name)),
+          stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
           provider: "MiHonor",
         })
       );

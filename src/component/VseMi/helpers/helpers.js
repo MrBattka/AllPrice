@@ -1,6 +1,6 @@
 import { newPrice } from "../../../helpers/NewPrice";
 
-export const returnNameInArr = (name) => {
+export const returnNameInArrVseMi = (name) => {
   let reverseStrName = name.split("").reverse().join("");
   let splitPrice = /\s(.+)/.exec(reverseStrName)[1];
   let replaceStick = /\s(.+)/.exec(splitPrice)[1]
@@ -9,7 +9,7 @@ export const returnNameInArr = (name) => {
   return reverseBackStrName;
 };
 
-export const returnStockPrice = (name) => {
+export const returnStockPriceVseMi = (name) => {
     let reverseStrName = name.split("").reverse().join("");
     let splitPrice = reverseStrName.split(' ')[0]
     let reverseBackStrName = splitPrice.split("").reverse().join("");
@@ -17,23 +17,22 @@ export const returnStockPrice = (name) => {
     return reverseBackStrName;
   };
 
-  export const returnExtraPrice = (name) => {
+  export const returnExtraPriceVseMi = (name) => {
     let reverseStrName = name.split("").reverse().join("");
     let splitPrice = reverseStrName.split(' ')[0]
     let reverseBackStrName = splitPrice.split("").reverse().join("");
   
-    return newPrice(returnNameInArr(name), reverseBackStrName);
+    return newPrice(returnNameInArrVseMi(name), reverseBackStrName);
   };
 
-export const fixName = (name) => {
-  const toLowerCase = name.toLowerCase();
-  const replaceDualsensIcon = toLowerCase.replace("🎮", "");
-  const replacer510 = replaceDualsensIcon.replace("r510 ", "");
-  const replacer920 = replacer510.replace("r920 ", "");
-  const replacer940 = replacer920.replace("r940 ", "");
+export const fixNameVseMi = (name) => {
+  // const toLowerCase = name.toLowerCase();
+  const replaceDualsensIcon = name.replace("🎮", "");
+  const replacer510 = replaceDualsensIcon.replace("R510 ", "");
+  const replacer920 = replacer510.replace("R920 ", "");
+  const replacer940 = replacer920.replace("R940 ", "");
   const replacemm = replacer940.replace("mm", "");
-  const replacehd08 = replacemm.replace("gift set vinca ", "");
+  const replacehd08 = replacemm.replace("Gift Set Vinca ", "");
   
-
   return replacehd08;
 };

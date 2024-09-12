@@ -2,22 +2,22 @@ import React, { useState } from "react";
 import { baseFixHi } from "../../helpers/baseFix";
 import { returnIDApple } from "../../helpers/returnIDApple";
 import BasicTable from "../Create Table/Table";
-import { returnApple } from "./Apple/apple";
-import { returnDyson } from "./Dyson/dyson";
-import { returnGarmin } from "./Garmin/garmin";
-import { returnGoogle } from "./Google/google";
+import { returnAppleHi } from "./Apple/apple";
+import { returnDysonHi } from "./Dyson/dyson";
+import { returnGarminHi } from "./Garmin/garmin";
+import { returnGoogleHi } from "./Google/google";
 import {
-  fixName,
-  returnExtraPrice,
-  returnNameInArr,
-  returnStockPrice,
+  fixNameHi,
+  returnExtraPriceHi,
+  returnNameInArrHi,
+  returnStockPriceHi
 } from "./helpers/helpers";
-import { returnSamsung } from "./Samsung/samsung";
+import { returnSamsungHi } from "./Samsung/samsung";
 import style from "./styles.module.css";
-import { returnXiaomi } from "./Xiaomi/xiaomi";
+import { returnXiaomiHi } from "./Xiaomi/xiaomi";
 
 const IndexHiNotID = ({ el, hi, main }) => {
-  const [isOpenNotID, setIsOpenNotID] = useState(false)
+  const [isOpenNotID, setIsOpenNotID] = useState(false);
   const resultArr = [];
 
   hi.map((hi) => {
@@ -26,22 +26,22 @@ const IndexHiNotID = ({ el, hi, main }) => {
       typeof hi.name === "string" &&
       baseFixHi(hi) &&
       isOpenNotID &&
-      (returnApple(hi.name) ||
-        returnSamsung(hi.name) ||
-        returnXiaomi(hi.name) ||
-        returnGoogle(hi.name) ||
-        returnGarmin(hi.name) ||
-        returnDyson(hi.name))
+      (returnAppleHi(hi.name) ||
+        returnSamsungHi(hi.name) ||
+        returnXiaomiHi(hi.name) ||
+        returnGoogleHi(hi.name) ||
+        returnGarminHi(hi.name) ||
+        returnDysonHi(hi.name))
     ) {
       return (
-        returnIDApple(fixName(hi.name)) === 'No match' &&
-        returnExtraPrice(hi.name) &&
-        returnStockPrice(hi.name) &&
+        returnIDApple(fixNameHi(hi.name)) === "No match" &&
+        returnExtraPriceHi(hi.name) &&
+        returnStockPriceHi(hi.name) &&
         resultArr.push({
-          id: returnIDApple(fixName(hi.name)),
-          name: returnNameInArr(fixName(hi.name)),
-          extraPrice: returnExtraPrice(hi.name),
-          stockPrice: returnStockPrice(hi.name),
+          id: returnIDApple(fixNameHi(hi.name)),
+          name: returnNameInArrHi(fixNameHi(hi.name)),
+          extraPrice: returnExtraPriceHi(hi.name),
+          stockPrice: returnStockPriceHi(hi.name),
           provider: "Hi",
         })
       );
@@ -52,7 +52,10 @@ const IndexHiNotID = ({ el, hi, main }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpenNotID(!isOpenNotID)}>
+          <span
+            className={style.title}
+            onClick={() => setIsOpenNotID(!isOpenNotID)}
+          >
             {isOpenNotID ? "Hi (Сема) Not ID ▲" : "Hi (Сема) Not ID ▼"}
           </span>
         )}

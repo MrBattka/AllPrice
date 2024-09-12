@@ -12,19 +12,26 @@ import IndexVseMi from "./component/VseMi/indexVseMi";
 import IndexVseMiNotID from "./component/VseMi/indexVseMiNotID";
 import IndexSuperPrice from "./component/SuperPrice/indexSuperPrice";
 import IndexSuperPriceNotID from "./component/SuperPrice/indexSuperPriceNotID";
+import AllPrice from "./component/AllPrice/AllPrice";
+import IndexGarmin from "./component/Garmin/indexGarmin";
 
 const App = () => {
+  const allPrice = [];
+  const [openAllPrice, setOpenAllPrice] = useState(false);
+
   const [dataHi, setDataHi] = useState([]);
   const [dataUNIMTRN, setDataUNIMTRN] = useState([]);
   const [dataMihonor, setDataMihonor] = useState([]);
   const [dataVsemi, setDataVseMi] = useState([]);
-  const [dataSuperprice, setDataSuperprice] = useState([])
+  const [dataSuperprice, setDataSuperprice] = useState([]);
+  const [dataGarmin, setDataGarmin] = useState([]);
 
   const unimtrn = [];
   const hi = [];
   const mihonor = [];
   const vsemi = [];
-  const superprice = []
+  const superprice = [];
+  const garmin = []
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -50,7 +57,16 @@ const App = () => {
   dataSuperprice.map((superpriceEl) => {
     superpriceEl.Наименование &&
       typeof superpriceEl.Наименование === "string" &&
-      superprice.push({ name: superpriceEl.Наименование, price: superpriceEl.Прайс || superpriceEl.Опт });
+      superprice.push({
+        name: superpriceEl.Наименование || superpriceEl.Название,
+        price: superpriceEl.Прайс || superpriceEl.Опт || superpriceEl.Цена,
+      });
+  });
+
+  dataGarmin.map((garminEl) => {
+    garminEl.Garmin &&
+      typeof garminEl.Garmin === "string" &&
+      garmin.push({ name: garminEl.Garmin });
   });
 
   const handleImport = ($event) => {
@@ -73,6 +89,8 @@ const App = () => {
           setDataVseMi(rowVseMi);
           const rowSuperprice = utils.sheet_to_json(wb.Sheets[sheets[4]]);
           setDataSuperprice(rowSuperprice);
+          const rowGarmin = utils.sheet_to_json(wb.Sheets[sheets[5]]);
+          setDataGarmin(rowGarmin);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -123,8 +141,23 @@ const App = () => {
         <IndexVseMi el={dataVsemi} vsemiData={vsemi} />
         <IndexVseMiNotID el={dataVsemi} vsemiData={vsemi} />
         {/* Super Price */}
-        <IndexSuperPrice el={dataSuperprice} superpriceData={superprice} />
-        <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} /> 
+        <IndexSuperPrice
+          el={dataSuperprice}
+          superpriceData={superprice}
+          allPrice={allPrice}
+          setOpenAllPrice={setOpenAllPrice}
+        />
+        <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} />
+        {/* Garmin */}
+        <IndexGarmin el={dataGarmin} garminData={garmin} />
+        {/* All Price */}
+        <AllPrice
+          dataSuperprice={superprice}
+          dataVsemi={vsemi}
+          dataUnimtrn={dataUNIMTRN}
+          dataHi={hi}
+          dataMihonor={mihonor}
+        />
       </div>
     </div>
   );

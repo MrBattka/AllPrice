@@ -1,4 +1,4 @@
-export const returnSamsung = (name) => {
+export const returnSamsungHi = (name) => {
   return (
     name.indexOf("Galaxy Buds") != -1 ||
     name.indexOf("Galaxy Smart Tag") != -1 ||

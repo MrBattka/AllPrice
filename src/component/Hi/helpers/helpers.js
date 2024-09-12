@@ -1,6 +1,6 @@
 import { newPrice } from "../../../helpers/NewPrice";
 
-export const returnNameInArr = (name) => {
+export const returnNameInArrHi = (name) => {
   if (
     name?.indexOf("🇪🇺") != -1 ||
     name?.indexOf("🇷🇺") != -1 ||
@@ -65,7 +65,7 @@ export const returnNameInArr = (name) => {
   }
 };
 
-export const returnExtraPrice = (name) => {
+export const returnExtraPriceHi = (name) => {
   if (
     name?.indexOf("🇪🇺") != -1 ||
     name?.indexOf("🇷🇺") != -1 ||
@@ -202,7 +202,7 @@ export const returnExtraPrice = (name) => {
   }
 };
 
-export const returnStockPrice = (name) => {
+export const returnStockPriceHi = (name) => {
   if (
     name?.indexOf("🇪🇺") != -1 ||
     name?.indexOf("🇷🇺") != -1 ||
@@ -294,247 +294,254 @@ export const returnStockPrice = (name) => {
   }
 };
 
-export const fixName = (name) => {
-  const toLowercase = name.toLowerCase();
-  const removeDoubleSpace = toLowercase.replace(/\s+/g, " ");
-
-  const fixPlus = removeDoubleSpace.replace("s24 +", "s24+");
+export const fixNameHi = (name) => {
+  // const toLowercase = name.toLowerCase();
+  const removeDoubleSpace = name.replace(/\s+/g, " ");
+  
+  const fixPlus = removeDoubleSpace.replace("S24 +", "S24+");
   const fixMarbleGray = fixPlus.replace(
-    "s24 8/128 gray",
-    "s24 8/128 marble gray"
+  "S24 8/128 Gray",
+  "S24 8/128 Marble Gray"
   );
   const fixCobaltViolet = fixMarbleGray.replace(
-    "s24 8/128 violet",
-    "s24 8/128 cobalt violet"
+  "S24 8/128 Violet",
+  "S24 8/128 Cobalt Violet"
   );
   const fixAmberYellow = fixCobaltViolet.replace(
-    "s24 8/128 yellow",
-    "s24 8/128 amber yellow"
+  "S24 8/128 Yellow",
+  "S24 8/128 Amber Yellow"
   );
   const fixJadeGreen = fixAmberYellow.replace(
-    "s24 8/128 green",
-    "s24 8/128 jade green"
+  "S24 8/128 Green",
+  "S24 8/128 Jade Green"
   );
   const fixSandstoneOrange = fixJadeGreen.replace(
-    "s24 8/128 orange",
-    "s24 8/128 sandstone orange"
+  "S24 8/128 Orange",
+  "S24 8/128 Sandstone Orange"
   );
-  const fixSapphireBlue = fixSandstoneOrange.replace(
-    "s24 8/128 blue",
-    "s24 8/128 sapphire blue"
+  const fixSandstoreOrange = fixSandstoneOrange.replace(
+    "S24 8/128 Orange",
+    "S24 8/128 Sandstore Orange"
+    );
+  const fixSapphireBlue = fixSandstoreOrange.replace(
+  "S24 8/128 Blue",
+  "S24 8/128 Sapphire Blue"
   );
-
+  
   const fixMarbleGray256 = fixSapphireBlue.replace(
-    "s24 8/256 gray",
-    "s24 8/256 marble gray"
+  "S24 8/256 Gray",
+  "S24 8/256 Marble Gray"
   );
   const fixCobaltViolet256 = fixMarbleGray256.replace(
-    "s24 8/256 violet",
-    "s24 8/256 cobalt violet"
+  "S24 8/256 Violet",
+  "S24 8/256 Cobalt Violet"
   );
   const fixAmberYellow256 = fixCobaltViolet256.replace(
-    "s24 8/256 yellow",
-    "s24 8/256 amber yellow"
+  "S24 8/256 Yellow",
+  "S24 8/256 Amber Yellow"
   );
   const fixOnyxBlack256 = fixAmberYellow256.replace(
-    "s24 8/256 black",
-    "s24 8/256 onyx black"
+  "S24 8/256 Black",
+  "S24 8/256 Onyx Black"
   );
   const fixJadeGreen256 = fixOnyxBlack256.replace(
-    "s24 8/256 green",
-    "s24 8/256 jade green"
+  "S24 8/256 Green",
+  "S24 8/256 Jade Green"
   );
   const fixSandstoneOrange256 = fixJadeGreen256.replace(
-    "s24 8/256 orange",
-    "s24 8/256 sandstone orange"
+  "S24 8/256 Orange",
+  "S24 8/256 Sandstone Orange"
   );
   const fixSapphireBlue256 = fixSandstoneOrange256.replace(
-    "s24 8/256 blue",
-    "s24 8/256 sapphire blue"
+  "S24 8/256 Blue",
+  "S24 8/256 Sapphire Blue"
   );
-
+  
   const fixMarbleGray12256 = fixSapphireBlue256.replace(
-    "s24 12/256 gray",
-    "s24 12/256 marble gray"
+  "S24 12/256 Gray",
+  "S24 12/256 Marble Gray"
   );
   const fixCobaltViolet12256 = fixMarbleGray12256.replace(
-    "s24 12/256 violet",
-    "s24 12/256 cobalt violet"
+  "S24 12/256 Violet",
+  "S24 12/256 Cobalt Violet"
   );
   const fixAmberYellow12256 = fixCobaltViolet12256.replace(
-    "s24 12/256 yellow",
-    "s24 12/256 amber yellow"
+  "S24 12/256 Yellow",
+  "S24 12/256 Amber Yellow"
   );
   const fixOnyxBlack12256 = fixAmberYellow12256.replace(
-    "s24 12/256 black",
-    "s24 12/256 onyx black"
+  "S24 12/256 Black",
+  "S24 12/256 Onyx Black"
   );
   const fixJadeGreen12256 = fixOnyxBlack12256.replace(
-    "s24 12/256 green",
-    "s24 12/256 jade green"
+  "S24 12/256 Green",
+  "S24 12/256 Jade Green"
   );
   const fixSandstoneOrange12256 = fixJadeGreen12256.replace(
-    "s24 12/256 orange",
-    "s24 12/256 sandstone orange"
+  "S24 12/256 Orange",
+  "S24 12/256 Sandstone Orange"
   );
   const fixSapphireBlue12256 = fixSandstoneOrange12256.replace(
-    "s24 12/256 blue",
-    "s24 12/256 sapphire blue"
+  "S24 12/256 Blue",
+  "S24 12/256 Sapphire Blue"
   );
-
+  
   const fixMarbleGray12512 = fixSapphireBlue12256.replace(
-    "s24 12/512 gray",
-    "s24 12/512 marble gray"
+  "S24 12/512 Gray",
+  "S24 12/512 Marble Gray"
   );
   const fixCobaltViolet12512 = fixMarbleGray12512.replace(
-    "s24 12/512 violet",
-    "s24 12/512 cobalt violet"
+  "S24 12/512 Violet",
+  "S24 12/512 Cobalt Violet"
   );
   const fixAmberYellow12512 = fixCobaltViolet12512.replace(
-    "s24 12/512 yellow",
-    "s24 12/512 amber yellow"
+  "S24 12/512 Yellow",
+  "S24 12/512 Amber Yellow"
   );
   const fixOnyxBlack12512 = fixAmberYellow12512.replace(
-    "s24 12/512 black",
-    "s24 12/512 onyx black"
+  "S24 12/512 Black",
+  "S24 12/512 Onyx Black"
   );
   const fixJadeGreen12512 = fixOnyxBlack12512.replace(
-    "s24 12/512 green",
-    "s24 12/512 jade green"
+  "S24 12/512 Green",
+  "S24 12/512 Jade Green"
   );
   const fixSandstoneOrange12512 = fixJadeGreen12512.replace(
-    "s24 12/512 orange",
-    "s24 12/512 sandstone orange"
+  "S24 12/512 Orange",
+  "S24 12/512 Sandstone Orange"
   );
   const fixSapphireBlue12512 = fixSandstoneOrange12512.replace(
-    "s24 12/512 blue",
-    "s24 12/512 sapphire blue"
+  "S24 12/512 Blue",
+  "S24 12/512 Sapphire Blue"
   );
-
+  
   const fixMarbleGrayPlus12256 = fixSapphireBlue12512.replace(
-    "s24+ 12/256 gray",
-    "s24+ 12/256 marble gray"
+  "S24+ 12/256 Gray",
+  "S24+ 12/256 Marble Gray"
   );
   const fixCobaltVioletPlus12256 = fixMarbleGrayPlus12256.replace(
-    "s24+ 12/256 violet",
-    "s24+ 12/256 cobalt violet"
+  "S24+ 12/256 Violet",
+  "S24+ 12/256 Cobalt Violet"
   );
   const fixAmberYellowPlus12256 = fixCobaltVioletPlus12256.replace(
-    "s24+ 12/256 yellow",
-    "s24+ 12/256 amber yellow"
+  "S24+ 12/256 Yellow",
+  "S24+ 12/256 Amber Yellow"
   );
   const fixOnyxBlackPlus12256 = fixAmberYellowPlus12256.replace(
-    "s24+ 12/256 black",
-    "s24+ 12/256 onyx black"
+  "S24+ 12/256 Black",
+  "S24+ 12/256 Onyx Black"
   );
   const fixJadeGreenPlus12256 = fixOnyxBlackPlus12256.replace(
-    "s24+ 12/256 green",
-    "s24+ 12/256 jade green"
+  "S24+ 12/256 Green",
+  "S24+ 12/256 Jade Green"
   );
   const fixSandstoneOrangePlus12256 = fixJadeGreenPlus12256.replace(
-    "s24+ 12/256 orange",
-    "s24+ 12/256 sandstone orange"
+  "S24+ 12/256 Orange",
+  "S24+ 12/256 Sandstone Orange"
   );
   const fixSapphireBluePlus12256 = fixSandstoneOrangePlus12256.replace(
-    "s24+ 12/256 blue",
-    "s24+ 12/256 sapphire blue"
+  "S24+ 12/256 Blue",
+  "S24+ 12/256 Sapphire Blue"
   );
-
+  
   const fixMarbleGrayPlus12512 = fixSapphireBluePlus12256.replace(
-    "s24+ 12/512 gray",
-    "s24+ 12/512 marble gray"
+  "S24+ 12/512 Gray",
+  "S24+ 12/512 Marble Gray"
   );
   const fixCobaltVioletPlus12512 = fixMarbleGrayPlus12512.replace(
-    "s24+ 12/512 violet",
-    "s24+ 12/512 cobalt violet"
+  "S24+ 12/512 Violet",
+  "S24+ 12/512 Cobalt Violet"
   );
   const fixAmberYellowPlus12512 = fixCobaltVioletPlus12512.replace(
-    "s24+ 12/512 yellow",
-    "s24+ 12/512 amber yellow"
+  "S24+ 12/512 Yellow",
+  "S24+ 12/512 Amber Yellow"
   );
   const fixOnyxBlackPlus12512 = fixAmberYellowPlus12512.replace(
-    "s24+ 12/512 black",
-    "s24+ 12/512 onyx black"
+  "S24+ 12/512 Black",
+  "S24+ 12/512 Onyx Black"
   );
   const fixJadeGreenPlus12512 = fixOnyxBlackPlus12512.replace(
-    "s24+ 12/512 green",
-    "s24+ 12/512 jade green"
+  "S24+ 12/512 Green",
+  "S24+ 12/512 Jade Green"
   );
   const fixSandstoneOrangePlus12512 = fixJadeGreenPlus12512.replace(
-    "s24+ 12/512 orange",
-    "s24+ 12/512 sandstone orange"
+  "S24+ 12/512 Orange",
+  "S24+ 12/512 Sandstone Orange"
   );
   const fixSapphireBluePlus12512 = fixSandstoneOrangePlus12512.replace(
-    "s24+ 12/512 blue",
-    "s24+ 12/512 sapphire blue"
+  "S24+ 12/512 Blue",
+  "S24+ 12/512 Sapphire Blue"
   );
-
-  const fixZFlip5 = fixSapphireBluePlus12512.replace("z flip5", "z flip 5");
-  const fixBeige = fixZFlip5.replace("beigie", "beige");
-  const fixS95g = fixBeige.replace("tab s9 5g 8/128", "tab s9 8/128 lte");
-  const fixOrange = fixS95g.replace("orange beige", "orange");
-  const fixGray = fixOrange.replace("green gray", "gray");
-  const fixTabs9Plus = fixGray.replace("s9 +", "s9+");
-  const fixTabs9FE = fixTabs9Plus.replace("fe +", "fe+");
-  const fixMM = fixTabs9FE.replace("mm", "");
-  const fixBlackBlue = fixMM.replace("black blue", "blue/black");
-  const fixIceBlue = fixBlackBlue.replace("ice blue", "iceblue");
-  const fixLavender = fixIceBlue.replace("lavander", "lavender");
-  const fixZFold5 = fixLavender.replace("z fold5", "z fold 5");
-  const fix13C = fixZFold5.replace("13с", "13c");
-
-  const fixA256128 = fix13C.replace("a25 6/128 black", "a25 6/128 blue/black");
+  
+  const fixZFlip5 = fixSapphireBluePlus12512.replace("Z Flip5", "Z Flip 5");
+  const fixZFlip6 = fixZFlip5.replace("Z Flip6", "Z Flip 6");
+  const fixBeige = fixZFlip6.replace("Beigie", "Beige");
+  const fixS95g = fixBeige.replace("Tab S9 5g 8/128", "Tab S9 8/128 lte");
+  const fixOrange = fixS95g.replace("Orange Beige", "Orange");
+  const fixGray = fixOrange.replace("Green Gray", "Gray");
+  const fixTabS9Plus = fixGray.replace("S9 +", "S9+");
+  const fixTabS9FE = fixTabS9Plus.replace("FE +", "FE+");
+  const fixMM = fixTabS9FE.replace("mm", "");
+  const fixBlackBlue = fixMM.replace("Black Blue", "Blue/Black");
+  const fixIceBlue = fixBlackBlue.replace("Ice Blue", "IceBlue");
+  const fixLavender = fixIceBlue.replace("Lavender", "Lavender");
+  const fixZFold5 = fixLavender.replace("Z Fold5", "Z Fold 5");
+  const fixZFold6 = fixZFold5.replace("Z Fold6", "Z Fold 6");
+  const fix13C = fixZFold6.replace("13C", "13c");
+  
+  const fixA256128 = fix13C.replace("A25 6/128 Black", "A25 6/128 Blue/Black");
   const fixA258128 = fixA256128.replace(
-    "a25 8/128 black",
-    "a25 8/128 blue/black"
+  "A25 8/128 Black",
+  "A25 8/128 Blue/Black"
   );
   const fixF258256 = fixA258128.replace(
-    "a25 8/256 black",
-    "a25 8/256 blue/black"
+  "A25 8/256 Black",
+  "A25 8/256 Blue/Black"
   );
-
+  
   const fixS248128 = fixF258256.replace(
-    "s24 8/128 yellow",
-    "s24 8/128 amber yellow"
+  "S24 8/128 Yellow",
+  "S24 8/128 Amber Yellow"
   );
   const fixS248256 = fixS248128.replace(
-    "s24 8/256 yellow",
-    "s24 8/256 amber yellow"
+  "S24 8/256 Yellow",
+  "S24 8/256 Amber Yellow"
   );
   const fixS248512 = fixS248256.replace(
-    "s24 8/512 yellow",
-    "s24 8/512 amber yellow"
+  "S24 8/512 Yellow",
+  "S24 8/512 Amber Yellow"
   );
   const fixS2412256 = fixS248512.replace(
-    "s24 12/256 yellow",
-    "s24 12/256 amber yellow"
+  "S24 12/256 Yellow",
+  "S24 12/256 Amber Yellow"
   );
-
+  
   const fixZFold5121 = fixS2412256.replace(
-    "z fold 5 12/1tb iceblue",
-    "	z fold 5 12/1tb icy blue"
+  "Z Fold 5 12/1tb IceBlue",
+  " Z Fold 5 12/1tb Icy Blue"
   );
   const fixZFold512512 = fixZFold5121.replace(
-    "z fold 5 12/512 iceblue",
-    "	z fold 5 12/512 icy blue"
+  "Z Fold 5 12/512 IceBlue",
+  " Z Fold 5 12/512 Icy Blue"
   );
   const fixZFold12256 = fixZFold512512.replace(
-    "z fold 5 12/256 iceblue",
-    "	z fold 5 12/256 icy blue"
+  "Z Fold 5 12/256 IceBlue",
+  " Z Fold 5 12/256 Icy Blue"
   );
-
-  const removeLightGreen = fixZFold12256.replace("light green", "green");
-  const removeLightViolet = removeLightGreen.replace("light violet", "violet");
-
-  const removeWatch4 = removeLightViolet.replace("watch4", "watch 4");
-  const removeWatch5 = removeWatch4.replace("watch5", "watch 5");
-  const removeWatch6 = removeWatch5.replace("watch6", "watch 6");
-  const removeWatch7 = removeWatch6.replace("watch7", "watch 7");
-
-  const removeWatchS8 = removeWatch7.replace("s 8 ", "s8 ");
-  const removeWatchS9 = removeWatchS8.replace("s 9 ", "s9 ");
-
-  const fixBlueBlack = removeWatchS9.replace("blue black", "blue/black");
-
-  return fixBlueBlack.replace("s24 8/128 black", "s24 8/128 onyx black");
-};
+  
+  const removeLightGreen = fixZFold12256.replace("Light Green", "Green");
+  const removeLightViolet = removeLightGreen.replace("Light Violet", "Violet");
+  
+  const removeWatch4 = removeLightViolet.replace("Watch4", "Watch 4");
+  const removeWatch5 = removeWatch4.replace("Watch5", "Watch 5");
+  const removeWatch6 = removeWatch5.replace("Watch6", "Watch 6");
+  const removeWatch7 = removeWatch6.replace("Watch7", "Watch 7");
+  
+  const removeWatchS8 = removeWatch7.replace("S 8 ", "S8 ");
+  const removeWatchS9 = removeWatchS8.replace("S 9 ", "S9 ");
+  
+  const fixBlueBlack = removeWatchS9.replace("Blue Black", "Blue/Black");
+  const fixGrey = fixBlueBlack.replace("Grey", "Gray");
+  
+  return fixGrey.replace("S24 8/128 Black", "S24 8/128 Onyx Black");
+  };

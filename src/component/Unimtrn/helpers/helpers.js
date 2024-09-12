@@ -405,10 +405,10 @@ export const fixNameUnimtrn = (el) => {
 
   const fixProMax = replaceiPadSpaceBlackLTE.replace(proMax, "Pro Max");
 
-  const toLowerCase = fixProMax.toLowerCase();
+  // const toLowerCase = fixProMax.toLowerCase();
 
-  const removeLightGreen = toLowerCase.replace("light green", "green");
-  const removeLightViolet = removeLightGreen.replace("light violet", "violet");
+  const removeLightGreen = fixProMax.replace("Light Green", "Green");
+  const removeLightViolet = removeLightGreen.replace("Light Violet", "Violet");
 
   return removeLightViolet;
 };

@@ -1,3 +1,3 @@
-export const returnGoogle = (name) => {
+export const returnGoogleHi = (name) => {
   return name.indexOf("Pixel") != -1
 };
