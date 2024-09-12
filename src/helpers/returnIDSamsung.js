@@ -190,7 +190,8 @@ export const returnIDSamsung = (name) => {
     return 35914;
   } else if (
     name.indexOf("a35 6/128 navy") != -1 ||
-    name.indexOf("a35 6/128 black") != -1
+    name.indexOf("a35 6/128 black") != -1 ||
+    name.indexOf("a35 6/128 navy") != -1
   ) {
     return 35912;
   } else if (name.indexOf("a35 6/128 lemon") != -1) {
@@ -2337,7 +2338,8 @@ export const returnIDSamsung = (name) => {
     name.indexOf("galaxy watch 6 classic 43 black") != -1
   ) {
     return 27917;
-  } else if (name.indexOf("galaxy watch6 classic 43 silver") != -1) {
+  } else if (name.indexOf("galaxy watch6 classic 43 silver") != -1 ||
+  name.indexOf("galaxy watch 6 classic 43 silver") != -1) {
     return 27918;
   } else if (
     name.indexOf("galaxy watch6 classic 47 graphite") != -1 ||

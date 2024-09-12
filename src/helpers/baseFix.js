@@ -94,7 +94,8 @@ export const baseFixHi = (el) => {
     el.name?.indexOf("S22 ") == -1 &&
     el.name?.indexOf("Tab A8") == -1 &&
     el.name?.indexOf("Tab S8") == -1 &&
-    el.name?.indexOf("Tab A9") == -1
+    el.name?.indexOf("Tab A9") == -1 &&
+    el.name?.indexOf("🎵 Airpods") == -1
   );
 };
 
@@ -135,7 +136,13 @@ export const baseFixVsemi = (el) => {
     (toLowerCase === "vr" ? toLowerCase.indexOf("vr") == -1 : toLowerCase) &&
     (toLowerCase === "samsung" ? toLowerCase.indexOf("samsung") == -1 : toLowerCase) &&
     (toLowerCase === "dyson" ? toLowerCase.indexOf("dyson") == -1 : toLowerCase) &&
-    (toLowerCase === "jbl" ? toLowerCase.indexOf("jbl") == -1 : toLowerCase)
+    (toLowerCase === "jbl" ? toLowerCase.indexOf("jbl") == -1 : toLowerCase) &&
+    toLowerCase.indexOf("*steam deck*") == -1 &&
+    toLowerCase.indexOf("*gopro*") == -1 &&
+    toLowerCase.indexOf("*vr*") == -1 &&
+    toLowerCase.indexOf("*samsung*") == -1 &&
+    toLowerCase.indexOf("*dyson*") == -1 &&
+    toLowerCase.indexOf("*jbl*") == -1
   );
 };
 
@@ -146,6 +153,7 @@ export const baseFixSuperPrice = (el) => {
     toLowerCase.indexOf("📷") == -1 &&
     toLowerCase.indexOf("🍏") == -1 &&
     toLowerCase.indexOf("➖") == -1 &&
+    toLowerCase.indexOf("adapter") == -1 &&
     toLowerCase.indexOf("🇪🇺 xiaomi 🇪🇺") == -1 &&
     (toLowerCase === "huawei" ? toLowerCase.indexOf("huawei") == -1 : toLowerCase) &&
     (toLowerCase === "airpods 2" ? toLowerCase.indexOf("airpods 2") == -1 : toLowerCase)
@@ -165,6 +173,11 @@ export const baseFixGarmin = (el) => {
     toLowerCase.indexOf("горбушка") == -1 &&
     toLowerCase.indexOf("павильон") == -1 &&
     toLowerCase.indexOf("apple_garmin") == -1 &&
-    toLowerCase.indexOf("карабин") == -1 
+    toLowerCase.indexOf("карабин") == -1 &&
+    toLowerCase.indexOf("наличие") == -1 &&
+    toLowerCase.indexOf("apple") == -1 &&
+    toLowerCase.indexOf("прайс") == -1 &&
+    toLowerCase.indexOf("новинки") == -1 &&
+    toLowerCase.indexOf("fenix 8") == -1
   );
 };

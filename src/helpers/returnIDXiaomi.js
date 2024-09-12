@@ -1,3 +1,5 @@
+import { returnIDGarmin } from "./returnIDGarmin";
+
 export const returnIDXiaomi = (name) => {
   //  Poco
   if (name.indexOf("c65 6/128 black") != -1) {
@@ -1091,6 +1093,6 @@ export const returnIDXiaomi = (name) => {
   ) {
     return 30968;
   } else {
-    return "No match";
+    return returnIDGarmin(name) || "No match";
   }
 };

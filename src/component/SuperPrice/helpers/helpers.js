@@ -23,6 +23,8 @@ export const fixNameSuperPrice = (name) => {
     const fix13tpro5g = fix13t5g.replace("13T Pro 5G", "13T Pro")
     const fix145g = fix13tpro5g.replace("14 5G", "14")
     const fix14ultra5g = fix145g.replace("14 Ultra 5G", "14 Ultra")
+    const fixA155g = fix14ultra5g.replace("A15 5G", "A15")
+    const fixA35Awesome = fixA155g.replace("Awesome ", "")
 
-    return fix14ultra5g
+    return fixA35Awesome
 }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   baseFix,
+  baseFixGarmin,
   baseFixHi,
   baseFixMiHonor,
   baseFixSuperPrice,
@@ -42,6 +43,7 @@ import {
   returnNameInArrMihonor,
   returnStockPriceMihonor,
 } from "../MiHonor/helpers/helpers";
+import { fixNameGarmin, returnExtraPriceGarmin, returnFixNameProductGarmin, returnStockPriceGarmin } from "../Garmin/helpers/helpers";
 
 const AllPrice = ({
   dataSuperprice,
@@ -49,6 +51,7 @@ const AllPrice = ({
   dataUnimtrn,
   dataHi,
   dataMihonor,
+  dataGarmin
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -104,7 +107,7 @@ const AllPrice = ({
     if (
       unimtrn.Товар &&
       returnIDApple(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
-        "No match" &&
+      "No match" &&
       isOpen &&
       baseFix(unimtrn) &&
       (returnApple(unimtrn) ||
@@ -174,6 +177,30 @@ const AllPrice = ({
           name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
           extraPrice: returnExtraPriceMihonor(fixNameMihonor(mihonor.name)),
           provider: "MiHonor",
+        })
+      );
+    }
+  });
+
+  dataGarmin.map((garmin) => {
+    baseFixGarmin(garmin) && returnStockPriceGarmin(fixNameGarmin(garmin.name));
+    baseFixGarmin(garmin) && returnExtraPriceGarmin(fixNameGarmin(garmin.name));
+    if (
+      garmin.name &&
+      typeof garmin.name === "string" &&
+      baseFixGarmin(garmin) &&
+      isOpen
+    ) {
+      return (
+        returnIDApple(fixNameGarmin(garmin.name)) !== 'No match' &&
+        returnExtraPriceGarmin(garmin.name) &&
+        returnStockPriceGarmin(garmin.name) &&
+        allPriceArr.push({
+          id: returnIDApple(returnFixNameProductGarmin(fixNameGarmin(garmin.name))),
+          name: returnFixNameProductGarmin(fixNameGarmin(garmin.name)),
+          extraPrice: returnExtraPriceGarmin(fixNameGarmin(garmin.name)),
+          stockPrice: returnStockPriceGarmin(fixNameGarmin(garmin.name)),
+          provider: "Garmin",
         })
       );
     }

@@ -542,6 +542,12 @@ export const fixNameHi = (name) => {
   
   const fixBlueBlack = removeWatchS9.replace("Blue Black", "Blue/Black");
   const fixGrey = fixBlueBlack.replace("Grey", "Gray");
+
+  const fixA155G = fixGrey.replace("A15 5G", "A15");
+  const fixA255G = fixA155G.replace("A25 5G", "A25");
+  const fixA355G = fixA255G.replace("A35 5G", "A35");
+  const fixA545G = fixA355G.replace("A54 5G", "A54");
+  const fixA555G = fixA545G.replace("A55 5G", "A55");
   
-  return fixGrey.replace("S24 8/128 Black", "S24 8/128 Onyx Black");
+  return fixA555G.replace("S24 8/128 Black", "S24 8/128 Onyx Black");
   };

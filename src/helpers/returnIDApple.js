@@ -4203,13 +4203,13 @@ export const returnIDApple = (nameStock) => {
     name.indexOf("15 pro max 256 white🇺🇸") != -1
   ) {
     return 30365;
-  } else if (name.indexOf("15 pro max 256 black ") != -1) {
+  } else if (name.indexOf("15 pro max 256 black") != -1) {
     return 28270;
-  } else if (name.indexOf("15 pro max 256 blue ") != -1) {
+  } else if (name.indexOf("15 pro max 256 blue") != -1) {
     return 28274;
-  } else if (name.indexOf("15 pro max 256 natural ") != -1) {
+  } else if (name.indexOf("15 pro max 256 natural") != -1) {
     return 28277;
-  } else if (name.indexOf("15 pro max 256 white ") != -1) {
+  } else if (name.indexOf("15 pro max 256 white") != -1) {
     return 28280;
   } else if (
     name.indexOf("15 pro max 512 black 🇨🇳") != -1 ||

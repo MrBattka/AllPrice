@@ -409,6 +409,7 @@ export const fixNameUnimtrn = (el) => {
 
   const removeLightGreen = fixProMax.replace("Light Green", "Green");
   const removeLightViolet = removeLightGreen.replace("Light Violet", "Violet");
+  const removePhantom = removeLightViolet.replace("Phantom ", "");
 
-  return removeLightViolet;
+  return removePhantom;
 };

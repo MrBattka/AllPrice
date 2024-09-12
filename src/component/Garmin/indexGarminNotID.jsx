@@ -5,7 +5,7 @@ import style from "./styles.module.css";
 import { returnIDApple } from "../../helpers/returnIDApple";
 import BasicTable from "../Create Table/Table";
 
-const IndexGarmin = ({ el, garminData }) => {
+const IndexGarminNotID = ({ el, garminData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
@@ -19,7 +19,7 @@ const IndexGarmin = ({ el, garminData }) => {
       isOpen
     ) {
       return (
-        returnIDApple(fixNameGarmin(garmin.name)) !== 'No match' &&
+        returnIDApple(fixNameGarmin(garmin.name)) === 'No match' &&
         returnExtraPriceGarmin(garmin.name) &&
         returnStockPriceGarmin(garmin.name) &&
         resultArr.push({
@@ -39,7 +39,7 @@ const IndexGarmin = ({ el, garminData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Garmin ▲" : "Garmin ▼"}
+            {isOpen ? "Garmin Not ID ▲" : "Garmin Not ID ▼"}
           </span>
         )}
       </div>
@@ -53,4 +53,4 @@ const IndexGarmin = ({ el, garminData }) => {
   );
 };
 
-export default IndexGarmin;
+export default IndexGarminNotID;

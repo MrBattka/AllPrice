@@ -78,6 +78,7 @@ export const fixNameMihonor = (name) => {
 
   const removeLightGreen = remove874wifi.replace("LIGHT GREEN", "green");
   const removeLightViolet = removeLightGreen.replace("LIGHT VIOLET", "violet");
+  const fix1TB = removeLightViolet.replace("+1024GB", "/1Tb")
   
-  return removeLightViolet;
+  return fix1TB;
 };

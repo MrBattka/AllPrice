@@ -14,6 +14,7 @@ import IndexSuperPrice from "./component/SuperPrice/indexSuperPrice";
 import IndexSuperPriceNotID from "./component/SuperPrice/indexSuperPriceNotID";
 import AllPrice from "./component/AllPrice/AllPrice";
 import IndexGarmin from "./component/Garmin/indexGarmin";
+import IndexGarminNotID from "./component/Garmin/indexGarminNotID";
 
 const App = () => {
   const allPrice = [];
@@ -65,6 +66,7 @@ const App = () => {
 
   dataGarmin.map((garminEl) => {
     garminEl.Garmin &&
+    garminEl.Garmin.length > 2 &&
       typeof garminEl.Garmin === "string" &&
       garmin.push({ name: garminEl.Garmin });
   });
@@ -150,6 +152,7 @@ const App = () => {
         <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} />
         {/* Garmin */}
         <IndexGarmin el={dataGarmin} garminData={garmin} />
+        <IndexGarminNotID el={dataGarmin} garminData={garmin} />
         {/* All Price */}
         <AllPrice
           dataSuperprice={superprice}
@@ -157,6 +160,7 @@ const App = () => {
           dataUnimtrn={dataUNIMTRN}
           dataHi={hi}
           dataMihonor={mihonor}
+          dataGarmin={garmin}
         />
       </div>
     </div>
