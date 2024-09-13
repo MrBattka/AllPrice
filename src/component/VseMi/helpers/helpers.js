@@ -33,6 +33,17 @@ export const fixNameVseMi = (name) => {
   const replacer940 = replacer920.replace("R940 ", "");
   const replacemm = replacer940.replace("mm", "");
   const replacehd08 = replacemm.replace("Gift Set Vinca ", "");
+  const replaceGB = replacehd08.replace("GB", "");
+  const fix13ProPlus = replaceGB.replace("13 Pro+", "13 Pro +");
+  const replaceNFC = fix13ProPlus.replace("(NFC)", "");
+  const replace8256G = replaceNFC.replace("8/256G", "8/256");
+  const replace12256G = replace8256G.replace("12/256G", "12/256");
+  const replace12512G = replace12256G.replace("12/512G", "12/512");
+  const fixGrey = replace12512G.replace("Grey", "Gray");
+  const fixgrey = fixGrey.replace("grey", "gray");
+  const fixPixel = fixgrey.replace("Google Pixel", "Pixel");
+  const fix5GObsidian = fixPixel.replace("5G Obsidian", "Obsidian");
+  const fixMiPad = fix5GObsidian.replace("Mi Pad", "Xiaomi Pad");
   
-  return replacehd08;
+  return fixMiPad;
 };

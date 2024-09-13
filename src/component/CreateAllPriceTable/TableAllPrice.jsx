@@ -60,7 +60,7 @@ const TableAllPrice = ({ allPriceArr }) => {
   };
 
   const columns = useMemo(() => COLUMNS, []);
-  const data = useMemo(() => uniqueArr(), []);
+  const data = useMemo(() => allPriceArr, []);
 
   const tableInstance = useTable({
     columns,

@@ -66,6 +66,8 @@ export const returnAppleHi = (name) => {
     name.indexOf("15 Pro 512") != -1 ||
     name.indexOf("15 Pro 1Tb") != -1 ||
     name.indexOf("15 ProMax 256") != -1 ||
+    name.indexOf("15 Pro Max 512") != -1 ||
+    name.indexOf("15 Pro Max 256") != -1 ||
     name.indexOf("15 ProMax 512") != -1 ||
     name.indexOf("15 ProMax 1Tb") != -1 ||
     name.indexOf("15 Pro Max 1TB") != -1 ||

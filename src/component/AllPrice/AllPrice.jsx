@@ -142,14 +142,15 @@ const AllPrice = ({
         returnDysonHi(hi.name))
     ) {
       return (
-        returnIDApple(fixNameHi(hi.name)) !== "No match" &&
+        returnIDApple(fixNameHi(hi.name)) !== 'No match' &&
         returnExtraPriceHi(hi.name) &&
         returnStockPriceHi(hi.name) &&
         allPriceArr.push({
           id: returnIDApple(fixNameHi(hi.name)),
           name: returnNameInArrHi(fixNameHi(hi.name)),
           extraPrice: returnExtraPriceHi(hi.name),
-          provider: "Hi",
+          stockPrice: returnStockPriceHi(hi.name),
+          provider: "Hi"
         })
       );
     }
