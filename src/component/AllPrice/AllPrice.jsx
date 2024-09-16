@@ -44,6 +44,7 @@ import {
   returnStockPriceMihonor,
 } from "../MiHonor/helpers/helpers";
 import { fixNameGarmin, returnExtraPriceGarmin, returnFixNameProductGarmin, returnStockPriceGarmin } from "../Garmin/helpers/helpers";
+import { returnXiaomi } from "../Unimtrn/Xiaomi/xiaomi";
 
 const AllPrice = ({
   dataSuperprice,
@@ -113,6 +114,7 @@ const AllPrice = ({
       (returnApple(unimtrn) ||
         returnDyson(unimtrn) ||
         returnSamsung(unimtrn) ||
+        returnXiaomi(unimtrn) ||
         returnGameConsole(unimtrn) ||
         returnOtherProduct(unimtrn))
     ) {

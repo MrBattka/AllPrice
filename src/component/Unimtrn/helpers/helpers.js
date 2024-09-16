@@ -52,7 +52,8 @@ let realme = /T.Realme/gi;
 
 export const fixNameUnimtrn = (el) => {
   const fixGb = el.Товар?.replace(gb, "");
-  const fixIPad9 = fixGb.replace(IPad9, "iPad 9");
+  const removeDoubleSpace = fixGb.replace(/\s+/g, " ");
+  const fixIPad9 = removeDoubleSpace.replace(IPad9, "iPad 9");
   const fixWiSpaceFi = fixIPad9.replace("Wi Fi", "Wi-Fi");
   const fixWatchS8 = fixWiSpaceFi.replace(watchS8, "S8");
   const fixWiFi = fixWatchS8.replace(wiFi, "Wi-Fi");
@@ -411,5 +412,11 @@ export const fixNameUnimtrn = (el) => {
   const removeLightViolet = removeLightGreen.replace("Light Violet", "Violet");
   const removePhantom = removeLightViolet.replace("Phantom ", "");
 
-  return removePhantom;
+  const fixMidnightBlack = removeLightViolet.replace("Midnight Black", "Black");
+  const fixForestGreen = fixMidnightBlack.replace("Forest Green", "Green");
+  const fixOceanTeal = fixForestGreen.replace("Ocean Teal", "Teal");
+  const fixProPlus = fixOceanTeal.replace("Pro Plus", "Pro +");
+  const fixMoonlightWhite = fixProPlus.replace("Moonlight White", "White");
+
+  return fixMoonlightWhite;
 };

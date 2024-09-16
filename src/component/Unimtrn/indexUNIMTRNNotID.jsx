@@ -11,6 +11,7 @@ import { fixNameUnimtrn } from "./helpers/helpers";
 import { returnOtherProduct } from "./OtherProduct/otherProduct";
 import { returnSamsung } from "./Samsung/samsung";
 import style from "./styles.module.css";
+import { returnXiaomi } from "./Xiaomi/xiaomi";
 
 const IndexUnimtrnNotID = ({ el, dataUNIMTRN }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ const IndexUnimtrnNotID = ({ el, dataUNIMTRN }) => {
       (returnApple(unimtrn) ||
         returnDyson(unimtrn) ||
         returnSamsung(unimtrn) ||
+        returnXiaomi(unimtrn) ||
         returnGameConsole(unimtrn) ||
         returnOtherProduct(unimtrn))
     ) {
