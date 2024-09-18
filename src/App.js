@@ -15,6 +15,7 @@ import IndexSuperPriceNotID from "./component/SuperPrice/indexSuperPriceNotID";
 import AllPrice from "./component/AllPrice/AllPrice";
 import IndexGarmin from "./component/Garmin/indexGarmin";
 import IndexGarminNotID from "./component/Garmin/indexGarminNotID";
+import AllPriceWithID from "./component/AllPrice/AllPriceWithID";
 
 const App = () => {
   const allPrice = [];
@@ -154,6 +155,15 @@ const App = () => {
         <IndexGarmin el={dataGarmin} garminData={garmin} />
         <IndexGarminNotID el={dataGarmin} garminData={garmin} />
         {/* All Price */}
+        <AllPriceWithID
+          dataSuperprice={superprice}
+          dataVsemi={vsemi}
+          dataUnimtrn={dataUNIMTRN}
+          dataHi={hi}
+          dataMihonor={mihonor}
+          dataGarmin={garmin}
+        />
+
         <AllPrice
           dataSuperprice={superprice}
           dataVsemi={vsemi}

@@ -46,7 +46,7 @@ import {
 import { fixNameGarmin, returnExtraPriceGarmin, returnFixNameProductGarmin, returnStockPriceGarmin } from "../Garmin/helpers/helpers";
 import { returnXiaomi } from "../Unimtrn/Xiaomi/xiaomi";
 
-const AllPrice = ({
+const AllPriceWithID = ({
   dataSuperprice,
   dataVsemi,
   dataUnimtrn,
@@ -65,6 +65,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
+        returnIDApple(fixNameSuperPrice(superprice.name)) !== "No match" &&
         newPrice(superprice.name, superprice.price) &&
         superprice.price &&
         allPriceArr.push({
@@ -90,6 +91,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
+        returnIDApple(fixNameVseMi(vsemi.name)) !== "No match" &&
         returnExtraPriceVseMi(vsemi.name) &&
         returnStockPriceVseMi(vsemi.name) &&
         allPriceArr.push({
@@ -105,6 +107,8 @@ const AllPrice = ({
   dataUnimtrn.map((unimtrn) => {
     if (
       unimtrn.Товар &&
+      returnIDApple(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
+      "No match" &&
       isOpen &&
       baseFix(unimtrn) &&
       (returnApple(unimtrn) ||
@@ -140,6 +144,7 @@ const AllPrice = ({
         returnDysonHi(hi.name))
     ) {
       return (
+        returnIDApple(fixNameHi(hi.name)) !== 'No match' &&
         returnExtraPriceHi(hi.name) &&
         returnStockPriceHi(hi.name) &&
         allPriceArr.push({
@@ -165,6 +170,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
+        returnIDApple(fixNameMihonor(mihonor.name)) !== "No match" &&
         returnExtraPriceMihonor(mihonor.name) &&
         returnStockPriceMihonor(mihonor.name) &&
         allPriceArr.push({
@@ -189,6 +195,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
+        returnIDApple(fixNameGarmin(garmin.name)) !== 'No match' &&
         returnExtraPriceGarmin(garmin.name) &&
         returnStockPriceGarmin(garmin.name) &&
         allPriceArr.push({
@@ -207,7 +214,7 @@ const AllPrice = ({
       <div>
         {dataSuperprice?.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "All Price Для Лехи ▲" : "All Price Для Лехи ▼"}
+            {isOpen ? "All Price Для Сайта ▲" : "All Price Для Сайта ▼"}
           </span>
         )}
       </div>
@@ -216,4 +223,4 @@ const AllPrice = ({
   );
 };
 
-export default AllPrice;
+export default AllPriceWithID;
