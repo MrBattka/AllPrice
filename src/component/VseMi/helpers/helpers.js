@@ -10,20 +10,20 @@ export const returnNameInArrVseMi = (name) => {
 };
 
 export const returnStockPriceVseMi = (name) => {
-    let reverseStrName = name.split("").reverse().join("");
-    let splitPrice = reverseStrName.split(' ')[0]
-    let reverseBackStrName = splitPrice.split("").reverse().join("");
-  
-    return reverseBackStrName;
-  };
+  let reverseStrName = name.split("").reverse().join("");
+  let splitPrice = reverseStrName.split(' ')[0]
+  let reverseBackStrName = splitPrice.split("").reverse().join("");
 
-  export const returnExtraPriceVseMi = (name) => {
-    let reverseStrName = name.split("").reverse().join("");
-    let splitPrice = reverseStrName.split(' ')[0]
-    let reverseBackStrName = splitPrice.split("").reverse().join("");
-  
-    return newPrice(returnNameInArrVseMi(name), reverseBackStrName);
-  };
+  return reverseBackStrName;
+};
+
+export const returnExtraPriceVseMi = (name) => {
+  let reverseStrName = name.split("").reverse().join("");
+  let splitPrice = reverseStrName.split(' ')[0]
+  let reverseBackStrName = splitPrice.split("").reverse().join("");
+
+  return newPrice(returnNameInArrVseMi(name), reverseBackStrName);
+};
 
 export const fixNameVseMi = (name) => {
   // const toLowerCase = name.toLowerCase();
@@ -44,6 +44,9 @@ export const fixNameVseMi = (name) => {
   const fixPixel = fixgrey.replace("Google Pixel", "Pixel");
   const fix5GObsidian = fixPixel.replace("5G Obsidian", "Obsidian");
   const fixMiPad = fix5GObsidian.replace("Mi Pad", "Xiaomi Pad");
-  
-  return fixMiPad;
+  const fixOceanTeal = fixMiPad.replace("Ocean Teal", "teal");
+  const fixPoco5g = fixOceanTeal.indexOf("Poco") != -1 ?
+    fixOceanTeal.replace("5G", "") : fixOceanTeal
+
+  return fixPoco5g;
 };

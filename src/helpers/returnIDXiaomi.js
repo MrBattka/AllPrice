@@ -190,27 +190,47 @@ export const returnIDXiaomi = (name) => {
     return 36296;
   } else if (name.indexOf("f6 pro 5g 16/1tb white") != -1) {
     return 36297;
-  } else if (name.indexOf("poco m5 4/128 black") != -1) { return 23850; } else if
-    (name.indexOf("poco m5 4/128 green") != -1) { return 23851; } else if
-    (name.indexOf("poco m5 4/128 yellow") != -1) { return 23852; } else if
-    (name.indexOf("poco m5 4/64 black") != -1) { return 23847; } else if
-    (name.indexOf("poco m5 4/64 green") != -1) { return 23848; } else if
-    (name.indexOf("poco m5 4/64 yellow") != -1) { return 23849; } else if
-    (name.indexOf("poco m5 6/128 black") != -1) { return 23853; } else if
-    (name.indexOf("poco m5 6/128 green") != -1) { return 23854; } else if
-    (name.indexOf("poco m5 6/128 yellow") != -1) { return 23855; } else if
-    (name.indexOf("poco m5s 4/128 blue") != -1) { return 23859; } else if
-    (name.indexOf("poco m5s 4/128 gray") != -1) { return 23860; } else if
-    (name.indexOf("poco m5s 4/128 white") != -1) { return 23861; } else if
-    (name.indexOf("poco m5s 4/64 blue") != -1) { return 23858; } else if
-    (name.indexOf("poco m5s 4/64 gray") != -1) { return 23856; } else if
-    (name.indexOf("poco m5s 4/64 white") != -1) { return 23857; } else if
-    (name.indexOf("poco m5s 6/128 blue") != -1) { return 23862; } else if
-    (name.indexOf("poco m5s 6/128 gray") != -1) { return 23863; } else if
-    (name.indexOf("poco m5s 6/128 white") != -1) { return 23864; } else if
-    (name.indexOf("poco m5s 8/256 blue") != -1) { return 30657; } else if
-    (name.indexOf("poco m5s 8/256 gray") != -1) { return 30658; } else if
-    (name.indexOf("poco m5s 8/256 white") != -1) {
+  } else if (name.indexOf("poco m5 4/128 black") != -1) {
+    return 23850;
+  } else if (name.indexOf("poco m5 4/128 green") != -1) {
+    return 23851;
+  } else if (name.indexOf("poco m5 4/128 yellow") != -1) {
+    return 23852;
+  } else if (name.indexOf("poco m5 4/64 black") != -1) {
+    return 23847;
+  } else if (name.indexOf("poco m5 4/64 green") != -1) {
+    return 23848;
+  } else if (name.indexOf("poco m5 4/64 yellow") != -1) {
+    return 23849;
+  } else if (name.indexOf("poco m5 6/128 black") != -1) {
+    return 23853;
+  } else if (name.indexOf("poco m5 6/128 green") != -1) {
+    return 23854;
+  } else if (name.indexOf("poco m5 6/128 yellow") != -1) {
+    return 23855;
+  } else if (name.indexOf("poco m5s 4/128 blue") != -1) {
+    return 23859;
+  } else if (name.indexOf("poco m5s 4/128 gray") != -1) {
+    return 23860;
+  } else if (name.indexOf("poco m5s 4/128 white") != -1) {
+    return 23861;
+  } else if (name.indexOf("poco m5s 4/64 blue") != -1) {
+    return 23858;
+  } else if (name.indexOf("poco m5s 4/64 gray") != -1) {
+    return 23856;
+  } else if (name.indexOf("poco m5s 4/64 white") != -1) {
+    return 23857;
+  } else if (name.indexOf("poco m5s 6/128 blue") != -1) {
+    return 23862;
+  } else if (name.indexOf("poco m5s 6/128 gray") != -1) {
+    return 23863;
+  } else if (name.indexOf("poco m5s 6/128 white") != -1) {
+    return 23864;
+  } else if (name.indexOf("poco m5s 8/256 blue") != -1) {
+    return 30657;
+  } else if (name.indexOf("poco m5s 8/256 gray") != -1) {
+    return 30658;
+  } else if (name.indexOf("poco m5s 8/256 white") != -1) {
     return 30659;
   } else if (name.indexOf("m6 4/128 black") != -1) {
     return 31106;
@@ -332,30 +352,53 @@ export const returnIDXiaomi = (name) => {
     return 28038;
   } else if (name.indexOf("redmi 12 8/256 sky blue") != -1) {
     return 28035;
-  } else if (name.indexOf("note 12r 4/128 black") != -1) { return 28039; } else if
-    (name.indexOf("note 12r 4/128 blue") != -1) { return 28043; } else if
-    (name.indexOf("note 12r 4/128 silver") != -1) { return 28047; } else if
-    (name.indexOf("note 12r 6/128 black") != -1) { return 28040; } else if
-    (name.indexOf("note 12r 6/128 blue") != -1) { return 28044; } else if
-    (name.indexOf("note 12r 6/128 silver") != -1) { return 28048; } else if
-    (name.indexOf("note 12r 8/128 black") != -1) { return 28041; } else if
-    (name.indexOf("note 12r 8/128 blue") != -1) { return 28045; } else if
-    (name.indexOf("note 12r 8/128 silver") != -1) { return 28049; } else if
-    (name.indexOf("note 12r 8/256 black") != -1) { return 28042; } else if
-    (name.indexOf("note 12r 8/256 blue") != -1) { return 28046; } else if
-    (name.indexOf("note 12r 8/256 silver") != -1) { return 28050; } else if
-    (name.indexOf("note 12r pro 12/256 black") != -1) { return 28051; } else if
-    (name.indexOf("note 12r pro 12/256 gold") != -1) { return 28052; } else if
-    (name.indexOf("note 12r pro 12/256 white") != -1) { return 28053; } else if
-    (name.indexOf("note 12s 6/128 blue") != -1) { return 27415; } else if
-    (name.indexOf("note 12s 6/128 black") != -1) { return 27413; } else if
-    (name.indexOf("note 12s 6/128 green") != -1) { return 27418; } else if
-    (name.indexOf("note 12s 6/64 blue") != -1) { return 27416; } else if
-    (name.indexOf("note 12s 6/64 black") != -1) { return 27412; } else if
-    (name.indexOf("note 12s 6/64 green") != -1) { return 27419; } else if
-    (name.indexOf("note 12s 8/256 blue") != -1) { return 27417; } else if
-    (name.indexOf("note 12s 8/256 black") != -1) { return 27414; } else if
-    (name.indexOf("note 12s 8/256 green") != -1) {
+  } else if (name.indexOf("note 12r 4/128 black") != -1) {
+    return 28039;
+  } else if (name.indexOf("note 12r 4/128 blue") != -1) {
+    return 28043;
+  } else if (name.indexOf("note 12r 4/128 silver") != -1) {
+    return 28047;
+  } else if (name.indexOf("note 12r 6/128 black") != -1) {
+    return 28040;
+  } else if (name.indexOf("note 12r 6/128 blue") != -1) {
+    return 28044;
+  } else if (name.indexOf("note 12r 6/128 silver") != -1) {
+    return 28048;
+  } else if (name.indexOf("note 12r 8/128 black") != -1) {
+    return 28041;
+  } else if (name.indexOf("note 12r 8/128 blue") != -1) {
+    return 28045;
+  } else if (name.indexOf("note 12r 8/128 silver") != -1) {
+    return 28049;
+  } else if (name.indexOf("note 12r 8/256 black") != -1) {
+    return 28042;
+  } else if (name.indexOf("note 12r 8/256 blue") != -1) {
+    return 28046;
+  } else if (name.indexOf("note 12r 8/256 silver") != -1) {
+    return 28050;
+  } else if (name.indexOf("note 12r pro 12/256 black") != -1) {
+    return 28051;
+  } else if (name.indexOf("note 12r pro 12/256 gold") != -1) {
+    return 28052;
+  } else if (name.indexOf("note 12r pro 12/256 white") != -1) {
+    return 28053;
+  } else if (name.indexOf("note 12s 6/128 blue") != -1) {
+    return 27415;
+  } else if (name.indexOf("note 12s 6/128 black") != -1) {
+    return 27413;
+  } else if (name.indexOf("note 12s 6/128 green") != -1) {
+    return 27418;
+  } else if (name.indexOf("note 12s 6/64 blue") != -1) {
+    return 27416;
+  } else if (name.indexOf("note 12s 6/64 black") != -1) {
+    return 27412;
+  } else if (name.indexOf("note 12s 6/64 green") != -1) {
+    return 27419;
+  } else if (name.indexOf("note 12s 8/256 blue") != -1) {
+    return 27417;
+  } else if (name.indexOf("note 12s 8/256 black") != -1) {
+    return 27414;
+  } else if (name.indexOf("note 12s 8/256 green") != -1) {
     return 27420;
   } else if (name.indexOf("redmi 13c 4/128 clover green") != -1) {
     return 30886;
@@ -503,34 +546,200 @@ export const returnIDXiaomi = (name) => {
     return 36393;
   } else if (name.indexOf("note 13 8/256 ocean sunset") != -1) {
     return 36394;
-  } else if (name.indexOf("note 13 5g 12/256 black") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 12/256 black") != -1 ||
+    (name.indexOf("note 13 12/256 black") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30212;
-  } else if (name.indexOf("note 13 5g 12/256 blue") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 12/256 blue") != -1 ||
+    (name.indexOf("note 13 pro 12/256 blue") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30217;
-  } else if (name.indexOf("note 13 5g 12/256 white") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 12/256 white") != -1 ||
+    (name.indexOf("note 13 pro 12/256 white") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30213;
-  } else if (name.indexOf("note 13 5g 6/128 black") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 6/128 black") != -1 ||
+    (name.indexOf("note 13 pro 6/128 black") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30209;
-  } else if (name.indexOf("note 13 5g 6/128 blue") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 6/128 blue") != -1 ||
+    (name.indexOf("note 13 pro 6/128 blue") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30218;
-  } else if (name.indexOf("note 13 5g 6/128 white") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 6/128 white") != -1 ||
+    (name.indexOf("note 13 pro 6/128 white") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30214;
-  } else if (name.indexOf("note 13 5g 8/128 black") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 8/128 black") != -1 ||
+    (name.indexOf("note 13 pro 8/128 black") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30210;
-  } else if (name.indexOf("note 13 5g 8/128 blue") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 8/128 blue") != -1 ||
+    (name.indexOf("note 13 pro 8/128 blue") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30219;
-  } else if (name.indexOf("note 13 5g 8/128 white") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 8/128 white") != -1 ||
+    (name.indexOf("note 13 pro 8/128 white") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30215;
-  } else if (name.indexOf("note 13 5g 8/256 black") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 8/256 black") != -1 ||
+    (name.indexOf("note 13 pro 8/256 black") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30211;
-  } else if (name.indexOf("note 13 5g 8/256 blue") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 8/256 blue") != -1 ||
+    (name.indexOf("note 13 pro 8/256 blue") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30220;
-  } else if (name.indexOf("note 13 5g 8/256 white") != -1) {
+  } else if (
+    name.indexOf("note 13 5g 8/256 white") != -1 ||
+    (name.indexOf("note 13 pro 8/256 white") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 30216;
-  } else if (name.indexOf("note 13 8/128 black") != -1) {
+  } else if (
+    name.indexOf("note 13 8/128 black") != -1 ||
+    (name.indexOf("note 13 pro 8/128 black") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 35935;
-  } else if (name.indexOf("note 13 8/128 blue") != -1) {
+  } else if (
+    name.indexOf("note 13 8/128 blue") != -1 ||
+    (name.indexOf("note 13 pro 8/128 blue") != -1 && name.indexOf("5g") != -1)
+  ) {
     return 35939;
+  } else if (
+    name.indexOf("note 13 pro 5g 12/256 black") != -1 ||
+    (name.indexOf("note 13 pro 12/256 black") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30223;
+  } else if (
+    name.indexOf("note 13 pro 5g 12/256 blue") != -1 ||
+    name.indexOf("note 13 pro 5g 12/256 teal") != -1 ||
+    (name.indexOf("note 13 pro 12/256 blue") != -1 &&
+      name.indexOf("5g") != -1) ||
+    (name.indexOf("note 13 pro 12/256 teal") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30236;
+  } else if (
+    name.indexOf("note 13 pro 5g 12/256 violet") != -1 ||
+    name.indexOf("note 13 pro 5g 12/256 purple") != -1 ||
+    (name.indexOf("note 13 pro 12/256 violet") != -1 &&
+      name.indexOf("5g") != -1) ||
+    (name.indexOf("note 13 pro 12/256 purple") != -1 &&
+      name.indexOf("5g") != -1)
+  ) {
+    return 30231;
+  } else if (
+    name.indexOf("note 13 pro 5g 12/256 white") != -1 ||
+    (name.indexOf("note 13 pro 12/256 white") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30226;
+  } else if (
+    name.indexOf("note 13 pro 5g 12/512 black") != -1 ||
+    (name.indexOf("note 13 pro 12/512 black") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30224;
+  } else if (
+    name.indexOf("note 13 pro 5g 12/512 blue") != -1 ||
+    name.indexOf("note 13 pro 5g 12/512 green") != -1 ||
+    name.indexOf("note 13 pro 5g 12/512 teal") != -1
+  ) {
+    return 30237;
+  } else if (
+    name.indexOf("note 13 pro 5g 12/512 violet") != -1 ||
+    name.indexOf("note 13 pro 5g 12/512 purple") != -1
+  ) {
+    return 30232;
+  } else if (
+    name.indexOf("note 13 pro 5g 12/512 white") != -1 ||
+    (name.indexOf("note 13 pro 12/512 white") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30227;
+  } else if (
+    name.indexOf("note 13 pro 5g 16/512 black") != -1 ||
+    (name.indexOf("note 13 pro 16/512 black") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30225;
+  } else if (
+    name.indexOf("note 13 pro 5g 16/512 blue") != -1 ||
+    (name.indexOf("note 13 pro 16/512 blue") != -1 &&
+      name.indexOf("5g") != -1) ||
+    name.indexOf("note 13 pro 5g 16/512 teal") != -1 ||
+    (name.indexOf("note 13 pro 16/512 teal") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30238;
+  } else if (
+    name.indexOf("note 13 pro 5g 16/512 violet") != -1 ||
+    name.indexOf("note 13 pro 5g 16/512 purple") != -1 ||
+    (name.indexOf("note 13 pro 16/512 violet") != -1 &&
+      name.indexOf("5g") != -1) ||
+    (name.indexOf("note 13 pro 16/512 purple") != -1 &&
+      name.indexOf("5g") != -1)
+  ) {
+    return 30233;
+  } else if (
+    name.indexOf("note 13 pro 5g 16/512 white") != -1 ||
+    (name.indexOf("note 13 pro 16/512 white") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30228;
+  } else if (
+    name.indexOf("note 13 pro 5g 8/128 black") != -1 ||
+    (name.indexOf("note 13 pro 8/128 black") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30221;
+  } else if (
+    name.indexOf("note 13 pro 5g 8/128 blue") != -1 ||
+    name.indexOf("note 13 pro 5g 8/128 teal") != -1 ||
+    (name.indexOf("note 13 pro 8/128 blue") != -1 &&
+      name.indexOf("5g") != -1) ||
+    (name.indexOf("note 13 pro 8/128 teal") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30239;
+  } else if (
+    name.indexOf("note 13 pro 5g 8/128 violet") != -1 ||
+    name.indexOf("note 13 pro 5g 8/128 purple") != -1 ||
+    (name.indexOf("note 13 pro 8/128 purple") != -1 &&
+      name.indexOf("5g") != -1) ||
+    (name.indexOf("note 13 pro 8/128 violet") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30234;
+  } else if (
+    name.indexOf("note 13 pro 5g 8/128 white") != -1 ||
+    (name.indexOf("note 13 pro 8/128 white") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30229;
+  } else if (
+    name.indexOf("note 13 pro 5g 8/256 black") != -1 ||
+    (name.indexOf("note 13 pro 8/256 black") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30222;
+  } else if (
+    name.indexOf("note 13 pro 5g 8/256 blue") != -1 ||
+    name.indexOf("note 13 pro 5g 8/256 teal") != -1 ||
+    (name.indexOf("note 13 pro 8/256 blue") != -1 &&
+      name.indexOf("5g") != -1) ||
+    (name.indexOf("note 13 pro 8/256 teal") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30240;
+  } else if (
+    name.indexOf("note 13 pro 5g 8/256 violet") != -1 ||
+    name.indexOf("note 13 pro 5g 8/256 purple") != -1 ||
+    (name.indexOf("note 13 pro 8/256 violet") != -1 &&
+      name.indexOf("5g") != -1) ||
+    (name.indexOf("note 13 pro 8/256 purple") != -1 && name.indexOf("5g") != -1)
+  ) {
+    return 30235;
+  } else if (name.indexOf("note 13 pro 5g 8/256 white") != -1) {
+    return 30230;
   } else if (name.indexOf("note 13 pro 12/512 black") != -1) {
     return 31139;
   } else if (name.indexOf("note 13 pro 12/512 green") != -1) {
@@ -549,81 +758,6 @@ export const returnIDXiaomi = (name) => {
     name.indexOf("note 13 pro 8/256 lavender") != -1
   ) {
     return 31137;
-  } else if (name.indexOf("note 13 pro 5g 12/256 black") != -1) {
-    return 30223;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/256 blue") != -1 ||
-    name.indexOf("note 13 pro 5g 12/256 green") != -1 ||
-    name.indexOf("note 13 pro 5g 12/256 teal") != -1
-  ) {
-    return 30236;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/256 violet") != -1 ||
-    name.indexOf("note 13 pro 5g 12/256 purple") != -1
-  ) {
-    return 30231;
-  } else if (name.indexOf("note 13 pro 5g 12/256 white") != -1) {
-    return 30226;
-  } else if (name.indexOf("note 13 pro 5g 12/512 black") != -1) {
-    return 30224;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/512 blue") != -1 ||
-    name.indexOf("note 13 pro 5g 12/512 green") != -1 ||
-    name.indexOf("note 13 pro 5g 12/512 teal") != -1
-  ) {
-    return 30237;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/512 violet") != -1 ||
-    name.indexOf("note 13 pro 5g 12/512 purple") != -1
-  ) {
-    return 30232;
-  } else if (name.indexOf("note 13 pro 5g 12/512 white") != -1) {
-    return 30227;
-  } else if (name.indexOf("note 13 pro 5g 16/512 black") != -1) {
-    return 30225;
-  } else if (
-    name.indexOf("note 13 pro 5g 16/512 blue") != -1 ||
-    name.indexOf("note 13 pro 5g 16/512 green") != -1 ||
-    name.indexOf("note 13 pro 5g 16/512 teal") != -1
-  ) {
-    return 30238;
-  } else if (
-    name.indexOf("note 13 pro 5g 16/512 violet") != -1 ||
-    name.indexOf("note 13 pro 5g 16/512 purple") != -1
-  ) {
-    return 30233;
-  } else if (name.indexOf("note 13 pro 5g 16/512 white") != -1) {
-    return 30228;
-  } else if (name.indexOf("note 13 pro 5g 8/128 black") != -1) {
-    return 30221;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/128 blue") != -1 ||
-    name.indexOf("note 13 pro 5g 8/128 green") != -1 ||
-    name.indexOf("note 13 pro 5g 8/128 teal") != -1
-  ) {
-    return 30239;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/128 violet") != -1 ||
-    name.indexOf("note 13 pro 5g 8/128 purple") != -1
-  ) {
-    return 30234;
-  } else if (name.indexOf("note 13 pro 5g 8/128 white") != -1) {
-    return 30229;
-  } else if (name.indexOf("note 13 pro 5g 8/256 black") != -1) {
-    return 30222;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/256 blue") != -1 ||
-    name.indexOf("note 13 pro 5g 8/256 green") != -1 ||
-    name.indexOf("note 13 pro 5g 8/256 teal") != -1
-  ) {
-    return 30240;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/256 violet") != -1 ||
-    name.indexOf("note 13 pro 5g 8/256 purple") != -1
-  ) {
-    return 30235;
-  } else if (name.indexOf("note 13 pro 5g 8/256 white") != -1) {
-    return 30230;
   } else if (name.indexOf("note 13 pro + 5g 12/256 black") != -1) {
     return 30241;
   } else if (name.indexOf("note 13 pro + 5g 12/256 camo green") != -1) {
@@ -652,9 +786,11 @@ export const returnIDXiaomi = (name) => {
     return 34404;
   } else if (name.indexOf("note 13 pro + 5g 8/256 camo green") != -1) {
     return 34405;
-  } else if (name.indexOf("note 13 pro + 5g 8/256 violet") != -1 ||
+  } else if (
+    name.indexOf("note 13 pro + 5g 8/256 violet") != -1 ||
     name.indexOf("note 13 pro + 5g 8/256 purple") != -1 ||
-    name.indexOf("note 13 pro + 8/256 purple") != -1) {
+    name.indexOf("note 13 pro + 8/256 purple") != -1
+  ) {
     return 34406;
   } else if (name.indexOf("note 13 pro + 5g 8/256 white") != -1) {
     return 34407;
@@ -670,55 +806,101 @@ export const returnIDXiaomi = (name) => {
     return 23308;
   } else if (name.indexOf("mi 12 lite 8/128 green") != -1) {
     return 23307;
-  } else if
-    (name.indexOf("mi 12 12/256 black") != -1) { return 21787; } else if
-    (name.indexOf("mi 12 12/256 blue") != -1) { return 21788; } else if
-    (name.indexOf("mi 12 12/256 green") != -1) { return 21789; } else if
-    (name.indexOf("mi 12 12/256 pink") != -1) { return 21790; } else if
-    (name.indexOf("mi 12 8/128 black") != -1) { return 21779; } else if
-    (name.indexOf("mi 12 8/128 blue") != -1) { return 21781; } else if
-    (name.indexOf("mi 12 8/128 green") != -1) { return 21780; } else if
-    (name.indexOf("mi 12 8/128 pink") != -1) { return 21782; } else if
-    (name.indexOf("mi 12 8/256 black") != -1) { return 21783; } else if
-    (name.indexOf("mi 12 8/256 blue") != -1) { return 21784; } else if
-    (name.indexOf("mi 12 8/256 green") != -1) { return 21785; } else if
-    (name.indexOf("mi 12 8/256 pink") != -1) { return 21786; } else if
-    (name.indexOf("mi 12 pro 12/256 black") != -1) { return 21791; } else if
-    (name.indexOf("mi 12 pro 12/256 blue") != -1) { return 21792; } else if
-    (name.indexOf("mi 12 pro 12/256 green") != -1) { return 21793; } else if
-    (name.indexOf("mi 12 pro 12/256 pink") != -1) { return 21794; } else if
-    (name.indexOf("mi 12 pro 8/128 black") != -1) { return 21795; } else if
-    (name.indexOf("mi 12 pro 8/128 blue") != -1) { return 21796; } else if
-    (name.indexOf("mi 12 pro 8/128 green") != -1) { return 21797; } else if
-    (name.indexOf("mi 12 pro 8/128 pink") != -1) { return 21798; } else if
-    (name.indexOf("mi 12 pro 8/256 black") != -1) { return 21799; } else if
-    (name.indexOf("mi 12 pro 8/256 blue") != -1) { return 21800; } else if
-    (name.indexOf("mi 12 pro 8/256 green") != -1) { return 21801; } else if
-    (name.indexOf("mi 12 pro 8/256 pink") != -1) { return 21802; } else if
-    (name.indexOf("mi 12t 8/128 black") != -1) { return 23926; } else if
-    (name.indexOf("mi 12t 8/128 blue") != -1) { return 23930; } else if
-    (name.indexOf("mi 12t 8/128 silver") != -1) { return 23928; } else if
-    (name.indexOf("mi 12t 8/256 black") != -1) { return 23927; } else if
-    (name.indexOf("mi 12t 8/256 blue") != -1) { return 23931; } else if
-    (name.indexOf("mi 12t 8/256 silver") != -1) { return 23929; } else if
-    (name.indexOf("mi 12t pro 12/256 black") != -1) { return 23934; } else if
-    (name.indexOf("mi 12t pro 12/256 blue") != -1) { return 23938; } else if
-    (name.indexOf("mi 12t pro 12/256 silver") != -1) { return 23935; } else if
-    (name.indexOf("mi 12t pro 8/128 black") != -1) { return 23932; } else if
-    (name.indexOf("mi 12t pro 8/128 blue") != -1) { return 23939; } else if
-    (name.indexOf("mi 12t pro 8/128 silver") != -1) { return 23936; } else if
-    (name.indexOf("mi 12t pro 8/256 black") != -1) { return 23933; } else if
-    (name.indexOf("mi 12t pro 8/256 blue") != -1) { return 23940; } else if
-    (name.indexOf("mi 12t pro 8/256 silver") != -1) { return 23937; } else if
-    (name.indexOf("mi 12x 12/256 black") != -1) { return 21809; } else if
-    (name.indexOf("mi 12x 12/256 blue") != -1) { return 21810; } else if
-    (name.indexOf("mi 12x 12/256 pink") != -1) { return 21811; } else if
-    (name.indexOf("mi 12x 8/128 black") != -1) { return 21803; } else if
-    (name.indexOf("mi 12x 8/128 blue") != -1) { return 21804; } else if
-    (name.indexOf("mi 12x 8/128 pink") != -1) { return 21805; } else if
-    (name.indexOf("mi 12x 8/256 black") != -1) { return 21806; } else if
-    (name.indexOf("mi 12x 8/256 blue") != -1) { return 21807; } else if
-    (name.indexOf("mi 12x 8/256 pink") != -1) {
+  } else if (name.indexOf("mi 12 12/256 black") != -1) {
+    return 21787;
+  } else if (name.indexOf("mi 12 12/256 blue") != -1) {
+    return 21788;
+  } else if (name.indexOf("mi 12 12/256 green") != -1) {
+    return 21789;
+  } else if (name.indexOf("mi 12 12/256 pink") != -1) {
+    return 21790;
+  } else if (name.indexOf("mi 12 8/128 black") != -1) {
+    return 21779;
+  } else if (name.indexOf("mi 12 8/128 blue") != -1) {
+    return 21781;
+  } else if (name.indexOf("mi 12 8/128 green") != -1) {
+    return 21780;
+  } else if (name.indexOf("mi 12 8/128 pink") != -1) {
+    return 21782;
+  } else if (name.indexOf("mi 12 8/256 black") != -1) {
+    return 21783;
+  } else if (name.indexOf("mi 12 8/256 blue") != -1) {
+    return 21784;
+  } else if (name.indexOf("mi 12 8/256 green") != -1) {
+    return 21785;
+  } else if (name.indexOf("mi 12 8/256 pink") != -1) {
+    return 21786;
+  } else if (name.indexOf("mi 12 pro 12/256 black") != -1) {
+    return 21791;
+  } else if (name.indexOf("mi 12 pro 12/256 blue") != -1) {
+    return 21792;
+  } else if (name.indexOf("mi 12 pro 12/256 green") != -1) {
+    return 21793;
+  } else if (name.indexOf("mi 12 pro 12/256 pink") != -1) {
+    return 21794;
+  } else if (name.indexOf("mi 12 pro 8/128 black") != -1) {
+    return 21795;
+  } else if (name.indexOf("mi 12 pro 8/128 blue") != -1) {
+    return 21796;
+  } else if (name.indexOf("mi 12 pro 8/128 green") != -1) {
+    return 21797;
+  } else if (name.indexOf("mi 12 pro 8/128 pink") != -1) {
+    return 21798;
+  } else if (name.indexOf("mi 12 pro 8/256 black") != -1) {
+    return 21799;
+  } else if (name.indexOf("mi 12 pro 8/256 blue") != -1) {
+    return 21800;
+  } else if (name.indexOf("mi 12 pro 8/256 green") != -1) {
+    return 21801;
+  } else if (name.indexOf("mi 12 pro 8/256 pink") != -1) {
+    return 21802;
+  } else if (name.indexOf("mi 12t 8/128 black") != -1) {
+    return 23926;
+  } else if (name.indexOf("mi 12t 8/128 blue") != -1) {
+    return 23930;
+  } else if (name.indexOf("mi 12t 8/128 silver") != -1) {
+    return 23928;
+  } else if (name.indexOf("mi 12t 8/256 black") != -1) {
+    return 23927;
+  } else if (name.indexOf("mi 12t 8/256 blue") != -1) {
+    return 23931;
+  } else if (name.indexOf("mi 12t 8/256 silver") != -1) {
+    return 23929;
+  } else if (name.indexOf("mi 12t pro 12/256 black") != -1) {
+    return 23934;
+  } else if (name.indexOf("mi 12t pro 12/256 blue") != -1) {
+    return 23938;
+  } else if (name.indexOf("mi 12t pro 12/256 silver") != -1) {
+    return 23935;
+  } else if (name.indexOf("mi 12t pro 8/128 black") != -1) {
+    return 23932;
+  } else if (name.indexOf("mi 12t pro 8/128 blue") != -1) {
+    return 23939;
+  } else if (name.indexOf("mi 12t pro 8/128 silver") != -1) {
+    return 23936;
+  } else if (name.indexOf("mi 12t pro 8/256 black") != -1) {
+    return 23933;
+  } else if (name.indexOf("mi 12t pro 8/256 blue") != -1) {
+    return 23940;
+  } else if (name.indexOf("mi 12t pro 8/256 silver") != -1) {
+    return 23937;
+  } else if (name.indexOf("mi 12x 12/256 black") != -1) {
+    return 21809;
+  } else if (name.indexOf("mi 12x 12/256 blue") != -1) {
+    return 21810;
+  } else if (name.indexOf("mi 12x 12/256 pink") != -1) {
+    return 21811;
+  } else if (name.indexOf("mi 12x 8/128 black") != -1) {
+    return 21803;
+  } else if (name.indexOf("mi 12x 8/128 blue") != -1) {
+    return 21804;
+  } else if (name.indexOf("mi 12x 8/128 pink") != -1) {
+    return 21805;
+  } else if (name.indexOf("mi 12x 8/256 black") != -1) {
+    return 21806;
+  } else if (name.indexOf("mi 12x 8/256 blue") != -1) {
+    return 21807;
+  } else if (name.indexOf("mi 12x 8/256 pink") != -1) {
     return 21808;
   } else if (name.indexOf("mi 13 ultra 12/256 black") != -1) {
     return 27291;
@@ -977,7 +1159,6 @@ export const returnIDXiaomi = (name) => {
   } else if (name.indexOf("mi 14 ultra 16/512 white") != -1) {
     return 35858;
 
-
     // Redmi Pad
   } else if (name.indexOf("redmi pad 3/64 graphite gray") != -1) {
     return 23941;
@@ -1192,57 +1373,186 @@ export const returnIDXiaomi = (name) => {
     name.indexOf("xiaomi pad se 8/256 mint") != -1
   ) {
     return 30968;
-  } else if (name.indexOf("xiaomi pad 6 6/128 black") != -1) { return 27369; } else if
-    (name.indexOf("xiaomi pad 6 6/128 blue") != -1) { return 27372; } else if
-    (name.indexOf("xiaomi pad 6 6/128 gold") != -1) { return 27375; } else if
-    (name.indexOf("xiaomi pad 6 8/128 black") != -1) { return 27370; } else if
-    (name.indexOf("xiaomi pad 6 8/128 blue") != -1) { return 27373; } else if
-    (name.indexOf("xiaomi pad 6 8/128 gold") != -1) { return 27376; } else if
-    (name.indexOf("xiaomi pad 6 8/256 black") != -1) { return 27371; } else if
-    (name.indexOf("xiaomi pad 6 8/256 blue") != -1) { return 27374; } else if
-    (name.indexOf("xiaomi pad 6 8/256 gold") != -1) { return 27377; } else if
-    (name.indexOf("xiaomi pad 6 max 14 12/256 black") != -1) { return 30193; } else if
-    (name.indexOf("xiaomi pad 6 max 14 12/256 silver") != -1) { return 30196; } else if
-    (name.indexOf("xiaomi pad 6 max 14 12/512 black") != -1) { return 30194; } else if
-    (name.indexOf("xiaomi pad 6 max 14 12/512 silver") != -1) { return 30197; } else if
-    (name.indexOf("xiaomi pad 6 max 14 16/1tb black") != -1) { return 30195; } else if
-    (name.indexOf("xiaomi pad 6 max 14 16/1tb silver") != -1) { return 30198; } else if
-    (name.indexOf("xiaomi pad 6 max 14 8/256 black") != -1) { return 30192; } else if
-    (name.indexOf("xiaomi pad 6 max 14 8/256 silver") != -1) { return 30199; } else if
-    (name.indexOf("xiaomi pad 6 pro 12/256 black") != -1) { return 27380; } else if
-    (name.indexOf("xiaomi pad 6 pro 12/256 blue") != -1) { return 27382; } else if
-    (name.indexOf("xiaomi pad 6 pro 12/256 gold") != -1) { return 27386; } else if
-    (name.indexOf("xiaomi pad 6 pro 12/512 black") != -1) { return 27381; } else if
-    (name.indexOf("xiaomi pad 6 pro 12/512 blue") != -1) { return 27383; } else if
-    (name.indexOf("xiaomi pad 6 pro 12/512 gold") != -1) { return 27387; } else if
-    (name.indexOf("xiaomi pad 6 pro 6/128 blue") != -1) { return 36273; } else if
-    (name.indexOf("xiaomi pad 6 pro 6/128 gray") != -1) { return 36272; } else if
-    (name.indexOf("xiaomi pad 6 pro 6/128 green") != -1) { return 36274; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/128 black") != -1) { return 27378; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/128 blue") != -1) { return 27384; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/128 blue") != -1) { return 36278; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/128 gray") != -1) { return 36279; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/128 gold") != -1) { return 27388; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/128 green") != -1) { return 36280; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/256 black") != -1) { return 27379; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/256 blue") != -1) { return 27385; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/256 blue") != -1) { return 36281; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/256 gray") != -1) { return 36282; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/256 gold") != -1) { return 27389; } else if
-    (name.indexOf("xiaomi pad 6 pro 8/256 green") != -1) { return 36283; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 12/256 black") != -1) { return 35891; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 12/256 blue") != -1) { return 35894; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 12/256 green") != -1) { return 35898; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 12/512 black") != -1) { return 35892; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 12/512 blue") != -1) { return 35895; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 12/512 green") != -1) { return 35899; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 16/1tb black") != -1) { return 35893; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 16/1tb blue") != -1) { return 35896; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 16/1tb green") != -1) { return 35900; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 8/256 black") != -1) { return 35890; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 8/256 blue") != -1) { return 35897; } else if
-    (name.indexOf("xiaomi pad 6s pro 12.4 8/256 green") != -1) {
+  } else if (name.indexOf("xiaomi pad 6 6/128 black") != -1) {
+    return 27369;
+  } else if (name.indexOf("xiaomi pad 6 6/128 blue") != -1) {
+    return 27372;
+  } else if (name.indexOf("xiaomi pad 6 6/128 gold") != -1) {
+    return 27375;
+  } else if (name.indexOf("xiaomi pad 6 8/128 black") != -1) {
+    return 27370;
+  } else if (name.indexOf("xiaomi pad 6 8/128 blue") != -1) {
+    return 27373;
+  } else if (name.indexOf("xiaomi pad 6 8/128 gold") != -1) {
+    return 27376;
+  } else if (name.indexOf("xiaomi pad 6 8/256 black") != -1) {
+    return 27371;
+  } else if (name.indexOf("xiaomi pad 6 8/256 blue") != -1) {
+    return 27374;
+  } else if (name.indexOf("xiaomi pad 6 8/256 gold") != -1) {
+    return 27377;
+  } else if (name.indexOf("xiaomi pad 6 max 14 12/256 black") != -1) {
+    return 30193;
+  } else if (name.indexOf("xiaomi pad 6 max 14 12/256 silver") != -1) {
+    return 30196;
+  } else if (name.indexOf("xiaomi pad 6 max 14 12/512 black") != -1) {
+    return 30194;
+  } else if (name.indexOf("xiaomi pad 6 max 14 12/512 silver") != -1) {
+    return 30197;
+  } else if (name.indexOf("xiaomi pad 6 max 14 16/1tb black") != -1) {
+    return 30195;
+  } else if (name.indexOf("xiaomi pad 6 max 14 16/1tb silver") != -1) {
+    return 30198;
+  } else if (name.indexOf("xiaomi pad 6 max 14 8/256 black") != -1) {
+    return 30192;
+  } else if (name.indexOf("xiaomi pad 6 max 14 8/256 silver") != -1) {
+    return 30199;
+  } else if (name.indexOf("xiaomi pad 6 pro 12/256 black") != -1) {
+    return 27380;
+  } else if (name.indexOf("xiaomi pad 6 pro 12/256 blue") != -1) {
+    return 27382;
+  } else if (name.indexOf("xiaomi pad 6 pro 12/256 gold") != -1) {
+    return 27386;
+  } else if (name.indexOf("xiaomi pad 6 pro 12/512 black") != -1) {
+    return 27381;
+  } else if (name.indexOf("xiaomi pad 6 pro 12/512 blue") != -1) {
+    return 27383;
+  } else if (name.indexOf("xiaomi pad 6 pro 12/512 gold") != -1) {
+    return 27387;
+  } else if (name.indexOf("xiaomi pad 6 pro 6/128 blue") != -1) {
+    return 36273;
+  } else if (name.indexOf("xiaomi pad 6 pro 6/128 gray") != -1) {
+    return 36272;
+  } else if (name.indexOf("xiaomi pad 6 pro 6/128 green") != -1) {
+    return 36274;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/128 black") != -1) {
+    return 27378;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/128 blue") != -1) {
+    return 27384;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/128 blue") != -1) {
+    return 36278;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/128 gray") != -1) {
+    return 36279;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/128 gold") != -1) {
+    return 27388;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/128 green") != -1) {
+    return 36280;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/256 black") != -1) {
+    return 27379;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/256 blue") != -1) {
+    return 27385;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/256 blue") != -1) {
+    return 36281;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/256 gray") != -1) {
+    return 36282;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/256 gold") != -1) {
+    return 27389;
+  } else if (name.indexOf("xiaomi pad 6 pro 8/256 green") != -1) {
+    return 36283;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 12/256 black") != -1) {
+    return 35891;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 12/256 blue") != -1) {
+    return 35894;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 12/256 green") != -1) {
+    return 35898;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 12/512 black") != -1) {
+    return 35892;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 12/512 blue") != -1) {
+    return 35895;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 12/512 green") != -1) {
+    return 35899;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 16/1tb black") != -1) {
+    return 35893;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 16/1tb blue") != -1) {
+    return 35896;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 16/1tb green") != -1) {
+    return 35900;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 8/256 black") != -1) {
+    return 35890;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 8/256 blue") != -1) {
+    return 35897;
+  } else if (name.indexOf("xiaomi pad 6s pro 12.4 8/256 green") != -1) {
     return 35901;
+  } else if (name.indexOf("redmi pad pro 6/128 dark gray") != -1) {
+    return 36687;
+  } else if (name.indexOf("redmi pad pro 6/128 gray") != -1) {
+    return 36687;
+  } else if (name.indexOf("redmi pad pro 6/128 blue") != -1) {
+    return 36747;
+  } else if (name.indexOf("redmi pad pro 6/128 green") != -1) {
+    return 36748;
+  } else if (name.indexOf("redmi pad pro 8/128 blue") != -1) {
+    return 36749;
+  } else if (name.indexOf("redmi pad pro 8/128 dark gray") != -1) {
+    return 36750;
+  } else if (name.indexOf("redmi pad pro 8/128 gray") != -1) {
+    return 36750;
+  } else if (name.indexOf("redmi pad pro 8/128 green") != -1) {
+    return 36751;
+  } else if (name.indexOf("redmi pad pro 8/256 blue") != -1) {
+    return 36752;
+  } else if (name.indexOf("redmi pad pro 8/256 dark gray") != -1) {
+    return 36753;
+  } else if (name.indexOf("redmi pad pro 8/256 gray") != -1) {
+    return 36753;
+  } else if (name.indexOf("redmi pad pro 8/256 green") != -1) {
+    return 36754;
+  } else if (name.indexOf("redmi 13 6/128 midnight black") != -1) {
+    return 36688;
+  } else if (name.indexOf("redmi 13 6/128 black") != -1) {
+    return 36688;
+  } else if (name.indexOf("redmi 13 6/128 sandy gold") != -1) {
+    return 36755;
+  } else if (name.indexOf("redmi 13 6/128 gold") != -1) {
+    return 36755;
+  } else if (name.indexOf("redmi 13 6/128 pink") != -1) {
+    return 36756;
+  } else if (name.indexOf("redmi 13 6/128 ocean blue") != -1) {
+    return 36757;
+  } else if (name.indexOf("redmi 13 6/128 blue") != -1) {
+    return 36757;
+  } else if (name.indexOf("redmi 13 8/128 midnight black") != -1) {
+    return 36758;
+  } else if (name.indexOf("redmi 13 8/128 black") != -1) {
+    return 36758;
+  } else if (name.indexOf("redmi 13 8/128 ocean blue") != -1) {
+    return 36759;
+  } else if (name.indexOf("redmi 13 8/128 blue") != -1) {
+    return 36759;
+  } else if (name.indexOf("redmi 13 8/128 pink") != -1) {
+    return 36760;
+  } else if (name.indexOf("redmi 13 8/128 sandy gold") != -1) {
+    return 36761;
+  } else if (name.indexOf("redmi 13 8/128 gold") != -1) {
+    return 36761;
+  } else if (name.indexOf("redmi 13 6/256 midnight black") != -1) {
+    return 36762;
+  } else if (name.indexOf("redmi 13 6/256 black") != -1) {
+    return 36762;
+  } else if (name.indexOf("redmi 13 6/256 ocean blue") != -1) {
+    return 36763;
+  } else if (name.indexOf("redmi 13 6/256 blue") != -1) {
+    return 36763;
+  } else if (name.indexOf("redmi 13 6/256 pink") != -1) {
+    return 36764;
+  } else if (name.indexOf("redmi 13 6/256 sandy gold") != -1) {
+    return 36765;
+  } else if (name.indexOf("redmi 13 6/256 gold") != -1) {
+    return 36765;
+  } else if (name.indexOf("redmi 13 8/256 midnight black") != -1) {
+    return 36766;
+  } else if (name.indexOf("redmi 13 8/256 black") != -1) {
+    return 36766;
+  } else if (name.indexOf("redmi 13 8/256 ocean blue") != -1) {
+    return 36767;
+  } else if (name.indexOf("redmi 13 8/256 blue") != -1) {
+    return 36767;
+  } else if (name.indexOf("redmi 13 8/256 pink") != -1) {
+    return 36768;
+  } else if (name.indexOf("redmi 13 8/256 sandy gold") != -1) {
+    return 36769;
+  } else if (name.indexOf("redmi 13 8/256 gold") != -1) {
+    return 36769;
   } else {
     return returnIDGarmin(name) || "No match";
   }
