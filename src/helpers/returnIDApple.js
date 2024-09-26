@@ -1002,21 +1002,26 @@ export const returnIDApple = (nameStock) => {
     return 36172;
   } else if (name.indexOf("air 11 m2 128 wi-fi starlight") != -1) {
     return 36206;
-  } else if (name.indexOf("air 11 m2 128 lte blue") != -1 ||
-  (name.indexOf("air 13 m2 128 blue") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 128 lte blue") != -1 ||
+    (name.indexOf("air 13 m2 128 blue") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36401;
-  } else if (name.indexOf("air 11 m2 128 lte purple") != -1 ||
-  (name.indexOf("air 13 m2 128 purple") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 128 lte purple") != -1 ||
+    (name.indexOf("air 13 m2 128 purple") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36402;
-  } else if (name.indexOf("air 11 m2 128 lte space gray") != -1 ||
-  (name.indexOf("air 13 m2 128 space gray") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 128 lte space gray") != -1 ||
+    (name.indexOf("air 13 m2 128 space gray") != -1 &&
+      name.indexOf("lte") != -1)
+  ) {
     return 36403;
-  } else if (name.indexOf("air 11 m2 128 lte starlight") != -1 ||
-  (name.indexOf("air 13 m2 128 starlight") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 128 lte starlight") != -1 ||
+    (name.indexOf("air 13 m2 128 starlight") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36404;
   } else if (name.indexOf("air 11 m2 1tb wi-fi blue") != -1) {
     return 36217;
@@ -1026,21 +1031,26 @@ export const returnIDApple = (nameStock) => {
     return 36219;
   } else if (name.indexOf("air 11 m2 1tb wi-fi starlight") != -1) {
     return 36220;
-  } else if (name.indexOf("air 11 m2 1tb lte blue") != -1 ||
-  (name.indexOf("air 13 m2 1tb blue") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 1tb lte blue") != -1 ||
+    (name.indexOf("air 13 m2 1tb blue") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36405;
-  } else if (name.indexOf("air 11 m2 1tb lte purple") != -1 ||
-  (name.indexOf("air 13 m2 1tb purple") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 1tb lte purple") != -1 ||
+    (name.indexOf("air 13 m2 1tb purple") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36406;
-  } else if (name.indexOf("air 11 m2 1tb lte space gray") != -1 ||
-  (name.indexOf("air 13 m2 1tb space gray") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 1tb lte space gray") != -1 ||
+    (name.indexOf("air 13 m2 1tb space gray") != -1 &&
+      name.indexOf("lte") != -1)
+  ) {
     return 36407;
-  } else if (name.indexOf("air 11 m2 1tb lte starlight") != -1 ||
-  (name.indexOf("air 13 m2 1tb starlight") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 1tb lte starlight") != -1 ||
+    (name.indexOf("air 13 m2 1tb starlight") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36408;
   } else if (name.indexOf("air 11 m2 256 wi-fi blue") != -1) {
     return 36209;
@@ -1050,21 +1060,26 @@ export const returnIDApple = (nameStock) => {
     return 36211;
   } else if (name.indexOf("air 11 m2 256 wi-fi starlight") != -1) {
     return 36212;
-  } else if (name.indexOf("air 11 m2 256 lte blue") != -1 ||
-  (name.indexOf("air 13 m2 256 blue") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 256 lte blue") != -1 ||
+    (name.indexOf("air 13 m2 256 blue") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36409;
-  } else if (name.indexOf("air 11 m2 256 lte purple") != -1 ||
-  (name.indexOf("air 13 m2 256 purple") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 256 lte purple") != -1 ||
+    (name.indexOf("air 13 m2 256 purple") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36410;
-  } else if (name.indexOf("air 11 m2 256 lte space gray") != -1 ||
-  (name.indexOf("air 13 m2 256 space gray") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 256 lte space gray") != -1 ||
+    (name.indexOf("air 13 m2 256 space gray") != -1 &&
+      name.indexOf("lte") != -1)
+  ) {
     return 36411;
-  } else if (name.indexOf("air 11 m2 256 lte starlight") != -1 ||
-  (name.indexOf("air 13 m2 256 starlight") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 256 lte starlight") != -1 ||
+    (name.indexOf("air 13 m2 256 starlight") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36412;
   } else if (name.indexOf("air 11 m2 512 wi-fi blue") != -1) {
     return 36213;
@@ -1074,21 +1089,25 @@ export const returnIDApple = (nameStock) => {
     return 36215;
   } else if (name.indexOf("air 11 m2 512 wi-fi starlight") != -1) {
     return 36216;
-  } else if (name.indexOf("air 11 m2 512 lte blue") != -1 ||
-  (name.indexOf("air 13 m2 512 blue") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 512 lte blue") != -1 ||
+    (name.indexOf("air 13 m2 512 blue") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36413;
-  } else if (name.indexOf("air 11 m2 512 lte purple") != -1 ||
-  (name.indexOf("air 13 m2 512 purple") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 512 lte purple") != -1 ||
+    (name.indexOf("air 13 m2 512 purple") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36414;
-  } else if (name.indexOf("air 11 m2 512 lte starlight") != -1 ||
-  (name.indexOf("air 13 m2 512 starlight") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 512 lte starlight") != -1 ||
+    (name.indexOf("air 13 m2 512 starlight") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36415;
-  } else if (name.indexOf("air 11 m2 512 lte starlight") != -1 ||
-  (name.indexOf("air 13 m2 512 starlight") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 11 m2 512 lte starlight") != -1 ||
+    (name.indexOf("air 13 m2 512 starlight") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36416;
   } else if (name.indexOf("air 13 m2 1tb wi-fi blue") != -1) {
     return 36455;
@@ -1098,21 +1117,25 @@ export const returnIDApple = (nameStock) => {
     return 36454;
   } else if (name.indexOf("air 13 m2 1tb wi-fi starlight") != -1) {
     return 36457;
-  } else if (name.indexOf("air 13 m2 1tb lte blue") != -1 ||
-  (name.indexOf("air 13 m2 1tb blue") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 1tb lte blue") != -1 ||
+    (name.indexOf("air 13 m2 1tb blue") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36233;
-  } else if (name.indexOf("air 13 m2 1tb lte purple") != -1 ||
-  (name.indexOf("air 13 m2 1tb purple") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 1tb lte purple") != -1 ||
+    (name.indexOf("air 13 m2 1tb purple") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36234;
-  } else if (name.indexOf("air 13 m2 1tb lte starlight") != -1 ||
-  (name.indexOf("air 13 m2 1tb starlight") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 1tb lte starlight") != -1 ||
+    (name.indexOf("air 13 m2 1tb starlight") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36232;
-  } else if (name.indexOf("air 13 m2 1tb lte starlight") != -1 ||
-  (name.indexOf("air 13 m2 1tb starlight") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 1tb lte starlight") != -1 ||
+    (name.indexOf("air 13 m2 1tb starlight") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36235;
   } else if (name.indexOf("air 13 m2 128 wi-fi blue") != -1) {
     return 36459;
@@ -1122,21 +1145,26 @@ export const returnIDApple = (nameStock) => {
     return 36458;
   } else if (name.indexOf("air 13 m2 128 wi-fi starlight") != -1) {
     return 36461;
-  } else if (name.indexOf("air 13 m2 128 lte blue") != -1 ||
-  (name.indexOf("air 13 m2 128 blue") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 128 lte blue") != -1 ||
+    (name.indexOf("air 13 m2 128 blue") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36222;
-  } else if (name.indexOf("air 13 m2 128 lte purple") != -1 ||
-  (name.indexOf("air 13 m2 128 purple") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 128 lte purple") != -1 ||
+    (name.indexOf("air 13 m2 128 purple") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36221;
-  } else if (name.indexOf("air 13 m2 128 lte space gray") != -1 ||
-  (name.indexOf("air 13 m2 128 space gray") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 128 lte space gray") != -1 ||
+    (name.indexOf("air 13 m2 128 space gray") != -1 &&
+      name.indexOf("lte") != -1)
+  ) {
     return 36173;
-  } else if (name.indexOf("air 13 m2 128 lte starlight") != -1 ||
-  (name.indexOf("air 13 m2 128 starlight") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 128 lte starlight") != -1 ||
+    (name.indexOf("air 13 m2 128 starlight") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36223;
   } else if (name.indexOf("air 13 m2 256 wi-fi blue") != -1) {
     return 36463;
@@ -1146,21 +1174,26 @@ export const returnIDApple = (nameStock) => {
     return 36462;
   } else if (name.indexOf("air 13 m2 256 wi-fi starlight") != -1) {
     return 36465;
-  } else if (name.indexOf("air 13 m2 256 lte blue") != -1 ||
-  (name.indexOf("air 13 m2 256 blue") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 256 lte blue") != -1 ||
+    (name.indexOf("air 13 m2 256 blue") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36225;
-  } else if (name.indexOf("air 13 m2 256 lte purple") != -1 ||
-  (name.indexOf("air 13 m2 256 purple") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 256 lte purple") != -1 ||
+    (name.indexOf("air 13 m2 256 purple") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36226;
-  } else if (name.indexOf("air 13 m2 256 lte space gray") != -1 ||
-  (name.indexOf("air 13 m2 256 space gray") != -1 &&
-  name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 256 lte space gray") != -1 ||
+    (name.indexOf("air 13 m2 256 space gray") != -1 &&
+      name.indexOf("lte") != -1)
+  ) {
     return 36224;
-  } else if (name.indexOf("air 13 m2 256 lte starlight") != -1 ||
-(name.indexOf("air 13 m2 256 starlight") != -1 &&
-name.indexOf("lte") != -1)) {
+  } else if (
+    name.indexOf("air 13 m2 256 lte starlight") != -1 ||
+    (name.indexOf("air 13 m2 256 starlight") != -1 && name.indexOf("lte") != -1)
+  ) {
     return 36227;
   } else if (name.indexOf("air 13 m2 512 wi-fi blue") != -1) {
     return 36467;
@@ -4661,121 +4694,121 @@ name.indexOf("lte") != -1)) {
     return 28278;
   } else if (name.indexOf("15 pro max 512 white ") != -1) {
     return 28281;
-  } else if (name.indexOf("16 128 Black") != -1) {
+  } else if (name.indexOf("16 128 black") != -1) {
     return 36611;
-  } else if (name.indexOf("16 128 Pink") != -1) {
+  } else if (name.indexOf("16 128 pink") != -1) {
     return 36618;
-  } else if (name.indexOf("16 128 Teal") != -1) {
+  } else if (name.indexOf("16 128 teal") != -1) {
     return 36617;
-  } else if (name.indexOf("16 128 Ultramarine") != -1) {
+  } else if (name.indexOf("16 128 ultramarine") != -1) {
     return 36615;
-  } else if (name.indexOf("16 128 White") != -1) {
+  } else if (name.indexOf("16 128 white") != -1) {
     return 36616;
-  } else if (name.indexOf("16 256 Black") != -1) {
+  } else if (name.indexOf("16 256 black") != -1) {
     return 36619;
-  } else if (name.indexOf("16 256 Pink") != -1) {
+  } else if (name.indexOf("16 256 pink") != -1) {
     return 36620;
-  } else if (name.indexOf("16 256 Teal") != -1) {
+  } else if (name.indexOf("16 256 teal") != -1) {
     return 36621;
-  } else if (name.indexOf("16 256 Ultramarine") != -1) {
+  } else if (name.indexOf("16 256 ultramarine") != -1) {
     return 36622;
-  } else if (name.indexOf("16 256 White") != -1) {
+  } else if (name.indexOf("16 256 white") != -1) {
     return 36623;
-  } else if (name.indexOf("16 512 Black") != -1) {
+  } else if (name.indexOf("16 512 black") != -1) {
     return 36624;
-  } else if (name.indexOf("16 512 Pink") != -1) {
+  } else if (name.indexOf("16 512 pink") != -1) {
     return 36625;
-  } else if (name.indexOf("16 512 Teal") != -1) {
+  } else if (name.indexOf("16 512 teal") != -1) {
     return 36626;
-  } else if (name.indexOf("16 512 Ultramarine") != -1) {
+  } else if (name.indexOf("16 512 ultramarine") != -1) {
     return 36627;
-  } else if (name.indexOf("16 512 White") != -1) {
+  } else if (name.indexOf("16 512 white") != -1) {
     return 36628;
-  } else if (name.indexOf("16 Plus 128 Black") != -1) {
+  } else if (name.indexOf("16 plus 128 black") != -1) {
     return 36612;
-  } else if (name.indexOf("16 Plus 128 Pink") != -1) {
+  } else if (name.indexOf("16 plus 128 pink") != -1) {
     return 36630;
-  } else if (name.indexOf("16 Plus 128 Teal") != -1) {
+  } else if (name.indexOf("16 plus 128 teal") != -1) {
     return 36629;
-  } else if (name.indexOf("16 Plus 128 Ultramarine") != -1) {
+  } else if (name.indexOf("16 plus 128 ultramarine") != -1) {
     return 36632;
-  } else if (name.indexOf("16 Plus 128 White") != -1) {
+  } else if (name.indexOf("16 plus 128 white") != -1) {
     return 36631;
-  } else if (name.indexOf("16 Plus 256 Black") != -1) {
+  } else if (name.indexOf("16 plus 256 black") != -1) {
     return 36633;
-  } else if (name.indexOf("16 Plus 256 Pink") != -1) {
+  } else if (name.indexOf("16 plus 256 pink") != -1) {
     return 36634;
-  } else if (name.indexOf("16 Plus 256 Teal") != -1) {
+  } else if (name.indexOf("16 plus 256 teal") != -1) {
     return 36635;
-  } else if (name.indexOf("16 Plus 256 Ultramarine") != -1) {
+  } else if (name.indexOf("16 plus 256 ultramarine") != -1) {
     return 36636;
-  } else if (name.indexOf("16 Plus 256 White") != -1) {
+  } else if (name.indexOf("16 plus 256 white") != -1) {
     return 36637;
-  } else if (name.indexOf("16 Plus 512 Black") != -1) {
+  } else if (name.indexOf("16 plus 512 black") != -1) {
     return 36638;
-  } else if (name.indexOf("16 Plus 512 Pink") != -1) {
+  } else if (name.indexOf("16 plus 512 pink") != -1) {
     return 36639;
-  } else if (name.indexOf("16 Plus 512 Teal") != -1) {
+  } else if (name.indexOf("16 plus 512 teal") != -1) {
     return 36640;
-  } else if (name.indexOf("16 Plus 512 Ultramarine") != -1) {
+  } else if (name.indexOf("16 plus 512 ultramarine") != -1) {
     return 36641;
-  } else if (name.indexOf("16 Plus 512 White") != -1) {
+  } else if (name.indexOf("16 plus 512 white") != -1) {
     return 36642;
-  } else if (name.indexOf("16 Pro 1TB Black") != -1) {
+  } else if (name.indexOf("16 pro 1tb black") != -1) {
     return 36655;
-  } else if (name.indexOf("16 Pro 1TB Desert") != -1) {
+  } else if (name.indexOf("16 pro 1tb desert") != -1) {
     return 36645;
-  } else if (name.indexOf("16 Pro 1TB Natural") != -1) {
+  } else if (name.indexOf("16 pro 1tb natural") != -1) {
     return 36661;
-  } else if (name.indexOf("16 Pro 1TB White") != -1) {
+  } else if (name.indexOf("16 pro 1tb white") != -1) {
     return 36658;
-  } else if (name.indexOf("16 Pro 128 Black") != -1) {
+  } else if (name.indexOf("16 pro 128 black") != -1) {
     return 36643;
-  } else if (name.indexOf("16 Pro 128 Desert") != -1) {
+  } else if (name.indexOf("16 pro 128 desert") != -1) {
     return 36652;
-  } else if (name.indexOf("16 Pro 128 Natural") != -1) {
+  } else if (name.indexOf("16 pro 128 natural") != -1) {
     return 36659;
-  } else if (name.indexOf("16 Pro 128 White") != -1) {
+  } else if (name.indexOf("16 pro 128 white") != -1) {
     return 36657;
-  } else if (name.indexOf("16 Pro 256 Black") != -1) {
+  } else if (name.indexOf("16 pro 256 black") != -1) {
     return 36653;
-  } else if (name.indexOf("16 Pro 256 Desert") != -1) {
+  } else if (name.indexOf("16 pro 256 desert") != -1) {
     return 36650;
-  } else if (name.indexOf("16 Pro 256 Natural") != -1) {
+  } else if (name.indexOf("16 pro 256 natural") != -1) {
     return 36660;
-  } else if (name.indexOf("16 Pro 256 White") != -1) {
+  } else if (name.indexOf("16 pro 256 white") != -1) {
     return 36613;
-  } else if (name.indexOf("16 Pro 512 Black") != -1) {
+  } else if (name.indexOf("16 pro 512 black") != -1) {
     return 36654;
-  } else if (name.indexOf("16 Pro 512 Desert") != -1) {
+  } else if (name.indexOf("16 pro 512 desert") != -1) {
     return 36651;
-  } else if (name.indexOf("16 Pro 512 Natural") != -1) {
+  } else if (name.indexOf("16 pro 512 natural") != -1) {
     return 36644;
-  } else if (name.indexOf("16 Pro 512 White") != -1) {
+  } else if (name.indexOf("16 pro 512 white") != -1) {
     return 36656;
-  } else if (name.indexOf("16 Pro Max 1TB Black") != -1) {
+  } else if (name.indexOf("16 pro max 1tb black") != -1) {
     return 36664;
-  } else if (name.indexOf("16 Pro Max 1TB Desert") != -1) {
+  } else if (name.indexOf("16 pro max 1tb desert") != -1) {
     return 36673;
-  } else if (name.indexOf("16 Pro Max 1TB Natural") != -1) {
+  } else if (name.indexOf("16 pro max 1tb natural") != -1) {
     return 36665;
-  } else if (name.indexOf("16 Pro Max 1TB White") != -1) {
+  } else if (name.indexOf("16 pro max 1tb white") != -1) {
     return 36669;
-  } else if (name.indexOf("16 Pro Max 256 Black") != -1) {
+  } else if (name.indexOf("16 pro max 256 black") != -1) {
     return 36662;
-  } else if (name.indexOf("16 Pro Max 256 Desert") != -1) {
+  } else if (name.indexOf("16 pro max 256 desert") != -1) {
     return 36675;
-  } else if (name.indexOf("16 Pro Max 256 Natural") != -1) {
+  } else if (name.indexOf("16 pro max 256 natural") != -1) {
     return 36667;
-  } else if (name.indexOf("16 Pro Max 256 White") != -1) {
+  } else if (name.indexOf("16 pro max 256 white") != -1) {
     return 36671;
-  } else if (name.indexOf("16 Pro Max 512 Black") != -1) {
+  } else if (name.indexOf("16 pro max 512 black") != -1) {
     return 36663;
-  } else if (name.indexOf("16 Pro Max 512 Desert") != -1) {
+  } else if (name.indexOf("16 pro max 512 desert") != -1) {
     return 36676;
-  } else if (name.indexOf("16 Pro Max 512 Natural") != -1) {
+  } else if (name.indexOf("16 pro max 512 natural") != -1) {
     return 36668;
-  } else if (name.indexOf("16 Pro Max 512 White") != -1) {
+  } else if (name.indexOf("16 pro max 512 white") != -1) {
     return 36672;
   } else {
     return returnIDSamsung(name) || "No match";

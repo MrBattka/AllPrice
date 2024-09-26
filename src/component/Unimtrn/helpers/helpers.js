@@ -417,6 +417,7 @@ export const fixNameUnimtrn = (el) => {
   const fixOceanTeal = fixForestGreen.replace("Ocean Teal", "Teal");
   const fixProPlus = fixOceanTeal.replace("Pro Plus", "Pro +");
   const fixMoonlightWhite = fixProPlus.replace("Moonlight White", "White");
+  const fixProMaxx = fixMoonlightWhite.replace("ProMax", "Pro Max");
 
-  return fixMoonlightWhite;
+  return fixProMaxx;
 };
