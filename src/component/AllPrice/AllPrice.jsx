@@ -4,6 +4,7 @@ import {
   baseFixGarmin,
   baseFixHi,
   baseFixMiHonor,
+  baseFixS5,
   baseFixSuperPrice,
   baseFixVsemi,
 } from "../../helpers/baseFix";
@@ -45,6 +46,7 @@ import {
 } from "../MiHonor/helpers/helpers";
 import { fixNameGarmin, returnExtraPriceGarmin, returnFixNameProductGarmin, returnStockPriceGarmin } from "../Garmin/helpers/helpers";
 import { returnXiaomi } from "../Unimtrn/Xiaomi/xiaomi";
+import { fixNameS5, returnExtraPriceS5, returnNameInArrS5, returnStockPriceS5 } from "../S5/helpers/helpers";
 
 const AllPrice = ({
   dataSuperprice,
@@ -52,7 +54,8 @@ const AllPrice = ({
   dataUnimtrn,
   dataHi,
   dataMihonor,
-  dataGarmin
+  dataGarmin,
+  S5Data
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -197,6 +200,31 @@ const AllPrice = ({
           extraPrice: returnExtraPriceGarmin(fixNameGarmin(garmin.name)),
           stockPrice: returnStockPriceGarmin(fixNameGarmin(garmin.name)),
           provider: "Garmin",
+        })
+      );
+    }
+  });
+
+  S5Data.map((S5) => {
+    baseFixS5(S5) && returnStockPriceS5(fixNameS5(S5.name));
+    baseFixS5(S5) && returnExtraPriceS5(fixNameS5(S5.name));
+    if (
+      S5.name &&
+      typeof S5.name === "string" &&
+      baseFixS5(S5) &&
+      isOpen
+    )
+     {
+      return (
+        returnIDApple(fixNameS5(S5.name)) !== 'No match' &&
+        returnExtraPriceS5(S5.name) &&
+        returnStockPriceS5(S5.name) &&
+        allPriceArr.push({
+          id: returnIDApple(returnNameInArrS5(fixNameS5(S5.name))),
+          name: returnNameInArrS5(fixNameS5(S5.name)),
+          extraPrice: returnExtraPriceS5(fixNameS5(S5.name)),
+          stockPrice: returnStockPriceS5(fixNameS5(S5.name)),
+          provider: "S5",
         })
       );
     }

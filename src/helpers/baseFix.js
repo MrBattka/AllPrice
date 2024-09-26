@@ -181,3 +181,34 @@ export const baseFixGarmin = (el) => {
     toLowerCase.indexOf("fenix 8") == -1
   );
 };
+
+export const baseFixS5 = (el) => {
+  const toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("s5, ") == -1 &&
+    toLowerCase.indexOf("📱iphone📱") == -1 &&
+    toLowerCase.indexOf("⏰ watch ⏰") == -1 &&
+    (toLowerCase.slice(-3) == "pad" ? toLowerCase.indexOf("ipad") == -1 : toLowerCase) &&
+    (toLowerCase.slice(-3) == "on " ? toLowerCase.indexOf("dyson") == -1 : toLowerCase) &&
+    (toLowerCase.slice(-3) == "omi" ? toLowerCase.indexOf("xiaomi") == -1 : toLowerCase) &&
+    (toLowerCase.slice(-3) == "ral" ? toLowerCase.indexOf("natural") == -1 : toLowerCase) &&
+    (toLowerCase.slice(-2) == "5g" ? toLowerCase.indexOf("5g") == -1 : toLowerCase) &&
+    (toLowerCase.slice(-7, -5) == "5g" ? toLowerCase.indexOf("5g") == -1 : toLowerCase) &&
+    toLowerCase.indexOf("📢📢") == -1 &&
+    toLowerCase.indexOf("возврат") == -1 &&
+    toLowerCase.indexOf("уценка") == -1 &&
+    toLowerCase.indexOf("тонкая коробка") == -1 &&
+    toLowerCase.indexOf("подходят") == -1 &&
+    toLowerCase.indexOf("вопросам") == -1 &&
+    toLowerCase.indexOf("s5_s5_s") == -1 &&
+    toLowerCase.indexOf("от 10") == -1 &&
+    toLowerCase.indexOf("➖➖") == -1 &&
+    toLowerCase.indexOf("airtag") == -1 &&
+    toLowerCase.indexOf("keyboard") == -1 &&
+    (toLowerCase.slice(0, 3) == "whi" ? toLowerCase.indexOf("white") == -1 : toLowerCase) &&
+    (toLowerCase.slice(0, 3) == "bla" ? toLowerCase.indexOf("black") == -1 : toLowerCase) &&
+    (toLowerCase.slice(0, 3) == " - " ? toLowerCase.indexOf(" - ") == -1 : toLowerCase) &&
+    toLowerCase.indexOf("se 4") == -1 &&
+    toLowerCase.indexOf("🔫🔫") == -1
+  );
+};

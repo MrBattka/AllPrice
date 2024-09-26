@@ -1,7 +1,8 @@
 import { returnIDSamsung } from "./returnIDSamsung";
 
 export const returnIDApple = (nameStock) => {
-  const name = nameStock.toLowerCase();
+  const removeDoubleSpace = nameStock.replace(/\s+/g, " ");
+  const name = removeDoubleSpace.toLowerCase();
   //  AirPods
   if (name.indexOf("airpods 2 ") != -1) {
     return 12529;
@@ -9,7 +10,8 @@ export const returnIDApple = (nameStock) => {
     return 23458;
   } else if (
     name.indexOf("airpods 3 lighting") != -1 ||
-    name.indexOf("airpods 3 lightning") != -1
+    name.indexOf("airpods 3 lightning") != -1 ||
+    name.indexOf("airpods 3") != -1
   ) {
     return 20959;
   } else if (name.indexOf("airpods 3 magsafe") != -1) {
@@ -3606,7 +3608,7 @@ name.indexOf("lte") != -1)) {
     return 28230;
   } else if (name.indexOf("15 128 pink") != -1) {
     return 28236;
-  } else if (name.indexOf("15 128 yellow") != -1) {
+  } else if (name.indexOf("15 256 yellow") != -1) {
     return 28233;
   } else if (
     name.indexOf("15 256 black 🇨🇳") != -1 ||
@@ -4263,13 +4265,13 @@ name.indexOf("lte") != -1)) {
     name.indexOf("15 pro 128 white🇺🇸") != -1
   ) {
     return 30349;
-  } else if (name.indexOf("15 pro 128 black ") != -1) {
+  } else if (name.indexOf("15 pro 128 black") != -1) {
     return 28254;
-  } else if (name.indexOf("15 pro 128 blue ") != -1) {
+  } else if (name.indexOf("15 pro 128 blue") != -1) {
     return 28259;
-  } else if (name.indexOf("15 pro 128 natural ") != -1) {
+  } else if (name.indexOf("15 pro 128 natural") != -1) {
     return 28263;
-  } else if (name.indexOf("15 pro 128 white ") != -1) {
+  } else if (name.indexOf("15 pro 128 white") != -1) {
     return 28267;
   } else if (
     name.indexOf("15 pro 256 black 🇨🇳") != -1 ||

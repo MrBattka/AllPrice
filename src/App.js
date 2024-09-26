@@ -16,10 +16,11 @@ import AllPrice from "./component/AllPrice/AllPrice";
 import IndexGarmin from "./component/Garmin/indexGarmin";
 import IndexGarminNotID from "./component/Garmin/indexGarminNotID";
 import AllPriceWithID from "./component/AllPrice/AllPriceWithID";
+import IndexS5 from "./component/S5/IndexS5";
+import IndexS5NotID from "./component/S5/IndexS5NotID";
 
 const App = () => {
   const allPrice = [];
-  const [openAllPrice, setOpenAllPrice] = useState(false);
 
   const [dataHi, setDataHi] = useState([]);
   const [dataUNIMTRN, setDataUNIMTRN] = useState([]);
@@ -27,13 +28,15 @@ const App = () => {
   const [dataVsemi, setDataVseMi] = useState([]);
   const [dataSuperprice, setDataSuperprice] = useState([]);
   const [dataGarmin, setDataGarmin] = useState([]);
+  const [dataS5, setDataS5] = useState([]);
 
   const unimtrn = [];
   const hi = [];
   const mihonor = [];
   const vsemi = [];
   const superprice = [];
-  const garmin = []
+  const garmin = [];
+  const S5 = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -67,9 +70,16 @@ const App = () => {
 
   dataGarmin.map((garminEl) => {
     garminEl.Garmin &&
-    garminEl.Garmin.length > 2 &&
+      garminEl.Garmin.length > 2 &&
       typeof garminEl.Garmin === "string" &&
       garmin.push({ name: garminEl.Garmin });
+  });
+
+  dataS5.map((S5El) => {
+    S5El.S5 &&
+      S5El.S5.length > 2 &&
+      typeof S5El.S5 === "string" &&
+      S5.push({ name: S5El.S5 });
   });
 
   const handleImport = ($event) => {
@@ -94,6 +104,8 @@ const App = () => {
           setDataSuperprice(rowSuperprice);
           const rowGarmin = utils.sheet_to_json(wb.Sheets[sheets[5]]);
           setDataGarmin(rowGarmin);
+          const rowS5 = utils.sheet_to_json(wb.Sheets[sheets[6]]);
+          setDataS5(rowS5);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -148,12 +160,14 @@ const App = () => {
           el={dataSuperprice}
           superpriceData={superprice}
           allPrice={allPrice}
-          setOpenAllPrice={setOpenAllPrice}
         />
         <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} />
         {/* Garmin */}
         <IndexGarmin el={dataGarmin} garminData={garmin} />
         <IndexGarminNotID el={dataGarmin} garminData={garmin} />
+        {/* S5 */}
+        <IndexS5 el={dataS5} S5Data={S5} />
+        <IndexS5NotID el={dataS5} S5Data={S5} />
         {/* All Price */}
         <AllPriceWithID
           dataSuperprice={superprice}
@@ -162,6 +176,7 @@ const App = () => {
           dataHi={hi}
           dataMihonor={mihonor}
           dataGarmin={garmin}
+          S5Data={S5}
         />
 
         <AllPrice
@@ -171,6 +186,7 @@ const App = () => {
           dataHi={hi}
           dataMihonor={mihonor}
           dataGarmin={garmin}
+          S5Data={S5}
         />
       </div>
     </div>
