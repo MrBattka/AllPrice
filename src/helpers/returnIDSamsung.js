@@ -127,7 +127,10 @@ export const returnIDSamsung = (name) => {
     return 31092;
   } else if (name.indexOf("a25 6/128 blue") != -1) {
     return 31094;
-  } else if (name.indexOf("a25 6/128 silver") != -1) {
+  } else if (
+    name.indexOf("a25 6/128 silver") != -1 ||
+    name.indexOf("a25 6/128 light blue") != -1
+  ) {
     return 35705;
   } else if (name.indexOf("a25 6/128 yellow") != -1) {
     return 31093;
@@ -138,7 +141,10 @@ export const returnIDSamsung = (name) => {
     return 31096;
   } else if (name.indexOf("a25 8/128 blue") != -1) {
     return 31098;
-  } else if (name.indexOf("a25 8/128 silver") != -1) {
+  } else if (
+    name.indexOf("a25 8/128 silver") != -1 ||
+    name.indexOf("a25 8/128 light blue") != -1
+  ) {
     return 35706;
   } else if (name.indexOf("a25 8/128 yellow") != -1) {
     return 31097;
@@ -149,7 +155,10 @@ export const returnIDSamsung = (name) => {
     return 31100;
   } else if (name.indexOf("a25 8/256 blue") != -1) {
     return 31102;
-  } else if (name.indexOf("a25 8/256 silver") != -1) {
+  } else if (
+    name.indexOf("a25 8/256 silver") != -1 ||
+    name.indexOf("a25 8/256 light blue") != -1
+  ) {
     return 35707;
   } else if (name.indexOf("a25 8/256 yellow") != -1) {
     return 31101;
@@ -1483,113 +1492,245 @@ export const returnIDSamsung = (name) => {
     (name.indexOf("s24 8/512 sapphire blue") != -1 && name.indexOf("🇦🇪") != -1)
   ) {
     return 35867;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium blue 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium blue 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium blue") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb titanium blue") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 35874;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium blue 🇪🇺") != -1) {
-    return 35874;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium green 🇪🇺") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium green 🇪🇺") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium green") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb titanium green") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 35875;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium green 🇦🇪") != -1) {
-    return 35875;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium orange 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium orange 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium orange") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb titanium orange") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 35876;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium orange 🇪🇺") != -1) {
-    return 35876;
-  } else if (name.indexOf("s24 ultra 12/256 titanium blue 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium blue 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium blue") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 titanium blue") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 35877;
-  } else if (name.indexOf("s24 ultra 12/256 titanium blue 🇪🇺") != -1) {
-    return 35877;
-  } else if (name.indexOf("s24 ultra 12/256 titanium green 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium green 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium green") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 titanium green") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 35878;
-  } else if (name.indexOf("s24 ultra 12/256 titanium green 🇪🇺") != -1) {
-    return 35878;
-  } else if (name.indexOf("s24 ultra 12/256 titanium orange 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium orange 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium orange") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 titanium orange") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 35879;
-  } else if (name.indexOf("s24 ultra 12/256 titanium orange 🇪🇺") != -1) {
-    return 35879;
-  } else if (name.indexOf("s24 ultra 12/512 titanium blue 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium blue 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium blue") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 titanium blue") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 35882;
-  } else if (name.indexOf("s24 ultra 12/512 titanium blue 🇪🇺") != -1) {
-    return 35882;
-  } else if (name.indexOf("s24 ultra 12/512 titanium green 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium green 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium green") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 titanium green") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 35880;
-  } else if (name.indexOf("s24 ultra 12/512 titanium green 🇪🇺") != -1) {
-    return 35880;
-  } else if (name.indexOf("s24 ultra 12/512 titanium orange 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium orange 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium orange") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 titanium orange") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 35881;
-  } else if (name.indexOf("s24 ultra 12/512 titanium orange 🇪🇺") != -1) {
-    return 35881;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium black 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium black 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium black") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34362;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium black 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium black 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium black") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb titanium black") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34394;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium black 🇪🇺") != -1) {
-    return 34394;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium grey 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium grey 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium grey") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34363;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium grey 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium grey 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium grey") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb titanium grey") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34395;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium grey 🇪🇺") != -1) {
-    return 34395;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium violet 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium violet 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium violet") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34361;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium violet 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium violet 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium violet") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb titanium violet") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34393;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium violet 🇪🇺") != -1) {
-    return 34393;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium yellow 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium yellow") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34359;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium yellow 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/1tb titanium yellow 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb titanium yellow") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb titanium yellow") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34391;
-  } else if (name.indexOf("s24 ultra 12/1tb titanium yellow 🇪🇺") != -1) {
-    return 34391;
-  } else if (name.indexOf("s24 ultra 12/256 titanium black 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium black 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium black") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34366;
-  } else if (name.indexOf("s24 ultra 12/256 titanium black 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium black 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium black") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 titanium black") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34398;
-  } else if (name.indexOf("s24 ultra 12/256 titanium black 🇪🇺") != -1) {
-    return 34398;
-  } else if (name.indexOf("s24 ultra 12/256 titanium grey 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium grey 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium grey") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34364;
-  } else if (name.indexOf("s24 ultra 12/256 titanium grey 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium grey 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium grey") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 titanium grey") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34396;
-  } else if (name.indexOf("s24 ultra 12/256 titanium grey 🇪🇺") != -1) {
-    return 34396;
-  } else if (name.indexOf("s24 ultra 12/256 titanium violet 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium violet 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium violet") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34355;
-  } else if (name.indexOf("s24 ultra 12/256 titanium violet 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium violet 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium violet") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 titanium violet") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34387;
-  } else if (name.indexOf("s24 ultra 12/256 titanium violet 🇪🇺") != -1) {
-    return 34387;
-  } else if (name.indexOf("s24 ultra 12/256 titanium yellow 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium yellow") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34357;
-  } else if (name.indexOf("s24 ultra 12/256 titanium yellow 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/256 titanium yellow 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 titanium yellow") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 titanium yellow") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34389;
-  } else if (name.indexOf("s24 ultra 12/256 titanium yellow 🇪🇺") != -1) {
-    return 34389;
-  } else if (name.indexOf("s24 ultra 12/512 titanium black 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium black 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium black") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34358;
-  } else if (name.indexOf("s24 ultra 12/512 titanium black 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium black 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium black") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 titanium black") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34390;
-  } else if (name.indexOf("s24 ultra 12/512 titanium black 🇪🇺") != -1) {
-    return 34390;
-  } else if (name.indexOf("s24 ultra 12/512 titanium grey 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium grey 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium grey") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34360;
-  } else if (name.indexOf("s24 ultra 12/512 titanium grey 🇦🇪") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium grey 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium grey") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 titanium grey") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34392;
-  } else if (name.indexOf("s24 ultra 12/512 titanium grey 🇪🇺") != -1) {
-    return 34392;
-  } else if (name.indexOf("s24 ultra 12/512 titanium violet 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium violet 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium violet") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34365;
-  } else if (name.indexOf("s24 ultra 12/512 titanium violet 🇪🇺") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium violet 🇪🇺") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium violet") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 titanium violet") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34397;
-  } else if (name.indexOf("s24 ultra 12/512 titanium violet 🇦🇪") != -1) {
-    return 34397;
-  } else if (name.indexOf("s24 ultra 12/512 titanium yellow 🇰🇿") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium yellow") != -1 &&
+      name.indexOf("🇰🇿") != -1)
+  ) {
     return 34356;
-  } else if (name.indexOf("s24 ultra 12/512 titanium yellow 🇦🇪") != -1) {
-    return 34388;
-  } else if (name.indexOf("s24 ultra 12/512 titanium yellow 🇪🇺") != -1) {
+  } else if (
+    name.indexOf("s24 ultra 12/512 titanium yellow 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 titanium yellow") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 titanium yellow") != -1 &&
+      name.indexOf("🇪🇺") != -1)
+  ) {
     return 34388;
   } else if (name.indexOf("s24 ultra 12/1tb titanium black") != -1) {
     return 31002;
@@ -1636,6 +1777,552 @@ export const returnIDSamsung = (name) => {
     return 30998;
   } else if (name.indexOf("s24 ultra 12/512 titanium yellow") != -1) {
     return 30994;
+  } else if (
+    name.indexOf("s24+ 12/256 green 🇦🇪") != -1 ||
+    (name.indexOf("s24+ 12/256 green") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/256 green") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35868;
+  } else if (
+    name.indexOf("s24+ 12/256 orange 🇦🇪") != -1 ||
+    (name.indexOf("s24+ 12/256 orange") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/256 orange") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35869;
+  } else if (
+    name.indexOf("s24+ 12/256 blue 🇦🇪") != -1 ||
+    (name.indexOf("s24+ 12/256 blue") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/256 blue") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35870;
+  } else if (
+    name.indexOf("s24+ 12/512 green 🇦🇪") != -1 ||
+    (name.indexOf("s24+ 12/512 green") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/512 green") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35871;
+  } else if (
+    name.indexOf("s24+ 12/512 orange 🇦🇪") != -1 ||
+    (name.indexOf("s24+ 12/512 orange") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/512 orange") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35872;
+  } else if (
+    name.indexOf("s24+ 12/512 blue 🇦🇪") != -1 ||
+    (name.indexOf("s24+ 12/512 blue") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/512 blue") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35873;
+  } else if (
+    name.indexOf("s24+ 12/256 yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24+ 12/256 yellow") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34353;
+  } else if (
+    name.indexOf("s24+ 12/256 yellow 🇦🇪") != -1 ||
+    (name.indexOf("s24+ 12/256 yellow") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/256 yellow") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34385;
+  } else if (
+    name.indexOf("s24+ 12/256 violet 🇰🇿") != -1 ||
+    (name.indexOf("s24+ 12/256 violet") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34352;
+  } else if (
+    name.indexOf("s24+ 12/256 violet 🇦🇪") != -1 ||
+    (name.indexOf("s24+ 12/256 violet") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/256 violet") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34384;
+  } else if (
+    name.indexOf("s24+ 12/256 gray 🇰🇿") != -1 ||
+    (name.indexOf("s24+ 12/256 gray") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34354;
+  } else if (
+    name.indexOf("s24+ 12/256 gray 🇪🇺") != -1 ||
+    (name.indexOf("s24+ 12/256 gray") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/256 gray") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34386;
+  } else if (
+    name.indexOf("s24+ 12/256 onyx black 🇰🇿") != -1 ||
+    (name.indexOf("s24+ 12/256 onyx black") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34349;
+  } else if (
+    name.indexOf("s24+ 12/256 onyx black 🇪🇺") != -1 ||
+    (name.indexOf("s24+ 12/256 onyx black") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/256 onyx black") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34381;
+  } else if (
+    name.indexOf("s24+ 12/512 yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24+ 12/512 yellow") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34351;
+  } else if (
+    name.indexOf("s24+ 12/512 yellow 🇪🇺") != -1 ||
+    (name.indexOf("s24+ 12/512 yellow") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/512 yellow") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34383;
+  } else if (name.indexOf("s24+ 12/512 yellow 🇦🇪") != -1) {
+    return 34383;
+  } else if (
+    name.indexOf("s24+ 12/512 violet 🇰🇿") != -1 ||
+    (name.indexOf("s24+ 12/512 violet") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34348;
+  } else if (
+    name.indexOf("s24+ 12/512 violet 🇦🇪") != -1 ||
+    (name.indexOf("s24+ 12/512 violet") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/512 violet") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34380;
+  } else if (
+    name.indexOf("s24+ 12/512 gray 🇰🇿") != -1 ||
+    (name.indexOf("s24+ 12/512 gray") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34347;
+  } else if (
+    name.indexOf("s24+ 12/512 gray 🇦🇪") != -1 ||
+    (name.indexOf("s24+ 12/512 gray") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/512 gray") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34379;
+  } else if (
+    name.indexOf("s24+ 12/512 onyx black 🇰🇿") != -1 ||
+    (name.indexOf("s24+ 12/512 onyx black") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34350;
+  } else if (
+    name.indexOf("s24+ 12/512 onyx black 🇪🇺") != -1 ||
+    (name.indexOf("s24+ 12/512 onyx black") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24+ 12/512 onyx black") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34382;
+  } else if (name.indexOf("s24+ 12/256 yellow") != -1) {
+    return 30987;
+  } else if (name.indexOf("s24+ 12/256 violet") != -1) {
+    return 30989;
+  } else if (name.indexOf("s24+ 12/256 green") != -1) {
+    return 35768;
+  } else if (name.indexOf("s24+ 12/256 gray") != -1) {
+    return 30991;
+  } else if (name.indexOf("s24+ 12/256 onyx black") != -1) {
+    return 30985;
+  } else if (name.indexOf("s24+ 12/256 orange") != -1) {
+    return 35777;
+  } else if (name.indexOf("s24+ 12/256 blue") != -1) {
+    return 35828;
+  } else if (name.indexOf("s24+ 12/512 gray") != -1) {
+    return 30992;
+  } else if (name.indexOf("s24+ 12/512 onyx black") != -1) {
+    return 30986;
+  } else if (name.indexOf("s24+ 12/512 orange") != -1) {
+    return 35778;
+  } else if (name.indexOf("s24+ 12/512 yellow") != -1) {
+    return 30988;
+  } else if (name.indexOf("s24+ 12/512 violet") != -1) {
+    return 30990;
+  } else if (name.indexOf("s24+ 12/512 green") != -1) {
+    return 35769;
+  } else if (name.indexOf("s24+ 12/512 blue") != -1) {
+    return 35829;
+  } else if (
+    name.indexOf("s24 8/128 yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/128 yellow") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34341;
+  } else if (
+    name.indexOf("s24 8/128 yellow 🇪🇺") != -1 ||
+    (name.indexOf("s24 8/128 yellow") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/128 yellow") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34373;
+  } else if (
+    name.indexOf("s24 8/128 violet 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/128 violet") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34339;
+  } else if (
+    name.indexOf("s24 8/128 violet 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/128 violet") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/128 violet") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34371;
+  } else if (
+    name.indexOf("s24 8/128 green 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/128 green") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/128 green") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 35859;
+  } else if (
+    name.indexOf("s24 8/128 gray 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/128 yellow") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34336;
+  } else if (
+    name.indexOf("s24 8/128 grey 🇦🇪") != -1 ||
+    name.indexOf("s24 8/128 gray 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/128 grey") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/128 grey") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 8/128 gray") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/128 gray") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34368;
+  } else if (
+    name.indexOf("s24 8/128 onyx black 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/128 onyx black") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34345;
+  } else if (
+    name.indexOf("s24 8/128 onyx black 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/128 onyx black") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/128 onyx black") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34377;
+  } else if (
+    name.indexOf("s24 8/128 orange 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/128 orange") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/128 orange") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 35860;
+  } else if (
+    name.indexOf("s24 8/128 blue 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/128 blue") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/128 blue") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 35861;
+  } else if (
+    name.indexOf("s24 8/256 yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/256 yellow") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34344;
+  } else if (
+    name.indexOf("s24 8/256 yellow 🇪🇺") != -1 ||
+    (name.indexOf("s24 8/256 yellow") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/256 yellow") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34376;
+  } else if (
+    name.indexOf("s24 8/256 violet 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/256 violet") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34338;
+  } else if (
+    name.indexOf("s24 8/256 violet 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/256 violet") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/256 violet") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34370;
+  } else if (
+    name.indexOf("s24 8/256 green 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/256 green") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/256 green") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 35862;
+  } else if (
+    name.indexOf("s24 8/256 gray 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/256 gray") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34346;
+  } else if (
+    name.indexOf("s24 8/256 gray 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/256 gray") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/256 gray") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34378;
+  } else if (
+    name.indexOf("s24 8/256 onyx black 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/256 onyx black") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34343;
+  } else if (
+    name.indexOf("s24 8/256 onyx black 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/256 onyx black") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/256 onyx black") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34375;
+  } else if (
+    name.indexOf("s24 8/256 orange 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/256 orange") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/256 orange") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 35863;
+  } else if (
+    name.indexOf("s24 8/256 blue 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/256 blue") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/256 blue") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 35864;
+  } else if (
+    name.indexOf("s24 8/512 yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/512 yellow") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34340;
+  } else if (
+    name.indexOf("s24 8/512 yellow 🇪🇺") != -1 ||
+    (name.indexOf("s24 8/512 yellow") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/512 yellow") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34372;
+  } else if (
+    name.indexOf("s24 8/512 violet 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/512 violet") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34337;
+  } else if (
+    name.indexOf("s24 8/512 violet 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/512 violet") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/512 violet") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34369;
+  } else if (
+    name.indexOf("s24 8/512 green 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/512 green") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/512 green") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 35865;
+  } else if (
+    name.indexOf("s24 8/512 gray 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/512 gray") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34335;
+  } else if (
+    name.indexOf("s24 8/512 gray 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/512 gray") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/512 gray") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34367;
+  } else if (
+    name.indexOf("s24 8/512 onyx black 🇰🇿") != -1 ||
+    (name.indexOf("s24 8/512 onyx black") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34342;
+  } else if (
+    name.indexOf("s24 8/512 onyx black 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/512 onyx black") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/512 onyx black") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 34374;
+  } else if (
+    name.indexOf("s24 8/512 orange 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/512 orange") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/512 orange") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 35866;
+  } else if (
+    name.indexOf("s24 8/512 blue 🇦🇪") != -1 ||
+    (name.indexOf("s24 8/512 blue") != -1 && name.indexOf("🇪🇺") != -1) ||
+    (name.indexOf("s24 8/512 blue") != -1 && name.indexOf("🇦🇪") != -1)
+  ) {
+    return 35867;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb blue 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb blue") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb blue") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35874;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb green 🇪🇺") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb green") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb green") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35875;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb orange 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb orange") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb orange") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35876;
+  } else if (
+    name.indexOf("s24 ultra 12/256 blue 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 blue") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 blue") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35877;
+  } else if (
+    name.indexOf("s24 ultra 12/256 green 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 green") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 green") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35878;
+  } else if (
+    name.indexOf("s24 ultra 12/256 orange 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 orange") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 orange") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35879;
+  } else if (
+    name.indexOf("s24 ultra 12/512 blue 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 blue") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 blue") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35882;
+  } else if (
+    name.indexOf("s24 ultra 12/512 green 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 green") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 green") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35880;
+  } else if (
+    name.indexOf("s24 ultra 12/512 orange 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 orange") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 orange") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 35881;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb black 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb black") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34362;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb black 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb black") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb black") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34394;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb grey 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb grey") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34363;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb grey 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb grey") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb grey") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34395;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb violet 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb violet") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34361;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb violet 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb violet") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb violet") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34393;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb yellow") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34359;
+  } else if (
+    name.indexOf("s24 ultra 12/1tb yellow 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/1tb yellow") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/1tb yellow") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34391;
+  } else if (
+    name.indexOf("s24 ultra 12/256 black 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/256 black") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34366;
+  } else if (
+    name.indexOf("s24 ultra 12/256 black 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 black") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 black") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34398;
+  } else if (
+    name.indexOf("s24 ultra 12/256 grey 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/256 grey") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34364;
+  } else if (
+    name.indexOf("s24 ultra 12/256 grey 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 grey") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 grey") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34396;
+  } else if (
+    name.indexOf("s24 ultra 12/256 violet 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/256 violet") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34355;
+  } else if (
+    name.indexOf("s24 ultra 12/256 violet 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 violet") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 violet") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34387;
+  } else if (
+    name.indexOf("s24 ultra 12/256 yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/256 yellow") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34357;
+  } else if (
+    name.indexOf("s24 ultra 12/256 yellow 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/256 yellow") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/256 yellow") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34389;
+  } else if (
+    name.indexOf("s24 ultra 12/512 black 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/512 black") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34358;
+  } else if (
+    name.indexOf("s24 ultra 12/512 black 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 black") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 black") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34390;
+  } else if (
+    name.indexOf("s24 ultra 12/512 grey 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/512 grey") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34360;
+  } else if (
+    name.indexOf("s24 ultra 12/512 grey 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 grey") != -1 && name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 grey") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34392;
+  } else if (
+    name.indexOf("s24 ultra 12/512 violet 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/512 violet") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34365;
+  } else if (
+    name.indexOf("s24 ultra 12/512 violet 🇪🇺") != -1 ||
+    (name.indexOf("s24 ultra 12/512 violet") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 violet") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34397;
+  } else if (
+    name.indexOf("s24 ultra 12/512 yellow 🇰🇿") != -1 ||
+    (name.indexOf("s24 ultra 12/512 yellow") != -1 && name.indexOf("🇰🇿") != -1)
+  ) {
+    return 34356;
+  } else if (
+    name.indexOf("s24 ultra 12/512 yellow 🇦🇪") != -1 ||
+    (name.indexOf("s24 ultra 12/512 yellow") != -1 &&
+      name.indexOf("🇦🇪") != -1) ||
+    (name.indexOf("s24 ultra 12/512 yellow") != -1 && name.indexOf("🇪🇺") != -1)
+  ) {
+    return 34388;
   } else if (name.indexOf("s24 12/256 yellow") != -1) {
     return 36038;
   } else if (name.indexOf("s24 12/256 violet") != -1) {
@@ -1685,7 +2372,7 @@ export const returnIDSamsung = (name) => {
     return 30978;
   } else if (name.indexOf("s24 8/512 violet") != -1) {
     return 30981;
-  } else if (name.indexOf("s24 8/512 green ") != -1) {
+  } else if (name.indexOf("s24 8/512 green") != -1) {
     return 35767;
   } else if (
     name.indexOf("s24 8/512 grey") != -1 ||
@@ -1704,214 +2391,28 @@ export const returnIDSamsung = (name) => {
     return 30989;
   } else if (name.indexOf("s24+ 12/256 green") != -1) {
     return 35768;
-  } else if (name.indexOf("s24+ 12/256 green 🇦🇪") != -1) {
-    return 35868;
-  } else if (name.indexOf("s24+ 12/256 green 🇪🇺") != -1) {
-    return 35868;
-  } else if (name.indexOf("s24+ 12/256 gray") != -1) {
-    return 30991;
-  } else if (name.indexOf("s24+ 12/256 black") != -1) {
-    return 30985;
-  } else if (name.indexOf("s24+ 12/256 orange") != -1) {
-    return 35777;
-  } else if (name.indexOf("s24+ 12/256 orange 🇦🇪") != -1) {
-    return 35869;
-  } else if (name.indexOf("s24+ 12/256 orange 🇪🇺") != -1) {
-    return 35869;
-  } else if (name.indexOf("s24+ 12/256 blue") != -1) {
-    return 35828;
-  } else if (name.indexOf("s24+ 12/256 blue 🇦🇪") != -1) {
-    return 35870;
-  } else if (name.indexOf("s2+4 12/256 blue 🇪🇺") != -1) {
-    return 35870;
-  } else if (name.indexOf("s24+ 12/512 yellow") != -1) {
-    return 30988;
-  } else if (name.indexOf("s24+ 12/512 violet") != -1) {
-    return 30990;
-  } else if (name.indexOf("s24+ 12/512 green") != -1) {
-    return 35769;
-  } else if (name.indexOf("s24+ 12/512 green 🇦🇪") != -1) {
-    return 35871;
-  } else if (name.indexOf("s24+ 12/512 green 🇪🇺") != -1) {
-    return 35871;
+  } else if (name.indexOf("s24+ 12/512 blue") != -1) {
+    return 35829;
   } else if (name.indexOf("s24+ 12/512 gray") != -1) {
     return 30992;
   } else if (name.indexOf("s24+ 12/512 black") != -1) {
     return 30986;
   } else if (name.indexOf("s24+ 12/512 orange") != -1) {
     return 35778;
-  } else if (name.indexOf("s24+ 12/512 orange 🇦🇪") != -1) {
-    return 35872;
-  } else if (name.indexOf("s24+ 12/512 orange 🇪🇺") != -1) {
-    return 35872;
-  } else if (name.indexOf("s24+ 12/512 blue") != -1) {
-    return 35829;
-  } else if (name.indexOf("s24+ 12/512 blue 🇦🇪") != -1) {
-    return 35873;
-  } else if (name.indexOf("s24+ 12/512 blue 🇪🇺") != -1) {
-    return 35873;
-  } else if (name.indexOf("s24+ 12/256 yellow 🇰🇿") != -1) {
-    return 34353;
-  } else if (name.indexOf("s24+ 12/256 yellow 🇦🇪") != -1) {
-    return 34385;
-  } else if (name.indexOf("s24+ 12/256 yellow 🇪🇺") != -1) {
-    return 34385;
-  } else if (name.indexOf("s24+ 12/256 violet 🇰🇿") != -1) {
-    return 34352;
-  } else if (name.indexOf("s24+ 12/256 violet 🇦🇪") != -1) {
-    return 34384;
-  } else if (name.indexOf("s24+ 12/256 violet 🇪🇺") != -1) {
-    return 34384;
-  } else if (name.indexOf("s24+ 12/256 gray 🇰🇿") != -1) {
-    return 34354;
-  } else if (name.indexOf("s24+ 12/256 gray 🇪🇺") != -1) {
-    return 34386;
-  } else if (name.indexOf("s24+ 12/256 gray 🇦🇪") != -1) {
-    return 34386;
-  } else if (name.indexOf("s24+ 12/256 black 🇰🇿") != -1) {
-    return 34349;
-  } else if (name.indexOf("s24+ 12/256 black 🇪🇺") != -1) {
-    return 34381;
-  } else if (name.indexOf("s24+ 12/256 black 🇦🇪") != -1) {
-    return 34381;
-  } else if (name.indexOf("s24+ 12/512 yellow 🇰🇿") != -1) {
-    return 34351;
-  } else if (name.indexOf("s24+ 12/512 yellow 🇪🇺") != -1) {
-    return 34383;
-  } else if (name.indexOf("s24+ 12/512 yellow 🇦🇪") != -1) {
-    return 34383;
-  } else if (name.indexOf("s24+ 12/512 violet 🇰🇿") != -1) {
-    return 34348;
-  } else if (name.indexOf("s24+ 12/512 violet 🇦🇪") != -1) {
-    return 34380;
-  } else if (name.indexOf("s24+ 12/512 violet 🇪🇺") != -1) {
-    return 34380;
-  } else if (name.indexOf("s24+ 12/512 gray 🇰🇿") != -1) {
-    return 34347;
-  } else if (name.indexOf("s24+ 12/512 gray 🇦🇪") != -1) {
-    return 34379;
-  } else if (name.indexOf("s24+ 12/512 gray 🇪🇺") != -1) {
-    return 34379;
-  } else if (name.indexOf("s24+ 12/512 black 🇰🇿") != -1) {
-    return 34350;
-  } else if (name.indexOf("s24+ 12/512 black 🇪🇺") != -1) {
-    return 34382;
-  } else if (name.indexOf("s24+ 12/512 black 🇦🇪") != -1) {
-    return 34382;
-  } else if (name.indexOf("s24 8/128 yellow 🇰🇿") != -1) {
-    return 34341;
-  } else if (name.indexOf("s24 8/128 yellow 🇪🇺") != -1) {
-    return 34373;
-  } else if (name.indexOf("s24 8/129 yellow 🇦🇪") != -1) {
-    return 34374;
-  } else if (name.indexOf("s24 8/128 violet 🇰🇿") != -1) {
-    return 34339;
-  } else if (name.indexOf("s24 8/128 violet 🇦🇪") != -1) {
-    return 34371;
-  } else if (name.indexOf("s24 8/128 green 🇦🇪") != -1) {
-    return 35859;
-  } else if (name.indexOf("s24 8/128 violet 🇪🇺") != -1) {
-    return 34371;
-  } else if (name.indexOf("s24 8/128 green 🇪🇺") != -1) {
-    return 35859;
-  } else if (name.indexOf("s24 8/128 gray 🇰🇿") != -1) {
-    return 34336;
-  } else if (
-    name.indexOf("s24 8/128 grey 🇦🇪") != -1 ||
-    name.indexOf("s24 8/128 gray 🇦🇪") != -1
-  ) {
-    return 34368;
-  } else if (
-    name.indexOf("s24 8/128 grey 🇪🇺") != -1 ||
-    name.indexOf("s24 8/128 gray 🇪🇺") != -1
-  ) {
-    return 34368;
-  } else if (name.indexOf("s24 8/128 black 🇰🇿") != -1) {
-    return 34345;
-  } else if (name.indexOf("s24 8/128 black 🇦🇪") != -1) {
-    return 34377;
-  } else if (name.indexOf("s24 8/128 orange 🇦🇪") != -1) {
-    return 35860;
-  } else if (name.indexOf("s24 8/128 blue 🇦🇪") != -1) {
-    return 35861;
-  } else if (name.indexOf("s24 8/128 black 🇪🇺") != -1) {
-    return 34377;
-  } else if (name.indexOf("s24 8/128 orange 🇪🇺") != -1) {
-    return 35860;
-  } else if (name.indexOf("s24 8/128 blue 🇪🇺") != -1) {
-    return 35861;
-  } else if (name.indexOf("s24 8/256 yellow 🇰🇿") != -1) {
-    return 34344;
-  } else if (name.indexOf("s24 8/256 yellow 🇪🇺") != -1) {
-    return 34376;
-  } else if (name.indexOf("s24 8/256 yellow 🇦🇪") != -1) {
-    return 34376;
-  } else if (name.indexOf("s24 8/256 violet 🇰🇿") != -1) {
-    return 34338;
-  } else if (name.indexOf("s24 8/256 violet 🇦🇪") != -1) {
-    return 34370;
-  } else if (name.indexOf("s24 8/256 green 🇦🇪") != -1) {
-    return 35862;
-  } else if (name.indexOf("s24 8/256 violet 🇪🇺") != -1) {
-    return 34370;
-  } else if (name.indexOf("s24 8/256 green 🇪🇺") != -1) {
-    return 35862;
-  } else if (name.indexOf("s24 8/256 gray 🇰🇿") != -1) {
-    return 34346;
-  } else if (name.indexOf("s24 8/256 gray 🇦🇪") != -1) {
-    return 34378;
-  } else if (name.indexOf("s24 8/256 gray 🇪🇺") != -1) {
-    return 34378;
-  } else if (name.indexOf("s24 8/256 black 🇰🇿") != -1) {
-    return 34343;
-  } else if (name.indexOf("s24 8/256 black 🇦🇪") != -1) {
-    return 34375;
-  } else if (name.indexOf("s24 8/256 orange 🇦🇪") != -1) {
-    return 35863;
-  } else if (name.indexOf("s24 8/256 blue 🇦🇪") != -1) {
-    return 35864;
-  } else if (name.indexOf("s24 8/256 black 🇪🇺") != -1) {
-    return 34375;
-  } else if (name.indexOf("s24 8/256 orange 🇪🇺") != -1) {
-    return 35863;
-  } else if (name.indexOf("s24 8/256 blue 🇪🇺") != -1) {
-    return 35864;
-  } else if (name.indexOf("s24 8/512 yellow 🇰🇿") != -1) {
-    return 34340;
-  } else if (name.indexOf("s24 8/512 yellow 🇪🇺") != -1) {
-    return 34372;
-  } else if (name.indexOf("s24 8/512 yellow 🇦🇪") != -1) {
-    return 34372;
-  } else if (name.indexOf("s24 8/512 violet 🇰🇿") != -1) {
-    return 34337;
-  } else if (name.indexOf("s24 8/512 violet 🇦🇪") != -1) {
-    return 34369;
-  } else if (name.indexOf("s24 8/512 green 🇦🇪") != -1) {
-    return 35865;
-  } else if (name.indexOf("s24 8/512 violet 🇪🇺") != -1) {
-    return 34369;
-  } else if (name.indexOf("s24 8/512 green 🇪🇺") != -1) {
-    return 35865;
-  } else if (name.indexOf("s24 8/512 gray 🇰🇿") != -1) {
-    return 34335;
-  } else if (name.indexOf("s24 8/512 gray 🇦🇪") != -1) {
-    return 34367;
-  } else if (name.indexOf("s24 8/512 gray 🇪🇺") != -1) {
-    return 34367;
-  } else if (name.indexOf("s24 8/512 black 🇰🇿") != -1) {
-    return 34342;
-  } else if (name.indexOf("s24 8/512 black 🇦🇪") != -1) {
-    return 34374;
-  } else if (name.indexOf("s24 8/512 orange 🇦🇪") != -1) {
-    return 35866;
-  } else if (name.indexOf("s24 8/512 blue 🇦🇪") != -1) {
-    return 35867;
-  } else if (name.indexOf("s24 8/512 black 🇪🇺") != -1) {
-    return 34374;
-  } else if (name.indexOf("s24 8/512 orange 🇪🇺") != -1) {
-    return 35866;
-  } else if (name.indexOf("s24 8/512 blue 🇪🇺") != -1) {
-    return 35867;
+  } else if (name.indexOf("s24+ 12/512 yellow") != -1) {
+    return 30988;
+  } else if (name.indexOf("s24+ 12/512 violet") != -1) {
+    return 30990;
+  } else if (name.indexOf("s24+ 12/512 green") != -1) {
+    return 35769;
+  } else if (name.indexOf("s24+ 12/256 blue") != -1) {
+    return 35828;
+  } else if (name.indexOf("s24+ 12/256 gray") != -1) {
+    return 30991;
+  } else if (name.indexOf("s24+ 12/256 black") != -1) {
+    return 30985;
+  } else if (name.indexOf("s24+ 12/256 orange") != -1) {
+    return 35777;
   } else if (name.indexOf("s23+ 8/256 cream") != -1) {
     return 26233;
   } else if (name.indexOf("s23+ 8/256 graphite") != -1) {
@@ -2005,50 +2506,8 @@ export const returnIDSamsung = (name) => {
     return 31002;
   } else if (name.indexOf("s24 ultra 12/1tb blue") != -1) {
     return 35832;
-  } else if (name.indexOf("s24 ultra 12/1tb blue 🇦🇪") != -1) {
-    return 35874;
-  } else if (name.indexOf("s24 ultra 12/1tb blue 🇪🇺") != -1) {
-    return 35874;
-  } else if (name.indexOf("s24 ultra 12/1tb green") != -1) {
-    return 35779;
-  } else if (name.indexOf("s24 ultra 12/1tb green 🇪🇺") != -1) {
-    return 35875;
-  } else if (name.indexOf("s24 ultra 12/1tb green 🇦🇪") != -1) {
-    return 35875;
-  } else if (name.indexOf("s24 ultra 12/1tb gray") != -1) {
-    return 30999;
-  } else if (name.indexOf("s24 ultra 12/1tb orange") != -1) {
-    return 35782;
-  } else if (name.indexOf("s24 ultra 12/1tb orange 🇦🇪") != -1) {
-    return 35876;
-  } else if (name.indexOf("s24 ultra 12/1tb orange 🇪🇺") != -1) {
-    return 35876;
-  } else if (name.indexOf("s24 ultra 12/1tb violet") != -1) {
-    return 30996;
-  } else if (name.indexOf("s24 ultra 12/1tb yellow") != -1) {
-    return 30995;
-  } else if (name.indexOf("s24 ultra 12/256 black") != -1) {
-    return 31003;
-  } else if (name.indexOf("s24 ultra 12/256 blue") != -1) {
-    return 35833;
-  } else if (name.indexOf("s24 ultra 12/256 blue 🇦🇪") != -1) {
-    return 35877;
-  } else if (name.indexOf("s24 ultra 12/256 blue 🇪🇺") != -1) {
-    return 35877;
-  } else if (name.indexOf("s24 ultra 12/256 green") != -1) {
-    return 35780;
-  } else if (name.indexOf("s24 ultra 12/256 green 🇦🇪") != -1) {
-    return 35878;
-  } else if (name.indexOf("s24 ultra 12/256 green 🇪🇺") != -1) {
-    return 35878;
-  } else if (name.indexOf("s24 ultra 12/256 gray") != -1) {
-    return 31000;
-  } else if (name.indexOf("s24 ultra 12/256 orange") != -1) {
-    return 35783;
-  } else if (name.indexOf("s24 ultra 12/256 orange 🇦🇪") != -1) {
-    return 35879;
-  } else if (name.indexOf("s24 ultra 12/256 orange 🇪🇺") != -1) {
-    return 35879;
+  } else if (name.indexOf("s24 ultra 12/512 green") != -1) {
+    return 35781;
   } else if (name.indexOf("s24 ultra 12/256 violet") != -1) {
     return 30997;
   } else if (name.indexOf("s24 ultra 12/256 yellow") != -1) {
@@ -2057,103 +2516,39 @@ export const returnIDSamsung = (name) => {
     return 31004;
   } else if (name.indexOf("s24 ultra 12/512 blue") != -1) {
     return 35834;
-  } else if (name.indexOf("s24 ultra 12/512 blue 🇦🇪") != -1) {
-    return 35882;
-  } else if (name.indexOf("s24 ultra 12/512 blue 🇪🇺") != -1) {
-    return 35882;
-  } else if (name.indexOf("s24 ultra 12/512 green") != -1) {
-    return 35781;
-  } else if (name.indexOf("s24 ultra 12/512 green 🇦🇪") != -1) {
-    return 35880;
-  } else if (name.indexOf("s24 ultra 12/512 green 🇪🇺") != -1) {
-    return 35880;
-  } else if (name.indexOf("s24 ultra 12/512 gray") != -1) {
-    return 31001;
+  } else if (name.indexOf("s24 ultra 12/256 gray") != -1) {
+    return 31000;
+  } else if (name.indexOf("s24 ultra 12/256 orange") != -1) {
+    return 35783;
+  } else if (name.indexOf("s24 ultra 12/256 green") != -1) {
+    return 35780;
+  } else if (name.indexOf("s24 ultra 12/1tb violet") != -1) {
+    return 30996;
+  } else if (name.indexOf("s24 ultra 12/1tb yellow") != -1) {
+    return 30995;
+  } else if (name.indexOf("s24 ultra 12/256 black") != -1) {
+    return 31003;
+  } else if (name.indexOf("s24 ultra 12/256 blue") != -1) {
+    return 35833;
+  } else if (name.indexOf("s24 ultra 12/1tb gray") != -1) {
+    return 30999;
+  } else if (name.indexOf("s24 ultra 12/1tb orange") != -1) {
+    return 35782;
+  } else if (name.indexOf("s24 ultra 12/1tb green") != -1) {
+    return 35779;
+  } else if (name.indexOf("s24 ultra 12/512 violet") != -1) {
+    return 30998;
+  } else if (name.indexOf("s24 ultra 12/512 yellow") != -1) {
+    return 30994;
   } else if (
     name.indexOf("s24 ultra 12/512 orange") != -1 ||
     name.indexOf("s24 ultra 12/512 orange") != -1
   ) {
     return 35784;
-  } else if (name.indexOf("s24 ultra 12/512 orange 🇦🇪") != -1) {
-    return 35881;
-  } else if (name.indexOf("s24 ultra 12/512 orange 🇪🇺") != -1) {
-    return 35881;
-  } else if (name.indexOf("s24 ultra 12/512 violet") != -1) {
-    return 30998;
-  } else if (name.indexOf("s24 ultra 12/512 yellow") != -1) {
-    return 30994;
-  } else if (name.indexOf("s24 ultra 12/1tb black 🇰🇿") != -1) {
-    return 34362;
-  } else if (name.indexOf("s24 ultra 12/1tb black 🇦🇪") != -1) {
-    return 34394;
-  } else if (name.indexOf("s24 ultra 12/1tb black 🇪🇺") != -1) {
-    return 34394;
-  } else if (name.indexOf("s24 ultra 12/1tb grey 🇰🇿") != -1) {
-    return 34363;
-  } else if (name.indexOf("s24 ultra 12/1tb grey 🇦🇪") != -1) {
-    return 34395;
-  } else if (name.indexOf("s24 ultra 12/1tb grey 🇪🇺") != -1) {
-    return 34395;
-  } else if (name.indexOf("s24 ultra 12/1tb violet 🇰🇿") != -1) {
-    return 34361;
-  } else if (name.indexOf("s24 ultra 12/1tb violet 🇦🇪") != -1) {
-    return 34393;
-  } else if (name.indexOf("s24 ultra 12/1tb violet 🇪🇺") != -1) {
-    return 34393;
-  } else if (name.indexOf("s24 ultra 12/1tb yellow 🇰🇿") != -1) {
-    return 34359;
-  } else if (name.indexOf("s24 ultra 12/1tb yellow 🇦🇪") != -1) {
-    return 34391;
-  } else if (name.indexOf("s24 ultra 12/1tb yellow 🇪🇺") != -1) {
-    return 34391;
-  } else if (name.indexOf("s24 ultra 12/256 black 🇰🇿") != -1) {
-    return 34366;
-  } else if (name.indexOf("s24 ultra 12/256 black 🇦🇪") != -1) {
-    return 34398;
-  } else if (name.indexOf("s24 ultra 12/256 black 🇪🇺") != -1) {
-    return 34398;
-  } else if (name.indexOf("s24 ultra 12/256 grey 🇰🇿") != -1) {
-    return 34364;
-  } else if (name.indexOf("s24 ultra 12/256 grey 🇦🇪") != -1) {
-    return 34396;
-  } else if (name.indexOf("s24 ultra 12/256 grey 🇪🇺") != -1) {
-    return 34396;
-  } else if (name.indexOf("s24 ultra 12/256 violet 🇰🇿") != -1) {
-    return 34355;
-  } else if (name.indexOf("s24 ultra 12/256 violet 🇦🇪") != -1) {
-    return 34387;
-  } else if (name.indexOf("s24 ultra 12/256 violet 🇪🇺") != -1) {
-    return 34387;
-  } else if (name.indexOf("s24 ultra 12/256 yellow 🇰🇿") != -1) {
-    return 34357;
-  } else if (name.indexOf("s24 ultra 12/256 yellow 🇦🇪") != -1) {
-    return 34389;
-  } else if (name.indexOf("s24 ultra 12/256 yellow 🇪🇺") != -1) {
-    return 34389;
-  } else if (name.indexOf("s24 ultra 12/512 black 🇰🇿") != -1) {
-    return 34358;
-  } else if (name.indexOf("s24 ultra 12/512 black 🇦🇪") != -1) {
-    return 34390;
-  } else if (name.indexOf("s24 ultra 12/512 black 🇪🇺") != -1) {
-    return 34390;
-  } else if (name.indexOf("s24 ultra 12/512 grey 🇰🇿") != -1) {
-    return 34360;
-  } else if (name.indexOf("s24 ultra 12/512 grey 🇦🇪") != -1) {
-    return 34392;
-  } else if (name.indexOf("s24 ultra 12/512 grey 🇪🇺") != -1) {
-    return 34392;
-  } else if (name.indexOf("s24 ultra 12/512 violet 🇰🇿") != -1) {
-    return 34365;
-  } else if (name.indexOf("s24 ultra 12/512 violet 🇪🇺") != -1) {
-    return 34397;
-  } else if (name.indexOf("s24 ultra 12/512 violet 🇦🇪") != -1) {
-    return 34397;
-  } else if (name.indexOf("s24 ultra 12/512 yellow 🇰🇿") != -1) {
-    return 34356;
-  } else if (name.indexOf("s24 ultra 12/512 yellow 🇦🇪") != -1) {
-    return 34388;
-  } else if (name.indexOf("s24 ultra 12/512 yellow 🇪🇺") != -1) {
-    return 34388;
+  } else if (name.indexOf("s24 ultra 12/256 gray") != -1) {
+    return 31000;
+  } else if (name.indexOf("s24 ultra 12/512 gray") != -1) {
+    return 31001;
   } else if (name.indexOf("z flip 5 8/256 blue 🇦🇪") != -1) {
     return 30784;
   } else if (name.indexOf("z flip 5 8/256 cream 🇦🇪") != -1) {

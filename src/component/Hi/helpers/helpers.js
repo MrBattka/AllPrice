@@ -558,5 +558,7 @@ export const fixNameHi = (name) => {
       ? fixXperia5G.replace("5G ", "")
       : fixXperia5G;
 
-  return fixPixel5G.replace("S24 8/128 Black", "S24 8/128 Onyx Black");
+  const replaceGB = fixPixel5G.replace("GB", "")
+
+  return replaceGB.replace("S24 8/128 Black", "S24 8/128 Onyx Black");
 };

@@ -63,6 +63,12 @@ export const returnApple = (el) => {
     el.Товар.indexOf("15 Pro Max 1Tb") != -1 ||
     el.Товар.indexOf("15 Pro Max 1TB") != -1 ||
     el.Товар.indexOf("15 Pro Max 1Tb") != -1 ||
+    el.Товар.indexOf("16 128") != -1 ||
+    el.Товар.indexOf("16 256") != -1 ||
+    el.Товар.indexOf("16 512") != -1 ||
+    el.Товар.indexOf("16 Plus 128") != -1 ||
+    el.Товар.indexOf("16 Plus 256") != -1 ||
+    el.Товар.indexOf("16 Plus 512") != -1 ||
     el.Товар.indexOf("16 Pro 128") != -1 ||
     el.Товар.indexOf("16 Pro 256") != -1 ||
     el.Товар.indexOf("16 Pro 512") != -1 ||
