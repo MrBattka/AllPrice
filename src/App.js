@@ -20,6 +20,8 @@ import IndexS5 from "./component/S5/IndexS5";
 import IndexS5NotID from "./component/S5/IndexS5NotID";
 import IndexRPTrade from "./component/RPTrade/IndexRPTrade";
 import IndexRPTradeNotID from "./component/RPTrade/IndexRPTradeNotID";
+import IndexRacmag from "./component/Racmag/IndexRacmag";
+import IndexRacmagNotID from "./component/Racmag/IndexRacmagNotID";
 
 const App = () => {
   const allPrice = [];
@@ -32,6 +34,7 @@ const App = () => {
   const [dataGarmin, setDataGarmin] = useState([]);
   const [dataS5, setDataS5] = useState([]);
   const [dataRPTrade, setDataRPTrade] = useState([]);
+  const [dataRacmag, setDataRacmag] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -41,6 +44,7 @@ const App = () => {
   const garmin = [];
   const S5 = [];
   const rptrade = [];
+  const racmag = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -93,8 +97,12 @@ const App = () => {
       rptrade.push({ name: rptradeEl.Наименование, price: rptradeEl.Цена });
   });
 
-  console.log(dataUNIMTRN);
-  
+  dataRacmag.map((racmagEl) => {
+    racmagEl.Рацмаг &&
+      racmagEl.Рацмаг.length > 2 &&
+      typeof racmagEl.Рацмаг === "string" &&
+      racmag.push({ name: racmagEl.Рацмаг });
+  });
 
   const handleImport = ($event) => {
     const files = $event.target.files;
@@ -122,6 +130,8 @@ const App = () => {
           setDataS5(rowS5);
           const rowRPTrade = utils.sheet_to_json(wb.Sheets[sheets[7]]);
           setDataRPTrade(rowRPTrade);
+          const rowRacmag = utils.sheet_to_json(wb.Sheets[sheets[8]]);
+          setDataRacmag(rowRacmag);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -185,8 +195,11 @@ const App = () => {
         <IndexS5 el={dataS5} S5Data={S5} />
         <IndexS5NotID el={dataS5} S5Data={S5} />
         {/* RPTrade */}
-        <IndexRPTrade el={dataRPTrade} rptradeData={rptrade}/>
-        <IndexRPTradeNotID el={dataRPTrade} rptradeData={rptrade}/>
+        <IndexRPTrade el={dataRPTrade} rptradeData={rptrade} />
+        <IndexRPTradeNotID el={dataRPTrade} rptradeData={rptrade} />
+        {/* Рацмаг */}
+        <IndexRacmag el={dataRacmag} racmagData={racmag} />
+        <IndexRacmagNotID el={dataRacmag} racmagData={racmag} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -198,6 +211,7 @@ const App = () => {
           dataGarmin={garmin}
           S5Data={S5}
           rptradeData={rptrade}
+          racmagData={racmag}
         />
 
         <AllPrice
@@ -209,6 +223,7 @@ const App = () => {
           dataGarmin={garmin}
           S5Data={S5}
           rptradeData={rptrade}
+          racmagData={racmag}
         />
       </div>
     </div>

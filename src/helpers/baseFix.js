@@ -229,3 +229,27 @@ export const baseFixRPTrade = (el) => {
     toLowerCase.indexOf("смартфоны") == -1
   );
 };
+
+export const baseFixRacmag = (el) => {
+  const toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("рацмаг") == -1 &&
+    toLowerCase.indexOf("добрый") == -1 &&
+    toLowerCase.indexOf("отправка") == -1 &&
+    toLowerCase.indexOf("самовывоз") == -1 &&
+    toLowerCase.indexOf("москва") == -1 &&
+    toLowerCase.indexOf("для") == -1 &&
+    toLowerCase.indexOf("антон") == -1 &&
+    toLowerCase.indexOf("t.me") == -1 &&
+    toLowerCase.indexOf("прайс") == -1 &&
+    toLowerCase.indexOf("xiaomi") == -1 &&
+    toLowerCase.indexOf("realme") == -1 &&
+    toLowerCase.indexOf("infinix") == -1 &&
+    toLowerCase.indexOf("honor") == -1 &&
+    toLowerCase.indexOf("huawei") == -1 &&
+    toLowerCase.indexOf("tecno") == -1 &&
+    toLowerCase.indexOf("samsung") == -1 &&
+    toLowerCase.indexOf("планшеты") == -1 &&
+    toLowerCase.indexOf("blackview") == -1
+  );
+};
