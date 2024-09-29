@@ -51,6 +51,16 @@ export const baseFix = (el) => {
     el.Товар?.indexOf("Nubia Flip") == -1 &&
     el.Товар?.indexOf("Nubia Neo") == -1 &&
     el.Товар?.indexOf("Wireless") == -1 &&
+    el.Товар?.indexOf("царапин") == -1 &&
+    el.Товар?.indexOf("ремонт") == -1 &&
+    el.Товар?.indexOf("потертости") == -1 &&
+    el.Товар?.indexOf("скол") == -1 &&
+    el.Товар?.indexOf("пятна") == -1 &&
+    el.Товар?.indexOf("замена") == -1 &&
+    el.Товар?.indexOf("пиксель") == -1 &&
+    el.Товар?.indexOf("на экране") == -1 &&
+    el.Товар?.indexOf("мятый") == -1 &&
+    el.Товар?.indexOf("Мятый") == -1 &&
     el !== "Товар"
   );
 };
@@ -210,5 +220,12 @@ export const baseFixS5 = (el) => {
     (toLowerCase.slice(0, 3) == " - " ? toLowerCase.indexOf(" - ") == -1 : toLowerCase) &&
     toLowerCase.indexOf("se 4") == -1 &&
     toLowerCase.indexOf("🔫🔫") == -1
+  );
+};
+
+export const baseFixRPTrade = (el) => {
+  const toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("смартфоны") == -1
   );
 };

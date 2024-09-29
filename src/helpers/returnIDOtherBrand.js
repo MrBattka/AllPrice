@@ -494,7 +494,8 @@ export const returnIDOtherBrand = (name) => {
     return 34441;
   } else if (name.indexOf("oneplus 12 16/1tb silver") != -1) {
     return 34445;
-  } else if (name.indexOf("oneplus 12 16/512 black") != -1) {
+  } else if (name.indexOf("oneplus 12 16/512 black") != -1 ||
+  name.indexOf("oneplus 12 16/512 silky black") != -1) {
     return 34437;
   } else if (name.indexOf("oneplus 12 16/512 green") != -1) {
     return 34442;

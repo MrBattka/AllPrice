@@ -44,6 +44,7 @@ export const returnIDApple = (nameStock) => {
   } else if (
     name.indexOf("airpods max gray") != -1 ||
     name.indexOf("airpods max gray") != -1 ||
+    name.indexOf("airpods max black") != -1 ||
     name.indexOf("airpods max space gray") != -1
   ) {
     return 18977;
@@ -1710,7 +1711,8 @@ export const returnIDApple = (nameStock) => {
     return 17695;
   } else if (name.indexOf("12 pro max 128 gold") != -1) {
     return 17699;
-  } else if (name.indexOf("12 pro max 128 black") != -1) {
+  } else if (name.indexOf("12 pro max 128 black") != -1 ||
+  name.indexOf("12 pro max 128 graphite") != -1) {
     return 17696;
   } else if (name.indexOf("12 pro max 128 blue") != -1) {
     return 17698;

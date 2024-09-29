@@ -35,6 +35,9 @@ export const fixNameSuperPrice = (name) => {
       ? fixXperia5G.replace("5G ", "")
       : fixXperia5G;
   const fixSilver = fixPixel5G.replace("Platinum Silver 12/512", "12/512 Platinum Silver");
+  const fixPhantomBlack = fixSilver.replace("Phantom Black", "Black");
+  const fixMidnightBlack = fixPhantomBlack.replace("Midnight Black", "Black");
+  const fixNote13Iceblue = fixMidnightBlack.replace("Note 13 8/256 Iceblue", "Note 13 8/256 blue");
 
-  return fixSilver;
+  return fixNote13Iceblue;
 };

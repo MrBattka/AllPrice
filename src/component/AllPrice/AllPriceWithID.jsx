@@ -4,6 +4,7 @@ import {
   baseFixGarmin,
   baseFixHi,
   baseFixMiHonor,
+  baseFixRPTrade,
   baseFixS5,
   baseFixSuperPrice,
   baseFixVsemi,
@@ -47,6 +48,7 @@ import {
 import { fixNameGarmin, returnExtraPriceGarmin, returnFixNameProductGarmin, returnStockPriceGarmin } from "../Garmin/helpers/helpers";
 import { returnXiaomi } from "../Unimtrn/Xiaomi/xiaomi";
 import { fixNameS5, returnExtraPriceS5, returnNameInArrS5, returnStockPriceS5 } from "../S5/helpers/helpers";
+import { returnFixNameRPTrade } from "../RPTrade/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -55,7 +57,8 @@ const AllPriceWithID = ({
   dataHi,
   dataMihonor,
   dataGarmin,
-  S5Data
+  S5Data,
+  rptradeData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -232,6 +235,28 @@ const AllPriceWithID = ({
           extraPrice: returnExtraPriceS5(fixNameS5(S5.name)),
           stockPrice: returnStockPriceS5(fixNameS5(S5.name)),
           provider: "S5",
+        })
+      );
+    }
+  });
+
+  rptradeData.map((rptrade) => {
+    if (
+      rptrade.name &&
+      typeof rptrade.name === "string" &&
+      baseFixRPTrade(rptrade) &&
+      isOpen
+    )
+     {
+      return (
+        returnIDApple(returnFixNameRPTrade(rptrade.name)) !== 'No match' &&
+        rptrade.price &&
+        allPriceArr.push({
+          id: returnIDApple(returnFixNameRPTrade(rptrade.name)),
+          name: returnFixNameRPTrade(rptrade.name),
+          extraPrice: newPrice(rptrade.name, rptrade.price),
+          stockPrice: rptrade.price,
+          provider: "RPTrade",
         })
       );
     }

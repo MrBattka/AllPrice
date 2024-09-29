@@ -97,7 +97,7 @@ export const returnStockPriceS5 = (name) => {
 
   let reverseStrName = replaceS9feLavander.split("").reverse().join("");
 
-  let splitPrice = reverseStrName.split("-")[0];
+  let splitPrice = reverseStrName.indexOf("-") != -1 ? reverseStrName.split("-")[0] : reverseStrName.split(" ")[0]
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 
@@ -137,7 +137,7 @@ export const returnExtraPriceS5 = (name) => {
 
   let reverseStrName = replaceS9feLavander.split("").reverse().join("");
 
-  let splitPrice = reverseStrName.split("-")[0];
+  let splitPrice = reverseStrName.indexOf("-") != -1 ? reverseStrName.split("-")[0] : reverseStrName.split(" ")[0]
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 

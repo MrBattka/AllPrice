@@ -18,6 +18,8 @@ import IndexGarminNotID from "./component/Garmin/indexGarminNotID";
 import AllPriceWithID from "./component/AllPrice/AllPriceWithID";
 import IndexS5 from "./component/S5/IndexS5";
 import IndexS5NotID from "./component/S5/IndexS5NotID";
+import IndexRPTrade from "./component/RPTrade/IndexRPTrade";
+import IndexRPTradeNotID from "./component/RPTrade/IndexRPTradeNotID";
 
 const App = () => {
   const allPrice = [];
@@ -29,6 +31,7 @@ const App = () => {
   const [dataSuperprice, setDataSuperprice] = useState([]);
   const [dataGarmin, setDataGarmin] = useState([]);
   const [dataS5, setDataS5] = useState([]);
+  const [dataRPTrade, setDataRPTrade] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -37,6 +40,7 @@ const App = () => {
   const superprice = [];
   const garmin = [];
   const S5 = [];
+  const rptrade = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -82,6 +86,16 @@ const App = () => {
       S5.push({ name: S5El.S5 });
   });
 
+  dataRPTrade.map((rptradeEl) => {
+    rptradeEl.Наименование &&
+      rptradeEl.Наименование.length > 2 &&
+      typeof rptradeEl.Наименование === "string" &&
+      rptrade.push({ name: rptradeEl.Наименование, price: rptradeEl.Цена });
+  });
+
+  console.log(dataUNIMTRN);
+  
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -106,6 +120,8 @@ const App = () => {
           setDataGarmin(rowGarmin);
           const rowS5 = utils.sheet_to_json(wb.Sheets[sheets[6]]);
           setDataS5(rowS5);
+          const rowRPTrade = utils.sheet_to_json(wb.Sheets[sheets[7]]);
+          setDataRPTrade(rowRPTrade);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -168,6 +184,10 @@ const App = () => {
         {/* S5 */}
         <IndexS5 el={dataS5} S5Data={S5} />
         <IndexS5NotID el={dataS5} S5Data={S5} />
+        {/* RPTrade */}
+        <IndexRPTrade el={dataRPTrade} rptradeData={rptrade}/>
+        <IndexRPTradeNotID el={dataRPTrade} rptradeData={rptrade}/>
+
         {/* All Price */}
         <AllPriceWithID
           dataSuperprice={superprice}
@@ -177,6 +197,7 @@ const App = () => {
           dataMihonor={mihonor}
           dataGarmin={garmin}
           S5Data={S5}
+          rptradeData={rptrade}
         />
 
         <AllPrice
@@ -187,6 +208,7 @@ const App = () => {
           dataMihonor={mihonor}
           dataGarmin={garmin}
           S5Data={S5}
+          rptradeData={rptrade}
         />
       </div>
     </div>

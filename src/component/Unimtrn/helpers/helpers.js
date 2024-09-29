@@ -418,6 +418,10 @@ export const fixNameUnimtrn = (el) => {
   const fixProPlus = fixOceanTeal.replace("Pro Plus", "Pro +");
   const fixMoonlightWhite = fixProPlus.replace("Moonlight White", "White");
   const fixProMaxx = fixMoonlightWhite.replace("ProMax", "Pro Max");
+  const fixGongKong = fixProMaxx.replace("🇭🇰 Гонконг", "🇭🇰");
+  const fixCPH2581 = fixGongKong.replace("CPH2581 ", "");
+  const fixJade = fixCPH2581.replace("Jade ", "");
+  const fixNote13NFC = fixJade.replace("Note 13 NFC", "Note 13");
 
-  return fixProMaxx;
+  return fixNote13NFC;
 };
