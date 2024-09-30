@@ -46,11 +46,26 @@ import {
   returnNameInArrMihonor,
   returnStockPriceMihonor,
 } from "../MiHonor/helpers/helpers";
-import { fixNameGarmin, returnExtraPriceGarmin, returnFixNameProductGarmin, returnStockPriceGarmin } from "../Garmin/helpers/helpers";
+import {
+  fixNameGarmin,
+  returnExtraPriceGarmin,
+  returnFixNameProductGarmin,
+  returnStockPriceGarmin,
+} from "../Garmin/helpers/helpers";
 import { returnXiaomi } from "../Unimtrn/Xiaomi/xiaomi";
-import { fixNameS5, returnExtraPriceS5, returnNameInArrS5, returnStockPriceS5 } from "../S5/helpers/helpers";
+import {
+  fixNameS5,
+  returnExtraPriceS5,
+  returnNameInArrS5,
+  returnStockPriceS5,
+} from "../S5/helpers/helpers";
 import { returnFixNameRPTrade } from "../RPTrade/helpers/helpers";
-import { returnExtraPriceRacmag, returnFixNameRacmag, returnNameInArrRacmag, returnStockPriceRacmag } from "../Racmag/helpers/helpers";
+import {
+  returnExtraPriceRacmag,
+  returnFixNameRacmag,
+  returnNameInArrRacmag,
+  returnStockPriceRacmag,
+} from "../Racmag/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -61,7 +76,7 @@ const AllPriceWithID = ({
   dataGarmin,
   S5Data,
   rptradeData,
-  racmagData
+  racmagData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -117,7 +132,7 @@ const AllPriceWithID = ({
     if (
       unimtrn.Товар &&
       returnIDApple(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
-      "No match" &&
+        "No match" &&
       isOpen &&
       baseFix(unimtrn) &&
       (returnApple(unimtrn) ||
@@ -153,7 +168,7 @@ const AllPriceWithID = ({
         returnDysonHi(hi.name))
     ) {
       return (
-        returnIDApple(fixNameHi(hi.name)) !== 'No match' &&
+        returnIDApple(fixNameHi(hi.name)) !== "No match" &&
         returnExtraPriceHi(hi.name) &&
         returnStockPriceHi(hi.name) &&
         allPriceArr.push({
@@ -161,7 +176,7 @@ const AllPriceWithID = ({
           name: returnNameInArrHi(fixNameHi(hi.name)),
           extraPrice: returnExtraPriceHi(hi.name),
           stockPrice: returnStockPriceHi(hi.name),
-          provider: "Hi"
+          provider: "Hi",
         })
       );
     }
@@ -204,11 +219,13 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDApple(fixNameGarmin(garmin.name)) !== 'No match' &&
+        returnIDApple(fixNameGarmin(garmin.name)) !== "No match" &&
         returnExtraPriceGarmin(garmin.name) &&
         returnStockPriceGarmin(garmin.name) &&
         allPriceArr.push({
-          id: returnIDApple(returnFixNameProductGarmin(fixNameGarmin(garmin.name))),
+          id: returnIDApple(
+            returnFixNameProductGarmin(fixNameGarmin(garmin.name))
+          ),
           name: returnFixNameProductGarmin(fixNameGarmin(garmin.name)),
           extraPrice: returnExtraPriceGarmin(fixNameGarmin(garmin.name)),
           stockPrice: returnStockPriceGarmin(fixNameGarmin(garmin.name)),
@@ -221,15 +238,9 @@ const AllPriceWithID = ({
   S5Data.map((S5) => {
     baseFixS5(S5) && returnStockPriceS5(fixNameS5(S5.name));
     baseFixS5(S5) && returnExtraPriceS5(fixNameS5(S5.name));
-    if (
-      S5.name &&
-      typeof S5.name === "string" &&
-      baseFixS5(S5) &&
-      isOpen
-    )
-     {
+    if (S5.name && typeof S5.name === "string" && baseFixS5(S5) && isOpen) {
       return (
-        returnIDApple(fixNameS5(S5.name)) !== 'No match' &&
+        returnIDApple(fixNameS5(S5.name)) !== "No match" &&
         returnExtraPriceS5(S5.name) &&
         returnStockPriceS5(S5.name) &&
         allPriceArr.push({
@@ -249,10 +260,9 @@ const AllPriceWithID = ({
       typeof rptrade.name === "string" &&
       baseFixRPTrade(rptrade) &&
       isOpen
-    )
-     {
+    ) {
       return (
-        returnIDApple(returnFixNameRPTrade(rptrade.name)) !== 'No match' &&
+        returnIDApple(returnFixNameRPTrade(rptrade.name)) !== "No match" &&
         rptrade.price &&
         allPriceArr.push({
           id: returnIDApple(returnFixNameRPTrade(rptrade.name)),
@@ -266,20 +276,23 @@ const AllPriceWithID = ({
   });
 
   racmagData.map((racmag) => {
-    baseFixRacmag(racmag) && returnStockPriceRacmag(returnFixNameRacmag(racmag.name));
-    baseFixRacmag(racmag) && returnExtraPriceRacmag(returnFixNameRacmag(racmag.name));
+    baseFixRacmag(racmag) &&
+      returnStockPriceRacmag(returnFixNameRacmag(racmag.name));
+    baseFixRacmag(racmag) &&
+      returnExtraPriceRacmag(returnFixNameRacmag(racmag.name));
     if (
       racmag.name &&
       typeof racmag.name === "string" &&
       baseFixRacmag(racmag) &&
       isOpen
-    )
-     {
+    ) {
       return (
-        returnIDApple(returnFixNameRacmag(racmag.name)) !== 'No match' &&
+        returnIDApple(returnFixNameRacmag(racmag.name)) !== "No match" &&
         returnStockPriceRacmag(racmag.name) &&
         allPriceArr.push({
-          id: returnIDApple(returnNameInArrRacmag(returnFixNameRacmag(racmag.name))),
+          id: returnIDApple(
+            returnNameInArrRacmag(returnFixNameRacmag(racmag.name))
+          ),
           name: returnNameInArrRacmag(returnFixNameRacmag(racmag.name)),
           extraPrice: returnExtraPriceRacmag(returnFixNameRacmag(racmag.name)),
           stockPrice: returnStockPriceRacmag(returnFixNameRacmag(racmag.name)),
@@ -292,7 +305,16 @@ const AllPriceWithID = ({
   return (
     <div>
       <div>
-        {dataSuperprice?.length > 1 && (
+        {(dataSuperprice?.length > 2 ||
+          dataVsemi?.length > 2 ||
+          dataUnimtrn?.length > 2 ||
+          dataHi?.length > 2 ||
+          dataMihonor?.length > 2 ||
+          dataGarmin?.length > 2 ||
+          dataGarmin?.length > 2 ||
+          S5Data?.length > 2 ||
+          rptradeData?.length > 2 ||
+          racmagData?.length > 2) && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "All Price Для Сайта ▲" : "All Price Для Сайта ▼"}
           </span>
