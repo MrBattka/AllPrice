@@ -22,6 +22,7 @@ import IndexRPTrade from "./component/RPTrade/IndexRPTrade";
 import IndexRPTradeNotID from "./component/RPTrade/IndexRPTradeNotID";
 import IndexRacmag from "./component/Racmag/IndexRacmag";
 import IndexRacmagNotID from "./component/Racmag/IndexRacmagNotID";
+import IndexArti from "./component/Arti/indexArti";
 
 const App = () => {
   const allPrice = [];
@@ -35,6 +36,7 @@ const App = () => {
   const [dataS5, setDataS5] = useState([]);
   const [dataRPTrade, setDataRPTrade] = useState([]);
   const [dataRacmag, setDataRacmag] = useState([]);
+  const [dataArti, setDataArti] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -45,6 +47,7 @@ const App = () => {
   const S5 = [];
   const rptrade = [];
   const racmag = [];
+  const arti = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -104,6 +107,13 @@ const App = () => {
       racmag.push({ name: racmagEl.Рацмаг });
   });
 
+  dataArti.map((artiEl) => {
+    artiEl.Arti &&
+      artiEl.Arti.length > 2 &&
+      typeof artiEl.Arti === "string" &&
+      arti.push({ name: artiEl.Arti });
+  });
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -132,6 +142,8 @@ const App = () => {
           setDataRPTrade(rowRPTrade);
           const rowRacmag = utils.sheet_to_json(wb.Sheets[sheets[8]]);
           setDataRacmag(rowRacmag);
+          const rowArti = utils.sheet_to_json(wb.Sheets[sheets[9]]);
+          setDataArti(rowArti);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -200,6 +212,8 @@ const App = () => {
         {/* Рацмаг */}
         <IndexRacmag el={dataRacmag} racmagData={racmag} />
         <IndexRacmagNotID el={dataRacmag} racmagData={racmag} />
+        {/* Arti */}
+        {/* <IndexArti el={dataArti} artiData={arti} />  */}
 
         {/* All Price */}
         <AllPriceWithID

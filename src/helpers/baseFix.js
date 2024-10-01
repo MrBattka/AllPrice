@@ -61,6 +61,8 @@ export const baseFix = (el) => {
     el.Товар?.indexOf("на экране") == -1 &&
     el.Товар?.indexOf("мятый") == -1 &&
     el.Товар?.indexOf("Мятый") == -1 &&
+    el.Товар?.indexOf("открытый") == -1 &&
+    el.Товар?.indexOf("дефект") == -1 &&
     el !== "Товар"
   );
 };
@@ -251,5 +253,53 @@ export const baseFixRacmag = (el) => {
     toLowerCase.indexOf("samsung") == -1 &&
     toLowerCase.indexOf("планшеты") == -1 &&
     toLowerCase.indexOf("blackview") == -1
+  );
+};
+
+export const baseFixArti = (el) => {
+  const toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("💥iphone") == -1 &&
+    toLowerCase.indexOf("arti opt") == -1 &&
+    toLowerCase.indexOf("⚠️iphone") == -1 &&
+    toLowerCase.indexOf("🔥macbook") == -1 &&
+    toLowerCase.indexOf("🔥mac") == -1 &&
+    toLowerCase.indexOf("🔥imac") == -1 &&
+    toLowerCase.indexOf("🍏 ipad") == -1 &&
+    toLowerCase.indexOf("✨ipad") == -1 &&
+    toLowerCase.indexOf("✨watch") == -1 &&
+    toLowerCase.indexOf("🍏accessories") == -1 &&
+    toLowerCase.indexOf("↘️samsung") == -1 &&
+    toLowerCase.indexOf("❗galaxy") == -1 &&
+    toLowerCase.indexOf("🔥galaxy") == -1 &&
+    toLowerCase.indexOf("планшеты") == -1 &&
+    toLowerCase.indexOf("аксессуары") == -1 &&
+    toLowerCase.indexOf("⚙️huawe") == -1 &&
+    toLowerCase.indexOf("🤖 xiaomi") == -1 &&
+    toLowerCase.indexOf("❗redmi") == -1 &&
+    toLowerCase.indexOf("❗poco") == -1 &&
+    toLowerCase.indexOf("❗note") == -1 &&
+    toLowerCase.indexOf("❗mi") == -1 &&
+    toLowerCase.indexOf("❗pad") == -1 &&
+    toLowerCase.indexOf("📱blackviev") == -1 &&
+
+    toLowerCase.indexOf("🔺pixel") == -1 &&
+    toLowerCase.indexOf("💥infinix") == -1 &&
+    toLowerCase.indexOf("⭐️realme") == -1 &&
+    toLowerCase.indexOf("⚙️oneplus") == -1 &&
+    toLowerCase.indexOf("🚨nothing") == -1 &&
+    toLowerCase.indexOf("🔥sony") == -1 &&
+    toLowerCase.indexOf("🔥zte") == -1 &&
+    toLowerCase.indexOf("📱tecno spark") == -1 &&
+    toLowerCase.indexOf("📹камеры") == -1 &&
+    toLowerCase.indexOf("наушники") == -1 &&
+    toLowerCase.indexOf("приставки") == -1 &&
+    toLowerCase.indexOf("❗dyson") == -1 &&
+    toLowerCase.indexOf("кнопочные") == -1 &&
+    toLowerCase.indexOf("inoi") == -1 &&
+    toLowerCase.indexOf("открыт") == -1 &&
+    toLowerCase.indexOf("кейс") == -1 &&
+    toLowerCase.indexOf("ухо") == -1 &&
+    toLowerCase.indexOf("cmf phone") == -1
   );
 };
