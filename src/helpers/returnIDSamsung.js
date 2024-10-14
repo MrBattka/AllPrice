@@ -3,7 +3,8 @@ import { returnIDOtherBrand } from "./returnIDOtherBrand";
 export const returnIDSamsung = (name) => {
   if (
     name.indexOf("a05 4/128 blue/black") != -1 ||
-    name.indexOf("a05 4/128 black") != -1
+    name.indexOf("a05 4/128 black") != -1 ||
+    name.indexOf("a15 4/128 dark") != -1
   ) {
     return 30948;
   } else if (
@@ -15,7 +16,8 @@ export const returnIDSamsung = (name) => {
     return 30950;
   } else if (
     name.indexOf("a05 4/64 blue/black") != -1 ||
-    name.indexOf("a05 4/64 black") != -1
+    name.indexOf("a05 4/64 black") != -1 ||
+    name.indexOf("a15 4/64 dark") != -1
   ) {
     return 31006;
   } else if (
@@ -27,7 +29,8 @@ export const returnIDSamsung = (name) => {
     return 31008;
   } else if (
     name.indexOf("a05 6/128 blue/black") != -1 ||
-    name.indexOf("a05 6/128 black") != -1
+    name.indexOf("a05 6/128 black") != -1 ||
+    name.indexOf("a05 6/128 dark") != -1
   ) {
     return 30135;
   } else if (
@@ -39,7 +42,8 @@ export const returnIDSamsung = (name) => {
     return 30136;
   } else if (
     name.indexOf("a05s 4/128 blue/black") != -1 ||
-    name.indexOf("a05s 4/128 black") != -1
+    name.indexOf("a05s 4/128 black") != -1 ||
+    name.indexOf("a05s 4/128 dark") != -1
   ) {
     return 30901;
   } else if (
@@ -56,7 +60,8 @@ export const returnIDSamsung = (name) => {
     return 30904;
   } else if (
     name.indexOf("a05s 4/64 blue/black") != -1 ||
-    name.indexOf("a05s 4/64 black") != -1
+    name.indexOf("a05s 4/64 black") != -1 ||
+    name.indexOf("a05s 4/64 dark") != -1
   ) {
     return 31009;
   } else if (name.indexOf("a05s 4/64 light green") != -1) {
@@ -67,7 +72,8 @@ export const returnIDSamsung = (name) => {
     return 31012;
   } else if (
     name.indexOf("a05s 6/128 blue/black") != -1 ||
-    name.indexOf("a05s 6/128 black") != -1
+    name.indexOf("a05s 6/128 black") != -1 ||
+    name.indexOf("a05s 6/128 dark") != -1
   ) {
     return 30138;
   } else if (name.indexOf("a05s 6/128 light green") != -1) {
@@ -78,7 +84,8 @@ export const returnIDSamsung = (name) => {
     return 30141;
   } else if (
     name.indexOf("a15 4/128 blue/black") != -1 ||
-    name.indexOf("a15 4/128 black") != -1
+    name.indexOf("a15 4/128 black") != -1 ||
+    name.indexOf("a15 4/128 dark") != -1
   ) {
     return 31076;
   } else if (name.indexOf("a15 4/128 light blue") != -1) {
@@ -89,7 +96,8 @@ export const returnIDSamsung = (name) => {
     return 35697;
   } else if (
     name.indexOf("a15 6/128 blue/black") != -1 ||
-    name.indexOf("a15 6/128 black") != -1
+    name.indexOf("a15 6/128 black") != -1 ||
+    name.indexOf("a15 6/128 dark") != -1
   ) {
     return 31080;
   } else if (name.indexOf("a15 6/128 light blue") != -1) {
@@ -100,7 +108,8 @@ export const returnIDSamsung = (name) => {
     return 35698;
   } else if (
     name.indexOf("a15 8/128 blue/black") != -1 ||
-    name.indexOf("a15 8/128 black") != -1
+    name.indexOf("a15 8/128 black") != -1 ||
+    name.indexOf("a15 8/128 dark") != -1
   ) {
     return 31084;
   } else if (name.indexOf("a15 8/128 light blue") != -1) {
@@ -111,7 +120,8 @@ export const returnIDSamsung = (name) => {
     return 35699;
   } else if (
     name.indexOf("a15 8/256 blue/black") != -1 ||
-    name.indexOf("a15 8/256 black") != -1
+    name.indexOf("a15 8/256 black") != -1 ||
+    name.indexOf("a15 8/256 dark") != -1
   ) {
     return 31088;
   } else if (name.indexOf("a15 8/256 light blue") != -1) {
@@ -122,7 +132,8 @@ export const returnIDSamsung = (name) => {
     return 35704;
   } else if (
     name.indexOf("a25 6/128 blue/black") != -1 ||
-    name.indexOf("a25 6/128 black") != -1
+    name.indexOf("a25 6/128 black") != -1 ||
+    name.indexOf("a25 6/128 dark") != -1
   ) {
     return 31092;
   } else if (name.indexOf("a25 6/128 blue") != -1) {
@@ -136,7 +147,8 @@ export const returnIDSamsung = (name) => {
     return 31093;
   } else if (
     name.indexOf("a25 8/128 blue/black") != -1 ||
-    name.indexOf("a25 8/128 black") != -1
+    name.indexOf("a25 8/128 black") != -1 ||
+    name.indexOf("a15 8/128 dark") != -1
   ) {
     return 31096;
   } else if (name.indexOf("a25 8/128 blue") != -1) {
@@ -150,7 +162,8 @@ export const returnIDSamsung = (name) => {
     return 31097;
   } else if (
     name.indexOf("a25 8/256 blue/black") != -1 ||
-    name.indexOf("a25 8/256 black") != -1
+    name.indexOf("a25 8/256 black") != -1 ||
+    name.indexOf("a15 8/256 dark") != -1
   ) {
     return 31100;
   } else if (name.indexOf("a25 8/256 blue") != -1) {
@@ -2928,42 +2941,49 @@ export const returnIDSamsung = (name) => {
     // Tab
   } else if (
     name.indexOf("tab a9 4/64 graphite lte") != -1 ||
+    name.indexOf("tab a9 4/64 lte graphite") != -1 ||
     (name.indexOf("tab a9 4/64 graphite") != -1 && name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 5g 4/64 graphite") != -1
   ) {
     return 31018;
   } else if (
     name.indexOf("tab a9 4/64 navy lte") != -1 ||
+    name.indexOf("tab a9 4/64 lte navy") != -1 ||
     (name.indexOf("tab a9 4/64 navy") != -1 && name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 5g 4/64 navy") != -1
   ) {
     return 31019;
   } else if (
     name.indexOf("tab a9 4/64 silver lte") != -1 ||
+    name.indexOf("tab a9 4/64 lte silver") != -1 ||
     (name.indexOf("tab a9 4/64 silver") != -1 && name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 5g 4/64 silver") != -1
   ) {
     return 31020;
   } else if (
     name.indexOf("tab a9 8/128 graphite lte") != -1 ||
+    name.indexOf("tab a9 8/128 lte graphite") != -1 ||
     (name.indexOf("tab a9 8/128 graphite") != -1 && name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 5g 8/128 graphite") != -1
   ) {
     return 31021;
   } else if (
     name.indexOf("tab a9 8/128 navy lte") != -1 ||
+    name.indexOf("tab a9 8/128 lte navy") != -1 ||
     (name.indexOf("tab a9 8/128 navy") != -1 && name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 5g 8/128 navy") != -1
   ) {
     return 31022;
   } else if (
     name.indexOf("tab a9 8/128 silver lte") != -1 ||
+    name.indexOf("tab a9 8/128 lte silver") != -1 ||
     (name.indexOf("tab a9 8/128 silver") != -1 && name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 5g 8/128 silver") != -1
   ) {
     return 31023;
   } else if (
     name.indexOf("tab a9 + 4/64 graphite lte") != -1 ||
+    name.indexOf("tab a9 + 4/64 lte graphite") != -1 ||
     (name.indexOf("tab a9 + 4/64 graphite") != -1 &&
       name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 + 5g 4/64 graphite") != -1
@@ -2971,18 +2991,21 @@ export const returnIDSamsung = (name) => {
     return 31024;
   } else if (
     name.indexOf("tab a9 + 4/64 navy lte") != -1 ||
+    name.indexOf("tab a9 + 4/64 lte navy") != -1 ||
     (name.indexOf("tab a9 + 4/64 navy") != -1 && name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 + 5g 4/64 navy") != -1
   ) {
     return 31025;
   } else if (
     name.indexOf("tab a9 + 4/64 silver lte") != -1 ||
+    name.indexOf("tab a9 + 4/64 lte silver") != -1 ||
     (name.indexOf("tab a9 + 4/64 silver") != -1 && name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 + 5g 4/64 silver") != -1
   ) {
     return 31026;
   } else if (
     name.indexOf("tab a9 + 8/128 graphite lte") != -1 ||
+    name.indexOf("tab a9 + 8/128 lte graphite") != -1 ||
     (name.indexOf("tab a9 + 8/128 graphite") != -1 &&
       name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 + 5g 8/128 graphite") != -1
@@ -2990,12 +3013,14 @@ export const returnIDSamsung = (name) => {
     return 31027;
   } else if (
     name.indexOf("tab a9 + 8/128 navy lte") != -1 ||
+    name.indexOf("tab a9 + 8/128 lte navy") != -1 ||
     (name.indexOf("tab a9 + 8/128 navy") != -1 && name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 + 5g 8/128 navy") != -1
   ) {
     return 31028;
   } else if (
     name.indexOf("tab a9 + 8/128 silver lte") != -1 ||
+    name.indexOf("tab a9 + 8/128 lte silver") != -1 ||
     (name.indexOf("tab a9 + 8/128 silver") != -1 && name.indexOf("5g") != -1) ||
     name.indexOf("tab a9 + 5g 8/128 silver") != -1
   ) {

@@ -1,4 +1,5 @@
-export const returnAppleHi = (name) => {
+export const returnAppleHi = (nameStock) => {
+  const name = nameStock.replace(/\s+/g, " ");
   return (
     name.indexOf("AirPods") != -1 ||
     name.indexOf("Airpods") != -1 ||

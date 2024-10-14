@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   baseFix,
+  baseFixElectrozon,
   baseFixGarmin,
   baseFixHi,
   baseFixMiHonor,
@@ -66,6 +67,7 @@ import {
   returnNameInArrRacmag,
   returnStockPriceRacmag,
 } from "../Racmag/helpers/helpers";
+import { returnFixNameElectrozon } from "../Electrozon/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -77,6 +79,7 @@ const AllPriceWithID = ({
   S5Data,
   rptradeData,
   racmagData,
+  electrozonData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -297,6 +300,28 @@ const AllPriceWithID = ({
           extraPrice: returnExtraPriceRacmag(returnFixNameRacmag(racmag.name)),
           stockPrice: returnStockPriceRacmag(returnFixNameRacmag(racmag.name)),
           provider: "Рацмаг",
+        })
+      );
+    }
+  });
+
+  electrozonData.map((electrozon) => {
+    if (
+      electrozon.name &&
+      typeof electrozon.name === "string" &&
+      baseFixElectrozon(electrozon) &&
+      isOpen
+    ) {
+      return (
+        returnIDApple(returnFixNameElectrozon(electrozon.name)) !==
+          "No match" &&
+        electrozon.price &&
+        allPriceArr.push({
+          id: returnIDApple(returnFixNameElectrozon(electrozon.name)),
+          name: returnFixNameElectrozon(electrozon.name),
+          extraPrice: newPrice(electrozon.name, electrozon.price),
+          stockPrice: electrozon.price,
+          provider: "Electrozon",
         })
       );
     }

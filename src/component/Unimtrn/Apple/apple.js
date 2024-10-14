@@ -1,4 +1,5 @@
-export const returnApple = (el) => {
+export const returnApple = (name) => {
+  const el = name.replace(/\s+/g, " ");
   return (
     el.Товар.indexOf("AirPods") != -1 ||
     el.Товар.indexOf("Airpods") != -1 ||
@@ -42,7 +43,8 @@ export const returnApple = (el) => {
     el.Товар.indexOf("iPad 9") != -1 ||
     el.Товар.indexOf("iPad 10") != -1 ||
     el.Товар.indexOf("iPad Mini 6") != -1 ||
-    el.Товар.indexOf("iPad Air 5") != -1 ||
+    el.Товар.indexOf("iPad Air") != -1 ||
+    el.Товар.indexOf("IPad Air") != -1 ||
     el.Товар.indexOf("iPad Pro") != -1 ||
     el.Товар.indexOf("AW Series 9") != -1 ||
     el.Товар.indexOf("AW 9") != -1 ||

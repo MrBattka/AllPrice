@@ -156,15 +156,15 @@ export const fixNameUnimtrn = (el) => {
   const fixmk2n3 = fixiPad9.replace("MK2N3 ", "");
   const fixmk2p3 = fixmk2n3.replace("MK2P3 ", "");
 
-  const replaceSpaceGrey = fixmk2p3.replace(
-    "Space Grey",
-    "Grey"
-  );
+  const replaceSpaceGrey = fixmk2p3.replace("Space Grey", "Grey");
   const replaceSpaceGray = replaceSpaceGrey.replace("Space Gray", "Grey");
   const replaceSpaceBlack = replaceSpaceGray.replace("Space Black", "Black");
   const replaceGrey = replaceSpaceBlack.replace("Grey", "Gray");
 
-  const replaceiPadPink64 = replaceGrey.replace("Wi-Fi 64 Pink", "64 Pink Wi-Fi");
+  const replaceiPadPink64 = replaceGrey.replace(
+    "Wi-Fi 64 Pink",
+    "64 Pink Wi-Fi"
+  );
   const replaceiPadSilver64 = replaceiPadPink64.replace(
     "Wi-Fi 64 Silver",
     "64 Silver Wi-Fi"
@@ -422,6 +422,23 @@ export const fixNameUnimtrn = (el) => {
   const fixCPH2581 = fixGongKong.replace("CPH2581 ", "");
   const fixJade = fixCPH2581.replace("Jade ", "");
   const fixNote13NFC = fixJade.replace("Note 13 NFC", "Note 13");
+  const fixAir11M4 = fixNote13NFC.replace("Air 11 (2024)", "Air 11 M2");
+  const fixAir11Gray =
+    fixAir11M4.indexOf("Air 11") != -1 && fixAir11M4.indexOf("Black") != -1
+      ? fixAir11M4.replace("Black", "Gray")
+      : fixAir11M4;
+      const fixNote13ProPurple =
+    fixAir11Gray.indexOf("Note 13 Pro") != -1 && fixAir11Gray.indexOf("Aurora") != -1
+      ? fixAir11Gray.replace("Aurora ", "")
+      : fixAir11Gray;
+      const fixNote13ProOlive =
+    fixNote13ProPurple.indexOf("Note 13 Pro") != -1 && fixNote13ProPurple.indexOf("Olive") != -1
+      ? fixNote13ProPurple.replace("Olive ", "")
+      : fixNote13ProPurple;
+      const fixNote12Sky =
+    fixNote13ProOlive.indexOf("Note 12 Pro") != -1 && fixNote13ProOlive.indexOf("Sky") != -1
+      ? fixNote13ProOlive.replace("Sky ", "")
+      : fixNote13ProOlive;
 
-  return fixNote13NFC;
+  return fixNote12Sky;
 };

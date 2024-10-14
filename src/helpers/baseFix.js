@@ -303,3 +303,54 @@ export const baseFixArti = (el) => {
     toLowerCase.indexOf("cmf phone") == -1
   );
 };
+
+export const baseFixElectrozon = (el) => {
+  const toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("infinix") == -1 &&
+    toLowerCase.indexOf("inoi") == -1 &&
+    toLowerCase.indexOf("realme") == -1 &&
+    toLowerCase.indexOf("tecno") == -1 &&
+    toLowerCase.indexOf("xenium") == -1
+  );
+};
+
+export const baseFixReSale = (el) => {
+  const toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("re:sale") == -1 &&
+    toLowerCase.indexOf("samsung") == -1 &&
+    toLowerCase.indexOf("оформление") == -1 &&
+    toLowerCase.indexOf("resale") == -1 &&
+    toLowerCase.indexOf("faq") == -1 &&
+    toLowerCase.indexOf("от") == -1 &&
+    toLowerCase.indexOf("type-c lighting") == -1 &&
+    toLowerCase.indexOf("📌") == -1 &&
+    toLowerCase.indexOf("⌚️") == -1 &&
+    toLowerCase.indexOf("➡️") == -1 &&
+    toLowerCase.indexOf("💨") == -1 &&
+    toLowerCase.indexOf("🇪🇺 - наша вилка") == -1 &&
+    toLowerCase.indexOf("не наша вилка") == -1 &&
+    toLowerCase.indexOf("стайлер") == -1 &&
+    toLowerCase.indexOf("пылесосы") == -1 &&
+    toLowerCase.indexOf("выпрямитель") == -1 &&
+    toLowerCase.indexOf("фен") == -1 &&
+    toLowerCase.indexOf("увлажнители") == -1 &&
+    toLowerCase.indexOf("📱") == -1 &&
+    toLowerCase.indexOf("🎮") == -1 &&
+    toLowerCase.indexOf("💻") == -1 &&
+    toLowerCase.indexOf("геймпад") == -1 &&
+    toLowerCase.indexOf("jpg") == -1 &&
+
+    toLowerCase.indexOf("airpods 4") == -1 &&
+    toLowerCase.indexOf("oculus ") == -1 && 
+    (toLowerCase === "256 - " ? toLowerCase.indexOf("256") == -1 : toLowerCase) &&
+    (toLowerCase === "128 - " ? toLowerCase.indexOf("128") == -1 : toLowerCase) &&
+    toLowerCase.indexOf("геймпад") == -1 &&
+    toLowerCase.indexOf("jpg") == -1 &&
+    toLowerCase.indexOf("airpods 4") == -1 &&
+    toLowerCase.indexOf("oculus ") == -1 &&
+    toLowerCase.indexOf("🔘") == -1 &&
+    toLowerCase.indexOf("⚡️") == -1 
+  );
+};

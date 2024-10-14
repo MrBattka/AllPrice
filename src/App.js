@@ -23,6 +23,9 @@ import IndexRPTradeNotID from "./component/RPTrade/IndexRPTradeNotID";
 import IndexRacmag from "./component/Racmag/IndexRacmag";
 import IndexRacmagNotID from "./component/Racmag/IndexRacmagNotID";
 import IndexArti from "./component/Arti/indexArti";
+import IndexElectrozon from "./component/Electrozon/IndexElectrozon";
+import IndexElectrozonNotID from "./component/Electrozon/IndexElectrozonNotID";
+import IndexReSale from "./component/ReSale/indexReSale";
 
 const App = () => {
   const allPrice = [];
@@ -37,6 +40,8 @@ const App = () => {
   const [dataRPTrade, setDataRPTrade] = useState([]);
   const [dataRacmag, setDataRacmag] = useState([]);
   const [dataArti, setDataArti] = useState([]);
+  const [dataElectrozon, setDataElectrozon] = useState([]);
+  const [dataReSale, setDataReSale] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -48,6 +53,8 @@ const App = () => {
   const rptrade = [];
   const racmag = [];
   const arti = [];
+  const electrozon = [];
+  const resale = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -114,6 +121,24 @@ const App = () => {
       arti.push({ name: artiEl.Arti });
   });
 
+  dataElectrozon.map((electrozonEl) => {
+    electrozonEl.Наименование &&
+      electrozonEl.Наименование.length > 2 &&
+      typeof electrozonEl.Наименование === "string" &&
+      electrozon.push({
+        name: electrozonEl.Наименование,
+        price: electrozonEl.Цена,
+      });
+  });
+
+  dataReSale.map((resaleEl) => {
+    resaleEl.ReSale &&
+      resaleEl.ReSale.length > 7 &&
+      typeof resaleEl.ReSale === "string" &&
+      resale.push({ name: resaleEl.ReSale });
+  });
+  
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -144,6 +169,10 @@ const App = () => {
           setDataRacmag(rowRacmag);
           const rowArti = utils.sheet_to_json(wb.Sheets[sheets[9]]);
           setDataArti(rowArti);
+          const rowElectrozon = utils.sheet_to_json(wb.Sheets[sheets[10]]);
+          setDataElectrozon(rowElectrozon);
+          const rowReSale = utils.sheet_to_json(wb.Sheets[sheets[11]]);
+          setDataReSale(rowReSale);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -215,6 +244,12 @@ const App = () => {
         {/* Arti */}
         {/* <IndexArti el={dataArti} artiData={arti} />  */}
 
+        {/* Electrozon */}
+        <IndexElectrozon el={dataElectrozon} electrozonData={electrozon} />
+        <IndexElectrozonNotID el={dataElectrozon} electrozonData={electrozon} />
+        {/* ReSale */}
+        {/* <IndexReSale el={dataReSale} resaleData={resale} />  */}
+
         {/* All Price */}
         <AllPriceWithID
           dataSuperprice={superprice}
@@ -226,6 +261,7 @@ const App = () => {
           S5Data={S5}
           rptradeData={rptrade}
           racmagData={racmag}
+          electrozonData={electrozon}
         />
 
         <AllPrice
@@ -238,6 +274,7 @@ const App = () => {
           S5Data={S5}
           rptradeData={rptrade}
           racmagData={racmag}
+          electrozonData={electrozon}
         />
       </div>
     </div>

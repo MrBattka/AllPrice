@@ -875,6 +875,70 @@ export const returnIDApple = (nameStock) => {
     return 36415;
   } else if (name.indexOf("air 11 m2 512 starlight lte") != -1) {
     return 36416;
+  } else if (name.indexOf("air 11 m2 wi-fi 128 blue") != -1) {
+    return 36208;
+  } else if (name.indexOf("air 11 m2 wi-fi 128 purple") != -1) {
+    return 36207;
+  } else if (name.indexOf("air 11 m2 wi-fi 128 gray") != -1) {
+    return 36172;
+  } else if (name.indexOf("air 11 m2 wi-fi 128 starlight") != -1) {
+    return 36206;
+  } else if (name.indexOf("air 11 m2 lte 128 blue") != -1) {
+    return 36401;
+  } else if (name.indexOf("air 11 m2 lte 128 purple") != -1) {
+    return 36402;
+  } else if (name.indexOf("air 11 m2 lte 128 gray") != -1) {
+    return 36403;
+  } else if (name.indexOf("air 11 m2 lte 128 starlight") != -1) {
+    return 36404;
+  } else if (name.indexOf("air 11 m2 wi-fi 1tb blue") != -1) {
+    return 36217;
+  } else if (name.indexOf("air 11 m2 wi-fi 1tb purple") != -1) {
+    return 36218;
+  } else if (name.indexOf("air 11 m2 wi-fi 1tb gray") != -1) {
+    return 36219;
+  } else if (name.indexOf("air 11 m2 wi-fi 1tb starlight") != -1) {
+    return 36220;
+  } else if (name.indexOf("air 11 m2 lte 1tb blue") != -1) {
+    return 36405;
+  } else if (name.indexOf("air 11 m2 lte 1tb purple") != -1) {
+    return 36406;
+  } else if (name.indexOf("air 11 m2 lte 1tb gray") != -1) {
+    return 36407;
+  } else if (name.indexOf("air 11 m2 lte 1tb starlight") != -1) {
+    return 36408;
+  } else if (name.indexOf("air 11 m2 wi-fi 256 blue") != -1) {
+    return 36209;
+  } else if (name.indexOf("air 11 m2 wi-fi 256 purple") != -1) {
+    return 36210;
+  } else if (name.indexOf("air 11 m2 wi-fi 256 gray") != -1) {
+    return 36211;
+  } else if (name.indexOf("air 11 m2 wi-fi 256 starlight") != -1) {
+    return 36212;
+  } else if (name.indexOf("air 11 m2 lte 256 blue") != -1) {
+    return 36409;
+  } else if (name.indexOf("air 11 m2 lte 256 purple") != -1) {
+    return 36410;
+  } else if (name.indexOf("air 11 m2 lte 256 gray") != -1) {
+    return 36411;
+  } else if (name.indexOf("air 11 m2 lte 256 starlight") != -1) {
+    return 36412;
+  } else if (name.indexOf("air 11 m2 wi-fi 512 blue") != -1) {
+    return 36213;
+  } else if (name.indexOf("air 11 m2 wi-fi 512 purple") != -1) {
+    return 36214;
+  } else if (name.indexOf("air 11 m2 wi-fi 512 gray") != -1) {
+    return 36215;
+  } else if (name.indexOf("air 11 m2 wi-fi 512 starlight") != -1) {
+    return 36216;
+  } else if (name.indexOf("air 11 m2 lte 512 blue") != -1) {
+    return 36413;
+  } else if (name.indexOf("air 11 m2 lte 512 purple") != -1) {
+    return 36414;
+  } else if (name.indexOf("air 11 m2 lte 512 gray") != -1) {
+    return 36415;
+  } else if (name.indexOf("air 11 m2 lte 512 starlight") != -1) {
+    return 36416;
   } else if (name.indexOf("air 13 m2 1tb blue wi-fi") != -1) {
     return 36455;
   } else if (name.indexOf("air 13 m2 1tb purple wi-fi") != -1) {
@@ -1711,8 +1775,10 @@ export const returnIDApple = (nameStock) => {
     return 17695;
   } else if (name.indexOf("12 pro max 128 gold") != -1) {
     return 17699;
-  } else if (name.indexOf("12 pro max 128 black") != -1 ||
-  name.indexOf("12 pro max 128 graphite") != -1) {
+  } else if (
+    name.indexOf("12 pro max 128 black") != -1 ||
+    name.indexOf("12 pro max 128 graphite") != -1
+  ) {
     return 17696;
   } else if (name.indexOf("12 pro max 128 blue") != -1) {
     return 17698;
@@ -3643,7 +3709,7 @@ export const returnIDApple = (nameStock) => {
     return 28230;
   } else if (name.indexOf("15 128 pink") != -1) {
     return 28236;
-  } else if (name.indexOf("15 256 yellow") != -1) {
+  } else if (name.indexOf("15 128 yellow") != -1) {
     return 28233;
   } else if (
     name.indexOf("15 256 black 🇨🇳") != -1 ||
