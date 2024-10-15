@@ -386,3 +386,18 @@ export const baseFixTagir = (el) => {
     toLowerCase.indexOf("шт") == -1 
   );
 };
+
+export const baseFixNarod = (el) => {
+  const toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("00") != -1 &&
+    toLowerCase.indexOf("шт") == -1 
+  );
+};
+
+export const baseFixF51= (el) => {
+  const toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("шт") == -1 
+  );
+};

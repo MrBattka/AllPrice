@@ -199,7 +199,7 @@ export const returnIDOtherBrand = (name) => {
       name.indexOf("topaz") != -1 &&
       name.indexOf("orange") != -1)
   ) {
-    return 34743  ;
+    return 34743;
   } else if (
     name.indexOf("hd08 blue/rosé") != -1 ||
     (name.indexOf("hd08") != -1 &&
@@ -225,7 +225,6 @@ export const returnIDOtherBrand = (name) => {
     return 27095;
   } else if (name.indexOf("hd08 rose") != -1) {
     return 27097;
-
   } else if (
     name.indexOf("v11 nickel/blue") != -1 ||
     (name.indexOf("v11") != -1 &&
@@ -1106,21 +1105,46 @@ export const returnIDOtherBrand = (name) => {
     return 36708;
   } else if (name.indexOf("pixel 9 pro xl 16/512 rose") != -1) {
     return 36709;
-  } else if (name.indexOf("pixel 9 128 obsidian") != -1) {
+  } else if (
+  name.indexOf("pixel 9") != -1 &&
+  name.indexOf("128") != -1 &&
+  (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)) {
     return 36682;
-  } else if (name.indexOf("pixel 9 128 peony") != -1) {
+  } else if (
+    name.indexOf("pixel 9") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("peony") != -1 || name.indexOf("pink") != -1)
+  ) {
     return 36693;
-  } else if (name.indexOf("pixel 9 128 porcelain") != -1) {
+  } else if (
+  name.indexOf("pixel 9") != -1 &&
+  name.indexOf("128") != -1 &&
+  (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)) {
     return 36692;
-  } else if (name.indexOf("pixel 9 128 wintergreen") != -1) {
+  } else if (
+  name.indexOf("pixel 9") != -1 &&
+  name.indexOf("128") != -1 &&
+  (name.indexOf("wintergreen") != -1 || name.indexOf("green") != -1)) {
     return 36694;
-  } else if (name.indexOf("pixel 9 256 obsidian") != -1) {
+  } else if (
+  name.indexOf("pixel 9") != -1 &&
+  name.indexOf("256") != -1 &&
+  (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)) {
     return 36695;
-  } else if (name.indexOf("pixel 9 256 peony") != -1) {
+  } else if (
+  name.indexOf("pixel 9") != -1 &&
+  name.indexOf("256") != -1 &&
+  (name.indexOf("peony") != -1 || name.indexOf("pink") != -1)) {
     return 36696;
-  } else if (name.indexOf("pixel 9 256 porcelain") != -1) {
+  } else if (
+  name.indexOf("pixel 9") != -1 &&
+  name.indexOf("256") != -1 &&
+  (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)) {
     return 36697;
-  } else if (name.indexOf("pixel 9 256 wintergreen") != -1) {
+  } else if (
+  name.indexOf("pixel 9") != -1 &&
+  name.indexOf("256") != -1 &&
+  (name.indexOf("wintergreen") != -1 || name.indexOf("green") != -1)) {
     return 36698;
   } else if (name.indexOf("pixel 9 pro 128 hazel") != -1) {
     return 36716;
@@ -1140,7 +1164,10 @@ export const returnIDOtherBrand = (name) => {
     return 36728;
   } else if (name.indexOf("pixel 9 pro 256 hazel") != -1) {
     return 36717;
-  } else if (name.indexOf("pixel 9 pro 256 obsidian") != -1) {
+  } else if (
+  name.indexOf("pixel 9 pro") != -1 &&
+  name.indexOf("256") != -1 &&
+  (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)) {
     return 36718;
   } else if (name.indexOf("pixel 9 pro 256 porcelain") != -1) {
     return 36719;
@@ -1154,7 +1181,12 @@ export const returnIDOtherBrand = (name) => {
     return 36723;
   } else if (name.indexOf("pixel 9 pro 512 rose") != -1) {
     return 36724;
-  } else if (name.indexOf("pixel 9 pro fold 256 obsidian") != -1) {
+  } else if (
+  name.indexOf("pixel") != -1 &&
+  name.indexOf("9 pro") != -1 &&
+  name.indexOf("fold") != -1 &&
+  name.indexOf("256") != -1 &&
+  (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)) {
     return 36679;
   } else if (name.indexOf("pixel 9 pro fold 256 porcelain") != -1) {
     return 36689;

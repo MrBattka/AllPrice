@@ -1,43 +1,42 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
-import { fixNameTagir, returnNameTagir, returnStockPriceTagir } from "./helpers/helpers";
-import { baseFixTagir } from "../../helpers/baseFix";
+import { baseFixNarod } from "../../helpers/baseFix";
+import { fixNameNarod, returnNameNarod, returnStockPriceNarod } from "./helpers/helpers";
 import { returnIDApple } from "../../helpers/returnIDApple";
 
-const IndexTagirNotID = ({ el, tagirData }) => {
+const IndexNarodNotID = ({ el, narodData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
-    tagirData.map((tagir) => {
-      baseFixTagir(tagir) && returnStockPriceTagir(fixNameTagir(tagir.name));
-      if (
-        tagir.name &&
-        typeof tagir.name === "string" &&
-        baseFixTagir(tagir) &&
-        isOpen
-      )
-       {
-        return (
-          returnIDApple(fixNameTagir(tagir.name)) === 'No match' &&
-          returnStockPriceTagir(tagir.name) &&
-          resultArr.push({
-            id: returnIDApple(returnNameTagir(fixNameTagir(tagir.name))),
-            name: returnNameTagir(fixNameTagir(tagir.name)),
-            extraPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
-            stockPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
-            provider: "Тагир",
-          })
-        );
-      }
-    });
+  narodData.map((narod) => {
+    baseFixNarod(narod) && returnStockPriceNarod(fixNameNarod(narod.name));
+    if (
+      narod.name &&
+      typeof narod.name === "string" &&
+      baseFixNarod(narod) &&
+      isOpen
+    ) {
+      return (
+        returnIDApple(fixNameNarod(narod.name)) === "No match" &&
+        returnStockPriceNarod(narod.name) &&
+        resultArr.push({
+          id: returnIDApple(returnNameNarod(fixNameNarod(narod.name))),
+          name: returnNameNarod(fixNameNarod(narod.name)),
+          extraPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
+          stockPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
+          provider: "Народ",
+        })
+      );
+    }
+  });
 
   return (
     <div>
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Тагир Not ID ▲" : "Тагир Not ID ▼"}
+            {isOpen ? "Народ Not ID ▲" : "Народ Not ID ▼"}
           </span>
         )}
       </div>
@@ -51,4 +50,4 @@ const IndexTagirNotID = ({ el, tagirData }) => {
   );
 };
 
-export default IndexTagirNotID;
+export default IndexNarodNotID;

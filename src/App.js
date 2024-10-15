@@ -31,6 +31,8 @@ import IndexArtiNotID from "./component/Arti/indexArtiNotID";
 import IndexTagir from "./component/Tagir/IndexTagir";
 import IndexTagirNotID from "./component/Tagir/IndexTagirNotID";
 import IndexNarod from "./component/Narod/IndexNarod";
+import IndexNarodNotID from "./component/Narod/IndexNarodNotID";
+import IndexF51 from "./component/F51/IndexF51";
 
 const App = () => {
   const allPrice = [];
@@ -49,6 +51,7 @@ const App = () => {
   const [dataReSale, setDataReSale] = useState([]);
   const [dataTagir, setDataTagir] = useState([]);
   const [dataNarod, setDataNarod] = useState([]);
+  const [dataF51, setDataF51] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -64,6 +67,7 @@ const App = () => {
   const resale = [];
   const tagir = [];
   const narod = [];
+  const f51 = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -161,6 +165,13 @@ const App = () => {
       narod.push({ name: narodEl.Narod });
   });
 
+  dataF51.map((F51El) => {
+    F51El.Товар &&
+      F51El.Товар.length > 7 &&
+      typeof F51El.Товар === "string" &&
+      f51.push({ name: F51El.Товар, price: F51El.Цена, country: F51El.Страна });
+  });
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -199,6 +210,8 @@ const App = () => {
           setDataTagir(rowTagir);
           const rowNarod = utils.sheet_to_json(wb.Sheets[sheets[13]]);
           setDataNarod(rowNarod);
+          const rowF51 = utils.sheet_to_json(wb.Sheets[sheets[14]]);
+          setDataF51(rowF51);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -236,8 +249,8 @@ const App = () => {
         </div>
       </div>
       <div className="wrapper_cat">
-        {/* Народ */}
-        {/* <IndexNarod el={dataNarod} narodData={narod} /> */}
+        {/* F51 */}
+        <IndexF51 el={dataF51} f51Data={f51}/>
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
@@ -281,6 +294,9 @@ const App = () => {
         {/* Тагир */}
         <IndexTagir el={dataTagir} tagirData={tagir} />
         <IndexTagirNotID el={dataTagir} tagirData={tagir} />
+        {/* Народ */}
+        <IndexNarod el={dataNarod} narodData={narod} />
+        <IndexNarodNotID el={dataNarod} narodData={narod} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -297,6 +313,7 @@ const App = () => {
           artiData={arti}
           resaleData={resale}
           tagirData={tagir}
+          narodData={narod}
         />
 
         <AllPrice
@@ -313,6 +330,7 @@ const App = () => {
           artiData={arti}
           resaleData={resale}
           tagirData={tagir}
+          narodData={narod}
         />
       </div>
     </div>

@@ -170,7 +170,9 @@ export const returnIDXiaomi = (name) => {
     return 36289;
   } else if (name.indexOf("f6 5g 12/512 green") != -1) {
     return 36290;
-  } else if (name.indexOf("f6 5g 12/512 titan") != -1) {
+  } else if (name.indexOf("f6") != -1 ||
+  name.indexOf("12/512") != -1 ||
+  name.indexOf("titan") != -1) {
     return 36291;
   } else if (name.indexOf("f6 5g 8/256 black") != -1) {
     return 36181;

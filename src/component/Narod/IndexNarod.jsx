@@ -1,32 +1,35 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
+import { baseFixNarod } from "../../helpers/baseFix";
+import { fixNameNarod, returnNameNarod, returnStockPriceNarod } from "./helpers/helpers";
+import { returnIDApple } from "../../helpers/returnIDApple";
 
 const IndexNarod = ({ el, narodData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
-  // narodData.map((narod) => {
-  //   baseFixTagir(narod) && returnStockPriceTagir(fixNameTagir(narod.name));
-  //   if (
-  //     narod.name &&
-  //     typeof narod.name === "string" &&
-  //     baseFixTagir(narod) &&
-  //     isOpen
-  //   ) {
-  //     return (
-  //       returnIDApple(fixNameTagir(narod.name)) !== "No match" &&
-  //       returnStockPriceTagir(narod.name) &&
-  //       resultArr.push({
-  //         id: returnIDApple(returnNameTagir(fixNameTagir(narod.name))),
-  //         name: returnNameTagir(fixNameTagir(narod.name)),
-  //         extraPrice: returnStockPriceTagir(fixNameTagir(narod.name)),
-  //         stockPrice: returnStockPriceTagir(fixNameTagir(narod.name)),
-  //         provider: "Народ",
-  //       })
-  //     );
-  //   }
-  // });
+  narodData.map((narod) => {
+    baseFixNarod(narod) && returnStockPriceNarod(fixNameNarod(narod.name));
+    if (
+      narod.name &&
+      typeof narod.name === "string" &&
+      baseFixNarod(narod) &&
+      isOpen
+    ) {
+      return (
+        returnIDApple(fixNameNarod(narod.name)) !== "No match" &&
+        returnStockPriceNarod(narod.name) &&
+        resultArr.push({
+          id: returnIDApple(returnNameNarod(fixNameNarod(narod.name))),
+          name: returnNameNarod(fixNameNarod(narod.name)),
+          extraPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
+          stockPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
+          provider: "Народ",
+        })
+      );
+    }
+  });
 
   return (
     <div>
@@ -40,11 +43,7 @@ const IndexNarod = ({ el, narodData }) => {
 
       {isOpen && (
         <div className={style.row}>
-          {/* <BasicTable resultArr={resultArr} /> */}
-
-          {narodData.map((narod) => (
-            <div>{narod.name}</div>
-          ))}
+          <BasicTable resultArr={resultArr} />
         </div>
       )}
     </div>

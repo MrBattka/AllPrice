@@ -6,6 +6,7 @@ import {
   baseFixGarmin,
   baseFixHi,
   baseFixMiHonor,
+  baseFixNarod,
   baseFixRacmag,
   baseFixReSale,
   baseFixRPTrade,
@@ -88,6 +89,7 @@ import {
   returnNameTagir,
   returnStockPriceTagir,
 } from "../Tagir/helpers/helpers";
+import { fixNameNarod, returnNameNarod, returnStockPriceNarod } from "../Narod/helpers/helpers";
 
 const AllPrice = ({
   dataSuperprice,
@@ -103,6 +105,7 @@ const AllPrice = ({
   artiData,
   resaleData,
   tagirData,
+  narodData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -412,6 +415,28 @@ const AllPrice = ({
           extraPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
           stockPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
           provider: "Тагир",
+        })
+      );
+    }
+  });
+
+  narodData.map((narod) => {
+    baseFixNarod(narod) && returnStockPriceNarod(fixNameNarod(narod.name));
+    if (
+      narod.name &&
+      typeof narod.name === "string" &&
+      baseFixNarod(narod) &&
+      isOpen
+    ) {
+      return (
+        returnIDApple(fixNameNarod(narod.name)) !== "No match" &&
+        returnStockPriceNarod(narod.name) &&
+        allPriceArr.push({
+          id: returnIDApple(returnNameNarod(fixNameNarod(narod.name))),
+          name: returnNameNarod(fixNameNarod(narod.name)),
+          extraPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
+          stockPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
+          provider: "Народ",
         })
       );
     }
