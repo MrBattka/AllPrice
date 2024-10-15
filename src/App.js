@@ -26,6 +26,11 @@ import IndexArti from "./component/Arti/indexArti";
 import IndexElectrozon from "./component/Electrozon/IndexElectrozon";
 import IndexElectrozonNotID from "./component/Electrozon/IndexElectrozonNotID";
 import IndexReSale from "./component/ReSale/indexReSale";
+import IndexReSaleNotID from "./component/ReSale/indexReSaleNotID";
+import IndexArtiNotID from "./component/Arti/indexArtiNotID";
+import IndexTagir from "./component/Tagir/IndexTagir";
+import IndexTagirNotID from "./component/Tagir/IndexTagirNotID";
+import IndexNarod from "./component/Narod/IndexNarod";
 
 const App = () => {
   const allPrice = [];
@@ -42,6 +47,8 @@ const App = () => {
   const [dataArti, setDataArti] = useState([]);
   const [dataElectrozon, setDataElectrozon] = useState([]);
   const [dataReSale, setDataReSale] = useState([]);
+  const [dataTagir, setDataTagir] = useState([]);
+  const [dataNarod, setDataNarod] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -55,6 +62,8 @@ const App = () => {
   const arti = [];
   const electrozon = [];
   const resale = [];
+  const tagir = [];
+  const narod = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -137,7 +146,20 @@ const App = () => {
       typeof resaleEl.ReSale === "string" &&
       resale.push({ name: resaleEl.ReSale });
   });
-  
+
+  dataTagir.map((tagirEl) => {
+    tagirEl.Tagir &&
+      tagirEl.Tagir.length > 7 &&
+      typeof tagirEl.Tagir === "string" &&
+      tagir.push({ name: tagirEl.Tagir });
+  });
+
+  dataNarod.map((narodEl) => {
+    narodEl.Narod &&
+      narodEl.Narod.length > 7 &&
+      typeof narodEl.Narod === "string" &&
+      narod.push({ name: narodEl.Narod });
+  });
 
   const handleImport = ($event) => {
     const files = $event.target.files;
@@ -173,6 +195,10 @@ const App = () => {
           setDataElectrozon(rowElectrozon);
           const rowReSale = utils.sheet_to_json(wb.Sheets[sheets[11]]);
           setDataReSale(rowReSale);
+          const rowTagir = utils.sheet_to_json(wb.Sheets[sheets[12]]);
+          setDataTagir(rowTagir);
+          const rowNarod = utils.sheet_to_json(wb.Sheets[sheets[13]]);
+          setDataNarod(rowNarod);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -210,6 +236,8 @@ const App = () => {
         </div>
       </div>
       <div className="wrapper_cat">
+        {/* Народ */}
+        {/* <IndexNarod el={dataNarod} narodData={narod} /> */}
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
@@ -242,13 +270,17 @@ const App = () => {
         <IndexRacmag el={dataRacmag} racmagData={racmag} />
         <IndexRacmagNotID el={dataRacmag} racmagData={racmag} />
         {/* Arti */}
-        {/* <IndexArti el={dataArti} artiData={arti} />  */}
-
+        <IndexArti el={dataArti} artiData={arti} />
+        <IndexArtiNotID el={dataArti} artiData={arti} />
         {/* Electrozon */}
         <IndexElectrozon el={dataElectrozon} electrozonData={electrozon} />
         <IndexElectrozonNotID el={dataElectrozon} electrozonData={electrozon} />
         {/* ReSale */}
-        {/* <IndexReSale el={dataReSale} resaleData={resale} />  */}
+        <IndexReSale el={dataReSale} resaleData={resale} />
+        <IndexReSaleNotID el={dataReSale} resaleData={resale} />
+        {/* Тагир */}
+        <IndexTagir el={dataTagir} tagirData={tagir} />
+        <IndexTagirNotID el={dataTagir} tagirData={tagir} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -262,6 +294,9 @@ const App = () => {
           rptradeData={rptrade}
           racmagData={racmag}
           electrozonData={electrozon}
+          artiData={arti}
+          resaleData={resale}
+          tagirData={tagir}
         />
 
         <AllPrice
@@ -275,6 +310,9 @@ const App = () => {
           rptradeData={rptrade}
           racmagData={racmag}
           electrozonData={electrozon}
+          artiData={arti}
+          resaleData={resale}
+          tagirData={tagir}
         />
       </div>
     </div>

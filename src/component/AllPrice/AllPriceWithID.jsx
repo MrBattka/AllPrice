@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import {
   baseFix,
+  baseFixArti,
   baseFixElectrozon,
   baseFixGarmin,
   baseFixHi,
   baseFixMiHonor,
   baseFixRacmag,
+  baseFixReSale,
   baseFixRPTrade,
   baseFixS5,
   baseFixSuperPrice,
+  baseFixTagir,
   baseFixVsemi,
 } from "../../helpers/baseFix";
 import { returnFixPrice } from "../../helpers/fixPrice";
@@ -68,6 +71,10 @@ import {
   returnStockPriceRacmag,
 } from "../Racmag/helpers/helpers";
 import { returnFixNameElectrozon } from "../Electrozon/helpers/helpers";
+import { returnFixNameArti, returnNameArti, returnStockPriceArti } from "../Arti/helpers/helpers";
+import { returnCategoryArti } from "../Arti/category/Category";
+import { returnExtraPriceReSale, returnFixNameReSale, returnNameReSale, returnStockPriceReSale } from "../ReSale/helpers/helpers";
+import { fixNameTagir, returnNameTagir, returnStockPriceTagir } from "../Tagir/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -80,6 +87,9 @@ const AllPriceWithID = ({
   rptradeData,
   racmagData,
   electrozonData,
+  artiData,
+  resaleData,
+  tagirData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -305,6 +315,30 @@ const AllPriceWithID = ({
     }
   });
 
+  artiData.map((arti) => {
+    baseFixArti(arti) && returnStockPriceArti(returnFixNameArti(arti.name));
+    if (
+      arti.name &&
+      typeof arti.name === "string" &&
+      baseFixArti(arti) &&
+      isOpen
+    )
+     {
+      return (
+        returnIDApple(returnFixNameArti(arti.name)) !== 'No match' &&
+        returnStockPriceArti(arti.name) &&
+        returnCategoryArti(arti.name) &&
+        allPriceArr.push({
+          id: returnIDApple(returnNameArti(returnFixNameArti(arti.name))),
+          name: returnNameArti(returnFixNameArti(arti.name)),
+          extraPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
+          stockPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
+          provider: "Arti",
+        })
+      );
+    }
+  });
+
   electrozonData.map((electrozon) => {
     if (
       electrozon.name &&
@@ -322,6 +356,57 @@ const AllPriceWithID = ({
           extraPrice: newPrice(electrozon.name, electrozon.price),
           stockPrice: electrozon.price,
           provider: "Electrozon",
+        })
+      );
+    }
+  });
+
+  resaleData.map((resale) => {
+    baseFixReSale(resale) &&
+      returnStockPriceReSale(returnFixNameReSale(resale.name));
+    if (
+      resale.name &&
+      typeof resale.name === "string" &&
+      baseFixReSale(resale) &&
+      isOpen
+    ) {
+      return (
+        returnIDApple(returnFixNameReSale(resale.name)) !== "No match" &&
+        returnExtraPriceReSale(resale.name) &&
+        returnStockPriceReSale(resale.name) &&
+        returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("А") ==
+          -1 &&
+        returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf(
+          "00"
+        ) != -1 &&
+        allPriceArr.push({
+          id: returnIDApple(returnNameReSale(returnFixNameReSale(resale.name))),
+          name: returnNameReSale(returnFixNameReSale(resale.name)),
+          extraPrice: returnExtraPriceReSale(returnFixNameReSale(resale.name)),
+          stockPrice: returnStockPriceReSale(returnFixNameReSale(resale.name)),
+          provider: "Re:Sale",
+        })
+      );
+    }
+  });
+
+  tagirData.map((tagir) => {
+    baseFixTagir(tagir) && returnStockPriceTagir(fixNameTagir(tagir.name));
+    if (
+      tagir.name &&
+      typeof tagir.name === "string" &&
+      baseFixTagir(tagir) &&
+      isOpen
+    ) {
+      return (
+        returnIDApple(fixNameTagir(tagir.name)) !== "No match" &&
+        returnStockPriceTagir(tagir.name) &&
+        allPriceArr.push({
+          id: returnIDApple(returnNameTagir(fixNameTagir(tagir.name))),
+          name: returnNameTagir(fixNameTagir(tagir.name)),
+          extraPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
+          stockPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
+          provider: "Тагир",
         })
       );
     }

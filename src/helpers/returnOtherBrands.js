@@ -141,30 +141,113 @@ export const returnIDOtherBrand = (name) => {
   ) {
     return 34764;
   } else if (
-    name.indexOf("hs05 airwrap long barrel nickel/copper") != -1 ||
-    name.indexOf("hs05 long nickel/copper") != -1
+    name.indexOf("hs") != -1 &&
+    name.indexOf("05") != -1 &&
+    name.indexOf("nickel") != -1 &&
+    name.indexOf("copper") != -1
   ) {
     return 27088;
   } else if (
-    name.indexOf("hs05 airwrap long barrel prussian blue") != -1 ||
-    name.indexOf("hs05 long prussian blue") != -1
+    name.indexOf("hs") != -1 &&
+    name.indexOf("05") != -1 &&
+    name.indexOf("fuchsia") != -1 &&
+    name.indexOf("nickel") != -1
+  ) {
+    return 27088;
+  } else if (
+    (name.indexOf("hs") != -1 &&
+      name.indexOf("05") != -1 &&
+      name.indexOf("prussian") != -1 &&
+      name.indexOf("blue") != -1) ||
+    (name.indexOf("hs") != -1 &&
+      name.indexOf("05") != -1 &&
+      name.indexOf("copper") != -1 &&
+      name.indexOf("blue") != -1)
   ) {
     return 27089;
   } else if (
-    name.indexOf("hs05 airwrap long barrel prussian topaz") != -1 ||
-    name.indexOf("hs05 long prussian topaz") != -1
+    name.indexOf("hs") != -1 &&
+    name.indexOf("05") != -1 &&
+    name.indexOf("prussian") != -1 &&
+    name.indexOf("topaz") != -1
   ) {
     return 34763;
-  } else if (name.indexOf("hd08 blue/rosé") != -1) {
+  } else if (
+    name.indexOf("hd07 blue/cooper") != -1 ||
+    (name.indexOf("hd07") != -1 &&
+      name.indexOf("blue") != -1 &&
+      name.indexOf("cooper") != -1)
+  ) {
+    return 34745;
+  } else if (
+    name.indexOf("hd07 blue/cooper") != -1 ||
+    (name.indexOf("hd07") != -1 &&
+      name.indexOf("blue") != -1 &&
+      name.indexOf("blush") != -1)
+  ) {
+    return 27106;
+  } else if (
+    name.indexOf("hd07 nickel/fuchsia") != -1 ||
+    (name.indexOf("hd07") != -1 &&
+      name.indexOf("nickel") != -1 &&
+      name.indexOf("fuchsia") != -1)
+  ) {
+    return 34750;
+  } else if (
+    name.indexOf("hd07 topaz/orange") != -1 ||
+    (name.indexOf("hd07") != -1 &&
+      name.indexOf("topaz") != -1 &&
+      name.indexOf("orange") != -1)
+  ) {
+    return 34743  ;
+  } else if (
+    name.indexOf("hd08 blue/rosé") != -1 ||
+    (name.indexOf("hd08") != -1 &&
+      name.indexOf("blue") != -1 &&
+      name.indexOf("rose") != -1)
+  ) {
     return 27099;
+  } else if (
+    name.indexOf("hd08 nickel/cooper") != -1 ||
+    (name.indexOf("hd08") != -1 &&
+      name.indexOf("nickel") != -1 &&
+      name.indexOf("cooper") != -1)
+  ) {
+    return 27098;
   } else if (name.indexOf("hd08 limited edition prussian blue") != -1) {
     return 27090;
-  } else if (name.indexOf("hd08 cooper") != -1) {
+  } else if (
+    name.indexOf("hd08 cooper") != -1 ||
+    (name.indexOf("hd08 cooper") != -1 && name.indexOf("cooper") != -1)
+  ) {
     return 27098;
   } else if (name.indexOf("hd08 prussian blue/copper") != -1) {
     return 27095;
   } else if (name.indexOf("hd08 rose") != -1) {
     return 27097;
+
+  } else if (
+    name.indexOf("v11 nickel/blue") != -1 ||
+    (name.indexOf("v11") != -1 &&
+      name.indexOf("absolute") != -1 &&
+      name.indexOf("nickel") != -1 &&
+      name.indexOf("blue") != -1)
+  ) {
+    return 28204;
+  } else if (
+    name.indexOf("v11 nickel/purple") != -1 ||
+    (name.indexOf("v11") != -1 &&
+      name.indexOf("nickel") != -1 &&
+      name.indexOf("blue") != -1)
+  ) {
+    return 28204;
+  } else if (
+    name.indexOf("v12 yellow/nickel") != -1 ||
+    (name.indexOf("v12") != -1 &&
+      name.indexOf("yellow") != -1 &&
+      name.indexOf("nickel") != -1)
+  ) {
+    return 27101;
   } else if (name.indexOf("v12 detect slim") != -1) {
     return 35670;
   } else if (name.indexOf("v15 detect absolute") != -1) {
@@ -494,8 +577,10 @@ export const returnIDOtherBrand = (name) => {
     return 34441;
   } else if (name.indexOf("oneplus 12 16/1tb silver") != -1) {
     return 34445;
-  } else if (name.indexOf("oneplus 12 16/512 black") != -1 ||
-  name.indexOf("oneplus 12 16/512 silky black") != -1) {
+  } else if (
+    name.indexOf("oneplus 12 16/512 black") != -1 ||
+    name.indexOf("oneplus 12 16/512 silky black") != -1
+  ) {
     return 34437;
   } else if (name.indexOf("oneplus 12 16/512 green") != -1) {
     return 34442;

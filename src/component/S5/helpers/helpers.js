@@ -36,8 +36,9 @@ export const fixNameS5 = (name) => {
     const replaceTabA9Plus = replaceTabA9.replace("A9 + 128", "Tab A9 + 128");
     const replaceFEPlus = replaceTabA9Plus.replace("FE+", "FE +");
     const replaceS9FE = replaceFEPlus.replace("S9FE", "S9 FE");
+    const fixStarlight = replaceS9FE.replace("starling", "starlight");
 
-  return replaceS9FE;
+  return fixStarlight;
 };
 
 export const returnNameInArrS5 = (name) => {

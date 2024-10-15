@@ -4,12 +4,15 @@ export const returnIDOtherBrand2 = (name) => {
   // PlayStation
   if (
     name.indexOf("ps5 slim disc edition") != -1 ||
-    name.indexOf("playstation 5 disc slim") != -1
+    name.indexOf("playstation 5 disc slim") != -1 ||
+    name.indexOf("ps 5 slim disk") != -1
   ) {
     return 30947;
   } else if (
     name.indexOf("dualsense black") != -1 ||
-    name.indexOf("dualsense white") != -1
+    name.indexOf("dualsense white") != -1 ||
+    name.indexOf("dualsenseBlack") != -1 ||
+    name.indexOf("dualsenseWhite") != -1
   ) {
     return 19661;
   } else if (name.indexOf("dualsense edge") != -1) {
@@ -1150,6 +1153,155 @@ export const returnIDOtherBrand2 = (name) => {
     return 28126;
   } else if (name.indexOf("honor 90 pro 16/512 blue") != -1) {
     return 28135;
+
+    // Yandex
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("красн") != -1
+  ) {
+    return 23952;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("син") != -1
+  ) {
+    return 23951;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("черн") != -1
+  ) {
+    return 23950;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("2") != -1 &&
+    (name.indexOf("песочн") != -1 || name.indexOf("бежев") != -1)
+  ) {
+    return 23953;
+  } else if (
+  (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+  name.indexOf("2") != -1 &&
+  name.indexOf("бел") != -1) {
+    return 18848;
+  } else if (
+    name.indexOf("без zigbee") == -1 &&
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("zigbee") != -1 &&
+    name.indexOf("красн") != -1
+  ) {
+    return 30289;
+  } else if (
+    name.indexOf("без zigbee") == -1 &&
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("zigbee") != -1 &&
+    name.indexOf("сер") != -1
+  ) {
+    return 30287;
+  } else if (
+    name.indexOf("без zigbee") == -1 &&
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("zigbee") != -1 &&
+    name.indexOf("син") != -1
+  ) {
+    return 30292;
+  } else if (
+    name.indexOf("без zigbee") == -1 &&
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("zigbee") != -1 &&
+    name.indexOf("черн") != -1
+  ) {
+    return 30293;
+  } else if (
+    name.indexOf("яндекс") != -1 &&
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("zigbee") != -1 &&
+    name.indexOf("зелен") != -1
+  ) {
+    return 30291;
+  } else if (
+    name.indexOf("без zigbee") == -1 &&
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("zigbee") != -1 &&
+    name.indexOf("бежев") != -1
+  ) {
+    return 30288;
+  } else if (
+    name.indexOf("без zigbee") == -1 &&
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("zigbee") != -1 &&
+    name.indexOf("бел") != -1
+  ) {
+    return 30286;
+  } else if (
+    name.indexOf("без zigbee") == -1 &&
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("zigbee") != -1 &&
+    name.indexOf("бирюзов") != -1
+  ) {
+    return 30290;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("красн") != -1
+  ) {
+    return 23957;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("син") != -1
+  ) {
+    return 23958;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("черн") != -1
+  ) {
+    return 18974;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("макс") != -1 &&
+    name.indexOf("бел") != -1
+  ) {
+    return 18973;
+  } else if (name.indexOf("яндекс миди черная") != -1) {
+    return 30892;
+  } else if (name.indexOf("яндекс миди зеленая") != -1) {
+    return 30893;
+  } else if (name.indexOf("яндекс миди белая") != -1) {
+    return 30894;
+  } else if (name.indexOf("яндекс миди оранжевая") != -1) {
+    return 35837;
+  } else if (name.indexOf("яндекс миди малиновая") != -1) {
+    return 35838;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("мини") != -1 &&
+    name.indexOf("красн") != -1 &&
+    name.indexOf("с часами") != -1
+  ) {
+    return 23955;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("мини") != -1 &&
+    name.indexOf("син") != -1 &&
+    name.indexOf("с часами") != -1
+  ) {
+    return 23956;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("мини") != -1 &&
+    name.indexOf("черн") != -1 &&
+    name.indexOf("с часами") != -1
+  ) {
+    return 23954;
   } else {
     return returnIDXiaomi(name) || "No match";
   }

@@ -427,18 +427,29 @@ export const fixNameUnimtrn = (el) => {
     fixAir11M4.indexOf("Air 11") != -1 && fixAir11M4.indexOf("Black") != -1
       ? fixAir11M4.replace("Black", "Gray")
       : fixAir11M4;
-      const fixNote13ProPurple =
-    fixAir11Gray.indexOf("Note 13 Pro") != -1 && fixAir11Gray.indexOf("Aurora") != -1
+  const fixNote13ProPurple =
+    fixAir11Gray.indexOf("Note 13 Pro") != -1 &&
+    fixAir11Gray.indexOf("Aurora") != -1
       ? fixAir11Gray.replace("Aurora ", "")
       : fixAir11Gray;
-      const fixNote13ProOlive =
-    fixNote13ProPurple.indexOf("Note 13 Pro") != -1 && fixNote13ProPurple.indexOf("Olive") != -1
+  const fixNote13ProOlive =
+    fixNote13ProPurple.indexOf("Note 13 Pro") != -1 &&
+    fixNote13ProPurple.indexOf("Olive") != -1
       ? fixNote13ProPurple.replace("Olive ", "")
       : fixNote13ProPurple;
-      const fixNote12Sky =
-    fixNote13ProOlive.indexOf("Note 12 Pro") != -1 && fixNote13ProOlive.indexOf("Sky") != -1
+  const fixNote12Sky =
+    fixNote13ProOlive.indexOf("Note 12 Pro") != -1 &&
+    fixNote13ProOlive.indexOf("Sky") != -1
       ? fixNote13ProOlive.replace("Sky ", "")
       : fixNote13ProOlive;
+  const fixMi12Gray =
+    fixNote13ProOlive.indexOf("MI 12") != -1
+      ? fixNote13ProOlive.replace("Gray", "Black")
+      : fixNote13ProOlive;
+      const fixMi12Pink =
+    fixMi12Gray.indexOf("MI 12") != -1
+      ? fixMi12Gray.replace("Purple", "Pink")
+      : fixMi12Gray;
 
-  return fixNote12Sky;
+  return fixMi12Pink;
 };

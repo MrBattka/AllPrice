@@ -11,7 +11,7 @@ import {
 import style from "./styles.module.css";
 import BasicTable from "../Create Table/Table";
 
-const IndexReSale = ({ el, resaleData }) => {
+const IndexReSaleNotID = ({ el, resaleData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
@@ -25,7 +25,7 @@ const IndexReSale = ({ el, resaleData }) => {
       isOpen
     ) {
       return (
-        returnIDApple(returnFixNameReSale(resale.name)) !== "No match" &&
+        returnIDApple(returnFixNameReSale(resale.name)) === "No match" &&
         returnExtraPriceReSale(resale.name) &&
         returnStockPriceReSale(resale.name) &&
         returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("А") ==
@@ -49,7 +49,7 @@ const IndexReSale = ({ el, resaleData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Re:Sale ▲" : "Re:Sale ▼"}
+            {isOpen ? "Re:Sale Not ID ▲" : "Re:Sale Not ID ▼"}
           </span>
         )}
       </div>
@@ -57,10 +57,12 @@ const IndexReSale = ({ el, resaleData }) => {
       {isOpen && (
         <div className={style.row}>
           <BasicTable resultArr={resultArr} />
+
+          
         </div>
       )}
     </div>
   );
 };
 
-export default IndexReSale;
+export default IndexReSaleNotID;

@@ -6,7 +6,7 @@ import style from "./styles.module.css";
 import { returnIDApple } from "../../helpers/returnIDApple";
 import BasicTable from "../Create Table/Table";
 
-const IndexArti = ({ el, artiData }) => {
+const IndexArtiNotID = ({ el, artiData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
@@ -20,7 +20,7 @@ const IndexArti = ({ el, artiData }) => {
     )
      {
       return (
-        returnIDApple(returnFixNameArti(arti.name)) !== 'No match' &&
+        returnIDApple(returnFixNameArti(arti.name)) === 'No match' &&
         returnStockPriceArti(arti.name) &&
         returnCategoryArti(arti.name) &&
         resultArr.push({
@@ -39,7 +39,7 @@ const IndexArti = ({ el, artiData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Arti ▲" : "Arti ▼"}
+            {isOpen ? "Arti Not ID ▲" : "Arti Not ID ▼"}
           </span>
         )}
       </div>
@@ -53,4 +53,4 @@ const IndexArti = ({ el, artiData }) => {
   );
 };
 
-export default IndexArti;
+export default IndexArtiNotID;

@@ -170,13 +170,13 @@ export const returnIDXiaomi = (name) => {
     return 36289;
   } else if (name.indexOf("f6 5g 12/512 green") != -1) {
     return 36290;
-  } else if (name.indexOf("f6 5g 12/512 titanium") != -1) {
+  } else if (name.indexOf("f6 5g 12/512 titan") != -1) {
     return 36291;
   } else if (name.indexOf("f6 5g 8/256 black") != -1) {
     return 36181;
   } else if (name.indexOf("f6 5g 8/256 green") != -1) {
     return 36284;
-  } else if (name.indexOf("f6 5g 8/256 titanium") != -1) {
+  } else if (name.indexOf("f6 5g 8/256 titan") != -1) {
     return 36285;
   } else if (name.indexOf("f6 pro 5g 12/256 black") != -1) {
     return 36182;
