@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/AllPrice/static/css/main.81ea9a3d.css",
-    "main.js": "/AllPrice/static/js/main.113ae131.js",
+    "main.css": "/AllPrice/static/css/main.519e2482.css",
+    "main.js": "/AllPrice/static/js/main.92c90eb0.js",
     "static/js/453.85642eff.chunk.js": "/AllPrice/static/js/453.85642eff.chunk.js",
     "static/media/icon.png": "/AllPrice/static/media/icon.22558ce6d5d450d249a3.png",
     "index.html": "/AllPrice/index.html",
-    "main.81ea9a3d.css.map": "/AllPrice/static/css/main.81ea9a3d.css.map",
-    "main.113ae131.js.map": "/AllPrice/static/js/main.113ae131.js.map",
+    "main.519e2482.css.map": "/AllPrice/static/css/main.519e2482.css.map",
+    "main.92c90eb0.js.map": "/AllPrice/static/js/main.92c90eb0.js.map",
     "453.85642eff.chunk.js.map": "/AllPrice/static/js/453.85642eff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81ea9a3d.css",
-    "static/js/main.113ae131.js"
+    "static/css/main.519e2482.css",
+    "static/js/main.92c90eb0.js"
   ]
 }
