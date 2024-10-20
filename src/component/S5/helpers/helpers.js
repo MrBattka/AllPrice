@@ -12,7 +12,8 @@ export const fixNameS5 = (name) => {
   const replaceVilka = replaceML.replace("(наша вилка)", "");
   const replace1TB = replaceVilka.replace("1 TB", "1TB");
   const replaceGB = replace1TB.replace("Gb", "");
-  const replaceAirpods = replaceGB.replace("Air Pods", "AirPods");
+  const fixmm = replaceGB.replace("mm", "");
+  const replaceAirpods = fixmm.replace("Air Pods", "AirPods");
   const replaceStarlight = replaceAirpods.replace(
     "13 128  starting",
     "13 128 Starlight"
@@ -24,21 +25,29 @@ export const fixNameS5 = (name) => {
   const replaceA35IceBlue = replaceiPad9Grey.indexOf("35")
     ? replaceSpaceGray.replace("ice blue", "iceblue")
     : replaceSpaceGray;
-    const replaceNote13ProPlus = (replaceA35IceBlue.indexOf("Pro Plus") && replaceA35IceBlue.indexOf("5G"))
-    ? replaceA35IceBlue.replace("Pro Plus", "Pro Plus 5G")
-    : replaceA35IceBlue;
-    const replaceProPlus = replaceNote13ProPlus.replace("Pro Plus", "Pro +");
-    const replace4G = replaceProPlus.replace(" 4G", "");
-    const replaceA9Plus = replace4G.replace("A9+", "A9 +");
-    const replaceMagsafe = replaceA9Plus.replace("AirPods Pro MagSafe 2", "AirPods Pro 2");
-    const replaceS9Plus = replaceMagsafe.replace("S9 Plus", "S9 +");
-    const replaceTabA9 = replaceS9Plus.replace("A9 128", "Tab A9 128");
-    const replaceTabA9Plus = replaceTabA9.replace("A9 + 128", "Tab A9 + 128");
-    const replaceFEPlus = replaceTabA9Plus.replace("FE+", "FE +");
-    const replaceS9FE = replaceFEPlus.replace("S9FE", "S9 FE");
-    const fixStarlight = replaceS9FE.replace("starling", "starlight");
+  const replaceNote13ProPlus =
+    replaceA35IceBlue.indexOf("Pro Plus") && replaceA35IceBlue.indexOf("5G")
+      ? replaceA35IceBlue.replace("Pro Plus", "Pro Plus 5G")
+      : replaceA35IceBlue;
+  const replaceProPlus = replaceNote13ProPlus.replace("Pro Plus", "Pro +");
+  const replace4G = replaceProPlus.replace(" 4G", "");
+  const replaceA9Plus = replace4G.replace("A9+", "A9 +");
+  const replaceMagsafe = replaceA9Plus.replace(
+    "AirPods Pro MagSafe 2",
+    "AirPods Pro 2"
+  );
+  const replaceS9Plus = replaceMagsafe.replace("S9 Plus", "S9 +");
+  const replaceTabA9 = replaceS9Plus.replace("A9 128", "Tab A9 128");
+  const replaceTabA9Plus = replaceTabA9.replace("A9 + 128", "Tab A9 + 128");
+  const replaceFEPlus = replaceTabA9Plus.replace("FE+", "FE +");
+  const replaceS9FE = replaceFEPlus.replace("S9FE", "S9 FE");
+  const fixStarlight = replaceS9FE.replace("starling", "starlight");
+  const fixS10 = fixStarlight.replace("S 10", "S10");
+  const fixS23FE = fixS10.replace("S23FE", "S23 FE");
+  const fixA55 = fixS23FE.replace("А55 ", "A55 ");
+  const fixA55IceBlue = fixA55.indexOf("A55 ") ? fixA55.replace("Ice blue", "iceblue") : fixA55
 
-  return fixStarlight;
+  return fixA55IceBlue;
 };
 
 export const returnNameInArrS5 = (name) => {
@@ -98,7 +107,10 @@ export const returnStockPriceS5 = (name) => {
 
   let reverseStrName = replaceS9feLavander.split("").reverse().join("");
 
-  let splitPrice = reverseStrName.indexOf("-") != -1 ? reverseStrName.split("-")[0] : reverseStrName.split(" ")[0]
+  let splitPrice =
+    reverseStrName.indexOf("-") != -1
+      ? reverseStrName.split("-")[0]
+      : reverseStrName.split(" ")[0];
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 
@@ -138,7 +150,10 @@ export const returnExtraPriceS5 = (name) => {
 
   let reverseStrName = replaceS9feLavander.split("").reverse().join("");
 
-  let splitPrice = reverseStrName.indexOf("-") != -1 ? reverseStrName.split("-")[0] : reverseStrName.split(" ")[0]
+  let splitPrice =
+    reverseStrName.indexOf("-") != -1
+      ? reverseStrName.split("-")[0]
+      : reverseStrName.split(" ")[0];
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 

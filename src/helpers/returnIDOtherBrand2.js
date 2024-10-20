@@ -797,11 +797,19 @@ export const returnIDOtherBrand2 = (name) => {
     return 28527;
   } else if (name.indexOf("redmagic 8s pro 8/256 transparent") != -1) {
     return 28510;
-  } else if (name.indexOf("redmagic 9 pro 12/256 sleet") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9 pro") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)) {
     return 34469;
   } else if (name.indexOf("redmagic 9 pro 16/512 cyclone") != -1) {
     return 34471;
-  } else if (name.indexOf("redmagic 9 pro 16/512 snowfall") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9 pro") != -1 &&
+  name.indexOf("16/512") != -1 &&
+  (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)) {
     return 34470;
   } else if (name.indexOf("redmagic 8 pro 12/256 midnight") != -1) {
     return 28511;
@@ -809,45 +817,98 @@ export const returnIDOtherBrand2 = (name) => {
     return 28512;
   } else if (name.indexOf("redmagic 8s pro 12/256 graphite") != -1) {
     return 28513;
-  } else if (name.indexOf("red magic 9s pro 12/256 design sleet") != -1) {
+  } else if (
+    name.indexOf("red magic") != -1 &&
+    name.indexOf("9s pro") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36685;
-  } else if (name.indexOf("red magic 9s pro + 16/512 design sleet") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro +") != -1 &&
+  name.indexOf("16/512") != -1 &&
+  (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)) {
     return 36686;
   } else if (name.indexOf("red magic 9s pro + 16/512 frost") != -1) {
     return 36729;
   } else if (name.indexOf("red magic 9s pro + 16/512 cyclone") != -1) {
     return 36730;
-  } else if (name.indexOf("red magic 9s pro + 16/512 snowfall") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro +") != -1 &&
+  name.indexOf("16/512") != -1 &&
+  (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)) {
     return 36731;
   } else if (name.indexOf("red magic 9s pro + 24/1tb cyclone") != -1) {
     return 36732;
-  } else if (name.indexOf("red magic 9s pro + 24/1tb design sleet") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro +") != -1 &&
+  name.indexOf("24/1tb") != -1 &&
+  (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)) {
     return 36733;
   } else if (name.indexOf("red magic 9s pro + 24/1tb frost") != -1) {
     return 36734;
-  } else if (name.indexOf("red magic 9s pro + 24/1tb snowfall") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro +") != -1 &&
+  name.indexOf("24/1tb") != -1 &&
+  (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)) {
     return 36735;
   } else if (name.indexOf("red magic 9s pro 12/256 cyclone") != -1) {
     return 36736;
-  } else if (name.indexOf("red magic 9s pro 12/256 snowfall") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)) {
     return 36737;
-  } else if (name.indexOf("red magic 9s pro 12/256 frost") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  (name.indexOf("frost") != -1 || name.indexOf("white") != -1)) {
     return 36738;
   } else if (name.indexOf("red magic 9s pro 12/512 cyclone") != -1) {
     return 36739;
-  } else if (name.indexOf("red magic 9s pro 12/512 design sleet") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro") != -1 &&
+  name.indexOf("12/512") != -1 &&
+  (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)) {
     return 36740;
-  } else if (name.indexOf("red magic 9s pro 12/512 frost") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro") != -1 &&
+  name.indexOf("12/512") != -1 &&
+  (name.indexOf("frost") != -1 || name.indexOf("white") != -1)) {
     return 36741;
-  } else if (name.indexOf("red magic 9s pro 12/512 snowfall") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro") != -1 &&
+  name.indexOf("12/512") != -1 &&
+  (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)) {
     return 36742;
   } else if (name.indexOf("red magic 9s pro 16/512 cyclone") != -1) {
     return 36743;
-  } else if (name.indexOf("red magic 9s pro 16/512 design sleet") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro") != -1 &&
+  name.indexOf("16/512") != -1 &&
+  (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)) {
     return 36744;
-  } else if (name.indexOf("red magic 9s pro 16/512 frost") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro") != -1 &&
+  name.indexOf("16/512") != -1 &&
+  (name.indexOf("frost") != -1 || name.indexOf("white") != -1)) {
     return 36745;
-  } else if (name.indexOf("red magic 9s pro 16/512 snowfall") != -1) {
+  } else if (
+  name.indexOf("red magic") != -1 &&
+  name.indexOf("9s pro") != -1 &&
+  name.indexOf("16/512") != -1 &&
+  (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)) {
     return 36746;
   } else if (name.indexOf("z50 ultra 12/256 black") != -1) {
     return 36132;
@@ -905,6 +966,12 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("z60 ultra 16/512 silver") != -1
   ) {
     return 34476;
+  } else if (
+    name.indexOf("z60 ultra") != -1 &&
+    name.indexOf("16/512") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 36782;
   } else if (name.indexOf("z60 ultra 8/256 black") != -1) {
     return 34472;
 
@@ -1180,9 +1247,10 @@ export const returnIDOtherBrand2 = (name) => {
   ) {
     return 23953;
   } else if (
-  (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
-  name.indexOf("2") != -1 &&
-  name.indexOf("бел") != -1) {
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("бел") != -1
+  ) {
     return 18848;
   } else if (
     name.indexOf("без zigbee") == -1 &&

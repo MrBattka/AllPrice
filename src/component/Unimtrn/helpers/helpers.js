@@ -450,6 +450,7 @@ export const fixNameUnimtrn = (el) => {
     fixMi12Gray.indexOf("MI 12") != -1
       ? fixMi12Gray.replace("Purple", "Pink")
       : fixMi12Gray;
+      const replaceCrafted = fixMi12Pink.replace("Crafted ", "")
 
-  return fixMi12Pink;
+  return replaceCrafted;
 };

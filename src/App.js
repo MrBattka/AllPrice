@@ -33,6 +33,7 @@ import IndexTagirNotID from "./component/Tagir/IndexTagirNotID";
 import IndexNarod from "./component/Narod/IndexNarod";
 import IndexNarodNotID from "./component/Narod/IndexNarodNotID";
 import IndexF51 from "./component/F51/IndexF51";
+import IndexF51NotID from "./component/F51/IndexF51NotID";
 
 const App = () => {
   const allPrice = [];
@@ -249,8 +250,6 @@ const App = () => {
         </div>
       </div>
       <div className="wrapper_cat">
-        {/* F51 */}
-        <IndexF51 el={dataF51} f51Data={f51}/>
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
@@ -297,6 +296,9 @@ const App = () => {
         {/* Народ */}
         <IndexNarod el={dataNarod} narodData={narod} />
         <IndexNarodNotID el={dataNarod} narodData={narod} />
+        {/* F51 */}
+        <IndexF51 el={dataF51} f51Data={f51}/>
+        <IndexF51NotID el={dataF51} f51Data={f51}/>
 
         {/* All Price */}
         <AllPriceWithID
@@ -314,6 +316,7 @@ const App = () => {
           resaleData={resale}
           tagirData={tagir}
           narodData={narod}
+          f51Data={f51}
         />
 
         <AllPrice
@@ -331,6 +334,7 @@ const App = () => {
           resaleData={resale}
           tagirData={tagir}
           narodData={narod}
+          f51Data={f51}
         />
       </div>
     </div>

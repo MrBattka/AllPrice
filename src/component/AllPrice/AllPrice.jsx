@@ -3,6 +3,7 @@ import {
   baseFix,
   baseFixArti,
   baseFixElectrozon,
+  baseFixF51,
   baseFixGarmin,
   baseFixHi,
   baseFixMiHonor,
@@ -89,7 +90,12 @@ import {
   returnNameTagir,
   returnStockPriceTagir,
 } from "../Tagir/helpers/helpers";
-import { fixNameNarod, returnNameNarod, returnStockPriceNarod } from "../Narod/helpers/helpers";
+import {
+  fixNameNarod,
+  returnNameNarod,
+  returnStockPriceNarod,
+} from "../Narod/helpers/helpers";
+import { returnNameF51 } from "../F51/helpers/helpers";
 
 const AllPrice = ({
   dataSuperprice,
@@ -105,7 +111,8 @@ const AllPrice = ({
   artiData,
   resaleData,
   tagirData,
-  narodData
+  narodData,
+  f51Data,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -437,6 +444,23 @@ const AllPrice = ({
           extraPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
           stockPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
           provider: "Народ",
+        })
+      );
+    }
+  });
+
+  f51Data.map((f51) => {
+    baseFixF51(f51) && returnNameF51(f51.name);
+    if (f51.name && typeof f51.name === "string" && baseFixF51(f51) && isOpen) {
+      return (
+        returnIDApple(returnNameF51(f51.name)) !== "No match" &&
+        f51.price &&
+        allPriceArr.push({
+          id: returnIDApple(returnNameF51(f51.name)),
+          name: returnNameF51(f51.name),
+          extraPrice: f51.price,
+          stockPrice: f51.price,
+          provider: "F51",
         })
       );
     }
