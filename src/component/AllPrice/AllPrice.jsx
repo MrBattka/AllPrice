@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   baseFix,
   baseFixArti,
+  baseFixBase,
   baseFixElectrozon,
   baseFixF51,
   baseFixGarmin,
@@ -96,6 +97,13 @@ import {
   returnStockPriceNarod,
 } from "../Narod/helpers/helpers";
 import { returnNameF51 } from "../F51/helpers/helpers";
+import { returnFixNameBase } from "../Base/helpers/helpers";
+import {
+  returnExtraPriceOther,
+  returnFixNameOther,
+  returnNameInArrOther,
+  returnStockPriceOther,
+} from "../Other/helpers/helpers";
 
 const AllPrice = ({
   dataSuperprice,
@@ -113,6 +121,8 @@ const AllPrice = ({
   tagirData,
   narodData,
   f51Data,
+  baseData,
+  otherData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -461,6 +471,48 @@ const AllPrice = ({
           extraPrice: f51.price,
           stockPrice: f51.price,
           provider: "F51",
+        })
+      );
+    }
+  });
+
+  baseData.map((base) => {
+    if (
+      base.name &&
+      typeof base.name === "string" &&
+      isOpen &&
+      baseFixBase(base)
+    ) {
+      return (
+        returnIDApple(returnFixNameBase(base.name)) !== "No match" &&
+        base.price &&
+        baseFixBase(base) &&
+        allPriceArr.push({
+          id: returnIDApple(returnFixNameBase(base.name)),
+          name: returnFixNameBase(base.name),
+          extraPrice: base.extra,
+          stockPrice: base.stock,
+          provider: "База",
+        })
+      );
+    }
+  });
+
+  otherData.map((other) => {
+    returnStockPriceOther(returnFixNameOther(other.name));
+    returnExtraPriceOther(returnFixNameOther(other.name));
+    if (other.name && typeof other.name === "string" && isOpen) {
+      return (
+        returnIDApple(returnFixNameOther(other.name)) !== "No match" &&
+        returnStockPriceOther(other.name) &&
+        allPriceArr.push({
+          id: returnIDApple(
+            returnNameInArrOther(returnFixNameOther(other.name))
+          ),
+          name: returnNameInArrOther(returnFixNameOther(other.name)),
+          extraPrice: returnExtraPriceOther(returnFixNameOther(other.name)),
+          stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
+          provider: "Разное",
         })
       );
     }

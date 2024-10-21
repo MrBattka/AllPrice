@@ -4,7 +4,7 @@ export const returnIDApple = (nameStock) => {
   const removeDoubleSpace = nameStock.replace(/\s+/g, " ");
   const name = removeDoubleSpace.toLowerCase();
   //  AirPods
-  if (name.indexOf("airpods 2 ") != -1) {
+  if (name.indexOf("airpods 2") != -1) {
     return 12529;
   } else if (name.indexOf("airpods pro 2 ") != -1) {
     return 23458;
@@ -92,63 +92,42 @@ export const returnIDApple = (nameStock) => {
     return 36593;
 
     // aw se
-  } else if (name.indexOf("se (2023) gen 2 40mm midnight") != -1) {
-    return 34313;
-  } else if (name.indexOf("se (2023) gen 2 40mm silver") != -1) {
-    return 34314;
-  } else if (name.indexOf("se (2023) gen 2 40mm starlight") != -1) {
-    return 34315;
-  } else if (name.indexOf("se (2023) gen 2 44mm midnight") != -1) {
-    return 34316;
-  } else if (name.indexOf("se (2023) gen 2 44mm silver") != -1) {
-    return 34317;
-  } else if (name.indexOf("se (2023) gen 2 44mm starlight") != -1) {
-    return 34318;
-  } else if (
-    name.indexOf("se2 40 midnight") != -1 ||
-    name.indexOf("se 2 40 midnight") != -1 ||
-    name.indexOf("se2 40 black") != -1 ||
-    name.indexOf("se 2 40 black") != -1 ||
-    name.indexOf("se (2023) gen 2 40 midnight") != -1 ||
-    name.indexOf("se (2023) gen 2 40 black") != -1
-  ) {
+  } else if (name.indexOf("se") != -1  &&
+  name.indexOf("2023") != -1 &&
+  name.indexOf("40") != -1 &&
+  name.indexOf("midnight") != -1) {
     return 34313;
   } else if (
-    name.indexOf("se2 40 silver") != -1 ||
-    name.indexOf("se 2 40 silver") != -1 ||
-    name.indexOf("se (2023) gen 2 40 silver") != -1
-  ) {
+  name.indexOf("se") != -1  &&
+  name.indexOf("2023") != -1 &&
+  name.indexOf("40") != -1 &&
+  name.indexOf("silver") != -1) {
     return 34314;
   } else if (
-    name.indexOf("se2 40 starlight") != -1 ||
-    name.indexOf("se 2 40 starlight") != -1 ||
-    name.indexOf("se (2023) gen 2 40 starlight") != -1
-  ) {
+  name.indexOf("se") != -1  &&
+  name.indexOf("2023") != -1 &&
+  name.indexOf("40") != -1 &&
+  name.indexOf("starlight") != -1) {
     return 34315;
   } else if (
-    name.indexOf("se2 44 midnight") != -1 ||
-    name.indexOf("se 2 44 midnight") != -1 ||
-    name.indexOf("se2 44 black") != -1 ||
-    name.indexOf("se 2 44 black") != -1 ||
-    name.indexOf("se (2023) gen 2 44 midnight") != -1 ||
-    name.indexOf("se (2023) gen 2 44 black") != -1
-  ) {
+  name.indexOf("se") != -1  &&
+  name.indexOf("2023") != -1 &&
+  name.indexOf("44") != -1 &&
+  name.indexOf("midnight") != -1) {
     return 34316;
   } else if (
-    name.indexOf("se2 44 silver") != -1 ||
-    name.indexOf("se 2 44 silver") != -1 ||
-    name.indexOf("se (2023) gen 2 44 silver") != -1
-  ) {
+  name.indexOf("se") != -1  &&
+  name.indexOf("2023") != -1 &&
+  name.indexOf("44") != -1 &&
+  name.indexOf("silver") != -1) {
     return 34317;
   } else if (
-    name.indexOf("se 2 44 starlight") != -1 ||
-    name.indexOf("se2 44 starlight") != -1 ||
-    name.indexOf("se 2 44 white") != -1 ||
-    name.indexOf("se2 44 white") != -1 ||
-    name.indexOf("se (2023) gen 2 44 starlight") != -1 ||
-    name.indexOf("se (2023) gen 2 44 white") != -1
-  ) {
+  name.indexOf("se") != -1  &&
+  name.indexOf("2023") != -1 &&
+  name.indexOf("44") != -1 &&
+  name.indexOf("starlight") != -1) {
     return 34318;
+  
 
     // aw s9
   } else if (name.indexOf("s8 41 gold") != -1) {

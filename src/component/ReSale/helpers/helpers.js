@@ -180,7 +180,8 @@ export const returnFixNameReSale = (name) => {
   const fixSFold6 = fixSFold5.replace("Fold6", "Fold 6");
   const fixLTE = fixSFold6.replace("Wi-Fi + Cellular", "LTE");
   const fixSE3 = fixLTE.replace("SE 3 ", "SE3 ");
-  const fixMM = fixSE3.replace("mm", "");
+  const fixS24Plus = fixSE3.replace("S24 +", "S24+");
+  const fixMM = fixS24Plus.replace("mm", "");
   const fixGB = fixMM.replace("GB", "");
   const fixDualSenseBlack = fixGB.replace("Чёрный", "dualsense Black ")
   const fixDualSenseWhite = fixDualSenseBlack.replace("Белый", "dualsense White ")

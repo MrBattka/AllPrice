@@ -481,6 +481,32 @@ export const returnIDSamsung = (name) => {
       name.indexOf("yellow") != -1)
   ) {
     return 35922;
+  
+  } else if (
+    name.indexOf("a53 ") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 22587;
+  } else if (
+    name.indexOf("a53 ") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 22588;
+  } else if (
+    name.indexOf("a53 ") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("peach") != -1
+  ) {
+    return 22589;
+  } else if (
+    name.indexOf("a53 ") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 22590;
+    
   } else if (
     name.indexOf("a54 ") != -1 &&
     name.indexOf("6/128") != -1 &&

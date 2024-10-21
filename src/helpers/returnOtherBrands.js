@@ -265,6 +265,8 @@ export const returnIDOtherBrand = (name) => {
     return 27657;
   } else if (name.indexOf("hero 12") != -1) {
     return 30285;
+  } else if (name.indexOf("el grande") != -1) {
+    return 17242;
 
     // JBL
   } else if (name.indexOf("jbl boombox 3 black") != -1) {
@@ -343,6 +345,35 @@ export const returnIDOtherBrand = (name) => {
     return 28083;
   } else if (name.indexOf("jbl flip 6 teal") != -1) {
     return 28087;
+  } else if (name.indexOf("jbl go 3 white") != -1) {
+    return 18958;
+  } else if (name.indexOf("jbl go 3 green") != -1) {
+    return 18959;
+  } else if (
+    name.indexOf("jbl go 3") != -1 &&
+    (name.indexOf("blue") != -1 || name.indexOf("pink") != -1)
+  ) {
+    return 18960;
+  } else if (name.indexOf("jbl go 3 grey") != -1) {
+    return 18961;
+  } else if (name.indexOf("jbl go 3 teal") != -1) {
+    return 18962;
+  } else if (name.indexOf("jbl go 3 black") != -1) {
+    return 18963;
+  } else if (name.indexOf("jbl go 3 white") != -1) {
+    return 15239;
+  } else if (name.indexOf("jbl go 3 black") != -1) {
+    return 27639;
+  } else if (name.indexOf("jbl go 3 blue") != -1) {
+    return 18964;
+  } else if (name.indexOf("jbl go 3 orange") != -1) {
+    return 18966;
+  } else if (name.indexOf("jbl go 3 yellow") != -1) {
+    return 18967;
+  } else if (name.indexOf("jbl go 3 pink") != -1) {
+    return 18969;
+  } else if (name.indexOf("jbl go 3 ref") != -1) {
+    return 18965;
 
     // OnePlus
   } else if (name.indexOf("ace 2 12/256 black") != -1) {
@@ -550,22 +581,25 @@ export const returnIDOtherBrand = (name) => {
   ) {
     return 27522;
   } else if (
-  name.indexOf("nord") != -1 &&
-  name.indexOf("ce3 lite") != -1 &&
-  name.indexOf("8/256") != -1 &&
-  (name.indexOf("pastel") != -1 || name.indexOf("lime") != -1)) {
+    name.indexOf("nord") != -1 &&
+    name.indexOf("ce3 lite") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    (name.indexOf("pastel") != -1 || name.indexOf("lime") != -1)
+  ) {
     return 27523;
   } else if (
-  name.indexOf("nord") != -1 &&
-  name.indexOf("ce3 lite") != -1 &&
-  name.indexOf("8/128") != -1 &&
-  (name.indexOf("chromatic") != -1 || name.indexOf("gray") != -1)) {
+    name.indexOf("nord") != -1 &&
+    name.indexOf("ce3 lite") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    (name.indexOf("chromatic") != -1 || name.indexOf("gray") != -1)
+  ) {
     return 27524;
   } else if (
-  name.indexOf("nord") != -1 &&
-  name.indexOf("ce3 lite") != -1 &&
-  name.indexOf("8/256") != -1 &&
-  (name.indexOf("chromatic") != -1 || name.indexOf("gray") != -1)) {
+    name.indexOf("nord") != -1 &&
+    name.indexOf("ce3 lite") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    (name.indexOf("chromatic") != -1 || name.indexOf("gray") != -1)
+  ) {
     return 27525;
   } else if (name.indexOf("nord n20 se 4/128 blue oasis") != -1) {
     return 27854;

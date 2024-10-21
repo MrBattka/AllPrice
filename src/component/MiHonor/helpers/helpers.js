@@ -52,22 +52,23 @@ export const fixNameMihonor = (name) => {
   const removeDoubleSpace = name.replace(/\s+/g, " ");
   const removeNewIcon = removeDoubleSpace.replace("🆕", "");
 
-  const remove264 = removeNewIcon.replace("2+64GB", "2/64");
-  const remove2128 = remove264.replace("2+128GB", "2/128");
-  const remove464 = remove2128.replace("4+64GB", "4/64");
-  const remove4128 = remove464.replace("4+128GB", "4/128");
-  const remove4256 = remove4128.replace("4+256GB", "4/256");
-  const remove664 = remove4256.replace("6+64GB", "6/64");
-  const remove6128 = remove664.replace("6+128GB", "6/128");
-  const remove6256 = remove6128.replace("6+256GB", "6/256");
-  const remove8128 = remove6256.replace("8+128GB", "8/128");
-  const remove8256gb = remove8128.replace("8+256GB", "8/256");
-  const remove8512 = remove8256gb.replace("8+512GB", "8/512");
-  const remove12256 = remove8512.replace("12+256GB", "12/256");
-  const remove12512 = remove12256.replace("12+512GB", "12/512");
+  const removeGB = removeNewIcon.replace("GB", "");
+  const remove264 = removeGB.replace("2+64", "2/64");
+  const remove2128 = remove264.replace("2+128", "2/128");
+  const remove464 = remove2128.replace("4+64", "4/64");
+  const remove4128 = remove464.replace("4+128", "4/128");
+  const remove4256 = remove4128.replace("4+256", "4/256");
+  const remove664 = remove4256.replace("6+64", "6/64");
+  const remove6128 = remove664.replace("6+128", "6/128");
+  const remove6256 = remove6128.replace("6+256", "6/256");
+  const remove8128 = remove6256.replace("8+128", "8/128");
+  const remove8256gb = remove8128.replace("8+256", "8/256");
+  const remove8512 = remove8256gb.replace("8+512", "8/512");
+  const remove12256 = remove8512.replace("12+256", "12/256");
+  const remove12512 = remove12256.replace("12+512", "12/512");
   const remove121 = remove12512.replace("12+1TB", "12/1tb");
-  const remove16256 = remove121.replace("16+256GB", "16/256");
-  const remove16512 = remove16256.replace("16+512GB", "16/512");
+  const remove16256 = remove121.replace("16+256", "16/256");
+  const remove16512 = remove16256.replace("16+512", "16/512");
   const remove161 = remove16512.replace("16+1TB", "15/1tb");
   const remove162 = remove161.replace("16+2TB", "16/2tb");
   const remove8256 = remove162.replace("8+256", "8/256");
@@ -81,7 +82,10 @@ export const fixNameMihonor = (name) => {
   const removeLightViolet = removeLightGreen.replace("LIGHT VIOLET", "violet");
   const fix1TB = removeLightViolet.replace("+1024GB", "/1Tb")
 
-  const fix8255GB = fix1TB.replace("8+255GB", "8/256");
+  const fix8255GB = fix1TB.replace("8+255", "8/256");
+  const fix8256 = fix8255GB.replace("8 256", "8/256");
+  const fix8128 = fix8256.replace("8 128", "8/128");
+  const fix12256 = fix8128.replace("12 256", "12/256");
   
-  return fix8255GB;
+  return fix12256;
 };

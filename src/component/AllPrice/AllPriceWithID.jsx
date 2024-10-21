@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import {
   baseFix,
   baseFixArti,
+  baseFixBase,
   baseFixElectrozon,
   baseFixF51,
   baseFixGarmin,
@@ -73,12 +74,36 @@ import {
   returnStockPriceRacmag,
 } from "../Racmag/helpers/helpers";
 import { returnFixNameElectrozon } from "../Electrozon/helpers/helpers";
-import { returnFixNameArti, returnNameArti, returnStockPriceArti } from "../Arti/helpers/helpers";
+import {
+  returnFixNameArti,
+  returnNameArti,
+  returnStockPriceArti,
+} from "../Arti/helpers/helpers";
 import { returnCategoryArti } from "../Arti/category/Category";
-import { returnExtraPriceReSale, returnFixNameReSale, returnNameReSale, returnStockPriceReSale } from "../ReSale/helpers/helpers";
-import { fixNameTagir, returnNameTagir, returnStockPriceTagir } from "../Tagir/helpers/helpers";
-import { fixNameNarod, returnNameNarod, returnStockPriceNarod } from "../Narod/helpers/helpers";
+import {
+  returnExtraPriceReSale,
+  returnFixNameReSale,
+  returnNameReSale,
+  returnStockPriceReSale,
+} from "../ReSale/helpers/helpers";
+import {
+  fixNameTagir,
+  returnNameTagir,
+  returnStockPriceTagir,
+} from "../Tagir/helpers/helpers";
+import {
+  fixNameNarod,
+  returnNameNarod,
+  returnStockPriceNarod,
+} from "../Narod/helpers/helpers";
 import { returnNameF51 } from "../F51/helpers/helpers";
+import { returnFixNameBase } from "../Base/helpers/helpers";
+import {
+  returnExtraPriceOther,
+  returnFixNameOther,
+  returnNameInArrOther,
+  returnStockPriceOther,
+} from "../Other/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -95,7 +120,9 @@ const AllPriceWithID = ({
   resaleData,
   tagirData,
   narodData,
-  f51Data
+  f51Data,
+  baseData,
+  otherData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -328,10 +355,9 @@ const AllPriceWithID = ({
       typeof arti.name === "string" &&
       baseFixArti(arti) &&
       isOpen
-    )
-     {
+    ) {
       return (
-        returnIDApple(returnFixNameArti(arti.name)) !== 'No match' &&
+        returnIDApple(returnFixNameArti(arti.name)) !== "No match" &&
         returnStockPriceArti(arti.name) &&
         returnCategoryArti(arti.name) &&
         allPriceArr.push({
@@ -452,6 +478,48 @@ const AllPriceWithID = ({
           extraPrice: f51.price,
           stockPrice: f51.price,
           provider: "F51",
+        })
+      );
+    }
+  });
+
+  baseData.map((base) => {
+    if (
+      base.name &&
+      typeof base.name === "string" &&
+      isOpen &&
+      baseFixBase(base)
+    ) {
+      return (
+        returnIDApple(returnFixNameBase(base.name)) !== "No match" &&
+        base.price &&
+        baseFixBase(base) &&
+        allPriceArr.push({
+          id: returnIDApple(returnFixNameBase(base.name)),
+          name: returnFixNameBase(base.name),
+          extraPrice: base.extra,
+          stockPrice: base.stock,
+          provider: "База",
+        })
+      );
+    }
+  });
+
+  otherData.map((other) => {
+    returnStockPriceOther(returnFixNameOther(other.name));
+    returnExtraPriceOther(returnFixNameOther(other.name));
+    if (other.name && typeof other.name === "string" && isOpen) {
+      return (
+        returnIDApple(returnFixNameOther(other.name)) !== "No match" &&
+        returnStockPriceOther(other.name) &&
+        allPriceArr.push({
+          id: returnIDApple(
+            returnNameInArrOther(returnFixNameOther(other.name))
+          ),
+          name: returnNameInArrOther(returnFixNameOther(other.name)),
+          extraPrice: returnExtraPriceOther(returnFixNameOther(other.name)),
+          stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
+          provider: "Разное",
         })
       );
     }

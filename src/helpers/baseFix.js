@@ -401,3 +401,19 @@ export const baseFixF51= (el) => {
     toLowerCase.indexOf("шт") == -1 
   );
 };
+
+export const baseFixBase= (el) => {
+  const toLowerCase = el.name?.toLowerCase();
+  return (
+    toLowerCase.indexOf("\"a\"") == -1 &&
+    toLowerCase.indexOf("\"b\"") == -1 &&
+    toLowerCase.indexOf("\"c\"") == -1 &&
+    toLowerCase.indexOf("\"a+\"") == -1 &&
+    toLowerCase.indexOf("\"b+\"") == -1 &&
+    toLowerCase.indexOf("\"c+\"") == -1 &&
+    toLowerCase.indexOf("\"a-\"") == -1 &&
+    toLowerCase.indexOf("\"b-\"") == -1 &&
+    toLowerCase.indexOf("\"c-\"") == -1 &&
+    toLowerCase.indexOf("\"обменка\"") == -1 
+  );
+};

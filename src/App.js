@@ -34,6 +34,10 @@ import IndexNarod from "./component/Narod/IndexNarod";
 import IndexNarodNotID from "./component/Narod/IndexNarodNotID";
 import IndexF51 from "./component/F51/IndexF51";
 import IndexF51NotID from "./component/F51/IndexF51NotID";
+import IndexBase from "./component/Base/IndexBase";
+import IndexBaseNotID from "./component/Base/IndexBaseNotID";
+import IndexOther from "./component/Other/IndexOther";
+import IndexOtherNotID from "./component/Other/IndexOtherNotID";
 
 const App = () => {
   const allPrice = [];
@@ -53,6 +57,8 @@ const App = () => {
   const [dataTagir, setDataTagir] = useState([]);
   const [dataNarod, setDataNarod] = useState([]);
   const [dataF51, setDataF51] = useState([]);
+  const [dataBase, setDataBase] = useState([]);
+  const [dataOther, setDataOther] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -69,6 +75,8 @@ const App = () => {
   const tagir = [];
   const narod = [];
   const f51 = [];
+  const base = [];
+  const other = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -173,6 +181,30 @@ const App = () => {
       f51.push({ name: F51El.Товар, price: F51El.Цена, country: F51El.Страна });
   });
 
+  dataBase.map((baseEl) => {
+    baseEl.Наименование &&
+      baseEl.Наименование.length > 7 &&
+      typeof baseEl.Наименование === "string" &&
+      base.push({
+        name: baseEl.Наименование,
+        price: baseEl.Себестоимость,
+        extra: baseEl.Опт,
+      });
+  });
+
+  const deleteDoubleProduct = base.filter(
+    (value, index, self) =>
+      index ===
+      self.findIndex((t) => t.place === value.place && t.name === value.name)
+  );
+
+  dataOther.map((otherEl) => {
+    otherEl.All &&
+      otherEl.All.length > 7 &&
+      typeof otherEl.All === "string" &&
+      other.push({ name: otherEl.All });
+  });
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -213,6 +245,10 @@ const App = () => {
           setDataNarod(rowNarod);
           const rowF51 = utils.sheet_to_json(wb.Sheets[sheets[14]]);
           setDataF51(rowF51);
+          const rowBase = utils.sheet_to_json(wb.Sheets[sheets[15]]);
+          setDataBase(rowBase);
+          const rowOther = utils.sheet_to_json(wb.Sheets[sheets[16]]);
+          setDataOther(rowOther);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -297,8 +333,14 @@ const App = () => {
         <IndexNarod el={dataNarod} narodData={narod} />
         <IndexNarodNotID el={dataNarod} narodData={narod} />
         {/* F51 */}
-        <IndexF51 el={dataF51} f51Data={f51}/>
-        <IndexF51NotID el={dataF51} f51Data={f51}/>
+        <IndexF51 el={dataF51} f51Data={f51} />
+        <IndexF51NotID el={dataF51} f51Data={f51} />
+        {/* Base */}
+        <IndexBase el={dataBase} baseData={deleteDoubleProduct} />
+        <IndexBaseNotID el={dataBase} baseData={deleteDoubleProduct} />
+        {/* Other */}
+        <IndexOther el={dataOther} otherData={other} />
+        <IndexOtherNotID el={dataOther} otherData={other} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -317,6 +359,8 @@ const App = () => {
           tagirData={tagir}
           narodData={narod}
           f51Data={f51}
+          baseData={deleteDoubleProduct}
+          otherData={other}
         />
 
         <AllPrice
@@ -335,6 +379,8 @@ const App = () => {
           tagirData={tagir}
           narodData={narod}
           f51Data={f51}
+          baseData={deleteDoubleProduct}
+          otherData={other}
         />
       </div>
     </div>
