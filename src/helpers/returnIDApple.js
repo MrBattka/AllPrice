@@ -35,7 +35,7 @@ export const returnIDApple = (nameStock) => {
     return 18981;
   } else if (
     name.indexOf("airpods max silver") != -1 ||
-    name.indexOf("airpods max silver") != -1
+    name.indexOf("airpods max silver") != -1 
   ) {
     return 18978;
   } else if (

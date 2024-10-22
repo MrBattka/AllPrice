@@ -19,10 +19,10 @@ const IndexOther = ({ el, otherData }) => {
     if (other.name && typeof other.name === "string" && isOpen) {
       return (
         returnIDApple(returnFixNameOther(other.name)) !== "No match" &&
-        returnStockPriceOther(other.name) &&
+        returnStockPriceOther(returnFixNameOther(other.name)) &&
         resultArr.push({
           id: returnIDApple(
-            returnNameInArrOther(returnFixNameOther(other.name))
+            returnFixNameOther(other.name)
           ),
           name: returnNameInArrOther(returnFixNameOther(other.name)),
           extraPrice: returnExtraPriceOther(returnFixNameOther(other.name)),
@@ -32,6 +32,7 @@ const IndexOther = ({ el, otherData }) => {
       );
     }
   });
+  
 
   return (
     <div>
