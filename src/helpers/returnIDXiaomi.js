@@ -560,110 +560,172 @@ export const returnIDXiaomi = (name) => {
   } else if (name.indexOf("redmi a3 6/128 green") != -1) {
     return 35721;
   } else if (
-    name.indexOf("note 13 5g 12/256 black") != -1 ||
-    (name.indexOf("note 13 12/256 black") != -1 && name.indexOf("5g") != -1)
-  ) {
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1) {
     return 30212;
   } else if (
-    name.indexOf("note 13 5g 12/256 blue") != -1 ||
-    (name.indexOf("note 13 pro 12/256 blue") != -1 && name.indexOf("5g") != -1)
-  ) {
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("blue") != -1) {
     return 30217;
   } else if (
-    name.indexOf("note 13 5g 12/256 white") != -1 ||
-    (name.indexOf("note 13 pro 12/256 white") != -1 && name.indexOf("5g") != -1)
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("white") != -1
   ) {
     return 30213;
   } else if (
-    name.indexOf("note 13 5g 6/128 black") != -1 ||
-    (name.indexOf("note 13 pro 6/128 black") != -1 && name.indexOf("5g") != -1)
-  ) {
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("black") != -1) {
     return 30209;
   } else if (
-    name.indexOf("note 13 5g 6/128 blue") != -1 ||
-    (name.indexOf("note 13 pro 6/128 blue") != -1 && name.indexOf("5g") != -1)
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("blue") != -1
   ) {
     return 30218;
   } else if (
-    name.indexOf("note 13 5g 6/128 white") != -1 ||
-    (name.indexOf("note 13 pro 6/128 white") != -1 && name.indexOf("5g") != -1)
-  ) {
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("white") != -1) {
     return 30214;
   } else if (
-    name.indexOf("note 13 5g 8/128 black") != -1 ||
-    (name.indexOf("note 13 pro 8/128 black") != -1 && name.indexOf("5g") != -1)
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("black") != -1
   ) {
     return 30210;
   } else if (
-    name.indexOf("note 13 5g 8/128 blue") != -1 ||
-    (name.indexOf("note 13 pro 8/128 blue") != -1 && name.indexOf("5g") != -1)
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("blue") != -1
   ) {
     return 30219;
   } else if (
-    name.indexOf("note 13 5g 8/128 white") != -1 ||
-    (name.indexOf("note 13 pro 8/128 white") != -1 && name.indexOf("5g") != -1)
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("white") != -1
   ) {
     return 30215;
   } else if (
-    name.indexOf("note 13 5g 8/256 black") != -1 ||
-    (name.indexOf("note 13 pro 8/256 black") != -1 && name.indexOf("5g") != -1)
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("black") != -1
   ) {
     return 30211;
   } else if (
-    name.indexOf("note 13 5g 8/256 blue") != -1 ||
-    (name.indexOf("note 13 pro 8/256 blue") != -1 && name.indexOf("5g") != -1)
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("blue") != -1
   ) {
     return 30220;
   } else if (
-    name.indexOf("note 13 5g 8/256 white") != -1 ||
-    (name.indexOf("note 13 pro 8/256 white") != -1 && name.indexOf("5g") != -1)
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("white") != -1
   ) {
     return 30216;
   } else if (
-    name.indexOf("note 13 8/128 black") != -1 ||
-    (name.indexOf("note 13 pro 8/128 black") != -1 && name.indexOf("5g") != -1)
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("black") != -1
   ) {
     return 35935;
   } else if (
-    name.indexOf("note 13 8/128 blue") != -1 ||
-    (name.indexOf("note 13 pro 8/128 blue") != -1 && name.indexOf("5g") != -1)
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("blue") != -1
   ) {
     return 35939;
-  } else if (name.indexOf("note 13 12/256 black") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  name.indexOf("black") != -1) {
     return 35937;
-  } else if (name.indexOf("note 13 12/256 blue") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  name.indexOf("blue") != -1) {
     return 35938;
-  } else if (name.indexOf("note 13 12/256 green") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  name.indexOf("green") != -1) {
     return 36400;
-  } else if (name.indexOf("note 13 12/256 ocean sunset") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  (name.indexOf("ocean") != -1 && name.indexOf("sunset") != -1)) {
     return 36399;
-  } else if (name.indexOf("note 13 6/128 black") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("6/128") != -1 &&
+  name.indexOf("black") != -1) {
     return 36395;
-  } else if (name.indexOf("note 13 6/128 blue") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("6/128") != -1 &&
+  name.indexOf("blue") != -1) {
     return 36396;
-  } else if (name.indexOf("note 13 6/128 green") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("6/128") != -1 &&
+  name.indexOf("green") != -1) {
     return 36397;
-  } else if (name.indexOf("note 13 6/128 ocean sunset") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("6/128") != -1 &&
+  (name.indexOf("ocean") != -1 && name.indexOf("sunset") != -1)) {
     return 36398;
-  } else if (name.indexOf("note 13 8/128 green") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("8/128") != -1 &&
+  name.indexOf("green") != -1) {
     return 36390;
-  } else if (name.indexOf("note 13 8/128 blue") != -1) {
+  } else if (name.indexOf("note 13 ") != -1 &&
+  name.indexOf("8/128") != -1 &&
+  name.indexOf("blue") != -1
+) {
     return 35939;
-  } else if (name.indexOf("note 13 8/128 ocean sunset") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("8/128") != -1 &&
+  (name.indexOf("ocean") != -1 && name.indexOf("sunset") != -1)) {
     return 36392;
-  } else if (name.indexOf("note 13 8/256 black") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("8/256") != -1 &&
+  name.indexOf("black") != -1) {
     return 35936;
   } else if (
-    name.indexOf("note 13 8/256 blue") != -1 ||
-    name.indexOf("note 13 8/256 ice blue") != -1
-  ) {
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("blue") != -1) {
     return 35940;
   } else if (
-    name.indexOf("note 13 8/256 green") != -1 ||
-    name.indexOf("note 13 8/256 mint green") != -1
+    name.indexOf("note 13 ") != -1 &&
+  name.indexOf("8/256") != -1 &&
+  name.indexOf("green") != -1
   ) {
     return 36393;
-  } else if (name.indexOf("note 13 8/256 ocean sunset") != -1) {
+  } else if (
+  name.indexOf("note 13 ") != -1 &&
+  name.indexOf("8/256") != -1 &&
+  (name.indexOf("ocean") != -1 && name.indexOf("sunset") != -1)) {
     return 36394;
   } else if (
     name.indexOf("note 13 pro 5g 12/256 black") != -1 ||
@@ -787,12 +849,6 @@ export const returnIDXiaomi = (name) => {
     (name.indexOf("note 13 pro 8/256 purple") != -1 && name.indexOf("5g") != -1)
   ) {
     return 30235;
-  } else if (name.indexOf("note 13 pro 5g 8/256 white") != -1) {
-    return 30230;
-  } else if (name.indexOf("note 13 pro 12/512 black") != -1) {
-    return 31139;
-  } else if (name.indexOf("note 13 pro 12/512 green") != -1) {
-    return 31141;
   } else if (
     name.indexOf("note 13 pro 12/512 purple") != -1 ||
     name.indexOf("note 13 pro 12/512 lavender") != -1

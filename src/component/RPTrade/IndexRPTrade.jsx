@@ -10,32 +10,33 @@ const IndexRPTrade = ({ el, rptradeData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
-    rptradeData.map((rptrade) => {
+    rptradeData.map((rptradeEl) => {
       if (
-        rptrade.name &&
-        typeof rptrade.name === "string" &&
-        baseFixRPTrade(rptrade) &&
+        rptradeEl.name &&
+        typeof rptradeEl.name === "string" &&
+        baseFixRPTrade(rptradeEl) &&
         isOpen
       )
        {
         return (
-          returnIDApple(returnFixNameRPTrade(rptrade.name)) !== 'No match' &&
-          rptrade.price &&
+          returnIDApple(returnFixNameRPTrade(rptradeEl.name)) !== 'No match' &&
+          rptradeEl.price &&
           resultArr.push({
-            id: returnIDApple(returnFixNameRPTrade(rptrade.name)),
-            name: returnFixNameRPTrade(rptrade.name),
-            extraPrice: newPrice(rptrade.name, rptrade.price),
-            stockPrice: rptrade.price,
+            id: returnIDApple(returnFixNameRPTrade(rptradeEl.name)),
+            name: returnFixNameRPTrade(rptradeEl.name),
+            extraPrice: newPrice(rptradeEl.name, rptradeEl.price),
+            stockPrice: rptradeEl.price,
             provider: "RPTrade",
           })
         );
       }
     });
+console.log(rptradeData);
 
   return (
     <div>
       <div>
-        {el.length > 1 && (
+        {rptradeData.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "RPTrade ▲" : "RPTrade ▼"}
           </span>

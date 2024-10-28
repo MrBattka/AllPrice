@@ -93,39 +93,43 @@ export const returnIDApple = (nameStock) => {
 
     // aw se
   } else if (name.indexOf("se") != -1  &&
-  name.indexOf("2023") != -1 &&
+  name.indexOf("2") != -1 &&
   name.indexOf("40") != -1 &&
-  name.indexOf("midnight") != -1) {
+  (name.indexOf("midnight") != -1 ||
+name.indexOf("black") != -1)) {
     return 34313;
   } else if (
   name.indexOf("se") != -1  &&
-  name.indexOf("2023") != -1 &&
+  name.indexOf("2") != -1 &&
   name.indexOf("40") != -1 &&
   name.indexOf("silver") != -1) {
     return 34314;
   } else if (
   name.indexOf("se") != -1  &&
-  name.indexOf("2023") != -1 &&
+  name.indexOf("2") != -1 &&
   name.indexOf("40") != -1 &&
-  name.indexOf("starlight") != -1) {
+  (name.indexOf("starlight") != -1 ||
+name.indexOf("white") != -1)) {
     return 34315;
   } else if (
   name.indexOf("se") != -1  &&
-  name.indexOf("2023") != -1 &&
+  name.indexOf("2") != -1 &&
   name.indexOf("44") != -1 &&
-  name.indexOf("midnight") != -1) {
+  (name.indexOf("midnight") != -1 ||
+name.indexOf("black") != -1)) {
     return 34316;
   } else if (
   name.indexOf("se") != -1  &&
-  name.indexOf("2023") != -1 &&
+  name.indexOf("2") != -1 &&
   name.indexOf("44") != -1 &&
   name.indexOf("silver") != -1) {
     return 34317;
   } else if (
   name.indexOf("se") != -1  &&
-  name.indexOf("2023") != -1 &&
+  name.indexOf("2") != -1 &&
   name.indexOf("44") != -1 &&
-  name.indexOf("starlight") != -1) {
+  (name.indexOf("starlight") != -1 ||
+name.indexOf("white") != -1)) {
     return 34318;
   
 

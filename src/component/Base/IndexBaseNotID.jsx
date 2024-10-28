@@ -25,7 +25,7 @@ const IndexBaseNotID = ({ el, baseData }) => {
             id: returnIDApple(returnFixNameBase(base.name)),
             name: returnFixNameBase(base.name),
             extraPrice: base.extra,
-            stockPrice: base.stock,
+            stockPrice: base.price,
             provider: "База",
           })
         );

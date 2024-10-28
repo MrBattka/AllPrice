@@ -252,8 +252,11 @@ export const baseFixS5 = (el) => {
 };
 
 export const baseFixRPTrade = (el) => {
-  const toLowerCase = el.name?.toLowerCase();
-  return toLowerCase.indexOf("смартфоны") == -1;
+  const toLowerCase = el.name.toLowerCase();
+  return (
+    toLowerCase.indexOf("планшеты") == -1 &&
+    toLowerCase.indexOf("смартфоны") == -1
+  );
 };
 
 export const baseFixRacmag = (el) => {
@@ -381,39 +384,31 @@ export const baseFixReSale = (el) => {
 
 export const baseFixTagir = (el) => {
   const toLowerCase = el.name?.toLowerCase();
-  return (
-    toLowerCase.indexOf("00") != -1 &&
-    toLowerCase.indexOf("шт") == -1 
-  );
+  return toLowerCase.indexOf("00") != -1 && toLowerCase.indexOf("шт") == -1;
 };
 
 export const baseFixNarod = (el) => {
   const toLowerCase = el.name?.toLowerCase();
-  return (
-    toLowerCase.indexOf("00") != -1 &&
-    toLowerCase.indexOf("шт") == -1 
-  );
+  return toLowerCase.indexOf("00") != -1 && toLowerCase.indexOf("шт") == -1;
 };
 
-export const baseFixF51= (el) => {
+export const baseFixF51 = (el) => {
   const toLowerCase = el.name?.toLowerCase();
-  return (
-    toLowerCase.indexOf("шт") == -1 
-  );
+  return toLowerCase.indexOf("шт") == -1;
 };
 
-export const baseFixBase= (el) => {
+export const baseFixBase = (el) => {
   const toLowerCase = el.name?.toLowerCase();
   return (
-    toLowerCase.indexOf("\"a\"") == -1 &&
-    toLowerCase.indexOf("\"b\"") == -1 &&
-    toLowerCase.indexOf("\"c\"") == -1 &&
-    toLowerCase.indexOf("\"a+\"") == -1 &&
-    toLowerCase.indexOf("\"b+\"") == -1 &&
-    toLowerCase.indexOf("\"c+\"") == -1 &&
-    toLowerCase.indexOf("\"a-\"") == -1 &&
-    toLowerCase.indexOf("\"b-\"") == -1 &&
-    toLowerCase.indexOf("\"c-\"") == -1 &&
-    toLowerCase.indexOf("\"обменка\"") == -1 
+    toLowerCase.indexOf('"a"') == -1 &&
+    toLowerCase.indexOf('"b"') == -1 &&
+    toLowerCase.indexOf('"c"') == -1 &&
+    toLowerCase.indexOf('"a+"') == -1 &&
+    toLowerCase.indexOf('"b+"') == -1 &&
+    toLowerCase.indexOf('"c+"') == -1 &&
+    toLowerCase.indexOf('"a-"') == -1 &&
+    toLowerCase.indexOf('"b-"') == -1 &&
+    toLowerCase.indexOf('"c-"') == -1 &&
+    toLowerCase.indexOf('"обменка"') == -1
   );
 };

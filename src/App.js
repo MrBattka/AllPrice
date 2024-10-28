@@ -128,6 +128,7 @@ const App = () => {
       typeof rptradeEl.Наименование === "string" &&
       rptrade.push({ name: rptradeEl.Наименование, price: rptradeEl.Цена });
   });
+  
 
   dataRacmag.map((racmagEl) => {
     racmagEl.Рацмаг &&

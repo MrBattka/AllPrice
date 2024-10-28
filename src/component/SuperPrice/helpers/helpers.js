@@ -25,7 +25,9 @@ export const fixNameSuperPrice = (name) => {
   const fix145g = fix13tpro5g.replace("14 5G", "14");
   const fix14ultra5g = fix145g.replace("14 Ultra 5G", "14 Ultra");
   const fixA155g = fix14ultra5g.replace("A15 5G", "A15");
-  const fixA35Awesome = fixA155g.replace("Awesome ", "");
+  const fixScarlet = fixA155g.replace("Scarlet", "Red");
+  const fix1024 = fixScarlet.replace("1024", "1Tb");
+  const fixA35Awesome = fix1024.replace("Awesome ", "");
   const fixXperia5G =
     fixA35Awesome.indexOf("Xperia") != -1
       ? fixA35Awesome.replace("5G ", "")
