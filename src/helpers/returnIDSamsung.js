@@ -602,7 +602,8 @@ export const returnIDSamsung = (name) => {
   } else if (
     name.indexOf("a55 ") != -1 &&
     name.indexOf("12/256") != -1 &&
-    name.indexOf("lilac") != -1
+    (name.indexOf("lilac") != -1 ||
+    name.indexOf("violet") != -1)
   ) {
     return 35926;
   } else if (
@@ -628,7 +629,8 @@ export const returnIDSamsung = (name) => {
   } else if (
     name.indexOf("a55 ") != -1 &&
     name.indexOf("8/128") != -1 &&
-    name.indexOf("lilac") != -1
+    (name.indexOf("lilac") != -1 ||
+    name.indexOf("violet") != -1)
   ) {
     return 35927;
   } else if (
@@ -654,7 +656,8 @@ export const returnIDSamsung = (name) => {
   } else if (
     name.indexOf("a55 ") != -1 &&
     name.indexOf("8/256") != -1 &&
-    name.indexOf("lilac") != -1
+    (name.indexOf("lilac") != -1 ||
+    name.indexOf("violet") != -1)
   ) {
     return 35928;
   } else if (
@@ -1017,43 +1020,49 @@ export const returnIDSamsung = (name) => {
     return 30756;
   } else if (
     name.indexOf("s23 ultra ") != -1 &&
-    name.indexOf("12/1tb") != -1 &&
+    name.indexOf("1tb") != -1 &&
     name.indexOf("cream") != -1
   ) {
     return 30717;
   } else if (
     name.indexOf("s23 ultra ") != -1 &&
-    name.indexOf("12/1tb") != -1 &&
+    name.indexOf("1tb") != -1 &&
     name.indexOf("graphite") != -1
   ) {
     return 30718;
   } else if (
     name.indexOf("s23 ultra ") != -1 &&
-    name.indexOf("12/1tb") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 26246;
+  } else if (
+    name.indexOf("s23 ultra ") != -1 &&
+    name.indexOf("1tb") != -1 &&
     name.indexOf("green") != -1
   ) {
     return 30719;
   } else if (
     name.indexOf("s23 ultra ") != -1 &&
-    name.indexOf("12/1tb") != -1 &&
+    name.indexOf("1tb") != -1 &&
     name.indexOf("lavender") != -1
   ) {
     return 30720;
   } else if (
     name.indexOf("s23 ultra ") != -1 &&
-    name.indexOf("12/1tb") != -1 &&
+    name.indexOf("1tb") != -1 &&
     name.indexOf("lime") != -1
   ) {
     return 30721;
   } else if (
     name.indexOf("s23 ultra ") != -1 &&
-    name.indexOf("12/1tb") != -1 &&
+    name.indexOf("1tb") != -1 &&
     name.indexOf("red") != -1
   ) {
     return 30722;
   } else if (
     name.indexOf("s23 ultra ") != -1 &&
-    name.indexOf("12/1tb") != -1 &&
+    name.indexOf("1tb") != -1 &&
     name.indexOf("blue") != -1
   ) {
   } else if (
@@ -3462,6 +3471,30 @@ export const returnIDSamsung = (name) => {
     (name.indexOf("graphite") != -1 || name.indexOf("gray") != -1)
   ) {
     return 31069;
+  } else if (
+    name.indexOf("tab s9 +") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("graphite") != -1 || name.indexOf("gray") != -1)
+  ) {
+    return 27931;
+  } else if (
+    name.indexOf("tab s9 +") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("beige") != -1
+  ) {
+    return 27930;
+  } else if (
+    name.indexOf("tab s9 +") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("beige") != -1
+  ) {
+    return 27929;
+  } else if (
+    name.indexOf("tab s9 +") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("graphite") != -1 || name.indexOf("gray") != -1)
+  ) {
+    return 27932;
   } else if (
     name.indexOf("tab s9 ultra") != -1 &&
     name.indexOf("256") != -1 &&

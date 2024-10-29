@@ -559,334 +559,7 @@ export const returnIDXiaomi = (name) => {
     return 35715;
   } else if (name.indexOf("redmi a3 6/128 green") != -1) {
     return 35721;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("12/256") != -1 &&
-    name.indexOf("black") != -1) {
-    return 30212;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("12/256") != -1 &&
-    name.indexOf("blue") != -1) {
-    return 30217;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("12/256") != -1 &&
-    name.indexOf("white") != -1
-  ) {
-    return 30213;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("6/128") != -1 &&
-    name.indexOf("black") != -1) {
-    return 30209;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("6/128") != -1 &&
-    name.indexOf("blue") != -1
-  ) {
-    return 30218;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("6/128") != -1 &&
-    name.indexOf("white") != -1) {
-    return 30214;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("8/128") != -1 &&
-    name.indexOf("black") != -1
-  ) {
-    return 30210;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("8/128") != -1 &&
-    name.indexOf("blue") != -1
-  ) {
-    return 30219;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("8/128") != -1 &&
-    name.indexOf("white") != -1
-  ) {
-    return 30215;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("8/256") != -1 &&
-    name.indexOf("black") != -1
-  ) {
-    return 30211;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("8/256") != -1 &&
-    name.indexOf("blue") != -1
-  ) {
-    return 30220;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("5g") != -1 &&
-    name.indexOf("8/256") != -1 &&
-    name.indexOf("white") != -1
-  ) {
-    return 30216;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("8/128") != -1 &&
-    name.indexOf("black") != -1
-  ) {
-    return 35935;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("8/128") != -1 &&
-    name.indexOf("blue") != -1
-  ) {
-    return 35939;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("12/256") != -1 &&
-  name.indexOf("black") != -1) {
-    return 35937;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("12/256") != -1 &&
-  name.indexOf("blue") != -1) {
-    return 35938;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("12/256") != -1 &&
-  name.indexOf("green") != -1) {
-    return 36400;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("12/256") != -1 &&
-  (name.indexOf("ocean") != -1 && name.indexOf("sunset") != -1)) {
-    return 36399;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("6/128") != -1 &&
-  name.indexOf("black") != -1) {
-    return 36395;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("6/128") != -1 &&
-  name.indexOf("blue") != -1) {
-    return 36396;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("6/128") != -1 &&
-  name.indexOf("green") != -1) {
-    return 36397;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("6/128") != -1 &&
-  (name.indexOf("ocean") != -1 && name.indexOf("sunset") != -1)) {
-    return 36398;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("8/128") != -1 &&
-  name.indexOf("green") != -1) {
-    return 36390;
-  } else if (name.indexOf("note 13 ") != -1 &&
-  name.indexOf("8/128") != -1 &&
-  name.indexOf("blue") != -1
-) {
-    return 35939;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("8/128") != -1 &&
-  (name.indexOf("ocean") != -1 && name.indexOf("sunset") != -1)) {
-    return 36392;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("8/256") != -1 &&
-  name.indexOf("black") != -1) {
-    return 35936;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-    name.indexOf("8/256") != -1 &&
-    name.indexOf("blue") != -1) {
-    return 35940;
-  } else if (
-    name.indexOf("note 13 ") != -1 &&
-  name.indexOf("8/256") != -1 &&
-  name.indexOf("green") != -1
-  ) {
-    return 36393;
-  } else if (
-  name.indexOf("note 13 ") != -1 &&
-  name.indexOf("8/256") != -1 &&
-  (name.indexOf("ocean") != -1 && name.indexOf("sunset") != -1)) {
-    return 36394;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/256 black") != -1 ||
-    (name.indexOf("note 13 pro 12/256 black") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30223;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/256 blue") != -1 ||
-    name.indexOf("note 13 pro 5g 12/256 teal") != -1 ||
-    (name.indexOf("note 13 pro 12/256 blue") != -1 &&
-      name.indexOf("5g") != -1) ||
-    (name.indexOf("note 13 pro 12/256 teal") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30236;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/256 violet") != -1 ||
-    name.indexOf("note 13 pro 5g 12/256 purple") != -1 ||
-    (name.indexOf("note 13 pro 12/256 violet") != -1 &&
-      name.indexOf("5g") != -1) ||
-    (name.indexOf("note 13 pro 12/256 purple") != -1 &&
-      name.indexOf("5g") != -1)
-  ) {
-    return 30231;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/256 white") != -1 ||
-    (name.indexOf("note 13 pro 12/256 white") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30226;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/512 black") != -1 ||
-    (name.indexOf("note 13 pro 12/512 black") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30224;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/512 blue") != -1 ||
-    name.indexOf("note 13 pro 5g 12/512 green") != -1 ||
-    name.indexOf("note 13 pro 5g 12/512 teal") != -1
-  ) {
-    return 30237;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/512 violet") != -1 ||
-    name.indexOf("note 13 pro 5g 12/512 purple") != -1
-  ) {
-    return 30232;
-  } else if (
-    name.indexOf("note 13 pro 5g 12/512 white") != -1 ||
-    (name.indexOf("note 13 pro 12/512 white") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30227;
-  } else if (
-    name.indexOf("note 13 pro 5g 16/512 black") != -1 ||
-    (name.indexOf("note 13 pro 16/512 black") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30225;
-  } else if (
-    name.indexOf("note 13 pro 5g 16/512 blue") != -1 ||
-    (name.indexOf("note 13 pro 16/512 blue") != -1 &&
-      name.indexOf("5g") != -1) ||
-    name.indexOf("note 13 pro 5g 16/512 teal") != -1 ||
-    (name.indexOf("note 13 pro 16/512 teal") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30238;
-  } else if (
-    name.indexOf("note 13 pro 5g 16/512 violet") != -1 ||
-    name.indexOf("note 13 pro 5g 16/512 purple") != -1 ||
-    (name.indexOf("note 13 pro 16/512 violet") != -1 &&
-      name.indexOf("5g") != -1) ||
-    (name.indexOf("note 13 pro 16/512 purple") != -1 &&
-      name.indexOf("5g") != -1)
-  ) {
-    return 30233;
-  } else if (
-    name.indexOf("note 13 pro 5g 16/512 white") != -1 ||
-    (name.indexOf("note 13 pro 16/512 white") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30228;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/128 black") != -1 ||
-    (name.indexOf("note 13 pro 8/128 black") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30221;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/128 blue") != -1 ||
-    name.indexOf("note 13 pro 5g 8/128 teal") != -1 ||
-    (name.indexOf("note 13 pro 8/128 blue") != -1 &&
-      name.indexOf("5g") != -1) ||
-    (name.indexOf("note 13 pro 8/128 teal") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30239;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/128 violet") != -1 ||
-    name.indexOf("note 13 pro 5g 8/128 purple") != -1 ||
-    (name.indexOf("note 13 pro 8/128 purple") != -1 &&
-      name.indexOf("5g") != -1) ||
-    (name.indexOf("note 13 pro 8/128 violet") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30234;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/128 white") != -1 ||
-    (name.indexOf("note 13 pro 8/128 white") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30229;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/256 black") != -1 ||
-    (name.indexOf("note 13 pro 8/256 black") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30222;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/256 blue") != -1 ||
-    name.indexOf("note 13 pro 5g 8/256 teal") != -1 ||
-    (name.indexOf("note 13 pro 8/256 blue") != -1 &&
-      name.indexOf("5g") != -1) ||
-    (name.indexOf("note 13 pro 8/256 teal") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30240;
-  } else if (
-    name.indexOf("note 13 pro 5g 8/256 violet") != -1 ||
-    name.indexOf("note 13 pro 5g 8/256 purple") != -1 ||
-    (name.indexOf("note 13 pro 8/256 violet") != -1 &&
-      name.indexOf("5g") != -1) ||
-    (name.indexOf("note 13 pro 8/256 purple") != -1 && name.indexOf("5g") != -1)
-  ) {
-    return 30235;
-  } else if (
-    name.indexOf("note 13 pro 12/512 purple") != -1 ||
-    name.indexOf("note 13 pro 12/512 lavender") != -1
-  ) {
-    return 31140;
-  } else if (
-    name.indexOf("note 13 pro") != -1 &&
-    name.indexOf("12/256") != -1 &&
-    name.indexOf("black") != -1
-  ) {
-    return 31139;
-  } else if (
-    name.indexOf("note 13 pro") != -1 &&
-    name.indexOf("12/256") != -1 &&
-    name.indexOf("green") != -1
-  ) {
-    return 31141;
-  } else if (
-    name.indexOf("note 13 pro") != -1 &&
-    name.indexOf("12/256") != -1 &&
-    (name.indexOf("purple") != -1 || name.indexOf("lavender") != -1)
-  ) {
-    return 31140;
-  } else if (name.indexOf("note 13 pro 8/256 black") != -1) {
-    return 31136;
-  } else if (name.indexOf("note 13 pro 8/256 green") != -1) {
-    return 31138;
-  } else if (name.indexOf("note 13 pro 8/128 black") != -1) {
-    return 36776;
-  } else if (name.indexOf("note 13 pro 8/128 green") != -1) {
-    return 36777;
-  } else if (name.indexOf("note 13 pro 8/128 purple") != -1) {
-    return 36778;
-  } else if (
-    name.indexOf("note 13 pro 8/256 purple") != -1 ||
-    name.indexOf("note 13 pro 8/256 lavender") != -1
-  ) {
-    return 31137;
+  
   } else if (
     name.indexOf("note 13 pro +") != -1 &&
     name.indexOf("12/256") != -1 &&
@@ -983,6 +656,405 @@ export const returnIDXiaomi = (name) => {
     name.indexOf("white") != -1
   ) {
     return 34407;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 30223;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    (name.indexOf("teal") != -1 || name.indexOf("blue") != -1 ||
+    name.indexOf("green") != -1)
+  ) {
+    return 30236;
+  } else if (
+      name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    (name.indexOf("violet") != -1 || name.indexOf("purple") != -1)
+  ) {
+    return 30231;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 30226;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 30224;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    (name.indexOf("teal") != -1 || name.indexOf("blue") != -1 ||
+    name.indexOf("green") != -1)
+  ) {
+    return 30237;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    (name.indexOf("violet") != -1 || name.indexOf("purple") != -1)
+  ) {
+    return 30232;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 30227;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("16/512") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 30225;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("16/512") != -1 &&
+    (name.indexOf("teal") != -1 || name.indexOf("blue") != -1 ||
+    name.indexOf("green") != -1)
+  ) {
+    return 30238;
+  } else if (
+      name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("16/512") != -1 &&
+    (name.indexOf("violet") != -1 || name.indexOf("purple") != -1)
+  ) {
+    return 30233;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("16/512") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 30228;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 30221;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    (name.indexOf("teal") != -1 || name.indexOf("blue") != -1 ||
+    name.indexOf("green") != -1)
+  ) {
+    return 30239;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    (name.indexOf("violet") != -1 || name.indexOf("purple") != -1)
+  ) {
+    return 30234;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 30229;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 30222;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    (name.indexOf("teal") != -1 || name.indexOf("blue") != -1 ||
+    name.indexOf("green") != -1)
+  ) {
+    return 30240;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    (name.indexOf("violet") != -1 || name.indexOf("purple") != -1)
+  ) {
+    return 30235;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 36779;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    (name.indexOf("teal") != -1 || name.indexOf("blue") != -1 ||
+    name.indexOf("green") != -1)
+  ) {
+    return 36780;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    (name.indexOf("purple") != -1 || name.indexOf("lavender") != -1)
+  ) {
+    return 36781;
+
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    (name.indexOf("violet") != -1 || name.indexOf("purple") != -1)
+  ) {
+    return 31140;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 31139;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    (name.indexOf("teal") != -1 || name.indexOf("blue") != -1 ||
+    name.indexOf("green") != -1)
+  ) {
+    return 31141;
+  } else if (
+  name.indexOf("note 13 pro") != -1 &&
+  name.indexOf("8/256") != -1 &&
+  name.indexOf("black") != -1) {
+    return 31136;
+  } else if (
+  name.indexOf("note 13 pro") != -1 &&
+  name.indexOf("8/256") != -1 &&
+  name.indexOf("green") != -1) {
+    return 31138;
+  } else if (
+  name.indexOf("note 13 pro") != -1 &&
+  name.indexOf("8/128") != -1 &&
+  name.indexOf("black") != -1) {
+    return 36776;
+  } else if (
+  name.indexOf("note 13 pro") != -1 &&
+  name.indexOf("8/128") != -1 &&
+  name.indexOf("green") != -1) {
+    return 36777;
+  } else if (
+  name.indexOf("note 13 pro") != -1 &&
+  name.indexOf("8/128") != -1 &&
+  name.indexOf("purple") != -1) {
+    return 36778;
+  } else if (
+    name.indexOf("note 13 pro") != -1 &&
+  name.indexOf("8/256") != -1 &&
+  (name.indexOf("purple") != -1 || name.indexOf("lavender") != -1)
+  ) {
+    return 31137;
+  
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 30212;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 30217;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 30213;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 30209;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 30218;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 30214;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 30210;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 30219;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 30215;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 30211;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 30220;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 30216;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 35935;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 35939;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 35937;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 35938;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("green") != -1
+  ) {
+    return 36400;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    (name.indexOf("ocean") != -1 ||
+    name.indexOf("sunset") != -1)
+  ) {
+    return 36399;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 36395;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 36396;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    name.indexOf("green") != -1
+  ) {
+    return 36397;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("6/128") != -1 &&
+    (name.indexOf("ocean") != -1 ||
+    name.indexOf("sunset") != -1)
+  ) {
+    return 36398;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("green") != -1
+  ) {
+    return 36390;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 35939;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    (name.indexOf("ocean") != -1 ||
+    name.indexOf("sunset") != -1)
+  ) {
+    return 36392;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 35936;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 35940;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("green") != -1
+  ) {
+    return 36393;
+  } else if (
+    name.indexOf("note 13 ") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    (name.indexOf("ocean") != -1 ||
+    name.indexOf("sunset") != -1)
+  ) {
+    return 36394;
   } else if (name.indexOf("note 13r pro 12/256 black") != -1) {
     return 30889;
   } else if (name.indexOf("note 13r pro 12/256 blue") != -1) {
@@ -1714,239 +1786,455 @@ export const returnIDXiaomi = (name) => {
 
     // Redmi Pad
   } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("4/128") != -1 &&
-    (name.indexOf("gray") != -1 || name.indexOf("graphite") != -1)) {
-      return 30200;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("4/128") != -1 &&
-    (name.indexOf("lavender") != -1 || name.indexOf("purple") != -1)) {
-      return 30203;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("4/128") != -1 &&
-    (name.indexOf("mint") != -1 || name.indexOf("green") != -1)) {
-      return 30206;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("6/128") != -1 &&
-    (name.indexOf("gray") != -1 || name.indexOf("graphite") != -1)) {
-      return 30201;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("6/128") != -1 &&
-    (name.indexOf("lavender") != -1 || name.indexOf("purple") != -1)) {
-      return 30204;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("6/128") != -1 &&
-    (name.indexOf("mint") != -1 || name.indexOf("green") != -1)) {
-      return 30207;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("8/128") != -1 &&
-    (name.indexOf("gray") != -1 || name.indexOf("graphite") != -1)) {
-      return 30202;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("8/128") != -1 &&
-    (name.indexOf("lavender") != -1 || name.indexOf("purple") != -1)) {
-      return 30205;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("8/128") != -1 &&
-    (name.indexOf("mint") != -1 || name.indexOf("green") != -1)) {
-      return 30208;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("8/256") != -1 &&
-    (name.indexOf("gray") != -1 || name.indexOf("graphite") != -1)) {
-      return 30966;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("8/256") != -1 &&
-    (name.indexOf("lavender") != -1 || name.indexOf("purple") != -1)) {
-      return 30967;
-    } else if (
-    name.indexOf("redmi pad se") != -1 &&
-    name.indexOf("8/256") != -1 &&
-    (name.indexOf("mint") != -1 || name.indexOf("green") != -1)) {
-      return 30968;
-
-  } else if (name.indexOf("redmi pad") != -1 &&
-  name.indexOf("3/64") != -1 &&
-  (name.indexOf("gray") != -1 || name.indexOf("graphite") != -1)) {
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("4/128") !== -1 &&
+    (name.indexOf("gray") !== -1 || name.indexOf("graphite") !== -1)
+  ) {
+    return 30200;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("4/128") !== -1 &&
+    (name.indexOf("lavender") !== -1 || name.indexOf("purple") !== -1)
+  ) {
+    return 30203;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("4/128") !== -1 &&
+    (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
+  ) {
+    return 30206;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    (name.indexOf("gray") !== -1 || name.indexOf("graphite") !== -1)
+  ) {
+    return 30201;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    (name.indexOf("lavender") !== -1 || name.indexOf("purple") !== -1)
+  ) {
+    return 30204;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
+  ) {
+    return 30207;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    (name.indexOf("gray") !== -1 || name.indexOf("graphite") !== -1)
+  ) {
+    return 30202;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    (name.indexOf("lavender") !== -1 || name.indexOf("purple") !== -1)
+  ) {
+    return 30205;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
+  ) {
+    return 30208;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    (name.indexOf("gray") !== -1 || name.indexOf("graphite") !== -1)
+  ) {
+    return 30966;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    (name.indexOf("lavender") !== -1 || name.indexOf("purple") !== -1)
+  ) {
+    return 30967;
+  } else if (
+    name.indexOf("pad se") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
+  ) {
+    return 30968;
+  } else if (
+    name.indexOf("mi pad 6 max 14") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 30193;
+  } else if (
+    name.indexOf("mi pad 6 max 14") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 30196;
+  } else if (
+    name.indexOf("mi pad 6 max 14") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 30194;
+  } else if (
+    name.indexOf("mi pad 6 max 14") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 30197;
+  } else if (
+    name.indexOf("mi pad 6 max 14") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 30195;
+  } else if (
+    name.indexOf("mi pad 6 max 14") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 30198;
+  } else if (
+    name.indexOf("mi pad 6 max 14") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 30192;
+  } else if (
+    name.indexOf("mi pad 6 max 14") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 30199;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 27380;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 27382;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 27386;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 27381;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 27383;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 27387;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 36273;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 36272;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 36274;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 27378;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 27384;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 36279;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 27388;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 36280;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 27379;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 27385;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 36282;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 27389;
+  } else if (
+    name.indexOf("mi pad 6 pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 36283;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 35891;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 35894;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 35898;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 35892;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 35895;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 35899;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 35893;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 35896;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 35900;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 35890;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 35897;
+  } else if (
+    name.indexOf("mi pad 6s pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 35901;
+  } else if (
+    name.indexOf("redmi pad pro") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 36687;
+  } else if (
+    name.indexOf("redmi pad pro") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 36747;
+  } else if (
+    name.indexOf("redmi pad pro") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 36748;
+  } else if (
+    name.indexOf("redmi pad pro") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 36749;
+  } else if (
+    name.indexOf("redmi pad pro") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 36750;
+  } else if (
+    name.indexOf("redmi pad pro") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 36751;
+  } else if (
+    name.indexOf("redmi pad pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 36752;
+  } else if (
+    name.indexOf("redmi pad pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 36753;
+  } else if (
+    name.indexOf("redmi pad pro") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 36754;
+  } else if (
+    name.indexOf("mi pad 6") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 27369;
+  } else if (
+    name.indexOf("mi pad 6") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 27372;
+  } else if (
+    name.indexOf("mi pad 6") !== -1 &&
+    name.indexOf("6/128") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 27375;
+  } else if (
+    name.indexOf("mi pad 6") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 27370;
+  } else if (
+    name.indexOf("mi pad 6") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 27373;
+  } else if (
+    name.indexOf("mi pad 6") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 27376;
+  } else if (
+    name.indexOf("mi pad 6") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 27371;
+  } else if (
+    name.indexOf("mi pad 6") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 27374;
+  } else if (
+    name.indexOf("mi pad 6") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 27377;
+  } else if (
+    name.indexOf("redmi pad") !== -1 &&
+    name.indexOf("3/64") !== -1 &&
+    (name.indexOf("gray") !== -1 || name.indexOf("graphite") !== -1)
+  ) {
     return 23941;
   } else if (
-  name.indexOf("redmi pad") != -1 &&
-  name.indexOf("3/64") != -1 &&
-  (name.indexOf("mint") != -1 || name.indexOf("green") != -1)) {
+    name.indexOf("redmi pad") !== -1 &&
+    name.indexOf("3/64") !== -1 &&
+    (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
+  ) {
     return 23947;
   } else if (
-  name.indexOf("redmi pad") != -1 &&
-  name.indexOf("3/64") != -1 &&
-  (name.indexOf("moonlight") != -1 || name.indexOf("silver") != -1)) {
+    name.indexOf("redmi pad") !== -1 &&
+    name.indexOf("3/64") !== -1 &&
+    (name.indexOf("moonlight") !== -1 || name.indexOf("silver") !== -1)
+  ) {
     return 23944;
   } else if (
-  name.indexOf("redmi pad") != -1 &&
-  name.indexOf("4/128") != -1 &&
-  (name.indexOf("gray") != -1 || name.indexOf("graphite") != -1)) {
+    name.indexOf("redmi pad") !== -1 &&
+    name.indexOf("4/128") !== -1 &&
+    (name.indexOf("gray") !== -1 || name.indexOf("graphite") !== -1)
+  ) {
     return 23942;
   } else if (
-  name.indexOf("redmi pad") != -1 &&
-  name.indexOf("4/128") != -1 &&
-  (name.indexOf("mint") != -1 || name.indexOf("green") != -1)) {
+    name.indexOf("redmi pad") !== -1 &&
+    name.indexOf("4/128") !== -1 &&
+    (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
+  ) {
     return 23948;
   } else if (
-  name.indexOf("redmi pad") != -1 &&
-  name.indexOf("4/128") != -1 &&
-  (name.indexOf("moonlight") != -1 || name.indexOf("silver") != -1)) {
+    name.indexOf("redmi pad") !== -1 &&
+    name.indexOf("4/128") !== -1 &&
+    (name.indexOf("moonlight") !== -1 || name.indexOf("silver") !== -1)
+  ) {
     return 23945;
-  } else if (
-  name.indexOf("redmi pad") != -1 &&
-  name.indexOf("6/128") != -1 &&
-  (name.indexOf("gray") != -1 || name.indexOf("graphite") != -1)) {
-    return 23943;
-  } else if (
-  name.indexOf("redmi pad") != -1 &&
-  name.indexOf("6/128") != -1 &&
-  (name.indexOf("mint") != -1 || name.indexOf("green") != -1)) {
-    return 23949;
-  } else if (
-  name.indexOf("redmi pad") != -1 &&
-  name.indexOf("6/128") != -1 &&
-  (name.indexOf("moonlight") != -1 || name.indexOf("silver") != -1)) {
-    return 23946;
-
-  
-
-  
-  
-  } else if (name.indexOf("mi pad 6 6/128 black") != -1) {
-    return 27369;
-  } else if (name.indexOf("mi pad 6 6/128 blue") != -1) {
-    return 27372;
-  } else if (name.indexOf("mi pad 6 6/128 gold") != -1) {
-    return 27375;
-  } else if (name.indexOf("mi pad 6 8/128 black") != -1) {
-    return 27370;
-  } else if (name.indexOf("mi pad 6 8/128 blue") != -1) {
-    return 27373;
-  } else if (name.indexOf("mi pad 6 8/128 gold") != -1) {
-    return 27376;
-  } else if (name.indexOf("mi pad 6 8/256 black") != -1) {
-    return 27371;
-  } else if (name.indexOf("mi pad 6 8/256 blue") != -1) {
-    return 27374;
-  } else if (name.indexOf("mi pad 6 8/256 gold") != -1) {
-    return 27377;
-  } else if (name.indexOf("mi pad 6 max 14 12/256 black") != -1) {
-    return 30193;
-  } else if (name.indexOf("mi pad 6 max 14 12/256 silver") != -1) {
-    return 30196;
-  } else if (name.indexOf("mi pad 6 max 14 12/512 black") != -1) {
-    return 30194;
-  } else if (name.indexOf("mi pad 6 max 14 12/512 silver") != -1) {
-    return 30197;
-  } else if (name.indexOf("mi pad 6 max 14 16/1tb black") != -1) {
-    return 30195;
-  } else if (name.indexOf("mi pad 6 max 14 16/1tb silver") != -1) {
-    return 30198;
-  } else if (name.indexOf("mi pad 6 max 14 8/256 black") != -1) {
-    return 30192;
-  } else if (name.indexOf("mi pad 6 max 14 8/256 silver") != -1) {
-    return 30199;
-  } else if (name.indexOf("mi pad 6 pro 12/256 black") != -1) {
-    return 27380;
-  } else if (name.indexOf("mi pad 6 pro 12/256 blue") != -1) {
-    return 27382;
-  } else if (name.indexOf("mi pad 6 pro 12/256 gold") != -1) {
-    return 27386;
-  } else if (name.indexOf("mi pad 6 pro 12/512 black") != -1) {
-    return 27381;
-  } else if (name.indexOf("mi pad 6 pro 12/512 blue") != -1) {
-    return 27383;
-  } else if (name.indexOf("mi pad 6 pro 12/512 gold") != -1) {
-    return 27387;
-  } else if (name.indexOf("mi pad 6 pro 6/128 blue") != -1) {
-    return 36273;
-  } else if (name.indexOf("mi pad 6 pro 6/128 gray") != -1) {
-    return 36272;
-  } else if (name.indexOf("mi pad 6 pro 6/128 green") != -1) {
-    return 36274;
-  } else if (name.indexOf("mi pad 6 pro 8/128 black") != -1) {
-    return 27378;
-  } else if (name.indexOf("mi pad 6 pro 8/128 blue") != -1) {
-    return 27384;
-  } else if (name.indexOf("mi pad 6 pro 8/128 blue") != -1) {
-    return 36278;
-  } else if (name.indexOf("mi pad 6 pro 8/128 gray") != -1) {
-    return 36279;
-  } else if (name.indexOf("mi pad 6 pro 8/128 gold") != -1) {
-    return 27388;
-  } else if (name.indexOf("mi pad 6 pro 8/128 green") != -1) {
-    return 36280;
-  } else if (name.indexOf("mi pad 6 pro 8/256 black") != -1) {
-    return 27379;
-  } else if (name.indexOf("mi pad 6 pro 8/256 blue") != -1) {
-    return 27385;
-  } else if (name.indexOf("mi pad 6 pro 8/256 blue") != -1) {
-    return 36281;
-  } else if (name.indexOf("mi pad 6 pro 8/256 gray") != -1) {
-    return 36282;
-  } else if (name.indexOf("mi pad 6 pro 8/256 gold") != -1) {
-    return 27389;
-  } else if (name.indexOf("mi pad 6 pro 8/256 green") != -1) {
-    return 36283;
-  } else if (name.indexOf("mi pad 6s pro 12.4 12/256 black") != -1) {
-    return 35891;
-  } else if (name.indexOf("mi pad 6s pro 12.4 12/256 blue") != -1) {
-    return 35894;
-  } else if (name.indexOf("mi pad 6s pro 12.4 12/256 green") != -1) {
-    return 35898;
-  } else if (name.indexOf("mi pad 6s pro 12.4 12/512 black") != -1) {
-    return 35892;
-  } else if (name.indexOf("mi pad 6s pro 12.4 12/512 blue") != -1) {
-    return 35895;
-  } else if (name.indexOf("mi pad 6s pro 12.4 12/512 green") != -1) {
-    return 35899;
-  } else if (name.indexOf("mi pad 6s pro 12.4 16/1tb black") != -1) {
-    return 35893;
-  } else if (name.indexOf("mi pad 6s pro 12.4 16/1tb blue") != -1) {
-    return 35896;
-  } else if (name.indexOf("mi pad 6s pro 12.4 16/1tb green") != -1) {
-    return 35900;
-  } else if (name.indexOf("mi pad 6s pro 12.4 8/256 black") != -1) {
-    return 35890;
-  } else if (name.indexOf("mi pad 6s pro 12.4 8/256 blue") != -1) {
-    return 35897;
-  } else if (name.indexOf("mi pad 6s pro 12.4 8/256 green") != -1) {
-    return 35901;
-  } else if (name.indexOf("redmi pad pro 6/128 dark gray") != -1) {
-    return 36687;
-  } else if (name.indexOf("redmi pad pro 6/128 gray") != -1) {
-    return 36687;
-  } else if (name.indexOf("redmi pad pro 6/128 blue") != -1) {
-    return 36747;
-  } else if (name.indexOf("redmi pad pro 6/128 green") != -1) {
-    return 36748;
-  } else if (name.indexOf("redmi pad pro 8/128 blue") != -1) {
-    return 36749;
-  } else if (name.indexOf("redmi pad pro 8/128 dark gray") != -1) {
-    return 36750;
-  } else if (name.indexOf("redmi pad pro 8/128 gray") != -1) {
-    return 36750;
-  } else if (name.indexOf("redmi pad pro 8/128 green") != -1) {
-    return 36751;
-  } else if (name.indexOf("redmi pad pro 8/256 blue") != -1) {
-    return 36752;
-  } else if (name.indexOf("redmi pad pro 8/256 dark gray") != -1) {
-    return 36753;
-  } else if (name.indexOf("redmi pad pro 8/256 gray") != -1) {
-    return 36753;
-  } else if (name.indexOf("redmi pad pro 8/256 green") != -1) {
-    return 36754;
   } else if (name.indexOf("redmi 13 6/128 midnight black") != -1) {
     return 36688;
   } else if (name.indexOf("redmi 13 6/128 black") != -1) {

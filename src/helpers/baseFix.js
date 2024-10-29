@@ -63,6 +63,14 @@ export const baseFix = (el) => {
     el.Товар?.indexOf("Мятый") == -1 &&
     el.Товар?.indexOf("открытый") == -1 &&
     el.Товар?.indexOf("дефект") == -1 &&
+    el.Товар?.indexOf("вскрыт") == -1 &&
+    el.Товар?.indexOf("реболл") == -1 &&
+    el.Товар?.indexOf("No charger") == -1 &&
+    el.Товар?.indexOf("открыт") == -1 &&
+    el.Товар?.indexOf("Мятый") == -1 &&
+    el.Товар?.indexOf("мятый") == -1 &&
+    el.Товар?.indexOf("без пломб") == -1 &&
+    el.Товар?.indexOf("прошит") == -1 &&
     el !== "Товар"
   );
 };

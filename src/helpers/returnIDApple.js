@@ -58,19 +58,22 @@ export const returnIDApple = (nameStock) => {
   name.indexOf("airpods max 2 green") != -1) {
     return 36588;
   } else if (name.indexOf("airpods max 2024 midnight") != -1 ||
-  name.indexOf("airpods max 2 midnight") != -1) {
+  name.indexOf("airpods max 2 midnight") != -1 ||
+  name.indexOf("airpods max midnight") != -1) {
     return 36595;
   } else if (name.indexOf("airpods max 2024 black") != -1 ||
   name.indexOf("airpods max 2 black") != -1) {
     return 36596;
   } else if (name.indexOf("airpods max 2024 orange") != -1 ||
-  name.indexOf("airpods max 2 orange") != -1) {
+  name.indexOf("airpods max 2 orange") != -1 ||
+  name.indexOf("airpods max orange") != -1) {
     return 36597;
   } else if (name.indexOf("airpods max 2024 pink") != -1 ||
   name.indexOf("airpods max 2 pink") != -1) {
     return 36589;
   } else if (name.indexOf("airpods max 2024 purple") != -1 ||
-  name.indexOf("airpods max 2 purple") != -1) {
+  name.indexOf("airpods max 2 purple") != -1 ||
+  name.indexOf("airpods max purple") != -1) {
     return 36594;
   } else if (name.indexOf("airpods max 2024 silver") != -1 ||
   name.indexOf("airpods max 2 silver") != -1) {
@@ -79,7 +82,8 @@ export const returnIDApple = (nameStock) => {
   name.indexOf("airpods max 2 sky blue") != -1) {
     return 36591;
   } else if (name.indexOf("airpods max 2024 starlight") != -1 ||
-  name.indexOf("airpods max 2 starlight") != -1) {
+  name.indexOf("airpods max 2 starlight") != -1 ||
+  name.indexOf("airpods max starlight") != -1) {
     return 36596;
   } else if (name.indexOf("airpods max 2024 white") != -1 ||
   name.indexOf("airpods max 2 white") != -1) {
@@ -294,71 +298,66 @@ name.indexOf("white") != -1)) {
   } else if (name.indexOf("ul yellow") != -1) {
     return 23463;
   } else if (
-    name.indexOf("ul 2 blue - ob") != -1 ||
-    name.indexOf("ultra 2 m blue") != -1 ||
-    name.indexOf("ultra 2 s blue") != -1 ||
-    name.indexOf("ultra 2 blue ocean band") != -1
+    (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
+    name.indexOf("blue") !== -1 &&
+    (name.indexOf("ocean band") !== -1 || name.indexOf("ob") !== -1) &&
+    name.indexOf("2024") == -1
   ) {
     return 28306;
   } else if (
-    name.indexOf("ul 2 white - ob") != -1 ||
-    name.indexOf("ultra 2 m white") != -1 ||
-    name.indexOf("ultra 2 s white") != -1 ||
-    name.indexOf("ultra 2 white ocean band") != -1
+    (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
+    name.indexOf("white") !== -1 &&
+    (name.indexOf("ocean band") !== -1 || name.indexOf("ob") !== -1) &&
+    name.indexOf("2024") == -1
   ) {
     return 28305;
   } else if (
-    name.indexOf("ul 2 orange - ob") != -1 ||
-    name.indexOf("ultra 2 m orange") != -1 ||
-    name.indexOf("ultra 2 s orange") != -1 ||
-    name.indexOf("ultra 2 orange ocean band") != -1
+    (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
+    name.indexOf("orange") !== -1 &&
+    (name.indexOf("ocean band") !== -1 || name.indexOf("ob") !== -1) &&
+    name.indexOf("2024") == -1
   ) {
     return 28304;
   } else if (
-    name.indexOf("ul 2 beige - tl") != -1 ||
-    name.indexOf("ultra 2 m beige") != -1 ||
-    name.indexOf("ultra 2 s beige") != -1 ||
-    name.indexOf("ultra 2 beige trail loop") != -1 ||
-    name.indexOf("ul 2 orange - tl") != -1 ||
-    name.indexOf("ultra 2 m orange") != -1 ||
-    name.indexOf("ultra 2 s orange") != -1 ||
-    name.indexOf("ultra 2 orange trail loop") != -1
+    (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
+    (name.indexOf("orange") !== -1 || name.indexOf("beige") !== -1) &&
+    (name.indexOf("trail loop") !== -1 || name.indexOf("tl") !== -1) &&
+    name.indexOf("2024") == -1
   ) {
     return 28303;
   } else if (
-    name.indexOf("ul 2 black - tl") != -1 ||
-    name.indexOf("ultra 2 m black") != -1 ||
-    name.indexOf("ultra 2 s black") != -1 ||
-    name.indexOf("ultra 2 black trail loop") != -1
+    (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
+    name.indexOf("black") !== -1 &&
+    (name.indexOf("trail loop") !== -1 || name.indexOf("tl") !== -1) &&
+    name.indexOf("2024") == -1
   ) {
     return 28302;
   } else if (
-    name.indexOf("ul 2 gray - tl") != -1 ||
-    name.indexOf("ultra 2 m gray") != -1 ||
-    name.indexOf("ultra 2 s gray") != -1 ||
-    name.indexOf("ultra 2 green trail loop") != -1 ||
-    name.indexOf("ultra 2 gray trail loop") != -1
+    (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
+    (name.indexOf("gray") !== -1 || name.indexOf("green") !== -1) &&
+    (name.indexOf("trail loop") !== -1 || name.indexOf("tl") !== -1) &&
+    name.indexOf("2024") == -1
   ) {
     return 28301;
   } else if (
-    name.indexOf("ul 2 olive - al") != -1 ||
-    name.indexOf("ultra 2 m olive") != -1 ||
-    name.indexOf("ultra 2 s olive") != -1 ||
-    name.indexOf("ultra 2 olive alpine loop") != -1
+    (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
+    name.indexOf("olive") !== -1 &&
+    (name.indexOf("alpine loop") !== -1 || name.indexOf("al") !== -1) &&
+    name.indexOf("2024") == -1
   ) {
     return 28300;
   } else if (
-    name.indexOf("ul 2 indigo - al") != -1 ||
-    name.indexOf("ultra 2 m indigo") != -1 ||
-    name.indexOf("ultra 2 s indigo") != -1 ||
-    name.indexOf("ultra 2 indigo alpine loop") != -1
+    (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
+    name.indexOf("indigo") !== -1 &&
+    (name.indexOf("alpine loop") !== -1 || name.indexOf("al") !== -1) &&
+    name.indexOf("2024") == -1
   ) {
     return 28299;
   } else if (
-    name.indexOf("ul 2 blue - al") != -1 ||
-    name.indexOf("ultra 2 m blue") != -1 ||
-    name.indexOf("ultra 2 s blue") != -1 ||
-    name.indexOf("ultra 2 blue alpine loop") != -1
+   ( (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
+    name.indexOf("blue") !== -1 &&
+    (name.indexOf("alpine loop") !== -1 || name.indexOf("al") !== -1) )&&
+    name.indexOf("2024") == -1
   ) {
     return 28298;
 
