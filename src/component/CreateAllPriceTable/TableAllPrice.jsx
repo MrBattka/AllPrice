@@ -13,7 +13,7 @@ const COLUMNS = [
   },
   {
     Header: "Стоимость",
-    accessor: "extraPrice",
+    accessor: "stockPrice",
   },
   {
     Header: "Provider",

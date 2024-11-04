@@ -38,6 +38,7 @@ import IndexVseMi from "./component/VseMi/indexVseMi";
 import IndexVseMiNotID from "./component/VseMi/indexVseMiNotID";
 import icon from "./source/icon/icon.png";
 import IndexMiHonorNotID from "./component/MiHonor/indexMiHonorNotID";
+import IndexDiscount from "./component/Discount/IndexDiscount";
 
 const App = () => {
   const allPrice = [];
@@ -57,6 +58,7 @@ const App = () => {
   const [dataTagir, setDataTagir] = useState([]);
   const [dataNarod, setDataNarod] = useState([]);
   const [dataF51, setDataF51] = useState([]);
+  const [dataDiscount, setDataDiscount] = useState([]);
   const [dataBase, setDataBase] = useState([]);
   const [dataOther, setDataOther] = useState([]);
 
@@ -75,6 +77,7 @@ const App = () => {
   const tagir = [];
   const narod = [];
   const f51 = [];
+  const discount = [];
   const base = [];
   const other = [];
 
@@ -108,7 +111,6 @@ const App = () => {
         price: superpriceEl.Прайс || superpriceEl.Опт || superpriceEl.Цена,
       });
   });
-  console.log(superprice);
 
   dataGarmin.map((garminEl) => {
     garminEl.Garmin &&
@@ -182,6 +184,12 @@ const App = () => {
       typeof F51El.Товар === "string" &&
       f51.push({ name: F51El.Товар, price: F51El.Цена, country: F51El.Страна });
   });
+  dataDiscount.map((discountEl) => {
+    discountEl.Discount &&
+      discountEl.Discount.length > 7 &&
+      typeof discountEl.Discount === "string" &&
+      discount.push({ name: discountEl.Discount });
+  });
 
   dataBase.map((baseEl) => {
     baseEl.Наименование &&
@@ -206,6 +214,7 @@ const App = () => {
       typeof otherEl.All === "string" &&
       other.push({ name: otherEl.All });
   });
+  
 
   const handleImport = ($event) => {
     const files = $event.target.files;
@@ -247,6 +256,8 @@ const App = () => {
           setDataNarod(rowNarod);
           const rowF51 = utils.sheet_to_json(wb.Sheets[sheets[14]]);
           setDataF51(rowF51);
+          // const rowDiscount = utils.sheet_to_json(wb.Sheets[sheets[15]]);
+          // setDataDiscount(rowDiscount);
           const rowBase = utils.sheet_to_json(wb.Sheets[sheets[15]]);
           setDataBase(rowBase);
           const rowOther = utils.sheet_to_json(wb.Sheets[sheets[16]]);
@@ -288,6 +299,8 @@ const App = () => {
         </div>
       </div>
       <div className="wrapper_cat">
+        {/* Discount */}
+        {/* <IndexDiscount el={dataDiscount} discountData={discount} /> */}
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
