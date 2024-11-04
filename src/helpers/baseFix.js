@@ -135,7 +135,8 @@ export const baseFixMiHonor = (el) => {
     toLowerCase.indexOf("тихорецкий") == -1 &&
     toLowerCase.indexOf("*") == -1 &&
     toLowerCase.indexOf("от") == -1 &&
-    toLowerCase.indexOf("электросамокат") == -1
+    toLowerCase.indexOf("электросамокат") == -1 &&
+    toLowerCase.indexOf("планшеты") == -1
   );
 };
 
@@ -166,7 +167,8 @@ export const baseFixVsemi = (el) => {
     toLowerCase.indexOf("*vr*") == -1 &&
     toLowerCase.indexOf("*samsung*") == -1 &&
     toLowerCase.indexOf("*dyson*") == -1 &&
-    toLowerCase.indexOf("*jbl*") == -1
+    toLowerCase.indexOf("*jbl*") == -1 &&
+    toLowerCase.indexOf("телефоны") == -1
   );
 };
 

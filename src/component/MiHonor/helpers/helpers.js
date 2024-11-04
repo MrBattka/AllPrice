@@ -17,7 +17,7 @@ export const returnNameInArrMihonor = (name) => {
     reverseStrName[0] !== "₽" ? reverseStrName.slice(1) : reverseStrName;
   let removeRUB =
     removeSpaceName[0] === "₽" ? removeSpaceName.slice(1) : reverseStrName;
-  let splitPrice = /\s(.+)/.exec(removeRUB)[1];
+  let splitPrice = removeRUB.indexOf(" ") !== -1 ? /\s(.+)/.exec(removeRUB)[1] : removeRUB
   let reverseBackStrName = splitPrice.split("").reverse().join("");
 
   return fixFlags(reverseBackStrName);

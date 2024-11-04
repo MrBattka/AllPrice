@@ -139,6 +139,24 @@ export const returnIDSamsung = (name) => {
     name.indexOf("violet") != -1
   ) {
     return 30141;
+  } else if (name.indexOf("a06 4/128 black") != -1) {
+    return 36872;
+  } else if (name.indexOf("a06 4/128 gold") != -1) {
+    return 36879;
+  } else if (name.indexOf("a06 4/128 light blue") != -1) {
+    return 36876;
+  } else if (name.indexOf("a06 4/64 black") != -1) {
+    return 36873;
+  } else if (name.indexOf("a06 4/64 gold") != -1) {
+    return 36880;
+  } else if (name.indexOf("a06 4/64 light blue") != -1) {
+    return 36877;
+  } else if (name.indexOf("a06 6/128 black") != -1) {
+    return 36875;
+  } else if (name.indexOf("a06 6/128 gold") != -1) {
+    return 36881;
+  } else if (name.indexOf("a06 6/128 light blue") != -1) {
+    return 36878;
   } else if (
     name.indexOf("a15 ") != -1 &&
     name.indexOf("4/128") != -1 &&
@@ -481,7 +499,6 @@ export const returnIDSamsung = (name) => {
       name.indexOf("yellow") != -1)
   ) {
     return 35922;
-  
   } else if (
     name.indexOf("a53 ") != -1 &&
     name.indexOf("6/128") != -1 &&
@@ -506,7 +523,6 @@ export const returnIDSamsung = (name) => {
     name.indexOf("white") != -1
   ) {
     return 22590;
-    
   } else if (
     name.indexOf("a54 ") != -1 &&
     name.indexOf("6/128") != -1 &&
@@ -602,8 +618,7 @@ export const returnIDSamsung = (name) => {
   } else if (
     name.indexOf("a55 ") != -1 &&
     name.indexOf("12/256") != -1 &&
-    (name.indexOf("lilac") != -1 ||
-    name.indexOf("violet") != -1)
+    (name.indexOf("lilac") != -1 || name.indexOf("violet") != -1)
   ) {
     return 35926;
   } else if (
@@ -629,8 +644,7 @@ export const returnIDSamsung = (name) => {
   } else if (
     name.indexOf("a55 ") != -1 &&
     name.indexOf("8/128") != -1 &&
-    (name.indexOf("lilac") != -1 ||
-    name.indexOf("violet") != -1)
+    (name.indexOf("lilac") != -1 || name.indexOf("violet") != -1)
   ) {
     return 35927;
   } else if (
@@ -656,8 +670,7 @@ export const returnIDSamsung = (name) => {
   } else if (
     name.indexOf("a55 ") != -1 &&
     name.indexOf("8/256") != -1 &&
-    (name.indexOf("lilac") != -1 ||
-    name.indexOf("violet") != -1)
+    (name.indexOf("lilac") != -1 || name.indexOf("violet") != -1)
   ) {
     return 35928;
   } else if (

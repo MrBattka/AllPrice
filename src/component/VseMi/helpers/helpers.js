@@ -2,8 +2,8 @@ import { newPrice } from "../../../helpers/NewPrice";
 
 export const returnNameInArrVseMi = (name) => {
   let reverseStrName = name.split("").reverse().join("");
-  let splitPrice = /\s(.+)/.exec(reverseStrName)[1];
-  let replaceStick = /\s(.+)/.exec(splitPrice)[1]
+  let splitPrice = reverseStrName.indexOf(" ") !== -1 ? /\s(.+)/.exec(reverseStrName)[1] : reverseStrName
+  let replaceStick = splitPrice.indexOf(" ") !== -1 ?  /\s(.+)/.exec(splitPrice)[1] : splitPrice
   let reverseBackStrName = replaceStick.split("").reverse().join("");
 
   return reverseBackStrName;

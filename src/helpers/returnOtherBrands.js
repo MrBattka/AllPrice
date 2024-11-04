@@ -257,6 +257,14 @@ export const returnIDOtherBrand = (name) => {
     return 28208;
   } else if (name.indexOf("v15s detect submarine") != -1) {
     return 35670;
+  } else if (name.indexOf("dyson") != -1 &&
+  name.indexOf("evo") != -1 &&
+  name.indexOf("hepa") != -1) {
+    return 35666;
+  } else if (name.indexOf("dyson") != -1 &&
+  name.indexOf("вакуумный") != -1 &&
+  name.indexOf("адаптер") != -1) {
+    return 35047;
 
     // Go Pro
   } else if (name.indexOf("hero 10") != -1) {
@@ -457,10 +465,33 @@ export const returnIDOtherBrand = (name) => {
   } else if (name.indexOf("nord ce2 lite 6/128 blue") != -1) {
     return 22813;
   } else if (
-    name.indexOf("nord 3 16/256 tempest gray") != -1 ||
-    name.indexOf("nord 3 16/256 gray") != -1
+    name.indexOf("nord 3") != -1 &&
+    name.indexOf("16/256") != -1 &&
+    (name.indexOf("tempest") != -1 ||
+    name.indexOf("gray") != -1)
   ) {
-    return 22813;
+    return 28140;
+  } else if (
+    name.indexOf("nord 3") != -1 &&
+    name.indexOf("16/256") != -1 &&
+    (name.indexOf("mistry") != -1 ||
+    name.indexOf("green") != -1)
+  ) {
+    return 28141;
+  } else if (
+    name.indexOf("nord 3") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    (name.indexOf("tempest") != -1 ||
+    name.indexOf("gray") != -1)
+  ) {
+    return 28139;
+  } else if (
+    name.indexOf("nord 3") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    (name.indexOf("mistry") != -1 ||
+    name.indexOf("green") != -1)
+  ) {
+    return 28142;
   } else if (name.indexOf("ace 12/256 black") != -1) {
     return 22796;
   } else if (name.indexOf("ace 12/256 blue") != -1) {
@@ -605,6 +636,10 @@ export const returnIDOtherBrand = (name) => {
     return 27854;
   } else if (name.indexOf("nord n20 se 4/128 celestial black") != -1) {
     return 27853;
+  } else if (name.indexOf("nord n20 se 4/64 blue oasis") != -1) {
+    return 23560;
+  } else if (name.indexOf("nord n20 se 4/64 celestial black") != -1) {
+    return 23561;
   } else if (name.indexOf("nord ce3 12/256 aqua") != -1) {
     return 28145;
   } else if (name.indexOf("nord ce3 12/256 gray") != -1) {
@@ -674,6 +709,31 @@ export const returnIDOtherBrand = (name) => {
     return 34457;
   } else if (name.indexOf("oneplus ace 3 16/512 rose gold") != -1) {
     return 34460;
+
+  } else if (
+    name.indexOf("oneplus pad go") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    (name.indexOf("twin") != -1 || 
+    name.indexOf("mint") != -1)) {
+      return 30260;
+    } else if (
+    name.indexOf("oneplus pad go") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    (name.indexOf("twin") != -1 || 
+    name.indexOf("mint") != -1)) {
+      return 30261;
+  } else if (name.indexOf("oneplus pad") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  (name.indexOf("halo") != -1 || 
+  name.indexOf("green") != -1)) {
+    return 30133;
+  } else if (
+  name.indexOf("oneplus pad") != -1 &&
+  name.indexOf("8/128") != -1 &&
+  (name.indexOf("halo") != -1 || 
+  name.indexOf("green") != -1)) {
+    return 27316;
+  
 
     // Google
   } else if (
