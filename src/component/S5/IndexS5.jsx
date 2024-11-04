@@ -3,7 +3,7 @@ import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
 import { baseFixS5 } from "../../helpers/baseFix";
 import { fixNameS5, returnExtraPriceS5, returnNameInArrS5, returnStockPriceS5 } from "./helpers/helpers";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 
 const IndexS5 = ({ el, S5Data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,11 +20,11 @@ const IndexS5 = ({ el, S5Data }) => {
       )
        {
         return (
-          returnIDApple(fixNameS5(S5.name)) !== 'No match' &&
+          returnIDSamsung(fixNameS5(S5.name)) !== 'No match' &&
           returnExtraPriceS5(S5.name) &&
           returnStockPriceS5(S5.name) &&
           resultArr.push({
-            id: returnIDApple(returnNameInArrS5(fixNameS5(S5.name))),
+            id: returnIDSamsung(returnNameInArrS5(fixNameS5(S5.name))),
             name: returnNameInArrS5(fixNameS5(S5.name)),
             extraPrice: returnExtraPriceS5(fixNameS5(S5.name)),
             stockPrice: returnStockPriceS5(fixNameS5(S5.name)),

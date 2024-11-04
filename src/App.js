@@ -1,43 +1,43 @@
 import React, { useState } from "react";
 import { read, utils } from "xlsx";
 import "./App.css";
-import IndexHi from "./component/Hi/IndexHi";
-import IndexHiNotID from "./component/Hi/IndexHiNotID";
-import IndexUnimtrn from "./component/Unimtrn/indexUNIMTRN";
-import IndexUnimtrnNotID from "./component/Unimtrn/indexUNIMTRNNotID";
-import icon from "./source/icon/icon.png";
-import IndexMiHonor from "./component/MiHonor/indexMiHonor";
-import IndexMiHonorNotID from "./component/MiHonor/indexMiHonorNotID copy";
-import IndexVseMi from "./component/VseMi/indexVseMi";
-import IndexVseMiNotID from "./component/VseMi/indexVseMiNotID";
-import IndexSuperPrice from "./component/SuperPrice/indexSuperPrice";
-import IndexSuperPriceNotID from "./component/SuperPrice/indexSuperPriceNotID";
 import AllPrice from "./component/AllPrice/AllPrice";
+import AllPriceWithID from "./component/AllPrice/AllPriceWithID";
+import IndexArti from "./component/Arti/indexArti";
+import IndexArtiNotID from "./component/Arti/indexArtiNotID";
+import IndexBase from "./component/Base/IndexBase";
+import IndexBaseNotID from "./component/Base/IndexBaseNotID";
+import IndexElectrozon from "./component/Electrozon/IndexElectrozon";
+import IndexElectrozonNotID from "./component/Electrozon/IndexElectrozonNotID";
+import IndexF51 from "./component/F51/IndexF51";
+import IndexF51NotID from "./component/F51/IndexF51NotID";
 import IndexGarmin from "./component/Garmin/indexGarmin";
 import IndexGarminNotID from "./component/Garmin/indexGarminNotID";
-import AllPriceWithID from "./component/AllPrice/AllPriceWithID";
-import IndexS5 from "./component/S5/IndexS5";
-import IndexS5NotID from "./component/S5/IndexS5NotID";
+import IndexHi from "./component/Hi/IndexHi";
+import IndexHiNotID from "./component/Hi/IndexHiNotID";
+import IndexMiHonor from "./component/MiHonor/indexMiHonor";
+import IndexNarod from "./component/Narod/IndexNarod";
+import IndexNarodNotID from "./component/Narod/IndexNarodNotID";
+import IndexOther from "./component/Other/IndexOther";
+import IndexOtherNotID from "./component/Other/IndexOtherNotID";
 import IndexRPTrade from "./component/RPTrade/IndexRPTrade";
 import IndexRPTradeNotID from "./component/RPTrade/IndexRPTradeNotID";
 import IndexRacmag from "./component/Racmag/IndexRacmag";
 import IndexRacmagNotID from "./component/Racmag/IndexRacmagNotID";
-import IndexArti from "./component/Arti/indexArti";
-import IndexElectrozon from "./component/Electrozon/IndexElectrozon";
-import IndexElectrozonNotID from "./component/Electrozon/IndexElectrozonNotID";
 import IndexReSale from "./component/ReSale/indexReSale";
 import IndexReSaleNotID from "./component/ReSale/indexReSaleNotID";
-import IndexArtiNotID from "./component/Arti/indexArtiNotID";
+import IndexS5 from "./component/S5/IndexS5";
+import IndexS5NotID from "./component/S5/IndexS5NotID";
+import IndexSuperPrice from "./component/SuperPrice/indexSuperPrice";
+import IndexSuperPriceNotID from "./component/SuperPrice/indexSuperPriceNotID";
 import IndexTagir from "./component/Tagir/IndexTagir";
 import IndexTagirNotID from "./component/Tagir/IndexTagirNotID";
-import IndexNarod from "./component/Narod/IndexNarod";
-import IndexNarodNotID from "./component/Narod/IndexNarodNotID";
-import IndexF51 from "./component/F51/IndexF51";
-import IndexF51NotID from "./component/F51/IndexF51NotID";
-import IndexBase from "./component/Base/IndexBase";
-import IndexBaseNotID from "./component/Base/IndexBaseNotID";
-import IndexOther from "./component/Other/IndexOther";
-import IndexOtherNotID from "./component/Other/IndexOtherNotID";
+import IndexUnimtrn from "./component/Unimtrn/indexUNIMTRN";
+import IndexUnimtrnNotID from "./component/Unimtrn/indexUNIMTRNNotID";
+import IndexVseMi from "./component/VseMi/indexVseMi";
+import IndexVseMiNotID from "./component/VseMi/indexVseMiNotID";
+import icon from "./source/icon/icon.png";
+import IndexMiHonorNotID from "./component/MiHonor/indexMiHonorNotID";
 
 const App = () => {
   const allPrice = [];
@@ -100,13 +100,15 @@ const App = () => {
   });
 
   dataSuperprice.map((superpriceEl) => {
-    superpriceEl.Наименование &&
-      typeof superpriceEl.Наименование === "string" &&
+    (superpriceEl.Наименование || superpriceEl.Название) &&
+      (typeof superpriceEl.Наименование === "string" ||
+        typeof superpriceEl.Название === "string") &&
       superprice.push({
         name: superpriceEl.Наименование || superpriceEl.Название,
         price: superpriceEl.Прайс || superpriceEl.Опт || superpriceEl.Цена,
       });
   });
+  console.log(superprice);
 
   dataGarmin.map((garminEl) => {
     garminEl.Garmin &&
@@ -128,7 +130,6 @@ const App = () => {
       typeof rptradeEl.Наименование === "string" &&
       rptrade.push({ name: rptradeEl.Наименование, price: rptradeEl.Цена });
   });
-  
 
   dataRacmag.map((racmagEl) => {
     racmagEl.Рацмаг &&

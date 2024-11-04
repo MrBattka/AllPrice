@@ -1,8 +1,6 @@
-import { returnIDSamsung } from "./returnIDSamsung";
 
-export const returnIDApple = (nameStock) => {
-  const removeDoubleSpace = nameStock.replace(/\s+/g, " ");
-  const name = removeDoubleSpace.toLowerCase();
+export const returnIDApple = (name) => {
+  
   //  AirPods
   if (name.indexOf("airpods 2") != -1) {
     return 12529;
@@ -418,13 +416,16 @@ export const returnIDApple = (nameStock) => {
     return 11873;
   } else if (name.indexOf("pencil pro") != -1) {
     return 36178;
-  } else if (name.indexOf("magic mouse 2") != -1 &&
-  name.indexOf("gray") != -1) {
+  } else if (
+    name.indexOf("magic mouse 2") != -1 &&
+    name.indexOf("gray") != -1
+  ) {
     return 13769;
-  } else if (name.indexOf("magic mouse 2") != -1 &&
-  name.indexOf("white") != -1) {
+  } else if (
+    name.indexOf("magic mouse 2") != -1 &&
+    name.indexOf("white") != -1
+  ) {
     return 2071;
-
 
     // ipad 9
   } else if (
@@ -4968,6 +4969,6 @@ export const returnIDApple = (nameStock) => {
   } else if (name.indexOf("16 pro max 512 white") != -1) {
     return 36672;
   } else {
-    return returnIDSamsung(name) || "No match";
+    return "No match";
   }
 };

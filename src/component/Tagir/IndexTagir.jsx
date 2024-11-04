@@ -7,7 +7,7 @@ import {
   returnStockPriceTagir,
 } from "./helpers/helpers";
 import { baseFixTagir } from "../../helpers/baseFix";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 
 const IndexTagir = ({ el, tagirData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +22,10 @@ const IndexTagir = ({ el, tagirData }) => {
       isOpen
     ) {
       return (
-        returnIDApple(fixNameTagir(tagir.name)) !== "No match" &&
+        returnIDSamsung(fixNameTagir(tagir.name)) !== "No match" &&
         returnStockPriceTagir(tagir.name) &&
         resultArr.push({
-          id: returnIDApple(returnNameTagir(fixNameTagir(tagir.name))),
+          id: returnIDSamsung(returnNameTagir(fixNameTagir(tagir.name))),
           name: returnNameTagir(fixNameTagir(tagir.name)),
           extraPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
           stockPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),

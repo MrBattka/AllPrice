@@ -3,7 +3,7 @@ import { baseFixArti } from "../../helpers/baseFix";
 import { returnCategoryArti } from "./category/Category";
 import { returnFixNameArti, returnNameArti, returnStockPriceArti } from "./helpers/helpers";
 import style from "./styles.module.css";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 
 const IndexArti = ({ el, artiData }) => {
@@ -20,11 +20,11 @@ const IndexArti = ({ el, artiData }) => {
     )
      {
       return (
-        returnIDApple(returnFixNameArti(arti.name)) !== 'No match' &&
+        returnIDSamsung(returnFixNameArti(arti.name)) !== 'No match' &&
         returnStockPriceArti(arti.name) &&
         returnCategoryArti(arti.name) &&
         resultArr.push({
-          id: returnIDApple(returnNameArti(returnFixNameArti(arti.name))),
+          id: returnIDSamsung(returnNameArti(returnFixNameArti(arti.name))),
           name: returnNameArti(returnFixNameArti(arti.name)),
           extraPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
           stockPrice: returnStockPriceArti(returnFixNameArti(arti.name)),

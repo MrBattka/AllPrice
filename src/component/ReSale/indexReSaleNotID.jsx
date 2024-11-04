@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { baseFixReSale } from "../../helpers/baseFix";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import {
   returnExtraPriceReSale,
   returnExtraPriceResale,
@@ -25,7 +25,7 @@ const IndexReSaleNotID = ({ el, resaleData }) => {
       isOpen
     ) {
       return (
-        returnIDApple(returnFixNameReSale(resale.name)) === "No match" &&
+        returnIDSamsung(returnFixNameReSale(resale.name)) === "No match" &&
         returnExtraPriceReSale(resale.name) &&
         returnStockPriceReSale(resale.name) &&
         returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("А") ==
@@ -34,7 +34,7 @@ const IndexReSaleNotID = ({ el, resaleData }) => {
           "00"
         ) != -1 &&
         resultArr.push({
-          id: returnIDApple(returnNameReSale(returnFixNameReSale(resale.name))),
+          id: returnIDSamsung(returnNameReSale(returnFixNameReSale(resale.name))),
           name: returnNameReSale(returnFixNameReSale(resale.name)),
           extraPrice: returnExtraPriceReSale(returnFixNameReSale(resale.name)),
           stockPrice: returnStockPriceReSale(returnFixNameReSale(resale.name)),

@@ -3,7 +3,7 @@ import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
 import { baseFixNarod } from "../../helpers/baseFix";
 import { fixNameNarod, returnNameNarod, returnStockPriceNarod } from "./helpers/helpers";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 
 const IndexNarod = ({ el, narodData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +18,10 @@ const IndexNarod = ({ el, narodData }) => {
       isOpen
     ) {
       return (
-        returnIDApple(fixNameNarod(narod.name)) !== "No match" &&
+        returnIDSamsung(fixNameNarod(narod.name)) !== "No match" &&
         returnStockPriceNarod(narod.name) &&
         resultArr.push({
-          id: returnIDApple(returnNameNarod(fixNameNarod(narod.name))),
+          id: returnIDSamsung(returnNameNarod(fixNameNarod(narod.name))),
           name: returnNameNarod(fixNameNarod(narod.name)),
           extraPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
           stockPrice: returnStockPriceNarod(fixNameNarod(narod.name)),

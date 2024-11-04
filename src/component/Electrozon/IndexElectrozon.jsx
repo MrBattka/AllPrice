@@ -3,7 +3,7 @@ import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
 import { returnFixNameElectrozon } from "./helpers/helpers";
 import { baseFixElectrozon } from "../../helpers/baseFix";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import { newPrice } from "../../helpers/NewPrice";
 
 const IndexElectrozon = ({ el, electrozonData }) => {
@@ -19,10 +19,10 @@ const IndexElectrozon = ({ el, electrozonData }) => {
       )
        {
         return (
-          returnIDApple(returnFixNameElectrozon(electrozon.name)) !== 'No match' &&
+          returnIDSamsung(returnFixNameElectrozon(electrozon.name)) !== 'No match' &&
           electrozon.price &&
           resultArr.push({
-            id: returnIDApple(returnFixNameElectrozon(electrozon.name)),
+            id: returnIDSamsung(returnFixNameElectrozon(electrozon.name)),
             name: returnFixNameElectrozon(electrozon.name),
             extraPrice: newPrice(electrozon.name, electrozon.price),
             stockPrice: electrozon.price,

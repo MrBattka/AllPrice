@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
 import { returnFixNameBase } from "./helpers/helpers";
@@ -17,11 +17,11 @@ const IndexBase = ({ el, baseData }) => {
       baseFixBase(base)
     ) {
       return (
-        returnIDApple(returnFixNameBase(base.name)) !== "No match" &&
+        returnIDSamsung(returnFixNameBase(base.name)) !== "No match" &&
         base.price &&
         baseFixBase(base) &&
         resultArr.push({
-          id: returnIDApple(returnFixNameBase(base.name)),
+          id: returnIDSamsung(returnFixNameBase(base.name)),
           name: returnFixNameBase(base.name),
           extraPrice: base.extra,
           stockPrice: base.price,

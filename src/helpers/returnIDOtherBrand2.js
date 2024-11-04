@@ -1,4 +1,4 @@
-import { returnIDXiaomi } from "./returnIDXiaomi";
+import { returnIDApple } from "./returnIDApple";
 
 export const returnIDOtherBrand2 = (name) => {
   // PlayStation
@@ -1408,27 +1408,34 @@ export const returnIDOtherBrand2 = (name) => {
   ) {
     return 28181;
   } else if (
-    name.indexOf(
-      "garmin fenix 7x pro sapphire solar titanium with fog gray / ember orange band"
-    ) != -1
+    name.indexOf("fenix 7x pro") != -1 &&
+    name.indexOf("solar") != -1 &&
+    name.indexOf("sapphire") != -1 &&
+    name.indexOf("fog") != -1 &&
+    name.indexOf("orange") != -1
   ) {
     return 28182;
   } else if (
-    name.indexOf(
-      "garmin fenix 7x pro solar edition (no wi-fi) slate gray with black band"
-    ) != -1
+    name.indexOf("fenix 7x pro") != -1 &&
+    name.indexOf("solar") != -1 &&
+    name.indexOf("no wi-fi") != -1 &&
+    name.indexOf("gray") != -1 &&
+    name.indexOf("black") != -1
   ) {
     return 35809;
   } else if (
-    name.indexOf(
-      "garmin fenix 7x pro solar edition slate gray with black band"
-    ) != -1
+    name.indexOf("fenix 7x pro") != -1 &&
+    name.indexOf("solar") != -1 &&
+    name.indexOf("gray") != -1 &&
+    name.indexOf("black") != -1
   ) {
     return 35810;
   } else if (
-    name.indexOf(
-      "garmin fenix 7x sapphire solar black dlc titanium / black band"
-    ) != -1
+    name.indexOf("fenix 7x pro") != -1 &&
+    name.indexOf("solar") != -1 &&
+    name.indexOf("sapphire") != -1 &&
+    name.indexOf("black dlc") != -1 &&
+    name.indexOf("black") != -1
   ) {
     return 24834;
   } else if (
@@ -2389,6 +2396,6 @@ export const returnIDOtherBrand2 = (name) => {
   ) {
     return 26204;
   } else {
-    return returnIDXiaomi(name) || "No match";
+    return returnIDApple(name) || "No match";
   }
 };

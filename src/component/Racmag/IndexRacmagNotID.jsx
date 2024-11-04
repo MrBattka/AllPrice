@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import style from "./styles.module.css";
 import { baseFixRacmag } from "../../helpers/baseFix";
 import { returnExtraPriceRacmag, returnFixNameRacmag, returnNameInArrRacmag, returnStockPriceRacmag } from "./helpers/helpers";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 
 const IndexRacmagNotID = ({ el, racmagData }) => {
@@ -20,10 +20,10 @@ const IndexRacmagNotID = ({ el, racmagData }) => {
       )
        {
         return (
-          returnIDApple(returnFixNameRacmag(racmag.name)) === 'No match' &&
+          returnIDSamsung(returnFixNameRacmag(racmag.name)) === 'No match' &&
           returnStockPriceRacmag(racmag.name) &&
           resultArr.push({
-            id: returnIDApple(returnNameInArrRacmag(returnFixNameRacmag(racmag.name))),
+            id: returnIDSamsung(returnNameInArrRacmag(returnFixNameRacmag(racmag.name))),
             name: returnNameInArrRacmag(returnFixNameRacmag(racmag.name)),
             extraPrice: returnExtraPriceRacmag(returnFixNameRacmag(racmag.name)),
             stockPrice: returnStockPriceRacmag(returnFixNameRacmag(racmag.name)),

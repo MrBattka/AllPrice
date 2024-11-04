@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnExtraPriceOther, returnFixNameOther, returnNameInArrOther, returnStockPriceOther } from "./helpers/helpers";
 import style from "./styles.module.css";
@@ -18,10 +18,10 @@ const IndexOtherNotID = ({ el, otherData }) => {
       )
        {
         return (
-          returnIDApple(returnFixNameOther(other.name)) === 'No match' &&
+          returnIDSamsung(returnFixNameOther(other.name)) === 'No match' &&
           returnStockPriceOther(other.name) &&
           resultArr.push({
-            id: returnIDApple(returnNameInArrOther(returnFixNameOther(other.name))),
+            id: returnIDSamsung(returnNameInArrOther(returnFixNameOther(other.name))),
             name: returnNameInArrOther(returnFixNameOther(other.name)),
             extraPrice: returnExtraPriceOther(returnFixNameOther(other.name)),
             stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),

@@ -3,7 +3,7 @@ import { newPrice } from "../../helpers/NewPrice";
 import { returnFixNameRPTrade } from "./helpers/helpers";
 import style from "./styles.module.css";
 import { baseFixRPTrade } from "../../helpers/baseFix";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 
 const IndexRPTradeNotID = ({ el, rptradeData }) => {
@@ -19,10 +19,10 @@ const IndexRPTradeNotID = ({ el, rptradeData }) => {
       )
        {
         return (
-          returnIDApple(returnFixNameRPTrade(rptrade.name)) === 'No match' &&
+          returnIDSamsung(returnFixNameRPTrade(rptrade.name)) === 'No match' &&
           rptrade.price &&
           resultArr.push({
-            id: returnIDApple(returnFixNameRPTrade(rptrade.name)),
+            id: returnIDSamsung(returnFixNameRPTrade(rptrade.name)),
             name: returnFixNameRPTrade(rptrade.name),
             extraPrice: newPrice(rptrade.name, rptrade.price),
             stockPrice: rptrade.price,

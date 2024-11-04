@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
 import { baseFixF51 } from "../../helpers/baseFix";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import { returnNameF51 } from "./helpers/helpers";
 
 const IndexF51 = ({ el, f51Data }) => {
@@ -13,10 +13,10 @@ const IndexF51 = ({ el, f51Data }) => {
     baseFixF51(f51) && returnNameF51(f51.name);
     if (f51.name && typeof f51.name === "string" && baseFixF51(f51) && isOpen) {
       return (
-        returnIDApple(returnNameF51(f51.name)) !== "No match" &&
+        returnIDSamsung(returnNameF51(f51.name)) !== "No match" &&
         f51.price &&
         resultArr.push({
-          id: returnIDApple(returnNameF51(f51.name)),
+          id: returnIDSamsung(returnNameF51(f51.name)),
           name: returnNameF51(f51.name),
           extraPrice: f51.price,
           stockPrice: f51.price,

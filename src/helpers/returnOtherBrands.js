@@ -257,14 +257,395 @@ export const returnIDOtherBrand = (name) => {
     return 28208;
   } else if (name.indexOf("v15s detect submarine") != -1) {
     return 35670;
-  } else if (name.indexOf("dyson") != -1 &&
-  name.indexOf("evo") != -1 &&
-  name.indexOf("hepa") != -1) {
+  } else if (
+    name.indexOf("dyson") != -1 &&
+    name.indexOf("evo") != -1 &&
+    name.indexOf("hepa") != -1
+  ) {
     return 35666;
-  } else if (name.indexOf("dyson") != -1 &&
-  name.indexOf("вакуумный") != -1 &&
-  name.indexOf("адаптер") != -1) {
+  } else if (
+    name.indexOf("dyson") != -1 &&
+    name.indexOf("вакуумный") != -1 &&
+    name.indexOf("адаптер") != -1
+  ) {
     return 35047;
+  } else if (
+    name.indexOf("dyson corrale в чехле и с расческами цвет фуксия") != -1
+  ) {
+    return 35048;
+  } else if (name.indexOf("dyson corrale в чехле цвет медный") != -1) {
+    return 35049;
+  } else if (name.indexOf("dyson corrale в чехле цвет никель/фуксия") != -1) {
+    return 35050;
+  } else if (name.indexOf("dyson corrale в чехле цвет пурпурный") != -1) {
+    return 35051;
+  } else if (
+    name.indexOf("dyson corrale с чехлом и кейсом цвет красный") != -1
+  ) {
+    return 35052;
+  } else if (
+    name.indexOf(
+      "dyson corrale с чехлом, кейсом и расческами цвет берлинская лазурь/медный"
+    ) != -1
+  ) {
+    return 35053;
+  } else if (
+    name.indexOf(
+      "dyson corrale с чехлом, кейсом и расческами цвет vinca blue и rose"
+    ) != -1
+  ) {
+    return 35685;
+  } else if (name.indexOf("dyson corrale стальной/фуксия") != -1) {
+    return 27083;
+  } else if (name.indexOf("dyson corrale цвет фуксия") != -1) {
+    return 35056;
+  } else if (
+    name.indexOf("dyson corrale c чехлом профессиональная версия") != -1
+  ) {
+    return 35057;
+  } else if (name.indexOf("dyson solarcycle morph белый/серебристый") != -1) {
+    return 27084;
+  } else if (name.indexOf("dyson solarcycle morph черный") != -1) {
+    return 27085;
+  } else if (name.indexOf("dyson hp05 pure hot + cool") != -1) {
+    return 27086;
+  } else if (name.indexOf("dyson gen5detect") != -1) {
+    return 28207;
+  } else if (name.indexOf("dyson gen5detect absolute") != -1) {
+    return 28208;
+  } else if (name.indexOf("dyson gen5outsize") != -1) {
+    return 28205;
+  } else if (name.indexOf("dyson gen5outsize absolute") != -1) {
+    return 28206;
+  } else if (name.indexOf("dyson omni-glide") != -1) {
+    return 28198;
+  } else if (name.indexOf("dyson outsize") != -1) {
+    return 28201;
+  } else if (name.indexOf("dyson v10 absolute cordless vacuum cleaner") != -1) {
+    return 27103;
+  } else if (
+    name.indexOf("dyson v10 cyclone parquet серый (станция и 5 насадок)") != -1
+  ) {
+    return 35672;
+  } else if (
+    name.indexOf("dyson v10 cyclone total clean серый (станция и 8 насадок)") !=
+    -1
+  ) {
+    return 35674;
+  } else if (
+    name.indexOf(
+      "dyson v11 absolute беспроводной синий (станция и 7 насадок)"
+    ) != -1
+  ) {
+    return 35671;
+  } else if (name.indexOf("dyson v11 absolute extra") != -1) {
+    return 28204;
+  } else if (
+    name.indexOf("dyson v11 absolute pro золотистый (станция и 9 насадок)") !=
+    -1
+  ) {
+    return 35673;
+  } else if (name.indexOf("dyson v12 detect slim") != -1) {
+    return 28199;
+  } else if (name.indexOf("dyson v12 detect slim absolute") != -1) {
+    return 28200;
+  } else if (name.indexOf("dyson v12 vacuum cleaner detech slim") != -1) {
+    return 27102;
+  } else if (name.indexOf("dyson v15 detect") != -1) {
+    return 28203;
+  } else if (name.indexOf("dyson v15 detect absolute") != -1) {
+    return 28202;
+  } else if (name.indexOf("dyson v15 detect absolute yellow/nickel") != -1) {
+    return 35670;
+  } else if (name.indexOf("dyson v15 s sv47 detect submarine") != -1) {
+    return 34432;
+  } else if (name.indexOf("dyson v15 vacuum absolute") != -1) {
+    return 27101;
+  } else if (name.indexOf("dyson v8 absolute vacuum") != -1) {
+    return 27100;
+  } else if (name.indexOf("dyson v8 motorhead") != -1) {
+    return 27082;
+  } else if (name.indexOf("робот dyson 360 vis nav") != -1) {
+    return 28195;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs01 complete blue/copper (берлинская лазурь) с дорожным чехлом"
+    ) != -1
+  ) {
+    return 35041;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs01 complete blue/copper (берлинская лазурь) с дорожным чехлом и расческами"
+    ) != -1
+  ) {
+    return 35042;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs01 complete nickel/copper (никель/медный) для разных типов волос с набором фирменных чехлов"
+    ) != -1
+  ) {
+    return 35062;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs01 complete nickel/fuchsia (никель/фуксия) для длинных волос"
+    ) != -1
+  ) {
+    return 35061;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs01 complete nickel/fuchsia (никель/фуксия) для объема и формы"
+    ) != -1
+  ) {
+    return 35063;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs01 complete nickel/fuchsia (никель/фуксия) для разных типов волос"
+    ) != -1
+  ) {
+    return 35040;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs01 complete nickel/fuchsia (никель/фуксия) для разных типов волос с дорожным чехлом"
+    ) != -1
+  ) {
+    return 35043;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs01 complete nickel/purple (пурпурный) для разных типов волос"
+    ) != -1
+  ) {
+    return 35060;
+  } else if (
+    name.indexOf("dyson airwrap hs01 complete nickel/red (никель/красный)") !=
+    -1
+  ) {
+    return 35064;
+  } else if (
+    name.indexOf("dyson airwrap hs05 complete long ceramic pop с кейсом") != -1
+  ) {
+    return 34764;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs05 complete long fuchsia/nickel (фуксия/никель) с кейсом"
+    ) != -1
+  ) {
+    return 35045;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs05 complete long nickel/copper (никель/медный)"
+    ) != -1
+  ) {
+    return 27088;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs05 complete long nickel/copper (никель/медный) с кейсом"
+    ) != -1
+  ) {
+    return 35044;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs05 complete long prussian blue/copper (берлинская лазурь/медь)"
+    ) != -1
+  ) {
+    return 27089;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs05 complete long prussian blue/copper (берлинская лазурь/медь) с кейсом"
+    ) != -1
+  ) {
+    return 35046;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs05 complete long topaz orange с кейсом и дорожным чехлом"
+    ) != -1
+  ) {
+    return 34763;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs05 complete long vinca blue/rose (синий/розовый)"
+    ) != -1
+  ) {
+    return 27087;
+  } else if (
+    name.indexOf(
+      "dyson airwrap hs05 complete long vinca blue/rose (синий/розовый) с дорожным чехлом, кейсом и расческами для длинных волос"
+    ) != -1
+  ) {
+    return 35065;
+  } else if (name.indexOf("dyson airblade v ab 12 nickel") != -1) {
+    return 27091;
+  } else if (name.indexOf("dyson airblade v hu02 белая") != -1) {
+    return 27092;
+  } else if (name.indexOf("dyson humidifier ph04 wt/gd") != -1) {
+    return 27107;
+  } else if (name.indexOf("dyson hd01 белый с чехлом для хранения") != -1) {
+    return 34759;
+  } else if (name.indexOf("dyson hd01 сиреневый с чехлом для хранения") != -1) {
+    return 34760;
+  } else if (name.indexOf("dyson hd01 фуксия без чехла") != -1) {
+    return 34758;
+  } else if (name.indexOf("dyson hd01 фуксия с чехлом для хранения") != -1) {
+    return 34761;
+  } else if (
+    name.indexOf("dyson hd01 черный/серебристый с 5 насадками") != -1
+  ) {
+    return 34762;
+  } else if (
+    name.indexOf("dyson supersonic hd03 с 4 насадками в дорожном чехле") != -1
+  ) {
+    return 34753;
+  } else if (
+    name.indexOf("dyson supersonic hd03 с 4 насадками в чехле") != -1
+  ) {
+    return 34752;
+  } else if (
+    name.indexOf("dyson supersonic hd03 с 4 насадками и подставкой") != -1
+  ) {
+    return 34756;
+  } else if (
+    name.indexOf("dyson supersonic hd03 с 4 насадками и расческами") != -1
+  ) {
+    return 34754;
+  } else if (
+    name.indexOf("dyson supersonic hd03 фуксия с 2 фирменными расческами") != -1
+  ) {
+    return 34755;
+  } else if (name.indexOf("dyson supersonic hd03 черный /никель") != -1) {
+    return 27093;
+  } else if (
+    name.indexOf(
+      "dyson supersonic hd03 черный с дорожным чехлом и 4 насадками"
+    ) != -1
+  ) {
+    return 34757;
+  } else if (name.indexOf("dyson supersonic hd07 белый с 5 насадками") != -1) {
+    return 34748;
+  } else if (
+    name.indexOf(
+      "dyson supersonic hd07 белый с 5 насадками и дорожным чехлом"
+    ) != -1
+  ) {
+    return 34747;
+  } else if (
+    name.indexOf(
+      "dyson supersonic hd07 берлинская лазурь/медный) с 5 насадками в чехле и расческами"
+    ) != -1
+  ) {
+    return 34744;
+  } else if (
+    name.indexOf(
+      "dyson supersonic hd07 красный с 5 насадками и дорожным чехлом"
+    ) != -1
+  ) {
+    return 34743;
+  } else if (
+    name.indexOf(
+      "dyson supersonic hd07 с 5 насадками в дорожном чехле и расческами"
+    ) != -1
+  ) {
+    return 34749;
+  } else if (
+    name.indexOf("dyson supersonic hd07 с 5 насадками и подставкой") != -1
+  ) {
+    return 34750;
+  } else if (
+    name.indexOf("dyson supersonic hd07 с 5 насадками и расческами") != -1
+  ) {
+    return 34751;
+  } else if (
+    name.indexOf(
+      "dyson supersonic hd07 синий/медный с 5 насадками в чехле и расческами"
+    ) != -1
+  ) {
+    return 34745;
+  } else if (name.indexOf("dyson supersonic hd07 стальной/фуксия") != -1) {
+    return 27094;
+  } else if (name.indexOf("dyson supersonic hd07 темно-синий/розовый") != -1) {
+    return 27106;
+  } else if (
+    name.indexOf(
+      "dyson supersonic hd07 черный/серебристый с 5 насадками и дорожным чехлом"
+    ) != -1
+  ) {
+    return 34746;
+  } else if (name.indexOf("dyson supersonic hd08 медный") != -1) {
+    return 27098;
+  } else if (
+    name.indexOf("dyson supersonic hd08 прусский синий/насыщенная медь") != -1
+  ) {
+    return 27095;
+  } else if (name.indexOf("dyson supersonic hd08 розовый") != -1) {
+    return 27097;
+  } else if (
+    name.indexOf("dyson supersonic hd08 limited edition прусский синий") != -1
+  ) {
+    return 27090;
+  } else if (
+    name.indexOf("dyson supersonic hd08 limited edition синий/розовый") != -1
+  ) {
+    return 27099;
+  } else if (
+    name.indexOf("dyson supersonic hd12 professional salon edition серый") != -1
+  ) {
+    return 27096;
+  } else if (
+    name.indexOf("dyson supersonic hd15 красный с 4 насадками в чехле") != -1
+  ) {
+    return 34742;
+  } else if (
+    name.indexOf("dyson supersonic hd15 ceramic pop с 4 насадками") != -1
+  ) {
+    return 34741;
+  } else if (
+    name.indexOf("dyson supersonic hd15 topaz orange с 4 насадками") != -1
+  ) {
+    return 34740;
+  } else if (name.indexOf("dyson air purifier tp09") != -1) {
+    return 27108;
+  } else if (name.indexOf("dyson am10 воздуха цвет металлик") != -1) {
+    return 35664;
+  } else if (name.indexOf("dyson ball animal 2") != -1) {
+    return 28196;
+  } else if (name.indexOf("dyson ball animal 3") != -1) {
+    return 28197;
+  } else if (name.indexOf("dyson bp01 pure cool me цвет металлик") != -1) {
+    return 35659;
+  } else if (name.indexOf("dyson cinetic big ball multi floor 2") != -1) {
+    return 27081;
+  } else if (
+    name.indexOf(
+      "dyson combi сменный стеклянный фильтр для очистителя воздуха"
+    ) != -1
+  ) {
+    return 35665;
+  } else if (
+    name.indexOf(
+      "dyson coralle hair straightner синий / розовый подарочный набор"
+    ) != -1
+  ) {
+    return 27104;
+  } else if (name.indexOf("dyson filter for all ") != -1) {
+    return 27105;
+  } else if (name.indexOf("dyson hp05 pure hot cool цвет металлик") != -1) {
+    return 35660;
+  } else if (
+    name.indexOf(
+      "dyson pure hot + cool link hp02 нагреватель-очиститель черный/никель"
+    ) != -1
+  ) {
+    return 35663;
+  } else if (
+    name.indexOf(
+      "dyson pure hot cool hp01 очищающий нагреватель вентилятор белый/серебристый"
+    ) != -1
+  ) {
+    return 35661;
+  } else if (
+    name.indexOf(
+      "dyson purifier hot cool очищающий тепловентилятор белый/серебристый"
+    ) != -1
+  ) {
+    return 35662;
 
     // Go Pro
   } else if (name.indexOf("hero 10") != -1) {
@@ -467,29 +848,25 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("nord 3") != -1 &&
     name.indexOf("16/256") != -1 &&
-    (name.indexOf("tempest") != -1 ||
-    name.indexOf("gray") != -1)
+    (name.indexOf("tempest") != -1 || name.indexOf("gray") != -1)
   ) {
     return 28140;
   } else if (
     name.indexOf("nord 3") != -1 &&
     name.indexOf("16/256") != -1 &&
-    (name.indexOf("mistry") != -1 ||
-    name.indexOf("green") != -1)
+    (name.indexOf("mistry") != -1 || name.indexOf("green") != -1)
   ) {
     return 28141;
   } else if (
     name.indexOf("nord 3") != -1 &&
     name.indexOf("8/128") != -1 &&
-    (name.indexOf("tempest") != -1 ||
-    name.indexOf("gray") != -1)
+    (name.indexOf("tempest") != -1 || name.indexOf("gray") != -1)
   ) {
     return 28139;
   } else if (
     name.indexOf("nord 3") != -1 &&
     name.indexOf("8/128") != -1 &&
-    (name.indexOf("mistry") != -1 ||
-    name.indexOf("green") != -1)
+    (name.indexOf("mistry") != -1 || name.indexOf("green") != -1)
   ) {
     return 28142;
   } else if (name.indexOf("ace 12/256 black") != -1) {
@@ -709,31 +1086,30 @@ export const returnIDOtherBrand = (name) => {
     return 34457;
   } else if (name.indexOf("oneplus ace 3 16/512 rose gold") != -1) {
     return 34460;
-
   } else if (
     name.indexOf("oneplus pad go") != -1 &&
     name.indexOf("8/128") != -1 &&
-    (name.indexOf("twin") != -1 || 
-    name.indexOf("mint") != -1)) {
-      return 30260;
-    } else if (
+    (name.indexOf("twin") != -1 || name.indexOf("mint") != -1)
+  ) {
+    return 30260;
+  } else if (
     name.indexOf("oneplus pad go") != -1 &&
     name.indexOf("8/256") != -1 &&
-    (name.indexOf("twin") != -1 || 
-    name.indexOf("mint") != -1)) {
-      return 30261;
-  } else if (name.indexOf("oneplus pad") != -1 &&
-  name.indexOf("12/256") != -1 &&
-  (name.indexOf("halo") != -1 || 
-  name.indexOf("green") != -1)) {
+    (name.indexOf("twin") != -1 || name.indexOf("mint") != -1)
+  ) {
+    return 30261;
+  } else if (
+    name.indexOf("oneplus pad") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    (name.indexOf("halo") != -1 || name.indexOf("green") != -1)
+  ) {
     return 30133;
   } else if (
-  name.indexOf("oneplus pad") != -1 &&
-  name.indexOf("8/128") != -1 &&
-  (name.indexOf("halo") != -1 || 
-  name.indexOf("green") != -1)) {
+    name.indexOf("oneplus pad") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    (name.indexOf("halo") != -1 || name.indexOf("green") != -1)
+  ) {
     return 27316;
-  
 
     // Google
   } else if (

@@ -1,6 +1,8 @@
-import { returnIDOtherBrand } from "./returnOtherBrands";
+import { returnIDXiaomi } from "./returnIDXiaomi";
 
-export const returnIDSamsung = (name) => {
+export const returnIDSamsung = (nameStock) => {
+  const removeDoubleSpace = nameStock.replace(/\s+/g, " ");
+  const name = removeDoubleSpace.toLowerCase();
   if (
     name.indexOf("a05 ") != -1 &&
     name.indexOf("4/128") != -1 &&
@@ -3767,6 +3769,6 @@ export const returnIDSamsung = (name) => {
   } else if (name.indexOf("buds 3 silver") != -1) {
     return 36532;
   } else {
-    return returnIDOtherBrand(name) || "No match";
+    return returnIDXiaomi(name) || "No match";
   }
 };

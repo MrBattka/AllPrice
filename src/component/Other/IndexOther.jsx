@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import {
   returnExtraPriceOther,
@@ -18,10 +18,10 @@ const IndexOther = ({ el, otherData }) => {
     returnExtraPriceOther(returnFixNameOther(other.name));
     if (other.name && typeof other.name === "string" && isOpen) {
       return (
-        returnIDApple(returnFixNameOther(other.name)) !== "No match" &&
+        returnIDSamsung(returnFixNameOther(other.name)) !== "No match" &&
         returnStockPriceOther(returnFixNameOther(other.name)) &&
         resultArr.push({
-          id: returnIDApple(
+          id: returnIDSamsung(
             returnFixNameOther(other.name)
           ),
           name: returnNameInArrOther(returnFixNameOther(other.name)),

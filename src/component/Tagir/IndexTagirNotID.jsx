@@ -3,7 +3,7 @@ import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
 import { fixNameTagir, returnNameTagir, returnStockPriceTagir } from "./helpers/helpers";
 import { baseFixTagir } from "../../helpers/baseFix";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 
 const IndexTagirNotID = ({ el, tagirData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +19,10 @@ const IndexTagirNotID = ({ el, tagirData }) => {
       )
        {
         return (
-          returnIDApple(fixNameTagir(tagir.name)) === 'No match' &&
+          returnIDSamsung(fixNameTagir(tagir.name)) === 'No match' &&
           returnStockPriceTagir(tagir.name) &&
           resultArr.push({
-            id: returnIDApple(returnNameTagir(fixNameTagir(tagir.name))),
+            id: returnIDSamsung(returnNameTagir(fixNameTagir(tagir.name))),
             name: returnNameTagir(fixNameTagir(tagir.name)),
             extraPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
             stockPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),

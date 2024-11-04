@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { baseFixHi } from "../../helpers/baseFix";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnAppleHi } from "./Apple/apple";
 import { returnDysonHi } from "./Dyson/dyson";
@@ -34,11 +34,11 @@ const IndexHi = ({ el, hi }) => {
         returnDysonHi(hi.name))
     ) {
       return (
-        returnIDApple(fixNameHi(hi.name)) !== 'No match' &&
+        returnIDSamsung(fixNameHi(hi.name)) !== 'No match' &&
         returnExtraPriceHi(hi.name) &&
         returnStockPriceHi(hi.name) &&
         resultArr.push({
-          id: returnIDApple(fixNameHi(hi.name)),
+          id: returnIDSamsung(fixNameHi(hi.name)),
           name: returnNameInArrHi(fixNameHi(hi.name)),
           extraPrice: returnExtraPriceHi(hi.name),
           stockPrice: returnStockPriceHi(hi.name),

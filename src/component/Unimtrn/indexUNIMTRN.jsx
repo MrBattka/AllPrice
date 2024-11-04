@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { baseFix } from "../../helpers/baseFix";
 import { returnFixPrice } from "../../helpers/fixPrice";
 import { newPrice } from "../../helpers/NewPrice";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnApple } from "./Apple/apple";
 import { returnDyson } from "./Dyson/dyson";
@@ -20,7 +20,7 @@ const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
   el.map((unimtrn) => {
     if (
       unimtrn.Товар &&
-      returnIDApple(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !== 'No match' &&
+      returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !== 'No match' &&
       isOpen &&
       baseFix(unimtrn) &&
       (returnApple(unimtrn) ||
@@ -31,7 +31,7 @@ const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
         returnOtherProduct(unimtrn))
     ) {
       resultArr.push({
-        id: returnIDApple(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
+        id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
         name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
         extraPrice: newPrice(unimtrn.Товар, unimtrn.Стоимость || unimtrn.Cтоимость),
         stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость,

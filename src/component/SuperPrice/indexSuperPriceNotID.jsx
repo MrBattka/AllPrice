@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { baseFixSuperPrice } from "../../helpers/baseFix";
 import { newPrice } from "../../helpers/NewPrice";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { fixNameSuperPrice } from "./helpers/helpers";
 import style from "./styles.module.css";
@@ -19,11 +19,11 @@ const IndexSuperPriceNotID = ({ el, superpriceData }) => {
     )
      {
       return (
-        returnIDApple(fixNameSuperPrice(superprice.name)) === 'No match' &&
+        returnIDSamsung(fixNameSuperPrice(superprice.name)) === 'No match' &&
         newPrice(superprice.name, superprice.price) &&
         superprice.price &&
         resultArr.push({
-          id: returnIDApple(fixNameSuperPrice(superprice.name)),
+          id: returnIDSamsung(fixNameSuperPrice(superprice.name)),
           name: fixNameSuperPrice(superprice.name),
           extraPrice: newPrice(fixNameSuperPrice(superprice.name), superprice.price),
           stockPrice: superprice.price,
