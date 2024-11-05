@@ -1,35 +1,39 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
+import { baseFixDiscount } from "../../helpers/baseFix";
+import {
+  returnFixNameDiscount,
+  returnNameInArrDiscount,
+  returnStockPriceDiscount,
+} from "./helpers/helpers";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 
 const IndexDiscount = ({ el, discountData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
-    // racmagData.map((racmag) => {
-    //   baseFixRacmag(racmag) && returnStockPriceRacmag(returnFixNameRacmag(racmag.name));
-    //   baseFixRacmag(racmag) && returnExtraPriceRacmag(returnFixNameRacmag(racmag.name));
-    //   if (
-    //     racmag.name &&
-    //     typeof racmag.name === "string" &&
-    //     baseFixRacmag(racmag) &&
-    //     isOpen
-    //   )
-    //    {
-    //     return (
-    //       returnIDSamsung(returnFixNameRacmag(racmag.name)) !== 'No match' &&
-    //       returnStockPriceRacmag(racmag.name) &&
-    //       resultArr.push({
-    //         id: returnIDSamsung(returnNameInArrRacmag(returnFixNameRacmag(racmag.name))),
-    //         name: returnNameInArrRacmag(returnFixNameRacmag(racmag.name)),
-    //         extraPrice: returnExtraPriceRacmag(returnFixNameRacmag(racmag.name)),
-    //         stockPrice: returnStockPriceRacmag(returnFixNameRacmag(racmag.name)),
-    //         provider: "Рацмаг",
-    //       })
-    //     );
-    //   }
-    // });
-    
+  discountData.map((discount) => {
+    baseFixDiscount(discount) && returnStockPriceDiscount(returnFixNameDiscount(discount.name));
+    if (
+      discount.name &&
+      typeof discount.name === "string" &&
+      baseFixDiscount(discount) &&
+      isOpen
+    )
+     {
+      return (
+        returnIDSamsung(returnFixNameDiscount(discount.name)) !== 'No match' &&
+        returnStockPriceDiscount(discount.name) &&
+        resultArr.push({
+          id: returnIDSamsung(returnNameInArrDiscount(returnFixNameDiscount(discount.name))),
+          name: returnNameInArrDiscount(returnFixNameDiscount(discount.name)),
+          stockPrice: returnStockPriceDiscount(returnFixNameDiscount(discount.name)),
+          provider: "Discount",
+        })
+      );
+    }
+  });
 
   return (
     <div>
@@ -43,10 +47,7 @@ const IndexDiscount = ({ el, discountData }) => {
 
       {isOpen && (
         <div className={style.row}>
-          {/* <BasicTable resultArr={resultArr} /> */}
-          {discountData.map((dis) => (
-            <div>{dis.name}</div>
-          ))}
+          <BasicTable resultArr={resultArr} />
         </div>
       )}
     </div>

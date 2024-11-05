@@ -39,6 +39,7 @@ import IndexVseMiNotID from "./component/VseMi/indexVseMiNotID";
 import icon from "./source/icon/icon.png";
 import IndexMiHonorNotID from "./component/MiHonor/indexMiHonorNotID";
 import IndexDiscount from "./component/Discount/IndexDiscount";
+import IndexDiscountNotID from "./component/Discount/IndexDiscountNotID";
 
 const App = () => {
   const allPrice = [];
@@ -256,8 +257,8 @@ const App = () => {
           setDataNarod(rowNarod);
           const rowF51 = utils.sheet_to_json(wb.Sheets[sheets[14]]);
           setDataF51(rowF51);
-          // const rowDiscount = utils.sheet_to_json(wb.Sheets[sheets[15]]);
-          // setDataDiscount(rowDiscount);
+          const rowDiscount = utils.sheet_to_json(wb.Sheets[sheets[15]]);
+          setDataDiscount(rowDiscount);
           const rowBase = utils.sheet_to_json(wb.Sheets[sheets[15]]);
           setDataBase(rowBase);
           const rowOther = utils.sheet_to_json(wb.Sheets[sheets[16]]);
@@ -299,8 +300,6 @@ const App = () => {
         </div>
       </div>
       <div className="wrapper_cat">
-        {/* Discount */}
-        {/* <IndexDiscount el={dataDiscount} discountData={discount} /> */}
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
@@ -350,6 +349,9 @@ const App = () => {
         {/* F51 */}
         <IndexF51 el={dataF51} f51Data={f51} />
         <IndexF51NotID el={dataF51} f51Data={f51} />
+        {/* Discount */}
+        <IndexDiscount el={dataDiscount} discountData={discount} />
+        <IndexDiscountNotID el={dataDiscount} discountData={discount} />
         {/* Base */}
         <IndexBase el={dataBase} baseData={deleteDoubleProduct} />
         <IndexBaseNotID el={dataBase} baseData={deleteDoubleProduct} />
@@ -374,6 +376,7 @@ const App = () => {
           tagirData={tagir}
           narodData={narod}
           f51Data={f51}
+          discountData={discount}
           baseData={deleteDoubleProduct}
           otherData={other}
         />
@@ -394,6 +397,7 @@ const App = () => {
           tagirData={tagir}
           narodData={narod}
           f51Data={f51}
+          discountData={discount}
           baseData={deleteDoubleProduct}
           otherData={other}
         />

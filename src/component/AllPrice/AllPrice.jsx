@@ -3,6 +3,7 @@ import {
   baseFix,
   baseFixArti,
   baseFixBase,
+  baseFixDiscount,
   baseFixElectrozon,
   baseFixF51,
   baseFixGarmin,
@@ -105,6 +106,11 @@ import {
   returnStockPriceOther,
 } from "../Other/helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import {
+  returnFixNameDiscount,
+  returnNameInArrDiscount,
+  returnStockPriceDiscount,
+} from "../Discount/helpers/helpers";
 
 const AllPrice = ({
   dataSuperprice,
@@ -124,6 +130,7 @@ const AllPrice = ({
   f51Data,
   baseData,
   otherData,
+  discountData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -406,7 +413,9 @@ const AllPrice = ({
           "00"
         ) != -1 &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameReSale(returnFixNameReSale(resale.name))),
+          id: returnIDSamsung(
+            returnNameReSale(returnFixNameReSale(resale.name))
+          ),
           name: returnNameReSale(returnFixNameReSale(resale.name)),
           extraPrice: returnExtraPriceReSale(returnFixNameReSale(resale.name)),
           stockPrice: returnStockPriceReSale(returnFixNameReSale(resale.name)),
@@ -472,6 +481,32 @@ const AllPrice = ({
           extraPrice: f51.price,
           stockPrice: f51.price,
           provider: "F51",
+        })
+      );
+    }
+  });
+
+  discountData.map((discount) => {
+    baseFixDiscount(discount) &&
+      returnStockPriceDiscount(returnFixNameDiscount(discount.name));
+    if (
+      discount.name &&
+      typeof discount.name === "string" &&
+      baseFixDiscount(discount) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameDiscount(discount.name)) !== "No match" &&
+        returnStockPriceDiscount(discount.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrDiscount(returnFixNameDiscount(discount.name))
+          ),
+          name: returnNameInArrDiscount(returnFixNameDiscount(discount.name)),
+          stockPrice: returnStockPriceDiscount(
+            returnFixNameDiscount(discount.name)
+          ),
+          provider: "Discount",
         })
       );
     }

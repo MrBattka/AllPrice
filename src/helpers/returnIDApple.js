@@ -110,7 +110,8 @@ export const returnIDApple = (name) => {
     return 18981;
   } else if (
     name.indexOf("airpods max silver") != -1 ||
-    name.indexOf("airpods max silver") != -1
+    name.indexOf("airpods max silver") != -1 ||
+    name.indexOf("airpods max white") != -1
   ) {
     return 18978;
   } else if (
@@ -920,7 +921,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 1tb ") != -1 &&
-    name.indexOf("silvet") != -1 &&
+    name.indexOf("silver") != -1 &&
     name.indexOf("wi-fi") != -1 &&
     name.indexOf("nano") != -1
   ) {
@@ -938,7 +939,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 1tb ") != -1 &&
-    name.indexOf("silvet") != -1 &&
+    name.indexOf("silver") != -1 &&
     name.indexOf("lte") != -1 &&
     name.indexOf("nano") != -1
   ) {
@@ -956,7 +957,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 2tb ") != -1 &&
-    name.indexOf("silvet") != -1 &&
+    name.indexOf("silver") != -1 &&
     name.indexOf("wi-fi") != -1 &&
     name.indexOf("nano") != -1
   ) {
@@ -974,7 +975,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 2tb ") != -1 &&
-    name.indexOf("silvet") != -1 &&
+    name.indexOf("silver") != -1 &&
     name.indexOf("lte") != -1 &&
     name.indexOf("nano") != -1
   ) {
@@ -1024,7 +1025,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 2tb ") != -1 &&
-    name.indexOf("silvet") != -1 &&
+    name.indexOf("silver") != -1 &&
     name.indexOf("wi-fi") != -1
   ) {
     return 36268;
@@ -1040,7 +1041,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 2tb ") != -1 &&
-    name.indexOf("silvet") != -1 &&
+    name.indexOf("silver") != -1 &&
     name.indexOf("lte") != -1
   ) {
     return 36270;
@@ -1056,7 +1057,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 256 ") != -1 &&
-    name.indexOf("silvet") != -1 &&
+    name.indexOf("silver") != -1 &&
     name.indexOf("wi-fi") != -1
   ) {
     return 36176;
@@ -1072,7 +1073,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 256 ") != -1 &&
-    name.indexOf("silvet") != -1 &&
+    name.indexOf("silver") != -1 &&
     name.indexOf("lte") != -1
   ) {
     return 36177;
@@ -1088,7 +1089,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 512 ") != -1 &&
-    name.indexOf("silvet") != -1 &&
+    name.indexOf("silver") != -1 &&
     name.indexOf("wi-fi") != -1
   ) {
     return 36256;
@@ -1104,7 +1105,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 512 ") != -1 &&
-    name.indexOf("silvet") != -1 &&
+    name.indexOf("silver") != -1 &&
     name.indexOf("lte") != -1
   ) {
     return 36258;
@@ -1112,7 +1113,7 @@ export const returnIDApple = (name) => {
     name.indexOf("pro 13") != -1 &&
     name.indexOf(" m4 ") != -1 &&
     name.indexOf(" 512 ") != -1 &&
-    name.indexOf("balck") != -1 &&
+    name.indexOf("black") != -1 &&
     name.indexOf("lte") != -1
   ) {
     return 36259;
@@ -2818,7 +2819,8 @@ export const returnIDApple = (name) => {
     return 23464;
   } else if (name.indexOf("14 128 red") != -1) {
     return 23538;
-  } else if (name.indexOf("14 128 starlight") != -1) {
+  } else if (name.indexOf("14 128 starlight") != -1 ||
+  name.indexOf("14 128 white") != -1) {
     return 23454;
   } else if (name.indexOf("14 128 yellow") != -1) {
     return 27181;
@@ -2896,13 +2898,15 @@ export const returnIDApple = (name) => {
     return 30439;
   } else if (name.indexOf("14 256 blue") != -1) {
     return 23467;
-  } else if (name.indexOf("14 256 midnight") != -1) {
+  } else if (name.indexOf("14 256 midnight") != -1 ||
+  name.indexOf("14 256 black") != -1) {
     return 23468;
   } else if (name.indexOf("14 256 purple") != -1) {
     return 23469;
   } else if (name.indexOf("14 256 red") != -1) {
     return 23539;
-  } else if (name.indexOf("14 256 starlight") != -1) {
+  } else if (name.indexOf("14 256 starlight") != -1 ||
+  name.indexOf("14 256 white") != -1) {
     return 23470;
   } else if (name.indexOf("14 256 yellow") != -1) {
     return 27183;
@@ -2980,13 +2984,15 @@ export const returnIDApple = (name) => {
     return 30445;
   } else if (name.indexOf("14 512 blue") != -1) {
     return 23471;
-  } else if (name.indexOf("14 512 midnight") != -1) {
+  } else if (name.indexOf("14 512 midnight") != -1 ||
+  name.indexOf("14 512 black") != -1) {
     return 23472;
   } else if (name.indexOf("14 512 purple") != -1) {
     return 23473;
   } else if (name.indexOf("14 512 red") != -1) {
     return 23540;
-  } else if (name.indexOf("14 512 starlight") != -1) {
+  } else if (name.indexOf("14 512 starlight") != -1 ||
+  name.indexOf("14 512 white") != -1) {
     return 23474;
   } else if (name.indexOf("14 512 yellow") != -1) {
     return 27182;
@@ -3069,7 +3075,8 @@ export const returnIDApple = (name) => {
     return 23476;
   } else if (
     name.indexOf("14 plus 128 midnight") != -1 ||
-    name.indexOf("14 plus 128 midnight") != -1
+    name.indexOf("14 plus 128 midnight") != -1 ||
+    name.indexOf("14 plus 128 black") != -1
   ) {
     return 23475;
   } else if (
@@ -3084,7 +3091,8 @@ export const returnIDApple = (name) => {
     return 23541;
   } else if (
     name.indexOf("14 plus 128 starlight") != -1 ||
-    name.indexOf("14 plus 128 starlight") != -1
+    name.indexOf("14 plus 128 starlight") != -1 ||
+    name.indexOf("14 plus 128 white") != -1
   ) {
     return 23455;
   } else if (
@@ -3171,7 +3179,8 @@ export const returnIDApple = (name) => {
     return 23478;
   } else if (
     name.indexOf("14 plus 256 midnight") != -1 ||
-    name.indexOf("14 plus 256 midnight") != -1
+    name.indexOf("14 plus 256 midnight") != -1 ||
+    name.indexOf("14 plus 256 black") != -1
   ) {
     return 23479;
   } else if (
@@ -3186,7 +3195,8 @@ export const returnIDApple = (name) => {
     return 23542;
   } else if (
     name.indexOf("14 plus 256 starlight") != -1 ||
-    name.indexOf("14 plus 256 starlight") != -1
+    name.indexOf("14 plus 256 starlight") != -1 ||
+    name.indexOf("14 plus 256 white") != -1
   ) {
     return 23480;
   } else if (
@@ -3273,7 +3283,8 @@ export const returnIDApple = (name) => {
     return 23483;
   } else if (
     name.indexOf("14 plus 512 midnight") != -1 ||
-    name.indexOf("14 plus 512 midnight") != -1
+    name.indexOf("14 plus 512 midnight") != -1 ||
+    name.indexOf("14 plus 512 black") != -1
   ) {
     return 23484;
   } else if (
@@ -3288,7 +3299,8 @@ export const returnIDApple = (name) => {
     return 23543;
   } else if (
     name.indexOf("14 plus 512 starlight") != -1 ||
-    name.indexOf("14 plus 512 starlight") != -1
+    name.indexOf("14 plus 512 starlight") != -1 ||
+    name.indexOf("14 plus 512 white") != -1
   ) {
     return 23486;
   } else if (
@@ -3361,7 +3373,8 @@ export const returnIDApple = (name) => {
     return 23500;
   } else if (
     name.indexOf("14 pro 1tb black") != -1 ||
-    name.indexOf("14 pro 1tb black") != -1
+    name.indexOf("14 pro 1tb black") != -1 ||
+    name.indexOf("14 plus 1tb black") != -1
   ) {
     return 23501;
   } else if (

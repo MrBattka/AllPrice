@@ -2155,66 +2155,78 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
-    name.indexOf("капучино") != -1
+    name.indexOf("2 ") == -1 &&
+    (name.indexOf("капучино") != -1 || name.indexOf("beige") != -1)
   ) {
     return 20411;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
-    (name.indexOf("лимон") != -1 || name.indexOf("желтый") != -1)
+    name.indexOf("2 ") == -1 &&
+    (name.indexOf("лимон") != -1 || name.indexOf("желтый") != -1 || name.indexOf("yellow") != -1)
   ) {
     return 20409;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
-    (name.indexOf("мята") != -1 || name.indexOf("зеленая") != -1)
+    name.indexOf("2 ") == -1 &&
+    (name.indexOf("мята") != -1 || name.indexOf("зеленая") != -1 || name.indexOf("turquoise") != -1)
   ) {
     return 20408;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
-    name.indexOf("фиолет") != -1
+    name.indexOf("2 ") == -1 &&
+    (name.indexOf("фиолет") != -1 || name.indexOf("purple") != -1)
   ) {
     return 20407;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
-    (name.indexOf("фламинго") != -1 || name.indexOf("розовый") != -1)
+    name.indexOf("2 ") == -1 &&
+    (name.indexOf("фламинго") != -1 || name.indexOf("розовый") != -1 || name.indexOf("pink") != -1)
   ) {
     return 20410;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
-    (name.indexOf("чили") != -1 || name.indexOf("красный") != -1)
+    name.indexOf("2 ") == -1 &&
+    (name.indexOf("чили") != -1 || name.indexOf("красный") != -1 || name.indexOf("red") != -1)
   ) {
     return 20412;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("2") != -1 &&
-    name.indexOf("красн") != -1
+    name.indexOf("лайт") == -1 &&
+    (name.indexOf("красн") != -1 || 
+    name.indexOf("red") != -1)
   ) {
     return 23952;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("2") != -1 &&
-    name.indexOf("син") != -1
+    name.indexOf("лайт") == -1 &&
+    (name.indexOf("син") != -1 || name.indexOf("blue") != -1)
   ) {
     return 23951;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("2") != -1 &&
-    name.indexOf("черн") != -1
+    name.indexOf("лайт") == -1 &&
+    (name.indexOf("черн") != -1 || name.indexOf("black") != -1)
   ) {
     return 23950;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("2") != -1 &&
+    name.indexOf("лайт") == -1 &&
     (name.indexOf("песочн") != -1 || name.indexOf("бежев") != -1)
   ) {
     return 23953;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("2") != -1 &&
+    name.indexOf("лайт") == -1 &&
     name.indexOf("бел") != -1
   ) {
     return 18848;
@@ -2296,7 +2308,7 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("макс") != -1 &&
-    name.indexOf("черн") != -1
+    (name.indexOf("черн") != -1 || name.indexOf("black") != -1)
   ) {
     return 18974;
   } else if (
@@ -2343,31 +2355,31 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("миди") != -1 &&
-    name.indexOf("черн") != -1
+    (name.indexOf("черн") != -1 || name.indexOf("black") != -1)
   ) {
     return 30892;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("миди") != -1 &&
-    name.indexOf("зелен") != -1
+    (name.indexOf("зелен") != -1 || name.indexOf("green") != -1)
   ) {
     return 30893;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("миди") != -1 &&
-    name.indexOf("бел") != -1
+    (name.indexOf("бел") != -1 || name.indexOf("silver") != -1)
   ) {
     return 30894;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("миди") != -1 &&
-    name.indexOf("оранж") != -1
+    (name.indexOf("оранж") != -1 || name.indexOf("orange") != -1)
   ) {
     return 35837;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("миди") != -1 &&
-    name.indexOf("малин") != -1
+    (name.indexOf("малин") != -1 || name.indexOf("raspberry") != -1)
   ) {
     return 35838;
   } else if (

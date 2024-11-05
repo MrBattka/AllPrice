@@ -938,6 +938,73 @@ export const baseFixBase = (el) => {
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
         toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase.indexOf('обменка') == -1 &&
-        toLowerCase.indexOf('""') == -1
+        toLowerCase.indexOf("обменка") == -1 &&
+        toLowerCase.indexOf('""') == -1;
+};
+
+export const baseFixDiscount = (el) => {
+  let toLowerCase = el.name?.toLowerCase();
+  return toLowerCase?.indexOf("airpods") != -1 &&
+    (toLowerCase?.indexOf("left") != -1 ||
+      toLowerCase?.indexOf("левый") != -1 ||
+      toLowerCase?.indexOf("right") != -1 ||
+      toLowerCase?.indexOf("правый") != -1 ||
+      toLowerCase?.indexOf("case") != -1 ||
+      toLowerCase?.indexOf("кейс") != -1)
+    ? toLowerCase?.indexOf("airpods") == -1
+    : toLowerCase &&
+        toLowerCase?.indexOf("царапин") == -1 &&
+        toLowerCase?.indexOf("ремонт") == -1 &&
+        toLowerCase?.indexOf("потертости") == -1 &&
+        toLowerCase?.indexOf("скол") == -1 &&
+        toLowerCase?.indexOf("пятна") == -1 &&
+        toLowerCase?.indexOf("замена") == -1 &&
+        toLowerCase?.indexOf("пиксель") == -1 &&
+        toLowerCase?.indexOf("на экране") == -1 &&
+        toLowerCase?.indexOf("мятый") == -1 &&
+        toLowerCase?.indexOf("Мятый") == -1 &&
+        toLowerCase?.indexOf("открытый") == -1 &&
+        toLowerCase?.indexOf("дефект") == -1 &&
+        toLowerCase?.indexOf("вскрыт") == -1 &&
+        toLowerCase?.indexOf("реболл") == -1 &&
+        toLowerCase?.indexOf("No charger") == -1 &&
+        toLowerCase?.indexOf("открыт") == -1 &&
+        toLowerCase?.indexOf("Мятый") == -1 &&
+        toLowerCase?.indexOf("мятый") == -1 &&
+        toLowerCase?.indexOf("без пломб") == -1 &&
+        toLowerCase?.indexOf("прошит") == -1 &&
+        toLowerCase?.indexOf("вскрыт") == -1 &&
+        toLowerCase?.indexOf("угол") == -1 &&
+        toLowerCase?.indexOf("прошит") == -1 &&
+        toLowerCase?.indexOf("потерто") == -1 &&
+        toLowerCase?.indexOf("экран") == -1 &&
+        toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("discount") == -1 &&
+        toLowerCase?.indexOf("поступление") == -1 &&
+        toLowerCase?.indexOf("e sim") == -1 &&
+        toLowerCase?.indexOf("2 sim") == -1 &&
+        toLowerCase?.indexOf("staraya") == -1 &&
+        toLowerCase?.indexOf("новы") == -1 &&
+        toLowerCase?.indexOf("в наличии") == -1 &&
+        toLowerCase?.indexOf("🆕") == -1 &&
+        toLowerCase?.indexOf("отдельн") == -1 &&
+        toLowerCase?.indexOf("актив") == -1 &&
+        toLowerCase?.indexOf(" box") == -1 &&
+        toLowerCase?.indexOf("deppo") == -1 &&
+        toLowerCase?.indexOf("ухо") == -1 &&
+        toLowerCase?.indexOf("пульт") == -1 &&
+        toLowerCase?.indexOf("лампа") == -1 &&
+        toLowerCase?.indexOf("кнопка") == -1 &&
+        toLowerCase?.indexOf("датчик") == -1 &&
+        toLowerCase?.indexOf("движ") == -1 &&
+        toLowerCase?.indexOf("сумк") == -1 &&
+        toLowerCase?.indexOf("панель") == -1 &&
+        toLowerCase?.indexOf("расческа") == -1 &&
+        toLowerCase?.indexOf("для") == -1 &&
+        toLowerCase?.indexOf("насад") == -1 &&
+        toLowerCase?.indexOf("xbox джойстик") == -1 &&
+        toLowerCase?.indexOf("earpods") == -1 &&
+        toLowerCase?.indexOf("s6 4") == -1 &&
+        toLowerCase?.indexOf("vr") == -1 &&
+        toLowerCase?.indexOf("se2 6") == -1;
 };
