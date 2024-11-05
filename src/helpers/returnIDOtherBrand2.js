@@ -701,6 +701,12 @@ export const returnIDOtherBrand2 = (name) => {
     return 28527;
   } else if (name.indexOf("redmagic 8s pro 8/256 transparent") != -1) {
     return 28510;
+  } else if (name.indexOf("red magic 9 Pro 12/256 Cyclone") != -1) {
+    return 36794;
+  } else if (name.indexOf("red magic 9 pro 12/256 snowfall") != -1) {
+    return 36795;
+  } else if (name.indexOf("red magic 9 pro 16/512 sleet") != -1) {
+    return 36793;
   } else if (
     name.indexOf("red magic") != -1 &&
     name.indexOf("9 pro") != -1 &&
@@ -874,6 +880,12 @@ export const returnIDOtherBrand2 = (name) => {
     return 34473;
   } else if (name.indexOf("z60 ultra 12/512 black") != -1) {
     return 34474;
+  } else if (name.indexOf("Z60 Ultra 12/256 Titanium") != -1) {
+    return 36791;
+  } else if (name.indexOf("z60 ultra 16/1tb black") != -1) {
+    return 36783;
+  } else if (name.indexOf("z60 ultra 8/256 titanium") != -1) {
+    return 36792;
   } else if (
     name.indexOf("z60 ultra 12/512 titanium") != -1 ||
     name.indexOf("z60 ultra 12/512 silver") != -1
@@ -1365,7 +1377,7 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("fenix 7s") != -1 &&
     name.indexOf("solar") != -1 &&
     name.indexOf("gray") != -1 &&
-    name.indexOf("black") != -1 
+    name.indexOf("black") != -1
   ) {
     return 24732;
   } else if (
@@ -1941,6 +1953,34 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("zenfone 8 flip 8/256 gray") != -1
   ) {
     return 27754;
+  } else if (
+    name.indexOf("zenfone 8 flip") != -1 ||
+    name.indexOf("8/128") != -1 ||
+    name.indexOf("galactic") != -1 ||
+    name.indexOf("black") != -1
+  ) {
+    return 30263;
+  } else if (
+    name.indexOf("zenfone 8 flip") != -1 ||
+    name.indexOf("8/256") != -1 ||
+    name.indexOf("galactic") != -1 ||
+    name.indexOf("black") != -1
+  ) {
+    return 30264;
+  } else if (
+    name.indexOf("zenfone 8 flip") != -1 ||
+    name.indexOf("8/128") != -1 ||
+    name.indexOf("glacier") != -1 ||
+    name.indexOf("silver") != -1
+  ) {
+    return 30265;
+  } else if (
+    name.indexOf("zenfone 8 flip") != -1 ||
+    name.indexOf("8/256") != -1 ||
+    name.indexOf("glacier") != -1 ||
+    name.indexOf("silver") != -1
+  ) {
+    return 30266;
   } else if (name.indexOf("zenfone 9 16/256 black") != -1) {
     return 28397;
   } else if (name.indexOf("zenfone 9 6/128 midnight black") != -1) {
@@ -2163,14 +2203,18 @@ export const returnIDOtherBrand2 = (name) => {
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
     name.indexOf("2 ") == -1 &&
-    (name.indexOf("лимон") != -1 || name.indexOf("желтый") != -1 || name.indexOf("yellow") != -1)
+    (name.indexOf("лимон") != -1 ||
+      name.indexOf("желтый") != -1 ||
+      name.indexOf("yellow") != -1)
   ) {
     return 20409;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
     name.indexOf("2 ") == -1 &&
-    (name.indexOf("мята") != -1 || name.indexOf("зеленая") != -1 || name.indexOf("turquoise") != -1)
+    (name.indexOf("мята") != -1 ||
+      name.indexOf("зеленая") != -1 ||
+      name.indexOf("turquoise") != -1)
   ) {
     return 20408;
   } else if (
@@ -2184,22 +2228,25 @@ export const returnIDOtherBrand2 = (name) => {
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
     name.indexOf("2 ") == -1 &&
-    (name.indexOf("фламинго") != -1 || name.indexOf("розовый") != -1 || name.indexOf("pink") != -1)
+    (name.indexOf("фламинго") != -1 ||
+      name.indexOf("розовый") != -1 ||
+      name.indexOf("pink") != -1)
   ) {
     return 20410;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
     name.indexOf("2 ") == -1 &&
-    (name.indexOf("чили") != -1 || name.indexOf("красный") != -1 || name.indexOf("red") != -1)
+    (name.indexOf("чили") != -1 ||
+      name.indexOf("красный") != -1 ||
+      name.indexOf("red") != -1)
   ) {
     return 20412;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("2") != -1 &&
     name.indexOf("лайт") == -1 &&
-    (name.indexOf("красн") != -1 || 
-    name.indexOf("red") != -1)
+    (name.indexOf("красн") != -1 || name.indexOf("red") != -1)
   ) {
     return 23952;
   } else if (

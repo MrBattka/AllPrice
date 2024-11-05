@@ -7,7 +7,8 @@ export const returnNameF51 = (name) => {
     const fixNordCE3 = fixA05s464.replace("Nord CE 3", "Nord CE3")
     const fixLavender = fixNordCE3.replace("Lavander", "Lavender")
     const fixmm = fixLavender.replace("mm", "")
-    const fixRedmiPad = fixmm.replace("8.7 ", "")
+    const fixFEPlus = fixmm.replace("FE+", "FE +")
+    const fixRedmiPad = fixFEPlus.replace("8.7 ", "")
     const fixRedmiPadSELTE = fixRedmiPad.indexOf("Redmi Pad") != -1 ? fixRedmiPad.replace("LTE ", "") : fixRedmiPad
     const fixRedmiPadSE5G = fixRedmiPadSELTE.indexOf("Redmi Pad") != -1 ? fixRedmiPadSELTE.replace("5G ", "") : fixRedmiPadSELTE
     const fixRedmiPadWiFi = fixRedmiPadSE5G.indexOf("Redmi Pad") != -1 ? fixRedmiPadSE5G.replace("Wi-Fi ", "") : fixRedmiPadSE5G

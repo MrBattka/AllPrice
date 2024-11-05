@@ -85,6 +85,9 @@ export const baseFix = (el) => {
         el.Товар?.indexOf("потерто") == -1 &&
         el.Товар?.indexOf("экран") == -1 &&
         el.Товар?.indexOf("Realme") == -1 &&
+        el.Товар?.indexOf("уцен") == -1 &&
+        el.Товар?.indexOf("обме") == -1 &&
+        el.Товар?.indexOf("короб") == -1 &&
         el !== "Товар";
 };
 
@@ -162,6 +165,9 @@ export const baseFixHi = (el) => {
         el.name?.indexOf("потерто") == -1 &&
         el.name?.indexOf("экран") == -1 &&
         el.name?.indexOf("realme") == -1 &&
+        el.name?.indexOf("уцен") == -1 &&
+        el.name?.indexOf("обме") == -1 &&
+        el.name?.indexOf("короб") == -1 &&
         el.name?.indexOf("🎵 Airpods") == -1;
 };
 
@@ -216,6 +222,9 @@ export const baseFixMiHonor = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("планшеты") == -1;
 };
 
@@ -285,6 +294,9 @@ export const baseFixVsemi = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("телефоны") == -1;
 };
 
@@ -331,6 +343,9 @@ export const baseFixSuperPrice = (el) => {
         toLowerCase?.indexOf("realme") == -1 &&
         toLowerCase.indexOf("adapter") == -1 &&
         toLowerCase.indexOf("🇪🇺 xiaomi 🇪🇺") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         (toLowerCase === "huawei"
           ? toLowerCase.indexOf("huawei") == -1
           : toLowerCase) &&
@@ -391,6 +406,9 @@ export const baseFixGarmin = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("fenix 8") == -1;
 };
 
@@ -473,6 +491,9 @@ export const baseFixS5 = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("🔫🔫") == -1;
 };
 
@@ -514,6 +535,9 @@ export const baseFixRPTrade = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("смартфоны") == -1;
 };
 
@@ -571,6 +595,9 @@ export const baseFixRacmag = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("blackview") == -1;
 };
 
@@ -651,6 +678,9 @@ export const baseFixArti = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("cmf phone") == -1;
 };
 
@@ -695,6 +725,9 @@ export const baseFixElectrozon = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("xenium") == -1;
 };
 
@@ -769,6 +802,9 @@ export const baseFixReSale = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("⚡️") == -1;
 };
 
@@ -810,6 +846,9 @@ export const baseFixTagir = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("шт") == -1;
 };
 
@@ -850,6 +889,9 @@ export const baseFixNarod = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("шт") == -1;
 };
 
@@ -889,6 +931,9 @@ export const baseFixF51 = (el) => {
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf("шт") == -1;
 };
 
@@ -939,6 +984,9 @@ export const baseFixBase = (el) => {
         toLowerCase?.indexOf("realme") == -1 &&
         toLowerCase?.indexOf("актив") == -1 &&
         toLowerCase.indexOf("обменка") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase.indexOf('""') == -1;
 };
 
@@ -993,6 +1041,11 @@ export const baseFixDiscount = (el) => {
         toLowerCase?.indexOf("deppo") == -1 &&
         toLowerCase?.indexOf("ухо") == -1 &&
         toLowerCase?.indexOf("пульт") == -1 &&
+
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
+
         toLowerCase?.indexOf("лампа") == -1 &&
         toLowerCase?.indexOf("кнопка") == -1 &&
         toLowerCase?.indexOf("датчик") == -1 &&

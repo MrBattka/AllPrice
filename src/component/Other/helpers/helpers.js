@@ -102,8 +102,9 @@ export const returnStockPriceOther = (name) => {
   let replace2Sim = replaceKR.replace("2sim", "");
   let replaceSim = replace2Sim.replace("-sim", "");
   let replacePoint = replaceSim.replace(".", "");
+  let replacePoint1 = replacePoint.replace(",", "");
 
-  let reverseStrName = replacePoint.split("").reverse().join("");
+  let reverseStrName = replacePoint1.split("").reverse().join("");
   const replaceDouble1 =
     reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
   const replaceDouble2 =

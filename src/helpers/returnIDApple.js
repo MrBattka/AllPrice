@@ -205,26 +205,30 @@ export const returnIDApple = (name) => {
     name.indexOf("s8 45 white") != -1
   ) {
     return 23524;
+  
+  } else if (name.indexOf("s9 45 silver") != -1 &&
+  name.indexOf("steel") != -1) {
+    return 28297;
+  
+  } else if (name.indexOf("s9 41 silver") != -1 &&
+  name.indexOf("steel") != -1) {
+    return 28296;
+  } else if (name.indexOf("s9 41 graphite") != -1 &&
+  name.indexOf("steel") != -1) {
+    return 28294;
+  } else if (name.indexOf("s9 41 gold") != -1 &&
+  name.indexOf("steel") != -1) {
+    return 28292;
+  } else if (name.indexOf("s9 45 graphite") != -1 &&
+  name.indexOf("steel") != -1) {
+    return 28295;
+  } else if (name.indexOf("s9 45 gold") != -1 &&
+  name.indexOf("steel") != -1) {
+    return 28293;
   } else if (name.indexOf("s9 45 red") != -1) {
     return 28287;
   } else if (name.indexOf("s9 45 silver") != -1) {
     return 28289;
-  } else if (name.indexOf("s9 45 silver s.steel") != -1) {
-    return 28297;
-  } else if (name.indexOf("s9 45 starlight") != -1) {
-    return 28291;
-  } else if (name.indexOf("s9 41 silver") != -1) {
-    return 28296;
-  } else if (name.indexOf("s9 41 graphite") != -1) {
-    return 28294;
-  } else if (name.indexOf("s9 41 gold") != -1) {
-    return 28292;
-  } else if (name.indexOf("s9 45 silver") != -1) {
-    return 28297;
-  } else if (name.indexOf("s9 45 graphite") != -1) {
-    return 28295;
-  } else if (name.indexOf("s9 45 gold") != -1) {
-    return 28293;
   } else if (
     name.indexOf("s9 41 starlight") != -1 ||
     name.indexOf("s9 41 white") != -1
@@ -238,13 +242,10 @@ export const returnIDApple = (name) => {
     return 28284;
   } else if (name.indexOf("s9 41 pink") != -1) {
     return 28282;
-  } else if (
-    name.indexOf("s9 45 starlight") != -1 ||
-    name.indexOf("s9 45 white") != -1
-  ) {
-    return 28291;
   } else if (name.indexOf("s9 45 silver") != -1) {
     return 28289;
+  } else if (name.indexOf("s9 45 starlight") != -1) {
+    return 28291;
   } else if (name.indexOf("s9 45 red") != -1) {
     return 28287;
   } else if (name.indexOf("s9 45 midnight") != -1) {
@@ -286,7 +287,7 @@ export const returnIDApple = (name) => {
     name.indexOf("42") != -1 &&
     name.indexOf("slate") != -1
   ) {
-    return 36607;
+    return 36803;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&

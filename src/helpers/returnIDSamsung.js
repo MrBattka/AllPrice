@@ -3285,34 +3285,7 @@ export const returnIDSamsung = (nameStock) => {
     name.indexOf("silver") != -1
   ) {
     return 31057;
-  } else if (
-    name.indexOf("tab s9") != -1 &&
-    name.indexOf("256") != -1 &&
-    (name.indexOf("lte") != -1 || name.indexOf("5g") != -1) &&
-    name.indexOf("beige") != -1
-  ) {
-    return 31014;
-  } else if (
-    name.indexOf("tab s9") != -1 &&
-    name.indexOf("256") != -1 &&
-    (name.indexOf("lte") != -1 || name.indexOf("5g") != -1) &&
-    (name.indexOf("graphite") != -1 || name.indexOf("gray") != -1)
-  ) {
-    return 31015;
-  } else if (
-    name.indexOf("tab s9") != -1 &&
-    name.indexOf("128") != -1 &&
-    (name.indexOf("lte") != -1 || name.indexOf("5g") != -1) &&
-    name.indexOf("beige") != -1
-  ) {
-    return 31016;
-  } else if (
-    name.indexOf("tab s9") != -1 &&
-    name.indexOf("128") != -1 &&
-    (name.indexOf("lte") != -1 || name.indexOf("5g") != -1) &&
-    (name.indexOf("graphite") != -1 || name.indexOf("gray") != -1)
-  ) {
-    return 31017;
+  
   } else if (
     name.indexOf("tab s9 fe +") != -1 &&
     name.indexOf("256") != -1 &&
@@ -3546,6 +3519,34 @@ export const returnIDSamsung = (nameStock) => {
     (name.indexOf("graphite") != -1 || name.indexOf("gray") != -1)
   ) {
     return 27938;
+  } else if (
+    name.indexOf("tab s9") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("lte") != -1 || name.indexOf("5g") != -1) &&
+    name.indexOf("beige") != -1
+  ) {
+    return 31014;
+  } else if (
+    name.indexOf("tab s9") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("lte") != -1 || name.indexOf("5g") != -1) &&
+    (name.indexOf("graphite") != -1 || name.indexOf("gray") != -1)
+  ) {
+    return 31015;
+  } else if (
+    name.indexOf("tab s9") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("lte") != -1 || name.indexOf("5g") != -1) &&
+    name.indexOf("beige") != -1
+  ) {
+    return 31016;
+  } else if (
+    name.indexOf("tab s9") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("lte") != -1 || name.indexOf("5g") != -1) &&
+    (name.indexOf("graphite") != -1 || name.indexOf("gray") != -1)
+  ) {
+    return 31017;
   } else if (
     name.indexOf("tab s9") != -1 &&
     name.indexOf("256") != -1 &&
