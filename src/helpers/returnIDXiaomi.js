@@ -1727,7 +1727,7 @@ export const returnIDXiaomi = (name) => {
     name.indexOf("8/128") !== -1 &&
     name.indexOf("blue") !== -1
   ) {
-    return 27384;
+    return 36278;
   } else if (
     name.indexOf("mi pad 6 pro") !== -1 &&
     name.indexOf("8/128") !== -1 &&
@@ -1757,7 +1757,7 @@ export const returnIDXiaomi = (name) => {
     name.indexOf("8/256") !== -1 &&
     name.indexOf("blue") !== -1
   ) {
-    return 27385;
+    return 36281;
   } else if (
     name.indexOf("mi pad 6 pro") !== -1 &&
     name.indexOf("8/256") !== -1 &&
@@ -2048,6 +2048,12 @@ export const returnIDXiaomi = (name) => {
     return 36769;
   } else if (name.indexOf("redmi 13 8/256 gold") != -1) {
     return 36769;
+  } else if (name.indexOf("redmi 13r 4/128 black") != -1) {
+    return 34433;
+  } else if (name.indexOf("redmi 13r 4/128 green") != -1) {
+    return 34434;
+  } else if (name.indexOf("redmi 13r 4/128 purple") != -1) {
+    return 34435;
   } else {
     return returnIDGarmin(name) || "No match";
   }

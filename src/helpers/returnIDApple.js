@@ -128,6 +128,24 @@ export const returnIDApple = (name) => {
   ) {
     return 18977;
 
+    //  Apple TV
+  } else if (
+    name.indexOf("apple") != -1 ||
+    name.indexOf("tv") != -1 ||
+    name.indexOf("2022") != -1 ||
+    name.indexOf("128") != -1 ||
+    name.indexOf("black") != -1
+  ) {
+    return 27027;
+  } else if (
+    name.indexOf("apple") != -1 ||
+    name.indexOf("tv") != -1 ||
+    name.indexOf("2022") != -1 ||
+    name.indexOf("64") != -1 ||
+    name.indexOf("black") != -1
+  ) {
+    return 27026;
+
     // aw se
   } else if (
     name.indexOf("se") != -1 &&
