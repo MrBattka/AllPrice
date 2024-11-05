@@ -259,9 +259,9 @@ const App = () => {
           setDataF51(rowF51);
           const rowDiscount = utils.sheet_to_json(wb.Sheets[sheets[15]]);
           setDataDiscount(rowDiscount);
-          const rowBase = utils.sheet_to_json(wb.Sheets[sheets[15]]);
+          const rowBase = utils.sheet_to_json(wb.Sheets[sheets[16]]);
           setDataBase(rowBase);
-          const rowOther = utils.sheet_to_json(wb.Sheets[sheets[16]]);
+          const rowOther = utils.sheet_to_json(wb.Sheets[sheets[17]]);
           setDataOther(rowOther);
         }
       };
