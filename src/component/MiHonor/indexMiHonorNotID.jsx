@@ -4,7 +4,6 @@ import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import {
   fixNameMihonor,
-  returnExtraPriceMihonor,
   returnNameInArrMihonor,
   returnStockPriceMihonor
 } from "./helpers/helpers";
@@ -16,7 +15,6 @@ const IndexMiHonorNotID = ({ el, mihonorData }) => {
 
   mihonorData.map((mihonor) => {
     baseFixMiHonor(mihonor) && returnStockPriceMihonor(fixNameMihonor(mihonor.name));
-    baseFixMiHonor(mihonor) && returnExtraPriceMihonor(fixNameMihonor(mihonor.name));
     if (
       mihonor.name &&
       typeof mihonor.name === "string" &&
@@ -26,12 +24,10 @@ const IndexMiHonorNotID = ({ el, mihonorData }) => {
      {
       return (
         returnIDSamsung(fixNameMihonor(mihonor.name)) === 'No match' &&
-        returnExtraPriceMihonor(mihonor.name) &&
         returnStockPriceMihonor(mihonor.name) &&
         resultArr.push({
           id: returnIDSamsung(returnNameInArrMihonor(fixNameMihonor(mihonor.name))),
           name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
-          extraPrice: returnExtraPriceMihonor(fixNameMihonor(mihonor.name)),
           stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
           provider: "MiHonor",
         })

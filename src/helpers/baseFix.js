@@ -297,7 +297,9 @@ export const baseFixVsemi = (el) => {
         toLowerCase?.indexOf("уцен") == -1 &&
         toLowerCase?.indexOf("обме") == -1 &&
         toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase.indexOf("телефоны") == -1;
+        toLowerCase.indexOf("телефоны") == -1 &&
+        toLowerCase.indexOf("vsemi") == -1 &&
+        toLowerCase.indexOf("прош") == -1
 };
 
 export const baseFixSuperPrice = (el) => {
@@ -987,6 +989,7 @@ export const baseFixBase = (el) => {
         toLowerCase?.indexOf("уцен") == -1 &&
         toLowerCase?.indexOf("обме") == -1 &&
         toLowerCase?.indexOf("короб") == -1 &&
+        toLowerCase?.indexOf("пломба") == -1 &&
         toLowerCase.indexOf('""') == -1;
 };
 

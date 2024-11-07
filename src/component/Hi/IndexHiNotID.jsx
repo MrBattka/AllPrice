@@ -8,7 +8,6 @@ import { returnGarminHi } from "./Garmin/garmin";
 import { returnGoogleHi } from "./Google/google";
 import {
   fixNameHi,
-  returnExtraPriceHi,
   returnNameInArrHi,
   returnStockPriceHi
 } from "./helpers/helpers";
@@ -35,12 +34,10 @@ const IndexHiNotID = ({ el, hi, main }) => {
     ) {
       return (
         returnIDSamsung(fixNameHi(hi.name)) === "No match" &&
-        returnExtraPriceHi(hi.name) &&
         returnStockPriceHi(hi.name) &&
         resultArr.push({
           id: returnIDSamsung(fixNameHi(hi.name)),
           name: returnNameInArrHi(fixNameHi(hi.name)),
-          extraPrice: returnExtraPriceHi(hi.name),
           stockPrice: returnStockPriceHi(hi.name),
           provider: "Hi",
         })

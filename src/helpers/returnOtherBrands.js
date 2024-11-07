@@ -1258,6 +1258,88 @@ export const returnIDOtherBrand = (name) => {
     name.indexOf("pixel 6 pro 512 white") != -1
   ) {
     return 28307;
+  } else if (name.indexOf("pixel 9 pro 128 hazel") != -1) {
+    return 36716;
+  } else if (name.indexOf("pixel 9 pro 128 obsidian") != -1) {
+    return 36715;
+  } else if (name.indexOf("pixel 9 pro 128 porcelain") != -1) {
+    return 36683;
+  } else if (name.indexOf("pixel 9 pro 128 rose") != -1) {
+    return 36714;
+  } else if (name.indexOf("pixel 9 pro 1tb hazel") != -1) {
+    return 36725;
+  } else if (name.indexOf("pixel 9 pro 1tb obsidian") != -1) {
+    return 36726;
+  } else if (name.indexOf("pixel 9 pro 1tb porcelain") != -1) {
+    return 36727;
+  } else if (name.indexOf("pixel 9 pro 1tb rose") != -1) {
+    return 36728;
+  } else if (name.indexOf("pixel 9 pro 256 hazel") != -1) {
+    return 36717;
+  } else if (
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
+    return 36718;
+  } else if (name.indexOf("pixel 9 pro 256 porcelain") != -1) {
+    return 36719;
+  } else if (name.indexOf("pixel 9 pro 256 rose") != -1) {
+    return 36720;
+  } else if (name.indexOf("pixel 9 pro 512 hazel") != -1) {
+    return 36721;
+  } else if (name.indexOf("pixel 9 pro 512 obsidian") != -1) {
+    return 36722;
+  } else if (name.indexOf("pixel 9 pro 512 porcelain") != -1) {
+    return 36723;
+  } else if (name.indexOf("pixel 9 pro 512 rose") != -1) {
+    return 36724;
+  } else if (
+    name.indexOf("pixel") != -1 &&
+    name.indexOf("9 pro") != -1 &&
+    name.indexOf("fold") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
+    return 36679;
+  } else if (name.indexOf("pixel 9 pro fold 256 porcelain") != -1) {
+    return 36689;
+  } else if (name.indexOf("pixel 9 pro fold 512 obsidian") != -1) {
+    return 36690;
+  } else if (name.indexOf("pixel 9 pro fold 512 porcelain") != -1) {
+    return 36691;
+  } else if (name.indexOf("pixel 9 pro xl 128 hazel") != -1) {
+    return 36701;
+  } else if (name.indexOf("pixel 9 pro xl 128 obsidian") != -1) {
+    return 36700;
+  } else if (name.indexOf("pixel 9 pro xl 128 porcelain") != -1) {
+    return 36684;
+  } else if (name.indexOf("pixel 9 pro xl 128 rose") != -1) {
+    return 36699;
+  } else if (name.indexOf("pixel 9 pro xl 1tb hazel") != -1) {
+    return 36710;
+  } else if (name.indexOf("pixel 9 pro xl 1tb obsidian") != -1) {
+    return 36711;
+  } else if (name.indexOf("pixel 9 pro xl 1tb porcelain") != -1) {
+    return 36712;
+  } else if (name.indexOf("pixel 9 pro xl 1tb rose") != -1) {
+    return 36713;
+  } else if (name.indexOf("pixel 9 pro xl 256 hazel") != -1) {
+    return 36702;
+  } else if (name.indexOf("pixel 9 pro xl 256 obsidian") != -1) {
+    return 36703;
+  } else if (name.indexOf("pixel 9 pro xl 256 porcelain") != -1) {
+    return 36704;
+  } else if (name.indexOf("pixel 9 pro xl 256 rose") != -1) {
+    return 36705;
+  } else if (name.indexOf("pixel 9 pro xl 512 hazel") != -1) {
+    return 36706;
+  } else if (name.indexOf("pixel 9 pro xl 512 obsidian") != -1) {
+    return 36707;
+  } else if (name.indexOf("pixel 9 pro xl 512 porcelain") != -1) {
+    return 36708;
+  } else if (name.indexOf("pixel 9 pro xl 512 rose") != -1) {
+    return 36709;
   } else if (name.indexOf("pixel 7 8/128 lemongrass") != -1) {
     return 23961;
   } else if (name.indexOf("pixel 7 8/128 obsidian") != -1) {
@@ -1640,88 +1722,6 @@ export const returnIDOtherBrand = (name) => {
     (name.indexOf("wintergreen") != -1 || name.indexOf("green") != -1)
   ) {
     return 36698;
-  } else if (name.indexOf("pixel 9 pro 128 hazel") != -1) {
-    return 36716;
-  } else if (name.indexOf("pixel 9 pro 128 obsidian") != -1) {
-    return 36715;
-  } else if (name.indexOf("pixel 9 pro 128 porcelain") != -1) {
-    return 36683;
-  } else if (name.indexOf("pixel 9 pro 128 rose") != -1) {
-    return 36714;
-  } else if (name.indexOf("pixel 9 pro 1tb hazel") != -1) {
-    return 36725;
-  } else if (name.indexOf("pixel 9 pro 1tb obsidian") != -1) {
-    return 36726;
-  } else if (name.indexOf("pixel 9 pro 1tb porcelain") != -1) {
-    return 36727;
-  } else if (name.indexOf("pixel 9 pro 1tb rose") != -1) {
-    return 36728;
-  } else if (name.indexOf("pixel 9 pro 256 hazel") != -1) {
-    return 36717;
-  } else if (
-    name.indexOf("pixel 9 pro") != -1 &&
-    name.indexOf("256") != -1 &&
-    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
-  ) {
-    return 36718;
-  } else if (name.indexOf("pixel 9 pro 256 porcelain") != -1) {
-    return 36719;
-  } else if (name.indexOf("pixel 9 pro 256 rose") != -1) {
-    return 36720;
-  } else if (name.indexOf("pixel 9 pro 512 hazel") != -1) {
-    return 36721;
-  } else if (name.indexOf("pixel 9 pro 512 obsidian") != -1) {
-    return 36722;
-  } else if (name.indexOf("pixel 9 pro 512 porcelain") != -1) {
-    return 36723;
-  } else if (name.indexOf("pixel 9 pro 512 rose") != -1) {
-    return 36724;
-  } else if (
-    name.indexOf("pixel") != -1 &&
-    name.indexOf("9 pro") != -1 &&
-    name.indexOf("fold") != -1 &&
-    name.indexOf("256") != -1 &&
-    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
-  ) {
-    return 36679;
-  } else if (name.indexOf("pixel 9 pro fold 256 porcelain") != -1) {
-    return 36689;
-  } else if (name.indexOf("pixel 9 pro fold 512 obsidian") != -1) {
-    return 36690;
-  } else if (name.indexOf("pixel 9 pro fold 512 porcelain") != -1) {
-    return 36691;
-  } else if (name.indexOf("pixel 9 pro xl 128 hazel") != -1) {
-    return 36701;
-  } else if (name.indexOf("pixel 9 pro xl 128 obsidian") != -1) {
-    return 36700;
-  } else if (name.indexOf("pixel 9 pro xl 128 porcelain") != -1) {
-    return 36684;
-  } else if (name.indexOf("pixel 9 pro xl 128 rose") != -1) {
-    return 36699;
-  } else if (name.indexOf("pixel 9 pro xl 1tb hazel") != -1) {
-    return 36710;
-  } else if (name.indexOf("pixel 9 pro xl 1tb obsidian") != -1) {
-    return 36711;
-  } else if (name.indexOf("pixel 9 pro xl 1tb porcelain") != -1) {
-    return 36712;
-  } else if (name.indexOf("pixel 9 pro xl 1tb rose") != -1) {
-    return 36713;
-  } else if (name.indexOf("pixel 9 pro xl 256 hazel") != -1) {
-    return 36702;
-  } else if (name.indexOf("pixel 9 pro xl 256 obsidian") != -1) {
-    return 36703;
-  } else if (name.indexOf("pixel 9 pro xl 256 porcelain") != -1) {
-    return 36704;
-  } else if (name.indexOf("pixel 9 pro xl 256 rose") != -1) {
-    return 36705;
-  } else if (name.indexOf("pixel 9 pro xl 512 hazel") != -1) {
-    return 36706;
-  } else if (name.indexOf("pixel 9 pro xl 512 obsidian") != -1) {
-    return 36707;
-  } else if (name.indexOf("pixel 9 pro xl 512 porcelain") != -1) {
-    return 36708;
-  } else if (name.indexOf("pixel 9 pro xl 512 rose") != -1) {
-    return 36709;
   } else {
     return returnIDOtherBrand2(name) || "No match";
   }

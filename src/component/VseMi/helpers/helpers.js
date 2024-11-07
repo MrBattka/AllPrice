@@ -2,8 +2,12 @@ import { newPrice } from "../../../helpers/NewPrice";
 
 export const returnNameInArrVseMi = (name) => {
   let reverseStrName = name.split("").reverse().join("");
-  let splitPrice = reverseStrName.indexOf(" ") !== -1 ? /\s(.+)/.exec(reverseStrName)[1] : reverseStrName
-  let replaceStick = splitPrice.indexOf(" ") !== -1 ?  /\s(.+)/.exec(splitPrice)[1] : splitPrice
+  let splitPrice =
+    reverseStrName.indexOf(" ") !== -1
+      ? /\s(.+)/.exec(reverseStrName)[1]
+      : reverseStrName;
+  let replaceStick =
+    splitPrice.indexOf(" ") !== -1 ? /\s(.+)/.exec(splitPrice)[1] : splitPrice;
   let reverseBackStrName = replaceStick.split("").reverse().join("");
 
   return reverseBackStrName;
@@ -11,7 +15,7 @@ export const returnNameInArrVseMi = (name) => {
 
 export const returnStockPriceVseMi = (name) => {
   let reverseStrName = name.split("").reverse().join("");
-  let splitPrice = reverseStrName.split(' ')[0]
+  let splitPrice = reverseStrName.split(" ")[0];
   let reverseBackStrName = splitPrice.split("").reverse().join("");
 
   return reverseBackStrName;
@@ -19,7 +23,7 @@ export const returnStockPriceVseMi = (name) => {
 
 export const returnExtraPriceVseMi = (name) => {
   let reverseStrName = name.split("").reverse().join("");
-  let splitPrice = reverseStrName.split(' ')[0]
+  let splitPrice = reverseStrName.split(" ")[0];
   let reverseBackStrName = splitPrice.split("").reverse().join("");
 
   return newPrice(returnNameInArrVseMi(name), reverseBackStrName);
@@ -45,8 +49,11 @@ export const fixNameVseMi = (name) => {
   const fix5GObsidian = fixPixel.replace("5G Obsidian", "Obsidian");
   const fixMiPad = fix5GObsidian.replace("Mi Pad", "Xiaomi Pad");
   const fixOceanTeal = fixMiPad.replace("Ocean Teal", "teal");
-  const fixPoco5g = fixOceanTeal.indexOf("Poco") != -1 ?
-    fixOceanTeal.replace("5G", "") : fixOceanTeal
+  const fixPoco5g =
+    fixOceanTeal.indexOf("Poco") != -1
+      ? fixOceanTeal.replace("5G", "")
+      : fixOceanTeal;
+  const fixDualsense = fixPoco5g.replace("Dualsence", "Dualsense");
 
-  return fixPoco5g;
+  return fixDualsense;
 };

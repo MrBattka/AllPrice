@@ -83,7 +83,10 @@ export const returnStockPriceReSale = (name) => {
     let removeRUB =
       removeSpaceName[0] === "₽" ? removeSpaceName.slice(1) : reverseStrName;
     let splitPrice = removeRUB.split(" ")[0];
-    let reverseBackStrName = splitPrice.split("").reverse().join("");
+    let removeSimbol = splitPrice.indexOf("-")
+      ? splitPrice.split("-")[0]
+      : splitPrice;
+    let reverseBackStrName = removeSimbol.split("").reverse().join("");
 
     return reverseBackStrName;
   } else {
@@ -98,7 +101,11 @@ export const returnStockPriceReSale = (name) => {
       splitPrice.split(" ")[0].length === 3
         ? reverseStrName.split(" ")[0] + reverseStrName.split(" ")[1]
         : splitPrice;
-    let reverseBackStrName = splitDoubleSpace.split("").reverse().join("");
+    let removeSimbol = splitDoubleSpace.indexOf("-")
+      ? splitDoubleSpace.split("-")[0]
+      : splitDoubleSpace;
+    let removeStick = removeSimbol.replace("-", "");
+    let reverseBackStrName = removeStick.split("").reverse().join("");
 
     return reverseBackStrName;
   }
@@ -176,24 +183,51 @@ export const returnFixNameReSale = (name) => {
   const fixUSBC = replaceG.replace("Type-C", "Type C");
   const replaceDash = fixUSBC.replace(" –", "");
   const fixSimESim = replaceDash.replace("Sim-e", "Sim+e");
-  const fixSFold5 = fixSimESim.replace("Fold5", "Fold 5"); 
+  const fixSFold5 = fixSimESim.replace("Fold5", "Fold 5");
   const fixSFold6 = fixSFold5.replace("Fold6", "Fold 6");
   const fixLTE = fixSFold6.replace("Wi-Fi + Cellular", "LTE");
   const fixSE3 = fixLTE.replace("SE 3 ", "SE3 ");
   const fixS24Plus = fixSE3.replace("S24 +", "S24+");
   const fixMM = fixS24Plus.replace("mm", "");
   const fixGB = fixMM.replace("GB", "");
-  const fixDualSenseBlack = fixGB.replace("Чёрный", "dualsense Black ")
-  const fixDualSenseWhite = fixDualSenseBlack.replace("Белый", "dualsense White ")
-  const fixbracketAirPods3 = fixDualSenseWhite.replace("(3rd Gen)", "3"); 
-  const fixbracket2 = fixbracketAirPods3.indexOf("SE") != -1 ? fixbracketAirPods3.replace("2 2023", " (2023) gen 2") : fixbracketAirPods3
-  const fixSE2Blue = fixbracket2.indexOf("SE") != -1 ? fixbracket2.replace("Storm Blue", "Silver") : fixbracket2
-  const fixUltra = fixSE2Blue.indexOf("Ultra") != -1 ? fixSE2Blue.replace(" 49 ", " ") : fixSE2Blue
-  const fix14PMPurple = fixUltra.indexOf("14 ") != -1 ? fixUltra.replace("Deep Purple", "Purple") : fixUltra
-  const fix14PMBlack = fix14PMPurple.indexOf("14 ") != -1 ? fix14PMPurple.replace("Space Black", "Black") : fix14PMPurple
-  const fixSE3Black = fix14PMBlack.indexOf("SE3 ") != -1 ? fix14PMBlack.replace("Midnight", "Black") : fix14PMBlack
-  const fixAWUltraGray = fixSE3Black.indexOf("Ultra 2") != -1 ? fixSE3Black.replace("Green Gray", "Gray") : fixSE3Black
-  const fixAWUltraBlack = fixAWUltraGray.indexOf("Ultra 2") != -1 ? fixAWUltraGray.replace("Blue Black", "Black") : fixAWUltraGray
+  const fixDualSenseBlack = fixGB.replace("Чёрный", "dualsense Black ");
+  const fixDualSenseWhite = fixDualSenseBlack.replace(
+    "Белый",
+    "dualsense White "
+  );
+  const fixbracketAirPods3 = fixDualSenseWhite.replace("(3rd Gen)", "3");
+  const fixbracket2 =
+    fixbracketAirPods3.indexOf("SE") != -1
+      ? fixbracketAirPods3.replace("2 2023", " (2023) gen 2")
+      : fixbracketAirPods3;
+  const fixSE2Blue =
+    fixbracket2.indexOf("SE") != -1
+      ? fixbracket2.replace("Storm Blue", "Silver")
+      : fixbracket2;
+  const fixUltra =
+    fixSE2Blue.indexOf("Ultra") != -1
+      ? fixSE2Blue.replace(" 49 ", " ")
+      : fixSE2Blue;
+  const fix14PMPurple =
+    fixUltra.indexOf("14 ") != -1
+      ? fixUltra.replace("Deep Purple", "Purple")
+      : fixUltra;
+  const fix14PMBlack =
+    fix14PMPurple.indexOf("14 ") != -1
+      ? fix14PMPurple.replace("Space Black", "Black")
+      : fix14PMPurple;
+  const fixSE3Black =
+    fix14PMBlack.indexOf("SE3 ") != -1
+      ? fix14PMBlack.replace("Midnight", "Black")
+      : fix14PMBlack;
+  const fixAWUltraGray =
+    fixSE3Black.indexOf("Ultra 2") != -1
+      ? fixSE3Black.replace("Green Gray", "Gray")
+      : fixSE3Black;
+  const fixAWUltraBlack =
+    fixAWUltraGray.indexOf("Ultra 2") != -1
+      ? fixAWUltraGray.replace("Blue Black", "Black")
+      : fixAWUltraGray;
 
   return fixAWUltraBlack;
 };

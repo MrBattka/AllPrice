@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { newPrice } from "../../helpers/NewPrice";
-import { returnFixNameRPTrade } from "./helpers/helpers";
-import style from "./styles.module.css";
 import { baseFixRPTrade } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
+import { returnFixNameRPTrade } from "./helpers/helpers";
+import style from "./styles.module.css";
 
 const IndexRPTrade = ({ el, rptradeData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +23,6 @@ const IndexRPTrade = ({ el, rptradeData }) => {
           resultArr.push({
             id: returnIDSamsung(returnFixNameRPTrade(rptradeEl.name)),
             name: returnFixNameRPTrade(rptradeEl.name),
-            extraPrice: newPrice(rptradeEl.name, rptradeEl.price),
             stockPrice: rptradeEl.price,
             provider: "RPTrade",
           })

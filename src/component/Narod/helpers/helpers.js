@@ -60,8 +60,9 @@ export const fixNameNarod = (name) => {
       : fixA15Blue;
   const fix13ProPlus = fixPocoF6Titan.replace("13 Pro Plus", "13 Pro +");
   const fixWhite = fix13ProPlus.replace("While", "White");
+  const replaceNEFlag = fixWhite.replace("🇳🇪", "");
 
-  return fixWhite;
+  return replaceNEFlag;
 };
 
 export const returnNameNarod = (name) => {

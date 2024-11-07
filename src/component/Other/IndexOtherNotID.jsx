@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
-import { returnExtraPriceOther, returnFixNameOther, returnNameInArrOther, returnStockPriceOther } from "./helpers/helpers";
+import { returnFixNameOther, returnNameInArrOther, returnStockPriceOther } from "./helpers/helpers";
 import style from "./styles.module.css";
 
 const IndexOtherNotID = ({ el, otherData }) => {
@@ -10,7 +10,6 @@ const IndexOtherNotID = ({ el, otherData }) => {
 
     otherData.map((other) => {
       returnStockPriceOther(returnFixNameOther(other.name));
-      returnExtraPriceOther(returnFixNameOther(other.name));
       if (
         other.name &&
         typeof other.name === "string" &&
@@ -23,7 +22,6 @@ const IndexOtherNotID = ({ el, otherData }) => {
           resultArr.push({
             id: returnIDSamsung(returnNameInArrOther(returnFixNameOther(other.name))),
             name: returnNameInArrOther(returnFixNameOther(other.name)),
-            extraPrice: returnExtraPriceOther(returnFixNameOther(other.name)),
             stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
             provider: "Разное",
           })

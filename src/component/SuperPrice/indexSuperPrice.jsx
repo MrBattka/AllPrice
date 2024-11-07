@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import style from "./styles.module.css";
-import { fixName, fixNameSuperPrice } from "./helpers/helpers";
 import { baseFixSuperPrice } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import { newPrice } from "../../helpers/NewPrice";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
+import { fixNameSuperPrice } from "./helpers/helpers";
+import style from "./styles.module.css";
 
 const IndexSuperPrice = ({ el, superpriceData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,6 @@ const IndexSuperPrice = ({ el, superpriceData }) => {
         resultArr.push({
           id: returnIDSamsung(fixNameSuperPrice(superprice.name)),
           name: fixNameSuperPrice(superprice.name),
-          extraPrice: newPrice(fixNameSuperPrice(superprice.name), superprice.price),
           stockPrice: superprice.price,
           provider: "Super Price",
         })

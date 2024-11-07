@@ -45,21 +45,81 @@ export const fixNameS5 = (name) => {
   const fixS10 = fixStarlight.replace("S 10", "S10");
   const fixS23FE = fixS10.replace("S23FE", "S23 FE");
   const fixA55 = fixS23FE.replace("А55 ", "A55 ");
-  const fixA55IceBlue = fixA55.indexOf("A55 ") ? fixA55.replace("Ice blue", "iceblue") : fixA55
+  const fixA55IceBlue = fixA55.indexOf("A55 ")
+    ? fixA55.replace("Ice blue", "iceblue")
+    : fixA55;
 
   return fixA55IceBlue;
 };
 
+const checkFlags = (str) => {
+  let checkSpace1 = str[str.length - 1] === " " ? str.slice(0, -1) : str;
+  let checkSpace2 =
+    checkSpace1[checkSpace1.length - 1] === " "
+      ? checkSpace1.slice(0, -1)
+      : checkSpace1;
+  let checkSpace3 =
+    checkSpace2[checkSpace2.length - 1] === " "
+      ? checkSpace2.slice(0, -1)
+      : checkSpace2;
+  let checkSpace4 =
+    checkSpace3[checkSpace3.length - 1] === " "
+      ? checkSpace3.slice(0, -1)
+      : checkSpace3;
+
+  if (
+    checkSpace4.slice(-4) === `🇯🇵` ||
+    checkSpace4.slice(-4) === "🇮🇳" ||
+    checkSpace4.slice(-4) === "🇪🇺" ||
+    checkSpace4.slice(-4) === "🇦🇪" ||
+    checkSpace4.slice(-4) === "🇧🇷" ||
+    checkSpace4.slice(-4) === "🇻🇳" ||
+    checkSpace4.slice(-4) === "🇰🇼" ||
+    checkSpace4.slice(-4) === "🇺🇸" ||
+    checkSpace4.slice(-4) === "🇭🇰" ||
+    checkSpace4.slice(-4) === "🇬🇧" ||
+    checkSpace4.slice(-4) === "🇨🇳" ||
+    checkSpace4.slice(-4) === "🇹🇼" ||
+    checkSpace4.slice(-4) === "🇷🇺" ||
+    checkSpace4.slice(-4) === "🇦🇺" ||
+    checkSpace4.slice(-4) === "🇨🇦" ||
+    checkSpace4.slice(-4) === "🇨🇱" ||
+    checkSpace4.slice(-4) === "🇹🇭" ||
+    checkSpace4.slice(-4) === "🇸🇬" ||
+    checkSpace4.slice(-4) === "🇲🇾" ||
+    checkSpace4.slice(-4) === "🇨🇫" ||
+    checkSpace4.slice(-4) === "🇰🇿" ||
+    checkSpace4.slice(-4) === "🇰🇷" ||
+    checkSpace4.slice(-4) === "🇬🇺"
+  ) {
+    return (
+      checkSpace4.slice(-4) + checkSpace4.substring(0, checkSpace4.length - 4)
+    );
+  } else {
+    return checkSpace4;
+  }
+};
+
 export const returnNameInArrS5 = (name) => {
-  let reverseStrName = name.split("").reverse().join("");
+  const fixFlags = checkFlags(name);
+
+  let reverseStrName = fixFlags.split("").reverse().join("");
   let splitPrice = /\s(.+)/.exec(reverseStrName)[1];
   let replaceStick = /\s(.+)/.exec(splitPrice)[1];
 
-  let checkTriple = reverseStrName.split("-")[4]
-    ? `${reverseStrName.split("-")[1]}-${reverseStrName.split("-")[2]}-${
-        reverseStrName.split("-")[3]
-      }-${reverseStrName.split("-")[4]}`
-    : reverseStrName;
+  let checkSpace1 =
+  splitPrice[0] === " "
+    ? splitPrice.slice(1)
+    : splitPrice;
+let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
+let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
+let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
+
+  let checkTriple = checkSpace4.split("-")[4]
+    ? `${checkSpace4.split("-")[1]}-${checkSpace4.split("-")[2]}-${
+        checkSpace4.split("-")[3]
+      }-${checkSpace4.split("-")[4]}`
+    : checkSpace4;
 
   let checkDouble = checkTriple.split("-")[3]
     ? `${checkTriple.split("-")[1]}-${checkTriple.split("-")[2]}-${
@@ -99,7 +159,8 @@ export const returnStockPriceS5 = (name) => {
   let replaceCF = replaceMY.replace("🇨🇫", "");
   let replaceKZ = replaceCF.replace("🇰🇿", "");
   let replaceKR = replaceKZ.replace("🇰🇷", "");
-  let replaceBuds3White = replaceKR.replace("Buds 3 White", "");
+  let replaceZA = replaceKR.replace("🇿🇦", "");
+  let replaceBuds3White = replaceZA.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
     "Tab S9FE 8/256 Lavender 5G",
     ""
@@ -107,16 +168,28 @@ export const returnStockPriceS5 = (name) => {
 
   let reverseStrName = replaceS9feLavander.split("").reverse().join("");
 
+  let checkSpace1 =
+    reverseStrName[0] === " "
+      ? reverseStrName.slice(1)
+      : reverseStrName;
+  let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
+  let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
+  let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
+
   let splitPrice =
-    reverseStrName.indexOf("-") != -1
-      ? reverseStrName.split("-")[0]
-      : reverseStrName.split(" ")[0];
+    checkSpace4.indexOf(" ") != -1
+      ? checkSpace4.split(" ")[0]
+      : checkSpace4;
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 
   let reverseBackStrName = replaceDoubleSpace.split("").reverse().join("");
 
-  return reverseBackStrName;
+  let removeOther = reverseBackStrName.indexOf(" ")
+    ? reverseBackStrName.split(" ")[0]
+    : reverseBackStrName;
+
+  return removeOther;
 };
 
 export const returnExtraPriceS5 = (name) => {

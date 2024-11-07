@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import BasicTable from "../Create Table/Table";
-import style from "./styles.module.css";
 import { baseFixNarod } from "../../helpers/baseFix";
-import { fixNameNarod, returnNameNarod, returnStockPriceNarod } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import BasicTable from "../Create Table/Table";
+import { fixNameNarod, returnNameNarod, returnStockPriceNarod } from "./helpers/helpers";
+import style from "./styles.module.css";
 
 const IndexNarodNotID = ({ el, narodData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +23,6 @@ const IndexNarodNotID = ({ el, narodData }) => {
         resultArr.push({
           id: returnIDSamsung(returnNameNarod(fixNameNarod(narod.name))),
           name: returnNameNarod(fixNameNarod(narod.name)),
-          extraPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
           stockPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
           provider: "Народ",
         })

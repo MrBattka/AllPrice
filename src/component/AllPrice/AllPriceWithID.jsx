@@ -148,10 +148,8 @@ const AllPriceWithID = ({
         allPriceArr.push({
           id: returnIDSamsung(fixNameSuperPrice(superprice.name)),
           name: fixNameSuperPrice(superprice.name),
-          extraPrice: newPrice(
-            fixNameSuperPrice(superprice.name),
-            superprice.price
-          ),
+          stockPrice: 
+            superprice.price,
           provider: "SuperPrice",
         })
       );
@@ -174,7 +172,7 @@ const AllPriceWithID = ({
         allPriceArr.push({
           id: returnIDSamsung(returnNameInArrVseMi(fixNameVseMi(vsemi.name))),
           name: returnNameInArrVseMi(fixNameVseMi(vsemi.name)),
-          extraPrice: returnExtraPriceVseMi(fixNameVseMi(vsemi.name)),
+          stockPrice: returnStockPriceVseMi(fixNameVseMi(vsemi.name)),
           provider: "VseMi",
         })
       );
@@ -198,10 +196,8 @@ const AllPriceWithID = ({
       allPriceArr.push({
         id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
         name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
-        extraPrice: newPrice(
-          unimtrn.Товар,
-          unimtrn.Стоимость || unimtrn.Cтоимость
-        ),
+        stockPrice: 
+          unimtrn.Стоимость || unimtrn.Cтоимость,
         provider: "Метреон",
       });
     }
@@ -255,7 +251,7 @@ const AllPriceWithID = ({
             returnNameInArrMihonor(fixNameMihonor(mihonor.name))
           ),
           name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
-          extraPrice: returnExtraPriceMihonor(fixNameMihonor(mihonor.name)),
+          stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
           provider: "MiHonor",
         })
       );

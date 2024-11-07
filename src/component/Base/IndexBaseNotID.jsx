@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { baseFixBase } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
-import style from "./styles.module.css";
 import { returnFixNameBase } from "./helpers/helpers";
-import { baseFixBase } from "../../helpers/baseFix";
+import style from "./styles.module.css";
 
 const IndexBaseNotID = ({ el, baseData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +24,6 @@ const IndexBaseNotID = ({ el, baseData }) => {
           resultArr.push({
             id: returnIDSamsung(returnFixNameBase(base.name)),
             name: returnFixNameBase(base.name),
-            extraPrice: base.extra,
             stockPrice: base.price,
             provider: "База",
           })

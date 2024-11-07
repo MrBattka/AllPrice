@@ -23,7 +23,6 @@ const IndexBase = ({ el, baseData }) => {
         resultArr.push({
           id: returnIDSamsung(returnFixNameBase(base.name)),
           name: returnFixNameBase(base.name),
-          extraPrice: base.extra,
           stockPrice: base.price,
           provider: "База",
         })

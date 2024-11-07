@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { baseFixArti } from "../../helpers/baseFix";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import BasicTable from "../Create Table/Table";
 import { returnCategoryArti } from "./category/Category";
 import { returnFixNameArti, returnNameArti, returnStockPriceArti } from "./helpers/helpers";
 import style from "./styles.module.css";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
-import BasicTable from "../Create Table/Table";
 
 const IndexArtiNotID = ({ el, artiData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,6 @@ const IndexArtiNotID = ({ el, artiData }) => {
         resultArr.push({
           id: returnIDSamsung(returnNameArti(returnFixNameArti(arti.name))),
           name: returnNameArti(returnFixNameArti(arti.name)),
-          extraPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
           stockPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
           provider: "Arti",
         })

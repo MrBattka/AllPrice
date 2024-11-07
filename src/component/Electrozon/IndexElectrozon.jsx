@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import BasicTable from "../Create Table/Table";
-import style from "./styles.module.css";
-import { returnFixNameElectrozon } from "./helpers/helpers";
 import { baseFixElectrozon } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
-import { newPrice } from "../../helpers/NewPrice";
+import BasicTable from "../Create Table/Table";
+import { returnFixNameElectrozon } from "./helpers/helpers";
+import style from "./styles.module.css";
 
 const IndexElectrozon = ({ el, electrozonData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +23,6 @@ const IndexElectrozon = ({ el, electrozonData }) => {
           resultArr.push({
             id: returnIDSamsung(returnFixNameElectrozon(electrozon.name)),
             name: returnFixNameElectrozon(electrozon.name),
-            extraPrice: newPrice(electrozon.name, electrozon.price),
             stockPrice: electrozon.price,
             provider: "Electrozon",
           })

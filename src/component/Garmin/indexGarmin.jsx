@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { baseFixGarmin } from "../../helpers/baseFix";
-import { fixNameGarmin, returnExtraPriceGarmin, returnFixNameProductGarmin, returnStockPriceGarmin } from "./helpers/helpers";
-import style from "./styles.module.css";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
+import { fixNameGarmin, returnFixNameProductGarmin, returnStockPriceGarmin } from "./helpers/helpers";
+import style from "./styles.module.css";
 
 const IndexGarmin = ({ el, garminData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,6 @@ const IndexGarmin = ({ el, garminData }) => {
 
   garminData.map((garmin) => {
     baseFixGarmin(garmin) && returnStockPriceGarmin(fixNameGarmin(garmin.name));
-    baseFixGarmin(garmin) && returnExtraPriceGarmin(fixNameGarmin(garmin.name));
     if (
       garmin.name &&
       typeof garmin.name === "string" &&
@@ -20,12 +19,10 @@ const IndexGarmin = ({ el, garminData }) => {
     ) {
       return (
         returnIDSamsung(fixNameGarmin(garmin.name)) !== 'No match' &&
-        returnExtraPriceGarmin(garmin.name) &&
         returnStockPriceGarmin(garmin.name) &&
         resultArr.push({
           id: returnIDSamsung(returnFixNameProductGarmin(fixNameGarmin(garmin.name))),
           name: returnFixNameProductGarmin(fixNameGarmin(garmin.name)),
-          extraPrice: returnExtraPriceGarmin(fixNameGarmin(garmin.name)),
           stockPrice: returnStockPriceGarmin(fixNameGarmin(garmin.name)),
           provider: "Garmin",
         })

@@ -81,10 +81,6 @@ export const returnFixNameDiscount = (name) => {
   return fixGray;
 };
 
-const test = "16 Pro Max 1 TB white - 172001";
-
-console.log(test[test.length - 1] === "1" ? test.slice(1, -1) : test);
-
 const checkFlags = (str) => {
   let checkSpace1 = str[str.length - 1] === " " ? str.slice(0, -1) : str;
   let checkSpace2 =
@@ -182,7 +178,10 @@ export const returnStockPriceDiscount = (name) => {
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let splitPrice = checkSpace4.split(" ")[0];
-  let reverseBackStrName = splitPrice.split("").reverse().join("");
+  let removeStick = splitPrice.indexOf("-")
+    ? splitPrice.split("-")[0]
+    : splitPrice;
+  let reverseBackStrName = removeStick.split("").reverse().join("");
 
   return reverseBackStrName;
 };

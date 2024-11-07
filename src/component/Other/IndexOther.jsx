@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import {
-  returnExtraPriceOther,
   returnFixNameOther,
   returnNameInArrOther,
-  returnStockPriceOther,
+  returnStockPriceOther
 } from "./helpers/helpers";
 import style from "./styles.module.css";
 
@@ -15,7 +14,6 @@ const IndexOther = ({ el, otherData }) => {
 
   otherData.map((other) => {
     returnStockPriceOther(returnFixNameOther(other.name));
-    returnExtraPriceOther(returnFixNameOther(other.name));
     if (other.name && typeof other.name === "string" && isOpen) {
       return (
         returnIDSamsung(returnFixNameOther(other.name)) !== "No match" &&
@@ -25,7 +23,6 @@ const IndexOther = ({ el, otherData }) => {
             returnFixNameOther(other.name)
           ),
           name: returnNameInArrOther(returnFixNameOther(other.name)),
-          extraPrice: returnExtraPriceOther(returnFixNameOther(other.name)),
           stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
           provider: "Разное",
         })

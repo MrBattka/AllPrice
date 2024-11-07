@@ -25,7 +25,6 @@ const IndexSuperPriceNotID = ({ el, superpriceData }) => {
         resultArr.push({
           id: returnIDSamsung(fixNameSuperPrice(superprice.name)),
           name: fixNameSuperPrice(superprice.name),
-          extraPrice: newPrice(fixNameSuperPrice(superprice.name), superprice.price),
           stockPrice: superprice.price,
           provider: "Super Price",
         })

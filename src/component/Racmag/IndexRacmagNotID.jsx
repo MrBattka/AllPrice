@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import style from "./styles.module.css";
 import { baseFixRacmag } from "../../helpers/baseFix";
-import { returnExtraPriceRacmag, returnFixNameRacmag, returnNameInArrRacmag, returnStockPriceRacmag } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
+import { returnFixNameRacmag, returnNameInArrRacmag, returnStockPriceRacmag } from "./helpers/helpers";
+import style from "./styles.module.css";
 
 const IndexRacmagNotID = ({ el, racmagData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,6 @@ const IndexRacmagNotID = ({ el, racmagData }) => {
 
     racmagData.map((racmag) => {
       baseFixRacmag(racmag) && returnStockPriceRacmag(returnFixNameRacmag(racmag.name));
-      baseFixRacmag(racmag) && returnExtraPriceRacmag(returnFixNameRacmag(racmag.name));
       if (
         racmag.name &&
         typeof racmag.name === "string" &&
@@ -25,7 +24,6 @@ const IndexRacmagNotID = ({ el, racmagData }) => {
           resultArr.push({
             id: returnIDSamsung(returnNameInArrRacmag(returnFixNameRacmag(racmag.name))),
             name: returnNameInArrRacmag(returnFixNameRacmag(racmag.name)),
-            extraPrice: returnExtraPriceRacmag(returnFixNameRacmag(racmag.name)),
             stockPrice: returnStockPriceRacmag(returnFixNameRacmag(racmag.name)),
             provider: "Рацмаг",
           })

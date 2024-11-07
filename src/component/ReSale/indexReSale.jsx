@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import { baseFixReSale } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import BasicTable from "../Create Table/Table";
 import {
-  returnExtraPriceReSale,
-  returnExtraPriceResale,
   returnFixNameReSale,
   returnNameReSale,
-  returnStockPriceReSale,
+  returnStockPriceReSale
 } from "./helpers/helpers";
 import style from "./styles.module.css";
-import BasicTable from "../Create Table/Table";
 
 const IndexReSale = ({ el, resaleData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +24,6 @@ const IndexReSale = ({ el, resaleData }) => {
     ) {
       return (
         returnIDSamsung(returnFixNameReSale(resale.name)) !== "No match" &&
-        returnExtraPriceReSale(resale.name) &&
         returnStockPriceReSale(resale.name) &&
         returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("А") ==
           -1 &&
@@ -36,7 +33,6 @@ const IndexReSale = ({ el, resaleData }) => {
         resultArr.push({
           id: returnIDSamsung(returnNameReSale(returnFixNameReSale(resale.name))),
           name: returnNameReSale(returnFixNameReSale(resale.name)),
-          extraPrice: returnExtraPriceReSale(returnFixNameReSale(resale.name)),
           stockPrice: returnStockPriceReSale(returnFixNameReSale(resale.name)),
           provider: "Re:Sale",
         })
