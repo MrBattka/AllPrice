@@ -44,7 +44,8 @@ export const fixNameS5 = (name) => {
   const fixStarlight = replaceS9FE.replace("starling", "starlight");
   const fixS10 = fixStarlight.replace("S 10", "S10");
   const fixS23FE = fixS10.replace("S23FE", "S23 FE");
-  const fixA55 = fixS23FE.replace("А55 ", "A55 ");
+  const fixFEPlus = fixS23FE.replace("FE Plus", "FE +");
+  const fixA55 = fixFEPlus.replace("А55 ", "A55 ");
   const fixA55IceBlue = fixA55.indexOf("A55 ")
     ? fixA55.replace("Ice blue", "iceblue")
     : fixA55;

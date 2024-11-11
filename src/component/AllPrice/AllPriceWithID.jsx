@@ -10,6 +10,7 @@ import {
   baseFixHi,
   baseFixMiHonor,
   baseFixNarod,
+  baseFixOther,
   baseFixRacmag,
   baseFixReSale,
   baseFixRPTrade,
@@ -539,10 +540,11 @@ const AllPriceWithID = ({
   otherData.map((other) => {
     returnStockPriceOther(returnFixNameOther(other.name));
     returnExtraPriceOther(returnFixNameOther(other.name));
-    if (other.name && typeof other.name === "string" && isOpen) {
+    if (other.name && typeof other.name === "string" && baseFixOther(other) && isOpen) {
       return (
         returnIDSamsung(returnFixNameOther(other.name)) !== "No match" &&
         returnStockPriceOther(other.name) &&
+        baseFixOther(other) &&
         allPriceArr.push({
           id: returnIDSamsung(
             returnNameInArrOther(returnFixNameOther(other.name))

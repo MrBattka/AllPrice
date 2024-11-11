@@ -1258,88 +1258,6 @@ export const returnIDOtherBrand = (name) => {
     name.indexOf("pixel 6 pro 512 white") != -1
   ) {
     return 28307;
-  } else if (name.indexOf("pixel 9 pro 128 hazel") != -1) {
-    return 36716;
-  } else if (name.indexOf("pixel 9 pro 128 obsidian") != -1) {
-    return 36715;
-  } else if (name.indexOf("pixel 9 pro 128 porcelain") != -1) {
-    return 36683;
-  } else if (name.indexOf("pixel 9 pro 128 rose") != -1) {
-    return 36714;
-  } else if (name.indexOf("pixel 9 pro 1tb hazel") != -1) {
-    return 36725;
-  } else if (name.indexOf("pixel 9 pro 1tb obsidian") != -1) {
-    return 36726;
-  } else if (name.indexOf("pixel 9 pro 1tb porcelain") != -1) {
-    return 36727;
-  } else if (name.indexOf("pixel 9 pro 1tb rose") != -1) {
-    return 36728;
-  } else if (name.indexOf("pixel 9 pro 256 hazel") != -1) {
-    return 36717;
-  } else if (
-    name.indexOf("pixel 9 pro") != -1 &&
-    name.indexOf("256") != -1 &&
-    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
-  ) {
-    return 36718;
-  } else if (name.indexOf("pixel 9 pro 256 porcelain") != -1) {
-    return 36719;
-  } else if (name.indexOf("pixel 9 pro 256 rose") != -1) {
-    return 36720;
-  } else if (name.indexOf("pixel 9 pro 512 hazel") != -1) {
-    return 36721;
-  } else if (name.indexOf("pixel 9 pro 512 obsidian") != -1) {
-    return 36722;
-  } else if (name.indexOf("pixel 9 pro 512 porcelain") != -1) {
-    return 36723;
-  } else if (name.indexOf("pixel 9 pro 512 rose") != -1) {
-    return 36724;
-  } else if (
-    name.indexOf("pixel") != -1 &&
-    name.indexOf("9 pro") != -1 &&
-    name.indexOf("fold") != -1 &&
-    name.indexOf("256") != -1 &&
-    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
-  ) {
-    return 36679;
-  } else if (name.indexOf("pixel 9 pro fold 256 porcelain") != -1) {
-    return 36689;
-  } else if (name.indexOf("pixel 9 pro fold 512 obsidian") != -1) {
-    return 36690;
-  } else if (name.indexOf("pixel 9 pro fold 512 porcelain") != -1) {
-    return 36691;
-  } else if (name.indexOf("pixel 9 pro xl 128 hazel") != -1) {
-    return 36701;
-  } else if (name.indexOf("pixel 9 pro xl 128 obsidian") != -1) {
-    return 36700;
-  } else if (name.indexOf("pixel 9 pro xl 128 porcelain") != -1) {
-    return 36684;
-  } else if (name.indexOf("pixel 9 pro xl 128 rose") != -1) {
-    return 36699;
-  } else if (name.indexOf("pixel 9 pro xl 1tb hazel") != -1) {
-    return 36710;
-  } else if (name.indexOf("pixel 9 pro xl 1tb obsidian") != -1) {
-    return 36711;
-  } else if (name.indexOf("pixel 9 pro xl 1tb porcelain") != -1) {
-    return 36712;
-  } else if (name.indexOf("pixel 9 pro xl 1tb rose") != -1) {
-    return 36713;
-  } else if (name.indexOf("pixel 9 pro xl 256 hazel") != -1) {
-    return 36702;
-  } else if (name.indexOf("pixel 9 pro xl 256 obsidian") != -1) {
-    return 36703;
-  } else if (name.indexOf("pixel 9 pro xl 256 porcelain") != -1) {
-    return 36704;
-  } else if (name.indexOf("pixel 9 pro xl 256 rose") != -1) {
-    return 36705;
-  } else if (name.indexOf("pixel 9 pro xl 512 hazel") != -1) {
-    return 36706;
-  } else if (name.indexOf("pixel 9 pro xl 512 obsidian") != -1) {
-    return 36707;
-  } else if (name.indexOf("pixel 9 pro xl 512 porcelain") != -1) {
-    return 36708;
-  } else if (name.indexOf("pixel 9 pro xl 512 rose") != -1) {
-    return 36709;
   } else if (name.indexOf("pixel 7 8/128 lemongrass") != -1) {
     return 23961;
   } else if (name.indexOf("pixel 7 8/128 obsidian") != -1) {
@@ -1586,137 +1504,345 @@ export const returnIDOtherBrand = (name) => {
     return 36383;
   } else if (name.indexOf("pixel 8a 256 porcelain") != -1) {
     return 36384;
-  } else if (name.indexOf("pixel 9 12/128 obsidian") != -1) {
-    return 36682;
-  } else if (name.indexOf("pixel 9 12/128 peony") != -1) {
-    return 36693;
-  } else if (name.indexOf("pixel 9 12/128 porcelain") != -1) {
-    return 36692;
-  } else if (name.indexOf("pixel 9 12/128 wintergreen") != -1) {
-    return 36694;
-  } else if (name.indexOf("pixel 9 12/256 obsidian") != -1) {
-    return 36695;
-  } else if (name.indexOf("pixel 9 12/256 peony") != -1) {
-    return 36696;
-  } else if (name.indexOf("pixel 9 12/256 porcelain") != -1) {
-    return 36697;
-  } else if (name.indexOf("pixel 9 12/256 wintergreen") != -1) {
-    return 36698;
-  } else if (name.indexOf("pixel 9 pro 16/128 hazel") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("hazel") != -1 || name.indexOf("gray") != -1)
+  ) {
     return 36716;
-  } else if (name.indexOf("pixel 9 pro 16/128 obsidian") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36715;
-  } else if (name.indexOf("pixel 9 pro 16/128 porcelain") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36683;
-  } else if (name.indexOf("pixel 9 pro 16/128 rose") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("rose") != -1 || name.indexOf("pink") != -1)
+  ) {
     return 36714;
-  } else if (name.indexOf("pixel 9 pro 16/1tb hazel") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    (name.indexOf("hazel") != -1 || name.indexOf("gray") != -1)
+  ) {
     return 36725;
-  } else if (name.indexOf("pixel 9 pro 16/1tb obsidian") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36726;
-  } else if (name.indexOf("pixel 9 pro 16/1tb porcelain") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36727;
-  } else if (name.indexOf("pixel 9 pro 16/1tb rose") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    (name.indexOf("rose") != -1 || name.indexOf("pink") != -1)
+  ) {
     return 36728;
-  } else if (name.indexOf("pixel 9 pro 16/256 hazel") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("hazel") != -1 || name.indexOf("gray") != -1)
+  ) {
     return 36717;
-  } else if (name.indexOf("pixel 9 pro 16/256 obsidian") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36718;
-  } else if (name.indexOf("pixel 9 pro 16/256 porcelain") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36719;
-  } else if (name.indexOf("pixel 9 pro 16/256 rose") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("rose") != -1 || name.indexOf("pink") != -1)
+  ) {
     return 36720;
-  } else if (name.indexOf("pixel 9 pro 16/512 hazel") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("hazel") != -1 || name.indexOf("gray") != -1)
+  ) {
     return 36721;
-  } else if (name.indexOf("pixel 9 pro 16/512 obsidian") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36722;
-  } else if (name.indexOf("pixel 9 pro 16/512 porcelain") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36723;
-  } else if (name.indexOf("pixel 9 pro 16/512 rose") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("rose") != -1 || name.indexOf("pink") != -1)
+  ) {
     return 36724;
-  } else if (name.indexOf("pixel 9 pro fold 16/256 obsidian") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("fold") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36679;
-  } else if (name.indexOf("pixel 9 pro fold 16/256 porcelain") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("fold") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36689;
-  } else if (name.indexOf("pixel 9 pro fold 16/512 obsidian") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("fold") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36690;
-  } else if (name.indexOf("pixel 9 pro fold 16/512 porcelain") != -1) {
+  } else if (
+    name.indexOf("xl") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("fold") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36691;
-  } else if (name.indexOf("pixel 9 pro xl 16/128 hazel") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("hazel") != -1 || name.indexOf("gray") != -1)
+  ) {
     return 36701;
-  } else if (name.indexOf("pixel 9 pro xl 16/128 obsidian") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36700;
-  } else if (name.indexOf("pixel 9 pro xl 16/128 porcelain") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36684;
-  } else if (name.indexOf("pixel 9 pro xl 16/128 rose") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("128") != -1 &&
+    (name.indexOf("rose") != -1 || name.indexOf("pink") != -1)
+  ) {
     return 36699;
-  } else if (name.indexOf("pixel 9 pro xl 16/1tb hazel") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    (name.indexOf("hazel") != -1 || name.indexOf("gray") != -1)
+  ) {
     return 36710;
-  } else if (name.indexOf("pixel 9 pro xl 16/1tb obsidian") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36711;
-  } else if (name.indexOf("pixel 9 pro xl 16/1tb porcelain") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36712;
-  } else if (name.indexOf("pixel 9 pro xl 16/1tb rose") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    (name.indexOf("rose") != -1 || name.indexOf("pink") != -1)
+  ) {
     return 36713;
-  } else if (name.indexOf("pixel 9 pro xl 16/256 hazel") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("hazel") != -1 || name.indexOf("gray") != -1)
+  ) {
     return 36702;
-  } else if (name.indexOf("pixel 9 pro xl 16/256 obsidian") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36703;
-  } else if (name.indexOf("pixel 9 pro xl 16/256 porcelain") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36704;
-  } else if (name.indexOf("pixel 9 pro xl 16/256 rose") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("256") != -1 &&
+    (name.indexOf("rose") != -1 || name.indexOf("pink") != -1)
+  ) {
     return 36705;
-  } else if (name.indexOf("pixel 9 pro xl 16/512 hazel") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("hazel") != -1 || name.indexOf("gray") != -1)
+  ) {
     return 36706;
-  } else if (name.indexOf("pixel 9 pro xl 16/512 obsidian") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
+  ) {
     return 36707;
-  } else if (name.indexOf("pixel 9 pro xl 16/512 porcelain") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36708;
-  } else if (name.indexOf("pixel 9 pro xl 16/512 rose") != -1) {
+  } else if (
+    name.indexOf("fold") === -1 &&
+    name.indexOf("pixel 9 pro") != -1 &&
+    name.indexOf("xl") != -1 &&
+    name.indexOf("512") != -1 &&
+    (name.indexOf("rose") != -1 || name.indexOf("pink") != -1)
+  ) {
     return 36709;
   } else if (
+    (name.indexOf("xl") === -1 || name.indexOf("pro") === -1) &&
     name.indexOf("pixel 9") != -1 &&
     name.indexOf("128") != -1 &&
     (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
   ) {
     return 36682;
   } else if (
+    (name.indexOf("xl") === -1 || name.indexOf("pro") === -1) &&
     name.indexOf("pixel 9") != -1 &&
     name.indexOf("128") != -1 &&
     (name.indexOf("peony") != -1 || name.indexOf("pink") != -1)
   ) {
     return 36693;
   } else if (
+    (name.indexOf("xl") === -1 || name.indexOf("pro") === -1) &&
     name.indexOf("pixel 9") != -1 &&
     name.indexOf("128") != -1 &&
     (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
   ) {
     return 36692;
   } else if (
+    (name.indexOf("xl") === -1 || name.indexOf("pro") === -1) &&
     name.indexOf("pixel 9") != -1 &&
     name.indexOf("128") != -1 &&
     (name.indexOf("wintergreen") != -1 || name.indexOf("green") != -1)
   ) {
     return 36694;
   } else if (
+    (name.indexOf("xl") === -1 || name.indexOf("pro") === -1) &&
     name.indexOf("pixel 9") != -1 &&
     name.indexOf("256") != -1 &&
     (name.indexOf("obsidian") != -1 || name.indexOf("black") != -1)
   ) {
     return 36695;
   } else if (
+    (name.indexOf("xl") === -1 || name.indexOf("pro") === -1) &&
     name.indexOf("pixel 9") != -1 &&
     name.indexOf("256") != -1 &&
     (name.indexOf("peony") != -1 || name.indexOf("pink") != -1)
   ) {
     return 36696;
   } else if (
+    (name.indexOf("xl") === -1 || name.indexOf("pro") === -1) &&
     name.indexOf("pixel 9") != -1 &&
     name.indexOf("256") != -1 &&
     (name.indexOf("porcelain") != -1 || name.indexOf("white") != -1)
   ) {
     return 36697;
   } else if (
+    (name.indexOf("xl") === -1 || name.indexOf("pro") === -1) &&
     name.indexOf("pixel 9") != -1 &&
     name.indexOf("256") != -1 &&
     (name.indexOf("wintergreen") != -1 || name.indexOf("green") != -1)

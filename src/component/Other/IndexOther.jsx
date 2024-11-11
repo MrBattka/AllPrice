@@ -7,6 +7,7 @@ import {
   returnStockPriceOther
 } from "./helpers/helpers";
 import style from "./styles.module.css";
+import { baseFixOther } from "../../helpers/baseFix";
 
 const IndexOther = ({ el, otherData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,15 +15,17 @@ const IndexOther = ({ el, otherData }) => {
 
   otherData.map((other) => {
     returnStockPriceOther(returnFixNameOther(other.name));
-    if (other.name && typeof other.name === "string" && isOpen) {
+    if (other.name && typeof other.name === "string" && isOpen && baseFixOther(other)) {
       return (
         returnIDSamsung(returnFixNameOther(other.name)) !== "No match" &&
         returnStockPriceOther(returnFixNameOther(other.name)) &&
+        baseFixOther(other) &&
+        returnStockPriceOther(returnFixNameOther(other.name)).indexOf("0") !== -1 &&
         resultArr.push({
           id: returnIDSamsung(
             returnFixNameOther(other.name)
           ),
-          name: returnNameInArrOther(returnFixNameOther(other.name)),
+          name: baseFixOther(other) && returnNameInArrOther(returnFixNameOther(other.name)),
           stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
           provider: "Разное",
         })

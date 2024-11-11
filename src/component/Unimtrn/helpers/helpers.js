@@ -452,6 +452,7 @@ export const fixNameUnimtrn = (el) => {
       : fixMi12Gray;
       const replaceCrafted = fixMi12Pink.replace("Crafted ", "")
       const fixTabS9Plus = replaceCrafted.replace("Tab S9+", "Tab S9 +")
+      const fixFEPlus = fixTabS9Plus.replace("FE Plus", "FE +")
 
-  return fixTabS9Plus;
+  return fixFEPlus;
 };

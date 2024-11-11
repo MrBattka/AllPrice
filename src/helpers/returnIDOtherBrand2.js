@@ -13,6 +13,22 @@ export const returnIDOtherBrand2 = (name) => {
   ) {
     return 30947;
   } else if (
+    (name.indexOf("ps5") != -1 ||
+      name.indexOf("playstation 5") != -1 ||
+      name.indexOf("ps 5") != -1) &&
+    name.indexOf("pro") != -1 &&
+    name.indexOf("digital") != -1
+  ) {
+    return 36834;
+  } else if (
+    (name.indexOf("ps5") != -1 ||
+      name.indexOf("playstation 5") != -1 ||
+      name.indexOf("ps 5") != -1) &&
+    name.indexOf("pro") != -1 &&
+    name.indexOf("ray") != -1
+  ) {
+    return 36835;
+  } else if (
     (name.indexOf("dualsense black") != -1 ||
       name.indexOf("dualsense white") != -1 ||
       name.indexOf("dualsenseBlack") != -1 ||
@@ -21,8 +37,7 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("white") != -1
   ) {
     return 19661;
-  } else if (name.indexOf("dualsense") != -1 &&
-  name.indexOf("red") != -1) {
+  } else if (name.indexOf("dualsense") != -1 && name.indexOf("red") != -1) {
     return 36796;
   } else if (name.indexOf("dualsense purple") != -1) {
     return 36799;
@@ -30,8 +45,7 @@ export const returnIDOtherBrand2 = (name) => {
     return 36801;
   } else if (name.indexOf("dualsense pink") != -1) {
     return 36798;
-  } else if (name.indexOf("dualsense") != -1 &&
-  name.indexOf("blue") != -1) {
+  } else if (name.indexOf("dualsense") != -1 && name.indexOf("blue") != -1) {
     return 36797;
   } else if (
     name.indexOf("ps portal") != -1 ||
@@ -1013,29 +1027,25 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("zenfone 8 flip") != -1 &&
     name.indexOf("8/128") != -1 &&
-    (name.indexOf("galactic") != -1 ||
-    name.indexOf("black") != -1)
+    (name.indexOf("galactic") != -1 || name.indexOf("black") != -1)
   ) {
     return 30263;
   } else if (
     name.indexOf("zenfone 8 flip") != -1 &&
     name.indexOf("8/256") != -1 &&
-    (name.indexOf("galactic") != -1 ||
-    name.indexOf("black") != -1)
+    (name.indexOf("galactic") != -1 || name.indexOf("black") != -1)
   ) {
     return 30264;
   } else if (
     name.indexOf("zenfone 8 flip") != -1 &&
     name.indexOf("8/128") != -1 &&
-    (name.indexOf("glacier") != -1 ||
-    name.indexOf("silver") != -1)
+    (name.indexOf("glacier") != -1 || name.indexOf("silver") != -1)
   ) {
     return 30265;
   } else if (
     name.indexOf("zenfone 8 flip") != -1 &&
     name.indexOf("8/256") != -1 &&
-    (name.indexOf("glacier") != -1 ||
-    name.indexOf("silver") != -1)
+    (name.indexOf("glacier") != -1 || name.indexOf("silver") != -1)
   ) {
     return 30266;
   } else if (name.indexOf("zenfone 9 16/256 black") != -1) {
