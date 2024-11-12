@@ -316,8 +316,8 @@ const App = () => {
           el={dataSuperprice}
           superpriceData={superprice}
           allPrice={allPrice}
-         /> */}
-         {/* <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} /> */}
+         />
+        <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} /> */}
         {/* Garmin */}
         {/* <IndexGarmin el={dataGarmin} garminData={garmin} />
         <IndexGarminNotID el={dataGarmin} garminData={garmin} /> */}

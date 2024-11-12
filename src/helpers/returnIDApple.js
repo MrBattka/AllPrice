@@ -4888,9 +4888,11 @@ export const returnIDApple = (name) => {
     return 36611;
   } else if (name.indexOf("16 128 pink") != -1) {
     return 36618;
-  } else if (name.indexOf("16 128 teal") != -1) {
+  } else if (name.indexOf("16 128 teal") != -1 ||
+  name.indexOf("16 128 green") != -1) {
     return 36617;
-  } else if (name.indexOf("16 128 ultramarine") != -1) {
+  } else if (name.indexOf("16 128 ultramarine") != -1 ||
+  name.indexOf("16 128 blue") != -1) {
     return 36615;
   } else if (name.indexOf("16 128 white") != -1) {
     return 36616;
@@ -4898,9 +4900,11 @@ export const returnIDApple = (name) => {
     return 36619;
   } else if (name.indexOf("16 256 pink") != -1) {
     return 36620;
-  } else if (name.indexOf("16 256 teal") != -1) {
+  } else if (name.indexOf("16 256 teal") != -1 ||
+  name.indexOf("16 256 green") != -1) {
     return 36621;
-  } else if (name.indexOf("16 256 ultramarine") != -1) {
+  } else if (name.indexOf("16 256 ultramarine") != -1 ||
+  name.indexOf("16 256 blue") != -1) {
     return 36622;
   } else if (name.indexOf("16 256 white") != -1) {
     return 36623;
@@ -4908,9 +4912,11 @@ export const returnIDApple = (name) => {
     return 36624;
   } else if (name.indexOf("16 512 pink") != -1) {
     return 36625;
-  } else if (name.indexOf("16 512 teal") != -1) {
+  } else if (name.indexOf("16 512 teal") != -1 ||
+  name.indexOf("16 512 green") != -1) {
     return 36626;
-  } else if (name.indexOf("16 512 ultramarine") != -1) {
+  } else if (name.indexOf("16 512 ultramarine") != -1 ||
+  name.indexOf("16 512 blue") != -1) {
     return 36627;
   } else if (name.indexOf("16 512 white") != -1) {
     return 36628;
@@ -4918,9 +4924,11 @@ export const returnIDApple = (name) => {
     return 36612;
   } else if (name.indexOf("16 plus 128 pink") != -1) {
     return 36630;
-  } else if (name.indexOf("16 plus 128 teal") != -1) {
+  } else if (name.indexOf("16 plus 128 teal") != -1 ||
+  name.indexOf("16 plus 128 green") != -1) {
     return 36629;
-  } else if (name.indexOf("16 plus 128 ultramarine") != -1) {
+  } else if (name.indexOf("16 plus 128 ultramarine") != -1 ||
+  name.indexOf("16 plus 128 blue") != -1) {
     return 36632;
   } else if (name.indexOf("16 plus 128 white") != -1) {
     return 36631;
@@ -4928,9 +4936,11 @@ export const returnIDApple = (name) => {
     return 36633;
   } else if (name.indexOf("16 plus 256 pink") != -1) {
     return 36634;
-  } else if (name.indexOf("16 plus 256 teal") != -1) {
+  } else if (name.indexOf("16 plus 256 teal") != -1 ||
+  name.indexOf("16 plus 256 green") != -1) {
     return 36635;
-  } else if (name.indexOf("16 plus 256 ultramarine") != -1) {
+  } else if (name.indexOf("16 plus 256 ultramarine") != -1 ||
+  name.indexOf("16 plus 256 blue") != -1) {
     return 36636;
   } else if (name.indexOf("16 plus 256 white") != -1) {
     return 36637;
@@ -4938,9 +4948,11 @@ export const returnIDApple = (name) => {
     return 36638;
   } else if (name.indexOf("16 plus 512 pink") != -1) {
     return 36639;
-  } else if (name.indexOf("16 plus 512 teal") != -1) {
+  } else if (name.indexOf("16 plus 512 teal") != -1 ||
+  name.indexOf("16 plus 512 green") != -1) {
     return 36640;
-  } else if (name.indexOf("16 plus 512 ultramarine") != -1) {
+  } else if (name.indexOf("16 plus 512 ultramarine") != -1 ||
+  name.indexOf("16 plus 512 blue") != -1) {
     return 36641;
   } else if (name.indexOf("16 plus 512 white") != -1) {
     return 36642;

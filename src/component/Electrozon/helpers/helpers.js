@@ -94,6 +94,7 @@ export const returnFixNameElectrozon = (name) => {
   const fixS9Plus = fixFEPlus.replace("S9+", "S9 +");
   const fixA9Plus = fixS9Plus.replace("A9+", "A9 +");
   const FixLightBlue = fixA9Plus.replace("White-Blue", "Light Blue");
+  const FixGrey = FixLightBlue.replace("Grey", "Gray");
 
-  return FixLightBlue;
+  return FixGrey;
 };

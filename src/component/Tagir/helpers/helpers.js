@@ -5,8 +5,9 @@ export const fixNameTagir = (name) => {
   const replaceYandex = replaceDot.replace("🔊", "");
   const replaceNewIcon = replaceYandex.replace("🆕", "");
   const replaceMilanese = replaceNewIcon.replace("Milanese ", "");
+  const fixSE3 = replaceMilanese.replace("SE 3 ", "SE3 ");
 
-  const fixS10Slate = replaceMilanese.indexOf("S10 ") ?  replaceMilanese.replace("State", "Slate") : replaceMilanese
+  const fixS10Slate = fixSE3.indexOf("S10 ") ?  replaceMilanese.replace("State", "Slate") : replaceMilanese
 
   return fixS10Slate;
 };

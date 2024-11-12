@@ -190,7 +190,9 @@ export const returnFixNameReSale = (name) => {
   const fixS24Plus = fixSE3.replace("S24 +", "S24+");
   const fixMM = fixS24Plus.replace("mm", "");
   const fixGB = fixMM.replace("GB", "");
-  const fixDualSenseBlack = fixGB.replace("Чёрный", "dualsense Black ");
+  const fixZflip5 = fixGB.replace("Flip5", "Flip 5");
+  const fixZflip6 = fixZflip5.replace("Flip6", "Flip 6");
+  const fixDualSenseBlack = fixZflip6.replace("Чёрный", "dualsense Black ");
   const fixDualSenseWhite = fixDualSenseBlack.replace(
     "Белый",
     "dualsense White "

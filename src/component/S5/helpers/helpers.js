@@ -37,7 +37,9 @@ export const fixNameS5 = (name) => {
     "AirPods Pro 2"
   );
   const replaceS9Plus = replaceMagsafe.replace("S9 Plus", "S9 +");
-  const replaceTabA9 = replaceS9Plus.replace("A9 128", "Tab A9 128");
+  const fixiPad10 = replaceS9Plus.replace("iPad 10.2", "iPad 10");
+  const replacemm = fixiPad10.replace("MM", "");
+  const replaceTabA9 = replacemm.replace("A9 128", "Tab A9 128");
   const replaceTabA9Plus = replaceTabA9.replace("A9 + 128", "Tab A9 + 128");
   const replaceFEPlus = replaceTabA9Plus.replace("FE+", "FE +");
   const replaceS9FE = replaceFEPlus.replace("S9FE", "S9 FE");

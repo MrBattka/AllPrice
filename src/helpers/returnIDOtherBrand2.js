@@ -17,7 +17,7 @@ export const returnIDOtherBrand2 = (name) => {
       name.indexOf("playstation 5") != -1 ||
       name.indexOf("ps 5") != -1) &&
     name.indexOf("pro") != -1 &&
-    name.indexOf("digital") != -1
+    name.indexOf("disc") == -1 
   ) {
     return 36834;
   } else if (
@@ -129,37 +129,37 @@ export const returnIDOtherBrand2 = (name) => {
 
     // Sony
   } else if (
-    name.indexOf("xperia 1v") != -1 &&
+    name.indexOf("xperia 1v ") != -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("black") != -1
   ) {
     return 27888;
   } else if (
-    name.indexOf("xperia 1v") != -1 &&
+    name.indexOf("xperia 1v ") != -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("green") != -1
   ) {
     return 27890;
   } else if (
-    name.indexOf("xperia 1v") != -1 &&
+    name.indexOf("xperia 1v ") != -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("silver") != -1
   ) {
     return 27892;
   } else if (
-    name.indexOf("xperia 1v") != -1 &&
+    name.indexOf("xperia 1v ") != -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("black") != -1
   ) {
     return 27889;
   } else if (
-    name.indexOf("xperia 1v") != -1 &&
+    name.indexOf("xperia 1v ") != -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("green") != -1
   ) {
     return 27893;
   } else if (
-    name.indexOf("xperia 1v") != -1 &&
+    name.indexOf("xperia 1v ") != -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("silver") != -1
   ) {

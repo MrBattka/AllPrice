@@ -12,7 +12,7 @@ export const fixNameNarod = (name) => {
   const fixLavanda = fixCream.replace("Lavanda", "Lavender");
   const fixZFlip5 = fixLavanda.replace("Z Flip5", "Z Flip 5");
   const fixLavendelr = fixZFlip5.replace("Lavendel", "Lavender");
-  const fixMinit = fixLavendelr.replace("minit", "Mint");
+  const fixMinit = fixLavendelr.replace("Minit", "Mint");
   const fixMint = fixMinit.replace("Мята", "Mint");
   const fixs23feGraphite =
     fixMint.indexOf("S23 FE") != -1
@@ -61,8 +61,17 @@ export const fixNameNarod = (name) => {
   const fix13ProPlus = fixPocoF6Titan.replace("13 Pro Plus", "13 Pro +");
   const fixWhite = fix13ProPlus.replace("While", "White");
   const replaceNEFlag = fixWhite.replace("🇳🇪", "");
-
-  return replaceNEFlag;
+  const fixGraphite = replaceNEFlag.replace("Графит", "Graphite");
+  const fixLemon = fixGraphite.replace("Limon", "Lemon");
+  const fix128G = fixLemon.replace("128G ", "128 ");
+  const fix256G = fix128G.replace("256G ", "256 ");
+  const fix8Pro = fix256G.replace("8Pro", "8 Pro");
+  
+  const fixWhite1 = fix8Pro.replace("Белый", "White");
+  const fixSnow = fixWhite1.indexOf("PIXEL") !== -1 ? fixWhite1.replace("WHITE", "Snow") : fixWhite1
+  const fixCreamZFlip6 = fixSnow.indexOf("Flip") !== -1 ? fixSnow.replace("Бежевый", "Cream") : fixSnow
+  
+  return fixCreamZFlip6;
 };
 
 export const returnNameNarod = (name) => {

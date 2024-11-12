@@ -1905,7 +1905,7 @@ export const returnIDXiaomi = (name) => {
   } else if (
     name.indexOf("mi pad 6") !== -1 &&
     name.indexOf("6/128") !== -1 &&
-    name.indexOf("black") !== -1
+    (name.indexOf("black") !== -1 || name.indexOf("gray") !== -1)
   ) {
     return 27369;
   } else if (
@@ -1923,7 +1923,7 @@ export const returnIDXiaomi = (name) => {
   } else if (
     name.indexOf("mi pad 6") !== -1 &&
     name.indexOf("8/128") !== -1 &&
-    name.indexOf("black") !== -1
+    (name.indexOf("black") !== -1 || name.indexOf("gray") !== -1)
   ) {
     return 27370;
   } else if (
@@ -1941,7 +1941,7 @@ export const returnIDXiaomi = (name) => {
   } else if (
     name.indexOf("mi pad 6") !== -1 &&
     name.indexOf("8/256") !== -1 &&
-    name.indexOf("black") !== -1
+    (name.indexOf("black") !== -1 || name.indexOf("gray") !== -1)
   ) {
     return 27371;
   } else if (

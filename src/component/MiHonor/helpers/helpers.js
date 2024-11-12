@@ -86,6 +86,11 @@ export const fixNameMihonor = (name) => {
   const fix8256 = fix8255GB.replace("8 256", "8/256");
   const fix8128 = fix8256.replace("8 128", "8/128");
   const fix12256 = fix8128.replace("12 256", "12/256");
+  const fix6128 = fix12256.replace("6 128", "6/128");
+  const fix4128 = fix6128.replace("4 128", "4/128");
+  const fix121024 = fix4128.replace("12+1024", "12/1tb");
+  const fix364 = fix121024.replace("3+64", "3/64");
   
-  return fix12256;
+  
+  return fix364;
 };

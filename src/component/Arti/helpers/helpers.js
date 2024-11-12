@@ -143,8 +143,11 @@ export const returnFixNameArti = (name) => {
   const fixF956B = fixs916b.replace("F956B ", "");
   const fixS721B = fixF956B.replace("S721B ", "");
   const fixF741B = fixS721B.replace("F741B ", "");
+  const fixAirPods4 = fixF741B.replace("AirPods4", "AirPods 4");
+  const fix5 = fixAirPods4.replace("5️⃣", " 5 ");
+  const fix6 = fix5.replace("6️⃣", " 6 ");
 
-  return fixF741B;
+  return fix6;
 };
 
 export const returnNameArti = (name) => {
