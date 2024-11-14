@@ -66,8 +66,9 @@ export const fixNameNarod = (name) => {
   const fix128G = fixLemon.replace("128G ", "128 ");
   const fix256G = fix128G.replace("256G ", "256 ");
   const fix8Pro = fix256G.replace("8Pro", "8 Pro");
+  const fixFE = fix8Pro.replace(" FF ", " FE ");
   
-  const fixWhite1 = fix8Pro.replace("Белый", "White");
+  const fixWhite1 = fixFE.replace("Белый", "White");
   const fixSnow = fixWhite1.indexOf("PIXEL") !== -1 ? fixWhite1.replace("WHITE", "Snow") : fixWhite1
   const fixCreamZFlip6 = fixSnow.indexOf("Flip") !== -1 ? fixSnow.replace("Бежевый", "Cream") : fixSnow
   
