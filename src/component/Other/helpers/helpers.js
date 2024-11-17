@@ -126,7 +126,8 @@ const checkFlags = (str) => {
     checkSpace4.slice(-4) === "🇰🇿" ||
     checkSpace4.slice(-4) === "🇰🇷" ||
     checkSpace4.slice(-4) === "🇬🇺" ||
-    checkSpace4.slice(-4) === "🇺🇲"
+    checkSpace4.slice(-4) === "🇺🇲" ||
+    checkSpace4.slice(-4) === "🇵🇾"
   ) {
     return (
       checkSpace4.slice(-4) + checkSpace4.substring(0, checkSpace4.length - 4)
@@ -179,7 +180,8 @@ export const returnStockPriceOther = (name) => {
   let replaceKZ = replaceCF.replace("🇰🇿", "");
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceUM = replaceKR.replace("🇺🇲", "");
-  let replace2Sim = replaceUM.replace("2sim", "");
+  let replacePY = replaceUM.replace("🇵🇾", "");
+  let replace2Sim = replacePY.replace("2sim", "");
   let replaceSim = replace2Sim.replace("-sim", "");
   let replacePoint = replaceSim.replace(".", "");
   let replacePoint1 = replacePoint.replace(",", "");
@@ -239,6 +241,7 @@ export const returnExtraPriceOther = (name) => {
 
   let splitPrice = replaceDouble4.split(" ")[0];
   let reverseBackStrName = splitPrice.split("").reverse().join("");
+  
 
-  return reverseBackStrName;
+  return reverseBackStrName.indexOf("0") !== -1 && reverseBackStrName;
 };

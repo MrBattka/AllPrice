@@ -17,10 +17,10 @@ const IndexOther = ({ el, otherData }) => {
     returnStockPriceOther(returnFixNameOther(other.name));
     if (other.name && typeof other.name === "string" && isOpen && baseFixOther(other)) {
       return (
+        returnStockPriceOther(returnFixNameOther(other.name)).indexOf('0') !== -1 &&
         returnIDSamsung(returnFixNameOther(other.name)) !== "No match" &&
         returnStockPriceOther(returnFixNameOther(other.name)) &&
         baseFixOther(other) &&
-        returnStockPriceOther(returnFixNameOther(other.name)).indexOf("0") !== -1 &&
         resultArr.push({
           id: returnIDSamsung(
             returnFixNameOther(other.name)

@@ -14,15 +14,17 @@ const IndexMiHonor = ({ el, mihonorData }) => {
   const resultArr = [];
 
   mihonorData.map((mihonor) => {
-    baseFixMiHonor(mihonor) && returnStockPriceMihonor(fixNameMihonor(mihonor.name));
+    // baseFixMiHonor(mihonor) && returnStockPriceMihonor(fixNameMihonor(mihonor.name));
     if (
       mihonor.name &&
       typeof mihonor.name === "string" &&
+      mihonor.name.indexOf("₽") !== -1 &&
       baseFixMiHonor(mihonor) &&
       isOpen
     )
      {
       return (
+        mihonor.name.indexOf("₽") !== -1 &&
         returnIDSamsung(fixNameMihonor(mihonor.name)) !== 'No match' &&
         returnStockPriceMihonor(mihonor.name) &&
         resultArr.push({

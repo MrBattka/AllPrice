@@ -29,7 +29,7 @@ export const returnExtraPriceMihonor = (name) => {
     reverseStrName[0] !== "₽" ? reverseStrName.slice(1) : reverseStrName;
   let removeRUB =
     removeSpaceName[0] === "₽" ? removeSpaceName.slice(1) : reverseStrName;
-  let splitPrice = removeRUB.split(' ')[0]
+  let splitPrice = removeRUB.indexOf(" ") !== -1 ? removeRUB.split(' ')[0] : removeRUB
   let reverseBackStrName = splitPrice.split("").reverse().join("");
 
   return newPrice(returnNameInArrMihonor(name), reverseBackStrName);
@@ -41,7 +41,7 @@ export const returnStockPriceMihonor = (name) => {
     reverseStrName[0] !== "₽" ? reverseStrName.slice(1) : reverseStrName;
   let removeRUB =
     removeSpaceName[0] === "₽" ? removeSpaceName.slice(1) : reverseStrName;
-  let splitPrice = removeRUB.split(' ')[0]
+  let splitPrice = removeRUB.indexOf(" ") !== -1 ? removeRUB.split(' ')[0] : removeRUB
   let reverseBackStrName = splitPrice.split("").reverse().join("");
 
   return reverseBackStrName;
