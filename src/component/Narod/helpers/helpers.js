@@ -68,9 +68,12 @@ export const fixNameNarod = (name) => {
   const fix8Pro = fix256G.replace("8Pro", "8 Pro");
   const fixFE = fix8Pro.replace(" FF ", " FE ");
   
+  
   const fixWhite1 = fixFE.replace("Белый", "White");
   const fixSnow = fixWhite1.indexOf("PIXEL") !== -1 ? fixWhite1.replace("WHITE", "Snow") : fixWhite1
-  const fixCreamZFlip6 = fixSnow.indexOf("Flip") !== -1 ? fixSnow.replace("Бежевый", "Cream") : fixSnow
+  const fixBay = fixSnow.indexOf("Pixel") !== -1 ? fixSnow.replace("Галубой", "Bay") : fixSnow
+  const fixBay1 = fixBay.indexOf("Pixel") !== -1 ? fixBay.replace("Голубой", "Bay") : fixBay
+  const fixCreamZFlip6 = fixBay1.indexOf("Flip") !== -1 ? fixBay1.replace("Бежевый", "Cream") : fixBay1
   
   return fixCreamZFlip6;
 };

@@ -300,63 +300,63 @@ const App = () => {
       </div>
       <div className="wrapper_cat">
         {/* Сема */}
-        {/* <IndexHi el={dataHi} hi={hi} />
-        <IndexHiNotID el={dataHi} hi={hi} /> */}
+        <IndexHi el={dataHi} hi={hi} />
+        <IndexHiNotID el={dataHi} hi={hi} />
         {/* Метры */}
-        {/* <IndexUnimtrn el={dataUNIMTRN} />
-        <IndexUnimtrnNotID el={dataUNIMTRN} /> */}
+        <IndexUnimtrn el={dataUNIMTRN} />
+        <IndexUnimtrnNotID el={dataUNIMTRN} />
         {/* MiHonor */}
-        {/* <IndexMiHonor el={dataMihonor} mihonorData={mihonor} />
-        <IndexMiHonorNotID el={dataMihonor} mihonorData={mihonor} /> */}
+        <IndexMiHonor el={dataMihonor} mihonorData={mihonor} />
+        <IndexMiHonorNotID el={dataMihonor} mihonorData={mihonor} />
         {/* VseMi */}
-        {/* <IndexVseMi el={dataVsemi} vsemiData={vsemi} />
-        <IndexVseMiNotID el={dataVsemi} vsemiData={vsemi} /> */}
+        <IndexVseMi el={dataVsemi} vsemiData={vsemi} />
+        <IndexVseMiNotID el={dataVsemi} vsemiData={vsemi} />
         {/* Super Price */}
-        {/* <IndexSuperPrice
+        <IndexSuperPrice
           el={dataSuperprice}
           superpriceData={superprice}
           allPrice={allPrice}
          />
-        <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} /> */}
+        <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} />
         {/* Garmin */}
-        {/* <IndexGarmin el={dataGarmin} garminData={garmin} />
-        <IndexGarminNotID el={dataGarmin} garminData={garmin} /> */}
+        <IndexGarmin el={dataGarmin} garminData={garmin} />
+        <IndexGarminNotID el={dataGarmin} garminData={garmin} />
         {/* S5 */}
-        {/* <IndexS5 el={dataS5} S5Data={S5} />
-        <IndexS5NotID el={dataS5} S5Data={S5} /> */}
+        <IndexS5 el={dataS5} S5Data={S5} />
+        <IndexS5NotID el={dataS5} S5Data={S5} />
         {/* RPTrade */}
-        {/* <IndexRPTrade el={dataRPTrade} rptradeData={rptrade} />
-        <IndexRPTradeNotID el={dataRPTrade} rptradeData={rptrade} /> */}
+        <IndexRPTrade el={dataRPTrade} rptradeData={rptrade} />
+        <IndexRPTradeNotID el={dataRPTrade} rptradeData={rptrade} />
         {/* Рацмаг */}
-        {/* <IndexRacmag el={dataRacmag} racmagData={racmag} />
-        <IndexRacmagNotID el={dataRacmag} racmagData={racmag} /> */}
+        <IndexRacmag el={dataRacmag} racmagData={racmag} />
+        <IndexRacmagNotID el={dataRacmag} racmagData={racmag} />
         {/* Arti */}
-        {/* <IndexArti el={dataArti} artiData={arti} />
-        <IndexArtiNotID el={dataArti} artiData={arti} /> */}
+        <IndexArti el={dataArti} artiData={arti} />
+        <IndexArtiNotID el={dataArti} artiData={arti} />
         {/* Electrozon */}
-        {/* <IndexElectrozon el={dataElectrozon} electrozonData={electrozon} />
-        <IndexElectrozonNotID el={dataElectrozon} electrozonData={electrozon} /> */}
+        <IndexElectrozon el={dataElectrozon} electrozonData={electrozon} />
+        <IndexElectrozonNotID el={dataElectrozon} electrozonData={electrozon} />
         {/* ReSale */}
-        {/* <IndexReSale el={dataReSale} resaleData={resale} />
-        <IndexReSaleNotID el={dataReSale} resaleData={resale} /> */}
+        <IndexReSale el={dataReSale} resaleData={resale} />
+        <IndexReSaleNotID el={dataReSale} resaleData={resale} />
         {/* Тагир */}
-        {/* <IndexTagir el={dataTagir} tagirData={tagir} />
-        <IndexTagirNotID el={dataTagir} tagirData={tagir} /> */}
+        <IndexTagir el={dataTagir} tagirData={tagir} />
+        <IndexTagirNotID el={dataTagir} tagirData={tagir} />
         {/* Народ */}
-        {/* <IndexNarod el={dataNarod} narodData={narod} />
-        <IndexNarodNotID el={dataNarod} narodData={narod} /> */}
+        <IndexNarod el={dataNarod} narodData={narod} />
+        <IndexNarodNotID el={dataNarod} narodData={narod} />
         {/* F51 */}
-        {/* <IndexF51 el={dataF51} f51Data={f51} />
-        <IndexF51NotID el={dataF51} f51Data={f51} /> */}
+        <IndexF51 el={dataF51} f51Data={f51} />
+        <IndexF51NotID el={dataF51} f51Data={f51} />
         {/* Discount */}
-        {/* <IndexDiscount el={dataDiscount} discountData={discount} />
-        <IndexDiscountNotID el={dataDiscount} discountData={discount} /> */}
+        <IndexDiscount el={dataDiscount} discountData={discount} />
+        <IndexDiscountNotID el={dataDiscount} discountData={discount} />
         {/* Base */}
-        {/* <IndexBase el={dataBase} baseData={deleteDoubleProduct} />
-        <IndexBaseNotID el={dataBase} baseData={deleteDoubleProduct} /> */}
+        <IndexBase el={dataBase} baseData={deleteDoubleProduct} />
+        <IndexBaseNotID el={dataBase} baseData={deleteDoubleProduct} />
         {/* Other */}
-        {/* <IndexOther el={dataOther} otherData={other} />
-        <IndexOtherNotID el={dataOther} otherData={other} /> */}
+        <IndexOther el={dataOther} otherData={other} />
+        <IndexOtherNotID el={dataOther} otherData={other} />
 
         {/* All Price */}
         <AllPriceWithID

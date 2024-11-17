@@ -2573,37 +2573,43 @@ export const returnIDApple = (name) => {
     // iphone 13
   } else if (name.indexOf("13 128 blue") != -1) {
     return 20576;
-  } else if (name.indexOf("13 128 midnight") != -1) {
+  } else if (name.indexOf("13 128 midnight") != -1 ||
+  name.indexOf("13 128 black") != -1) {
     return 20575;
   } else if (name.indexOf("13 128 pink") != -1) {
     return 20569;
   } else if (name.indexOf("13 128 red") != -1) {
     return 20578;
-  } else if (name.indexOf("13 128 starlight") != -1) {
+  } else if (name.indexOf("13 128 starlight") != -1 ||
+  name.indexOf("13 128 white") != -1) {
     return 20577;
   } else if (name.indexOf("13 128 green") != -1) {
     return 22194;
   } else if (name.indexOf("13 256 blue") != -1) {
     return 20580;
-  } else if (name.indexOf("13 256 midnight") != -1) {
+  } else if (name.indexOf("13 256 midnight") != -1 ||
+  name.indexOf("13 256 black") != -1) {
     return 20573;
   } else if (name.indexOf("13 256 pink") != -1) {
     return 20581;
   } else if (name.indexOf("13 256 red") != -1) {
     return 20582;
-  } else if (name.indexOf("13 256 starlight") != -1) {
+  } else if (name.indexOf("13 256 starlight") != -1 ||
+  name.indexOf("13 256 white") != -1) {
     return 20583;
   } else if (name.indexOf("13 256 green") != -1) {
     return 22195;
   } else if (name.indexOf("13 512 blue") != -1) {
     return 20586;
-  } else if (name.indexOf("13 512 midnight") != -1) {
+  } else if (name.indexOf("13 512 midnight") != -1 ||
+  name.indexOf("13 512 black") != -1) {
     return 20574;
   } else if (name.indexOf("13 512 pink") != -1) {
     return 20585;
   } else if (name.indexOf("13 512 red") != -1) {
     return 20588;
-  } else if (name.indexOf("13 512 starlight") != -1) {
+  } else if ((name.indexOf("13 512 starlight") != -1 ||
+  name.indexOf("13 512 white") != -1)) {
     return 20587;
   } else if (name.indexOf("13 512 green") != -1) {
     return 22196;

@@ -107,8 +107,8 @@ export const returnNameInArrS5 = (name) => {
   const fixFlags = checkFlags(name);
 
   let reverseStrName = fixFlags.split("").reverse().join("");
-  let splitPrice = /\s(.+)/.exec(reverseStrName)[1];
-  let replaceStick = /\s(.+)/.exec(splitPrice)[1];
+  let splitPrice = reverseStrName.indexOf(" ") !== -1 ? /\s(.+)/.exec(reverseStrName)[1] : reverseStrName
+  // let replaceStick = /\s(.+)/.exec(splitPrice)[1];
 
   let checkSpace1 =
   splitPrice[0] === " "

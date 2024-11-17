@@ -10,7 +10,6 @@ const IndexS5NotID = ({ el, S5Data }) => {
   const resultArr = [];
 
     S5Data.map((S5) => {
-      baseFixS5(S5) && returnStockPriceS5(fixNameS5(S5.name));
       if (
         S5.name &&
         typeof S5.name === "string" &&
