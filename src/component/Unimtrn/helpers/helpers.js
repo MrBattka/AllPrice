@@ -51,7 +51,7 @@ let tecno = /T.Tecno/gi;
 let realme = /T.Realme/gi;
 
 export const fixNameUnimtrn = (el) => {
-  const fixGb = el.Товар?.replace(gb, "");
+  const fixGb = el.Модификация?.replace(gb, "");
   const removeDoubleSpace = fixGb.replace(/\s+/g, " ");
   const fixIPad9 = removeDoubleSpace.replace(IPad9, "iPad 9");
   const fixWiSpaceFi = fixIPad9.replace("Wi Fi", "Wi-Fi");

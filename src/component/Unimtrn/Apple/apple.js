@@ -1,5 +1,5 @@
 export const returnApple = (name) => {
-  const el = name.Товар.replace(/\s+/g, " ");
+  const el = name.Модификация.replace(/\s+/g, " ");
   return (
     el.indexOf("AirPods") != -1 ||
     el.indexOf("Airpods") != -1 ||

@@ -182,7 +182,7 @@ const AllPriceWithID = ({
 
   dataUnimtrn.map((unimtrn) => {
     if (
-      unimtrn.Товар &&
+      unimtrn.Модификация &&
       returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
         "No match" &&
       isOpen &&
@@ -198,7 +198,7 @@ const AllPriceWithID = ({
         id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
         name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
         stockPrice: 
-          unimtrn.Стоимость || unimtrn.Cтоимость,
+          unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
         provider: "Метреон",
       });
     }

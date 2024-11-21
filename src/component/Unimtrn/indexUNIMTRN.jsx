@@ -18,7 +18,7 @@ const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
 
   el.map((unimtrn) => {
     if (
-      unimtrn.Товар &&
+      unimtrn.Товар || unimtrn.Модификация &&
       returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !== 'No match' &&
       isOpen &&
       baseFix(unimtrn) &&
@@ -32,7 +32,7 @@ const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
       resultArr.push({
         id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
         name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
-        stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость,
+        stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
         provider: "Метреон",
       });
     }

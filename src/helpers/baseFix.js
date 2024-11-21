@@ -1,93 +1,93 @@
 export const baseFix = (el) => {
   return el[0] !== "(" &&
-    el.Товар?.indexOf("airpods") != -1 &&
-    (el.Товар?.indexOf("left") != -1 ||
-      el.Товар?.indexOf("левый") != -1 ||
-      el.Товар?.indexOf("right") != -1 ||
-      el.Товар?.indexOf("правый") != -1 ||
-      el.Товар?.indexOf("case") != -1 ||
-      el.Товар?.indexOf("кейс") != -1)
-    ? el.Товар?.indexOf("airpods") == -1
-    : el.Товар &&
-        el.Товар?.indexOf("MagEZ Case") == -1 &&
-        el.Товар?.indexOf("PITAKA") == -1 &&
-        el.Товар?.indexOf("USB-C 25W") == -1 &&
-        el.Товар?.indexOf("Кабель") == -1 &&
-        el.Товар?.indexOf("Charge Cable") == -1 &&
-        el.Товар?.indexOf("20W") == -1 &&
-        el.Товар?.indexOf("USB-С Lightning") == -1 &&
-        el.Товар?.indexOf("Муляж") == -1 &&
-        el.Товар?.indexOf("кожа") == -1 &&
-        el.Товар?.indexOf("Silicon") == -1 &&
-        el.Товар?.indexOf("Grip Case") == -1 &&
-        el.Товар?.indexOf("Sult Case") == -1 &&
-        el.Товар?.indexOf("Folio") == -1 &&
-        el.Товар?.indexOf("Smart Tag") == -1 &&
-        el.Товар?.indexOf("Vision Pro") == -1 &&
-        el.Товар?.indexOf("Rog AMD") == -1 &&
-        el.Товар?.indexOf("AeroActive Cooler") == -1 &&
-        el.Товар?.indexOf("Beats") == -1 &&
-        el.Товар?.indexOf("Blackview") == -1 &&
-        el.Товар?.indexOf("DJI") == -1 &&
-        el.Товар?.indexOf("Media Mod") == -1 &&
-        el.Товар?.indexOf("Съемные") == -1 &&
-        el.Товар?.indexOf("HERO 11 mini") == -1 &&
-        el.Товар?.indexOf("HERO 12 Creator Edition") == -1 &&
-        el.Товар?.indexOf("HERO 12 Special Bundle") == -1 &&
-        el.Товар?.indexOf("Honor") == -1 &&
-        el.Товар?.indexOf("HUAWEI") == -1 &&
-        el.Товар?.indexOf("Soundgear") == -1 &&
-        el.Товар?.indexOf("Go 3") == -1 &&
-        el.Товар?.indexOf("Nothing") == -1 &&
-        el.Товар?.indexOf("Oculus") == -1 &&
-        el.Товар?.indexOf("OnePlus Pad") == -1 &&
-        el.Товар?.indexOf("OnePlus Buds") == -1 &&
-        el.Товар?.indexOf("Pico ") == -1 &&
-        el.Товар?.indexOf("Pixel Tablet") == -1 &&
-        el.Товар?.indexOf("Pixel Watch") == -1 &&
-        el.Товар?.indexOf("Backbone") == -1 &&
-        el.Товар?.indexOf("VR2") == -1 &&
-        el.Товар?.indexOf("DualSense") == -1 &&
-        el.Товар?.indexOf("Buds") == -1 &&
-        el.Товар?.indexOf("Watch 4") == -1 &&
-        el.Товар?.indexOf("Watch 5") == -1 &&
-        el.Товар?.indexOf("Watch 6") == -1 &&
-        el.Товар?.indexOf("Xperia 1 V ") == -1 &&
-        el.Товар?.indexOf("Steam Desk") == -1 &&
-        el.Товар?.indexOf("Steam Deck") == -1 &&
-        el.Товар?.indexOf("Tecno") == -1 &&
-        el.Товар?.indexOf("Nubia Flip") == -1 &&
-        el.Товар?.indexOf("Nubia Neo") == -1 &&
-        el.Товар?.indexOf("Wireless") == -1 &&
-        el.Товар?.indexOf("царапин") == -1 &&
-        el.Товар?.indexOf("ремонт") == -1 &&
-        el.Товар?.indexOf("потертости") == -1 &&
-        el.Товар?.indexOf("скол") == -1 &&
-        el.Товар?.indexOf("пятна") == -1 &&
-        el.Товар?.indexOf("замена") == -1 &&
-        el.Товар?.indexOf("пиксель") == -1 &&
-        el.Товар?.indexOf("на экране") == -1 &&
-        el.Товар?.indexOf("мятый") == -1 &&
-        el.Товар?.indexOf("Мятый") == -1 &&
-        el.Товар?.indexOf("открытый") == -1 &&
-        el.Товар?.indexOf("дефект") == -1 &&
-        el.Товар?.indexOf("вскрыт") == -1 &&
-        el.Товар?.indexOf("реболл") == -1 &&
-        el.Товар?.indexOf("No charger") == -1 &&
-        el.Товар?.indexOf("открыт") == -1 &&
-        el.Товар?.indexOf("Мятый") == -1 &&
-        el.Товар?.indexOf("мятый") == -1 &&
-        el.Товар?.indexOf("без пломб") == -1 &&
-        el.Товар?.indexOf("прошит") == -1 &&
-        el.Товар?.indexOf("вскрыт") == -1 &&
-        el.Товар?.indexOf("угол") == -1 &&
-        el.Товар?.indexOf("прошит") == -1 &&
-        el.Товар?.indexOf("потерто") == -1 &&
-        el.Товар?.indexOf("экран") == -1 &&
-        el.Товар?.indexOf("Realme") == -1 &&
-        el.Товар?.indexOf("уцен") == -1 &&
-        el.Товар?.indexOf("обме") == -1 &&
-        el.Товар?.indexOf("короб") == -1 &&
+    el.Модификация?.indexOf("airpods") != -1 &&
+    (el.Модификация?.indexOf("left") != -1 ||
+      el.Модификация?.indexOf("левый") != -1 ||
+      el.Модификация?.indexOf("right") != -1 ||
+      el.Модификация?.indexOf("правый") != -1 ||
+      el.Модификация?.indexOf("case") != -1 ||
+      el.Модификация?.indexOf("кейс") != -1)
+    ? el.Модификация?.indexOf("airpods") == -1
+    : el.Модификация &&
+        el.Модификация?.indexOf("MagEZ Case") == -1 &&
+        el.Модификация?.indexOf("PITAKA") == -1 &&
+        el.Модификация?.indexOf("USB-C 25W") == -1 &&
+        el.Модификация?.indexOf("Кабель") == -1 &&
+        el.Модификация?.indexOf("Charge Cable") == -1 &&
+        el.Модификация?.indexOf("20W") == -1 &&
+        el.Модификация?.indexOf("USB-С Lightning") == -1 &&
+        el.Модификация?.indexOf("Муляж") == -1 &&
+        el.Модификация?.indexOf("кожа") == -1 &&
+        el.Модификация?.indexOf("Silicon") == -1 &&
+        el.Модификация?.indexOf("Grip Case") == -1 &&
+        el.Модификация?.indexOf("Sult Case") == -1 &&
+        el.Модификация?.indexOf("Folio") == -1 &&
+        el.Модификация?.indexOf("Smart Tag") == -1 &&
+        el.Модификация?.indexOf("Vision Pro") == -1 &&
+        el.Модификация?.indexOf("Rog AMD") == -1 &&
+        el.Модификация?.indexOf("AeroActive Cooler") == -1 &&
+        el.Модификация?.indexOf("Beats") == -1 &&
+        el.Модификация?.indexOf("Blackview") == -1 &&
+        el.Модификация?.indexOf("DJI") == -1 &&
+        el.Модификация?.indexOf("Media Mod") == -1 &&
+        el.Модификация?.indexOf("Съемные") == -1 &&
+        el.Модификация?.indexOf("HERO 11 mini") == -1 &&
+        el.Модификация?.indexOf("HERO 12 Creator Edition") == -1 &&
+        el.Модификация?.indexOf("HERO 12 Special Bundle") == -1 &&
+        el.Модификация?.indexOf("Honor") == -1 &&
+        el.Модификация?.indexOf("HUAWEI") == -1 &&
+        el.Модификация?.indexOf("Soundgear") == -1 &&
+        el.Модификация?.indexOf("Go 3") == -1 &&
+        el.Модификация?.indexOf("Nothing") == -1 &&
+        el.Модификация?.indexOf("Oculus") == -1 &&
+        el.Модификация?.indexOf("OnePlus Pad") == -1 &&
+        el.Модификация?.indexOf("OnePlus Buds") == -1 &&
+        el.Модификация?.indexOf("Pico ") == -1 &&
+        el.Модификация?.indexOf("Pixel Tablet") == -1 &&
+        el.Модификация?.indexOf("Pixel Watch") == -1 &&
+        el.Модификация?.indexOf("Backbone") == -1 &&
+        el.Модификация?.indexOf("VR2") == -1 &&
+        el.Модификация?.indexOf("DualSense") == -1 &&
+        el.Модификация?.indexOf("Buds") == -1 &&
+        el.Модификация?.indexOf("Watch 4") == -1 &&
+        el.Модификация?.indexOf("Watch 5") == -1 &&
+        el.Модификация?.indexOf("Watch 6") == -1 &&
+        el.Модификация?.indexOf("Xperia 1 V ") == -1 &&
+        el.Модификация?.indexOf("Steam Desk") == -1 &&
+        el.Модификация?.indexOf("Steam Deck") == -1 &&
+        el.Модификация?.indexOf("Tecno") == -1 &&
+        el.Модификация?.indexOf("Nubia Flip") == -1 &&
+        el.Модификация?.indexOf("Nubia Neo") == -1 &&
+        el.Модификация?.indexOf("Wireless") == -1 &&
+        el.Модификация?.indexOf("царапин") == -1 &&
+        el.Модификация?.indexOf("ремонт") == -1 &&
+        el.Модификация?.indexOf("потертости") == -1 &&
+        el.Модификация?.indexOf("скол") == -1 &&
+        el.Модификация?.indexOf("пятна") == -1 &&
+        el.Модификация?.indexOf("замена") == -1 &&
+        el.Модификация?.indexOf("пиксель") == -1 &&
+        el.Модификация?.indexOf("на экране") == -1 &&
+        el.Модификация?.indexOf("мятый") == -1 &&
+        el.Модификация?.indexOf("Мятый") == -1 &&
+        el.Модификация?.indexOf("открытый") == -1 &&
+        el.Модификация?.indexOf("дефект") == -1 &&
+        el.Модификация?.indexOf("вскрыт") == -1 &&
+        el.Модификация?.indexOf("реболл") == -1 &&
+        el.Модификация?.indexOf("No charger") == -1 &&
+        el.Модификация?.indexOf("открыт") == -1 &&
+        el.Модификация?.indexOf("Мятый") == -1 &&
+        el.Модификация?.indexOf("мятый") == -1 &&
+        el.Модификация?.indexOf("без пломб") == -1 &&
+        el.Модификация?.indexOf("прошит") == -1 &&
+        el.Модификация?.indexOf("вскрыт") == -1 &&
+        el.Модификация?.indexOf("угол") == -1 &&
+        el.Модификация?.indexOf("прошит") == -1 &&
+        el.Модификация?.indexOf("потерто") == -1 &&
+        el.Модификация?.indexOf("экран") == -1 &&
+        el.Модификация?.indexOf("Realme") == -1 &&
+        el.Модификация?.indexOf("уцен") == -1 &&
+        el.Модификация?.indexOf("обме") == -1 &&
+        el.Модификация?.indexOf("короб") == -1 &&
         el !== "Товар";
 };
 

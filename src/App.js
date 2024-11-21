@@ -84,10 +84,9 @@ const App = () => {
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
   });
-
   dataUNIMTRN.map((unimtrnEl) => {
-    unimtrnEl.Товар &&
-      unimtrn.push({ name: unimtrnEl.Товар, price: unimtrnEl.Стоимость });
+    (unimtrnEl.Товар || unimtrnEl.Модификация) &&
+      unimtrn.push({ name: unimtrnEl.Товар || unimtrnEl.Модификация, price: unimtrnEl.Стоимость || unimtrnEl.Cтоимость || unimtrnEl.Цена });
   });
 
   dataMihonor.map((mihonorEl) => {
