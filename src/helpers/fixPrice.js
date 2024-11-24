@@ -26,7 +26,7 @@ export const flags = [
 
 export const checkFixPrice = (el) => {
   return flags.reduce(
-    (acc, current) => acc && el.Товар.indexOf(current) === -1,
+    (acc, current) => acc && el.Модификация.indexOf(current) === -1,
     true
   );
 };

@@ -90,7 +90,7 @@ export const fixNameMihonor = (name) => {
   const fix4128 = fix6128.replace("4 128", "4/128");
   const fix121024 = fix4128.replace("12+1024", "12/1tb");
   const fix364 = fix121024.replace("3+64", "3/64");
+  const fix12512 = fix364.replace("12+ 512", "12/512");
   
-  
-  return fix364;
+  return fix12512;
 };

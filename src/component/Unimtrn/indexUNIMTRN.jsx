@@ -18,8 +18,9 @@ const IndexUnimtrn = ({ el, dataUNIMTRN }) => {
 
   el.map((unimtrn) => {
     if (
-      unimtrn.Товар || unimtrn.Модификация &&
-      returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !== 'No match' &&
+      (unimtrn.Товар || unimtrn.Модификация) &&
+      returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
+        "No match" &&
       isOpen &&
       baseFix(unimtrn) &&
       (returnApple(unimtrn) ||
