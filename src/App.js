@@ -39,6 +39,8 @@ import IndexUnimtrnNotID from "./component/Unimtrn/indexUNIMTRNNotID";
 import IndexVseMi from "./component/VseMi/indexVseMi";
 import IndexVseMiNotID from "./component/VseMi/indexVseMiNotID";
 import icon from "./source/icon/icon.png";
+import IndexMiOpts from "./component/MiOpts/indexMiOpts";
+import IndexMiOptsNotID from "./component/MiOpts/indexMiOptsNotID";
 
 const App = () => {
   const allPrice = [];
@@ -61,6 +63,7 @@ const App = () => {
   const [dataDiscount, setDataDiscount] = useState([]);
   const [dataBase, setDataBase] = useState([]);
   const [dataOther, setDataOther] = useState([]);
+  const [dataMiopts, setDataMiopts] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -80,6 +83,7 @@ const App = () => {
   const discount = [];
   const base = [];
   const other = [];
+  const miopts = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -213,6 +217,13 @@ const App = () => {
       typeof otherEl.All === "string" &&
       other.push({ name: otherEl.All });
   });
+
+  dataMiopts.map((mioptsEl) => {
+    mioptsEl.MiOpts &&
+      mioptsEl.MiOpts.length > 7 &&
+      typeof mioptsEl.MiOpts === "string" &&
+      miopts.push({ name: mioptsEl.MiOpts });
+  });
   
 
   const handleImport = ($event) => {
@@ -261,6 +272,8 @@ const App = () => {
           setDataBase(rowBase);
           const rowOther = utils.sheet_to_json(wb.Sheets[sheets[17]]);
           setDataOther(rowOther);
+          const rowMiopts = utils.sheet_to_json(wb.Sheets[sheets[18]]);
+          setDataMiopts(rowMiopts);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -356,6 +369,9 @@ const App = () => {
         {/* Other */}
         <IndexOther el={dataOther} otherData={other} />
         <IndexOtherNotID el={dataOther} otherData={other} />
+        {/* MiOpts */}
+        <IndexMiOpts el={dataMiopts} mioptsData={miopts} />
+        <IndexMiOptsNotID el={dataMiopts} mioptsData={miopts} />
 
         {/* All Price */}
         <AllPriceWithID
