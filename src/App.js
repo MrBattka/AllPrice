@@ -41,6 +41,8 @@ import IndexVseMiNotID from "./component/VseMi/indexVseMiNotID";
 import icon from "./source/icon/icon.png";
 import IndexMiOpts from "./component/MiOpts/indexMiOpts";
 import IndexMiOptsNotID from "./component/MiOpts/indexMiOptsNotID";
+import IndexLowPrice from "./component/LowPriceApple/indexLowPrice";
+import IndexLowPriceNotID from "./component/LowPriceApple/indexLowPriceNotID";
 
 const App = () => {
   const allPrice = [];
@@ -64,6 +66,7 @@ const App = () => {
   const [dataBase, setDataBase] = useState([]);
   const [dataOther, setDataOther] = useState([]);
   const [dataMiopts, setDataMiopts] = useState([]);
+  const [dataLowPrice, setDataLowPrice] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -84,6 +87,7 @@ const App = () => {
   const base = [];
   const other = [];
   const miopts = [];
+  const lowprice = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -224,6 +228,13 @@ const App = () => {
       typeof mioptsEl.MiOpts === "string" &&
       miopts.push({ name: mioptsEl.MiOpts });
   });
+
+  dataLowPrice.map((lowpriceEl) => {
+    lowpriceEl.LowPrice &&
+      lowpriceEl.LowPrice.length > 7 &&
+      typeof lowpriceEl.LowPrice === "string" &&
+      lowprice.push({ name: lowpriceEl.LowPrice });
+  });
   
 
   const handleImport = ($event) => {
@@ -274,6 +285,8 @@ const App = () => {
           setDataOther(rowOther);
           const rowMiopts = utils.sheet_to_json(wb.Sheets[sheets[18]]);
           setDataMiopts(rowMiopts);
+          const rowLowPrice = utils.sheet_to_json(wb.Sheets[sheets[19]]);
+          setDataLowPrice(rowLowPrice);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -372,6 +385,10 @@ const App = () => {
         {/* MiOpts */}
         <IndexMiOpts el={dataMiopts} mioptsData={miopts} />
         <IndexMiOptsNotID el={dataMiopts} mioptsData={miopts} />
+        {/* LowPriceApple */}
+        <IndexLowPrice el={dataLowPrice} lowPriceData={lowprice} />
+        <IndexLowPriceNotID el={dataLowPrice} lowPriceData={lowprice} />
+
 
         {/* All Price */}
         <AllPriceWithID
@@ -393,6 +410,8 @@ const App = () => {
           discountData={discount}
           baseData={deleteDoubleProduct}
           otherData={other}
+          mioptsData={miopts}
+          lowPriceData={lowprice}
         />
 
         {/* <AllPrice

@@ -3776,7 +3776,8 @@ export const returnIDApple = (name) => {
     return 30545;
   } else if (
     name.indexOf("14 pro max 512") != -1 &&
-    name.indexOf("silver") != -1 &&
+    (name.indexOf("silver") != -1 ||
+    name.indexOf("white") != -1) &&
     (name.indexOf("🇭🇰") != -1 || name.indexOf("🇨🇳") != -1)
   ) {
     return 30562;
@@ -3802,7 +3803,9 @@ export const returnIDApple = (name) => {
     return 23509;
   } else if (name.indexOf("14 pro max 512 gold") != -1) {
     return 23510;
-  } else if (name.indexOf("14 pro max 512 silver") != -1) {
+  } else if (name.indexOf("14 pro max 512") != -1 &&
+  (name.indexOf("silver") != -1 ||
+  name.indexOf("white") != -1)) {
     return 23511;
   } else if (name.indexOf("14 pro max 512 black") != -1) {
     return 23512;

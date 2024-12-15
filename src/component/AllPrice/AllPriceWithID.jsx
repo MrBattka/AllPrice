@@ -8,7 +8,9 @@ import {
   baseFixF51,
   baseFixGarmin,
   baseFixHi,
+  baseFixLowPrice,
   baseFixMiHonor,
+  baseFixMiOpts,
   baseFixNarod,
   baseFixOther,
   baseFixRacmag,
@@ -111,6 +113,8 @@ import {
   returnNameInArrDiscount,
   returnStockPriceDiscount,
 } from "../Discount/helpers/helpers";
+import { fixNameMiOpts, returnExtraPriceMiOpts, returnNameInArrMiOpts, returnStockPriceMiOpts } from "../MiOpts/helpers/helpers";
+import { fixNameLowPrice, returnNameInArrLowPrice, returnStockPriceLowPrice } from "../LowPriceApple/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -131,6 +135,8 @@ const AllPriceWithID = ({
   baseData,
   otherData,
   discountData,
+  mioptsData,
+  lowPriceData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -551,6 +557,48 @@ const AllPriceWithID = ({
           extraPrice: returnExtraPriceOther(returnFixNameOther(other.name)),
           stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
           provider: "Разное",
+        })
+      );
+    }
+  });
+
+  mioptsData.map((miopts) => {
+    baseFixMiOpts(miopts) && returnStockPriceMiOpts(fixNameMiOpts(miopts.name));
+    baseFixMiOpts(miopts) && returnExtraPriceMiOpts(fixNameMiOpts(miopts.name));
+    if (
+      miopts.name &&
+      typeof miopts.name === "string" &&
+      baseFixMiOpts(miopts)
+    ) {
+      return (
+        returnIDSamsung(fixNameMiOpts(miopts.name)) !== "No match" &&
+        returnExtraPriceMiOpts(miopts.name) &&
+        returnStockPriceMiOpts(miopts.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrMiOpts(fixNameMiOpts(miopts.name))),
+          name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
+          extraPrice: returnExtraPriceMiOpts(fixNameMiOpts(miopts.name)),
+          stockPrice: returnStockPriceMiOpts(fixNameMiOpts(miopts.name)),
+          provider: "MiOpts",
+        })
+      );
+    }
+  });
+
+  lowPriceData.map((lowPrice) => {
+    if (
+      lowPrice.name &&
+      typeof lowPrice.name === "string" &&
+      baseFixLowPrice(lowPrice)
+    ) {
+      return (
+        returnIDSamsung(fixNameLowPrice(lowPrice.name)) !== "No match" &&
+        returnStockPriceLowPrice(lowPrice.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))),
+          name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
+          stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
+          provider: "LowPrice",
         })
       );
     }
