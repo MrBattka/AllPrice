@@ -18,6 +18,7 @@ import {
   baseFixReSale,
   baseFixRPTrade,
   baseFixS5,
+  baseFixSunrise,
   baseFixSuperPrice,
   baseFixTagir,
   baseFixVsemi,
@@ -117,6 +118,7 @@ import {
 import { fixNameMiOpts, returnExtraPriceMiOpts, returnNameInArrMiOpts, returnStockPriceMiOpts } from "../MiOpts/helpers/helpers";
 import { fixNameLowPrice, returnNameInArrLowPrice, returnStockPriceLowPrice } from "../LowPriceApple/helpers/helpers";
 import { returnFixNameL27, returnNameInArrL27, returnStockPriceL27 } from "../L27/helpers/helpers";
+import { returnFixNameSunrise, returnNameInArrSunrise, returnStockPriceSunrise } from "../Sunrise/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -139,7 +141,8 @@ const AllPriceWithID = ({
   discountData,
   mioptsData,
   lowPriceData,
-  l27Data
+  l27Data,
+  sunriseData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -627,6 +630,28 @@ const AllPriceWithID = ({
           name: returnNameInArrL27(returnFixNameL27(l27.name)),
           stockPrice: returnStockPriceL27(returnFixNameL27(l27.name)),
           provider: "Л27-28",
+        })
+      );
+    }
+  });
+
+  sunriseData.map((sunrise) => {
+    baseFixSunrise(sunrise) && returnStockPriceSunrise(returnFixNameSunrise(sunrise.name));
+    if (
+      sunrise.name &&
+      typeof sunrise.name === "string" &&
+      baseFixSunrise(sunrise) &&
+      isOpen
+    )
+     {
+      return (
+        returnIDSamsung(returnFixNameSunrise(sunrise.name)) !== 'No match' &&
+        returnStockPriceSunrise(sunrise.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))),
+          name: returnNameInArrSunrise(returnFixNameSunrise(sunrise.name)),
+          stockPrice: returnStockPriceSunrise(returnFixNameSunrise(sunrise.name)),
+          provider: "Восход",
         })
       );
     }

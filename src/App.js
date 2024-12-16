@@ -45,6 +45,8 @@ import IndexLowPrice from "./component/LowPriceApple/indexLowPrice";
 import IndexLowPriceNotID from "./component/LowPriceApple/indexLowPriceNotID";
 import IndexL27 from "./component/L27/IndexL27";
 import IndexL27NotID from "./component/L27/IndexL27NotID";
+import IndexSunrise from "./component/Sunrise/IndexSunrise";
+import IndexSunriseNotID from "./component/Sunrise/IndexSunriseNotID";
 
 const App = () => {
   const allPrice = [];
@@ -70,6 +72,7 @@ const App = () => {
   const [dataMiopts, setDataMiopts] = useState([]);
   const [dataLowPrice, setDataLowPrice] = useState([]);
   const [dataL27, setDataL27] = useState([]);
+  const [dataSunrise, setDataSunrise] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -92,6 +95,7 @@ const App = () => {
   const miopts = [];
   const lowprice = [];
   const l27 = [];
+  const sunrise = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -246,6 +250,13 @@ const App = () => {
       typeof l27El.L27 === "string" &&
       l27.push({ name: l27El.L27 });
   });
+
+  dataSunrise.map((sunriseEl) => {
+    sunriseEl.Sunrise &&
+      sunriseEl.Sunrise.length > 7 &&
+      typeof sunriseEl.Sunrise === "string" &&
+      sunrise.push({ name: sunriseEl.Sunrise });
+  });
   
 
   const handleImport = ($event) => {
@@ -300,6 +311,8 @@ const App = () => {
           setDataLowPrice(rowLowPrice);
           const rowL27 = utils.sheet_to_json(wb.Sheets[sheets[20]]);
           setDataL27(rowL27);
+          const rowSunrise = utils.sheet_to_json(wb.Sheets[sheets[21]]);
+          setDataSunrise(rowSunrise);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -404,6 +417,9 @@ const App = () => {
         {/* Л27-28 */}
         <IndexL27 el={dataL27} l27Data={l27} />
         <IndexL27NotID el={dataL27} l27Data={l27} />
+        {/* Восход */}
+        <IndexSunrise el={dataSunrise} sunriseData={sunrise} />
+        <IndexSunriseNotID el={dataSunrise} sunriseData={sunrise} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -428,6 +444,7 @@ const App = () => {
           mioptsData={miopts}
           lowPriceData={lowprice}
           l27Data={l27}
+          sunriseData={sunrise}
         />
 
         {/* <AllPrice

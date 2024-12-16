@@ -4669,13 +4669,16 @@ export const returnIDApple = (name) => {
     name.indexOf("🇺🇸") != -1
   ) {
     return 30357;
-  } else if (name.indexOf("15 pro 512 black ") != -1) {
+  } else if (name.indexOf("15 pro 512 black") != -1) {
     return 28256;
-  } else if (name.indexOf("15 pro 512 blue ") != -1) {
+  } else if (name.indexOf("15 pro 512 blue") != -1) {
     return 28261;
-  } else if (name.indexOf("15 pro 512 natural ") != -1) {
+  } else if (name.indexOf("15 pro 512 natural") != -1) {
     return 28265;
-  } else if (name.indexOf("15 pro 512 white ") != -1) {
+  } else if (name.indexOf("15 pro") != -1 &&
+  name.indexOf("512") != -1 &&
+  (name.indexOf("whıte") != -1 || 
+  name.indexOf("white") != -1)) {
     return 28269;
   } else if (
     (name.indexOf("15 pro max 1tb") != -1 &&
