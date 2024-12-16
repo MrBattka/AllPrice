@@ -8,6 +8,7 @@ import {
   baseFixF51,
   baseFixGarmin,
   baseFixHi,
+  baseFixL27,
   baseFixLowPrice,
   baseFixMiHonor,
   baseFixMiOpts,
@@ -115,6 +116,7 @@ import {
 } from "../Discount/helpers/helpers";
 import { fixNameMiOpts, returnExtraPriceMiOpts, returnNameInArrMiOpts, returnStockPriceMiOpts } from "../MiOpts/helpers/helpers";
 import { fixNameLowPrice, returnNameInArrLowPrice, returnStockPriceLowPrice } from "../LowPriceApple/helpers/helpers";
+import { returnFixNameL27, returnNameInArrL27, returnStockPriceL27 } from "../L27/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -136,7 +138,8 @@ const AllPriceWithID = ({
   otherData,
   discountData,
   mioptsData,
-  lowPriceData
+  lowPriceData,
+  l27Data
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -599,6 +602,31 @@ const AllPriceWithID = ({
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
           stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
           provider: "LowPrice",
+        })
+      );
+    }
+  });
+
+  l27Data.map((l27) => {
+    baseFixL27(l27) &&
+      returnStockPriceL27(returnFixNameL27(l27.name));
+    if (
+      l27.name &&
+      typeof l27.name === "string" &&
+      baseFixL27(l27) &&
+      returnStockPriceL27(returnFixNameL27(l27.name)).indexOf("00") !== -1 &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameL27(l27.name)) !== "No match" &&
+        returnStockPriceL27(l27.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrL27(returnFixNameL27(l27.name))
+          ),
+          name: returnNameInArrL27(returnFixNameL27(l27.name)),
+          stockPrice: returnStockPriceL27(returnFixNameL27(l27.name)),
+          provider: "Л27-28",
         })
       );
     }
