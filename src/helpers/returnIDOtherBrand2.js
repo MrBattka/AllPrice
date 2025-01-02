@@ -549,6 +549,21 @@ export const returnIDOtherBrand2 = (name) => {
     return 28471;
 
     // ZTE
+  } else if (
+    name.indexOf("redmagic") != -1 &&
+    name.indexOf("tablet") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 36731;
+  } else if (
+    name.indexOf("redmagic") != -1 &&
+    name.indexOf("tablet") != -1 &&
+    name.indexOf("16/512") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 36731;
+
   } else if (name.indexOf("nubia flip 12/512 cosmic black") != -1) {
     return 36865;
   } else if (name.indexOf("nubia flip 12/512 flowering lilac") != -1) {
