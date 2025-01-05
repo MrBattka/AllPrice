@@ -555,14 +555,14 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("12/256") != -1 &&
     name.indexOf("black") != -1
   ) {
-    return 36731;
+    return 36079;
   } else if (
     name.indexOf("redmagic") != -1 &&
     name.indexOf("tablet") != -1 &&
     name.indexOf("16/512") != -1 &&
     name.indexOf("black") != -1
   ) {
-    return 36731;
+    return 36080;
 
   } else if (name.indexOf("nubia flip 12/512 cosmic black") != -1) {
     return 36865;
@@ -1541,6 +1541,41 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("blue") != -1
   ) {
     return 26204;
+
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 37124;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("gray") != -1
+  ) {
+    return 37127;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 37126;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("gray") != -1
+  ) {
+    return 37125;
+
+
   } else {
     return returnIDApple(name) || "No match";
   }

@@ -240,13 +240,52 @@ export const returnIDOtherBrand = (name) => {
       name.indexOf("blue") != -1)
   ) {
     return 28204;
+
   } else if (
-    name.indexOf("v12 yellow/nickel") != -1 ||
+    name.indexOf("ht01") != -1 &&
+      name.indexOf("blue") != -1
+  ) {
+    return 37130;
+  } else if (
+    name.indexOf("ht01") != -1 &&
+      name.indexOf("cooper") != -1
+  ) {
+    return 37129;
+  } else if (
+    name.indexOf("ht01") != -1 &&
+      name.indexOf("pink") != -1
+  ) {
+    return 37128;
+
+  } else if (
+    name.indexOf("hd016") != -1 &&
+      name.indexOf("ceramic") != -1 &&
+      name.indexOf("patina/topaz") != -1
+  ) {
+    return 37123;
+  } else if (
+    name.indexOf("hd016") != -1 &&
+    name.indexOf("vinca") != -1 &&
+    name.indexOf("blue/topaz") != -1
+  ) {
+    return 37122;
+
+  } else if (
+    name.indexOf("v12") != -1 ||
     (name.indexOf("v12") != -1 &&
       name.indexOf("yellow") != -1 &&
       name.indexOf("nickel") != -1)
   ) {
     return 27101;
+
+  } else if (
+    name.indexOf("v15s") != -1 ||
+    (name.indexOf("submarine") != -1 &&
+      name.indexOf("absolute") != -1 &&
+      name.indexOf("gold") != -1)
+  ) {
+    return 37131;
+
   } else if (name.indexOf("v12 detect slim") != -1) {
     return 35670;
   } else if (name.indexOf("v15 detect absolute") != -1) {
@@ -357,7 +396,7 @@ export const returnIDOtherBrand = (name) => {
     return 28202;
   } else if (name.indexOf("dyson v15 detect absolute yellow/nickel") != -1) {
     return 35670;
-  } else if (name.indexOf("dyson v15 s sv47 detect submarine") != -1) {
+  } else if (name.indexOf("dyson v15s sv47 detect submarine") != -1) {
     return 34432;
   } else if (name.indexOf("dyson v15 vacuum absolute") != -1) {
     return 27101;
