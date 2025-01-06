@@ -43,6 +43,7 @@ export const returnApple = (name) => {
     el.indexOf("iPad 9") != -1 ||
     el.indexOf("iPad 10") != -1 ||
     el.indexOf("iPad Mini 6") != -1 ||
+    el.indexOf("iPad Mini ") != -1 ||
     el.indexOf("iPad Air") != -1 ||
     el.indexOf("IPad Air") != -1 ||
     el.indexOf("iPad Pro") != -1 ||
