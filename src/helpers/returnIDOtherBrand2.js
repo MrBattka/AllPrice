@@ -17,7 +17,8 @@ export const returnIDOtherBrand2 = (name) => {
       name.indexOf("playstation 5") != -1 ||
       name.indexOf("ps 5") != -1) &&
     name.indexOf("pro") != -1 &&
-    name.indexOf("disc") == -1 
+    (name.indexOf("disc") == -1 ||
+    name.indexOf("диск") == -1 )
   ) {
     return 36834;
   } else if (
