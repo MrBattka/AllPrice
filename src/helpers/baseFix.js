@@ -1369,8 +1369,15 @@ export const baseFixL27 = (el) => {
     toLowerCase.indexOf('airpods 2  l') == -1 &&
     toLowerCase.indexOf('airpods 2  r') == -1 &&
     toLowerCase.indexOf('airpods 3   r') == -1 &&
+    toLowerCase.indexOf('airpods 3   l') == -1 &&
+    toLowerCase.indexOf('airpods 4   r') == -1 &&
+    toLowerCase.indexOf('airpods 4  l') == -1 &&
+    toLowerCase.indexOf('airpods 4  box') == -1 &&
     toLowerCase.indexOf('airpods 3  box') == -1 &&
-    toLowerCase.indexOf('airpods pro l') == -1  &&
+    toLowerCase.indexOf('airpods pro  l') == -1  &&
+    toLowerCase.indexOf('airpods pro  r') == -1  &&
+    toLowerCase.indexOf('airpods pro 2 usb-c  l') == -1  &&
+    toLowerCase.indexOf('airpods pro 2 usb-c box') == -1  &&
     toLowerCase.indexOf('airpods pro 2 type-c  l') == -1 &&
     toLowerCase.indexOf('airpods pro 2 type-c  r') == -1 
   );
@@ -1424,8 +1431,13 @@ export const baseFixSunrise = (el) => {
     toLowerCase.indexOf('airpods 2  l') == -1 &&
     toLowerCase.indexOf('airpods 2  r') == -1 &&
     toLowerCase.indexOf('airpods 3   r') == -1 &&
+    toLowerCase.indexOf('airpods 3   l') == -1 &&
+    toLowerCase.indexOf('airpods 4   r') == -1 &&
+    toLowerCase.indexOf('airpods 4   l') == -1 &&
+    toLowerCase.indexOf('airpods 4  box') == -1 &&
     toLowerCase.indexOf('airpods 3  box') == -1 &&
     toLowerCase.indexOf('airpods pro l') == -1  &&
+    toLowerCase.indexOf('airpods pro r') == -1  &&
     toLowerCase.indexOf('airpods pro 2 type-c  l') == -1 &&
     toLowerCase.indexOf('airpods pro 2 type-c  r') == -1 
   );
