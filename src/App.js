@@ -47,6 +47,8 @@ import IndexL27 from "./component/L27/IndexL27";
 import IndexL27NotID from "./component/L27/IndexL27NotID";
 import IndexSunrise from "./component/Sunrise/IndexSunrise";
 import IndexSunriseNotID from "./component/Sunrise/IndexSunriseNotID";
+import IndexInfinity from "./component/Infinity/indexInfinity";
+import IndexInfinityNotID from "./component/Infinity/indexInfinityNotID";
 
 const App = () => {
   const allPrice = [];
@@ -73,6 +75,7 @@ const App = () => {
   const [dataLowPrice, setDataLowPrice] = useState([]);
   const [dataL27, setDataL27] = useState([]);
   const [dataSunrise, setDataSunrise] = useState([]);
+  const [dataInfinity, setDataInfinity] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -96,6 +99,7 @@ const App = () => {
   const lowprice = [];
   const l27 = [];
   const sunrise = [];
+  const infinity = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -257,6 +261,13 @@ const App = () => {
       typeof sunriseEl.Sunrise === "string" &&
       sunrise.push({ name: sunriseEl.Sunrise });
   });
+
+  dataInfinity.map((infinityEl) => {
+    infinityEl.Infinity &&
+      infinityEl.Infinity.length > 7 &&
+      typeof infinityEl.Infinity === "string" &&
+      infinity.push({ name: infinityEl.Infinity });
+  });
   
 
   const handleImport = ($event) => {
@@ -313,6 +324,8 @@ const App = () => {
           setDataL27(rowL27);
           const rowSunrise = utils.sheet_to_json(wb.Sheets[sheets[21]]);
           setDataSunrise(rowSunrise);
+          const rowInfinity = utils.sheet_to_json(wb.Sheets[sheets[22]]);
+          setDataInfinity(rowInfinity);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -421,6 +434,9 @@ const App = () => {
         <IndexSunrise el={dataSunrise} sunriseData={sunrise} />
         <IndexSunriseNotID el={dataSunrise} sunriseData={sunrise} />
 
+        <IndexInfinity el={dataInfinity} infinityData={infinity} />
+        <IndexInfinityNotID el={dataInfinity} infinityData={infinity} />
+
         {/* All Price */}
         <AllPriceWithID
           dataSuperprice={superprice}
@@ -445,6 +461,7 @@ const App = () => {
           lowPriceData={lowprice}
           l27Data={l27}
           sunriseData={sunrise}
+          infinityData={infinity}
         />
 
         {/* <AllPrice

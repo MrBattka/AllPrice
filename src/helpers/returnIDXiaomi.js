@@ -1267,25 +1267,29 @@ export const returnIDXiaomi = (name) => {
     return 36394;
   } else if (name.indexOf("note 14 pro + 12/256 black") != -1) {
     return 37059;
-  } else if (name.indexOf("note 14 pro + 12/256 green") != -1) {
+  } else if (name.indexOf("note 14 pro + 12/256 green") != -1 ||
+  name.indexOf("note 14 pro + 12/256 blue") != -1) {
     return 37060;
   } else if (name.indexOf("note 14 pro + 12/256 white") != -1) {
     return 37061;
   } else if (name.indexOf("note 14 pro + 12/512 black") != -1) {
     return 37068;
-  } else if (name.indexOf("note 14 pro + 12/512 green") != -1) {
+  } else if (name.indexOf("note 14 pro + 12/512 green") != -1 ||
+  name.indexOf("note 14 pro + 12/512 blue") != -1) {
     return 37069;
   } else if (name.indexOf("note 14 pro + 12/512 white") != -1) {
     return 37070;
   } else if (name.indexOf("note 14 pro + 16/512 black") != -1) {
     return 37065;
-  } else if (name.indexOf("note 14 pro + 16/512 green") != -1) {
+  } else if (name.indexOf("note 14 pro + 16/512 green") != -1 ||
+  name.indexOf("note 14 pro + 16/512 blue") != -1) {
     return 37066;
   } else if (name.indexOf("note 14 pro + 16/512 white") != -1) {
     return 37067;
   } else if (name.indexOf("note 14 pro 12/256 black") != -1) {
     return 37051;
-  } else if (name.indexOf("note 14 pro 12/256 green") != -1) {
+  } else if (name.indexOf("note 14 pro 12/256 green") != -1 ||
+  name.indexOf("note 14 pro 12/256 blue") != -1) {
     return 37052;
   } else if (name.indexOf("note 14 pro 12/256 purple") != -1) {
     return 37053;
@@ -1293,7 +1297,8 @@ export const returnIDXiaomi = (name) => {
     return 37054;
   } else if (name.indexOf("note 14 pro 12/512 black") != -1) {
     return 37055;
-  } else if (name.indexOf("note 14 pro 12/512 green") != -1) {
+  } else if (name.indexOf("note 14 pro 12/512 green") != -1 ||
+  name.indexOf("note 14 pro 12/512 blue") != -1) {
     return 37056;
   } else if (name.indexOf("note 14 pro 12/512 purple") != -1) {
     return 37057;
@@ -1301,7 +1306,8 @@ export const returnIDXiaomi = (name) => {
     return 37058;
   } else if (name.indexOf("note 14 pro 8/128 black") != -1) {
     return 37043;
-  } else if (name.indexOf("note 14 pro 8/128 green") != -1) {
+  } else if (name.indexOf("note 14 pro 8/128 green") != -1 ||
+  name.indexOf("note 14 pro 8/128 blue") != -1) {
     return 37046;
   } else if (name.indexOf("note 14 pro 8/128 purple") != -1) {
     return 37045;
@@ -1309,7 +1315,8 @@ export const returnIDXiaomi = (name) => {
     return 37044;
   } else if (name.indexOf("note 14 pro 8/256 black") != -1) {
     return 37047;
-  } else if (name.indexOf("note 14 pro 8/256 green") != -1) {
+  } else if (name.indexOf("note 14 pro 8/256 green") != -1 ||
+  name.indexOf("note 14 pro 8/256 blue") != -1) {
     return 37048;
   } else if (name.indexOf("note 14 pro 8/256 purple") != -1) {
     return 37049;

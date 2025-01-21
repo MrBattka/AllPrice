@@ -8,6 +8,7 @@ import {
   baseFixF51,
   baseFixGarmin,
   baseFixHi,
+  baseFixInfinity,
   baseFixL27,
   baseFixLowPrice,
   baseFixMiHonor,
@@ -119,6 +120,7 @@ import { fixNameMiOpts, returnExtraPriceMiOpts, returnNameInArrMiOpts, returnSto
 import { fixNameLowPrice, returnNameInArrLowPrice, returnStockPriceLowPrice } from "../LowPriceApple/helpers/helpers";
 import { returnFixNameL27, returnNameInArrL27, returnStockPriceL27 } from "../L27/helpers/helpers";
 import { returnFixNameSunrise, returnNameInArrSunrise, returnStockPriceSunrise } from "../Sunrise/helpers/helpers";
+import { fixNameInfinity, returnNameInArrInfinity, returnStockPriceInfinity } from "../Infinity/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -142,7 +144,8 @@ const AllPriceWithID = ({
   mioptsData,
   lowPriceData,
   l27Data,
-  sunriseData
+  sunriseData,
+  infinityData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -656,6 +659,25 @@ const AllPriceWithID = ({
       );
     }
   });
+
+  infinityData.map((infinity) => {
+      if (
+        infinity.name &&
+        typeof infinity.name === "string" &&
+        baseFixInfinity(infinity)
+      ) {
+        return (
+          returnIDSamsung(fixNameInfinity(infinity.name)) !== "No match" &&
+          returnStockPriceInfinity(infinity.name) &&
+          allPriceArr.push({
+            id: returnIDSamsung(returnNameInArrInfinity(fixNameInfinity(infinity.name))),
+            name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
+            stockPrice: returnStockPriceInfinity(fixNameInfinity(infinity.name)),
+            provider: "Infinity",
+          })
+        );
+      }
+    });
 
   return (
     <div>

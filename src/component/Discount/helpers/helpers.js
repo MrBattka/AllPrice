@@ -76,9 +76,18 @@ export const returnFixNameDiscount = (name) => {
   const fixAir13 = fixAir11.replace("iPad Air 13", "iPad Air 13 M2");
   const fixPro11 = fixAir13.replace("iPad Pro 11", "iPad Pro 11 M4");
   const fixPro13 = fixPro11.replace("iPad Pro 13", "iPad Pro 13 M4");
-  const fixGray = fixPro13.replace("Grey", "Gray");
+  const replaceA356 = fixPro13.replace("(A356) ", "");
+  const fixGray = replaceA356.replace("Grey", "Gray");
+  const replace5g =
+    fixGray.indexOf("SM") !== -1 ||
+    fixGray.indexOf("A3") !== -1 ||
+    fixGray.indexOf("A2") !== -1 ||
+    fixGray.indexOf("A1") !== -1 ||
+    fixGray.indexOf("A5") !== -1
+      ? fixGray.replace("5G ", "")
+      : fixGray;
 
-  return fixGray;
+  return replace5g;
 };
 
 const checkFlags = (str) => {
