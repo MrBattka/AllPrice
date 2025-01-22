@@ -141,6 +141,36 @@ export const returnIDApple = (name) => {
   ) {
     return 20152;
 
+    // home pod
+  } else if (
+    name.indexOf("home") !== -1 &&
+    name.indexOf("pod") !== -1 &&
+    name.indexOf("mini") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 18952;
+  } else if (
+    name.indexOf("home") !== -1 &&
+    name.indexOf("pod") !== -1 &&
+    name.indexOf("mini") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 18954;
+  } else if (
+    name.indexOf("home") !== -1 &&
+    name.indexOf("pod") !== -1 &&
+    name.indexOf("mini") == -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 18955;
+  } else if (
+    name.indexOf("home") !== -1 &&
+    name.indexOf("pod") !== -1 &&
+    name.indexOf("mini") == -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 18957;
+
     // aw se
   } else if (
     name.indexOf("se") != -1 &&
@@ -503,6 +533,55 @@ export const returnIDApple = (name) => {
     name.indexOf("2024") !== -1
   ) {
     return 37311;
+  } else if (
+    name.indexOf("mini") != -1 &&
+    (name.indexOf("2024") != -1 || name.indexOf(" 7 ") != -1) &&
+    name.indexOf("128") != -1 &&
+    name.indexOf("purple") != -1
+  ) {
+    return 37320;
+  } else if (
+    name.indexOf("mini") != -1 &&
+    (name.indexOf("2024") != -1 || name.indexOf(" 7 ") != -1) &&
+    name.indexOf("128") != -1 &&
+    name.indexOf("gray") != -1
+  ) {
+    return 37317;
+  } else if (
+    name.indexOf("mini") != -1 &&
+    (name.indexOf("2024") != -1 || name.indexOf(" 7 ") != -1) &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("purple") != -1
+  ) {
+    return 37318;
+  } else if (
+    name.indexOf("mini") != -1 &&
+    (name.indexOf("2024") != -1 || name.indexOf(" 7 ") != -1) &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("starlight") != -1
+  ) {
+    return 37321;
+  } else if (
+    name.indexOf("mini") != -1 &&
+    (name.indexOf("2024") != -1 || name.indexOf(" 7 ") != -1) &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("purple") != -1
+  ) {
+    return 37319;
+  } else if (
+    name.indexOf("mini") != -1 &&
+    (name.indexOf("2024") != -1 || name.indexOf(" 7 ") != -1) &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("starlight") != -1
+  ) {
+    return 37322;
+  } else if (
+    name.indexOf("mini 6") != -1 &&
+    name.indexOf("wi-fi") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("pink") != -1
+  ) {
+    return 37308;
 
     // ipad 9
   } else if (
@@ -2186,6 +2265,62 @@ export const returnIDApple = (name) => {
     return 30635;
   } else if (name.indexOf("mqru3") != -1) {
     return 30636;
+  } else if (name.indexOf("mwuu3") != -1) {
+    return 37361;
+  } else if (name.indexOf("mwuw3") != -1) {
+    return 37362;
+  } else if (name.indexOf("mwuy3") != -1) {
+    return 37363;
+  } else if (name.indexOf("mwv13") != -1) {
+    return 37364;
+  } else if (name.indexOf("mwv43") != -1) {
+    return 37365;
+  } else if (name.indexOf("mwv63") != -1) {
+    return 37366;
+  } else if (name.indexOf("mwv83") != -1) {
+    return 37367;
+  } else if (name.indexOf("mwuc3") != -1) {
+    return 37370;
+  } else if (name.indexOf("mwud3") != -1) {
+    return 37371;
+  } else if (name.indexOf("mwue3") != -1) {
+    return 37372;
+  } else if (name.indexOf("mwuf3") != -1) {
+    return 37373;
+  } else if (name.indexOf("mwug3") != -1) {
+    return 37374;
+  } else if (name.indexOf("mwuh3") != -1) {
+    return 37375;
+  } else if (name.indexOf("mwuj3") != -1) {
+    return 37376;
+  } else if (name.indexOf("mwuv3") != -1) {
+    return 37354;
+  } else if (name.indexOf("mwux3") != -1) {
+    return 37355;
+  } else if (name.indexOf("mwv03") != -1) {
+    return 37356;
+  } else if (name.indexOf("mwv33") != -1) {
+    return 37357;
+  } else if (name.indexOf("mwv53") != -1) {
+    return 37358;
+  } else if (name.indexOf("mwv73") != -1) {
+    return 37359;
+  } else if (name.indexOf("mwv93") != -1) {
+    return 37360;
+  } else if (name.indexOf("mcr24") != -1) {
+    return 37343;
+  } else if (name.indexOf("md2p4") != -1) {
+    return 37350;
+  } else if (name.indexOf("md2q4") != -1) {
+    return 37344;
+  } else if (name.indexOf("md2t4") != -1) {
+    return 37345;
+  } else if (name.indexOf("md2u4") != -1) {
+    return 37352;
+  } else if (name.indexOf("md2v4") != -1) {
+    return 37353;
+  } else if (name.indexOf("md2w4") != -1) {
+    return 37351;
 
     // macbook
   } else if (name.indexOf("mqku3") != -1) {
@@ -2374,6 +2509,106 @@ export const returnIDApple = (name) => {
     return 30655;
   } else if (name.indexOf("mrw63") != -1) {
     return 30656;
+  } else if (name.indexOf("mw2v3") != -1 &&
+  name.indexOf("late 2024") != -1) {
+    return 37392;
+  } else if (name.indexOf("mw2x3") != -1 &&
+  name.indexOf("late 2024") != -1) {
+    return 37391;
+  } else if (name.indexOf("mw2u3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37390;
+  } else if (name.indexOf("mw2w3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37389;
+  } else if (name.indexOf("mcx04") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37394;
+  } else if (name.indexOf("mcx14") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37393;
+  } else if (name.indexOf("mx2e3") != -1) {
+    return 37335;
+  } else if (name.indexOf("mx2h3") != -1) {
+    return 37336;
+  } else if (name.indexOf("mx2g3") != -1) {
+    return 37330;
+  } else if (name.indexOf("mx2k3") != -1) {
+    return 37329;
+  } else if (name.indexOf("mx2v3") != -1) {
+    return 37332;
+  } else if (name.indexOf("mx303") != -1) {
+    return 37331;
+  } else if (name.indexOf("mx2f3") != -1) {
+    return 37341;
+  } else if (name.indexOf("mx2j3") != -1) {
+    return 37342;
+  } else if (name.indexOf("mx2t3") != -1) {
+    return 37337;
+  } else if (name.indexOf("mx2x3") != -1) {
+    return 37338;
+  } else if (name.indexOf("mx2u3") != -1) {
+    return 37339;
+  } else if (name.indexOf("mx2y3") != -1) {
+    return 37340;
+  } else if (name.indexOf("mx2w3") != -1) {
+    return 37334;
+  } else if (name.indexOf("mx313") != -1) {
+    return 37333;
+  } else if (name.indexOf("mx2g3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37395;
+  } else if (name.indexOf("mx2k3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37396;
+  } else if (name.indexOf("mx2e3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37401;
+  } else if (name.indexOf("mx2h3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37402;
+  } else if (name.indexOf("mx2f3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37403;
+  } else if (name.indexOf("mx2j3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37404;
+  } else if (name.indexOf("mw2v3") != -1) {
+    return 37326;
+  } else if (name.indexOf("mw2x3") != -1) {
+    return 37325;
+  } else if (name.indexOf("mw2u3") != -1) {
+    return 37327;
+  } else if (name.indexOf("mw2w3") != -1) {
+    return 37323;
+  } else if (name.indexOf("mcx04") != -1) {
+    return 37328;
+  } else if (name.indexOf("mcx14") != -1) {
+    return 37324;
+  } else if (name.indexOf("mx2v3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37397;
+  } else if (name.indexOf("mx303") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37398;
+  } else if (name.indexOf("mx2w3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37399;
+  } else if (name.indexOf("mx313") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37400;
+  } else if (name.indexOf("mx2t3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37405;
+  } else if (name.indexOf("mx2x3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37406;
+  } else if (name.indexOf("mx2u3") != -1 &&
+  name.indexOf("late 2024") != -1) {
+    return 37407;
+  } else if (name.indexOf("mx2y3") != -1 &&
+name.indexOf("late 2024") != -1) {
+    return 37408;
 
     // iphone se
   } else if (

@@ -49,6 +49,8 @@ import IndexSunrise from "./component/Sunrise/IndexSunrise";
 import IndexSunriseNotID from "./component/Sunrise/IndexSunriseNotID";
 import IndexInfinity from "./component/Infinity/indexInfinity";
 import IndexInfinityNotID from "./component/Infinity/indexInfinityNotID";
+import IndexAlikson from "./component/Alikson/IndexAlikson";
+import IndexAliksonNotID from "./component/Alikson/IndexAliksonNotID";
 
 const App = () => {
   const allPrice = [];
@@ -76,6 +78,7 @@ const App = () => {
   const [dataL27, setDataL27] = useState([]);
   const [dataSunrise, setDataSunrise] = useState([]);
   const [dataInfinity, setDataInfinity] = useState([]);
+  const [dataAlikson, setDataAlikson] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -100,6 +103,7 @@ const App = () => {
   const l27 = [];
   const sunrise = [];
   const infinity = [];
+  const alikson = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -268,6 +272,13 @@ const App = () => {
       typeof infinityEl.Infinity === "string" &&
       infinity.push({ name: infinityEl.Infinity });
   });
+
+  dataAlikson.map((aliksonEl) => {
+    aliksonEl.Alikson &&
+      aliksonEl.Alikson.length > 7 &&
+      typeof aliksonEl.Alikson === "string" &&
+      alikson.push({ name: aliksonEl.Alikson });
+  });
   
 
   const handleImport = ($event) => {
@@ -326,6 +337,8 @@ const App = () => {
           setDataSunrise(rowSunrise);
           const rowInfinity = utils.sheet_to_json(wb.Sheets[sheets[22]]);
           setDataInfinity(rowInfinity);
+          const rowAlikson = utils.sheet_to_json(wb.Sheets[sheets[23]]);
+          setDataAlikson(rowAlikson);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -433,9 +446,12 @@ const App = () => {
         {/* Восход */}
         <IndexSunrise el={dataSunrise} sunriseData={sunrise} />
         <IndexSunriseNotID el={dataSunrise} sunriseData={sunrise} />
-
+        {/* Infinity */}
         <IndexInfinity el={dataInfinity} infinityData={infinity} />
         <IndexInfinityNotID el={dataInfinity} infinityData={infinity} />
+        {/* Alikson */}
+        <IndexAlikson el={dataAlikson} aliksonData={alikson} />
+        <IndexAliksonNotID el={dataAlikson} aliksonData={alikson} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -462,6 +478,7 @@ const App = () => {
           l27Data={l27}
           sunriseData={sunrise}
           infinityData={infinity}
+          aliksonData={alikson}
         />
 
         {/* <AllPrice

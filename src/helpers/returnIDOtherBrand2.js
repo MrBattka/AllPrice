@@ -86,9 +86,11 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("oculus quest 2 256") != -1) {
     return 28189;
   } else if (name.indexOf("oculus quest 3 128") != -1) {
-    return 35722;
+    return 36846;
   } else if (name.indexOf("oculus quest 3 512") != -1) {
-    return 35723;
+    return 36847;
+  } else if (name.indexOf("oculus quest Pro 256") != -1) {
+    return 37132;
 
     // Pico
   } else if (name.indexOf("pico 4 128") != -1) {
@@ -1320,7 +1322,7 @@ export const returnIDOtherBrand2 = (name) => {
       name.indexOf("розовый") != -1 ||
       name.indexOf("pink") != -1)
   ) {
-    return 20410;
+    return 37163;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("лайт") != -1 &&
@@ -1365,6 +1367,45 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("бел") != -1
   ) {
     return 18848;
+
+
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("лайт") != -1 &&
+    name.indexOf("корал") != -1
+  ) {
+    return 37165;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("лайт") != -1 &&
+    name.indexOf("розов") != -1
+  ) {
+    return 37163;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("лайт") != -1 &&
+    name.indexOf("сини") != -1
+  ) {
+    return 37162;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("лайт") != -1 &&
+    name.indexOf("фиоле") != -1
+  ) {
+    return 37161;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("лайт") != -1 &&
+    name.indexOf("зелен") != -1
+  ) {
+    return 37164;
+
+
   } else if (
     name.indexOf("без zigbee") == -1 &&
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
@@ -1394,7 +1435,8 @@ export const returnIDOtherBrand2 = (name) => {
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("макс") != -1 &&
     name.indexOf("zigbee") != -1 &&
-    name.indexOf("черн") != -1
+    (name.indexOf("черн") != -1 ||
+    name.indexOf("графит") != -1)
   ) {
     return 30293;
   } else if (

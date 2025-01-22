@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   baseFix,
+  baseFixAlikson,
   baseFixArti,
   baseFixBase,
   baseFixDiscount,
@@ -121,6 +122,7 @@ import { fixNameLowPrice, returnNameInArrLowPrice, returnStockPriceLowPrice } fr
 import { returnFixNameL27, returnNameInArrL27, returnStockPriceL27 } from "../L27/helpers/helpers";
 import { returnFixNameSunrise, returnNameInArrSunrise, returnStockPriceSunrise } from "../Sunrise/helpers/helpers";
 import { fixNameInfinity, returnNameInArrInfinity, returnStockPriceInfinity } from "../Infinity/helpers/helpers";
+import { returnFixNameAlikson, returnNameInArrAlikson, returnStockPriceAlikson } from "../Alikson/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -145,7 +147,8 @@ const AllPriceWithID = ({
   lowPriceData,
   l27Data,
   sunriseData,
-  infinityData
+  infinityData,
+  aliksonData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -678,6 +681,30 @@ const AllPriceWithID = ({
         );
       }
     });
+
+    aliksonData.map((racmag) => {
+        baseFixAlikson(racmag) &&
+          returnStockPriceAlikson(returnFixNameAlikson(racmag.name));
+        if (
+          racmag.name &&
+          typeof racmag.name === "string" &&
+          baseFixAlikson(racmag) &&
+          isOpen
+        ) {
+          return (
+            returnIDSamsung(returnFixNameAlikson(racmag.name)) !== "No match" &&
+            returnStockPriceAlikson(racmag.name) &&
+            allPriceArr.push({
+              id: returnIDSamsung(
+                returnNameInArrAlikson(returnFixNameAlikson(racmag.name))
+              ),
+              name: returnNameInArrAlikson(returnFixNameAlikson(racmag.name)),
+              stockPrice: returnStockPriceAlikson(returnFixNameAlikson(racmag.name)),
+              provider: "Alikson",
+            })
+          );
+        }
+      });
 
   return (
     <div>

@@ -158,6 +158,18 @@ export const returnIDXiaomi = (name) => {
     return 30612;
   } else if (name.indexOf("c65 8/256 purple") != -1) {
     return 30614;
+  } else if (name.indexOf("c75 6/128 black") != -1) {
+    return 37385;
+  } else if (name.indexOf("c75 6/128 gold") != -1) {
+    return 37475;
+  } else if (name.indexOf("c75 6/128 green") != -1) {
+    return 37474;
+  } else if (name.indexOf("c75 8/256 black") != -1) {
+    return 37476;
+  } else if (name.indexOf("c75 8/256 gold") != -1) {
+    return 37477;
+  } else if (name.indexOf("c75 8/256 green") != -1) {
+    return 37478;
   } else if (name.indexOf("f5 pro 12/256 black") != -1) {
     return 27672;
   } else if (name.indexOf("f5 pro 12/256 white") != -1) {
@@ -1265,84 +1277,143 @@ export const returnIDXiaomi = (name) => {
     (name.indexOf("ocean") != -1 || name.indexOf("sunset") != -1)
   ) {
     return 36394;
-  } else if (name.indexOf("note 14 pro + 12/256 black") != -1) {
+  } else if (
+    name.indexOf("note 14 pro + 12/256 black") != -1 ||
+    name.indexOf("note 14 pro + 12/256 midnight") != -1
+  ) {
     return 37059;
-  } else if (name.indexOf("note 14 pro + 12/256 green") != -1 ||
-  name.indexOf("note 14 pro + 12/256 blue") != -1) {
+  } else if (
+    name.indexOf("note 14 pro + 12/256 green") != -1 ||
+    name.indexOf("note 14 pro + 12/256 blue") != -1
+  ) {
     return 37060;
   } else if (name.indexOf("note 14 pro + 12/256 white") != -1) {
     return 37061;
-  } else if (name.indexOf("note 14 pro + 12/512 black") != -1) {
+  } else if (
+    name.indexOf("note 14 pro + 12/512 black") != -1 ||
+    name.indexOf("note 14 pro + 12/512 midnight") != -1
+  ) {
     return 37068;
-  } else if (name.indexOf("note 14 pro + 12/512 green") != -1 ||
-  name.indexOf("note 14 pro + 12/512 blue") != -1) {
+  } else if (
+    name.indexOf("note 14 pro + 12/512 green") != -1 ||
+    name.indexOf("note 14 pro + 12/512 blue") != -1
+  ) {
     return 37069;
   } else if (name.indexOf("note 14 pro + 12/512 white") != -1) {
     return 37070;
-  } else if (name.indexOf("note 14 pro + 16/512 black") != -1) {
+  } else if (
+    name.indexOf("note 14 pro + 16/512 black") != -1 ||
+    name.indexOf("note 14 pro + 16/512 midnight") != -1
+  ) {
     return 37065;
-  } else if (name.indexOf("note 14 pro + 16/512 green") != -1 ||
-  name.indexOf("note 14 pro + 16/512 blue") != -1) {
+  } else if (
+    name.indexOf("note 14 pro + 16/512 green") != -1 ||
+    name.indexOf("note 14 pro + 16/512 blue") != -1
+  ) {
     return 37066;
   } else if (name.indexOf("note 14 pro + 16/512 white") != -1) {
     return 37067;
-  } else if (name.indexOf("note 14 pro 12/256 black") != -1) {
+  } else if (
+    name.indexOf("note 14 pro 12/256 black") != -1 ||
+    name.indexOf("note 14 pro 12/256 midnight") != -1
+  ) {
     return 37051;
-  } else if (name.indexOf("note 14 pro 12/256 green") != -1 ||
-  name.indexOf("note 14 pro 12/256 blue") != -1) {
+  } else if (
+    name.indexOf("note 14 pro 12/256 green") != -1 ||
+    name.indexOf("note 14 pro 12/256 blue") != -1
+  ) {
     return 37052;
   } else if (name.indexOf("note 14 pro 12/256 purple") != -1) {
     return 37053;
   } else if (name.indexOf("note 14 pro 12/256 white") != -1) {
     return 37054;
-  } else if (name.indexOf("note 14 pro 12/512 black") != -1) {
+  } else if (
+    name.indexOf("note 14 pro 12/512 black") != -1 ||
+    name.indexOf("note 14 pro 12/512 midnight") != -1
+  ) {
     return 37055;
-  } else if (name.indexOf("note 14 pro 12/512 green") != -1 ||
-  name.indexOf("note 14 pro 12/512 blue") != -1) {
+  } else if (
+    name.indexOf("note 14 pro 12/512 green") != -1 ||
+    name.indexOf("note 14 pro 12/512 blue") != -1
+  ) {
     return 37056;
   } else if (name.indexOf("note 14 pro 12/512 purple") != -1) {
     return 37057;
   } else if (name.indexOf("note 14 pro 12/512 white") != -1) {
     return 37058;
-  } else if (name.indexOf("note 14 pro 8/128 black") != -1) {
+  } else if (
+    name.indexOf("note 14 pro 8/128 black") != -1 ||
+    name.indexOf("note 14 pro 8/128 midnight") != -1
+  ) {
     return 37043;
-  } else if (name.indexOf("note 14 pro 8/128 green") != -1 ||
-  name.indexOf("note 14 pro 8/128 blue") != -1) {
+  } else if (
+    name.indexOf("note 14 pro 8/128 green") != -1 ||
+    name.indexOf("note 14 pro 8/128 blue") != -1
+  ) {
     return 37046;
   } else if (name.indexOf("note 14 pro 8/128 purple") != -1) {
     return 37045;
   } else if (name.indexOf("note 14 pro 8/128 white") != -1) {
     return 37044;
-  } else if (name.indexOf("note 14 pro 8/256 black") != -1) {
+  } else if (
+    name.indexOf("note 14 pro 8/256 black") != -1 ||
+    name.indexOf("note 14 pro 8/256 midnight") != -1
+  ) {
     return 37047;
-  } else if (name.indexOf("note 14 pro 8/256 green") != -1 ||
-  name.indexOf("note 14 pro 8/256 blue") != -1) {
+  } else if (
+    name.indexOf("note 14 pro 8/256 green") != -1 ||
+    name.indexOf("note 14 pro 8/256 blue") != -1
+  ) {
     return 37048;
   } else if (name.indexOf("note 14 pro 8/256 purple") != -1) {
     return 37049;
   } else if (name.indexOf("note 14 pro 8/256 white") != -1) {
     return 37050;
-  } else if (name.indexOf("note 14 12/256 black") != -1) {
+  } else if (
+    name.indexOf("note 14 12/256 black") != -1 ||
+    name.indexOf("note 14 12/256 midnight") != -1
+  ) {
     return 37040;
-  } else if (name.indexOf("note 14 12/256 green") != -1) {
+  } else if (
+    name.indexOf("note 14 12/256 green") != -1 ||
+    name.indexOf("note 14 12/256 lime") != -1
+  ) {
     return 37041;
   } else if (name.indexOf("note 14 12/256 white") != -1) {
     return 37042;
-  } else if (name.indexOf("note 14 6/128 black") != -1) {
+  } else if (
+    name.indexOf("note 14 6/128 black") != -1 ||
+    name.indexOf("note 14 6/128 midnight") != -1
+  ) {
     return 37032;
-  } else if (name.indexOf("note 14 6/128 green") != -1) {
+  } else if (
+    name.indexOf("note 14 6/128 green") != -1 ||
+    name.indexOf("note 14 6/128 lime") != -1
+  ) {
     return 37033;
   } else if (name.indexOf("note 14 6/128 white") != -1) {
     return 37031;
-  } else if (name.indexOf("note 14 8/128 black") != -1) {
+  } else if (
+    name.indexOf("note 14 8/128 black") != -1 ||
+    name.indexOf("note 14 8/128 midnight") != -1
+  ) {
     return 37034;
-  } else if (name.indexOf("note 14 8/128 green") != -1) {
+  } else if (
+    name.indexOf("note 14 8/128 green") != -1 ||
+    name.indexOf("note 14 8/128 lime") != -1
+  ) {
     return 37035;
   } else if (name.indexOf("note 14 8/128 white") != -1) {
     return 37036;
-  } else if (name.indexOf("note 14 8/256 black") != -1) {
+  } else if (
+    name.indexOf("note 14 8/256 black") != -1 ||
+    name.indexOf("note 14 8/256 midnight") != -1
+  ) {
     return 37037;
-  } else if (name.indexOf("note 14 8/256 green") != -1) {
+  } else if (
+    name.indexOf("note 14 8/256 green") != -1 ||
+    name.indexOf("note 14 8/256 lime") != -1
+  ) {
     return 37038;
   } else if (name.indexOf("note 14 8/256 white") != -1) {
     return 37039;

@@ -686,6 +686,58 @@ export const returnIDOtherBrand = (name) => {
   ) {
     return 35662;
 
+
+  } else if (name.indexOf("hs08") != -1 &&
+  name.indexOf("airwrap") != -1 &&
+  name.indexOf("i.d.") != -1 &&
+  name.indexOf("curly") != -1 &&
+  name.indexOf("coily") != -1 &&
+  name.indexOf("ceramic") != -1 &&
+  name.indexOf("patina/topaz") != -1) {
+    return 37444;
+  } else if (name.indexOf("hs08") != -1 &&
+  name.indexOf("airwrap") != -1 &&
+  name.indexOf("i.d.") != -1 &&
+  name.indexOf("curly") != -1 &&
+  name.indexOf("coily") != -1 &&
+  name.indexOf("strawberry") != -1 &&
+  name.indexOf("bronze/blush") != -1 &&
+  name.indexOf("pink") != -1) {
+    return 37445;
+  } else if (name.indexOf("hs08") != -1 &&
+  name.indexOf("airwrap") != -1 &&
+  name.indexOf("i.d.") != -1 &&
+  name.indexOf("curly") != -1 &&
+  name.indexOf("coily") != -1 &&
+  name.indexOf("vinca") != -1 &&
+  name.indexOf("blue/topaz") != -1) {
+    return 37443;
+  } else if (name.indexOf("hs08") != -1 &&
+  name.indexOf("airwrap") != -1 &&
+  name.indexOf("i.d.") != -1 &&
+  name.indexOf("straight") != -1 &&
+  name.indexOf("wavy") != -1 &&
+  name.indexOf("ceramic") != -1 &&
+  name.indexOf("patina/topaz") != -1) {
+    return 37446;
+  } else if (name.indexOf("hs08") != -1 &&
+  name.indexOf("airwrap") != -1 &&
+  name.indexOf("i.d.") != -1 &&
+  name.indexOf("straight") != -1 &&
+  name.indexOf("wavy") != -1 &&
+  name.indexOf("strawberry") != -1 &&
+  name.indexOf("bronze/blush") != -1 &&
+  name.indexOf("pink") != -1) {
+    return 37447;
+  } else if (name.indexOf("hs08") != -1 &&
+  name.indexOf("airwrap") != -1 &&
+  name.indexOf("i.d.") != -1 &&
+  name.indexOf("straight") != -1 &&
+  name.indexOf("wavy") != -1 &&
+  name.indexOf("vinca") != -1 &&
+  name.indexOf("blue/topaz") != -1) {
+    return 37448;
+
     // Go Pro
   } else if (name.indexOf("hero 10") != -1) {
     return 20821;
