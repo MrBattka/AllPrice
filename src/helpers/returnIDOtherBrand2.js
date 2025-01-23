@@ -17,8 +17,7 @@ export const returnIDOtherBrand2 = (name) => {
       name.indexOf("playstation 5") != -1 ||
       name.indexOf("ps 5") != -1) &&
     name.indexOf("pro") != -1 &&
-    (name.indexOf("disc") == -1 ||
-    name.indexOf("диск") == -1 )
+    (name.indexOf("disc") == -1 || name.indexOf("диск") == -1)
   ) {
     return 36834;
   } else if (
@@ -128,6 +127,13 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("switch lite turquoise") != -1) {
     return 17230;
   } else if (name.indexOf("switch lite blue") != -1) {
+    return 17229;
+  
+  } else if (name.indexOf("switch 32 gray") != -1) {
+    return 17228;
+  } else if (name.indexOf("switch 32 neon") != -1) {
+    return 17230;
+  } else if (name.indexOf("switch 32 yellow") != -1) {
     return 17229;
 
     // Sony
@@ -566,7 +572,6 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("black") != -1
   ) {
     return 36080;
-
   } else if (name.indexOf("nubia flip 12/512 cosmic black") != -1) {
     return 36865;
   } else if (name.indexOf("nubia flip 12/512 flowering lilac") != -1) {
@@ -735,7 +740,6 @@ export const returnIDOtherBrand2 = (name) => {
     return 28527;
   } else if (name.indexOf("redmagic 8s pro 8/256 transparent") != -1) {
     return 28510;
-  
   } else if (
     name.indexOf("redmagic") != -1 &&
     name.indexOf("9s pro +") != -1 &&
@@ -834,13 +838,17 @@ export const returnIDOtherBrand2 = (name) => {
     (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)
   ) {
     return 36746;
-  } else if (name.indexOf("redmagic 9 pro") != -1 &&
-  name.indexOf("12/256") != -1 &&
-  name.indexOf("cyclone") != -1) {
+  } else if (
+    name.indexOf("redmagic 9 pro") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("cyclone") != -1
+  ) {
     return 36794;
-  } else if (name.indexOf("redmagic 9 pro") != -1 &&
-  name.indexOf("12/256") != -1 &&
-  (name.indexOf("snowfall") != -1 || name.indexOf("white") != -1)) {
+  } else if (
+    name.indexOf("redmagic 9 pro") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    (name.indexOf("snowfall") != -1 || name.indexOf("white") != -1)
+  ) {
     return 36795;
   } else if (name.indexOf("redmagic 9 pro 16/512 sleet") != -1) {
     return 36793;
@@ -1109,6 +1117,12 @@ export const returnIDOtherBrand2 = (name) => {
     return 28083;
   } else if (name.indexOf("jbl flip 6 teal") != -1) {
     return 28087;
+  } else if (name.indexOf("jbl boombox black") != -1) {
+    return 12546;
+  } else if (name.indexOf("jbl boombox 2 black") != -1) {
+    return 19658;
+  } else if (name.indexOf("jbl boombox 2 squad") != -1) {
+    return 19631;
   } else if (name.indexOf("jbl boombox 3 black") != -1) {
     return 27643;
   } else if (name.indexOf("jbl boombox 3 squad") != -1) {
@@ -1136,27 +1150,29 @@ export const returnIDOtherBrand2 = (name) => {
     return 20286;
   } else if (name.indexOf("jbl clip 3 black/white camouflage") != -1) {
     return 15233;
+  } else if (name.indexOf("jbl clip 3 black/white/brown camo") != -1) {
+    return 19609;
   } else if (name.indexOf("jbl clip 3 desert sand") != -1) {
     return 15231;
-  } else if (name.indexOf("jbl clip 3 dusty pink") != -1) {
+  } else if (name.indexOf("jbl clip 3 pink") != -1) {
     return 15230;
-  } else if (name.indexOf("jbl clip 3 fiesta red") != -1) {
+  } else if (name.indexOf("jbl clip 3 red") != -1) {
     return 15224;
-  } else if (name.indexOf("jbl clip 3 forest green") != -1) {
+  } else if (name.indexOf("jbl clip 3 green") != -1) {
     return 15228;
-  } else if (name.indexOf("jbl clip 3 midnight black") != -1) {
+  } else if (name.indexOf("jbl clip 3 black") != -1) {
     return 15222;
-  } else if (name.indexOf("jbl clip 3 mustard yellow") != -1) {
+  } else if (name.indexOf("jbl clip 3 yellow") != -1) {
     return 15229;
-  } else if (name.indexOf("jbl clip 3 ocean blue") != -1) {
+  } else if (name.indexOf("jbl clip 3 blue") != -1) {
     return 15223;
-  } else if (name.indexOf("jbl clip 3 river teal") != -1) {
+  } else if (name.indexOf("jbl clip 3 teal") != -1) {
     return 15226;
   } else if (name.indexOf("jbl clip 3 squad") != -1) {
     return 15232;
-  } else if (name.indexOf("jbl clip 3 steel white") != -1) {
+  } else if (name.indexOf("jbl clip 3 white") != -1) {
     return 15227;
-  } else if (name.indexOf("jbl clip 3 stone grey") != -1) {
+  } else if (name.indexOf("jbl clip 3 grey") != -1) {
     return 15225;
   } else if (name.indexOf("jbl clip 4 black/orange") != -1) {
     return 20301;
@@ -1174,7 +1190,7 @@ export const returnIDOtherBrand2 = (name) => {
     return 20308;
   } else if (name.indexOf("jbl clip 4 yellow") != -1) {
     return 20303;
-  } else if (name.indexOf("jbl flip 5 black matte") != -1) {
+  } else if (name.indexOf("jbl flip 5 black") != -1) {
     return 15234;
   } else if (name.indexOf("jbl flip 5 blue") != -1) {
     return 15235;
@@ -1228,8 +1244,19 @@ export const returnIDOtherBrand2 = (name) => {
     return 19588;
   } else if (name.indexOf("jbl xtreme 3 blue") != -1) {
     return 19590;
+  } else if (name.indexOf("jbl xtreme 3 gray") != -1) {
+    return 22149;
   } else if (name.indexOf("jbl xtreme 3 squad") != -1) {
     return 19589;
+  
+  } else if (name.indexOf("jbl partybox 100 black") != -1) {
+    return 19637;
+  } else if (name.indexOf("jbl partybox 1000 black") != -1) {
+    return 19638;
+  } else if (name.indexOf("jbl partybox 300 black") != -1) {
+    return 19640;
+  } else if (name.indexOf("jbl partybox 310 black") != -1) {
+    return 19639;
 
     //  Honor
   } else if (name.indexOf("honor 90 12/256 silver") != -1) {
@@ -1367,8 +1394,6 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("бел") != -1
   ) {
     return 18848;
-
-
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("2") != -1 &&
@@ -1404,8 +1429,6 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("зелен") != -1
   ) {
     return 37164;
-
-
   } else if (
     name.indexOf("без zigbee") == -1 &&
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
@@ -1435,8 +1458,7 @@ export const returnIDOtherBrand2 = (name) => {
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("макс") != -1 &&
     name.indexOf("zigbee") != -1 &&
-    (name.indexOf("черн") != -1 ||
-    name.indexOf("графит") != -1)
+    (name.indexOf("черн") != -1 || name.indexOf("графит") != -1)
   ) {
     return 30293;
   } else if (
@@ -1579,12 +1601,10 @@ export const returnIDOtherBrand2 = (name) => {
     return 24581;
   } else if (
     name.indexOf("finis") != -1 &&
-    name.indexOf("starter") != -1 &&
-    name.indexOf("goggle") != -1 &&
-    name.indexOf("blue") != -1
+    name.indexOf("smart") != -1 &&
+    name.indexOf("goggle") != -1
   ) {
     return 26204;
-
   } else if (
     name.indexOf("nothing phone") != -1 &&
     name.indexOf("2a") != -1 &&
@@ -1618,7 +1638,35 @@ export const returnIDOtherBrand2 = (name) => {
   ) {
     return 37125;
 
-
+    // Casio
+  } else if (name.indexOf("gwg-2000 1a1") != -1) {
+    return 37449;
+  } else if (name.indexOf("gwg-2000 1a3") != -1) {
+    return 37450;
+  } else if (name.indexOf("gwg-2000 1a5") != -1) {
+    return 37451;
+  } else if (name.indexOf("gwg-b1000 1a4") != -1) {
+    return 37452;
+  } else if (name.indexOf("gwg-b1000 3a") != -1) {
+    return 37453;
+  } else if (name.indexOf("mtg-b1000-1a") != -1) {
+    return 37454;
+  } else if (name.indexOf("mtg-b1000b-1a") != -1) {
+    return 37455;
+  } else if (name.indexOf("mtg-b1000d-1a") != -1) {
+    return 37456;
+  } else if (name.indexOf("mtg-b1000xbd-1a") != -1) {
+    return 37457;
+  } else if (name.indexOf("mtg-b2000b-1a") != -1) {
+    return 37297;
+  } else if (name.indexOf("mtg-b2000bd-1a") != -1) {
+    return 37296;
+  } else if (name.indexOf("mtg-b2000ybd-1a") != -1) {
+    return 37298;
+  } else if (name.indexOf("mtg-b2000yr-1a") != -1) {
+    return 37473;
+  } else if (name.indexOf("mtg-b3000-1a") != -1) {
+    return 37458;
   } else {
     return returnIDApple(name) || "No match";
   }

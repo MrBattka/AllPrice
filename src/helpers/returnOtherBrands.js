@@ -739,12 +739,16 @@ export const returnIDOtherBrand = (name) => {
     return 37448;
 
     // Go Pro
+  } else if (name.indexOf("hero 9") != -1) {
+    return 17531
   } else if (name.indexOf("hero 10") != -1) {
     return 20821;
   } else if (name.indexOf("hero 11") != -1) {
     return 27657;
   } else if (name.indexOf("hero 12") != -1) {
     return 30285;
+  } else if (name.indexOf("hero 13") != -1) {
+    return 37167;
   } else if (name.indexOf("el grande") != -1) {
     return 17242;
 
