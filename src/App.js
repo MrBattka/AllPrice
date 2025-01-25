@@ -51,6 +51,9 @@ import IndexInfinity from "./component/Infinity/indexInfinity";
 import IndexInfinityNotID from "./component/Infinity/indexInfinityNotID";
 import IndexAlikson from "./component/Alikson/IndexAlikson";
 import IndexAliksonNotID from "./component/Alikson/IndexAliksonNotID";
+import IndexBigAp from "./component/BigAp/IndexBigAp";
+import IndexMTA from "./component/MTA/IndexMTA";
+import IndexMTANotID from "./component/MTA/IndexMTANotID";
 
 const App = () => {
   const allPrice = [];
@@ -79,6 +82,8 @@ const App = () => {
   const [dataSunrise, setDataSunrise] = useState([]);
   const [dataInfinity, setDataInfinity] = useState([]);
   const [dataAlikson, setDataAlikson] = useState([]);
+  const [dataBigAp, setDataBigAp] = useState([]);
+  const [dataMTA, setDataMTA] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -104,6 +109,9 @@ const App = () => {
   const sunrise = [];
   const infinity = [];
   const alikson = [];
+  const bigAp = [];
+  const mta = [];
+
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -279,6 +287,18 @@ const App = () => {
       typeof aliksonEl.Alikson === "string" &&
       alikson.push({ name: aliksonEl.Alikson });
   });
+
+  dataBigAp.map((bigApEl) => {
+    bigApEl.BigAp &&
+      bigApEl.BigAp.length &&
+      bigAp.push({ name: bigApEl.BigAp });
+  });
+
+  dataMTA.map((mtaEl) => {
+    mtaEl.MTA &&
+      mtaEl.MTA.length &&
+      mta.push({ name: mtaEl.MTA });
+  });
   
 
   const handleImport = ($event) => {
@@ -339,11 +359,16 @@ const App = () => {
           setDataInfinity(rowInfinity);
           const rowAlikson = utils.sheet_to_json(wb.Sheets[sheets[23]]);
           setDataAlikson(rowAlikson);
+          const rowBigAp = utils.sheet_to_json(wb.Sheets[sheets[24]]);
+          setDataBigAp(rowBigAp);
+          const rowMTA = utils.sheet_to_json(wb.Sheets[sheets[25]]);
+          setDataMTA(rowMTA);
         }
       };
       reader.readAsArrayBuffer(file);
     }
   };
+console.log(dataBigAp);
 
   return (
     <div className="App">
@@ -376,6 +401,8 @@ const App = () => {
         </div>
       </div>
       <div className="wrapper_cat">
+        {/* <IndexBigAp  el={dataBigAp} bigApData={bigAp} /> */}
+        
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
@@ -452,6 +479,9 @@ const App = () => {
         {/* Alikson */}
         <IndexAlikson el={dataAlikson} aliksonData={alikson} />
         <IndexAliksonNotID el={dataAlikson} aliksonData={alikson} />
+        {/* MTA Store */}
+        <IndexMTA el={dataMTA} mtaData={mta} />
+        <IndexMTANotID el={dataMTA} mtaData={mta} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -479,6 +509,7 @@ const App = () => {
           sunriseData={sunrise}
           infinityData={infinity}
           aliksonData={alikson}
+          mtaData={mta}
         />
 
         {/* <AllPrice

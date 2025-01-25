@@ -94,9 +94,11 @@ export const returnIDOtherBrand2 = (name) => {
     return 28187;
 
     // Marshall
-  } else if (name.indexOf("major 4 black") != -1) {
+  } else if (name.indexOf("major 4 black") != -1 ||
+  name.indexOf("major iv black") != -1) {
     return 28100;
-  } else if (name.indexOf("major 4 brown") != -1) {
+  } else if (name.indexOf("major 4 brown") != -1 ||
+  name.indexOf("major iv brown") != -1) {
     return 28101;
 
     // Nintendo

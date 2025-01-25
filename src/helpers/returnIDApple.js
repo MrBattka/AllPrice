@@ -30,66 +30,77 @@ export const returnIDApple = (name) => {
     return 36586;
   } else if (
     name.indexOf("airpods max 2024 blue") != -1 ||
-    name.indexOf("airpods max 2 blue") != -1
+    name.indexOf("airpods max 2 blue") != -1 ||
+    name.indexOf("airpods max usb-c blue") != -1
   ) {
     return 36593;
   } else if (
     name.indexOf("airpods max 2024 green") != -1 ||
-    name.indexOf("airpods max 2 green") != -1
+    name.indexOf("airpods max 2 green") != -1 ||
+    name.indexOf("airpods max usb-c green") != -1
   ) {
     return 36588;
   } else if (
     name.indexOf("airpods max 2024 midnight") != -1 ||
     name.indexOf("airpods max 2 midnight") != -1 ||
-    name.indexOf("airpods max midnight") != -1
+    name.indexOf("airpods max midnight") != -1 ||
+    name.indexOf("airpods max usb-c midnight") != -1
   ) {
     return 36595;
   } else if (
     name.indexOf("airpods max 2024 black") != -1 ||
-    name.indexOf("airpods max 2 black") != -1
+    name.indexOf("airpods max 2 black") != -1 ||
+    name.indexOf("airpods max usb-c black") != -1
   ) {
     return 36596;
   } else if (
     name.indexOf("airpods max 2024 orange") != -1 ||
     name.indexOf("airpods max 2 orange") != -1 ||
-    name.indexOf("airpods max orange") != -1
+    name.indexOf("airpods max orange") != -1 ||
+    name.indexOf("airpods max usb-c orange") != -1
   ) {
     return 36597;
   } else if (
     name.indexOf("airpods max 2024 pink") != -1 ||
-    name.indexOf("airpods max 2 pink") != -1
+    name.indexOf("airpods max 2 pink") != -1 ||
+    name.indexOf("airpods max usb-c pink") != -1
   ) {
     return 36589;
   } else if (
     name.indexOf("airpods max 2024 purple") != -1 ||
     name.indexOf("airpods max 2 purple") != -1 ||
-    name.indexOf("airpods max purple") != -1
+    name.indexOf("airpods max usb-c purple") != -1
   ) {
     return 36594;
   } else if (
     name.indexOf("airpods max 2024 silver") != -1 ||
-    name.indexOf("airpods max 2 silver") != -1
+    name.indexOf("airpods max 2 silver") != -1 ||
+    name.indexOf("airpods max usb-c silver") != -1
   ) {
     return 36590;
   } else if (
     name.indexOf("airpods max 2024 sky blue") != -1 ||
-    name.indexOf("airpods max 2 sky blue") != -1
+    name.indexOf("airpods max 2 sky blue") != -1 ||
+    name.indexOf("airpods max usb-c sky blue") != -1
   ) {
     return 36591;
   } else if (
     name.indexOf("airpods max 2024 starlight") != -1 ||
     name.indexOf("airpods max 2 starlight") != -1 ||
-    name.indexOf("airpods max starlight") != -1
+    name.indexOf("airpods max starlight") != -1 ||
+    name.indexOf("airpods max usb-c starlight") != -1
   ) {
     return 36596;
   } else if (
     name.indexOf("airpods max 2024 white") != -1 ||
-    name.indexOf("airpods max 2 white") != -1
+    name.indexOf("airpods max 2 white") != -1 ||
+    name.indexOf("airpods max usb-c white") != -1
   ) {
     return 36597;
   } else if (
     name.indexOf("airpods max 2024 space gray") != -1 ||
-    name.indexOf("airpods max 2 space gray") != -1
+    name.indexOf("airpods max 2 space gray") != -1 ||
+    name.indexOf("airpods max usb-c space gray") != -1
   ) {
     return 36592;
   } else if (
@@ -3721,6 +3732,8 @@ export const returnIDApple = (name) => {
     return 30523;
   } else if (name.indexOf("14 pro 128 gold") != -1) {
     return 23487;
+  } else if (name.indexOf("14 pro 128 purple") != -1) {
+    return 23488;
   } else if (name.indexOf("14 pro 128 silver") != -1) {
     return 23489;
   } else if (name.indexOf("14 pro 128 black") != -1) {
@@ -3751,6 +3764,8 @@ export const returnIDApple = (name) => {
     return 30527;
   } else if (name.indexOf("14 pro 256 gold") != -1) {
     return 23491;
+  } else if (name.indexOf("14 pro 256 purple") != -1) {
+    return 23490;
   } else if (name.indexOf("14 pro 256 silver") != -1) {
     return 23492;
   } else if (name.indexOf("14 pro 256 black") != -1) {
@@ -3781,6 +3796,8 @@ export const returnIDApple = (name) => {
     return 30531;
   } else if (name.indexOf("14 pro 512 gold") != -1) {
     return 23495;
+  } else if (name.indexOf("14 pro 512 purple") != -1) {
+    return 23494;
   } else if (name.indexOf("14 pro 512 silver") != -1) {
     return 23496;
   } else if (name.indexOf("14 pro 512 black") != -1) {
@@ -3855,6 +3872,8 @@ export const returnIDApple = (name) => {
     return 30555;
   } else if (name.indexOf("14 pro max 128 gold") != -1) {
     return 23502;
+  } else if (name.indexOf("14 pro max 128 purple") != -1) {
+    return 23503;
   } else if (name.indexOf("14 pro max 128 silver") != -1) {
     return 23504;
   } else if (name.indexOf("14 pro max 128 black") != -1) {
@@ -3885,6 +3904,8 @@ export const returnIDApple = (name) => {
     return 30559;
   } else if (name.indexOf("14 pro max 256 gold") != -1) {
     return 23506;
+  } else if (name.indexOf("14 pro max 256 purple") != -1) {
+    return 23505;
   } else if (name.indexOf("14 pro max 256 silver") != -1) {
     return 23507;
   } else if (name.indexOf("14 pro max 256 black") != -1) {
@@ -3915,6 +3936,8 @@ export const returnIDApple = (name) => {
     return 30563;
   } else if (name.indexOf("14 pro max 512 gold") != -1) {
     return 23510;
+  } else if (name.indexOf("14 pro max 512 purple") != -1) {
+    return 23509;
   } else if (
     name.indexOf("14 pro max 512") != -1 &&
     (name.indexOf("silver") != -1 || name.indexOf("white") != -1)

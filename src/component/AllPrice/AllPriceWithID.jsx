@@ -14,6 +14,7 @@ import {
   baseFixLowPrice,
   baseFixMiHonor,
   baseFixMiOpts,
+  baseFixMTA,
   baseFixNarod,
   baseFixOther,
   baseFixRacmag,
@@ -117,12 +118,42 @@ import {
   returnNameInArrDiscount,
   returnStockPriceDiscount,
 } from "../Discount/helpers/helpers";
-import { fixNameMiOpts, returnExtraPriceMiOpts, returnNameInArrMiOpts, returnStockPriceMiOpts } from "../MiOpts/helpers/helpers";
-import { fixNameLowPrice, returnNameInArrLowPrice, returnStockPriceLowPrice } from "../LowPriceApple/helpers/helpers";
-import { returnFixNameL27, returnNameInArrL27, returnStockPriceL27 } from "../L27/helpers/helpers";
-import { returnFixNameSunrise, returnNameInArrSunrise, returnStockPriceSunrise } from "../Sunrise/helpers/helpers";
-import { fixNameInfinity, returnNameInArrInfinity, returnStockPriceInfinity } from "../Infinity/helpers/helpers";
-import { returnFixNameAlikson, returnNameInArrAlikson, returnStockPriceAlikson } from "../Alikson/helpers/helpers";
+import {
+  fixNameMiOpts,
+  returnExtraPriceMiOpts,
+  returnNameInArrMiOpts,
+  returnStockPriceMiOpts,
+} from "../MiOpts/helpers/helpers";
+import {
+  fixNameLowPrice,
+  returnNameInArrLowPrice,
+  returnStockPriceLowPrice,
+} from "../LowPriceApple/helpers/helpers";
+import {
+  returnFixNameL27,
+  returnNameInArrL27,
+  returnStockPriceL27,
+} from "../L27/helpers/helpers";
+import {
+  returnFixNameSunrise,
+  returnNameInArrSunrise,
+  returnStockPriceSunrise,
+} from "../Sunrise/helpers/helpers";
+import {
+  fixNameInfinity,
+  returnNameInArrInfinity,
+  returnStockPriceInfinity,
+} from "../Infinity/helpers/helpers";
+import {
+  returnFixNameAlikson,
+  returnNameInArrAlikson,
+  returnStockPriceAlikson,
+} from "../Alikson/helpers/helpers";
+import {
+  returnFixNameMTA,
+  returnNameInArrMTA,
+  returnStockPriceMTA,
+} from "../MTA/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -148,7 +179,8 @@ const AllPriceWithID = ({
   l27Data,
   sunriseData,
   infinityData,
-  aliksonData
+  aliksonData,
+  mtaData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -167,8 +199,7 @@ const AllPriceWithID = ({
         allPriceArr.push({
           id: returnIDSamsung(fixNameSuperPrice(superprice.name)),
           name: fixNameSuperPrice(superprice.name),
-          stockPrice: 
-            superprice.price,
+          stockPrice: superprice.price,
           provider: "SuperPrice",
         })
       );
@@ -215,8 +246,7 @@ const AllPriceWithID = ({
       allPriceArr.push({
         id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
         name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
-        stockPrice: 
-          unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
+        stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
         provider: "Метреон",
       });
     }
@@ -556,7 +586,12 @@ const AllPriceWithID = ({
   otherData.map((other) => {
     returnStockPriceOther(returnFixNameOther(other.name));
     returnExtraPriceOther(returnFixNameOther(other.name));
-    if (other.name && typeof other.name === "string" && baseFixOther(other) && isOpen) {
+    if (
+      other.name &&
+      typeof other.name === "string" &&
+      baseFixOther(other) &&
+      isOpen
+    ) {
       return (
         returnIDSamsung(returnFixNameOther(other.name)) !== "No match" &&
         returnStockPriceOther(other.name) &&
@@ -587,7 +622,9 @@ const AllPriceWithID = ({
         returnExtraPriceMiOpts(miopts.name) &&
         returnStockPriceMiOpts(miopts.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameInArrMiOpts(fixNameMiOpts(miopts.name))),
+          id: returnIDSamsung(
+            returnNameInArrMiOpts(fixNameMiOpts(miopts.name))
+          ),
           name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
           extraPrice: returnExtraPriceMiOpts(fixNameMiOpts(miopts.name)),
           stockPrice: returnStockPriceMiOpts(fixNameMiOpts(miopts.name)),
@@ -607,7 +644,9 @@ const AllPriceWithID = ({
         returnIDSamsung(fixNameLowPrice(lowPrice.name)) !== "No match" &&
         returnStockPriceLowPrice(lowPrice.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))),
+          id: returnIDSamsung(
+            returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))
+          ),
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
           stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
           provider: "LowPrice",
@@ -617,8 +656,7 @@ const AllPriceWithID = ({
   });
 
   l27Data.map((l27) => {
-    baseFixL27(l27) &&
-      returnStockPriceL27(returnFixNameL27(l27.name));
+    baseFixL27(l27) && returnStockPriceL27(returnFixNameL27(l27.name));
     if (
       l27.name &&
       typeof l27.name === "string" &&
@@ -630,9 +668,7 @@ const AllPriceWithID = ({
         returnIDSamsung(returnFixNameL27(l27.name)) !== "No match" &&
         returnStockPriceL27(l27.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(
-            returnNameInArrL27(returnFixNameL27(l27.name))
-          ),
+          id: returnIDSamsung(returnNameInArrL27(returnFixNameL27(l27.name))),
           name: returnNameInArrL27(returnFixNameL27(l27.name)),
           stockPrice: returnStockPriceL27(returnFixNameL27(l27.name)),
           provider: "Л27-28",
@@ -642,21 +678,25 @@ const AllPriceWithID = ({
   });
 
   sunriseData.map((sunrise) => {
-    baseFixSunrise(sunrise) && returnStockPriceSunrise(returnFixNameSunrise(sunrise.name));
+    baseFixSunrise(sunrise) &&
+      returnStockPriceSunrise(returnFixNameSunrise(sunrise.name));
     if (
       sunrise.name &&
       typeof sunrise.name === "string" &&
       baseFixSunrise(sunrise) &&
       isOpen
-    )
-     {
+    ) {
       return (
-        returnIDSamsung(returnFixNameSunrise(sunrise.name)) !== 'No match' &&
+        returnIDSamsung(returnFixNameSunrise(sunrise.name)) !== "No match" &&
         returnStockPriceSunrise(sunrise.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))),
+          id: returnIDSamsung(
+            returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))
+          ),
           name: returnNameInArrSunrise(returnFixNameSunrise(sunrise.name)),
-          stockPrice: returnStockPriceSunrise(returnFixNameSunrise(sunrise.name)),
+          stockPrice: returnStockPriceSunrise(
+            returnFixNameSunrise(sunrise.name)
+          ),
           provider: "Восход",
         })
       );
@@ -664,47 +704,67 @@ const AllPriceWithID = ({
   });
 
   infinityData.map((infinity) => {
-      if (
-        infinity.name &&
-        typeof infinity.name === "string" &&
-        baseFixInfinity(infinity)
-      ) {
-        return (
-          returnIDSamsung(fixNameInfinity(infinity.name)) !== "No match" &&
-          returnStockPriceInfinity(infinity.name) &&
-          allPriceArr.push({
-            id: returnIDSamsung(returnNameInArrInfinity(fixNameInfinity(infinity.name))),
-            name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
-            stockPrice: returnStockPriceInfinity(fixNameInfinity(infinity.name)),
-            provider: "Infinity",
-          })
-        );
-      }
-    });
+    if (
+      infinity.name &&
+      typeof infinity.name === "string" &&
+      baseFixInfinity(infinity)
+    ) {
+      return (
+        returnIDSamsung(fixNameInfinity(infinity.name)) !== "No match" &&
+        returnStockPriceInfinity(infinity.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrInfinity(fixNameInfinity(infinity.name))
+          ),
+          name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
+          stockPrice: returnStockPriceInfinity(fixNameInfinity(infinity.name)),
+          provider: "Infinity",
+        })
+      );
+    }
+  });
 
-    aliksonData.map((racmag) => {
-        baseFixAlikson(racmag) &&
-          returnStockPriceAlikson(returnFixNameAlikson(racmag.name));
-        if (
-          racmag.name &&
-          typeof racmag.name === "string" &&
-          baseFixAlikson(racmag) &&
-          isOpen
-        ) {
-          return (
-            returnIDSamsung(returnFixNameAlikson(racmag.name)) !== "No match" &&
-            returnStockPriceAlikson(racmag.name) &&
-            allPriceArr.push({
-              id: returnIDSamsung(
-                returnNameInArrAlikson(returnFixNameAlikson(racmag.name))
-              ),
-              name: returnNameInArrAlikson(returnFixNameAlikson(racmag.name)),
-              stockPrice: returnStockPriceAlikson(returnFixNameAlikson(racmag.name)),
-              provider: "Alikson",
-            })
-          );
-        }
-      });
+  aliksonData.map((racmag) => {
+    baseFixAlikson(racmag) &&
+      returnStockPriceAlikson(returnFixNameAlikson(racmag.name));
+    if (
+      racmag.name &&
+      typeof racmag.name === "string" &&
+      baseFixAlikson(racmag) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameAlikson(racmag.name)) !== "No match" &&
+        returnStockPriceAlikson(racmag.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrAlikson(returnFixNameAlikson(racmag.name))
+          ),
+          name: returnNameInArrAlikson(returnFixNameAlikson(racmag.name)),
+          stockPrice: returnStockPriceAlikson(
+            returnFixNameAlikson(racmag.name)
+          ),
+          provider: "Alikson",
+        })
+      );
+    }
+  });
+
+  mtaData.map((mta) => {
+    baseFixMTA(mta) && returnStockPriceMTA(returnFixNameMTA(mta.name));
+    if (mta.name && typeof mta.name === "string" && baseFixMTA(mta) && isOpen) {
+      return (
+        returnIDSamsung(returnFixNameMTA(mta.name)) !== "No match" &&
+        returnStockPriceMTA(returnFixNameMTA(mta.name)).indexOf("00") !== -1 &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrMTA(returnFixNameMTA(mta.name))),
+          name: returnNameInArrMTA(returnFixNameMTA(mta.name)),
+          stockPrice: returnStockPriceMTA(returnFixNameMTA(mta.name)),
+          provider: "MTA Store",
+        })
+      );
+    }
+  });
 
   return (
     <div>

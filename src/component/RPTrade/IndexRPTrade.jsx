@@ -29,7 +29,6 @@ const IndexRPTrade = ({ el, rptradeData }) => {
         );
       }
     });
-console.log(rptradeData);
 
   return (
     <div>
