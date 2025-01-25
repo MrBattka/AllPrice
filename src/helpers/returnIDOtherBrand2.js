@@ -59,22 +59,18 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("steam deck oled 1tb") != -1) {
     return 34403;
   } else if (
-    name.indexOf("steam deck led 16/64") != -1 ||
     name.indexOf("steam deck 16/64") != -1
   ) {
     return 28310;
   } else if (
-    name.indexOf("steam deck led 64") != -1 ||
     name.indexOf("steam deck 64") != -1
   ) {
     return 30300;
   } else if (
-    name.indexOf("steam deck led 256") != -1 ||
     name.indexOf("steam deck 256") != -1
   ) {
     return 30301;
   } else if (
-    name.indexOf("steam deck led 512") != -1 ||
     name.indexOf("steam deck 512") != -1
   ) {
     return 30302;
