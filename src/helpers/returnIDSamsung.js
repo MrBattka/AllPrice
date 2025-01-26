@@ -90,8 +90,7 @@ export const returnIDSamsung = (nameStock) => {
   } else if (name.indexOf("a06 4/64 gold") != -1) {
     return 36880;
   } else if (
-    name.indexOf("a06 4/64 light blue") != -1 ||
-    name.indexOf("a06 4/64 blue") != -1
+    name.indexOf("a06 4/64 light blue") != -1
   ) {
     return 36877;
   } else if (name.indexOf("a06 6/128 black") != -1) {
@@ -3699,17 +3698,22 @@ export const returnIDSamsung = (nameStock) => {
     return 27920;
   } else if (name.indexOf("watch6 classic 47 silver") != -1) {
     return 27919;
-  } else if (name.indexOf("watch 7 40 cream") != -1) {
+  } else if (name.indexOf("watch 7 40") != -1 &&
+  name.indexOf("cream") != -1) {
     return 36526;
-  } else if (name.indexOf("watch 7 40 green") != -1) {
+  } else if (name.indexOf("watch 7 40") != -1) {
     return 36528;
-  } else if (name.indexOf("watch 7 40 silver") != -1) {
+  } else if (name.indexOf("watch 7 40") != -1 &&
+name.indexOf("silver") != -1) {
     return 36495;
-  } else if (name.indexOf("watch 7 44 cream") != -1) {
+  } else if (name.indexOf("watch 7 44") != -1 &&
+name.indexOf("cream") != -1) {
     return 36527;
-  } else if (name.indexOf("watch 7 44 green") != -1) {
+  } else if (name.indexOf("watch 7 44") != -1 &&
+name.indexOf("green") != -1) {
     return 36529;
-  } else if (name.indexOf("watch 7 44 silver") != -1) {
+  } else if (name.indexOf("watch 7 44") != -1 &&
+name.indexOf("silver") != -1) {
     return 36496;
   } else if (
     name.indexOf("watch ultra") != -1 &&

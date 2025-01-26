@@ -57,6 +57,8 @@ import IndexMTANotID from "./component/MTA/IndexMTANotID";
 import IndexBonus from "./component/BonusOPT/IndexEBonus";
 import IndexBonusNotID from "./component/BonusOPT/IndexBonusNotID";
 import IndexBigApNotID from "./component/BigAp/IndexBigApNotID";
+import IndexRootOpt from "./component/RootOPT/IndexERootOpt";
+import IndexRootOptNotID from "./component/RootOPT/IndexRootOptNotID";
 
 const App = () => {
   const allPrice = [];
@@ -88,6 +90,7 @@ const App = () => {
   const [dataBigAp, setDataBigAp] = useState([]);
   const [dataMTA, setDataMTA] = useState([]);
   const [dataBonus, setDataBonus] = useState([]);
+  const [dataRootOpt, setDataRootOpt] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -116,6 +119,7 @@ const App = () => {
   const bigAp = [];
   const mta = [];
   const bonus = [];
+  const rootOpt = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -311,6 +315,12 @@ const App = () => {
       bonus.push({ name: bonusEl.Name, price: bonusEl.Price });
   });
 
+  dataRootOpt.map((rootOptEl) => {
+    rootOptEl.НАИМЕНОВАНИЕ &&
+      rootOptEl.НАИМЕНОВАНИЕ.length &&
+      rootOpt.push({ name: rootOptEl.НАИМЕНОВАНИЕ, price: rootOptEl.ЦЕНА });
+  });
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -375,6 +385,8 @@ const App = () => {
           setDataMTA(rowMTA);
           const rowBonus = utils.sheet_to_json(wb.Sheets[sheets[26]]);
           setDataBonus(rowBonus);
+          const rowRootOpt = utils.sheet_to_json(wb.Sheets[sheets[27]]);
+          setDataRootOpt(rowRootOpt);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -393,7 +405,7 @@ const App = () => {
                 <div className="input-group">
                   <div className="custom-file">
                     <label for="inputGroupFile" class="custom-file-upload">
-                      Custom Upload
+                      Select File...
                     </label>
                     <input
                       type="file"
@@ -413,6 +425,7 @@ const App = () => {
         </div>
       </div>
       <div className="wrapper_cat">
+        
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
@@ -498,6 +511,9 @@ const App = () => {
         {/* Bonus OPT */}
         <IndexBonus el={dataBonus} bonusData={bonus} />
         <IndexBonusNotID el={dataBonus} bonusData={bonus} />
+        {/* Root OPT */}
+        <IndexRootOpt el={dataRootOpt} rootOptData={rootOpt} />
+        <IndexRootOptNotID el={dataRootOpt} rootOptData={rootOpt} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -528,6 +544,7 @@ const App = () => {
           mtaData={mta}
           bonusData={bonus}
           bigApData={bigAp}
+          rootOptData={rootOpt}
         />
 
         {/* <AllPrice

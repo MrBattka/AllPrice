@@ -20,8 +20,22 @@ import {
 } from "../../helpers/baseFix";
 import { returnFixPrice } from "../../helpers/fixPrice";
 import { newPrice } from "../../helpers/NewPrice";
-import { returnIDApple } from "../../helpers/returnIDApple";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { returnCategoryArti } from "../Arti/category/Category";
+import {
+  returnFixNameArti,
+  returnNameArti,
+  returnStockPriceArti,
+} from "../Arti/helpers/helpers";
+import { returnFixNameBase } from "../Base/helpers/helpers";
 import TableAllPrice from "../CreateAllPriceTable/TableAllPrice";
+import {
+  returnFixNameDiscount,
+  returnNameInArrDiscount,
+  returnStockPriceDiscount,
+} from "../Discount/helpers/helpers";
+import { returnFixNameElectrozon } from "../Electrozon/helpers/helpers";
+import { returnNameF51 } from "../F51/helpers/helpers";
 import {
   fixNameGarmin,
   returnExtraPriceGarmin,
@@ -48,11 +62,28 @@ import {
   returnStockPriceMihonor,
 } from "../MiHonor/helpers/helpers";
 import {
+  fixNameNarod,
+  returnNameNarod,
+  returnStockPriceNarod,
+} from "../Narod/helpers/helpers";
+import {
+  returnExtraPriceOther,
+  returnFixNameOther,
+  returnNameInArrOther,
+  returnStockPriceOther,
+} from "../Other/helpers/helpers";
+import {
   returnExtraPriceRacmag,
   returnFixNameRacmag,
   returnNameInArrRacmag,
   returnStockPriceRacmag,
 } from "../Racmag/helpers/helpers";
+import {
+  returnExtraPriceReSale,
+  returnFixNameReSale,
+  returnNameReSale,
+  returnStockPriceReSale,
+} from "../ReSale/helpers/helpers";
 import { returnFixNameRPTrade } from "../RPTrade/helpers/helpers";
 import {
   fixNameS5,
@@ -61,6 +92,11 @@ import {
   returnStockPriceS5,
 } from "../S5/helpers/helpers";
 import { fixNameSuperPrice } from "../SuperPrice/helpers/helpers";
+import {
+  fixNameTagir,
+  returnNameTagir,
+  returnStockPriceTagir,
+} from "../Tagir/helpers/helpers";
 import { returnApple } from "../Unimtrn/Apple/apple";
 import { returnDyson } from "../Unimtrn/Dyson/dyson";
 import { returnGameConsole } from "../Unimtrn/GameConsole/gameConsole";
@@ -74,43 +110,6 @@ import {
   returnNameInArrVseMi,
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
-import { returnFixNameElectrozon } from "../Electrozon/helpers/helpers";
-import {
-  returnFixNameArti,
-  returnNameArti,
-  returnStockPriceArti,
-} from "../Arti/helpers/helpers";
-import { returnCategoryArti } from "../Arti/category/Category";
-import {
-  returnExtraPriceReSale,
-  returnFixNameReSale,
-  returnNameReSale,
-  returnStockPriceReSale,
-} from "../ReSale/helpers/helpers";
-import {
-  fixNameTagir,
-  returnNameTagir,
-  returnStockPriceTagir,
-} from "../Tagir/helpers/helpers";
-import {
-  fixNameNarod,
-  returnNameNarod,
-  returnStockPriceNarod,
-} from "../Narod/helpers/helpers";
-import { returnNameF51 } from "../F51/helpers/helpers";
-import { returnFixNameBase } from "../Base/helpers/helpers";
-import {
-  returnExtraPriceOther,
-  returnFixNameOther,
-  returnNameInArrOther,
-  returnStockPriceOther,
-} from "../Other/helpers/helpers";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
-import {
-  returnFixNameDiscount,
-  returnNameInArrDiscount,
-  returnStockPriceDiscount,
-} from "../Discount/helpers/helpers";
 
 const AllPrice = ({
   dataSuperprice,

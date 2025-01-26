@@ -1852,53 +1852,77 @@ export const returnIDXiaomi = (name) => {
     return 35855;
   } else if (name.indexOf("mi 14 ultra 16/512 white") != -1) {
     return 35858;
-  } else if (name.indexOf("mi 14t 12/256 green") != -1) {
+  } else if (name.indexOf("mi 14t 12/256 green") != -1 &&
+name.indexOf("green") != -1) {
     return 37074;
-  } else if (name.indexOf("mi 14t 12/256 black") != -1) {
+  } else if (name.indexOf("mi 14t 12/256") != -1 &&
+  name.indexOf("black") != -11) {
     return 37072;
-  } else if (name.indexOf("mi 14t 12/256 blue") != -1) {
+  } else if (name.indexOf("mi 14t 12/256") != -1 &&
+name.indexOf("blue") != -1) {
     return 37071;
-  } else if (name.indexOf("mi 14t 12/256 gray") != -1) {
+  } else if (name.indexOf("mi 14t 12/256") != -1 &&
+name.indexOf("gray") != -1) {
     return 37073;
-  } else if (name.indexOf("mi 14t 12/512 green") != -1) {
+  } else if (name.indexOf("mi 14t 12/512") != -1 &&
+name.indexOf("green") != -1) {
     return 37075;
-  } else if (name.indexOf("mi 14t 12/512 black") != -1) {
+  } else if (name.indexOf("mi 14t 12/512") != -1 &&
+name.indexOf("black") != -1) {
     return 37076;
-  } else if (name.indexOf("mi 14t 12/512 blue") != -1) {
+  } else if (name.indexOf("mi 14t 12/512") != -1 &&
+name.indexOf("blue") != -1) {
     return 37077;
-  } else if (name.indexOf("mi 14t 12/512 gray") != -1) {
+  } else if (name.indexOf("mi 14t 12/512") != -1 &&
+name.indexOf("gray") != -1) {
     return 37078;
-  } else if (name.indexOf("mi 14t 16/512 green") != -1) {
+  } else if (name.indexOf("mi 14t 16/512") != -1 &&
+name.indexOf("mi 14t 16/512 green") != -1) {
     return 37079;
-  } else if (name.indexOf("mi 14t 16/512 black") != -1) {
+  } else if (name.indexOf("mi 14t 16/512") != -1 &&
+name.indexOf("mi 14t 16/512 black") != -1) {
     return 37080;
-  } else if (name.indexOf("mi 14t 16/512 blue") != -1) {
+  } else if (name.indexOf("mi 14t 16/512") != -1 &&
+name.indexOf("mi 14t 16/512 blue") != -1) {
     return 37081;
-  } else if (name.indexOf("mi 14t 16/512 gray") != -1) {
+  } else if (name.indexOf("mi 14t 16/512") != -1 &&
+name.indexOf("mi 14t 16/512 gray") != -1) {
     return 37082;
-  } else if (name.indexOf("mi 14t pro 12/1tb black") != -1) {
+  } else if (name.indexOf("mi 14t pro 12/1tb") != -1 &&
+name.indexOf("black") != -1) {
     return 37093;
-  } else if (name.indexOf("mi 14t pro 12/1tb blue") != -1) {
+  } else if (name.indexOf("mi 14t pro 12/1tb") != -1 &&
+name.indexOf("blue") != -1) {
     return 37094;
-  } else if (name.indexOf("mi 14t pro 12/1tb gray") != -1) {
+  } else if (name.indexOf("mi 14t pro 12/1tb") != -1 &&
+name.indexOf("gray") != -1) {
     return 37095;
-  } else if (name.indexOf("mi 14t pro 12/256 black") != -1) {
+  } else if (name.indexOf("mi 14t pro 12/256") != -1 &&
+name.indexOf("black") != -1) {
     return 37084;
-  } else if (name.indexOf("mi 14t pro 12/256 blue") != -1) {
+  } else if (name.indexOf("mi 14t pro 12/256") != -1 &&
+name.indexOf("blue") != -1) {
     return 37085;
-  } else if (name.indexOf("mi 14t pro 12/256 gray") != -1) {
+  } else if (name.indexOf("mi 14t pro 12/256") != -1 &&
+name.indexOf("gray") != -1) {
     return 37086;
-  } else if (name.indexOf("mi 14t pro 12/512 black") != -1) {
+  } else if (name.indexOf("mi 14t pro 12/512") != -1 &&
+name.indexOf("black") != -1) {
     return 37087;
-  } else if (name.indexOf("mi 14t pro 12/512 blue") != -1) {
+  } else if (name.indexOf("mi 14t pro 12/512") != -1 &&
+name.indexOf("blue") != -1) {
     return 37088;
-  } else if (name.indexOf("mi 14t pro 12/512 gray") != -1) {
+  } else if (name.indexOf("mi 14t pro 12/512") != -1 &&
+name.indexOf("gray") != -1) {
     return 37089;
-  } else if (name.indexOf("mi 14t pro 16/512 black") != -1) {
+  } else if (name.indexOf("mi 14t pro 16/512") != -1 &&
+name.indexOf("black") != -1) {
     return 37090;
-  } else if (name.indexOf("mi 14t pro 16/512 blue") != -1) {
+  } else if (name.indexOf("mi 14t pro 16/512") != -1 &&
+name.indexOf("blue") != -1) {
     return 37091;
-  } else if (name.indexOf("mi 14t pro 16/512 gray") != -1) {
+  } else if (name.indexOf("mi 14t pro 16/512") != -1 &&
+name.indexOf("gray") != -1) {
     return 37092;
 
     //  Mi 15

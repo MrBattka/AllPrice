@@ -21,6 +21,7 @@ import {
   baseFixOther,
   baseFixRacmag,
   baseFixReSale,
+  baseFixRootOpt,
   baseFixRPTrade,
   baseFixS5,
   baseFixSunrise,
@@ -162,6 +163,7 @@ import {
   returnNameInArrBigAp,
   returnStockPriceBigAp,
 } from "../BigAp/helpers/helpers";
+import { returnFixNameRootOpt } from "../RootOPT/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -191,6 +193,7 @@ const AllPriceWithID = ({
   mtaData,
   bonusData,
   bigApData,
+  rootOptData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -819,6 +822,27 @@ const AllPriceWithID = ({
       );
     }
   });
+
+  rootOptData.map((rootOpt) => {
+      if (
+        rootOpt.name &&
+        typeof rootOpt.name === "string" &&
+        baseFixRootOpt(rootOpt) &&
+        rootOpt.price !== 'ожидается' &&
+        isOpen
+      ) {
+        return (
+          returnIDSamsung(returnFixNameRootOpt(rootOpt.name)) !== "No match" &&
+          rootOpt.price &&
+          allPriceArr.push({
+            id: returnIDSamsung(returnFixNameRootOpt(rootOpt.name)),
+            name: returnFixNameRootOpt(rootOpt.name),
+            stockPrice: rootOpt.price,
+            provider: "RootOPT",
+          })
+        );
+      }
+    });
 
   return (
     <div>
