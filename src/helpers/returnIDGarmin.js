@@ -831,80 +831,90 @@ export const returnIDGarmin = (nameStock) => {
     name.indexOf("fenix 8") != -1 &&
     name.indexOf("amoled") != -1 &&
     name.indexOf("sapphire") != -1 &&
-    name.indexOf("43 dark gray") != -1 &&
-    name.indexOf("black silicone band") != -1
+    name.indexOf("43") != -1 &&
+    name.indexOf("dark gray") != -1 &&
+    name.indexOf("black silicone") != -1
   ) {
     return 36837;
   } else if (
     name.indexOf("fenix 8") != -1 &&
     name.indexOf("amoled") != -1 &&
     name.indexOf("sapphire") != -1 &&
-    name.indexOf("43 gold") != -1 &&
-    name.indexOf("gray leather band") != -1
+    name.indexOf("43") != -1 &&
+    name.indexOf("gold") != -1 &&
+    name.indexOf("gray leather") != -1
   ) {
     return 27153;
   } else if (
     name.indexOf("fenix 8") != -1 &&
     name.indexOf("amoled") != -1 &&
     name.indexOf("sapphire") != -1 &&
-    name.indexOf("43 silver") != -1 &&
-    name.indexOf("white silicone band") != -1
+    name.indexOf("43") != -1 &&
+    name.indexOf("silver") != -1 &&
+    name.indexOf("white silicone") != -1
   ) {
     return 36844;
   } else if (
     name.indexOf("fenix 8") != -1 &&
     name.indexOf("amoled") != -1 &&
     name.indexOf("sapphire") != -1 &&
-    name.indexOf("43 soft gold") != -1 &&
-    name.indexOf("gray leather band") != -1
+    name.indexOf("43") != -1 &&
+    name.indexOf("soft gold") != -1 &&
+    name.indexOf("gray leather") != -1
   ) {
     return 36843;
   } else if (
     name.indexOf("fenix 8") != -1 &&
     name.indexOf("amoled") != -1 &&
     name.indexOf("sapphire") != -1 &&
-    name.indexOf("47 dark gray") != -1 &&
-    name.indexOf("black silicone band") != -1
+    name.indexOf("47") != -1 &&
+    name.indexOf("dark gray") != -1 &&
+    name.indexOf("black silicone") != -1
   ) {
     return 36839;
   } else if (
     name.indexOf("fenix 8") != -1 &&
     name.indexOf("amoled") != -1 &&
     name.indexOf("sapphire") != -1 &&
-    name.indexOf("47 gray") != -1 &&
-    name.indexOf("black silicone band") != -1
+    name.indexOf("47") != -1 &&
+    name.indexOf("gray") != -1 &&
+    name.indexOf("black silicone") != -1
   ) {
     return 36845;
   } else if (
     name.indexOf("fenix 8") != -1 &&
     name.indexOf("amoled") != -1 &&
     name.indexOf("sapphire") != -1 &&
-    name.indexOf("47 gray") != -1 &&
-    name.indexOf("orange silicone band") != -1
+    name.indexOf("47") != -1 &&
+    name.indexOf("gray") != -1 &&
+    name.indexOf("orange silicone") != -1
   ) {
     return 36838;
   } else if (
     name.indexOf("fenix 8") != -1 &&
     name.indexOf("amoled") != -1 &&
     name.indexOf("sapphire") != -1 &&
-    name.indexOf("47 gray") != -1 &&
-    name.indexOf("gray silicone band") != -1
+    name.indexOf("47") != -1 &&
+    name.indexOf("gray") != -1 &&
+    name.indexOf("gray silicone") != -1
   ) {
     return 36840;
   } else if (
     name.indexOf("fenix 8") != -1 &&
     name.indexOf("amoled") != -1 &&
     name.indexOf("sapphire") != -1 &&
-    name.indexOf("51 dark gray") != -1 &&
-    name.indexOf("black silicone band") != -1
+    name.indexOf("51") != -1 &&
+    name.indexOf("dark gray") != -1 &&
+    name.indexOf("black silicone") != -1
   ) {
     return 36842;
   } else if (
     name.indexOf("fenix 8") != -1 &&
     name.indexOf("amoled") != -1 &&
     name.indexOf("sapphire") != -1 &&
-    name.indexOf("51 gray") != -1 &&
-    name.indexOf("black silicone band") != -1
+    name.indexOf("51") != -1 &&
+    name.indexOf("gray") != -1 &&
+    name.indexOf("black silicone") != -1
   ) {
     return 36841;
   } else if (name.indexOf("garmin forerunner 255 basic slate gray") != -1) {

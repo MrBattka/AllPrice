@@ -1,37 +1,33 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
-import { baseFixAlikson } from "../../helpers/baseFix";
+import { baseFixBigAp } from "../../helpers/baseFix";
+import { returnFixNameBigAp, returnNameInArrBigAp, returnStockPriceBigAp } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
-import {
-  returnFixNameAlikson,
-  returnNameInArrAlikson,
-  returnStockPriceAlikson,
-} from "./helpers/helpers";
 
-const IndexAliksonNotID = ({ el, aliksonData }) => {
+const IndexBigApNotID = ({ el, bigApData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
-  aliksonData.map((racmag) => {
-    baseFixAlikson(racmag) &&
-      returnStockPriceAlikson(returnFixNameAlikson(racmag.name));
+  bigApData.map((bigAp) => {
+    baseFixBigAp(bigAp) &&
+      returnStockPriceBigAp(returnFixNameBigAp(bigAp.name));
     if (
-      racmag.name &&
-      typeof racmag.name === "string" &&
-      baseFixAlikson(racmag) &&
+      bigAp.name &&
+      typeof bigAp.name === "string" &&
+      baseFixBigAp(bigAp) &&
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameAlikson(racmag.name)) === "No match" &&
-        returnStockPriceAlikson(racmag.name) &&
+        returnIDSamsung(returnFixNameBigAp(bigAp.name)) === "No match" &&
+        returnStockPriceBigAp(bigAp.name) &&
         resultArr.push({
           id: returnIDSamsung(
-            returnNameInArrAlikson(returnFixNameAlikson(racmag.name))
+            returnNameInArrBigAp(returnFixNameBigAp(bigAp.name))
           ),
-          name: returnNameInArrAlikson(returnFixNameAlikson(racmag.name)),
-          stockPrice: returnStockPriceAlikson(returnFixNameAlikson(racmag.name)),
-          provider: "Alikson",
+          name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),
+          stockPrice: returnStockPriceBigAp(returnFixNameBigAp(bigAp.name)),
+          provider: "BigAp",
         })
       );
     }
@@ -42,7 +38,7 @@ const IndexAliksonNotID = ({ el, aliksonData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Alikson Not ID ▲" : "Alikson Not ID ▼"}
+            {isOpen ? "BigAp Not ID ▲" : "BigAp Not ID ▼"}
           </span>
         )}
       </div>
@@ -56,4 +52,4 @@ const IndexAliksonNotID = ({ el, aliksonData }) => {
   );
 };
 
-export default IndexAliksonNotID;
+export default IndexBigApNotID;

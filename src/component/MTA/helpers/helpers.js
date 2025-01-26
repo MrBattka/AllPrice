@@ -12,7 +12,6 @@ export const returnNameInArrMTA = (name) => {
     let reverseStrName = name.split("").reverse().join("");
     let removeSpace = reverseStrName[0] === ' ' ? reverseStrName.slice(1) : reverseStrName
     let removeSpace1 = removeSpace[0] === ' ' ? removeSpace.slice(1) : removeSpace
-    let splitPrice = reverseStrName.split(' ')[0]
     let splitName = removeSpace1.indexOf(" ") !== -1 ? /\s(.+)/.exec(removeSpace1)[1] : removeSpace1
 
     let reverseBackStrName = splitName.split("").reverse().join("");

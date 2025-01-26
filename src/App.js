@@ -54,6 +54,9 @@ import IndexAliksonNotID from "./component/Alikson/IndexAliksonNotID";
 import IndexBigAp from "./component/BigAp/IndexBigAp";
 import IndexMTA from "./component/MTA/IndexMTA";
 import IndexMTANotID from "./component/MTA/IndexMTANotID";
+import IndexBonus from "./component/BonusOPT/IndexEBonus";
+import IndexBonusNotID from "./component/BonusOPT/IndexBonusNotID";
+import IndexBigApNotID from "./component/BigAp/IndexBigApNotID";
 
 const App = () => {
   const allPrice = [];
@@ -84,6 +87,7 @@ const App = () => {
   const [dataAlikson, setDataAlikson] = useState([]);
   const [dataBigAp, setDataBigAp] = useState([]);
   const [dataMTA, setDataMTA] = useState([]);
+  const [dataBonus, setDataBonus] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -111,14 +115,17 @@ const App = () => {
   const alikson = [];
   const bigAp = [];
   const mta = [];
-
+  const bonus = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
   });
   dataUNIMTRN.map((unimtrnEl) => {
     (unimtrnEl.Товар || unimtrnEl.Модификация) &&
-      unimtrn.push({ name: unimtrnEl.Товар || unimtrnEl.Модификация, price: unimtrnEl.Стоимость || unimtrnEl.Cтоимость || unimtrnEl.Цена });
+      unimtrn.push({
+        name: unimtrnEl.Товар || unimtrnEl.Модификация,
+        price: unimtrnEl.Стоимость || unimtrnEl.Cтоимость || unimtrnEl.Цена,
+      });
   });
 
   dataMihonor.map((mihonorEl) => {
@@ -295,11 +302,14 @@ const App = () => {
   });
 
   dataMTA.map((mtaEl) => {
-    mtaEl.MTA &&
-      mtaEl.MTA.length &&
-      mta.push({ name: mtaEl.MTA });
+    mtaEl.MTA && mtaEl.MTA.length && mta.push({ name: mtaEl.MTA });
   });
-  
+
+  dataBonus.map((bonusEl) => {
+    bonusEl.Name &&
+      bonusEl.Name.length &&
+      bonus.push({ name: bonusEl.Name, price: bonusEl.Price });
+  });
 
   const handleImport = ($event) => {
     const files = $event.target.files;
@@ -363,12 +373,14 @@ const App = () => {
           setDataBigAp(rowBigAp);
           const rowMTA = utils.sheet_to_json(wb.Sheets[sheets[25]]);
           setDataMTA(rowMTA);
+          const rowBonus = utils.sheet_to_json(wb.Sheets[sheets[26]]);
+          setDataBonus(rowBonus);
         }
       };
       reader.readAsArrayBuffer(file);
     }
   };
-console.log(dataBigAp);
+  console.log(dataBigAp);
 
   return (
     <div className="App">
@@ -401,8 +413,6 @@ console.log(dataBigAp);
         </div>
       </div>
       <div className="wrapper_cat">
-        {/* <IndexBigAp  el={dataBigAp} bigApData={bigAp} /> */}
-        
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
@@ -420,7 +430,7 @@ console.log(dataBigAp);
           el={dataSuperprice}
           superpriceData={superprice}
           allPrice={allPrice}
-         />
+        />
         <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} />
         {/* Garmin */}
         <IndexGarmin el={dataGarmin} garminData={garmin} />
@@ -479,9 +489,15 @@ console.log(dataBigAp);
         {/* Alikson */}
         <IndexAlikson el={dataAlikson} aliksonData={alikson} />
         <IndexAliksonNotID el={dataAlikson} aliksonData={alikson} />
+        {/* BigAp */}
+        <IndexBigAp  el={dataBigAp} bigApData={bigAp} />
+        <IndexBigApNotID  el={dataBigAp} bigApData={bigAp} />
         {/* MTA Store */}
         <IndexMTA el={dataMTA} mtaData={mta} />
         <IndexMTANotID el={dataMTA} mtaData={mta} />
+        {/* Bonus OPT */}
+        <IndexBonus el={dataBonus} bonusData={bonus} />
+        <IndexBonusNotID el={dataBonus} bonusData={bonus} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -510,6 +526,8 @@ console.log(dataBigAp);
           infinityData={infinity}
           aliksonData={alikson}
           mtaData={mta}
+          bonusData={bonus}
+          bigApData={bigAp}
         />
 
         {/* <AllPrice

@@ -4,6 +4,8 @@ import {
   baseFixAlikson,
   baseFixArti,
   baseFixBase,
+  baseFixBigAp,
+  baseFixBonus,
   baseFixDiscount,
   baseFixElectrozon,
   baseFixF51,
@@ -154,6 +156,12 @@ import {
   returnNameInArrMTA,
   returnStockPriceMTA,
 } from "../MTA/helpers/helpers";
+import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
+import {
+  returnFixNameBigAp,
+  returnNameInArrBigAp,
+  returnStockPriceBigAp,
+} from "../BigAp/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -181,6 +189,8 @@ const AllPriceWithID = ({
   infinityData,
   aliksonData,
   mtaData,
+  bonusData,
+  bigApData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -750,6 +760,30 @@ const AllPriceWithID = ({
     }
   });
 
+  bigApData.map((bigAp) => {
+    baseFixBigAp(bigAp) &&
+      returnStockPriceBigAp(returnFixNameBigAp(bigAp.name));
+    if (
+      bigAp.name &&
+      typeof bigAp.name === "string" &&
+      baseFixBigAp(bigAp) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameBigAp(bigAp.name)) !== "No match" &&
+        returnStockPriceBigAp(bigAp.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrBigAp(returnFixNameBigAp(bigAp.name))
+          ),
+          name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),
+          stockPrice: returnStockPriceBigAp(returnFixNameBigAp(bigAp.name)),
+          provider: "BigAp",
+        })
+      );
+    }
+  });
+
   mtaData.map((mta) => {
     baseFixMTA(mta) && returnStockPriceMTA(returnFixNameMTA(mta.name));
     if (mta.name && typeof mta.name === "string" && baseFixMTA(mta) && isOpen) {
@@ -761,6 +795,26 @@ const AllPriceWithID = ({
           name: returnNameInArrMTA(returnFixNameMTA(mta.name)),
           stockPrice: returnStockPriceMTA(returnFixNameMTA(mta.name)),
           provider: "MTA Store",
+        })
+      );
+    }
+  });
+
+  bonusData.map((bonus) => {
+    if (
+      bonus.name &&
+      typeof bonus.name === "string" &&
+      baseFixBonus(bonus) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameBonus(bonus.name)) !== "No match" &&
+        bonus.price &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnFixNameBonus(bonus.name)),
+          name: returnFixNameBonus(bonus.name),
+          stockPrice: bonus.price,
+          provider: "БонусОПТ",
         })
       );
     }

@@ -10,11 +10,10 @@ const IndexGarmin = ({ el, garminData }) => {
   const resultArr = [];
 
   garminData.map((garmin) => {
-    baseFixGarmin(garmin) && returnStockPriceGarmin(fixNameGarmin(garmin.name));
     if (
       garmin.name &&
       typeof garmin.name === "string" &&
-      baseFixGarmin(garmin) &&
+      // baseFixGarmin(garmin) &&
       isOpen
     ) {
       return (

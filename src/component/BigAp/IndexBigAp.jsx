@@ -2,35 +2,36 @@ import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
 import style from "./styles.module.css";
 import { baseFixBigAp } from "../../helpers/baseFix";
-import { returnFixNameBigAp } from "./helpers/helpers";
+import { returnFixNameBigAp, returnNameInArrBigAp, returnStockPriceBigAp } from "./helpers/helpers";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 
 const IndexBigAp = ({ el, bigApData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
-  // aliksonData.map((racmag) => {
-  //   baseFixAlikson(racmag) &&
-  //     returnStockPriceAlikson(returnFixNameAlikson(racmag.name));
-  //   if (
-  //     racmag.name &&
-  //     typeof racmag.name === "string" &&
-  //     baseFixAlikson(racmag) &&
-  //     isOpen
-  //   ) {
-  //     return (
-  //       returnIDSamsung(returnFixNameAlikson(racmag.name)) !== "No match" &&
-  //       returnStockPriceAlikson(racmag.name) &&
-  //       resultArr.push({
-  //         id: returnIDSamsung(
-  //           returnNameInArrAlikson(returnFixNameAlikson(racmag.name))
-  //         ),
-  //         name: returnNameInArrAlikson(returnFixNameAlikson(racmag.name)),
-  //         stockPrice: returnStockPriceAlikson(returnFixNameAlikson(racmag.name)),
-  //         provider: "Alikson",
-  //       })
-  //     );
-  //   }
-  // });
+  bigApData.map((bigAp) => {
+    baseFixBigAp(bigAp) &&
+      returnStockPriceBigAp(returnFixNameBigAp(bigAp.name));
+    if (
+      bigAp.name &&
+      typeof bigAp.name === "string" &&
+      baseFixBigAp(bigAp) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameBigAp(bigAp.name)) !== "No match" &&
+        returnStockPriceBigAp(bigAp.name) &&
+        resultArr.push({
+          id: returnIDSamsung(
+            returnNameInArrBigAp(returnFixNameBigAp(bigAp.name))
+          ),
+          name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),
+          stockPrice: returnStockPriceBigAp(returnFixNameBigAp(bigAp.name)),
+          provider: "BigAp",
+        })
+      );
+    }
+  });
 
   return (
     <div>
@@ -44,10 +45,7 @@ const IndexBigAp = ({ el, bigApData }) => {
 
       {isOpen && (
         <div className={style.row}>
-          {/* <BasicTable resultArr={resultArr} /> */}
-          {bigApData.map((el) => (
-            <div>{baseFixBigAp(el) && returnFixNameBigAp(el.name)}</div>
-          ))}
+          <BasicTable resultArr={resultArr} />
         </div>
       )}
     </div>
