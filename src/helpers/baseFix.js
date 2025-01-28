@@ -102,6 +102,7 @@ export const baseFix = (el) => {
       el.Модификация?.indexOf("обме") == -1 &&
       el.Модификация?.indexOf("короб") == -1 &&
       el.Модификация?.indexOf("ремешок") == -1 &&
+      el.Модификация?.indexOf("Asis") == -1 &&
     el.Модификация && el !== "Товар";
 };
 
@@ -196,6 +197,7 @@ export const baseFixHi = (el) => {
         el.name?.indexOf("обме") == -1 &&
         el.name?.indexOf("короб") == -1 &&
         el.name?.indexOf("🎵 Airpods") == -1 &&
+        el.name?.indexOf("Asis") == -1 &&
         el.name?.indexOf("ремешок") == -1;
 };
 
