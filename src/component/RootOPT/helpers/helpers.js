@@ -13,7 +13,8 @@ export const returnFixNameRootOpt = (name) => {
   const replaceWatch6 = replaceMMRus.replace("Watch6", "Watch 6");
   const replaceWatch7 = replaceWatch6.replace("Watch7", "Watch 7");
   const replaceSimbol = replaceWatch7.replace(", ", "");
-  const replaceS24FE = replaceSimbol.replace("S24FE", "s24 FE");
+  const replaceSimbol1 = replaceSimbol.replace("8/256, Gold", "8/256 Gold");
+  const replaceS24FE = replaceSimbol1.replace("S24FE", "s24 FE");
   const replaceS23FE = replaceS24FE.replace("S23FE", "s23 FE");
   const replaceNFC = replaceS23FE.replace("NFC", "");
   const replaceBluetooth = replaceNFC.replace("Беспроводные наушники ", "");
