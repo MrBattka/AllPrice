@@ -1590,7 +1590,7 @@ export const returnIDXiaomi = (name) => {
    } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/256") != -1 &&
       (name.indexOf("black") != -1 || name.indexOf("midnight") != -1)
     ) {
@@ -1598,7 +1598,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/256") != -1 &&
       (name.indexOf("blue") != -1 || name.indexOf("green") != -1)
     ) {
@@ -1606,7 +1606,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/256") != -1 &&
       name.indexOf("purple") != -1
     ) {
@@ -1614,7 +1614,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/256") != -1 &&
       name.indexOf("white") != -1
     ) {
@@ -1622,7 +1622,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/512") != -1 &&
       (name.indexOf("black") != -1 || name.indexOf("midnight") != -1)
     ) {
@@ -1630,7 +1630,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/512") != -1 &&
       (name.indexOf("blue") != -1 || name.indexOf("green") != -1)
     ) {
@@ -1638,7 +1638,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/512") != -1 &&
       name.indexOf("purple") != -1
     ) {
@@ -1646,7 +1646,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/512") != -1 &&
       name.indexOf("white") != -1
     ) {
@@ -1654,7 +1654,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/128") != -1 &&
       (name.indexOf("black") != -1 || name.indexOf("midnight") != -1)
     ) {
@@ -1662,7 +1662,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/128") != -1 &&
       (name.indexOf("blue") != -1 || name.indexOf("green") != -1)
     ) {
@@ -1670,7 +1670,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/128") != -1 &&
       name.indexOf("purple") != -1
     ) {
@@ -1678,7 +1678,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/128") != -1 &&
       name.indexOf("white") != -1
     ) {
@@ -1686,7 +1686,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/256") != -1 &&
       (name.indexOf("black") != -1 || name.indexOf("midnight") != -1)
     ) {
@@ -1694,7 +1694,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/256") != -1 &&
       (name.indexOf("blue") != -1 || name.indexOf("green") != -1)
     ) {
@@ -1702,7 +1702,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/256") != -1 &&
       name.indexOf("purple") != -1
     ) {
@@ -1710,7 +1710,7 @@ export const returnIDXiaomi = (name) => {
     } else if (
       name.indexOf("note 14 pro") != -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/256") != -1 &&
       name.indexOf("white") != -1
     ) {
@@ -1719,7 +1719,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/256") != -1 &&
       (name.indexOf("black") != -1 || name.indexOf("midnight") != -1)
     ) {
@@ -1728,7 +1728,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/256") != -1 &&
       (name.indexOf("lime") != -1 || name.indexOf("green") != -1)
     ) {
@@ -1737,7 +1737,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("12/256") != -1 &&
       name.indexOf("white") != -1
     ) {
@@ -1746,7 +1746,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("6/128") != -1 &&
       (name.indexOf("black") != -1 || name.indexOf("midnight") != -1)
     ) {
@@ -1755,7 +1755,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("6/128") != -1 &&
       (name.indexOf("lime") != -1 || name.indexOf("green") != -1)
     ) {
@@ -1764,7 +1764,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("6/128") != -1 &&
       name.indexOf("white") != -1
     ) {
@@ -1773,7 +1773,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/128") != -1 &&
       (name.indexOf("black") != -1 || name.indexOf("midnight") != -1)
     ) {
@@ -1782,7 +1782,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/128") != -1 &&
       (name.indexOf("lime") != -1 || name.indexOf("green") != -1)
     ) {
@@ -1791,7 +1791,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/128") != -1 &&
       name.indexOf("white") != -1
     ) {
@@ -1800,7 +1800,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/256") != -1 &&
       (name.indexOf("black") != -1 || name.indexOf("midnight") != -1)
     ) {
@@ -1809,7 +1809,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/256") != -1 &&
       (name.indexOf("lime") != -1 || name.indexOf("green") != -1)
     ) {
@@ -1818,7 +1818,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/256") != -1 &&
       name.indexOf("white") != -1
     ) {
@@ -1828,7 +1828,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/256") != -1 &&
     name.indexOf("blue") != -1
     ) {
@@ -1846,7 +1846,7 @@ export const returnIDXiaomi = (name) => {
       name.indexOf("note 14") != -1 &&
       name.indexOf("note 14 pro") == -1 &&
       name.indexOf("note 14 pro +") == -1 &&
-      name.indexOf("4g") != -1 &&
+      name.indexOf("5g") == -1 &&
       name.indexOf("8/128") != -1 &&
       name.indexOf("blue") != -1
     ) {
