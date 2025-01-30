@@ -71,7 +71,8 @@ export const fixNameMihonor = (name) => {
   const remove16512 = remove16256.replace("16+512", "16/512");
   const remove161 = remove16512.replace("16+1TB", "15/1tb");
   const remove162 = remove161.replace("16+2TB", "16/2tb");
-  const remove8256 = remove162.replace("8+256", "8/256");
+  const fix161024 = remove162.replace("16+1024", "16/1tb");
+  const remove8256 = fix161024.replace("8+256", "8/256");
 
   const fixMi = returnNameInArrMihonor(name.toLowerCase())[0] === "M" ? remove8256.replace("MI ", "XIAOMI ") : remove8256
 
@@ -79,10 +80,13 @@ export const fixNameMihonor = (name) => {
   const remove874wifi = remove874g.replace("8.7 WI FI ", "");
 
   const removeLightGreen = remove874wifi.replace("LIGHT GREEN", "green");
-  const removeLightViolet = removeLightGreen.replace("LIGHT VIOLET", "violet");
+  const fixA9Plus = removeLightGreen.replace("SAMSUNG A9 PLUS", "Tab A9 +");
+  const fixGray = fixA9Plus.replace("GREY", "gray");
+  const removeLightViolet = fixGray.replace("LIGHT VIOLET", "violet");
   const fix1TB = removeLightViolet.replace("+1024GB", "/1Tb")
+  const fixmi5g = (fix1TB.indexOf("MI 13") !== -1 || fix1TB.indexOf("MI 14") !== -1) ? fix1TB.replace("5G", "") : fix1TB
 
-  const fix8255GB = fix1TB.replace("8+255", "8/256");
+  const fix8255GB = fixmi5g.replace("8+255", "8/256");
   const fix8256 = fix8255GB.replace("8 256", "8/256");
   const fix8128 = fix8256.replace("8 128", "8/128");
   const fix12256 = fix8128.replace("12 256", "12/256");

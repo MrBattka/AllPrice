@@ -1,8 +1,22 @@
 import { returnIDApple } from "./returnIDApple";
 
 export const returnIDOtherBrand2 = (name) => {
-  // PlayStation
-  if (
+  // Xbox
+  if (name.indexOf("xbox") != -1 &&
+  name.indexOf(" x ") != -1)  {
+    return 24539;
+  } else if (name.indexOf("xbox") != -1 &&
+  name.indexOf(" s ") != -1 &&
+  name.indexOf("512") != -1) {
+    return 24537;
+  } else if (
+  name.indexOf("xbox one") != -1 &&
+  name.indexOf(" s ") != -1 &&
+  name.indexOf("1tb") != -1) {
+    return 14551;
+
+    // PlayStation
+  } else if (
     (name.indexOf("ps5") != -1 ||
       name.indexOf("playstation 5") != -1 ||
       name.indexOf("ps 5") != -1) &&
@@ -58,47 +72,50 @@ export const returnIDOtherBrand2 = (name) => {
     return 34401;
   } else if (name.indexOf("steam deck oled 1tb") != -1) {
     return 34403;
-  } else if (
-    name.indexOf("steam deck 16/64") != -1
-  ) {
+  } else if (name.indexOf("steam deck 16/64") != -1) {
     return 28310;
-  } else if (
-    name.indexOf("steam deck 64") != -1
-  ) {
+  } else if (name.indexOf("steam deck 64") != -1) {
     return 30300;
-  } else if (
-    name.indexOf("steam deck 256") != -1
-  ) {
+  } else if (name.indexOf("steam deck 256") != -1) {
     return 30301;
-  } else if (
-    name.indexOf("steam deck 512") != -1
-  ) {
+  } else if (name.indexOf("steam deck 512") != -1) {
     return 30302;
 
     // Oculus
-  } else if (name.indexOf("oculus quest 2 128") != -1) {
+  } else if (name.indexOf("oculus quest 2") != -1 &&
+  name.indexOf("128") != -1) {
     return 28188;
-  } else if (name.indexOf("oculus quest 2 256") != -1) {
+  } else if (name.indexOf("oculus quest 2") != -1 &&
+  name.indexOf("256") != -1) {
     return 28189;
-  } else if (name.indexOf("oculus quest 3 128") != -1) {
+  } else if (name.indexOf("oculus quest 3") != -1 &&
+  name.indexOf("128") != -1) {
     return 36846;
-  } else if (name.indexOf("oculus quest 3 512") != -1) {
+  } else if (name.indexOf("oculus quest 3") != -1 &&
+  name.indexOf("512") != -1) {
     return 36847;
-  } else if (name.indexOf("oculus quest Pro 256") != -1) {
+  } else if (name.indexOf("oculus quest Pro") != -1 &&
+  name.indexOf("256") != -1) {
     return 37132;
 
     // Pico
-  } else if (name.indexOf("pico 4 128") != -1) {
+  } else if (name.indexOf("pico 4") != -1 &&
+  name.indexOf("128") != -1) {
     return 28186;
-  } else if (name.indexOf("pico 4 256") != -1) {
+  } else if (name.indexOf("pico 4") != -1 &&
+  name.indexOf("256") != -1) {
     return 28187;
 
     // Marshall
-  } else if (name.indexOf("major 4 black") != -1 ||
-  name.indexOf("major iv black") != -1) {
+  } else if (
+    name.indexOf("major 4 black") != -1 ||
+    name.indexOf("major iv black") != -1
+  ) {
     return 28100;
-  } else if (name.indexOf("major 4 brown") != -1 ||
-  name.indexOf("major iv brown") != -1) {
+  } else if (
+    name.indexOf("major 4 brown") != -1 ||
+    name.indexOf("major iv brown") != -1
+  ) {
     return 28101;
 
     // Nintendo
@@ -124,15 +141,32 @@ export const returnIDOtherBrand2 = (name) => {
     return 17228;
   } else if (name.indexOf("switch lite turquoise") != -1) {
     return 17230;
-  } else if (name.indexOf("switch lite blue") != -1) {
+  } else if (name.indexOf("switch lite zacian") != -1) {
     return 17229;
-  
   } else if (name.indexOf("switch 32 gray") != -1) {
     return 17228;
   } else if (name.indexOf("switch 32 neon") != -1) {
     return 17230;
   } else if (name.indexOf("switch 32 yellow") != -1) {
     return 17229;
+
+  } else if (name.indexOf("switch") != -1 &&
+  name.indexOf("32") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 19101;
+  } else if (
+  name.indexOf("switch") != -1 &&
+  name.indexOf("32") != -1 &&
+  name.indexOf("neon") != -1 &&
+  name.indexOf("red") != -1 &&
+  name.indexOf("blue") != -1) {
+    return 19100;
+  } else if (
+  name.indexOf("switch") != -1 &&
+  name.indexOf("32") != -1 &&
+  name.indexOf("yellow") != -1 &&
+  name.indexOf("blue") != -1) {
+    return 19102;
 
     // Sony
   } else if (
@@ -1246,7 +1280,6 @@ export const returnIDOtherBrand2 = (name) => {
     return 22149;
   } else if (name.indexOf("jbl xtreme 3 squad") != -1) {
     return 19589;
-  
   } else if (name.indexOf("jbl partybox 100 black") != -1) {
     return 19637;
   } else if (name.indexOf("jbl partybox 1000 black") != -1) {
@@ -1603,6 +1636,172 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("goggle") != -1
   ) {
     return 26204;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("1") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 27993;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("1") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 27989;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("1") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 27994;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("1") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 27991;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("1") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 27992;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("1") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 27990;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("gray") != -1
+  ) {
+    return 27995;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("2a") == -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 28000;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("2a") == -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("gray") != -1
+  ) {
+    return 27996;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("2a") == -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 27998;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("2a") == -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("gray") != -1
+  ) {
+    return 27997;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2") != -1 &&
+    name.indexOf("2a") == -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 27999;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 35902;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("milk") != -1
+  ) {
+    return 35909;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 35906;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 35903;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("milk") != -1
+  ) {
+    return 35910;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 35907;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 35904;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("milk") != -1
+  ) {
+    return 35908;
+  } else if (
+    name.indexOf("nothing phone") != -1 &&
+    name.indexOf("2a") != -1 &&
+    name.indexOf("plus") == -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 35905;
   } else if (
     name.indexOf("nothing phone") != -1 &&
     name.indexOf("2a") != -1 &&
