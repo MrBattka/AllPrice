@@ -6,12 +6,22 @@
     color: white;
 }
 
+.title:hover {
+    color: rgb(206, 206, 206);
+    transition: 0.3s;
+}
+
 .titleNotID {
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
     color: rgb(206, 206, 206);
+}
+
+.titleNotID:hover {
+    color: white;
+    transition: 0.3s;
 }
 
 .row {
