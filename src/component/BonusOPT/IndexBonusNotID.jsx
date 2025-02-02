@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { baseFixBonus } from "../../helpers/baseFix";
 import { returnFixNameBonus } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
@@ -34,7 +34,7 @@ const IndexBonusNotID = ({ el, bonusData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "БонусОПТ Not ID ▲" : "БонусОПТ Not ID ▼"}
           </span>
         )}

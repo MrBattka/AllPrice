@@ -38,7 +38,7 @@ import IndexUnimtrn from "./component/Unimtrn/indexUNIMTRN";
 import IndexUnimtrnNotID from "./component/Unimtrn/indexUNIMTRNNotID";
 import IndexVseMi from "./component/VseMi/indexVseMi";
 import IndexVseMiNotID from "./component/VseMi/indexVseMiNotID";
-import icon from "./source/icon/icon.png";
+import icon from "./source/icon/icon1.png";
 import IndexMiOpts from "./component/MiOpts/indexMiOpts";
 import IndexMiOptsNotID from "./component/MiOpts/indexMiOptsNotID";
 import IndexLowPrice from "./component/LowPriceApple/indexLowPrice";

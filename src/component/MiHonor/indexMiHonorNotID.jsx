@@ -7,7 +7,7 @@ import {
   returnNameInArrMihonor,
   returnStockPriceMihonor
 } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexMiHonorNotID = ({ el, mihonorData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ const IndexMiHonorNotID = ({ el, mihonorData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "MiHonor Not ID ▲" : "MiHonor Not ID ▼"}
           </span>
         )}

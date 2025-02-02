@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnFixNameOther, returnNameInArrOther, returnStockPriceOther } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { baseFixOther } from "../../helpers/baseFix";
 
 const IndexOtherNotID = ({ el, otherData }) => {
@@ -35,7 +35,7 @@ const IndexOtherNotID = ({ el, otherData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "Разное Not ID ▲" : "Разное Not ID ▼"}
           </span>
         )}

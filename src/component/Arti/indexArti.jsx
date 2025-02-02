@@ -4,7 +4,7 @@ import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnCategoryArti } from "./category/Category";
 import { returnFixNameArti, returnNameArti, returnStockPriceArti } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexArti = ({ el, artiData }) => {
   const [isOpen, setIsOpen] = useState(false);

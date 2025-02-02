@@ -3,7 +3,7 @@ import { baseFixRPTrade } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnFixNameRPTrade } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexRPTradeNotID = ({ el, rptradeData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +34,7 @@ const IndexRPTradeNotID = ({ el, rptradeData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "RPTrade Not ID ▲" : "RPTrade Not ID ▼"}
           </span>
         )}

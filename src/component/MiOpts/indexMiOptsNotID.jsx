@@ -3,7 +3,7 @@ import { baseFixMiOpts } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { fixNameMiOpts, returnExtraPriceMiOpts, returnNameInArrMiOpts, returnStockPriceMiOpts } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexMiOptsNotID = ({ el, mioptsData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +36,7 @@ const IndexMiOptsNotID = ({ el, mioptsData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "MiOpts Not ID ▲" : "MiOpts Not ID ▼"}
           </span>
         )}

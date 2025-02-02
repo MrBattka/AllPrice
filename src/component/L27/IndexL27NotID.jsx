@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { baseFixF51, baseFixL27 } from "../../helpers/baseFix";
+import { baseFixL27 } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
+import style from "../styles.module.css";
 import {
   returnFixNameL27,
   returnNameInArrL27,
   returnStockPriceL27,
 } from "./helpers/helpers";
-import style from "./styles.module.css";
 
 const IndexL27NotID = ({ el, l27Data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +42,7 @@ const IndexL27NotID = ({ el, l27Data }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "Л27-28 Not ID ▲" : "Л27-28 Not ID ▼"}
           </span>
         )}

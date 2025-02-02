@@ -44,7 +44,7 @@ import {
   returnStockPriceHi,
 } from "../Hi/helpers/helpers";
 import { returnSamsungHi } from "../Hi/Samsung/samsung";
-import style from "../Hi/styles.module.css";
+import style from "../styles.module.css";
 import { returnXiaomiHi } from "../Hi/Xiaomi/xiaomi";
 import { fixNameSuperPrice } from "../SuperPrice/helpers/helpers";
 import { returnApple } from "../Unimtrn/Apple/apple";

@@ -3,7 +3,7 @@ import { baseFixTagir } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { fixNameTagir, returnNameTagir, returnStockPriceTagir } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexTagirNotID = ({ el, tagirData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,7 @@ const IndexTagirNotID = ({ el, tagirData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "Тагир Not ID ▲" : "Тагир Not ID ▼"}
           </span>
         )}

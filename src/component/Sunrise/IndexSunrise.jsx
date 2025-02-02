@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { returnFixNameSunrise, returnNameInArrSunrise, returnStockPriceSunrise } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import { baseFixSunrise } from "../../helpers/baseFix";

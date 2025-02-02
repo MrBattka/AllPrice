@@ -4,7 +4,7 @@ import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnCategoryArti } from "./category/Category";
 import { returnFixNameArti, returnNameArti, returnStockPriceArti } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexArtiNotID = ({ el, artiData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +37,7 @@ const IndexArtiNotID = ({ el, artiData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "Arti Not ID ▲" : "Arti Not ID ▼"}
           </span>
         )}

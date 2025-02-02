@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { baseFixDiscount } from "../../helpers/baseFix";
 import {
   returnFixNameDiscount,
@@ -39,7 +39,7 @@ const IndexDiscountNotID = ({ el, discountData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "Discount Not ID ▲" : "Discount Not ID ▼"}
           </span>
         )}

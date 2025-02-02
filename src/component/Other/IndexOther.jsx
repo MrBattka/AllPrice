@@ -6,7 +6,7 @@ import {
   returnNameInArrOther,
   returnStockPriceOther
 } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { baseFixOther } from "../../helpers/baseFix";
 
 const IndexOther = ({ el, otherData }) => {

@@ -3,7 +3,7 @@ import { baseFixVsemi } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { fixNameVseMi, returnNameInArrVseMi, returnStockPriceVseMi } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexVseMi = ({ el, vsemiData }) => {
   const [isOpen, setIsOpen] = useState(false);

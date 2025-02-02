@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { baseFixGarmin } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
+import style from "../styles.module.css";
 import { fixNameGarmin, returnFixNameProductGarmin, returnStockPriceGarmin } from "./helpers/helpers";
-import style from "./styles.module.css";
 
 const IndexGarmin = ({ el, garminData }) => {
   const [isOpen, setIsOpen] = useState(false);

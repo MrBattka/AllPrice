@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { baseFixBigAp } from "../../helpers/baseFix";
 import { returnFixNameBigAp, returnNameInArrBigAp, returnStockPriceBigAp } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
@@ -37,7 +37,7 @@ const IndexBigApNotID = ({ el, bigApData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "BigAp Not ID ▲" : "BigAp Not ID ▼"}
           </span>
         )}

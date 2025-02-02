@@ -9,7 +9,7 @@ import { returnGameConsole } from "./GameConsole/gameConsole";
 import { fixNameUnimtrn } from "./helpers/helpers";
 import { returnOtherProduct } from "./OtherProduct/otherProduct";
 import { returnSamsung } from "./Samsung/samsung";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { returnXiaomi } from "./Xiaomi/xiaomi";
 
 const IndexUnimtrnNotID = ({ el, dataUNIMTRN }) => {
@@ -43,7 +43,7 @@ const IndexUnimtrnNotID = ({ el, dataUNIMTRN }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "Метреон Not ID ▲" : "Метреон Not ID ▼"}
           </span>
         )}

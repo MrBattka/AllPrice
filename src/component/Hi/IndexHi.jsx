@@ -12,7 +12,7 @@ import {
   returnStockPriceHi
 } from "./helpers/helpers";
 import { returnSamsungHi } from "./Samsung/samsung";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { returnXiaomiHi } from "./Xiaomi/xiaomi";
 
 const IndexHi = ({ el, hi }) => {

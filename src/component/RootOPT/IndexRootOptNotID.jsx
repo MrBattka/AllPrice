@@ -3,7 +3,7 @@ import { baseFixRootOpt } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnFixNameRootOpt } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexRootOptNotID = ({ el, rootOptData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,7 +33,7 @@ const IndexRootOptNotID = ({ el, rootOptData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "RootOPT Not ID ▲" : "RootOPT Not ID ▼"}
           </span>
         )}

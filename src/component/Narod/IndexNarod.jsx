@@ -3,7 +3,7 @@ import { baseFixNarod } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { fixNameNarod, returnNameNarod, returnStockPriceNarod } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexNarod = ({ el, narodData }) => {
   const [isOpen, setIsOpen] = useState(false);

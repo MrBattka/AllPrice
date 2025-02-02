@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { baseFixDiscount } from "../../helpers/baseFix";
 import {
   returnFixNameDiscount,

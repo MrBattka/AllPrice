@@ -4,7 +4,7 @@ import { newPrice } from "../../helpers/NewPrice";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { fixNameSuperPrice } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexSuperPrice = ({ el, superpriceData }) => {
   const [isOpen, setIsOpen] = useState(false);

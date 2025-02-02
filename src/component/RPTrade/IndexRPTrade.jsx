@@ -3,7 +3,7 @@ import { baseFixRPTrade } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnFixNameRPTrade } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexRPTrade = ({ el, rptradeData }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -7,7 +7,7 @@ import {
   returnNameReSale,
   returnStockPriceReSale
 } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexReSaleNotID = ({ el, resaleData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +44,7 @@ const IndexReSaleNotID = ({ el, resaleData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "Re:Sale Not ID ▲" : "Re:Sale Not ID ▼"}
           </span>
         )}

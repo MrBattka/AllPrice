@@ -12,23 +12,30 @@ table th, table td {
 }
  
 table tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f2f2f236;
 }
 
 table tr:hover {
-    background-color: #ddd;
+    background-color: #dddddd63;
+    transition: 0.5s;
 }
 
 table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgb(99,94,249);
+    color: rgb(182, 182, 182);
 }
 
 h4 {
     cursor: pointer;
+    color: rgb(167, 167, 167);
+}
+
+h4:hover {
+    color: white;
+    transition: 0.4s;
 }
 
 h4:active {

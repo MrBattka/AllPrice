@@ -7,7 +7,7 @@ import {
   returnNameInArrMihonor,
   returnStockPriceMihonor
 } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexMiHonor = ({ el, mihonorData }) => {
   const [isOpen, setIsOpen] = useState(false);

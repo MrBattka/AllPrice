@@ -3,7 +3,7 @@ import { baseFixS5 } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { fixNameS5, returnNameInArrS5, returnStockPriceS5 } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexS5 = ({ el, S5Data }) => {
   const [isOpen, setIsOpen] = useState(false);

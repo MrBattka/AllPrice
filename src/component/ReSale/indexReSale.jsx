@@ -7,7 +7,7 @@ import {
   returnNameReSale,
   returnStockPriceReSale
 } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexReSale = ({ el, resaleData }) => {
   const [isOpen, setIsOpen] = useState(false);

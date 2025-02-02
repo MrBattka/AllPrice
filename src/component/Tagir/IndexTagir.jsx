@@ -7,7 +7,7 @@ import {
   returnNameTagir,
   returnStockPriceTagir,
 } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexTagir = ({ el, tagirData }) => {
   const [isOpen, setIsOpen] = useState(false);

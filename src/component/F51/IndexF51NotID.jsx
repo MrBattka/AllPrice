@@ -3,7 +3,7 @@ import { baseFixF51 } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnNameF51 } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexF51NotID = ({ el, f51Data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +34,7 @@ const IndexF51NotID = ({ el, f51Data }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "F51 Not ID ▲" : "F51 Not ID ▼"}
           </span>
         )}

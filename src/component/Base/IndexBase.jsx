@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { returnFixNameBase } from "./helpers/helpers";
 import { baseFixBase } from "../../helpers/baseFix";
 

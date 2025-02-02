@@ -3,7 +3,7 @@ import { baseFixBase } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnFixNameBase } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexBaseNotID = ({ el, baseData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +35,7 @@ const IndexBaseNotID = ({ el, baseData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "База NotID ▲" : "База NotID ▼"}
           </span>
         )}

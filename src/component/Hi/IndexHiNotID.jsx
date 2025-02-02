@@ -12,7 +12,7 @@ import {
   returnStockPriceHi
 } from "./helpers/helpers";
 import { returnSamsungHi } from "./Samsung/samsung";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { returnXiaomiHi } from "./Xiaomi/xiaomi";
 
 const IndexHiNotID = ({ el, hi, main }) => {
@@ -50,7 +50,7 @@ const IndexHiNotID = ({ el, hi, main }) => {
       <div>
         {el.length > 1 && (
           <span
-            className={style.title}
+            className={style.titleNotID}
             onClick={() => setIsOpenNotID(!isOpenNotID)}
           >
             {isOpenNotID ? "Hi (Сема) Not ID ▲" : "Hi (Сема) Not ID ▼"}

@@ -7,7 +7,7 @@ import {
   returnNameInArrMTA,
   returnStockPriceMTA,
 } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexMTA = ({ el, mtaData }) => {
   const [isOpen, setIsOpen] = useState(false);

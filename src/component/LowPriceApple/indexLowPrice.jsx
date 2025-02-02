@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { baseFixLowPrice } from "../../helpers/baseFix";
 import { fixNameLowPrice, returnNameInArrLowPrice, returnStockPriceLowPrice } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";

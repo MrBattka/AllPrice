@@ -2,26 +2,35 @@ body {
   /* overflow-y: hidden; */
 }
 
-.App {}
+.App {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/src/source/bg/bg1.jpg");
+  background-size: cover;
+  /* background-attachment: local; */
+  overflow-x: hidden;
+}
 
 input {
   display: none;
 }
 
 .custom-file-upload {
-  border: 1px solid #4F5D6D;
-  padding: 0 4px 0 4px;
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
   cursor: pointer;
-  border-radius: 4px;
+  background-color: rgb(192, 2, 151);
+  color: #d5d5d5;
+  margin-left: 200px;
 }
 
 .custom-file-upload:hover {
-  background-color: #d5d5d5;
-  box-shadow: 2px 2px 2px #4F5D6D;
+  background-color: rgb(146, 7, 116);
+  box-shadow: 0 0 10px white;
+  transition: 0.5s;
 }
 
 .custom-file-upload:active {
-  background-color: #d5d5d5;
   box-shadow: none;
 }
 

@@ -3,7 +3,7 @@ import { baseFixS5 } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { fixNameS5, returnNameInArrS5, returnStockPriceS5 } from "./helpers/helpers";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
 const IndexS5NotID = ({ el, S5Data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,7 +34,7 @@ const IndexS5NotID = ({ el, S5Data }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "S5 Not ID ▲" : "S5 Not ID ▼"}
           </span>
         )}

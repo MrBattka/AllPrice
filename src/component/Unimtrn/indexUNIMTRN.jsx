@@ -9,7 +9,7 @@ import { returnGameConsole } from "./GameConsole/gameConsole";
 import { fixNameUnimtrn } from "./helpers/helpers.js";
 import { returnOtherProduct } from "./OtherProduct/otherProduct";
 import { returnSamsung } from "./Samsung/samsung";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { returnXiaomi } from "./Xiaomi/xiaomi.js";
 
 const IndexUnimtrn = ({ el, dataUNIMTRN }) => {

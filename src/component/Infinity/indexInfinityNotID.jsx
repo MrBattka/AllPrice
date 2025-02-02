@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 import { baseFixInfinity } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import { fixNameInfinity, returnNameInArrInfinity, returnStockPriceInfinity } from "./helpers/helpers";
@@ -32,7 +32,7 @@ const IndexInfinityNotID = ({ el, infinityData }) => {
     <div>
       <div>
         {el.length > 1 && (
-          <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
+          <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? "Infinity Not ID ▲" : "Infinity Not ID ▼"}
           </span>
         )}
