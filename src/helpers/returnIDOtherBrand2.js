@@ -1582,6 +1582,15 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("без подп") != -1
   ) {
     return 18851;
+
+
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("мини") != -1 &&
+    name.indexOf("3") != -1 &&
+    name.indexOf("черн") != -1
+  ) {
+    return 37470;
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("миди") != -1 &&
@@ -1864,6 +1873,25 @@ export const returnIDOtherBrand2 = (name) => {
     return 37473;
   } else if (name.indexOf("mtg-b3000-1a") != -1) {
     return 37458;
+
+  } else if (name.indexOf("shokz") != -1 &&
+  name.indexOf("openrun pro 2") != -1 &&
+  name.indexOf("black") != -1) {
+    return 37472;
+  } else if (name.indexOf("shokz") != -1 &&
+  name.indexOf("openswim") != -1 &&
+  name.indexOf("blue") != -1) {
+    return 27127;
+  } else if (name.indexOf("shokz") != -1 &&
+  name.indexOf("openswim pro") != -1 &&
+  name.indexOf("blue") != -1) {
+    return 37471;
+  } else if (name.indexOf("shokz") != -1 &&
+  name.indexOf("openswim") != -1 &&
+  name.indexOf("pro") == -1 &&
+  name.indexOf("black") != -1) {
+    return 24581;
+
   } else {
     return returnIDApple(name) || "No match";
   }
