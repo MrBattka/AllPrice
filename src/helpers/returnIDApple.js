@@ -4482,8 +4482,7 @@ export const returnIDApple = (name) => {
   } else if (name.indexOf("15 pro 512 natural") != -1) {
     return 28265;
   } else if (
-    name.indexOf("15 pro") != -1 &&
-    name.indexOf("512") != -1 &&
+    name.indexOf("15 pro 512") != -1 &&
     (name.indexOf("whıte") != -1 || name.indexOf("white") != -1)
   ) {
     return 28269;
