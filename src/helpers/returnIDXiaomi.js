@@ -2175,7 +2175,7 @@ export const returnIDXiaomi = (name) => {
     return 37074;
   } else if (
     name.indexOf("mi 14t 12/256") != -1 &&
-    name.indexOf("black") != -11
+    name.indexOf("black") != -1
   ) {
     return 37072;
   } else if (
