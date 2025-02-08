@@ -620,9 +620,7 @@ export const returnIDApple = (name) => {
   ) {
     return 37716;
   } else if (
-    name.indexOf(
-      "ultra 2 (2024) 49 milanese loop natural / natural titanium case"
-    ) != -1(name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
+    (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
     name.indexOf("natural") !== -1 &&
     (name.indexOf("natural titanium") !== -1 ||
       name.indexOf("natural case") !== -1) &&
@@ -4753,11 +4751,11 @@ export const returnIDApple = (name) => {
       name.indexOf("🇭🇰") != -1)
   ) {
     return 30427;
-  } else if (name.indexOf("15 pro max 512 blue ") != -1) {
+  } else if (name.indexOf("15 pro max 512 blue") != -1) {
     return 28275;
-  } else if (name.indexOf("15 pro max 512 natural ") != -1) {
+  } else if (name.indexOf("15 pro max 512 natural") != -1) {
     return 28278;
-  } else if (name.indexOf("15 pro max 512 white ") != -1) {
+  } else if (name.indexOf("15 pro max 512 white") != -1) {
     return 28281;
   } else if (name.indexOf("16 128 black") != -1) {
     return 36611;
