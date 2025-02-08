@@ -794,7 +794,8 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("redmagic 8s pro 8/256 transparent") != -1) {
     return 28510;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro +") != -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)
@@ -805,7 +806,8 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("redmagic 9s pro + 16/512 cyclone") != -1) {
     return 36730;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro +") != -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)
@@ -814,7 +816,8 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("redmagic 9s pro + 24/1tb cyclone") != -1) {
     return 36732;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro +") != -1 &&
     name.indexOf("24/1tb") != -1 &&
     (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)
@@ -823,7 +826,8 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("red magic 9s pro + 24/1tb frost") != -1) {
     return 36734;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro +") != -1 &&
     name.indexOf("24/1tb") != -1 &&
     (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)
@@ -832,14 +836,16 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("redmagic 9s pro 12/256 cyclone") != -1) {
     return 36736;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro") != -1 &&
     name.indexOf("12/256") != -1 &&
     (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)
   ) {
     return 36737;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro") != -1 &&
     name.indexOf("12/256") != -1 &&
     (name.indexOf("frost") != -1 || name.indexOf("white") != -1)
@@ -848,21 +854,24 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("redmagic 9s pro 12/512 cyclone") != -1) {
     return 36739;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro") != -1 &&
     name.indexOf("12/512") != -1 &&
     (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)
   ) {
     return 36740;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro") != -1 &&
     name.indexOf("12/512") != -1 &&
     (name.indexOf("frost") != -1 || name.indexOf("white") != -1)
   ) {
     return 36741;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro") != -1 &&
     name.indexOf("12/512") != -1 &&
     (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)
@@ -871,34 +880,39 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("redmagic 9s pro 16/512 cyclone") != -1) {
     return 36743;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro") != -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)
   ) {
     return 36744;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro") != -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("frost") != -1 || name.indexOf("white") != -1)
   ) {
     return 36745;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro") != -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)
   ) {
     return 36746;
   } else if (
-    name.indexOf("redmagic 9 pro") != -1 &&
+    (name.indexOf("redmagic 9 pro") != -1 ||
+    name.indexOf("red magic 9 pro") != -1) &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("cyclone") != -1
   ) {
     return 36794;
   } else if (
-    name.indexOf("redmagic 9 pro") != -1 &&
+    (name.indexOf("redmagic 9 pro") != -1 ||
+    name.indexOf("red magic 9 pro") != -1) &&
     name.indexOf("12/256") != -1 &&
     (name.indexOf("snowfall") != -1 || name.indexOf("white") != -1)
   ) {
@@ -906,7 +920,8 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("redmagic 9 pro 16/512 sleet") != -1) {
     return 36793;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9 pro") != -1 &&
     name.indexOf("12/256") != -1 &&
     (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)
@@ -915,7 +930,8 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("redmagic 9 pro 16/512 cyclone") != -1) {
     return 34471;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9 pro") != -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("snowfall") != -1 || name.indexOf("silver") != -1)
@@ -928,175 +944,200 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (name.indexOf("redmagic 8s pro 12/256 graphite") != -1) {
     return 28513;
   } else if (
-    name.indexOf("redmagic") != -1 &&
+    (name.indexOf("redmagic") != -1 ||
+    name.indexOf("red magic") != -1) &&
     name.indexOf("9s pro") != -1 &&
     name.indexOf("12/256") != -1 &&
     (name.indexOf("sleet") != -1 || name.indexOf("black") != -1)
   ) {
     return 36685;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("transparent") == -1 &&
     (name.indexOf("black") != -1 || name.indexOf("dark") != -1)
   ) {
     return 37736;
   } else if (
-    name.indexOf("redmagic 10 pro +") != -1 &&
+    (name.indexOf("redmagic 10 pro +") != -1 ||
+    name.indexOf("red magic 10 pro +") != -1) &&
     name.indexOf("16/512") != -1 &&
     name.indexOf("transparent") == -1 &&
     (name.indexOf("black") != -1 || name.indexOf("dark") != -1)
   ) {
     return 37738;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("12/256") != -1 &&
     (name.indexOf("black") != -1 || name.indexOf("dark") != -1)
   ) {
     return 37740;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("silver") != -1
   ) {
     return 37741;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("transparent") == -1 &&
     name.indexOf("white") != -1
   ) {
     return 37742;
   } else if (
-    name.indexOf("redmagic 10 pro +") != -1 &&
+    (name.indexOf("redmagic 10 pro +") != -1 ||
+    name.indexOf("red magic 10 pro +") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("dark") != -1 || name.indexOf("black") != -1)
   ) {
     return 37743;
   } else if (
-    name.indexOf("redmagic 10 pro +") != -1 &&
+    (name.indexOf("redmagic 10 pro +") != -1 ||
+    name.indexOf("red magic 10 pro +") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("16/512") != -1 &&
     name.indexOf("silver") != -1
   ) {
     return 37744;
   } else if (
-    name.indexOf("redmagic 10 pro +") != -1 &&
+    (name.indexOf("redmagic 10 pro +") != -1 ||
+    name.indexOf("red magic 10 pro +") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("16/512") != -1 &&
     name.indexOf("white") != -1
   ) {
     return 37745;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("16/512") != -1 &&
     name.indexOf("transparent") == -1 &&
     (name.indexOf("dark") != -1 || name.indexOf("black") != -1)
   ) {
     return 37746;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("12/512") != -1 &&
     (name.indexOf("black") != -1 || name.indexOf("dark") != -1)
   ) {
     return 37747;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("24/1tb") != -1 &&
     name.indexOf("silver") != -1
   ) {
     return 37748;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("24/1tb") != -1 &&
     name.indexOf("transparent") == -1 &&
     name.indexOf("white") != -1
   ) {
     return 37749;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("24/1tb") != -1 &&
     name.indexOf("transparent") == -1 &&
     (name.indexOf("dark") != -1 || name.indexOf("black") != -1)
   ) {
     return 37750;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("transparent") == -1 &&
     (name.indexOf("dark") != -1 || name.indexOf("black") != -1)
   ) {
     return 37751;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("black") != -1 || name.indexOf("dark") != -1)
   ) {
     return 37752;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("24/1tb") != -1 &&
     (name.indexOf("black") != -1 || name.indexOf("dark") != -1)
   ) {
     return 37753;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("silver") != -1
   ) {
     return 37754;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("16/512") != -1 &&
     name.indexOf("silver") != -1
   ) {
     return 37755;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("16/512") != -1 &&
     name.indexOf("transparent") == -1 &&
     name.indexOf("white") != -1
   ) {
     return 37756;
   } else if (
-    name.indexOf("redmagic 10 pro") != -1 &&
+    (name.indexOf("redmagic 10 pro") != -1 ||
+    name.indexOf("red magic 10 pro") != -1) &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("transparent") == -1 &&
     name.indexOf("white") != -1
   ) {
     return 37757;
   } else if (
-    name.indexOf("redmagic 10 pro +") != -1 &&
+    (name.indexOf("redmagic 10 pro +") != -1 ||
+    name.indexOf("red magic 10 pro +") != -1) &&
     name.indexOf("transparent") == -1 &&
     name.indexOf("24/1tb") != -1 &&
     (name.indexOf("black") != -1 || name.indexOf("dark") != -1)
   ) {
     return 37770;
   } else if (
-    name.indexOf("redmagic 10 pro +") != -1 &&
+    (name.indexOf("redmagic 10 pro +") != -1 ||
+    name.indexOf("red magic 10 pro +") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("24/1tb") != -1 &&
     (name.indexOf("black") != -1 || name.indexOf("dark") != -1)
   ) {
     return 37771;
   } else if (
-    name.indexOf("redmagic 10 pro +") != -1 &&
+    (name.indexOf("redmagic 10 pro +") != -1 ||
+    name.indexOf("red magic 10 pro +") != -1) &&
     name.indexOf("transparent") != -1 &&
     name.indexOf("24/1tb") != -1 &&
     name.indexOf("silver") != -1
   ) {
     return 37772;
   } else if (
-    name.indexOf("redmagic 10 pro +") != -1 &&
+    (name.indexOf("redmagic 10 pro +") != -1 ||
+    name.indexOf("red magic 10 pro +") != -1) &&
     name.indexOf("24/1tb") != -1 &&
     name.indexOf("transparent") == -1 &&
     name.indexOf("white") != -1
@@ -1174,9 +1215,15 @@ export const returnIDOtherBrand2 = (name) => {
     return 34472;
 
     //  ASUS
-  } else if (name.indexOf("rog ally 16/256 white") != -1) {
+  } else if (
+  (name.indexOf("rog amd ryzen") != -1 ||
+  name.indexOf("rog ally") != -1) &&
+  name.indexOf("16/256") != -1) {
     return 30134;
-  } else if (name.indexOf("rog ally 16/512 white") != -1) {
+  } else if (
+  (name.indexOf("rog amd ryzen") != -1 ||
+  name.indexOf("rog ally") != -1) &&
+  name.indexOf("16/512") != -1) {
     return 27653;
   } else if (name.indexOf("rog ally x 12/1tb black") != -1) {
     return 36185;
@@ -2075,13 +2122,14 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("shokz") != -1 &&
     name.indexOf("openswim pro") != -1 &&
+    name.indexOf("openswim pro 2") == -1 &&
     name.indexOf("blue") != -1
   ) {
     return 37471;
   } else if (
     name.indexOf("shokz") != -1 &&
-    name.indexOf("openswim") != -1 &&
-    name.indexOf("pro") == -1 &&
+    name.indexOf("openswim pro") != -1 &&
+    name.indexOf("openswim pro 2") == -1 &&
     name.indexOf("black") != -1
   ) {
     return 24581;
