@@ -356,126 +356,126 @@ export const returnIDApple = (name) => {
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("gold") != -1 &&
-    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 37722;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("natural") != -1 &&
-    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 37723;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("steel") != -1 &&
-    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 37724;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("gold") != -1 &&
-    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 37728;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("natural") != -1 &&
-    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 37729;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("steel") != -1 &&
-    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 37730;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("black") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36603;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("natural") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36605;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("rose") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36601;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("gold") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36609;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("silver") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36598;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("slate") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36803;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("black") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36604;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("natural") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36606;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("rose") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36602;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("gold") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36608;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("silver") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36600;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("slate") != -1 &&
-    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    name.indexOf("milanese") == -1
   ) {
     return 36610;
 
