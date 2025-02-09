@@ -25,7 +25,7 @@ const IndexOtherNotID = ({ el, otherData }) => {
             id: returnIDSamsung(returnNameInArrOther(returnFixNameOther(other.name))),
             name: returnNameInArrOther(returnFixNameOther(other.name)),
             stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
-            provider: "Разное",
+            provider: "All",
           })
         );
       }
@@ -36,7 +36,7 @@ const IndexOtherNotID = ({ el, otherData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Разное Not ID ▲" : "Разное Not ID ▼"}
+            {isOpen ? "All Not ID ▲" : "All Not ID ▼"}
           </span>
         )}
       </div>

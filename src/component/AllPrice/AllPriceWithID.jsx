@@ -616,7 +616,7 @@ const AllPriceWithID = ({
           name: returnNameInArrOther(returnFixNameOther(other.name)),
           extraPrice: returnExtraPriceOther(returnFixNameOther(other.name)),
           stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
-          provider: "Разное",
+          provider: "All",
         })
       );
     }

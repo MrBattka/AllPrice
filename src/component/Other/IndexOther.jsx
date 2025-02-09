@@ -27,7 +27,7 @@ const IndexOther = ({ el, otherData }) => {
           ),
           name: baseFixOther(other) && returnNameInArrOther(returnFixNameOther(other.name)),
           stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
-          provider: "Разное",
+          provider: "All",
         })
       );
     }
@@ -39,7 +39,7 @@ const IndexOther = ({ el, otherData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Разное ▲" : "Разное ▼"}
+            {isOpen ? "All ▲" : "All ▼"}
           </span>
         )}
       </div>
