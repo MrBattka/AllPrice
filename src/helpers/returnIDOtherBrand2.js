@@ -1881,56 +1881,70 @@ export const returnIDOtherBrand2 = (name) => {
     return 26204;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("1") != -1 &&
+    (name.indexOf("1 ") != -1 ||
+    name.indexOf("(1)") != -1) &&
+    name.indexOf("cmf") == -1 &&
     name.indexOf("8/128") != -1 &&
     name.indexOf("black") != -1
   ) {
     return 27993;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("1") != -1 &&
+    (name.indexOf("1 ") != -1 ||
+    name.indexOf("(1)") != -1) &&
+    name.indexOf("cmf") == -1 &&
     name.indexOf("8/128") != -1 &&
     name.indexOf("white") != -1
   ) {
     return 27989;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("1") != -1 &&
+    (name.indexOf("1 ") != -1 ||
+    name.indexOf("(1)") != -1) &&
+    name.indexOf("cmf") == -1 &&
     name.indexOf("8/256") != -1 &&
     name.indexOf("black") != -1
   ) {
     return 27994;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("1") != -1 &&
+    (name.indexOf("1 ") != -1 ||
+    name.indexOf("(1)") != -1) &&
+    name.indexOf("cmf") == -1 &&
     name.indexOf("8/256") != -1 &&
     name.indexOf("white") != -1
   ) {
     return 27991;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("1") != -1 &&
+    (name.indexOf("1 ") != -1 ||
+    name.indexOf("(1)") != -1) &&
+    name.indexOf("cmf") == -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("black") != -1
   ) {
     return 27992;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("1") != -1 &&
+    (name.indexOf("1 ") != -1 ||
+    name.indexOf("(1)") != -1) &&
+    name.indexOf("cmf") == -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("white") != -1
   ) {
     return 27990;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("2") != -1 &&
+    (name.indexOf("2 ") != -1 ||
+    name.indexOf("(2)") != -1) &&
     name.indexOf("8/128") != -1 &&
     name.indexOf("gray") != -1
   ) {
     return 27995;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("2") != -1 &&
+    (name.indexOf("2 ") != -1 ||
+    name.indexOf("(2)") != -1) &&
     name.indexOf("2a") == -1 &&
     name.indexOf("plus") == -1 &&
     name.indexOf("8/128") != -1 &&
@@ -1939,7 +1953,8 @@ export const returnIDOtherBrand2 = (name) => {
     return 28000;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("2") != -1 &&
+    (name.indexOf("2 ") != -1 ||
+    name.indexOf("(2)") != -1) &&
     name.indexOf("2a") == -1 &&
     name.indexOf("plus") == -1 &&
     name.indexOf("12/256") != -1 &&
@@ -1948,7 +1963,8 @@ export const returnIDOtherBrand2 = (name) => {
     return 27996;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("2") != -1 &&
+    (name.indexOf("2 ") != -1 ||
+    name.indexOf("(2)") != -1) &&
     name.indexOf("2a") == -1 &&
     name.indexOf("plus") == -1 &&
     name.indexOf("12/256") != -1 &&
@@ -1957,7 +1973,8 @@ export const returnIDOtherBrand2 = (name) => {
     return 27998;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("2") != -1 &&
+    (name.indexOf("2 ") != -1 ||
+    name.indexOf("(2)") != -1) &&
     name.indexOf("2a") == -1 &&
     name.indexOf("plus") == -1 &&
     name.indexOf("12/512") != -1 &&
@@ -1966,7 +1983,8 @@ export const returnIDOtherBrand2 = (name) => {
     return 27997;
   } else if (
     name.indexOf("nothing phone") != -1 &&
-    name.indexOf("2") != -1 &&
+    (name.indexOf("2 ") != -1 ||
+    name.indexOf("(2)") != -1) &&
     name.indexOf("2a") == -1 &&
     name.indexOf("plus") == -1 &&
     name.indexOf("12/512") != -1 &&
