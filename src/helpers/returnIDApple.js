@@ -263,175 +263,219 @@ export const returnIDApple = (name) => {
     return 23524;
   } else if (
     name.indexOf("s9 45 silver") != -1 &&
-    name.indexOf("steel") != -1
+    (name.indexOf("steel") != -1 ||
+    name.indexOf("steal") != -1)
   ) {
     return 28297;
   } else if (
     name.indexOf("s9 41 silver") != -1 &&
-    name.indexOf("steel") != -1
+    (name.indexOf("steel") != -1 ||
+    name.indexOf("steal") != -1)
   ) {
     return 28296;
   } else if (
     name.indexOf("s9 41 graphite") != -1 &&
-    name.indexOf("steel") != -1
+    (name.indexOf("steel") != -1 ||
+    name.indexOf("steal") != -1)
   ) {
     return 28294;
-  } else if (name.indexOf("s9 41 gold") != -1 && name.indexOf("steel") != -1) {
+  } else if (
+    name.indexOf("s9 41 gold") != -1 &&
+    (name.indexOf("steel") != -1 || name.indexOf("steal") != -1)
+  ) {
     return 28292;
   } else if (
     name.indexOf("s9 45 graphite") != -1 &&
-    name.indexOf("steel") != -1
+    (name.indexOf("steel") != -1 || name.indexOf("steal") != -1)
   ) {
     return 28295;
-  } else if (name.indexOf("s9 45 gold") != -1 && name.indexOf("steel") != -1) {
+  } else if (name.indexOf("s9 45 gold") != -1 && (name.indexOf("steel") != -1 ||
+  name.indexOf("steal") != -1)) {
     return 28293;
-  } else if (name.indexOf("s9 45 red") != -1) {
-    return 28287;
-  } else if (name.indexOf("s9 45 silver") != -1) {
-    return 28289;
   } else if (
-    name.indexOf("s9 41 starlight") != -1 ||
-    name.indexOf("s9 41 white") != -1
+    name.indexOf("s9 41") != -1 &&
+    (name.indexOf("strlight") != -1 || name.indexOf("white") != -1) &&
+    (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
   ) {
     return 28290;
-  } else if (name.indexOf("s9 41 silver") != -1) {
+  } else if (
+    name.indexOf("s9 41") != -1 &&
+    name.indexOf("silver") != -1 &&
+    (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
+  ) {
     return 28288;
-  } else if (name.indexOf("s9 41 red") != -1) {
+  } else if (
+    name.indexOf("s9 41") != -1 &&
+    name.indexOf("red") != -1 &&
+    (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
+  ) {
     return 28286;
-  } else if (name.indexOf("s9 41 midnight") != -1) {
+  } else if (
+    name.indexOf("s9 41") != -1 &&
+    name.indexOf("midnight") != -1 &&
+    (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
+  ) {
     return 28284;
-  } else if (name.indexOf("s9 41 pink") != -1) {
+  } else if (
+    name.indexOf("s9 41") != -1 &&
+    name.indexOf("pink") != -1 &&
+    (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
+  ) {
     return 28282;
-  } else if (name.indexOf("s9 45 silver") != -1) {
+  } else if (
+    name.indexOf("s9 45") != -1 &&
+    name.indexOf("silver") != -1 &&
+    (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
+  ) {
     return 28289;
-  } else if (name.indexOf("s9 45 starlight") != -1) {
+  } else if (
+    name.indexOf("s9 45") != -1 &&
+    (name.indexOf("strlight") != -1 || name.indexOf("white") != -1) &&
+    (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
+  ) {
     return 28291;
-  } else if (name.indexOf("s9 45 red") != -1) {
+  } else if (
+    name.indexOf("s9 45") != -1 &&
+    name.indexOf("red") != -1 &&
+    (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
+  ) {
     return 28287;
-  } else if (name.indexOf("s9 45 midnight") != -1) {
+  } else if (
+    name.indexOf("s9 45") != -1 &&
+    name.indexOf("midnight") != -1 &&
+    (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
+  ) {
     return 28285;
-  } else if (name.indexOf("s9 45 pink") != -1) {
+  } else if (
+    name.indexOf("s9 45") != -1 &&
+    name.indexOf("pink") != -1 &&
+    (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
+  ) {
     return 28283;
   } else if (
-  name.indexOf("s10") != -1 &&
-  name.indexOf("42") != -1 &&
-  name.indexOf("gold") != -1 &&
-  (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)) {
+    name.indexOf("s10") != -1 &&
+    name.indexOf("42") != -1 &&
+    name.indexOf("gold") != -1 &&
+    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+  ) {
     return 37722;
   } else if (
     name.indexOf("s10") != -1 &&
-  name.indexOf("42") != -1 &&
-  name.indexOf("natural") != -1 &&
-  (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+    name.indexOf("42") != -1 &&
+    name.indexOf("natural") != -1 &&
+    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
   ) {
     return 37723;
   } else if (
-  name.indexOf("s10") != -1 &&
-  name.indexOf("42") != -1 &&
-  name.indexOf("steel") != -1 &&
-  (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)) {
+    name.indexOf("s10") != -1 &&
+    name.indexOf("42") != -1 &&
+    name.indexOf("steel") != -1 &&
+    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+  ) {
     return 37724;
   } else if (
-  name.indexOf("s10") != -1 &&
-  name.indexOf("46") != -1 &&
-  name.indexOf("gold") != -1 &&
-  (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)) {
+    name.indexOf("s10") != -1 &&
+    name.indexOf("46") != -1 &&
+    name.indexOf("gold") != -1 &&
+    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+  ) {
     return 37728;
   } else if (
     name.indexOf("s10") != -1 &&
-  name.indexOf("46") != -1 &&
-  name.indexOf("natural") != -1 &&
-  (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+    name.indexOf("46") != -1 &&
+    name.indexOf("natural") != -1 &&
+    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
   ) {
     return 37729;
   } else if (
-  name.indexOf("s10") != -1 &&
-  name.indexOf("46") != -1 &&
-  name.indexOf("steel") != -1 &&
-  (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)) {
+    name.indexOf("s10") != -1 &&
+    name.indexOf("46") != -1 &&
+    name.indexOf("steel") != -1 &&
+    (name.indexOf("milanese loop") != -1 || name.indexOf("ml") != -1)
+  ) {
     return 37730;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("black") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36603;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("natural") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36605;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("rose") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36601;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("gold") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36609;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("silver") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36598;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
     name.indexOf("slate") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36803;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("black") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36604;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("natural") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36606;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("rose") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36602;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("gold") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36608;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("silver") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36600;
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("46") != -1 &&
     name.indexOf("slate") != -1 &&
-  (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
+    (name.indexOf("milanese loop") == -1 || name.indexOf("ml") == -1)
   ) {
     return 36610;
 
