@@ -4156,8 +4156,13 @@ name.indexOf("s25 ultra") != -1 &&
     return 36498;
   } else if (name.indexOf("buds 3 silver") != -1) {
     return 36532;
-  } else if (name.indexOf("buds fe") != -1) {
+  } else if ((name.indexOf("buds fe") != -1 &&
+  name.indexOf("graphite") != -1)) {
     return 35689;
+  } else if ((name.indexOf("buds fe") != -1 &&
+  name.indexOf("white") != -1)) {
+    return 37800;
+    
   } else if (name.indexOf("buds pro") != -1 && name.indexOf("black") != -1) {
     return 19098;
   } else if (name.indexOf("buds pro") != -1 && name.indexOf("silver") != -1) {

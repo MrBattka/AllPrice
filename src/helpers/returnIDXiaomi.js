@@ -525,6 +525,44 @@ export const returnIDXiaomi = (name) => {
     return 31129;
   } else if (name.indexOf("x6 pro 5g 8/256 yellow") != -1) {
     return 31128;
+  } else if (name.indexOf("poco x7 8/128 black") != -1) {
+    return 37796;
+  } else if (name.indexOf("poco x7 8/128 green") != -1) {
+    return 37817;
+  } else if (name.indexOf("poco x7 8/128 silver") != -1) {
+    return 37818;
+  } else if (name.indexOf("poco x7 8/256 black") != -1) {
+    return 37822;
+  } else if (name.indexOf("poco x7 8/256 green") != -1) {
+    return 37823;
+  } else if (name.indexOf("poco x7 8/256 silver") != -1) {
+    return 37824;
+  } else if (name.indexOf("poco x7 12/512 black") != -1) {
+    return 37828;
+  } else if (name.indexOf("poco x7 12/512 green") != -1) {
+    return 37829;
+  } else if (name.indexOf("poco x7 12/512 silver") != -1) {
+    return 37830;
+  } else if (name.indexOf("poco x7 pro 8/256 black") != -1) {
+    return 37833;
+  } else if (name.indexOf("poco x7 pro 8/256 yellow") != -1) {
+    return 37834;
+  } else if (name.indexOf("poco x7 pro 8/256 green") != -1) {
+    return 37841;
+  } else if (name.indexOf("poco x7 pro 12/256 black") != -1) {
+    return 37840;
+  } else if (name.indexOf("poco x7 pro 12/256 yellow") != -1) {
+    return 37837;
+  } else if (name.indexOf("poco x7 pro 12/256 green") != -1) {
+    return 37842;
+  } else if (name.indexOf("poco x7 pro 12/512 black") != -1) {
+    return 37846;
+  } else if (name.indexOf("poco x7 pro 12/512 yellow") != -1) {
+    return 37847;
+  } else if (name.indexOf("poco x7 pro 12/512 green") != -1) {
+    return 37848;
+
+
     //  Redmi
   } else if (name.indexOf("note 12 pro 12/256 black") != -1) {
     return 24685;

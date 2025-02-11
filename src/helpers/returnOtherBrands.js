@@ -23,6 +23,26 @@ export const returnIDOtherBrand = (name) => {
     return 36474;
   } else if (name.indexOf("rog phone 8 pro 24/1tb black") != -1) {
     return 36473;
+
+  } else if (name.indexOf("rog phone 9 12/256") != -1 &&
+  name.indexOf("black") != -1) {
+    return 37794;
+  } else if (name.indexOf("rog phone 9 12/256") != -1 &&
+  name.indexOf("white") != -1) {
+    return 37812;
+  } else if (name.indexOf("rog phone 9 16/512") != -1 &&
+  name.indexOf("black") != -1) {
+    return 37808;
+  } else if (name.indexOf("rog phone 9 16/512") != -1 &&
+  name.indexOf("white") != -1) {
+    return 37810;
+  } else if (name.indexOf("rog phone 9 pro 16/512") != -1 &&
+  name.indexOf("black") != -1) {
+    return 37795;
+  } else if (name.indexOf("rog phone 9 pro 24/1tb") != -1 &&
+  name.indexOf("black") != -1) {
+    return 37814;
+
   } else if (name.indexOf("zenfone 10 12/256 green") != -1) {
     return 28372;
   } else if (name.indexOf("zenfone 10 12/256 white") != -1) {
@@ -1406,6 +1426,26 @@ export const returnIDOtherBrand = (name) => {
     (name.indexOf("white") != -1 || name.indexOf("silver") != -1)
   ) {
     return 34447;
+  } else if (
+    name.indexOf("oneplus 13r 12/256") != -1 &&
+    (name.indexOf("trail") != -1 || name.indexOf("trail") != -1)
+  ) {
+    return 37804;
+  } else if (
+    name.indexOf("oneplus 13r 12/256") != -1 &&
+    (name.indexOf("nebula") != -1 || name.indexOf("noir") != -1)
+  ) {
+    return 37792;
+  } else if (
+    name.indexOf("oneplus 13r 16/512") != -1 &&
+    (name.indexOf("trail") != -1 || name.indexOf("trail") != -1)
+  ) {
+    return 37806;
+  } else if (
+    name.indexOf("oneplus 13r 16/512") != -1 &&
+    (name.indexOf("nebula") != -1 || name.indexOf("noir") != -1)
+  ) {
+    return 37802;
   } else if (name.indexOf("oneplus 13 12/256 black") != -1) {
     return 37204;
   } else if (name.indexOf("oneplus 13 12/256 blue") != -1) {
@@ -1430,7 +1470,6 @@ export const returnIDOtherBrand = (name) => {
     return 37468;
   } else if (name.indexOf("oneplus 13 24/1tb white") != -1) {
     return 37469;
-
   } else if (name.indexOf("oneplus ace 3 12/256 black") != -1) {
     return 34452;
   } else if (name.indexOf("oneplus ace 3 12/256 blue") != -1) {
