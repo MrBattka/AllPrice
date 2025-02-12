@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/AllPrice/static/css/main.b083ce55.css",
-    "main.js": "/AllPrice/static/js/main.229af67b.js",
+    "main.js": "/AllPrice/static/js/main.aa6a627f.js",
     "static/js/453.85642eff.chunk.js": "/AllPrice/static/js/453.85642eff.chunk.js",
     "static/media/bg1.jpg": "/AllPrice/static/media/bg1.1b123de84a166fa1375d.jpg",
     "static/media/icon1.png": "/AllPrice/static/media/icon1.37973d7c2e2c44c05198.png",
     "index.html": "/AllPrice/index.html",
     "main.b083ce55.css.map": "/AllPrice/static/css/main.b083ce55.css.map",
-    "main.229af67b.js.map": "/AllPrice/static/js/main.229af67b.js.map",
+    "main.aa6a627f.js.map": "/AllPrice/static/js/main.aa6a627f.js.map",
     "453.85642eff.chunk.js.map": "/AllPrice/static/js/453.85642eff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b083ce55.css",
-    "static/js/main.229af67b.js"
+    "static/js/main.aa6a627f.js"
   ]
 }
