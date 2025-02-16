@@ -11,7 +11,7 @@ export const returnIDOtherBrand2 = (name) => {
   ) {
     return 24537;
   } else if (
-    name.indexOf("xbox one") != -1 &&
+    name.indexOf("xbox") != -1 &&
     name.indexOf(" s ") != -1 &&
     name.indexOf("1tb") != -1
   ) {
