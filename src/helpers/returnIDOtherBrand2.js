@@ -13,9 +13,17 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("xbox") != -1 &&
     name.indexOf(" s ") != -1 &&
-    name.indexOf("1tb") != -1
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("black") != -1
   ) {
-    return 14551;
+    return 38005;
+  } else if (
+    name.indexOf("xbox") != -1 &&
+    name.indexOf(" s ") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("black") == -1
+  ) {
+    return 38017;
 
     // PlayStation
   } else if (
@@ -1401,6 +1409,13 @@ export const returnIDOtherBrand2 = (name) => {
     return 28406;
 
     //  JBL
+  } else if (name.indexOf("jbl xtreme 4 black") != -1) {
+    return 38000;
+  } else if (name.indexOf("jbl xtreme 4 blue") != -1) {
+    return 38007;
+  } else if (name.indexOf("jbl xtreme 4 khaki") != -1) {
+    return 38009;
+
   } else if (name.indexOf("jbl flip 6 black") != -1) {
     return 27639;
   } else if (name.indexOf("jbl flip 6 blue") != -1) {
@@ -1853,6 +1868,23 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("черн") != -1
   ) {
     return 37470;
+
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("мини") != -1 &&
+    name.indexOf("3") != -1 &&
+    name.indexOf("сер") != -1
+  ) {
+    return 38013;
+  } else if (
+    (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
+    name.indexOf("мини") != -1 &&
+    name.indexOf("3") != -1 &&
+    name.indexOf("фиол") != -1
+  ) {
+    return 38015;
+
+
   } else if (
     (name.indexOf("яндекс") != -1 || name.indexOf("станция") != -1) &&
     name.indexOf("миди") != -1 &&

@@ -4442,6 +4442,12 @@ export const returnIDSamsung = (nameStock) => {
     return 36498;
   } else if (name.indexOf("buds 3 silver") != -1) {
     return 36532;
+
+  } else if (name.indexOf("buds 3 pro white") != -1) {
+    return 38004;
+  } else if (name.indexOf("buds 3 pro silver") != -1) {
+    return 38019;
+
   } else if (name.indexOf("buds fe") != -1 && name.indexOf("graphite") != -1) {
     return 35689;
   } else if (name.indexOf("buds fe") != -1 && name.indexOf("white") != -1) {

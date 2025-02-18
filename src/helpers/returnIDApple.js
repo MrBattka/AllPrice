@@ -695,6 +695,19 @@ export const returnIDApple = (name) => {
     name.indexOf("white") != -1
   ) {
     return 2071;
+
+  } else if (
+    name.indexOf("magic mouse 3") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 38001;
+  } else if (
+    name.indexOf("magic mouse 3") != -1 &&
+    name.indexOf("white") != -1
+  ) {
+    return 38011;
+
+
   } else if (
     name.indexOf("magic keyboard") != -1 &&
     name.indexOf("ipad pro 11") != -1 &&

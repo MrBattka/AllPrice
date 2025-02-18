@@ -23,26 +23,36 @@ export const returnIDOtherBrand = (name) => {
     return 36474;
   } else if (name.indexOf("rog phone 8 pro 24/1tb black") != -1) {
     return 36473;
-
-  } else if (name.indexOf("rog phone 9 12/256") != -1 &&
-  name.indexOf("black") != -1) {
+  } else if (
+    name.indexOf("rog phone 9 12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
     return 37794;
-  } else if (name.indexOf("rog phone 9 12/256") != -1 &&
-  name.indexOf("white") != -1) {
+  } else if (
+    name.indexOf("rog phone 9 12/256") != -1 &&
+    name.indexOf("white") != -1
+  ) {
     return 37812;
-  } else if (name.indexOf("rog phone 9 16/512") != -1 &&
-  name.indexOf("black") != -1) {
+  } else if (
+    name.indexOf("rog phone 9 16/512") != -1 &&
+    name.indexOf("black") != -1
+  ) {
     return 37808;
-  } else if (name.indexOf("rog phone 9 16/512") != -1 &&
-  name.indexOf("white") != -1) {
+  } else if (
+    name.indexOf("rog phone 9 16/512") != -1 &&
+    name.indexOf("white") != -1
+  ) {
     return 37810;
-  } else if (name.indexOf("rog phone 9 pro 16/512") != -1 &&
-  name.indexOf("black") != -1) {
+  } else if (
+    name.indexOf("rog phone 9 pro 16/512") != -1 &&
+    name.indexOf("black") != -1
+  ) {
     return 37795;
-  } else if (name.indexOf("rog phone 9 pro 24/1tb") != -1 &&
-  name.indexOf("black") != -1) {
+  } else if (
+    name.indexOf("rog phone 9 pro 24/1tb") != -1 &&
+    name.indexOf("black") != -1
+  ) {
     return 37814;
-
   } else if (name.indexOf("zenfone 10 12/256 green") != -1) {
     return 28372;
   } else if (name.indexOf("zenfone 10 12/256 white") != -1) {
@@ -1584,6 +1594,170 @@ export const returnIDOtherBrand = (name) => {
     (name.indexOf("halo") != -1 || name.indexOf("green") != -1)
   ) {
     return 27316;
+  } else if (name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("12/256") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 38002;
+  } else if (
+name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("12/256") != -1 &&
+  name.indexOf("green") != -1) {
+    return 38022;
+  } else if (
+name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("12/256") != -1 &&
+  name.indexOf("white") != -1) {
+    return 38023;
+  } else if (
+  name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("16/256") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 38027;
+  } else if (
+name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("16/256") != -1 &&
+  name.indexOf("green") != -1) {
+    return 38028;
+  } else if (
+name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("16/256") != -1 &&
+  name.indexOf("white") != -1) {
+    return 38029;
+  } else if (
+  name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("12/512") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 38033;
+  } else if (
+name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("12/512") != -1 &&
+  name.indexOf("green") != -1) {
+    return 38034;
+  } else if (
+name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("12/512") != -1 &&
+  name.indexOf("white") != -1) {
+    return 38035;
+  } else if (
+  name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("16/512") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 38039;
+  } else if (
+name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("16/512") != -1 &&
+  name.indexOf("green") != -1) {
+    return 38040;
+  } else if (
+name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("16/512") != -1 &&
+  name.indexOf("white") != -1) {
+    return 38041;
+  } else if (
+  name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("16/1tb") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 38045;
+  } else if (
+name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("16/1tb") != -1 &&
+  name.indexOf("green") != -1) {
+    return 38046;
+  } else if (
+name.indexOf("oneplus ace 5") != -1 &&
+name.indexOf("pro") == -1 &&
+  name.indexOf("16/1tb") != -1 &&
+  name.indexOf("white") != -1) {
+    return 38047;
+  } else if (
+  name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 38050;
+  } else if (
+name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  name.indexOf("purple") != -1) {
+    return 38051;
+  } else if (
+name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("12/256") != -1 &&
+  name.indexOf("white") != -1) {
+    return 38052;
+  } else if (
+  name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("16/256") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 38053;
+  } else if (
+name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("16/256") != -1 &&
+  name.indexOf("purple") != -1) {
+    return 38054;
+  } else if (
+name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("16/256") != -1 &&
+  name.indexOf("white") != -1) {
+    return 38055;
+  } else if (
+  name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("12/512") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 38059;
+  } else if (
+name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("12/512") != -1 &&
+  name.indexOf("purple") != -1) {
+    return 38060;
+  } else if (
+name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("12/512") != -1 &&
+  name.indexOf("white") != -1) {
+    return 38061;
+  } else if (
+  name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("16/512") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 38065;
+  } else if (
+name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("16/512") != -1 &&
+  name.indexOf("purple") != -1) {
+    return 38066;
+  } else if (
+name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("16/512") != -1 &&
+  name.indexOf("white") != -1) {
+    return 38067;
+  } else if (
+  name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("16/1tb") != -1 &&
+  name.indexOf("gray") != -1) {
+    return 38071;
+  } else if (
+name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("16/1tb") != -1 &&
+  name.indexOf("purple") != -1) {
+    return 38072;
+  } else if (
+name.indexOf("oneplus ace 5 pro") != -1 &&
+  name.indexOf("16/1tb") != -1 &&
+  name.indexOf("white") != -1) {
+    return 38073;
 
     // Google
   } else if (
