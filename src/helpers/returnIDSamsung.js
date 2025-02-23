@@ -4313,10 +4313,15 @@ export const returnIDSamsung = (nameStock) => {
     return 22824;
 
     // Watch
-  } else if (name.indexOf("redmi watch 3 black") != -1) {
-    return 26348;
-  } else if (name.indexOf("redmi watch 3 white") != -1) {
-    return 26349;
+  } else if (name.indexOf("galaxy watch fe Black") != -1) {
+    return 38212;
+  } else if (name.indexOf("galaxy watch fe silver") != -1) {
+    return 38214;
+  } else if (name.indexOf("galaxy watch fe pink") != -1) {
+    return 38213;
+
+
+  
   } else if (name.indexOf("watch 4 40 black") != -1) {
     return 20537;
   } else if (

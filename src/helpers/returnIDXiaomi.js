@@ -561,8 +561,11 @@ export const returnIDXiaomi = (name) => {
     return 37847;
   } else if (name.indexOf("poco x7 pro 12/512 green") != -1) {
     return 37848;
-
-
+// Watch
+  } else if (name.indexOf("redmi watch 3 black") != -1) {
+    return 26348;
+  } else if (name.indexOf("redmi watch 3 white") != -1) {
+    return 26349;
     //  Redmi
   } else if (name.indexOf("note 12 pro 12/256 black") != -1) {
     return 24685;
