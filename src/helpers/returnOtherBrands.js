@@ -1002,72 +1002,84 @@ export const returnIDOtherBrand = (name) => {
     return 28142;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("12/256") != -1 &&
     (name.indexOf("mercurial") != -1 || name.indexOf("silver") != -1)
   ) {
     return 37155;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("12/256") != -1 &&
     (name.indexOf("oasis") != -1 || name.indexOf("green") != -1)
   ) {
     return 37156;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("12/256") != -1 &&
     (name.indexOf("obsidian") != -1 || name.indexOf("midnight") != -1)
   ) {
     return 37157;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("mercurial") != -1 || name.indexOf("silver") != -1)
   ) {
     return 37158;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("oasis") != -1 || name.indexOf("green") != -1)
   ) {
     return 37159;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("16/512") != -1 &&
     (name.indexOf("obsidian") != -1 || name.indexOf("midnight") != -1)
   ) {
     return 37160;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("8/128") != -1 &&
     (name.indexOf("mercurial") != -1 || name.indexOf("silver") != -1)
   ) {
     return 37150;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("8/128") != -1 &&
     (name.indexOf("oasis") != -1 || name.indexOf("green") != -1)
   ) {
     return 37151;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("8/128") != -1 &&
     (name.indexOf("obsidian") != -1 || name.indexOf("midnight") != -1)
   ) {
     return 37149;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("8/256") != -1 &&
     (name.indexOf("mercurial") != -1 || name.indexOf("silver") != -1)
   ) {
     return 37152;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("8/256") != -1 &&
     (name.indexOf("oasis") != -1 || name.indexOf("green") != -1)
   ) {
     return 37153;
   } else if (
     name.indexOf("nord 4") != -1 &&
+    name.indexOf("lite") == -1 &&
     name.indexOf("8/256") != -1 &&
     (name.indexOf("obsidian") != -1 || name.indexOf("midnight") != -1)
   ) {
