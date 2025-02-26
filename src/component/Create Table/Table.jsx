@@ -56,6 +56,7 @@ const copyTable = () => {
 const BasicTable = ({ resultArr }) => {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => resultArr, []);
+console.log(resultArr);
 
   const tableInstance = useTable({
     columns,

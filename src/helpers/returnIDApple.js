@@ -352,6 +352,17 @@ export const returnIDApple = (name) => {
     (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
   ) {
     return 28283;
+
+  } else if (
+    name.indexOf("s10") != -1 &&
+    name.indexOf("42") != -1 &&
+    name.indexOf("steel") != -1 &&
+    name.indexOf("gold ti") != -1 &&
+    name.indexOf("natural") != -1 &&
+    name.indexOf("bracelete") != -1
+  ) {
+    return 38249;
+
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
@@ -2434,6 +2445,15 @@ export const returnIDApple = (name) => {
     return 36424;
 
     // imac
+  } else if (name.indexOf("mu9d3") != -1) {
+    return 38245;
+  } else if (name.indexOf("mu9e3") != -1) {
+    return 38246;
+  } else if (name.indexOf("mvyt4") != -1) {
+    return 38247;
+  } else if (name.indexOf("mcx44") != -1) {
+    return 38248;
+
   } else if (name.indexOf("mxnf2") != -1) {
     return 16220;
   } else if (name.indexOf("mxng2") != -1) {
@@ -4966,6 +4986,19 @@ export const returnIDApple = (name) => {
     return 36668;
   } else if (name.indexOf("16 pro max 512 white") != -1) {
     return 36672;
+
+  } else if (name.indexOf("16e 128 black") != -1) {
+    return 38256;
+  } else if (name.indexOf("16e 128 white") != -1) {
+    return 38257;
+  } else if (name.indexOf("16e 256 black") != -1) {
+    return 38258;
+  } else if (name.indexOf("16e 256 white") != -1) {
+    return 38259;
+  } else if (name.indexOf("16e 512 black") != -1) {
+    return 38262;
+  } else if (name.indexOf("16e 512 white") != -1) {
+    return 38263;
   } else {
     return "No match";
   }

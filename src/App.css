@@ -15,13 +15,16 @@ input {
   display: none;
 }
 
+.custom-file {
+  margin-top: -190px;
+}
+
 .custom-file-upload {
   display: inline-block;
   padding: 5px 10px 5px 10px;
   cursor: pointer;
   background-color: rgb(192, 2, 151);
   color: #d5d5d5;
-  margin-left: 200px;
 }
 
 .custom-file-upload:hover {
@@ -36,10 +39,12 @@ input {
 
 .flexbox {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper_control {
-  margin: 3% 0 0 15%;
+  /* margin: 3% 0 0 15%; */
   display: flex;
   flex-direction: column;
 }
