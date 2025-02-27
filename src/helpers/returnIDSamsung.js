@@ -766,6 +766,25 @@ export const returnIDSamsung = (nameStock) => {
     return 37998;
 
 
+  } else if (name.indexOf("m35 6/128 dark blue") != -1) {
+    return 38269;
+  } else if (name.indexOf("m35 6/128 light blue") != -1) {
+    return 38270;
+  } else if (name.indexOf("m35 6/128 gray") != -1) {
+    return 38275;
+  } else if (name.indexOf("m35 8/128 light blue") != -1) {
+    return 38281;
+  } else if (name.indexOf("m35 8/128 dark blue") != -1) {
+    return 38279;
+  } else if (name.indexOf("m35 8/128 gray") != -1) {
+    return 38280;
+  } else if (name.indexOf("m35 8/256 dark blue") != -1) {
+    return 38285;
+  } else if (name.indexOf("m35 8/256 light blue") != -1) {
+    return 38287;
+  } else if (name.indexOf("m35 8/256 gray") != -1) {
+    return 38286;
+
   } else if (name.indexOf("m55s 8/128 green") != -1) {
     return 37943;
   } else if (name.indexOf("m55s 8/128") != -1 &&

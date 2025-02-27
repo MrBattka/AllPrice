@@ -5,16 +5,27 @@ import BasicTable from "./Create Table/Table";
 
 const IndexParserPrice = () => {
   const allPrice = [];
-  const all = []
-  const [dataAll, setDataAll] = useState([])
-  const [IsOpen, setIsOpen] = useState(false)
+  const all = [];
+  const [dataAll, setDataAll] = useState([]);
+  const [IsOpen, setIsOpen] = useState(false);
 
-  dataAll.map((allEl) => {
-    allEl.Name &&
-      allEl.Name.length &&
-      all.push({ name: allEl.Name, price: allEl.Price, id: allEl.ID });
-  });
+  const data = [{id: 36891, name: 'Redmi Pad SE 8.7 6/128GB Sky Blue', price: 30000}]
 
+  const returnNewPrice = (dataAll) => {
+    dataAll.map((allEl) => {
+      if (allEl.Name.indexOf("6/128") !== -1 && allEl.Price !== 0) {
+        all.push({ name: allEl.Name, price: allEl.Price, id: allEl.ID });
+      } else if (allEl.Name.indexOf("4/128") !== -1 && allEl.Price === 0) {
+        all.push({ name: allEl.Name, price: allEl.Name.indexOf("6/128") !== -1 && allEl.Price - 500, id: allEl.ID });
+      }
+    });
+  };
+  returnNewPrice(dataAll)
+  // dataAll.map((allEl) => {
+  //   allEl.Name &&
+  //     allEl.Name.length &&
+  //     all.push({ name: allEl.Name, price: allEl.Price, id: allEl.ID });
+  // });
 
   const handleImport = ($event) => {
     const files = $event.target.files;
@@ -28,7 +39,7 @@ const IndexParserPrice = () => {
         if (sheets.length) {
           const rowsAll = utils.sheet_to_json(wb.Sheets[sheets[0]]);
           setDataAll(rowsAll);
-          setIsOpen(true)
+          setIsOpen(true);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -41,11 +52,11 @@ const IndexParserPrice = () => {
       allPrice.push({
         id: all.id,
         name: all.name,
-        stockPrice: all.price
+        stockPrice: all.price,
       })
     );
   });
- 
+
   return (
     <div className="wrapper_control">
       <div className="flexbox">
@@ -73,7 +84,7 @@ const IndexParserPrice = () => {
           </div>
         </div>
       </div>
-     
+
       <div className="wrapper_cat"></div>
       {IsOpen && <BasicTable resultArr={allPrice} />}
     </div>
