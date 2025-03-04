@@ -3,6 +3,8 @@ import { returnIDXiaomi } from "./returnIDXiaomi";
 export const returnIDSamsung = (nameStock) => {
   const removeDoubleSpace = nameStock.replace(/\s+/g, " ");
   const name = removeDoubleSpace.toLowerCase();
+  console.log(name)
+  
   if (
     name.indexOf("a05 4/128") != -1 &&
     (name.indexOf("blue/black") != -1 ||

@@ -86,7 +86,9 @@ export const fixNameMihonor = (name) => {
   const fix1TB = removeLightViolet.replace("+1024GB", "/1Tb")
   const fixmi5g = (fix1TB.indexOf("MI 13") !== -1 || fix1TB.indexOf("MI 14") !== -1) ? fix1TB.replace("5G", "") : fix1TB
 
-  const fix8255GB = fixmi5g.replace("8+255", "8/256");
+  const fixm55s = fixmi5g.indexOf("M55S") !== -1 ? fixmi5g.replace("5G ", "") : fixmi5g
+
+  const fix8255GB = fixm55s.replace("8+255", "8/256");
   const fix8256 = fix8255GB.replace("8 256", "8/256");
   const fix8128 = fix8256.replace("8 128", "8/128");
   const fix12256 = fix8128.replace("12 256", "12/256");

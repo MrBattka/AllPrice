@@ -280,14 +280,17 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("black") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36446;
   } else if (
     name.indexOf("xperia 1") != -1 &&
     name.indexOf("vi") != -1 &&
     name.indexOf("12/256") != -1 &&
-    name.indexOf("black") != -1
+    name.indexOf("black") != -1 &&
+    (name.indexOf("🇭🇰") == -1 ||
+    name.indexOf("hk") == -1)
   ) {
     return 36426;
   } else if (
@@ -295,7 +298,8 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("green") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36447;
   } else if (
@@ -310,14 +314,17 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("silver") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36448;
   } else if (
     name.indexOf("xperia 1") != -1 &&
     name.indexOf("vi") != -1 &&
     name.indexOf("12/256") != -1 &&
-    name.indexOf("silver") != -1
+    name.indexOf("silver") != -1 &&
+    (name.indexOf("🇭🇰") == -1 ||
+    name.indexOf("hk") == -1)
   ) {
     return 36430;
   } else if (
@@ -325,14 +332,17 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("red") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36449;
   } else if (
     name.indexOf("xperia 1") != -1 &&
     name.indexOf("vi") != -1 &&
     name.indexOf("12/256") != -1 &&
-    name.indexOf("red") != -1
+    name.indexOf("red") != -1 &&
+    (name.indexOf("🇭🇰") == -1 ||
+    name.indexOf("hk") == -1)
   ) {
     return 36432;
   } else if (
@@ -340,14 +350,17 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("black") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36450;
   } else if (
     name.indexOf("xperia 1") != -1 &&
     name.indexOf("vi") != -1 &&
     name.indexOf("12/512") != -1 &&
-    name.indexOf("black") != -1
+    name.indexOf("black") != -1 &&
+    (name.indexOf("🇭🇰") == -1 ||
+    name.indexOf("hk") == -1)
   ) {
     return 36434;
   } else if (
@@ -355,14 +368,17 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("green") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36451;
   } else if (
     name.indexOf("xperia 1") != -1 &&
     name.indexOf("vi") != -1 &&
     name.indexOf("12/512") != -1 &&
-    name.indexOf("green") != -1
+    name.indexOf("green") != -1 &&
+    (name.indexOf("🇭🇰") == -1 ||
+    name.indexOf("hk") == -1)
   ) {
     return 36436;
   } else if (
@@ -370,14 +386,17 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("silver") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36452;
   } else if (
     name.indexOf("xperia 1") != -1 &&
     name.indexOf("vi") != -1 &&
     name.indexOf("12/512") != -1 &&
-    name.indexOf("silver") != -1
+    name.indexOf("silver") != -1 &&
+    (name.indexOf("🇭🇰") == -1 ||
+    name.indexOf("hk") == -1)
   ) {
     return 36438;
   } else if (
@@ -385,14 +404,17 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("red") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36453;
   } else if (
     name.indexOf("xperia 1") != -1 &&
     name.indexOf("vi") != -1 &&
     name.indexOf("12/512") != -1 &&
-    name.indexOf("red") != -1
+    name.indexOf("red") != -1 &&
+    (name.indexOf("🇭🇰") == -1 ||
+    name.indexOf("hk") == -1)
   ) {
     return 36440;
   } else if (
@@ -400,14 +422,17 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("8/128") != -1 &&
     name.indexOf("black") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36188;
   } else if (
     name.indexOf("xperia 10") != -1 &&
     name.indexOf("vi") != -1 &&
     name.indexOf("8/128") != -1 &&
-    name.indexOf("black") != -1
+    name.indexOf("black") != -1 &&
+    (name.indexOf("🇭🇰") == -1 ||
+    name.indexOf("hk") == -1)
   ) {
     return 36186;
   } else if (
@@ -415,14 +440,17 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("8/128") != -1 &&
     name.indexOf("blue") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36313;
   } else if (
     name.indexOf("xperia 10") != -1 &&
     name.indexOf("vi") != -1 &&
     name.indexOf("8/128") != -1 &&
-    name.indexOf("blue") != -1
+    name.indexOf("blue") != -1 &&
+    (name.indexOf("🇭🇰") == -1 ||
+    name.indexOf("hk") == -1)
   ) {
     return 36309;
   } else if (
@@ -430,7 +458,8 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("8/128") != -1 &&
     name.indexOf("white") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36310;
   } else if (
@@ -438,7 +467,8 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("vi") != -1 &&
     name.indexOf("8/128") != -1 &&
     name.indexOf("white") != -1 &&
-    name.indexOf("🇭🇰") != -1
+    (name.indexOf("🇭🇰") != -1 ||
+    name.indexOf("hk") != -1)
   ) {
     return 36315;
   } else if (
