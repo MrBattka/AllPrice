@@ -1535,6 +1535,7 @@ export const baseFixLowPrice = (el) => {
       toLowerCase?.indexOf("15 256") != -1 ||
       toLowerCase?.indexOf("15 512") != -1 ||
       toLowerCase?.indexOf("15 pro") != -1 ||
+      toLowerCase?.indexOf("16e") != -1 ||
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
@@ -1564,7 +1565,6 @@ export const baseFixLowPrice = (el) => {
         toLowerCase.indexOf("armor") == -1 &&
         toLowerCase.indexOf("29.05.2023") == -1 &&
         toLowerCase.indexOf("✁") == -1 &&
-        toLowerCase.indexOf("iphone") == -1 &&
         toLowerCase.indexOf("samsung") == -1 &&
         toLowerCase.indexOf("гарантия") == -1 &&
         toLowerCase.indexOf("poco🇷🇺") == -1 &&
