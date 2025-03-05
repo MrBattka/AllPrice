@@ -69,6 +69,9 @@ export const returnApple = (name) => {
     el.indexOf("16 128") != -1 ||
     el.indexOf("16 256") != -1 ||
     el.indexOf("16 512") != -1 ||
+    el.indexOf("16e 128") != -1 ||
+    el.indexOf("16e 256") != -1 ||
+    el.indexOf("16e 512") != -1 ||
     el.indexOf("16 Plus 128") != -1 ||
     el.indexOf("16 Plus 256") != -1 ||
     el.indexOf("16 Plus 512") != -1 ||
