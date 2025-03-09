@@ -60,7 +60,7 @@ export const returnIDOtherBrand2 = (name) => {
       name.indexOf("dualsense") != -1) &&
     name.indexOf("white") != -1
   ) {
-    return 19661;
+    return 36800;
   } else if (name.indexOf("dualsense") != -1 && name.indexOf("red") != -1) {
     return 36796;
   } else if (name.indexOf("dualsense purple") != -1) {
@@ -104,12 +104,14 @@ export const returnIDOtherBrand2 = (name) => {
     return 28189;
   } else if (
     name.indexOf("oculus quest 3") != -1 &&
-    name.indexOf("128") != -1
+    name.indexOf("128") != -1 &&
+    name.indexOf("quest 3s") == -1
   ) {
     return 36846;
   } else if (
     name.indexOf("oculus quest 3") != -1 &&
-    name.indexOf("512") != -1
+    name.indexOf("512") != -1 &&
+    name.indexOf("quest 3s") == -1
   ) {
     return 36847;
   } else if (

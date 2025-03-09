@@ -263,34 +263,33 @@ export const returnIDApple = (name) => {
     return 23524;
   } else if (
     name.indexOf("s9 45 silver") != -1 &&
-    (name.indexOf("steel") != -1 ||
-    name.indexOf("steal") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 28297;
   } else if (
     name.indexOf("s9 41 silver") != -1 &&
-    (name.indexOf("steel") != -1 ||
-    name.indexOf("steal") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 28296;
   } else if (
     name.indexOf("s9 41 graphite") != -1 &&
-    (name.indexOf("steel") != -1 ||
-    name.indexOf("steal") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 28294;
   } else if (
     name.indexOf("s9 41 gold") != -1 &&
-    (name.indexOf("steel") != -1 || name.indexOf("steal") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 28292;
   } else if (
     name.indexOf("s9 45 graphite") != -1 &&
-    (name.indexOf("steel") != -1 || name.indexOf("steal") != -1)
+    name.indexOf("milanese") != -1
   ) {
     return 28295;
-  } else if (name.indexOf("s9 45 gold") != -1 && (name.indexOf("steel") != -1 ||
-  name.indexOf("steal") != -1)) {
+  } else if (
+    name.indexOf("s9 45 gold") != -1 &&
+    name.indexOf("milanese") != -1
+  ) {
     return 28293;
   } else if (
     name.indexOf("s9 41") != -1 &&
@@ -352,7 +351,6 @@ export const returnIDApple = (name) => {
     (name.indexOf("steel") == -1 || name.indexOf("steal") == -1)
   ) {
     return 28283;
-
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
@@ -362,7 +360,6 @@ export const returnIDApple = (name) => {
     name.indexOf("bracelete") != -1
   ) {
     return 38249;
-
   } else if (
     name.indexOf("s10") != -1 &&
     name.indexOf("42") != -1 &&
@@ -706,7 +703,6 @@ export const returnIDApple = (name) => {
     name.indexOf("white") != -1
   ) {
     return 2071;
-
   } else if (
     name.indexOf("magic mouse 3") != -1 &&
     name.indexOf("black") != -1
@@ -717,8 +713,74 @@ export const returnIDApple = (name) => {
     name.indexOf("white") != -1
   ) {
     return 38011;
-
-
+  } else if (
+    name.indexOf("magic keyboard") != -1 &&
+    name.indexOf("pro 11") != -1 &&
+    (name.indexOf("m4") != -1 || name.indexOf("2024") != -1) &&
+    name.indexOf("black") != -1
+  ) {
+    return 36954;
+  } else if (
+    name.indexOf("magic keyboard") != -1 &&
+    name.indexOf("pro 11") != -1 &&
+    (name.indexOf("m4") != -1 || name.indexOf("2024") != -1) &&
+    name.indexOf("white") != -1
+  ) {
+    return 36953;
+  } else if (
+    name.indexOf("magic keyboard") != -1 &&
+    name.indexOf("pro 13") != -1 &&
+    (name.indexOf("m4") != -1 || name.indexOf("2024") != -1) &&
+    name.indexOf("black") != -1
+  ) {
+    return 36957;
+  } else if (
+    name.indexOf("magic keyboard") != -1 &&
+    name.indexOf("pro 13") != -1 &&
+    (name.indexOf("m4") != -1 || name.indexOf("2024") != -1) &&
+    name.indexOf("white") != -1
+  ) {
+    return 36956;
+  } else if (
+    (name.indexOf("magic keyboard") != -1 &&
+      name.indexOf("pro 12.9") != -1 &&
+      name.indexOf("white") != -1) ||
+    (name.indexOf("magic keyboard") != -1 &&
+      name.indexOf("air 13") != -1 &&
+      (name.indexOf("m2") != -1 || name.indexOf("2024") != -1) &&
+      name.indexOf("white") != -1)
+  ) {
+    return 36958;
+  } else if (
+    (name.indexOf("magic keyboard") != -1 &&
+      name.indexOf("pro 12.9") != -1 &&
+      name.indexOf("black") != -1) ||
+    (name.indexOf("magic keyboard") != -1 &&
+      name.indexOf("air 13") != -1 &&
+      (name.indexOf("m2") != -1 || name.indexOf("2024") != -1) &&
+      name.indexOf("black") != -1)
+  ) {
+    return 36960;
+  } else if (
+    (name.indexOf("magic keyboard") != -1 &&
+      name.indexOf("10.9") != -1 &&
+      name.indexOf("white") != -1) ||
+    (name.indexOf("magic keyboard") != -1 &&
+      name.indexOf("pro 11") != -1 &&
+      (name.indexOf("m2") != -1 || name.indexOf("2022") != -1) &&
+      name.indexOf("white") != -1)
+  ) {
+    return 36961;
+  } else if (
+    (name.indexOf("magic keyboard") != -1 &&
+      name.indexOf("10.9") != -1 &&
+      name.indexOf("black") != -1) ||
+    (name.indexOf("magic keyboard") != -1 &&
+      name.indexOf("pro 11") != -1 &&
+      (name.indexOf("m2") != -1 || name.indexOf("2022") != -1) &&
+      name.indexOf("black") != -1)
+  ) {
+    return 36962;
   } else if (
     name.indexOf("magic keyboard") != -1 &&
     name.indexOf("ipad pro 11") != -1 &&
@@ -2453,7 +2515,6 @@ export const returnIDApple = (name) => {
     return 38247;
   } else if (name.indexOf("mcx44") != -1) {
     return 38248;
-
   } else if (name.indexOf("mxnf2") != -1) {
     return 16220;
   } else if (name.indexOf("mxng2") != -1) {
@@ -4986,7 +5047,6 @@ export const returnIDApple = (name) => {
     return 36668;
   } else if (name.indexOf("16 pro max 512 white") != -1) {
     return 36672;
-
   } else if (name.indexOf("16e 128 black") != -1) {
     return 38256;
   } else if (name.indexOf("16e 128 white") != -1) {
