@@ -561,7 +561,7 @@ export const returnIDXiaomi = (name) => {
     return 37847;
   } else if (name.indexOf("poco x7 pro 12/512 green") != -1) {
     return 37848;
-// Watch
+    // Watch
   } else if (name.indexOf("redmi watch 3 black") != -1) {
     return 26348;
   } else if (name.indexOf("redmi watch 3 white") != -1) {
@@ -2331,6 +2331,30 @@ export const returnIDXiaomi = (name) => {
     return 37092;
 
     //  Mi 15
+  } else if (name.indexOf("mi 15 ultra 12/256 black") != -1) {
+    return 38447;
+  } else if (name.indexOf("mi 15 ultra 12/256 green") != -1) {
+    return 38448;
+  } else if (name.indexOf("mi 15 ultra 12/256 silver") != -1) {
+    return 38449;
+  } else if (name.indexOf("mi 15 ultra 12/256 white") != -1) {
+    return 38450;
+  } else if (name.indexOf("mi 15 ultra 16/1tb black") != -1) {
+    return 38463;
+  } else if (name.indexOf("mi 15 ultra 16/1tb green") != -1) {
+    return 38464;
+  } else if (name.indexOf("mi 15 ultra 16/1tb silver") != -1) {
+    return 38465;
+  } else if (name.indexOf("mi 15 ultra 16/1tb white") != -1) {
+    return 38466;
+  } else if (name.indexOf("mi 15 ultra 16/512 black") != -1) {
+    return 38455;
+  } else if (name.indexOf("mi 15 ultra 16/512 green") != -1) {
+    return 38456;
+  } else if (name.indexOf("mi 15 ultra 16/512 silver") != -1) {
+    return 38457;
+  } else if (name.indexOf("mi 15 ultra 16/512 white") != -1) {
+    return 38458;
   } else if (
     name.indexOf("mi 15 pro") != -1 &&
     name.indexOf("12/256") != -1 &&
