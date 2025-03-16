@@ -1,8 +1,14 @@
 export const returnFixNameRootOpt = (name) => {
   const replaceTablet = name.replace("Планшет ", "");
   const replaceSmartphone = replaceTablet.replace("Смартфон ", "");
-  const replaceAcusticSystem = replaceSmartphone.replace("Портативная акустическая система ", "");
-  const replaceHeadphoneBluetooth = replaceAcusticSystem.replace("Наушники беспроводные ", "");
+  const replaceAcusticSystem = replaceSmartphone.replace(
+    "Портативная акустическая система ",
+    ""
+  );
+  const replaceHeadphoneBluetooth = replaceAcusticSystem.replace(
+    "Наушники беспроводные ",
+    ""
+  );
   const replaceHeadphone = replaceHeadphoneBluetooth.replace("Наушники ", "");
   const replaceSmartWatch = replaceHeadphone.replace("Смарт-часы ", "");
   const replaceGb = replaceSmartWatch.replace("Gb", "");
@@ -36,12 +42,27 @@ export const returnFixNameRootOpt = (name) => {
   const fixLilac = fixMint.replace("Сирень", "Lilac");
   const fixGraphite = fixLilac.replace("Графит", "Graphite");
   const fixGold = fixGraphite.replace("Золотой", "Gold");
-  const fixSilver = fixGold.replace("Серебро", "Silver");
-  const fixLightBlue = fixSilver.indexOf("A55 ") !== -1 ? fixSilver.replace("Голубой", "Light Blue") : fixSilver.replace("Голубой", "Iceblue")
+  const fixTb = fixGold.replace(" ТБ", "Tb");
+  const fixDot = fixTb.replace(",", "");
+  const fixFold6 = fixDot.replace("Fold6", "Fold 6");
+  const fixFlip6 = fixFold6.replace("Flip6", "Flip 6");
+  const fixSilver = fixFlip6.replace("Серебро", "Silver");
+  const fixS25Icyblue =
+    fixSilver.indexOf("S25") !== -1
+      ? fixSilver.replace("Ice Blue", "icyblue")
+      : fixSilver;
+  const fixLightBlue =
+    fixS25Icyblue.indexOf("A55 ") !== -1
+      ? fixS25Icyblue.replace("Голубой", "Light Blue")
+      : fixS25Icyblue.replace("Голубой", "Iceblue");
 
   const fixS10 = fixLightBlue.replace("Series 10", "S10");
-  const fixPoco5G = (fixS10.indexOf("POCO") !== -1 || fixS10.indexOf("Galaxy") !== -1) ? fixS10.replace("5G ", "") : fixS10
-  const fixPocoEU = fixPoco5G.indexOf("POCO") !== -1 ? fixPoco5G.replace("EU", "") : fixPoco5G
+  const fixPoco5G =
+    fixS10.indexOf("POCO") !== -1 || fixS10.indexOf("Galaxy") !== -1
+      ? fixS10.replace("5G ", "")
+      : fixS10;
+  const fixPocoEU =
+    fixPoco5G.indexOf("POCO") !== -1 ? fixPoco5G.replace("EU", "") : fixPoco5G;
 
   return fixPocoEU;
 };

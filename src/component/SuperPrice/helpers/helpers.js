@@ -33,7 +33,9 @@ export const fixNameSuperPrice = (name) => {
       ? fixA35Awesome.replace("5G ", "")
       : fixA35Awesome;
   const fixPixel5G =
-    fixXperia5G.indexOf("Pixel") != -1
+    (fixXperia5G.indexOf("Pixel") != -1 ||
+    fixXperia5G.indexOf("M55") != -1 ||
+    fixXperia5G.indexOf("S21") != -1)
       ? fixXperia5G.replace("5G ", "")
       : fixXperia5G;
   const fixSilver = fixPixel5G.replace("Platinum Silver 12/512", "12/512 Platinum Silver");

@@ -6,7 +6,9 @@ export const returnFixNameDiscount = (name) => {
   const replaceMi12 = replaceMi12Lite.replace("12 5G ", "Mi 12 ");
   const replaceMi13 = replaceMi12.replace("13 5G ", "Mi 13 ");
   const replaceMi14 = replaceMi13.replace("14 5G ", "Mi 14 ");
-  const replaceGB = replaceMi14.replace("GB", "");
+  const fixiPadLTE = replaceMi14.indexOf("iPad") !== -1 ? replaceMi14.replace("5G", "LTE") : replaceMi14
+  
+  const replaceGB = fixiPadLTE.replace("GB", "");
   const replace4G = replaceGB.replace("4G ", "");
   const replaceProPlus = replace4G.replace("Pro+", "Pro +");
   const replaceAwesome = replaceProPlus.replace("Awesome ", "");

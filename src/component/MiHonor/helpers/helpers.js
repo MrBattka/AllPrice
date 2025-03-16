@@ -53,7 +53,8 @@ export const fixNameMihonor = (name) => {
   const removeNewIcon = removeDoubleSpace.replace("🆕", "");
 
   const removeGB = removeNewIcon.replace("GB", "");
-  const remove264 = removeGB.replace("2+64", "2/64");
+  const removeGb = removeGB.replace("Gb", "");
+  const remove264 = removeGb.replace("2+64", "2/64");
   const remove2128 = remove264.replace("2+128", "2/128");
   const remove464 = remove2128.replace("4+64", "4/64");
   const remove4128 = remove464.replace("4+128", "4/128");
@@ -96,7 +97,9 @@ export const fixNameMihonor = (name) => {
   const fix4128 = fix6128.replace("4 128", "4/128");
   const fix121024 = fix4128.replace("12+1024", "12/1tb");
   const fix364 = fix121024.replace("3+64", "3/64");
-  const fix12512 = fix364.replace("12+ 512", "12/512");
+  const fixNote14ProPlus = fix364.replace("NOTE 14 PRO PLUS", "NOTE 14 PRO +");
+  const replace5G = (fixNote14ProPlus.indexOf("X7") !== -1) ? fixNote14ProPlus.replace("5G ", "") : fixNote14ProPlus
+  const fix12512 = replace5G.replace("12+ 512", "12/512");
   
   return fix12512;
 };

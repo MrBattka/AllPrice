@@ -4,13 +4,13 @@ export const baseFix = (el) => {
     (el.Модификация?.indexOf("16 128") != -1 ||
       el.Модификация?.indexOf("16 256") != -1 ||
       el.Модификация?.indexOf("16 512") != -1 ||
-      el.Модификация?.indexOf("16 pro") != -1 ||
-      el.Модификация?.indexOf("16 plus") != -1 ||
+      el.Модификация?.indexOf("16 Pro") != -1 ||
+      el.Модификация?.indexOf("16 Plus") != -1 ||
       el.Модификация?.indexOf("15 128") != -1 ||
       el.Модификация?.indexOf("15 256") != -1 ||
       el.Модификация?.indexOf("15 512") != -1 ||
-      el.Модификация?.indexOf("15 pro") != -1 ||
-      el.Модификация?.indexOf("15 plus") != -1)
+      el.Модификация?.indexOf("15 Pro") != -1 ||
+      el.Модификация?.indexOf("15 Plus") != -1)
     ? el.Модификация?.indexOf("🇺🇸") == -1
     : el.Модификация &&
       el.Модификация?.indexOf("airpods") != -1 &&
@@ -49,7 +49,7 @@ export const baseFix = (el) => {
       el.Модификация?.indexOf("HERO 12 Creator Edition") == -1 &&
       el.Модификация?.indexOf("HERO 12 Special Bundle") == -1 &&
       el.Модификация?.indexOf("Honor") == -1 &&
-      el.Модификация?.indexOf("HUAWEI") == -1 &&
+      el.Модификация?.indexOf("freebuds") == -1 &&
       el.Модификация?.indexOf("Soundgear") == -1 &&
       el.Модификация?.indexOf("Go 3") == -1 &&
       el.Модификация?.indexOf("Nothing") == -1 &&
@@ -106,6 +106,9 @@ export const baseFix = (el) => {
       el.Модификация?.indexOf("ремешок") == -1 &&
       el.Модификация?.indexOf("blackview") == -1 &&
       el.Модификация?.indexOf("Asis") == -1 &&
+      el.Модификация?.indexOf("FreeBuds") == -1 &&
+      el.Модификация?.indexOf("Pixel Buds") == -1 &&
+      el.Модификация?.indexOf("OnePlus Buds") == -1 &&
       el.Модификация &&
       el !== "Товар";
 };
@@ -205,7 +208,10 @@ export const baseFixHi = (el) => {
       el.name?.indexOf("короб") == -1 &&
       el.name?.indexOf("🎵 Airpods") == -1 &&
       el.name?.indexOf("Asis") == -1 &&
-      el.name?.indexOf("ремешок") == -1;
+      el.name?.indexOf("Asis") == -1 &&
+      el.name?.indexOf("Pixel Buds") == -1 &&
+      el.name?.indexOf("OnePlus Buds") == -1 &&
+      el.name?.indexOf("FreeBuds") == -1;
 };
 
 export const baseFixMiHonor = (el) => {
@@ -223,7 +229,7 @@ export const baseFixMiHonor = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -233,60 +239,63 @@ export const baseFixMiHonor = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("оптом") == -1 &&
-        toLowerCase.indexOf("———") == -1 &&
-        toLowerCase.indexOf("желаем") == -1 &&
-        toLowerCase.indexOf("mihonor") == -1 &&
-        toLowerCase.indexOf("доброе") == -1 &&
-        toLowerCase.indexOf("планшеты") == -1 &&
-        toLowerCase.indexOf("телефоны") == -1 &&
-        toLowerCase.indexOf("заказать") == -1 &&
-        toLowerCase.indexOf("bekkorolev") == -1 &&
-        toLowerCase.indexOf("+7-") == -1 &&
-        toLowerCase.indexOf("самовывоз") == -1 &&
-        toLowerCase.indexOf("тихорецкий") == -1 &&
-        toLowerCase.indexOf("*") == -1 &&
-        toLowerCase.indexOf("от") == -1 &&
-        toLowerCase.indexOf("электросамокат") == -1 &&
-        (toLowerCase === "wi-fi  "
-          ? toLowerCase.indexOf("wi-fi") == -1
-          : toLowerCase) &&
-        toLowerCase?.indexOf("царапин") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf('""') == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("оптом") == -1 &&
+      toLowerCase.indexOf("———") == -1 &&
+      toLowerCase.indexOf("желаем") == -1 &&
+      toLowerCase.indexOf("mihonor") == -1 &&
+      toLowerCase.indexOf("доброе") == -1 &&
+      toLowerCase.indexOf("планшеты") == -1 &&
+      toLowerCase.indexOf("телефоны") == -1 &&
+      toLowerCase.indexOf("заказать") == -1 &&
+      toLowerCase.indexOf("bekkorolev") == -1 &&
+      toLowerCase.indexOf("+7-") == -1 &&
+      toLowerCase.indexOf("самовывоз") == -1 &&
+      toLowerCase.indexOf("тихорецкий") == -1 &&
+      toLowerCase.indexOf("*") == -1 &&
+      toLowerCase.indexOf("от") == -1 &&
+      toLowerCase.indexOf("электросамокат") == -1 &&
+      (toLowerCase === "wi-fi  "
+        ? toLowerCase.indexOf("wi-fi") == -1
+        : toLowerCase) &&
+      toLowerCase?.indexOf("царапин") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf('""') == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixVsemi = (el) => {
@@ -375,6 +384,9 @@ export const baseFixVsemi = (el) => {
       toLowerCase.indexOf("телефоны") == -1 &&
       toLowerCase.indexOf("vsemi") == -1 &&
       toLowerCase.indexOf("прош") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -439,10 +451,13 @@ export const baseFixSuperPrice = (el) => {
       toLowerCase.indexOf("🇪🇺 xiaomi 🇪🇺") == -1 &&
       toLowerCase?.indexOf("blackview") == -1 &&
       toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
-      (toLowerCase === "huawei"
-        ? toLowerCase.indexOf("huawei") == -1
+      (toLowerCase === "freebuds"
+        ? toLowerCase.indexOf("freebuds") == -1
         : toLowerCase) &&
       (toLowerCase === "airpods 2"
         ? toLowerCase.indexOf("airpods 2") == -1
@@ -522,6 +537,9 @@ export const baseFixGarmin = (el) => {
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase.indexOf("fenix 8") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -624,6 +642,9 @@ export const baseFixS5 = (el) => {
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase?.indexOf("ремешок") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("🔫🔫") == -1;
 };
 
@@ -685,6 +706,9 @@ export const baseFixRPTrade = (el) => {
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase.indexOf("смартфоны") == -1 &&
       toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -726,7 +750,7 @@ export const baseFixRacmag = (el) => {
       toLowerCase.indexOf("realme") == -1 &&
       toLowerCase.indexOf("infinix") == -1 &&
       toLowerCase.indexOf("honor") == -1 &&
-      toLowerCase.indexOf("huawei") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
       toLowerCase.indexOf("tecno") == -1 &&
       toLowerCase.indexOf("samsung") == -1 &&
       toLowerCase.indexOf("планшеты") == -1 &&
@@ -762,6 +786,9 @@ export const baseFixRacmag = (el) => {
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase.indexOf("blackview") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -862,6 +889,9 @@ export const baseFixArti = (el) => {
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase.indexOf("cmf phone") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -926,6 +956,9 @@ export const baseFixElectrozon = (el) => {
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase.indexOf("xenium") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -1020,6 +1053,9 @@ export const baseFixReSale = (el) => {
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase.indexOf("⚡️") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -1038,16 +1074,16 @@ export const baseFixTagir = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
-    (toLowerCase?.indexOf("left") != -1 ||
-      toLowerCase?.indexOf("левый") != -1 ||
-      toLowerCase?.indexOf("right") != -1 ||
-      toLowerCase?.indexOf("правый") != -1 ||
-      toLowerCase?.indexOf("case") != -1 ||
-      toLowerCase?.indexOf("кейс") != -1 ||
-      toLowerCase?.indexOf("box") != -1)
-  ? toLowerCase?.indexOf("airpods") == -1
-  : toLowerCase &&
+      toLowerCase?.indexOf("airpods") != -1 &&
+      (toLowerCase?.indexOf("left") != -1 ||
+        toLowerCase?.indexOf("левый") != -1 ||
+        toLowerCase?.indexOf("right") != -1 ||
+        toLowerCase?.indexOf("правый") != -1 ||
+        toLowerCase?.indexOf("case") != -1 ||
+        toLowerCase?.indexOf("кейс") != -1 ||
+        toLowerCase?.indexOf("box") != -1)
+    ? toLowerCase?.indexOf("airpods") == -1
+    : toLowerCase &&
       toLowerCase.indexOf("00") != -1 &&
       toLowerCase?.indexOf("царапин") == -1 &&
       toLowerCase?.indexOf("ремонт") == -1 &&
@@ -1081,6 +1117,9 @@ export const baseFixTagir = (el) => {
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase.indexOf("шт") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -1099,16 +1138,16 @@ export const baseFixNarod = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-     toLowerCase?.indexOf("airpods") != -1 &&
-    (toLowerCase?.indexOf("left") != -1 ||
-      toLowerCase?.indexOf("левый") != -1 ||
-      toLowerCase?.indexOf("right") != -1 ||
-      toLowerCase?.indexOf("правый") != -1 ||
-      toLowerCase?.indexOf("case") != -1 ||
-      toLowerCase?.indexOf("кейс") != -1 ||
-      toLowerCase?.indexOf("box") != -1)
-  ? toLowerCase?.indexOf("airpods") == -1
-  : toLowerCase &&
+      toLowerCase?.indexOf("airpods") != -1 &&
+      (toLowerCase?.indexOf("left") != -1 ||
+        toLowerCase?.indexOf("левый") != -1 ||
+        toLowerCase?.indexOf("right") != -1 ||
+        toLowerCase?.indexOf("правый") != -1 ||
+        toLowerCase?.indexOf("case") != -1 ||
+        toLowerCase?.indexOf("кейс") != -1 ||
+        toLowerCase?.indexOf("box") != -1)
+    ? toLowerCase?.indexOf("airpods") == -1
+    : toLowerCase &&
       toLowerCase.indexOf("00") != -1 &&
       toLowerCase?.indexOf("царапин") == -1 &&
       toLowerCase?.indexOf("ремонт") == -1 &&
@@ -1142,6 +1181,9 @@ export const baseFixNarod = (el) => {
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase.indexOf("шт") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -1159,8 +1201,8 @@ export const baseFixF51 = (el) => {
       toLowerCase?.indexOf("15 pro") != -1 ||
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
-    : toLowerCase && 
-    toLowerCase?.indexOf("airpods") != -1 &&
+    : toLowerCase &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -1202,6 +1244,9 @@ export const baseFixF51 = (el) => {
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase.indexOf("шт") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -1220,7 +1265,7 @@ export const baseFixOther = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -1230,77 +1275,80 @@ export const baseFixOther = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf('"a"') == -1 &&
-        toLowerCase.indexOf('"b"') == -1 &&
-        toLowerCase.indexOf('"c"') == -1 &&
-        toLowerCase.indexOf('"a+"') == -1 &&
-        toLowerCase.indexOf('"b+"') == -1 &&
-        toLowerCase.indexOf('"c+"') == -1 &&
-        toLowerCase.indexOf('"a-"') == -1 &&
-        toLowerCase.indexOf('"b-"') == -1 &&
-        toLowerCase.indexOf('"c-"') == -1 &&
-        toLowerCase.indexOf("царапин") == -1 &&
-        toLowerCase.indexOf("ремонт") == -1 &&
-        toLowerCase.indexOf("потертости") == -1 &&
-        toLowerCase.indexOf("скол") == -1 &&
-        toLowerCase.indexOf("пятна") == -1 &&
-        toLowerCase.indexOf("замена") == -1 &&
-        toLowerCase.indexOf("пиксель") == -1 &&
-        toLowerCase.indexOf("на экране") == -1 &&
-        toLowerCase.indexOf("мятый") == -1 &&
-        toLowerCase.indexOf("Мятый") == -1 &&
-        toLowerCase.indexOf("открытый") == -1 &&
-        toLowerCase.indexOf("дефект") == -1 &&
-        toLowerCase.indexOf("вскрыт") == -1 &&
-        toLowerCase.indexOf("реболл") == -1 &&
-        toLowerCase.indexOf("No charger") == -1 &&
-        toLowerCase.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase.indexOf("Мятый") == -1 &&
-        toLowerCase.indexOf("мятый") == -1 &&
-        toLowerCase.indexOf("без пломб") == -1 &&
-        toLowerCase.indexOf("прошит") == -1 &&
-        toLowerCase.indexOf("вскрыт") == -1 &&
-        toLowerCase.indexOf("угол") == -1 &&
-        toLowerCase.indexOf("прошит") == -1 &&
-        toLowerCase.indexOf("потерто") == -1 &&
-        toLowerCase.indexOf("экран") == -1 &&
-        toLowerCase.indexOf("realme") == -1 &&
-        toLowerCase.indexOf("актив") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase.indexOf("уцен") == -1 &&
-        toLowerCase.indexOf("обме") == -1 &&
-        toLowerCase.indexOf("короб") == -1 &&
-        toLowerCase.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf("новые") == -1 &&
-        toLowerCase.indexOf("запак") == -1 &&
-        toLowerCase.indexOf("фото") == -1 &&
-        toLowerCase.indexOf('""') == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type - c box") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type - c r") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type - c l") == -1 &&
-        toLowerCase.indexOf("airpods pro   r") == -1 &&
-        toLowerCase.indexOf("airpods pro l") == -1 &&
-        toLowerCase.indexOf("airpods 3 box") == -1 &&
-        toLowerCase.indexOf("airpods 3 r") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase.indexOf("airpods 3  r") == -1 &&
-        (toLowerCase.indexOf("airpods 3 l") != -1 &&
-        toLowerCase.indexOf("li") == -1
-          ? toLowerCase.indexOf("airpods 3 l") == -1
-          : toLowerCase) &&
-        (toLowerCase.indexOf("airpods 3  l") != -1 &&
-        toLowerCase.indexOf("li") == -1
-          ? toLowerCase.indexOf("airpods 3  l") == -1
-          : toLowerCase) &&
-        toLowerCase.indexOf("airpods 2 l") == -1 &&
-        toLowerCase.indexOf("airpods 2 box") == -1 &&
-        toLowerCase.indexOf("airpods 2 r") == -1 &&
-        toLowerCase.indexOf("airpods pro usb - c box") == -1 &&
-        toLowerCase.indexOf("airpods pro usb - c l") == -1 &&
-        toLowerCase.indexOf("airpods pro usb - c r") == -1 &&
-        toLowerCase.indexOf("deppo") == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf('"a"') == -1 &&
+      toLowerCase.indexOf('"b"') == -1 &&
+      toLowerCase.indexOf('"c"') == -1 &&
+      toLowerCase.indexOf('"a+"') == -1 &&
+      toLowerCase.indexOf('"b+"') == -1 &&
+      toLowerCase.indexOf('"c+"') == -1 &&
+      toLowerCase.indexOf('"a-"') == -1 &&
+      toLowerCase.indexOf('"b-"') == -1 &&
+      toLowerCase.indexOf('"c-"') == -1 &&
+      toLowerCase.indexOf("царапин") == -1 &&
+      toLowerCase.indexOf("ремонт") == -1 &&
+      toLowerCase.indexOf("потертости") == -1 &&
+      toLowerCase.indexOf("скол") == -1 &&
+      toLowerCase.indexOf("пятна") == -1 &&
+      toLowerCase.indexOf("замена") == -1 &&
+      toLowerCase.indexOf("пиксель") == -1 &&
+      toLowerCase.indexOf("на экране") == -1 &&
+      toLowerCase.indexOf("мятый") == -1 &&
+      toLowerCase.indexOf("Мятый") == -1 &&
+      toLowerCase.indexOf("открытый") == -1 &&
+      toLowerCase.indexOf("дефект") == -1 &&
+      toLowerCase.indexOf("вскрыт") == -1 &&
+      toLowerCase.indexOf("реболл") == -1 &&
+      toLowerCase.indexOf("No charger") == -1 &&
+      toLowerCase.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase.indexOf("Мятый") == -1 &&
+      toLowerCase.indexOf("мятый") == -1 &&
+      toLowerCase.indexOf("без пломб") == -1 &&
+      toLowerCase.indexOf("прошит") == -1 &&
+      toLowerCase.indexOf("вскрыт") == -1 &&
+      toLowerCase.indexOf("угол") == -1 &&
+      toLowerCase.indexOf("прошит") == -1 &&
+      toLowerCase.indexOf("потерто") == -1 &&
+      toLowerCase.indexOf("экран") == -1 &&
+      toLowerCase.indexOf("realme") == -1 &&
+      toLowerCase.indexOf("актив") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase.indexOf("уцен") == -1 &&
+      toLowerCase.indexOf("обме") == -1 &&
+      toLowerCase.indexOf("короб") == -1 &&
+      toLowerCase.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf("новые") == -1 &&
+      toLowerCase.indexOf("запак") == -1 &&
+      toLowerCase.indexOf("фото") == -1 &&
+      toLowerCase.indexOf('""') == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type - c box") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type - c r") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type - c l") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("airpods pro   r") == -1 &&
+      toLowerCase.indexOf("airpods pro l") == -1 &&
+      toLowerCase.indexOf("airpods 3 box") == -1 &&
+      toLowerCase.indexOf("airpods 3 r") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase.indexOf("airpods 3  r") == -1 &&
+      (toLowerCase.indexOf("airpods 3 l") != -1 &&
+      toLowerCase.indexOf("li") == -1
+        ? toLowerCase.indexOf("airpods 3 l") == -1
+        : toLowerCase) &&
+      (toLowerCase.indexOf("airpods 3  l") != -1 &&
+      toLowerCase.indexOf("li") == -1
+        ? toLowerCase.indexOf("airpods 3  l") == -1
+        : toLowerCase) &&
+      toLowerCase.indexOf("airpods 2 l") == -1 &&
+      toLowerCase.indexOf("airpods 2 box") == -1 &&
+      toLowerCase.indexOf("airpods 2 r") == -1 &&
+      toLowerCase.indexOf("airpods pro usb - c box") == -1 &&
+      toLowerCase.indexOf("airpods pro usb - c l") == -1 &&
+      toLowerCase.indexOf("airpods pro usb - c r") == -1 &&
+      toLowerCase.indexOf("deppo") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixBase = (el) => {
@@ -1317,8 +1365,8 @@ export const baseFixBase = (el) => {
       toLowerCase?.indexOf("15 pro") != -1 ||
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
-    : toLowerCase && 
-    toLowerCase?.indexOf("airpods") != -1 &&
+    : toLowerCase &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -1368,6 +1416,9 @@ export const baseFixBase = (el) => {
       toLowerCase.indexOf("обменка") == -1 &&
       toLowerCase?.indexOf("rfb") == -1 &&
       toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase?.indexOf("пломба") == -1 &&
@@ -1456,6 +1507,9 @@ export const baseFixDiscount = (el) => {
       toLowerCase?.indexOf("xbox джойстик") == -1 &&
       toLowerCase?.indexOf("earpods") == -1 &&
       toLowerCase?.indexOf("s6 4") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase?.indexOf("rfb") == -1 &&
       toLowerCase?.indexOf("vr") == -1 &&
       toLowerCase?.indexOf("se2 6") == -1 &&
@@ -1477,7 +1531,7 @@ export const baseFixMiOpts = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -1487,79 +1541,82 @@ export const baseFixMiOpts = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("оптом") == -1 &&
-        toLowerCase.indexOf("miopt") == -1 &&
-        toLowerCase.indexOf("метро") == -1 &&
-        toLowerCase.indexOf("тяк") == -1 &&
-        toLowerCase.indexOf("мелочей") == -1 &&
-        toLowerCase.indexOf("магазин") == -1 &&
-        toLowerCase.indexOf("прайс") == -1 &&
-        toLowerCase.indexOf("пишите") == -1 &&
-        toLowerCase.indexOf("📞") == -1 &&
-        toLowerCase.indexOf("rustam") == -1 &&
-        toLowerCase.indexOf("📱") == -1 &&
-        toLowerCase.indexOf("🔌") == -1 &&
-        toLowerCase.indexOf("🇷🇺🇷🇺") == -1 &&
-        toLowerCase.indexOf("armor") == -1 &&
-        toLowerCase.indexOf("📲") == -1 &&
-        toLowerCase.indexOf("канал") == -1 &&
-        toLowerCase.indexOf("t.me") == -1 &&
-        toLowerCase.indexOf("samsung") == -1 &&
-        toLowerCase.indexOf("note🇷🇺") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase.indexOf("poco🇷🇺") == -1 &&
-        toLowerCase.indexOf("mi 🇷🇺") == -1 &&
-        toLowerCase.indexOf("от") == -1 &&
-        toLowerCase.indexOf("pad🇷🇺") == -1 &&
-        toLowerCase.indexOf("iphone🇪🇺") == -1 &&
-        (toLowerCase === "honor🇷🇺"
-          ? toLowerCase.indexOf("honor🇷🇺") == -1
-          : toLowerCase) &&
-        (toLowerCase === "itel🇷🇺"
-          ? toLowerCase.indexOf("itel🇷🇺") == -1
-          : toLowerCase) &&
-        (toLowerCase === "realme🇷🇺"
-          ? toLowerCase.indexOf("realme🇷🇺") == -1
-          : toLowerCase) &&
-        (toLowerCase === "tecno🇷🇺"
-          ? toLowerCase.indexOf("tecno🇷🇺") == -1
-          : toLowerCase) &&
-        toLowerCase?.indexOf("царапин") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf('""') == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("оптом") == -1 &&
+      toLowerCase.indexOf("miopt") == -1 &&
+      toLowerCase.indexOf("метро") == -1 &&
+      toLowerCase.indexOf("тяк") == -1 &&
+      toLowerCase.indexOf("мелочей") == -1 &&
+      toLowerCase.indexOf("магазин") == -1 &&
+      toLowerCase.indexOf("прайс") == -1 &&
+      toLowerCase.indexOf("пишите") == -1 &&
+      toLowerCase.indexOf("📞") == -1 &&
+      toLowerCase.indexOf("rustam") == -1 &&
+      toLowerCase.indexOf("📱") == -1 &&
+      toLowerCase.indexOf("🔌") == -1 &&
+      toLowerCase.indexOf("🇷🇺🇷🇺") == -1 &&
+      toLowerCase.indexOf("armor") == -1 &&
+      toLowerCase.indexOf("📲") == -1 &&
+      toLowerCase.indexOf("канал") == -1 &&
+      toLowerCase.indexOf("t.me") == -1 &&
+      toLowerCase.indexOf("samsung") == -1 &&
+      toLowerCase.indexOf("note🇷🇺") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase.indexOf("poco🇷🇺") == -1 &&
+      toLowerCase.indexOf("mi 🇷🇺") == -1 &&
+      toLowerCase.indexOf("от") == -1 &&
+      toLowerCase.indexOf("pad🇷🇺") == -1 &&
+      toLowerCase.indexOf("iphone🇪🇺") == -1 &&
+      (toLowerCase === "honor🇷🇺"
+        ? toLowerCase.indexOf("honor🇷🇺") == -1
+        : toLowerCase) &&
+      (toLowerCase === "itel🇷🇺"
+        ? toLowerCase.indexOf("itel🇷🇺") == -1
+        : toLowerCase) &&
+      (toLowerCase === "realme🇷🇺"
+        ? toLowerCase.indexOf("realme🇷🇺") == -1
+        : toLowerCase) &&
+      (toLowerCase === "tecno🇷🇺"
+        ? toLowerCase.indexOf("tecno🇷🇺") == -1
+        : toLowerCase) &&
+      toLowerCase?.indexOf("царапин") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf('""') == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixLowPrice = (el) => {
@@ -1578,7 +1635,7 @@ export const baseFixLowPrice = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -1588,77 +1645,80 @@ export const baseFixLowPrice = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("24.05.2023") == -1 &&
-        toLowerCase.indexOf("🔥") == -1 &&
-        toLowerCase.indexOf("фен") == -1 &&
-        toLowerCase.indexOf("выпрямитель") == -1 &&
-        toLowerCase.indexOf("пылесос") == -1 &&
-        toLowerCase.indexOf("аксессуары") == -1 &&
-        toLowerCase.indexOf("насадка") == -1 &&
-        toLowerCase.indexOf("watch 2") == -1 &&
-        toLowerCase.indexOf("ctoned") == -1 &&
-        toLowerCase.indexOf("accessories") == -1 &&
-        toLowerCase.indexOf("📱") == -1 &&
-        toLowerCase.indexOf("🔌") == -1 &&
-        toLowerCase.indexOf("🇷🇺🇷🇺") == -1 &&
-        toLowerCase.indexOf("armor") == -1 &&
-        toLowerCase.indexOf("29.05.2023") == -1 &&
-        toLowerCase.indexOf("✁") == -1 &&
-        toLowerCase.indexOf("samsung") == -1 &&
-        toLowerCase.indexOf("гарантия") == -1 &&
-        toLowerCase.indexOf("poco🇷🇺") == -1 &&
-        toLowerCase.indexOf("mi 🇷🇺") == -1 &&
-        toLowerCase.indexOf("от") == -1 &&
-        toLowerCase.indexOf("pad🇷🇺") == -1 &&
-        toLowerCase.indexOf("iphone🇪🇺") == -1 &&
-        (toLowerCase === "honor🇷🇺"
-          ? toLowerCase.indexOf("honor🇷🇺") == -1
-          : toLowerCase) &&
-        (toLowerCase === "itel🇷🇺"
-          ? toLowerCase.indexOf("itel🇷🇺") == -1
-          : toLowerCase) &&
-        (toLowerCase === "realme🇷🇺"
-          ? toLowerCase.indexOf("realme🇷🇺") == -1
-          : toLowerCase) &&
-        (toLowerCase === "tecno🇷🇺"
-          ? toLowerCase.indexOf("tecno🇷🇺") == -1
-          : toLowerCase) &&
-        toLowerCase?.indexOf("царапин") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase.indexOf('""') == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("24.05.2023") == -1 &&
+      toLowerCase.indexOf("🔥") == -1 &&
+      toLowerCase.indexOf("фен") == -1 &&
+      toLowerCase.indexOf("выпрямитель") == -1 &&
+      toLowerCase.indexOf("пылесос") == -1 &&
+      toLowerCase.indexOf("аксессуары") == -1 &&
+      toLowerCase.indexOf("насадка") == -1 &&
+      toLowerCase.indexOf("watch 2") == -1 &&
+      toLowerCase.indexOf("ctoned") == -1 &&
+      toLowerCase.indexOf("accessories") == -1 &&
+      toLowerCase.indexOf("📱") == -1 &&
+      toLowerCase.indexOf("🔌") == -1 &&
+      toLowerCase.indexOf("🇷🇺🇷🇺") == -1 &&
+      toLowerCase.indexOf("armor") == -1 &&
+      toLowerCase.indexOf("29.05.2023") == -1 &&
+      toLowerCase.indexOf("✁") == -1 &&
+      toLowerCase.indexOf("samsung") == -1 &&
+      toLowerCase.indexOf("гарантия") == -1 &&
+      toLowerCase.indexOf("poco🇷🇺") == -1 &&
+      toLowerCase.indexOf("mi 🇷🇺") == -1 &&
+      toLowerCase.indexOf("от") == -1 &&
+      toLowerCase.indexOf("pad🇷🇺") == -1 &&
+      toLowerCase.indexOf("iphone🇪🇺") == -1 &&
+      (toLowerCase === "honor🇷🇺"
+        ? toLowerCase.indexOf("honor🇷🇺") == -1
+        : toLowerCase) &&
+      (toLowerCase === "itel🇷🇺"
+        ? toLowerCase.indexOf("itel🇷🇺") == -1
+        : toLowerCase) &&
+      (toLowerCase === "realme🇷🇺"
+        ? toLowerCase.indexOf("realme🇷🇺") == -1
+        : toLowerCase) &&
+      (toLowerCase === "tecno🇷🇺"
+        ? toLowerCase.indexOf("tecno🇷🇺") == -1
+        : toLowerCase) &&
+      toLowerCase?.indexOf("царапин") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase.indexOf('""') == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixL27 = (el) => {
@@ -1676,7 +1736,7 @@ export const baseFixL27 = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -1686,94 +1746,97 @@ export const baseFixL27 = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("николай") == -1 &&
-        toLowerCase.indexOf("заказ") == -1 &&
-        toLowerCase.indexOf("@") == -1 &&
-        toLowerCase.indexOf("л27") == -1 &&
-        toLowerCase.indexOf("по") == -1 &&
-        toLowerCase.indexOf("рублей") == -1 &&
-        toLowerCase.indexOf("картой") == -1 &&
-        toLowerCase.indexOf("гарантия") == -1 &&
-        toLowerCase.indexOf("сертификат") == -1 &&
-        toLowerCase.indexOf("обслуживание") == -1 &&
-        toLowerCase.indexOf("macbook") == -1 &&
-        toLowerCase.indexOf("apple") == -1 &&
-        toLowerCase.indexOf("🇷🇺🇷🇺") == -1 &&
-        toLowerCase.indexOf("armor") == -1 &&
-        toLowerCase.indexOf("29.05.2023") == -1 &&
-        toLowerCase.indexOf("✁") == -1 &&
-        toLowerCase.indexOf("iphone") == -1 &&
-        toLowerCase.indexOf("samsung") == -1 &&
-        toLowerCase.indexOf("гарантия") == -1 &&
-        toLowerCase.indexOf("poco🇷🇺") == -1 &&
-        toLowerCase.indexOf("mi 🇷🇺") == -1 &&
-        toLowerCase.indexOf("от") == -1 &&
-        toLowerCase.indexOf("pad🇷🇺") == -1 &&
-        toLowerCase.indexOf("iphone🇪🇺") == -1 &&
-        (toLowerCase === "honor🇷🇺"
-          ? toLowerCase.indexOf("honor🇷🇺") == -1
-          : toLowerCase) &&
-        (toLowerCase === "itel🇷🇺"
-          ? toLowerCase.indexOf("itel🇷🇺") == -1
-          : toLowerCase) &&
-        (toLowerCase === "realme🇷🇺"
-          ? toLowerCase.indexOf("realme🇷🇺") == -1
-          : toLowerCase) &&
-        (toLowerCase === "tecno🇷🇺"
-          ? toLowerCase.indexOf("tecno🇷🇺") == -1
-          : toLowerCase) &&
-        toLowerCase?.indexOf("царапин") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf(" r ") == -1 &&
-        toLowerCase.indexOf("airpods 2  l") == -1 &&
-        toLowerCase.indexOf("airpods 2  r") == -1 &&
-        toLowerCase.indexOf("airpods 3   r") == -1 &&
-        toLowerCase.indexOf("airpods 3   l") == -1 &&
-        toLowerCase.indexOf("airpods 4   r") == -1 &&
-        toLowerCase.indexOf("airpods 4  l") == -1 &&
-        toLowerCase.indexOf("airpods 4  box") == -1 &&
-        toLowerCase.indexOf("airpods 3  box") == -1 &&
-        toLowerCase.indexOf("airpods pro  l") == -1 &&
-        toLowerCase.indexOf("airpods pro  r") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 usb-c  l") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 usb-c box") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
-        toLowerCase.indexOf("airpods pro  l") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 usb-c  l") == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("николай") == -1 &&
+      toLowerCase.indexOf("заказ") == -1 &&
+      toLowerCase.indexOf("@") == -1 &&
+      toLowerCase.indexOf("л27") == -1 &&
+      toLowerCase.indexOf("по") == -1 &&
+      toLowerCase.indexOf("рублей") == -1 &&
+      toLowerCase.indexOf("картой") == -1 &&
+      toLowerCase.indexOf("гарантия") == -1 &&
+      toLowerCase.indexOf("сертификат") == -1 &&
+      toLowerCase.indexOf("обслуживание") == -1 &&
+      toLowerCase.indexOf("macbook") == -1 &&
+      toLowerCase.indexOf("apple") == -1 &&
+      toLowerCase.indexOf("🇷🇺🇷🇺") == -1 &&
+      toLowerCase.indexOf("armor") == -1 &&
+      toLowerCase.indexOf("29.05.2023") == -1 &&
+      toLowerCase.indexOf("✁") == -1 &&
+      toLowerCase.indexOf("iphone") == -1 &&
+      toLowerCase.indexOf("samsung") == -1 &&
+      toLowerCase.indexOf("гарантия") == -1 &&
+      toLowerCase.indexOf("poco🇷🇺") == -1 &&
+      toLowerCase.indexOf("mi 🇷🇺") == -1 &&
+      toLowerCase.indexOf("от") == -1 &&
+      toLowerCase.indexOf("pad🇷🇺") == -1 &&
+      toLowerCase.indexOf("iphone🇪🇺") == -1 &&
+      (toLowerCase === "honor🇷🇺"
+        ? toLowerCase.indexOf("honor🇷🇺") == -1
+        : toLowerCase) &&
+      (toLowerCase === "itel🇷🇺"
+        ? toLowerCase.indexOf("itel🇷🇺") == -1
+        : toLowerCase) &&
+      (toLowerCase === "realme🇷🇺"
+        ? toLowerCase.indexOf("realme🇷🇺") == -1
+        : toLowerCase) &&
+      (toLowerCase === "tecno🇷🇺"
+        ? toLowerCase.indexOf("tecno🇷🇺") == -1
+        : toLowerCase) &&
+      toLowerCase?.indexOf("царапин") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf(" r ") == -1 &&
+      toLowerCase.indexOf("airpods 2  l") == -1 &&
+      toLowerCase.indexOf("airpods 2  r") == -1 &&
+      toLowerCase.indexOf("airpods 3   r") == -1 &&
+      toLowerCase.indexOf("airpods 3   l") == -1 &&
+      toLowerCase.indexOf("airpods 4   r") == -1 &&
+      toLowerCase.indexOf("airpods 4  l") == -1 &&
+      toLowerCase.indexOf("airpods 4  box") == -1 &&
+      toLowerCase.indexOf("airpods 3  box") == -1 &&
+      toLowerCase.indexOf("airpods pro  l") == -1 &&
+      toLowerCase.indexOf("airpods pro  r") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 usb-c  l") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 usb-c box") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
+      toLowerCase.indexOf("airpods pro  l") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 usb-c  l") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixSunrise = (el) => {
@@ -1791,7 +1854,7 @@ export const baseFixSunrise = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -1801,62 +1864,65 @@ export const baseFixSunrise = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("восход") == -1 &&
-        toLowerCase.indexOf("💨") == -1 &&
-        toLowerCase.indexOf("вилка") == -1 &&
-        toLowerCase.indexOf("💬") == -1 &&
-        toLowerCase.indexOf("🔗") == -1 &&
-        toLowerCase.indexOf("⌚️") == -1 &&
-        toLowerCase.indexOf("совместимость") == -1 &&
-        toLowerCase.indexOf("шт") == -1 &&
-        toLowerCase?.indexOf("царапин") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf(" r ") == -1 &&
-        toLowerCase.indexOf("airpods 2  l") == -1 &&
-        toLowerCase.indexOf("airpods 2  r") == -1 &&
-        toLowerCase.indexOf("airpods 3   r") == -1 &&
-        toLowerCase.indexOf("airpods 3   l") == -1 &&
-        toLowerCase.indexOf("airpods 4   r") == -1 &&
-        toLowerCase.indexOf("airpods 4   l") == -1 &&
-        toLowerCase.indexOf("airpods 4  box") == -1 &&
-        toLowerCase.indexOf("airpods 3  box") == -1 &&
-        toLowerCase.indexOf("airpods pro l") == -1 &&
-        toLowerCase.indexOf("airpods pro r") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("восход") == -1 &&
+      toLowerCase.indexOf("💨") == -1 &&
+      toLowerCase.indexOf("вилка") == -1 &&
+      toLowerCase.indexOf("💬") == -1 &&
+      toLowerCase.indexOf("🔗") == -1 &&
+      toLowerCase.indexOf("⌚️") == -1 &&
+      toLowerCase.indexOf("совместимость") == -1 &&
+      toLowerCase.indexOf("шт") == -1 &&
+      toLowerCase?.indexOf("царапин") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf(" r ") == -1 &&
+      toLowerCase.indexOf("airpods 2  l") == -1 &&
+      toLowerCase.indexOf("airpods 2  r") == -1 &&
+      toLowerCase.indexOf("airpods 3   r") == -1 &&
+      toLowerCase.indexOf("airpods 3   l") == -1 &&
+      toLowerCase.indexOf("airpods 4   r") == -1 &&
+      toLowerCase.indexOf("airpods 4   l") == -1 &&
+      toLowerCase.indexOf("airpods 4  box") == -1 &&
+      toLowerCase.indexOf("airpods 3  box") == -1 &&
+      toLowerCase.indexOf("airpods pro l") == -1 &&
+      toLowerCase.indexOf("airpods pro r") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixInfinity = (el) => {
@@ -1874,7 +1940,7 @@ export const baseFixInfinity = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -1884,59 +1950,62 @@ export const baseFixInfinity = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("infinity") == -1 &&
-        toLowerCase.indexOf("блок") == -1 &&
-        toLowerCase.indexOf("вилка") == -1 &&
-        toLowerCase.indexOf("apple watch") == -1 &&
-        toLowerCase.indexOf("ultra 2 (2024)") == -1 &&
-        toLowerCase?.indexOf("царапин") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf(" r ") == -1 &&
-        toLowerCase.indexOf("airpods 2  l") == -1 &&
-        toLowerCase.indexOf("airpods 2  r") == -1 &&
-        toLowerCase.indexOf("airpods 3   r") == -1 &&
-        toLowerCase.indexOf("airpods 3   l") == -1 &&
-        toLowerCase.indexOf("airpods 4   r") == -1 &&
-        toLowerCase.indexOf("airpods 4   l") == -1 &&
-        toLowerCase.indexOf("airpods 4  box") == -1 &&
-        toLowerCase.indexOf("airpods 3  box") == -1 &&
-        toLowerCase.indexOf("airpods pro l") == -1 &&
-        toLowerCase.indexOf("airpods pro r") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("infinity") == -1 &&
+      toLowerCase.indexOf("блок") == -1 &&
+      toLowerCase.indexOf("вилка") == -1 &&
+      toLowerCase.indexOf("apple watch") == -1 &&
+      toLowerCase.indexOf("ultra 2 (2024)") == -1 &&
+      toLowerCase?.indexOf("царапин") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf(" r ") == -1 &&
+      toLowerCase.indexOf("airpods 2  l") == -1 &&
+      toLowerCase.indexOf("airpods 2  r") == -1 &&
+      toLowerCase.indexOf("airpods 3   r") == -1 &&
+      toLowerCase.indexOf("airpods 3   l") == -1 &&
+      toLowerCase.indexOf("airpods 4   r") == -1 &&
+      toLowerCase.indexOf("airpods 4   l") == -1 &&
+      toLowerCase.indexOf("airpods 4  box") == -1 &&
+      toLowerCase.indexOf("airpods 3  box") == -1 &&
+      toLowerCase.indexOf("airpods pro l") == -1 &&
+      toLowerCase.indexOf("airpods pro r") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixAlikson = (el) => {
@@ -1954,7 +2023,7 @@ export const baseFixAlikson = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -1964,70 +2033,73 @@ export const baseFixAlikson = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("alikson") == -1 &&
-        toLowerCase.indexOf("выдача") == -1 &&
-        toLowerCase.indexOf("💻") == -1 &&
-        toLowerCase.indexOf("заказ") == -1 &&
-        toLowerCase.indexOf("📱") == -1 &&
-        toLowerCase?.indexOf("🔊") == -1 &&
-        toLowerCase?.indexOf("связи") == -1 &&
-        toLowerCase?.indexOf("https") == -1 &&
-        toLowerCase?.indexOf("адрес") == -1 &&
-        toLowerCase?.indexOf("график") == -1 &&
-        toLowerCase?.indexOf("доставка") == -1 &&
-        toLowerCase?.indexOf("🍎") == -1 &&
-        toLowerCase?.indexOf("🎧") == -1 &&
-        toLowerCase?.indexOf("гарантия") == -1 &&
-        toLowerCase?.indexOf("оплата") == -1 &&
-        toLowerCase?.indexOf("🎧") == -1 &&
-        toLowerCase?.indexOf("‼️") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf(" r ") == -1 &&
-        toLowerCase.indexOf("airpods 2  l") == -1 &&
-        toLowerCase.indexOf("airpods 2  r") == -1 &&
-        toLowerCase.indexOf("airpods 3   r") == -1 &&
-        toLowerCase.indexOf("airpods 3   l") == -1 &&
-        toLowerCase.indexOf("airpods 4   r") == -1 &&
-        toLowerCase.indexOf("airpods 4   l") == -1 &&
-        toLowerCase.indexOf("airpods 4  box") == -1 &&
-        toLowerCase.indexOf("airpods 3  box") == -1 &&
-        toLowerCase.indexOf("airpods pro l") == -1 &&
-        toLowerCase.indexOf("airpods pro r") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("alikson") == -1 &&
+      toLowerCase.indexOf("выдача") == -1 &&
+      toLowerCase.indexOf("💻") == -1 &&
+      toLowerCase.indexOf("заказ") == -1 &&
+      toLowerCase.indexOf("📱") == -1 &&
+      toLowerCase?.indexOf("🔊") == -1 &&
+      toLowerCase?.indexOf("связи") == -1 &&
+      toLowerCase?.indexOf("https") == -1 &&
+      toLowerCase?.indexOf("адрес") == -1 &&
+      toLowerCase?.indexOf("график") == -1 &&
+      toLowerCase?.indexOf("доставка") == -1 &&
+      toLowerCase?.indexOf("🍎") == -1 &&
+      toLowerCase?.indexOf("🎧") == -1 &&
+      toLowerCase?.indexOf("гарантия") == -1 &&
+      toLowerCase?.indexOf("оплата") == -1 &&
+      toLowerCase?.indexOf("🎧") == -1 &&
+      toLowerCase?.indexOf("‼️") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf(" r ") == -1 &&
+      toLowerCase.indexOf("airpods 2  l") == -1 &&
+      toLowerCase.indexOf("airpods 2  r") == -1 &&
+      toLowerCase.indexOf("airpods 3   r") == -1 &&
+      toLowerCase.indexOf("airpods 3   l") == -1 &&
+      toLowerCase.indexOf("airpods 4   r") == -1 &&
+      toLowerCase.indexOf("airpods 4   l") == -1 &&
+      toLowerCase.indexOf("airpods 4  box") == -1 &&
+      toLowerCase.indexOf("airpods 3  box") == -1 &&
+      toLowerCase.indexOf("airpods pro l") == -1 &&
+      toLowerCase.indexOf("airpods pro r") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixBigAp = (el) => {
@@ -2045,7 +2117,7 @@ export const baseFixBigAp = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -2055,58 +2127,61 @@ export const baseFixBigAp = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("telegram") == -1 &&
-        toLowerCase.indexOf("price") == -1 &&
-        toLowerCase.indexOf("оплата") == -1 &&
-        toLowerCase.indexOf("😎") == -1 &&
-        toLowerCase.indexOf("гарантия") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf(" r ") == -1 &&
-        toLowerCase.indexOf("airpods 2  l") == -1 &&
-        toLowerCase.indexOf("airpods 2  r") == -1 &&
-        toLowerCase.indexOf("airpods 3   r") == -1 &&
-        toLowerCase.indexOf("airpods 3   l") == -1 &&
-        toLowerCase.indexOf("airpods 4   r") == -1 &&
-        toLowerCase.indexOf("airpods 4   l") == -1 &&
-        toLowerCase.indexOf("airpods 4  box") == -1 &&
-        toLowerCase.indexOf("airpods 3  box") == -1 &&
-        toLowerCase.indexOf("airpods pro l") == -1 &&
-        toLowerCase.indexOf("airpods pro r") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("telegram") == -1 &&
+      toLowerCase.indexOf("price") == -1 &&
+      toLowerCase.indexOf("оплата") == -1 &&
+      toLowerCase.indexOf("😎") == -1 &&
+      toLowerCase.indexOf("гарантия") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf(" r ") == -1 &&
+      toLowerCase.indexOf("airpods 2  l") == -1 &&
+      toLowerCase.indexOf("airpods 2  r") == -1 &&
+      toLowerCase.indexOf("airpods 3   r") == -1 &&
+      toLowerCase.indexOf("airpods 3   l") == -1 &&
+      toLowerCase.indexOf("airpods 4   r") == -1 &&
+      toLowerCase.indexOf("airpods 4   l") == -1 &&
+      toLowerCase.indexOf("airpods 4  box") == -1 &&
+      toLowerCase.indexOf("airpods 3  box") == -1 &&
+      toLowerCase.indexOf("airpods pro l") == -1 &&
+      toLowerCase.indexOf("airpods pro r") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixMTA = (el) => {
@@ -2124,7 +2199,7 @@ export const baseFixMTA = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -2134,85 +2209,88 @@ export const baseFixMTA = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("mta") == -1 &&
-        toLowerCase.indexOf("📱") == -1 &&
-        toLowerCase.indexOf("🍎") == -1 &&
-        toLowerCase.indexOf("⌚️") == -1 &&
-        toLowerCase.indexOf("💻") == -1 &&
-        toLowerCase.indexOf("🧱") == -1 &&
-        toLowerCase.indexOf("🎧") == -1 &&
-        toLowerCase.indexOf("отдельности") == -1 &&
-        toLowerCase.indexOf("adapter") == -1 &&
-        toLowerCase.indexOf("игры") == -1 &&
-        toLowerCase.indexOf("остальн") == -1 &&
-        toLowerCase.indexOf("airpods 2 l ") == -1 &&
-        toLowerCase.indexOf("airpods 2 r ") == -1 &&
-        toLowerCase.indexOf("airpods 2 box") == -1 &&
-        toLowerCase.indexOf("airpods 3 l ") == -1 &&
-        toLowerCase.indexOf("airpods 3 r ") == -1 &&
-        toLowerCase.indexOf("airpods 3 box") == -1 &&
-        toLowerCase.indexOf("airpods pro 2023 box") == -1 &&
-        toLowerCase.indexOf("airpods pro 2023 l ") == -1 &&
-        toLowerCase.indexOf("airpods pro 2023 r") == -1 &&
-        toLowerCase.indexOf("🎮") == -1 &&
-        toLowerCase.indexOf("🧩") == -1 &&
-        toLowerCase.indexOf("🔎") == -1 &&
-        toLowerCase.indexOf("📻") == -1 &&
-        toLowerCase.indexOf("🌬") == -1 &&
-        toLowerCase.indexOf("вилк") == -1 &&
-        toLowerCase.indexOf("фен") == -1 &&
-        toLowerCase.indexOf("выпрямител") == -1 &&
-        toLowerCase.indexOf("увлажнител") == -1 &&
-        toLowerCase.indexOf("пылесос") == -1 &&
-        toLowerCase.indexOf("допы") == -1 &&
-        toLowerCase?.indexOf("распак") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf(" r ") == -1 &&
-        toLowerCase.indexOf("airpods 2  l") == -1 &&
-        toLowerCase.indexOf("airpods 2  r") == -1 &&
-        toLowerCase.indexOf("airpods 3   r") == -1 &&
-        toLowerCase.indexOf("airpods 3   l") == -1 &&
-        toLowerCase.indexOf("airpods 4   r") == -1 &&
-        toLowerCase.indexOf("airpods 4   l") == -1 &&
-        toLowerCase.indexOf("airpods 4  box") == -1 &&
-        toLowerCase.indexOf("airpods 3  box") == -1 &&
-        toLowerCase.indexOf("airpods pro l") == -1 &&
-        toLowerCase.indexOf("airpods pro r") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("mta") == -1 &&
+      toLowerCase.indexOf("📱") == -1 &&
+      toLowerCase.indexOf("🍎") == -1 &&
+      toLowerCase.indexOf("⌚️") == -1 &&
+      toLowerCase.indexOf("💻") == -1 &&
+      toLowerCase.indexOf("🧱") == -1 &&
+      toLowerCase.indexOf("🎧") == -1 &&
+      toLowerCase.indexOf("отдельности") == -1 &&
+      toLowerCase.indexOf("adapter") == -1 &&
+      toLowerCase.indexOf("игры") == -1 &&
+      toLowerCase.indexOf("остальн") == -1 &&
+      toLowerCase.indexOf("airpods 2 l ") == -1 &&
+      toLowerCase.indexOf("airpods 2 r ") == -1 &&
+      toLowerCase.indexOf("airpods 2 box") == -1 &&
+      toLowerCase.indexOf("airpods 3 l ") == -1 &&
+      toLowerCase.indexOf("airpods 3 r ") == -1 &&
+      toLowerCase.indexOf("airpods 3 box") == -1 &&
+      toLowerCase.indexOf("airpods pro 2023 box") == -1 &&
+      toLowerCase.indexOf("airpods pro 2023 l ") == -1 &&
+      toLowerCase.indexOf("airpods pro 2023 r") == -1 &&
+      toLowerCase.indexOf("🎮") == -1 &&
+      toLowerCase.indexOf("🧩") == -1 &&
+      toLowerCase.indexOf("🔎") == -1 &&
+      toLowerCase.indexOf("📻") == -1 &&
+      toLowerCase.indexOf("🌬") == -1 &&
+      toLowerCase.indexOf("вилк") == -1 &&
+      toLowerCase.indexOf("фен") == -1 &&
+      toLowerCase.indexOf("выпрямител") == -1 &&
+      toLowerCase.indexOf("увлажнител") == -1 &&
+      toLowerCase.indexOf("пылесос") == -1 &&
+      toLowerCase.indexOf("допы") == -1 &&
+      toLowerCase?.indexOf("распак") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf(" r ") == -1 &&
+      toLowerCase.indexOf("airpods 2  l") == -1 &&
+      toLowerCase.indexOf("airpods 2  r") == -1 &&
+      toLowerCase.indexOf("airpods 3   r") == -1 &&
+      toLowerCase.indexOf("airpods 3   l") == -1 &&
+      toLowerCase.indexOf("airpods 4   r") == -1 &&
+      toLowerCase.indexOf("airpods 4   l") == -1 &&
+      toLowerCase.indexOf("airpods 4  box") == -1 &&
+      toLowerCase.indexOf("airpods 3  box") == -1 &&
+      toLowerCase.indexOf("airpods pro l") == -1 &&
+      toLowerCase.indexOf("airpods pro r") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixBonus = (el) => {
@@ -2230,7 +2308,7 @@ export const baseFixBonus = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -2240,67 +2318,70 @@ export const baseFixBonus = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("отдельности") == -1 &&
-        toLowerCase.indexOf("adapter") == -1 &&
-        toLowerCase.indexOf("игры") == -1 &&
-        toLowerCase.indexOf("остальн") == -1 &&
-        toLowerCase.indexOf("airpods 2 l ") == -1 &&
-        toLowerCase.indexOf("airpods 2 r ") == -1 &&
-        toLowerCase.indexOf("airpods 2 box") == -1 &&
-        toLowerCase.indexOf("airpods 3 l ") == -1 &&
-        toLowerCase.indexOf("airpods 3 r ") == -1 &&
-        toLowerCase.indexOf("airpods 3 box") == -1 &&
-        toLowerCase.indexOf("airpods pro 2023 box") == -1 &&
-        toLowerCase.indexOf("airpods pro 2023 l ") == -1 &&
-        toLowerCase.indexOf("airpods pro 2023 r") == -1 &&
-        toLowerCase?.indexOf("распак") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf(" r ") == -1 &&
-        toLowerCase.indexOf("airpods 2  l") == -1 &&
-        toLowerCase.indexOf("airpods 2  r") == -1 &&
-        toLowerCase.indexOf("airpods 3   r") == -1 &&
-        toLowerCase.indexOf("airpods 3   l") == -1 &&
-        toLowerCase.indexOf("airpods 4   r") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase.indexOf("airpods 4   l") == -1 &&
-        toLowerCase.indexOf("airpods 4  box") == -1 &&
-        toLowerCase.indexOf("airpods 3  box") == -1 &&
-        toLowerCase.indexOf("airpods pro l") == -1 &&
-        toLowerCase.indexOf("airpods pro r") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("отдельности") == -1 &&
+      toLowerCase.indexOf("adapter") == -1 &&
+      toLowerCase.indexOf("игры") == -1 &&
+      toLowerCase.indexOf("остальн") == -1 &&
+      toLowerCase.indexOf("airpods 2 l ") == -1 &&
+      toLowerCase.indexOf("airpods 2 r ") == -1 &&
+      toLowerCase.indexOf("airpods 2 box") == -1 &&
+      toLowerCase.indexOf("airpods 3 l ") == -1 &&
+      toLowerCase.indexOf("airpods 3 r ") == -1 &&
+      toLowerCase.indexOf("airpods 3 box") == -1 &&
+      toLowerCase.indexOf("airpods pro 2023 box") == -1 &&
+      toLowerCase.indexOf("airpods pro 2023 l ") == -1 &&
+      toLowerCase.indexOf("airpods pro 2023 r") == -1 &&
+      toLowerCase?.indexOf("распак") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf(" r ") == -1 &&
+      toLowerCase.indexOf("airpods 2  l") == -1 &&
+      toLowerCase.indexOf("airpods 2  r") == -1 &&
+      toLowerCase.indexOf("airpods 3   r") == -1 &&
+      toLowerCase.indexOf("airpods 3   l") == -1 &&
+      toLowerCase.indexOf("airpods 4   r") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase.indexOf("airpods 4   l") == -1 &&
+      toLowerCase.indexOf("airpods 4  box") == -1 &&
+      toLowerCase.indexOf("airpods 3  box") == -1 &&
+      toLowerCase.indexOf("airpods pro l") == -1 &&
+      toLowerCase.indexOf("airpods pro r") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };
 
 export const baseFixRootOpt = (el) => {
@@ -2318,7 +2399,7 @@ export const baseFixRootOpt = (el) => {
       toLowerCase?.indexOf("15 plus") != -1)
     ? toLowerCase?.indexOf("🇺🇸") == -1
     : toLowerCase &&
-    toLowerCase?.indexOf("airpods") != -1 &&
+      toLowerCase?.indexOf("airpods") != -1 &&
       (toLowerCase?.indexOf("left") != -1 ||
         toLowerCase?.indexOf("левый") != -1 ||
         toLowerCase?.indexOf("right") != -1 ||
@@ -2328,65 +2409,68 @@ export const baseFixRootOpt = (el) => {
         toLowerCase?.indexOf("box") != -1)
     ? toLowerCase?.indexOf("airpods") == -1
     : toLowerCase &&
-        toLowerCase.indexOf("отдельности") == -1 &&
-        toLowerCase.indexOf("adapter") == -1 &&
-        toLowerCase.indexOf("игры") == -1 &&
-        toLowerCase.indexOf("остальн") == -1 &&
-        toLowerCase.indexOf("airpods 2 l ") == -1 &&
-        toLowerCase.indexOf("airpods 2 r ") == -1 &&
-        toLowerCase.indexOf("airpods 2 box") == -1 &&
-        toLowerCase.indexOf("airpods 3 l ") == -1 &&
-        toLowerCase.indexOf("airpods 3 r ") == -1 &&
-        toLowerCase.indexOf("airpods 3 box") == -1 &&
-        toLowerCase.indexOf("airpods pro 2023 box") == -1 &&
-        toLowerCase.indexOf("airpods pro 2023 l ") == -1 &&
-        toLowerCase.indexOf("airpods pro 2023 r") == -1 &&
-        toLowerCase?.indexOf("распак") == -1 &&
-        toLowerCase?.indexOf("ремонт") == -1 &&
-        toLowerCase?.indexOf("потертости") == -1 &&
-        toLowerCase?.indexOf("скол") == -1 &&
-        toLowerCase?.indexOf("пятна") == -1 &&
-        toLowerCase?.indexOf("замена") == -1 &&
-        toLowerCase?.indexOf("пиксель") == -1 &&
-        toLowerCase?.indexOf("на экране") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("открытый") == -1 &&
-        toLowerCase?.indexOf("дефект") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("реболл") == -1 &&
-        toLowerCase?.indexOf("No charger") == -1 &&
-        toLowerCase?.indexOf("открыт") == -1 &&
-        toLowerCase?.indexOf("Мятый") == -1 &&
-        toLowerCase?.indexOf("мятый") == -1 &&
-        toLowerCase?.indexOf("без пломб") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("blackview") == -1 &&
-        toLowerCase?.indexOf("вскрыт") == -1 &&
-        toLowerCase?.indexOf("угол") == -1 &&
-        toLowerCase?.indexOf("прошит") == -1 &&
-        toLowerCase?.indexOf("потерто") == -1 &&
-        toLowerCase?.indexOf("экран") == -1 &&
-        toLowerCase?.indexOf("актив") == -1 &&
-        toLowerCase?.indexOf("realme") == -1 &&
-        toLowerCase.indexOf("обменка") == -1 &&
-        toLowerCase?.indexOf("rfb") == -1 &&
-        toLowerCase?.indexOf("уцен") == -1 &&
-        toLowerCase?.indexOf("обме") == -1 &&
-        toLowerCase?.indexOf("короб") == -1 &&
-        toLowerCase?.indexOf("пломба") == -1 &&
-        toLowerCase.indexOf(" r ") == -1 &&
-        toLowerCase.indexOf("airpods 2  l") == -1 &&
-        toLowerCase.indexOf("airpods 2  r") == -1 &&
-        toLowerCase.indexOf("airpods 3   r") == -1 &&
-        toLowerCase.indexOf("airpods 3   l") == -1 &&
-        toLowerCase.indexOf("airpods 4   r") == -1 &&
-        toLowerCase.indexOf("airpods 4   l") == -1 &&
-        toLowerCase.indexOf("airpods 4  box") == -1 &&
-        toLowerCase.indexOf("airpods 3  box") == -1 &&
-        toLowerCase.indexOf("airpods pro l") == -1 &&
-        toLowerCase.indexOf("airpods pro r") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
-        toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
-        toLowerCase.indexOf("ремешок") == -1;
+      toLowerCase.indexOf("отдельности") == -1 &&
+      toLowerCase.indexOf("adapter") == -1 &&
+      toLowerCase.indexOf("игры") == -1 &&
+      toLowerCase.indexOf("остальн") == -1 &&
+      toLowerCase.indexOf("airpods 2 l ") == -1 &&
+      toLowerCase.indexOf("airpods 2 r ") == -1 &&
+      toLowerCase.indexOf("airpods 2 box") == -1 &&
+      toLowerCase.indexOf("airpods 3 l ") == -1 &&
+      toLowerCase.indexOf("airpods 3 r ") == -1 &&
+      toLowerCase.indexOf("airpods 3 box") == -1 &&
+      toLowerCase.indexOf("airpods pro 2023 box") == -1 &&
+      toLowerCase.indexOf("airpods pro 2023 l ") == -1 &&
+      toLowerCase.indexOf("airpods pro 2023 r") == -1 &&
+      toLowerCase?.indexOf("распак") == -1 &&
+      toLowerCase?.indexOf("ремонт") == -1 &&
+      toLowerCase?.indexOf("потертости") == -1 &&
+      toLowerCase?.indexOf("скол") == -1 &&
+      toLowerCase?.indexOf("пятна") == -1 &&
+      toLowerCase?.indexOf("замена") == -1 &&
+      toLowerCase?.indexOf("пиксель") == -1 &&
+      toLowerCase?.indexOf("на экране") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("открытый") == -1 &&
+      toLowerCase?.indexOf("дефект") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("реболл") == -1 &&
+      toLowerCase?.indexOf("No charger") == -1 &&
+      toLowerCase?.indexOf("открыт") == -1 &&
+      toLowerCase?.indexOf("Мятый") == -1 &&
+      toLowerCase?.indexOf("мятый") == -1 &&
+      toLowerCase?.indexOf("без пломб") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("blackview") == -1 &&
+      toLowerCase?.indexOf("вскрыт") == -1 &&
+      toLowerCase?.indexOf("угол") == -1 &&
+      toLowerCase?.indexOf("прошит") == -1 &&
+      toLowerCase?.indexOf("потерто") == -1 &&
+      toLowerCase?.indexOf("экран") == -1 &&
+      toLowerCase?.indexOf("актив") == -1 &&
+      toLowerCase?.indexOf("realme") == -1 &&
+      toLowerCase.indexOf("обменка") == -1 &&
+      toLowerCase?.indexOf("rfb") == -1 &&
+      toLowerCase?.indexOf("уцен") == -1 &&
+      toLowerCase?.indexOf("обме") == -1 &&
+      toLowerCase?.indexOf("короб") == -1 &&
+      toLowerCase?.indexOf("пломба") == -1 &&
+      toLowerCase.indexOf(" r ") == -1 &&
+      toLowerCase.indexOf("airpods 2  l") == -1 &&
+      toLowerCase.indexOf("airpods 2  r") == -1 &&
+      toLowerCase.indexOf("airpods 3   r") == -1 &&
+      toLowerCase.indexOf("airpods 3   l") == -1 &&
+      toLowerCase.indexOf("airpods 4   r") == -1 &&
+      toLowerCase.indexOf("airpods 4   l") == -1 &&
+      toLowerCase.indexOf("airpods 4  box") == -1 &&
+      toLowerCase.indexOf("airpods 3  box") == -1 &&
+      toLowerCase.indexOf("airpods pro l") == -1 &&
+      toLowerCase.indexOf("airpods pro r") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
+      toLowerCase.indexOf("freebuds") == -1 &&
+      toLowerCase.indexOf("pixel buds") == -1 &&
+      toLowerCase.indexOf("oneplus buds") == -1 &&
+      toLowerCase.indexOf("ремешок") == -1;
 };

@@ -28,7 +28,8 @@ export const returnFixNameElectrozon = (name) => {
       ? fixGreenNote13.replace("Midnight Black", "Black")
       : fixGreenNote13;
   const fixX55G =
-    fixBlackNote13.indexOf("X5 ") != -1
+    (fixBlackNote13.indexOf("X5 ") != -1 ||
+    fixBlackNote13.indexOf("X7 ") != -1)
       ? fixBlackNote13.replace("5G ", "")
       : fixBlackNote13;
   const fixLilacA35 =

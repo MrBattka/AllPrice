@@ -59,7 +59,8 @@ export const fixNameUnimtrn = (el) => {
   const fixWiFi = fixWatchS8.replace(wiFi, "Wi-Fi");
   const fixAWS9Space = fixWiFi.replace(aw9Space, "S9");
   const fixAWS9 = fixAWS9Space.replace(aws9, "S9");
-  const fixAW9 = fixAWS9.replace(aw9, "S9");
+  const fixCPH2691  = fixAWS9.replace('CPH2691 ', "");
+  const fixAW9 = fixCPH2691.replace(aw9, "S9");
   const fixAW8 = fixAW9.replace(aws8, "S8");
   const fixAW8Space = fixAW8.replace(aw8Spaces, "S8");
   const fixAWU2 = fixAW8Space.replace(awu2, "Ultra 2");

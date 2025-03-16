@@ -10,10 +10,12 @@ export const returnFixNameL27 = (name) => {
   const fix16Plus = fix15Pro1.replace("16+ ", "16 Plus ");
   const fix15Plus = fix16Plus.replace("15+ ", "15 Plus ");
   const fix15Plus1 = fix15Plus.replace("15+  ", "15 Plus ");
-  const fix14Pro = fix15Plus1.replace("14Pro ", "14 Pro ");
+  const fix16Plus1 = fix15Plus1.replace("16+  ", "16 Plus ");
+  const fix14Pro = fix16Plus1.replace("14Pro ", "14 Pro ");
   const fix12Pro = fix14Pro.replace("12Pro  ", "12 Pro ");
+  const fixMouse = fix12Pro.replace("Maus ", "Mouse ");
 
-  return fix12Pro;
+  return fixMouse;
 };
 
 const checkFlags = (str) => {

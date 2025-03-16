@@ -230,6 +230,13 @@ export const returnFixNameReSale = (name) => {
     fixAWUltraGray.indexOf("Ultra 2") != -1
       ? fixAWUltraGray.replace("Blue Black", "Black")
       : fixAWUltraGray;
+  const fix5G =
+    fixAWUltraBlack.indexOf("M55") !== -1 ||
+    fixAWUltraBlack.indexOf("A55") !== -1 ||
+    fixAWUltraBlack.indexOf("Note 14 Pro +") !== -1 ||
+    fixAWUltraBlack.indexOf("S21") !== -1
+      ? fixAWUltraBlack.replace("5G ", "")
+      : fixAWUltraBlack;
 
-  return fixAWUltraBlack;
+  return fix5G;
 };

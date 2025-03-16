@@ -1,12 +1,14 @@
 import { newPrice } from "../../../helpers/NewPrice";
 
 export const fixNameLowPrice = (name) => {
- const fixFlip6 = name.replace("Flip6", "Flip 6")
- const fixWiFi= fixFlip6.replace(" Wi ", " Wi-Fi ")
- const fixSE3= fixWiFi.replace("SE 3", "SE3")
- const fixGray= fixSE3.replace("Grey", "Gray")
+  const fixFlip6 = name.replace("Flip6", "Flip 6");
+  const fixWiFi = fixFlip6.replace(" Wi ", " Wi-Fi ");
+  const fixSE3 = fixWiFi.replace("SE 3", "SE3");
+  const fixGray = fixSE3.replace("Grey", "Gray");
+  const fixWiFi1 = fixGray.replace("WIFI", "Wi-Fi");
+  const fixWiFi2 = fixWiFi1.replace("WiFi", "Wi-Fi");
 
-  return fixGray;
+  return fixWiFi2;
 };
 
 const checkFlags = (str) => {
@@ -61,16 +63,16 @@ export const returnNameInArrLowPrice = (name) => {
   const fixFlags = checkFlags(name);
 
   let reverseStrName = fixFlags.split("").reverse().join("");
-  let splitPrice = reverseStrName.indexOf(" ") !== -1 ? /\s(.+)/.exec(reverseStrName)[1] : reverseStrName
+  let splitPrice =
+    reverseStrName.indexOf(" ") !== -1
+      ? /\s(.+)/.exec(reverseStrName)[1]
+      : reverseStrName;
   // let replaceStick = /\s(.+)/.exec(splitPrice)[1];
 
-  let checkSpace1 =
-  splitPrice[0] === " "
-    ? splitPrice.slice(1)
-    : splitPrice;
-let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
-let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
-let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
+  let checkSpace1 = splitPrice[0] === " " ? splitPrice.slice(1) : splitPrice;
+  let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
+  let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
+  let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let checkTriple = checkSpace4.split("-")[4]
     ? `${checkSpace4.split("-")[1]}-${checkSpace4.split("-")[2]}-${
@@ -126,17 +128,13 @@ export const returnStockPriceLowPrice = (name) => {
   let reverseStrName = replaceS9feLavander.split("").reverse().join("");
 
   let checkSpace1 =
-    reverseStrName[0] === " "
-      ? reverseStrName.slice(1)
-      : reverseStrName;
+    reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
   let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
   let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let splitPrice =
-    checkSpace4.indexOf(" ") != -1
-      ? checkSpace4.split(" ")[0]
-      : checkSpace4;
+    checkSpace4.indexOf(" ") != -1 ? checkSpace4.split(" ")[0] : checkSpace4;
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 
@@ -146,7 +144,10 @@ export const returnStockPriceLowPrice = (name) => {
     ? reverseBackStrName.split(" ")[0]
     : reverseBackStrName;
 
-  let removeDot = removeOther.indexOf(",") !== - 1 ? removeOther.replace(",", "") : removeOther
+  let removeDot =
+    removeOther.indexOf(",") !== -1
+      ? removeOther.replace(",", "")
+      : removeOther;
 
   return removeDot;
 };

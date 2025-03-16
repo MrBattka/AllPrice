@@ -39,7 +39,8 @@ export const fixNameVseMi = (name) => {
   const replacehd08 = replacemm.replace("Gift Set Vinca ", "");
   const replaceGB = replacehd08.replace("GB", "");
   const fix13ProPlus = replaceGB.replace("13 Pro+", "13 Pro +");
-  const replaceNFC = fix13ProPlus.replace("(NFC)", "");
+  const fix14ProPlus = fix13ProPlus.replace("14 Pro+", "14 Pro +");
+  const replaceNFC = fix14ProPlus.replace("(NFC)", "");
   const replace8256G = replaceNFC.replace("8/256G", "8/256");
   const replace12256G = replace8256G.replace("12/256G", "12/256");
   const replace12512G = replace12256G.replace("12/512G", "12/512");

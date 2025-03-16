@@ -1,13 +1,27 @@
 export const returnFixNameBonus = (name) => {
   const replaceTablet = name.replace("Планшет ", "");
   const replaceSmartphone = replaceTablet.replace("Смартфон ", "");
-  const replaceAcusticSystem = replaceSmartphone.replace("Портативная акустическая система ", "");
-  const replaceHeadphoneBluetooth = replaceAcusticSystem.replace("Наушники беспроводные ", "");
+  const replaceAcusticSystem = replaceSmartphone.replace(
+    "Портативная акустическая система ",
+    ""
+  );
+  const replaceHeadphoneBluetooth = replaceAcusticSystem.replace(
+    "Наушники беспроводные ",
+    ""
+  );
   const replaceHeadphone = replaceHeadphoneBluetooth.replace("Наушники ", "");
   const replaceSmartWatch = replaceHeadphone.replace("Смарт-часы ", "");
   const replaceGb = replaceSmartWatch.replace("Gb", "");
-  const replaceGB = replaceGb.replace("GB", "");
-  const fix14ProPlus = replaceGB.replace("Note 14 Pro+", "Note 14 Pro +");
+  const replaceGB1 = replaceGb.replace("GB,", "");
+  const replaceGB = replaceGB1.replace("GB", "");
+  const replacePoint = replaceGB.replace(",", "");
+  const replace5G =
+    replacePoint.indexOf("A55") ||
+    replacePoint.indexOf("A25") ||
+    replacePoint.indexOf("A35")
+      ? replacePoint.replace("5G ", "")
+      : replacePoint;
+  const fix14ProPlus = replace5G.replace("Note 14 Pro+", "Note 14 Pro +");
   const fix13ProPlus = fix14ProPlus.replace("Note 13 Pro+", "Note 13 Pro +");
   const fixWatch6 = fix13ProPlus.replace("Watch6", "Watch 6");
   const fixWatch7 = fixWatch6.replace("Watch7", "Watch 7");
@@ -31,7 +45,10 @@ export const returnFixNameBonus = (name) => {
   const fixGraphite = fixLilac.replace("Графит", "Graphite");
   const fixGold = fixGraphite.replace("Золотой", "Gold");
   const fixSilver = fixGold.replace("Серебро", "Silver");
-  const fixLightBlue = fixSilver.indexOf("A55 ") !== -1 ? fixSilver.replace("Голубой", "Light Blue") : fixSilver.replace("Голубой", "Iceblue")
+  const fixLightBlue =
+    fixSilver.indexOf("A55 ") !== -1
+      ? fixSilver.replace("Голубой", "Light Blue")
+      : fixSilver.replace("Голубой", "Iceblue");
 
   const fixBlueBlack1 = fixLightBlue.replace("темно-синий", "Black");
   const fixBlue1 = fixBlueBlack1.replace("синий", "Blue");
@@ -51,7 +68,10 @@ export const returnFixNameBonus = (name) => {
   const fixGraphite1 = fixLilac1.replace("графит", "Graphite");
   const fixGold1 = fixGraphite1.replace("золотой", "Gold");
   const fixSilver1 = fixGold1.replace("серебро", "Silver");
-  const fixLightBlue1 = fixSilver1.indexOf("A55 ") !== -1 ? fixSilver1.replace("голубой", "Light Blue") : fixSilver1.replace("голубой", "Iceblue")
+  const fixLightBlue1 =
+    fixSilver1.indexOf("A55 ") !== -1
+      ? fixSilver1.replace("голубой", "Light Blue")
+      : fixSilver1.replace("голубой", "Iceblue");
 
   return fixLightBlue1;
 };

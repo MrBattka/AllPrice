@@ -11,9 +11,12 @@ export const fixNameS5 = (name) => {
   const replaceML = replaceSM.replace("M/L", "");
   const replaceVilka = replaceML.replace("(наша вилка)", "");
   const replace1TB = replaceVilka.replace("1 TB", "1TB");
-  const replaceGB = replace1TB.replace("Gb", "");
-  const fixmm = replaceGB.replace("mm", "");
-  const replaceAirpods = fixmm.replace("Air Pods", "AirPods");
+  const replaceGB = replace1TB.replace("GB", "");
+  const replaceGb = replaceGB.replace("Gb", "");
+  const fixmm = replaceGb.replace("mm", "");
+  const fixStarlight1 = fixmm.replace("Starilgt ", "Starlight");
+  const fixGray = fixStarlight1.replace("Grey ", "Gray");
+  const replaceAirpods = fixGray.replace("Air Pods", "AirPods");
   const replaceStarlight = replaceAirpods.replace(
     "13 128  starting",
     "13 128 Starlight"

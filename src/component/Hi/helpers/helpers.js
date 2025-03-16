@@ -546,7 +546,8 @@ export const fixNameHi = (name) => {
   const fixA155G = fixGrey.replace("A15 5G", "A15");
   const fixA255G = fixA155G.replace("A25 5G", "A25");
   const fixA355G = fixA255G.replace("A35 5G", "A35");
-  const fix16e = fixA355G.replace("16Е", "16e");
+  const fixUSBC = fixA355G.replace("(USB-C)", "USB-C");
+  const fix16e = fixUSBC.replace("16Е", "16e");
   const fixA545G = fix16e.replace("A54 5G", "A54");
   const fixA555G = fixA545G.replace("A55 5G", "A55");
 

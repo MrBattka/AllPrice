@@ -5,15 +5,18 @@ export const returnFixNameRacmag = (name) => {
     const replaceGB = replaceGb.replace("GB", "")
     const replace4G = replaceGB.replace("4G ", "")
     const replaceProPlus = replace4G.replace("Pro+", "Pro +")
-    const replaceAwesome = replaceProPlus.replace("Awesome ", "")
+    const fix14C = replaceProPlus.replace("Redmi 14С", "Redmi 14C")
+    const fixBlue = fix14C.replace("Bluе", "Blue")
+    const replaceAwesome = fixBlue.replace("Awesome ", "")
     const replaceSE = replaceAwesome.replace("SE 8.7", "SE")
-    const replaceNoteBlue= replaceSE.indexOf("Note ") ? replaceSE.replace("Ice Blue", "Blue") : replaceSE
-    const replaceNoteMidnight = replaceNoteBlue.indexOf("Note ") ? replaceNoteBlue.replace("Midnight ", "") : replaceNoteBlue
-    const replaceNoteMint = replaceNoteMidnight.indexOf("Note ") ? replaceNoteMidnight.replace("Mint ", "") : replaceNoteMidnight
-    const replaceNoteForest = replaceNoteMint.indexOf("Note ") ? replaceNoteMint.replace("Forest ", "") : replaceNoteMint
-    const replaceNoteLavender = replaceNoteForest.indexOf("Note ") ? replaceNoteForest.replace("Lavender ", "") : replaceNoteForest
+    const replaceNoteBlue= replaceSE.indexOf("Note ") !== -1 ? replaceSE.replace("Ice Blue", "Blue") : replaceSE
+    const replaceNoteMidnight = replaceNoteBlue.indexOf("Note ") !== -1 ? replaceNoteBlue.replace("Midnight ", "") : replaceNoteBlue
+    const replaceNoteMint = replaceNoteMidnight.indexOf("Note ") !== -1 ? replaceNoteMidnight.replace("Mint ", "") : replaceNoteMidnight
+    const replaceNoteForest = replaceNoteMint.indexOf("Note ") !== -1 ? replaceNoteMint.replace("Forest ", "") : replaceNoteMint
+    const replaceNoteLavender = replaceNoteForest.indexOf("Note ") !== -1 ? replaceNoteForest.replace("Lavender ", "") : replaceNoteForest
+    const replace5G = replaceNoteLavender.indexOf("Note 14 Pro +") !== -1 ? replaceNoteLavender.replace("5G ", "") : replaceNoteLavender
 
-    return replaceNoteLavender
+    return replace5G
 }
 
 export const returnNameInArrRacmag = (name) => {
