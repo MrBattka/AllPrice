@@ -5742,7 +5742,7 @@ export const returnIDApple = (name) => {
   } else if (name.indexOf("16 pro 1tb white") !== -1) {
     return 36658;
   } else if (name.indexOf("16 pro 128 black") !== -1) {
-    return 36643;
+    return 38662;
   } else if (name.indexOf("16 pro 128 desert") !== -1) {
     return 36652;
   } else if (name.indexOf("16 pro 128 natural") !== -1) {
@@ -5772,7 +5772,7 @@ export const returnIDApple = (name) => {
   } else if (name.indexOf("16 pro max 1tb natural") !== -1) {
     return 36665;
   } else if (name.indexOf("16 pro max 1tb white") !== -1) {
-    return 36669;
+    return 38663;
   } else if (name.indexOf("16 pro max 256 black") !== -1) {
     return 36662;
   } else if (name.indexOf("16 pro max 256 desert") !== -1) {
@@ -5780,7 +5780,7 @@ export const returnIDApple = (name) => {
   } else if (name.indexOf("16 pro max 256 natural") !== -1) {
     return 36667;
   } else if (name.indexOf("16 pro max 256 white") !== -1) {
-    return 36671;
+    return 38664;
   } else if (name.indexOf("16 pro max 512 black") !== -1) {
     return 36663;
   } else if (name.indexOf("16 pro max 512 desert") !== -1) {
@@ -5788,7 +5788,7 @@ export const returnIDApple = (name) => {
   } else if (name.indexOf("16 pro max 512 natural") !== -1) {
     return 36668;
   } else if (name.indexOf("16 pro max 512 white") !== -1) {
-    return 36672;
+    return 38665;
   } else if (name.indexOf("16e 128 black") !== -1) {
     return 38256;
   } else if (name.indexOf("16e 128 white") !== -1) {
