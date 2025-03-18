@@ -96,12 +96,12 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("oculus quest 2") !== -1 &&
     name.indexOf("128") !== -1
   ) {
-    return 28188;
+    return 38653;
   } else if (
     name.indexOf("oculus quest 2") !== -1 &&
     name.indexOf("256") !== -1
   ) {
-    return 28189;
+    return 38654;
   } else if (
     name.indexOf("oculus quest 3") !== -1 &&
     name.indexOf("128") !== -1 &&

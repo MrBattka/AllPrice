@@ -2947,7 +2947,7 @@ export const returnIDApple = (name) => {
     name.indexOf("gray") !== -1 &&
     name.indexOf("lte") !== -1
   ) {
-    return 36173;
+    return 38657;
   } else if (
     name.indexOf("air 13") !== -1 &&
     (name.indexOf(" m2 ") !== -1 ||
@@ -2956,7 +2956,7 @@ export const returnIDApple = (name) => {
     name.indexOf("blue") !== -1 &&
     name.indexOf("lte") !== -1
   ) {
-    return 36222;
+    return 38655;
   } else if (
     name.indexOf("air 13") !== -1 &&
     (name.indexOf(" m2 ") !== -1 ||
@@ -2965,7 +2965,7 @@ export const returnIDApple = (name) => {
     name.indexOf("purple") !== -1 &&
     name.indexOf("lte") !== -1
   ) {
-    return 36221;
+    return 38656;
   } else if (
     name.indexOf("air 13") !== -1 &&
     (name.indexOf(" m2 ") !== -1 ||
@@ -2974,7 +2974,7 @@ export const returnIDApple = (name) => {
     name.indexOf("starlight") !== -1 &&
     name.indexOf("lte") !== -1
   ) {
-    return 36223;
+    return 38658;
   } else if (
     name.indexOf("air 13") !== -1 &&
     (name.indexOf(" m2 ") !== -1 ||
@@ -3028,7 +3028,7 @@ export const returnIDApple = (name) => {
     name.indexOf("blue") !== -1 &&
     name.indexOf("lte") !== -1
   ) {
-    return 36225;
+    return 38659;
   } else if (
     name.indexOf("air 13") !== -1 &&
     (name.indexOf(" m2 ") !== -1 ||
@@ -3037,7 +3037,7 @@ export const returnIDApple = (name) => {
     name.indexOf("purple") !== -1 &&
     name.indexOf("lte") !== -1
   ) {
-    return 36226;
+    return 38660;
   } else if (
     name.indexOf("air 13") !== -1 &&
     (name.indexOf(" m2 ") !== -1 ||
@@ -3046,7 +3046,7 @@ export const returnIDApple = (name) => {
     name.indexOf("starlight") !== -1 &&
     name.indexOf("lte") !== -1
   ) {
-    return 36227;
+    return 38661;
   } else if (
     name.indexOf("air 13") !== -1 &&
     (name.indexOf(" m2 ") !== -1 ||
@@ -3198,7 +3198,7 @@ export const returnIDApple = (name) => {
     name.indexOf("black") !== -1 &&
     name.indexOf("wi-fi") !== -1
   ) {
-    return 36236;
+    return 38667;
   } else if (
     name.indexOf("pro 11") !== -1 &&
     name.indexOf(" m4 ") !== -1 &&
