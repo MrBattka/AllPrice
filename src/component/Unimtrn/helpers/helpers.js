@@ -142,7 +142,10 @@ export const fixNameUnimtrn = (el) => {
   const fixxqde72 = fixcnx769j.replace("XQ-DE72 ", "");
   const fixs916b = fixxqde72.replace("S916B ", "");
   const fixUltra2SM = fixs916b.replace("Ultra 2 S/M ", "ultra 2 ");
-  const fixGreenGray = fixUltra2SM.replace(
+
+  const fixCellular = fixUltra2SM.indexOf("Cellular") !== - 1 ? fixUltra2SM.replace("Wi-Fi", "LTE") : fixUltra2SM
+
+  const fixGreenGray = fixCellular.replace(
     "ultra 2 Green/Gray",
     "ultra 2 gray"
   );
