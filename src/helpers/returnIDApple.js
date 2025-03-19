@@ -148,7 +148,7 @@ export const returnIDApple = (name) => {
     name.indexOf("apple tv") !== -1 &&
     name.indexOf("64") !== -1
   ) {
-    return 20152;
+    return 27026;
 
     // home pod
   } else if (
