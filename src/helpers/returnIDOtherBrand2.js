@@ -1038,7 +1038,7 @@ export const returnIDOtherBrand2 = (name) => {
       name.indexOf("dark") !== -1 ||
       name.indexOf("shadow") !== -1)
   ) {
-    return 37736;
+    return 38675;
   } else if (
     (name.indexOf("redmagic 10 pro +") !== -1 ||
       name.indexOf("red magic 10 pro +") !== -1) &&
