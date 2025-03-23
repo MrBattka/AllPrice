@@ -1084,6 +1084,22 @@ export const returnIDOtherBrand = (name) => {
     (name.indexOf("obsidian") !== -1 || name.indexOf("midnight") !== -1)
   ) {
     return 37154;
+
+  } else if (
+    name.indexOf("nord ce4") !== -1 &&
+    name.indexOf("lite") === -1 &&
+    name.indexOf("8/256") !== -1 &&
+    (name.indexOf("celadon") !== -1 || name.indexOf("marble") !== -1)
+  ) {
+    return 38707;
+  } else if (
+    name.indexOf("nord ce4") !== -1 &&
+    name.indexOf("lite") === -1 &&
+    name.indexOf("8/256") !== -1 &&
+    (name.indexOf("dark") !== -1 || name.indexOf("chrome") !== -1)
+  ) {
+    return 38708;
+
   } else if (name.indexOf("oneplus ace 12/256 black") !== -1) {
     return 22796;
   } else if (name.indexOf("oneplus ace 12/256 blue") !== -1) {
