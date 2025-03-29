@@ -10,14 +10,14 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-      <Header />
-          <img className="img" src={icon} alt="Not found" />
-          
-          
-            <Routes>
+        {/* <Header /> */}
+        <img className="img" src={icon} alt="Not found" />
+
+        <IndexAllPrice />
+        {/* <Routes>
               <Route path="/AllUnload" element={<IndexAllPrice />} />
               <Route path="/ParserPrice" element={<IndexParserPrice />} />
-            </Routes>
+            </Routes> */}
       </div>
     </BrowserRouter>
   );
