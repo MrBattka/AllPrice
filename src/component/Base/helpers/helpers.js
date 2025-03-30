@@ -17,6 +17,8 @@ export const returnFixNameBase = (name) => {
       : fixNordCE3;
   const fix14Plus = replace5G.replace("iPhone 14 +", "iPhone 14 Plus");
   const fixPoco = fix14Plus.replace("Pocophone", "Poco");
+  const fixS10 = fixPoco.replace("Apple Watch 10", "S10");
+  const fixS9 = fixS10.replace("Apple Watch 9", "S9");
 
-  return fixPoco;
+  return fixS9;
 };

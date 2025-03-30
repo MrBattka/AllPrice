@@ -82,6 +82,8 @@ export const fixNameMiOpts = (name) => {
       ? replaceGB.replace("5G", "")
       : replaceGB;
   const fixS24FE = replace5G.replace("S24FE", "S24 FE");
+  const fixNote13ProPlus = fixS24FE.replace("Note 13 Pro Plus", "Note 13 Pro +");
+  const fixNote14ProPlus = fixNote13ProPlus.replace("Note 14 Pro Plus", "Note 14 Pro +");
 
-  return fixS24FE;
+  return fixNote14ProPlus;
 };
