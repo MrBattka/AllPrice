@@ -376,15 +376,18 @@ export const returnIDOtherBrand = (name) => {
     return 28198;
   } else if (name.indexOf("dyson outsize") !== -1) {
     return 28201;
-  } else if (name.indexOf("dyson v10 absolute cordless vacuum cleaner") !== -1) {
+  } else if (
+    name.indexOf("dyson v10 absolute cordless vacuum cleaner") !== -1
+  ) {
     return 27103;
   } else if (
     name.indexOf("dyson v10 cyclone parquet серый (станция и 5 насадок)") !== -1
   ) {
     return 35672;
   } else if (
-    name.indexOf("dyson v10 cyclone total clean серый (станция и 8 насадок)") !==
-    -1
+    name.indexOf(
+      "dyson v10 cyclone total clean серый (станция и 8 насадок)"
+    ) !== -1
   ) {
     return 35674;
   } else if (
@@ -535,7 +538,9 @@ export const returnIDOtherBrand = (name) => {
     return 27107;
   } else if (name.indexOf("dyson hd01 белый с чехлом для хранения") !== -1) {
     return 34759;
-  } else if (name.indexOf("dyson hd01 сиреневый с чехлом для хранения") !== -1) {
+  } else if (
+    name.indexOf("dyson hd01 сиреневый с чехлом для хранения") !== -1
+  ) {
     return 34760;
   } else if (name.indexOf("dyson hd01 фуксия без чехла") !== -1) {
     return 34758;
@@ -562,7 +567,8 @@ export const returnIDOtherBrand = (name) => {
   ) {
     return 34754;
   } else if (
-    name.indexOf("dyson supersonic hd03 фуксия с 2 фирменными расческами") !== -1
+    name.indexOf("dyson supersonic hd03 фуксия с 2 фирменными расческами") !==
+    -1
   ) {
     return 34755;
   } else if (name.indexOf("dyson supersonic hd03 черный /никель") !== -1) {
@@ -640,7 +646,8 @@ export const returnIDOtherBrand = (name) => {
   ) {
     return 27099;
   } else if (
-    name.indexOf("dyson supersonic hd12 professional salon edition серый") !== -1
+    name.indexOf("dyson supersonic hd12 professional salon edition серый") !==
+    -1
   ) {
     return 27096;
   } else if (
@@ -887,15 +894,15 @@ export const returnIDOtherBrand = (name) => {
 
     // OnePlus
   } else if (
-    name.indexOf("oneplus watch") !== -1 &&
+    name.indexOf("oneplus watch 3") !== -1 &&
     (name.indexOf("midnight") !== -1 || name.indexOf("black") !== -1)
   ) {
-    return 20455;
+    return 38771;
   } else if (
-    name.indexOf("oneplus watch") !== -1 &&
+    name.indexOf("oneplus watch 3") !== -1 &&
     (name.indexOf("moonlight") !== -1 || name.indexOf("silver") !== -1)
   ) {
-    return 20456;
+    return 38793;
   } else if (name.indexOf("ace 2 12/256 black") !== -1) {
     return 27300;
   } else if (name.indexOf("ace 2 12/256 glacier blue") !== -1) {
@@ -1084,7 +1091,6 @@ export const returnIDOtherBrand = (name) => {
     (name.indexOf("obsidian") !== -1 || name.indexOf("midnight") !== -1)
   ) {
     return 37154;
-
   } else if (
     name.indexOf("nord ce4") !== -1 &&
     name.indexOf("lite") === -1 &&
@@ -1099,7 +1105,6 @@ export const returnIDOtherBrand = (name) => {
     (name.indexOf("dark") !== -1 || name.indexOf("chrome") !== -1)
   ) {
     return 38708;
-
   } else if (name.indexOf("oneplus ace 12/256 black") !== -1) {
     return 22796;
   } else if (name.indexOf("oneplus ace 12/256 blue") !== -1) {
@@ -1275,7 +1280,10 @@ export const returnIDOtherBrand = (name) => {
     (name.indexOf("voyager") !== -1 || name.indexOf("black") !== -1)
   ) {
     return 30616;
-  } else if (name.indexOf("oneplus buds") !== -1 && name.indexOf("gray") !== -1) {
+  } else if (
+    name.indexOf("oneplus buds") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 19037;
   } else if (
     name.indexOf("oneplus buds") !== -1 &&
@@ -1324,7 +1332,10 @@ export const returnIDOtherBrand = (name) => {
     name.indexOf("deep blue") !== -1
   ) {
     return 24137;
-  } else if (name.indexOf("nord watch") !== -1 && name.indexOf("black") !== -1) {
+  } else if (
+    name.indexOf("nord watch") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
     return 24136;
   } else if (name.indexOf("nord n20 se 4/128 blue oasis") !== -1) {
     return 27854;
@@ -1622,174 +1633,200 @@ export const returnIDOtherBrand = (name) => {
     (name.indexOf("halo") !== -1 || name.indexOf("green") !== -1)
   ) {
     return 27316;
-  } else if (name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("12/256") !== -1 &&
-  name.indexOf("gray") !== -1) {
+  } else if (
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 38002;
   } else if (
-name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("12/256") !== -1 &&
-  name.indexOf("green") !== -1) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
     return 38022;
   } else if (
-name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("12/256") !== -1 &&
-  (name.indexOf("white") !== -1 ||
-  name.indexOf("silver") !== -1)) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    (name.indexOf("white") !== -1 || name.indexOf("silver") !== -1)
+  ) {
     return 38023;
   } else if (
-  name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("16/256") !== -1 &&
-  name.indexOf("gray") !== -1) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("16/256") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 38027;
   } else if (
-name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("16/256") !== -1 &&
-  name.indexOf("green") !== -1) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("16/256") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
     return 38028;
   } else if (
-name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("16/256") !== -1 &&
-  (name.indexOf("white") !== -1 ||
-  name.indexOf("silver") !== -1)) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("16/256") !== -1 &&
+    (name.indexOf("white") !== -1 || name.indexOf("silver") !== -1)
+  ) {
     return 38029;
   } else if (
-  name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("12/512") !== -1 &&
-  name.indexOf("gray") !== -1) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 38033;
   } else if (
-name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("12/512") !== -1 &&
-  name.indexOf("green") !== -1) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
     return 38034;
   } else if (
-name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("12/512") !== -1 &&
-  (name.indexOf("white") !== -1 ||
-  name.indexOf("silver") !== -1)) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    (name.indexOf("white") !== -1 || name.indexOf("silver") !== -1)
+  ) {
     return 38035;
   } else if (
-  name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("16/512") !== -1 &&
-  name.indexOf("gray") !== -1) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 38039;
   } else if (
-name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("16/512") !== -1 &&
-  name.indexOf("green") !== -1) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
     return 38040;
   } else if (
-name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("16/512") !== -1 &&
-  (name.indexOf("white") !== -1 ||
-  name.indexOf("silver") !== -1)) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("16/512") !== -1 &&
+    (name.indexOf("white") !== -1 || name.indexOf("silver") !== -1)
+  ) {
     return 38041;
   } else if (
-  name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("16/1tb") !== -1 &&
-  name.indexOf("gray") !== -1) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 38045;
   } else if (
-name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("16/1tb") !== -1 &&
-  name.indexOf("green") !== -1) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
     return 38046;
   } else if (
-name.indexOf("oneplus ace 5") !== -1 &&
-name.indexOf("pro") === -1 &&
-  name.indexOf("16/1tb") !== -1 &&
-  (name.indexOf("white") !== -1 ||
-  name.indexOf("silver") !== -1)) {
+    name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    (name.indexOf("white") !== -1 || name.indexOf("silver") !== -1)
+  ) {
     return 38047;
   } else if (
-  name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("12/256") !== -1 &&
-  name.indexOf("gray") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 38050;
   } else if (
-name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("12/256") !== -1 &&
-  name.indexOf("purple") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
     return 38051;
   } else if (
-name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("12/256") !== -1 &&
-  name.indexOf("white") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
     return 38052;
   } else if (
-  name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("16/256") !== -1 &&
-  name.indexOf("gray") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("16/256") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 38053;
   } else if (
-name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("16/256") !== -1 &&
-  name.indexOf("purple") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("16/256") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
     return 38054;
   } else if (
-name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("16/256") !== -1 &&
-  name.indexOf("white") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("16/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
     return 38055;
   } else if (
-  name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("12/512") !== -1 &&
-  name.indexOf("gray") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 38059;
   } else if (
-name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("12/512") !== -1 &&
-  name.indexOf("purple") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
     return 38060;
   } else if (
-name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("12/512") !== -1 &&
-  name.indexOf("white") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
     return 38061;
   } else if (
-  name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("16/512") !== -1 &&
-  name.indexOf("gray") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 38065;
   } else if (
-name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("16/512") !== -1 &&
-  name.indexOf("purple") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
     return 38066;
   } else if (
-name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("16/512") !== -1 &&
-  name.indexOf("white") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
     return 38067;
   } else if (
-  name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("16/1tb") !== -1 &&
-  name.indexOf("gray") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
     return 38071;
   } else if (
-name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("16/1tb") !== -1 &&
-  name.indexOf("purple") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
     return 38072;
   } else if (
-name.indexOf("oneplus ace 5 pro") !== -1 &&
-  name.indexOf("16/1tb") !== -1 &&
-  name.indexOf("white") !== -1) {
+    name.indexOf("oneplus ace 5 pro") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
     return 38073;
 
     // Google
@@ -2487,7 +2524,7 @@ name.indexOf("oneplus ace 5 pro") !== -1 &&
   ) {
     return 36709;
   } else if (
-    name.indexOf("xl") === -1 && 
+    name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("pixel 9") !== -1 &&
     name.indexOf("128") !== -1 &&
@@ -2495,15 +2532,17 @@ name.indexOf("oneplus ace 5 pro") !== -1 &&
   ) {
     return 36682;
   } else if (
-    name.indexOf("xl") === -1 && 
+    name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("pixel 9") !== -1 &&
     name.indexOf("128") !== -1 &&
-    (name.indexOf("peony") !== -1 || name.indexOf("pink") !== -1 || name.indexOf("rose") !== -1)
+    (name.indexOf("peony") !== -1 ||
+      name.indexOf("pink") !== -1 ||
+      name.indexOf("rose") !== -1)
   ) {
     return 36693;
   } else if (
-    name.indexOf("xl") === -1 && 
+    name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("pixel 9") !== -1 &&
     name.indexOf("128") !== -1 &&
@@ -2511,7 +2550,7 @@ name.indexOf("oneplus ace 5 pro") !== -1 &&
   ) {
     return 36692;
   } else if (
-    name.indexOf("xl") === -1 && 
+    name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("pixel 9") !== -1 &&
     name.indexOf("128") !== -1 &&
@@ -2519,7 +2558,7 @@ name.indexOf("oneplus ace 5 pro") !== -1 &&
   ) {
     return 36694;
   } else if (
-    name.indexOf("xl") === -1 && 
+    name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("pixel 9") !== -1 &&
     name.indexOf("256") !== -1 &&
@@ -2527,15 +2566,17 @@ name.indexOf("oneplus ace 5 pro") !== -1 &&
   ) {
     return 36695;
   } else if (
-    name.indexOf("xl") === -1 && 
+    name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("pixel 9") !== -1 &&
     name.indexOf("256") !== -1 &&
-    (name.indexOf("peony") !== -1 || name.indexOf("pink") !== -1 || name.indexOf("rose") !== -1)
+    (name.indexOf("peony") !== -1 ||
+      name.indexOf("pink") !== -1 ||
+      name.indexOf("rose") !== -1)
   ) {
     return 36696;
   } else if (
-    name.indexOf("xl") === -1 && 
+    name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("pixel 9") !== -1 &&
     name.indexOf("256") !== -1 &&
@@ -2543,13 +2584,61 @@ name.indexOf("oneplus ace 5 pro") !== -1 &&
   ) {
     return 36697;
   } else if (
-    name.indexOf("xl") === -1 && 
+    name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("pixel 9") !== -1 &&
     name.indexOf("256") !== -1 &&
     (name.indexOf("wintergreen") !== -1 || name.indexOf("green") !== -1)
   ) {
     return 36698;
+  } else if (
+    name.indexOf("pixel 9a") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("iris") != -1
+  ) {
+    return 38802;
+  } else if (
+    name.indexOf("pixel 9a") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("obsidian") != -1
+  ) {
+    return 38803;
+  } else if (
+    name.indexOf("pixel 9a") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("peony") != -1
+  ) {
+    return 38804;
+  } else if (
+    name.indexOf("pixel 9a") != -1 &&
+    name.indexOf("8/128") != -1 &&
+    name.indexOf("porcelain") != -1
+  ) {
+    return 38805;
+  } else if (
+    name.indexOf("pixel 9a") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("iris") != -1
+  ) {
+    return 38810;
+  } else if (
+    name.indexOf("pixel 9a") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("obsidian") != -1
+  ) {
+    return 38811;
+  } else if (
+    name.indexOf("pixel 9a") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("peony") != -1
+  ) {
+    return 38812;
+  } else if (
+    name.indexOf("pixel 9a") != -1 &&
+    name.indexOf("8/256") != -1 &&
+    name.indexOf("porcelain") != -1
+  ) {
+    return 38813;
   } else {
     return returnIDOtherBrand2(name) || "No match";
   }

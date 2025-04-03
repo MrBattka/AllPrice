@@ -128,7 +128,6 @@ export const returnIDXiaomi = (name) => {
     return 37018;
   } else if (name.indexOf("m6 8/128 silver") !== -1) {
     return 37019;
-    
   } else if (name.indexOf("poco c61 3/64 black") != -1) {
     return 38687;
   } else if (name.indexOf("poco c61 3/64 blue") != -1) {
@@ -143,7 +142,6 @@ export const returnIDXiaomi = (name) => {
     return 38685;
   } else if (name.indexOf("poco c61 6/128 white") != -1) {
     return 38686;
-
   } else if (name.indexOf("c61 4/128 black") !== -1) {
     return 36917;
   } else if (name.indexOf("c61 4/128 blue") !== -1) {
@@ -577,6 +575,66 @@ export const returnIDXiaomi = (name) => {
     return 37847;
   } else if (name.indexOf("poco x7 pro 12/512 green") !== -1) {
     return 37848;
+  } else if (
+    name.indexOf("poco f7 pro") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 38783;
+  } else if (
+    name.indexOf("poco f7 pro") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 38784;
+  } else if (
+    name.indexOf("poco f7 pro") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("silver") != -1
+  ) {
+    return 38785;
+  } else if (
+    name.indexOf("poco f7 pro") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 38789;
+  } else if (
+    name.indexOf("poco f7 pro") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 38790;
+  } else if (
+    name.indexOf("poco f7 pro") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("silver") != -1
+  ) {
+    return 38791;
+  } else if (
+    name.indexOf("poco f7 ultra") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 38774;
+  } else if (
+    name.indexOf("poco f7 ultra") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("yellow") != -1
+  ) {
+    return 38776;
+  } else if (
+    name.indexOf("poco f7 ultra") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 38779;
+  } else if (
+    name.indexOf("poco f7 ultra") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("yellow") != -1
+  ) {
+    return 38780;
     // Watch
   } else if (name.indexOf("redmi watch 3 black") !== -1) {
     return 26348;
@@ -1334,6 +1392,27 @@ export const returnIDXiaomi = (name) => {
     (name.indexOf("ocean") !== -1 || name.indexOf("sunset") !== -1)
   ) {
     return 36394;
+
+  } else if (
+    name.indexOf("note 14s") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 38796;
+  } else if (
+    name.indexOf("note 14s") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 38797;
+  } else if (
+    name.indexOf("note 14s") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 38798;
+
+
   } else if (
     name.indexOf("note 14 pro +") !== -1 &&
     name.indexOf("8/256") !== -1 &&

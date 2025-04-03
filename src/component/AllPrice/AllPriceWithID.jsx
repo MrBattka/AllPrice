@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   baseFix,
-  baseFixAlikson,
   baseFixArti,
   baseFixBase,
   baseFixBigAp,
@@ -13,6 +12,7 @@ import {
   baseFixHi,
   baseFixInfinity,
   baseFixL27,
+  baseFixLikemob,
   baseFixLowPrice,
   baseFixMiHonor,
   baseFixMiOpts,
@@ -32,7 +32,33 @@ import {
 import { returnFixPrice } from "../../helpers/fixPrice";
 import { newPrice } from "../../helpers/NewPrice";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { returnCategoryArti } from "../Arti/category/Category";
+import {
+  returnFixNameArti,
+  returnNameArti,
+  returnStockPriceArti,
+} from "../Arti/helpers/helpers";
+import { returnFixNameBase } from "../Base/helpers/helpers";
+import {
+  returnFixNameBigAp,
+  returnNameInArrBigAp,
+  returnStockPriceBigAp,
+} from "../BigAp/helpers/helpers";
+import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
 import TableAllPrice from "../CreateAllPriceTable/TableAllPrice";
+import {
+  returnFixNameDiscount,
+  returnNameInArrDiscount,
+  returnStockPriceDiscount,
+} from "../Discount/helpers/helpers";
+import { returnFixNameElectrozon } from "../Electrozon/helpers/helpers";
+import { returnNameF51 } from "../F51/helpers/helpers";
+import {
+  fixNameGarmin,
+  returnExtraPriceGarmin,
+  returnFixNameProductGarmin,
+  returnStockPriceGarmin,
+} from "../Garmin/helpers/helpers";
 import { returnAppleHi } from "../Hi/Apple/apple";
 import { returnDysonHi } from "../Hi/Dyson/dyson";
 import { returnGarminHi } from "../Hi/Garmin/garmin";
@@ -44,21 +70,27 @@ import {
   returnStockPriceHi,
 } from "../Hi/helpers/helpers";
 import { returnSamsungHi } from "../Hi/Samsung/samsung";
-import style from "../styles.module.css";
 import { returnXiaomiHi } from "../Hi/Xiaomi/xiaomi";
-import { fixNameSuperPrice } from "../SuperPrice/helpers/helpers";
-import { returnApple } from "../Unimtrn/Apple/apple";
-import { returnDyson } from "../Unimtrn/Dyson/dyson";
-import { returnGameConsole } from "../Unimtrn/GameConsole/gameConsole";
-import { fixNameUnimtrn } from "../Unimtrn/helpers/helpers";
-import { returnOtherProduct } from "../Unimtrn/OtherProduct/otherProduct";
-import { returnSamsung } from "../Unimtrn/Samsung/samsung";
 import {
-  fixNameVseMi,
-  returnExtraPriceVseMi,
-  returnNameInArrVseMi,
-  returnStockPriceVseMi,
-} from "../VseMi/helpers/helpers";
+  fixNameInfinity,
+  returnNameInArrInfinity,
+  returnStockPriceInfinity,
+} from "../Infinity/helpers/helpers";
+import {
+  returnFixNameL27,
+  returnNameInArrL27,
+  returnStockPriceL27,
+} from "../L27/helpers/helpers";
+import {
+  returnFixNameLikemob,
+  returnNameInArrLikemob,
+  returnStockPriceLikemob,
+} from "../Likemob/helpers/helpers";
+import {
+  fixNameLowPrice,
+  returnNameInArrLowPrice,
+  returnStockPriceLowPrice,
+} from "../LowPriceApple/helpers/helpers";
 import {
   fixNameMihonor,
   returnExtraPriceMihonor,
@@ -66,50 +98,21 @@ import {
   returnStockPriceMihonor,
 } from "../MiHonor/helpers/helpers";
 import {
-  fixNameGarmin,
-  returnExtraPriceGarmin,
-  returnFixNameProductGarmin,
-  returnStockPriceGarmin,
-} from "../Garmin/helpers/helpers";
-import { returnXiaomi } from "../Unimtrn/Xiaomi/xiaomi";
+  fixNameMiOpts,
+  returnExtraPriceMiOpts,
+  returnNameInArrMiOpts,
+  returnStockPriceMiOpts,
+} from "../MiOpts/helpers/helpers";
 import {
-  fixNameS5,
-  returnExtraPriceS5,
-  returnNameInArrS5,
-  returnStockPriceS5,
-} from "../S5/helpers/helpers";
-import { returnFixNameRPTrade } from "../RPTrade/helpers/helpers";
-import {
-  returnExtraPriceRacmag,
-  returnFixNameRacmag,
-  returnNameInArrRacmag,
-  returnStockPriceRacmag,
-} from "../Racmag/helpers/helpers";
-import { returnFixNameElectrozon } from "../Electrozon/helpers/helpers";
-import {
-  returnFixNameArti,
-  returnNameArti,
-  returnStockPriceArti,
-} from "../Arti/helpers/helpers";
-import { returnCategoryArti } from "../Arti/category/Category";
-import {
-  returnExtraPriceReSale,
-  returnFixNameReSale,
-  returnNameReSale,
-  returnStockPriceReSale,
-} from "../ReSale/helpers/helpers";
-import {
-  fixNameTagir,
-  returnNameTagir,
-  returnStockPriceTagir,
-} from "../Tagir/helpers/helpers";
+  returnFixNameMTA,
+  returnNameInArrMTA,
+  returnStockPriceMTA,
+} from "../MTA/helpers/helpers";
 import {
   fixNameNarod,
   returnNameNarod,
   returnStockPriceNarod,
 } from "../Narod/helpers/helpers";
-import { returnNameF51 } from "../F51/helpers/helpers";
-import { returnFixNameBase } from "../Base/helpers/helpers";
 import {
   returnExtraPriceOther,
   returnFixNameOther,
@@ -117,53 +120,50 @@ import {
   returnStockPriceOther,
 } from "../Other/helpers/helpers";
 import {
-  returnFixNameDiscount,
-  returnNameInArrDiscount,
-  returnStockPriceDiscount,
-} from "../Discount/helpers/helpers";
+  returnExtraPriceRacmag,
+  returnFixNameRacmag,
+  returnNameInArrRacmag,
+  returnStockPriceRacmag,
+} from "../Racmag/helpers/helpers";
 import {
-  fixNameMiOpts,
-  returnExtraPriceMiOpts,
-  returnNameInArrMiOpts,
-  returnStockPriceMiOpts,
-} from "../MiOpts/helpers/helpers";
+  returnExtraPriceReSale,
+  returnFixNameReSale,
+  returnNameReSale,
+  returnStockPriceReSale,
+} from "../ReSale/helpers/helpers";
+import { returnFixNameRootOpt } from "../RootOPT/helpers/helpers";
+import { returnFixNameRPTrade } from "../RPTrade/helpers/helpers";
 import {
-  fixNameLowPrice,
-  returnNameInArrLowPrice,
-  returnStockPriceLowPrice,
-} from "../LowPriceApple/helpers/helpers";
-import {
-  returnFixNameL27,
-  returnNameInArrL27,
-  returnStockPriceL27,
-} from "../L27/helpers/helpers";
+  fixNameS5,
+  returnExtraPriceS5,
+  returnNameInArrS5,
+  returnStockPriceS5,
+} from "../S5/helpers/helpers";
+import style from "../styles.module.css";
 import {
   returnFixNameSunrise,
   returnNameInArrSunrise,
   returnStockPriceSunrise,
 } from "../Sunrise/helpers/helpers";
+import { fixNameSuperPrice } from "../SuperPrice/helpers/helpers";
 import {
-  fixNameInfinity,
-  returnNameInArrInfinity,
-  returnStockPriceInfinity,
-} from "../Infinity/helpers/helpers";
+  fixNameTagir,
+  returnNameTagir,
+  returnStockPriceTagir,
+} from "../Tagir/helpers/helpers";
+import { returnApple } from "../Unimtrn/Apple/apple";
+import { returnDyson } from "../Unimtrn/Dyson/dyson";
+import { returnGameConsole } from "../Unimtrn/GameConsole/gameConsole";
+import { fixNameUnimtrn } from "../Unimtrn/helpers/helpers";
+import { returnOtherProduct } from "../Unimtrn/OtherProduct/otherProduct";
+import { returnSamsung } from "../Unimtrn/Samsung/samsung";
+import { returnXiaomi } from "../Unimtrn/Xiaomi/xiaomi";
 import {
-  returnFixNameAlikson,
-  returnNameInArrAlikson,
-  returnStockPriceAlikson,
-} from "../Alikson/helpers/helpers";
-import {
-  returnFixNameMTA,
-  returnNameInArrMTA,
-  returnStockPriceMTA,
-} from "../MTA/helpers/helpers";
-import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
-import {
-  returnFixNameBigAp,
-  returnNameInArrBigAp,
-  returnStockPriceBigAp,
-} from "../BigAp/helpers/helpers";
-import { returnFixNameRootOpt } from "../RootOPT/helpers/helpers";
+  fixNameVseMi,
+  returnExtraPriceVseMi,
+  returnNameInArrVseMi,
+  returnStockPriceVseMi,
+} from "../VseMi/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -189,11 +189,11 @@ const AllPriceWithID = ({
   l27Data,
   sunriseData,
   infinityData,
-  aliksonData,
+  likemobData,
   mtaData,
   bonusData,
   bigApData,
-  rootOptData
+  rootOptData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -737,27 +737,27 @@ const AllPriceWithID = ({
     }
   });
 
-  aliksonData.map((racmag) => {
-    baseFixAlikson(racmag) &&
-      returnStockPriceAlikson(returnFixNameAlikson(racmag.name));
+  likemobData.map((likemob) => {
+    baseFixLikemob(likemob) &&
+      returnStockPriceLikemob(returnFixNameLikemob(likemob.name));
     if (
-      racmag.name &&
-      typeof racmag.name === "string" &&
-      baseFixAlikson(racmag) &&
+      likemob.name &&
+      typeof likemob.name === "string" &&
+      baseFixLikemob(likemob) &&
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameAlikson(racmag.name)) !== "No match" &&
-        returnStockPriceAlikson(racmag.name) &&
+        returnIDSamsung(returnFixNameLikemob(likemob.name)) !== "No match" &&
+        returnStockPriceLikemob(likemob.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
-            returnNameInArrAlikson(returnFixNameAlikson(racmag.name))
+            returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
           ),
-          name: returnNameInArrAlikson(returnFixNameAlikson(racmag.name)),
-          stockPrice: returnStockPriceAlikson(
-            returnFixNameAlikson(racmag.name)
+          name: returnNameInArrLikemob(returnFixNameLikemob(likemob.name)),
+          stockPrice: returnStockPriceLikemob(
+            returnFixNameLikemob(likemob.name)
           ),
-          provider: "Alikson",
+          provider: "Likemob",
         })
       );
     }
@@ -824,25 +824,25 @@ const AllPriceWithID = ({
   });
 
   rootOptData.map((rootOpt) => {
-      if (
-        rootOpt.name &&
-        typeof rootOpt.name === "string" &&
-        baseFixRootOpt(rootOpt) &&
-        rootOpt.price !== 'ожидается' &&
-        isOpen
-      ) {
-        return (
-          returnIDSamsung(returnFixNameRootOpt(rootOpt.name)) !== "No match" &&
-          rootOpt.price &&
-          allPriceArr.push({
-            id: returnIDSamsung(returnFixNameRootOpt(rootOpt.name)),
-            name: returnFixNameRootOpt(rootOpt.name),
-            stockPrice: rootOpt.price,
-            provider: "RootOPT",
-          })
-        );
-      }
-    });
+    if (
+      rootOpt.name &&
+      typeof rootOpt.name === "string" &&
+      baseFixRootOpt(rootOpt) &&
+      rootOpt.price !== "ожидается" &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameRootOpt(rootOpt.name)) !== "No match" &&
+        rootOpt.price &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnFixNameRootOpt(rootOpt.name)),
+          name: returnFixNameRootOpt(rootOpt.name),
+          stockPrice: rootOpt.price,
+          provider: "RootOPT",
+        })
+      );
+    }
+  });
 
   return (
     <div>

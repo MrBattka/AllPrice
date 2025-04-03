@@ -6,6 +6,10 @@ import IndexArti from "./Arti/indexArti";
 import IndexArtiNotID from "./Arti/indexArtiNotID";
 import IndexBase from "./Base/IndexBase";
 import IndexBaseNotID from "./Base/IndexBaseNotID";
+import IndexBigAp from "./BigAp/IndexBigAp";
+import IndexBigApNotID from "./BigAp/IndexBigApNotID";
+import IndexBonusNotID from "./BonusOPT/IndexBonusNotID";
+import IndexBonus from "./BonusOPT/IndexEBonus";
 import IndexDiscount from "./Discount/IndexDiscount";
 import IndexDiscountNotID from "./Discount/IndexDiscountNotID";
 import IndexElectrozon from "./Electrozon/IndexElectrozon";
@@ -16,8 +20,20 @@ import IndexGarmin from "./Garmin/indexGarmin";
 import IndexGarminNotID from "./Garmin/indexGarminNotID";
 import IndexHi from "./Hi/IndexHi";
 import IndexHiNotID from "./Hi/IndexHiNotID";
+import IndexInfinity from "./Infinity/indexInfinity";
+import IndexInfinityNotID from "./Infinity/indexInfinityNotID";
+import IndexL27 from "./L27/IndexL27";
+import IndexL27NotID from "./L27/IndexL27NotID";
+import IndexLikemob from "./Likemob/IndexLikemob";
+import IndexLikemobNotID from "./Likemob/IndexLikemobNotID";
+import IndexLowPrice from "./LowPriceApple/indexLowPrice";
+import IndexLowPriceNotID from "./LowPriceApple/indexLowPriceNotID";
+import IndexMTA from "./MTA/IndexMTA";
+import IndexMTANotID from "./MTA/IndexMTANotID";
 import IndexMiHonor from "./MiHonor/indexMiHonor";
 import IndexMiHonorNotID from "./MiHonor/indexMiHonorNotID";
+import IndexMiOpts from "./MiOpts/indexMiOpts";
+import IndexMiOptsNotID from "./MiOpts/indexMiOptsNotID";
 import IndexNarod from "./Narod/IndexNarod";
 import IndexNarodNotID from "./Narod/IndexNarodNotID";
 import IndexOther from "./Other/IndexOther";
@@ -28,8 +44,12 @@ import IndexRacmag from "./Racmag/IndexRacmag";
 import IndexRacmagNotID from "./Racmag/IndexRacmagNotID";
 import IndexReSale from "./ReSale/indexReSale";
 import IndexReSaleNotID from "./ReSale/indexReSaleNotID";
+import IndexRootOpt from "./RootOPT/IndexERootOpt";
+import IndexRootOptNotID from "./RootOPT/IndexRootOptNotID";
 import IndexS5 from "./S5/IndexS5";
 import IndexS5NotID from "./S5/IndexS5NotID";
+import IndexSunrise from "./Sunrise/IndexSunrise";
+import IndexSunriseNotID from "./Sunrise/IndexSunriseNotID";
 import IndexSuperPrice from "./SuperPrice/indexSuperPrice";
 import IndexSuperPriceNotID from "./SuperPrice/indexSuperPriceNotID";
 import IndexTagir from "./Tagir/IndexTagir";
@@ -38,27 +58,6 @@ import IndexUnimtrn from "./Unimtrn/indexUNIMTRN";
 import IndexUnimtrnNotID from "./Unimtrn/indexUNIMTRNNotID";
 import IndexVseMi from "./VseMi/indexVseMi";
 import IndexVseMiNotID from "./VseMi/indexVseMiNotID";
-import icon from "../source/icon/icon1.png";
-import IndexMiOpts from "./MiOpts/indexMiOpts";
-import IndexMiOptsNotID from "./MiOpts/indexMiOptsNotID";
-import IndexLowPrice from "./LowPriceApple/indexLowPrice";
-import IndexLowPriceNotID from "./LowPriceApple/indexLowPriceNotID";
-import IndexL27 from "./L27/IndexL27";
-import IndexL27NotID from "./L27/IndexL27NotID";
-import IndexSunrise from "./Sunrise/IndexSunrise";
-import IndexSunriseNotID from "./Sunrise/IndexSunriseNotID";
-import IndexInfinity from "./Infinity/indexInfinity";
-import IndexInfinityNotID from "./Infinity/indexInfinityNotID";
-import IndexAlikson from "./Alikson/IndexAlikson";
-import IndexAliksonNotID from "./Alikson/IndexAliksonNotID";
-import IndexBigAp from "./BigAp/IndexBigAp";
-import IndexMTA from "./MTA/IndexMTA";
-import IndexMTANotID from "./MTA/IndexMTANotID";
-import IndexBonus from "./BonusOPT/IndexEBonus";
-import IndexBonusNotID from "./BonusOPT/IndexBonusNotID";
-import IndexBigApNotID from "./BigAp/IndexBigApNotID";
-import IndexRootOpt from "./RootOPT/IndexERootOpt";
-import IndexRootOptNotID from "./RootOPT/IndexRootOptNotID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -86,7 +85,7 @@ const IndexAllPrice = () => {
   const [dataL27, setDataL27] = useState([]);
   const [dataSunrise, setDataSunrise] = useState([]);
   const [dataInfinity, setDataInfinity] = useState([]);
-  const [dataAlikson, setDataAlikson] = useState([]);
+  const [dataLikemob, setDataLikemob] = useState([]);
   const [dataBigAp, setDataBigAp] = useState([]);
   const [dataMTA, setDataMTA] = useState([]);
   const [dataBonus, setDataBonus] = useState([]);
@@ -115,7 +114,7 @@ const IndexAllPrice = () => {
   const l27 = [];
   const sunrise = [];
   const infinity = [];
-  const alikson = [];
+  const likemob = [];
   const bigAp = [];
   const mta = [];
   const bonus = [];
@@ -292,11 +291,11 @@ const IndexAllPrice = () => {
       infinity.push({ name: infinityEl.Infinity });
   });
 
-  dataAlikson.map((aliksonEl) => {
-    aliksonEl.Alikson &&
-      aliksonEl.Alikson.length > 7 &&
-      typeof aliksonEl.Alikson === "string" &&
-      alikson.push({ name: aliksonEl.Alikson });
+  dataLikemob.map((likemobEl) => {
+    likemobEl.Likemob &&
+      likemobEl.Likemob.length > 7 &&
+      typeof likemobEl.Likemob === "string" &&
+      likemob.push({ name: likemobEl.Likemob });
   });
 
   dataBigAp.map((bigApEl) => {
@@ -377,8 +376,8 @@ const IndexAllPrice = () => {
           setDataSunrise(rowSunrise);
           const rowInfinity = utils.sheet_to_json(wb.Sheets[sheets[22]]);
           setDataInfinity(rowInfinity);
-          const rowAlikson = utils.sheet_to_json(wb.Sheets[sheets[23]]);
-          setDataAlikson(rowAlikson);
+          const rowLikemob = utils.sheet_to_json(wb.Sheets[sheets[23]]);
+          setDataLikemob(rowLikemob);
           const rowBigAp = utils.sheet_to_json(wb.Sheets[sheets[24]]);
           setDataBigAp(rowBigAp);
           const rowMTA = utils.sheet_to_json(wb.Sheets[sheets[25]]);
@@ -496,8 +495,8 @@ const IndexAllPrice = () => {
         <IndexInfinity el={dataInfinity} infinityData={infinity} />
         <IndexInfinityNotID el={dataInfinity} infinityData={infinity} />
         {/* Alikson */}
-        <IndexAlikson el={dataAlikson} aliksonData={alikson} />
-        <IndexAliksonNotID el={dataAlikson} aliksonData={alikson} />
+        <IndexLikemob el={dataLikemob} likemobData={likemob} />
+        <IndexLikemobNotID el={dataLikemob} likemobData={likemob} />
         {/* BigAp */}
         <IndexBigAp el={dataBigAp} bigApData={bigAp} />
         <IndexBigApNotID el={dataBigAp} bigApData={bigAp} />
@@ -536,7 +535,7 @@ const IndexAllPrice = () => {
           l27Data={l27}
           sunriseData={sunrise}
           infinityData={infinity}
-          aliksonData={alikson}
+          likemobData={likemob}
           mtaData={mta}
           bonusData={bonus}
           bigApData={bigAp}

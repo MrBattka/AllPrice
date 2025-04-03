@@ -12,7 +12,10 @@ export const returnIDApple = (name) => {
     return 23458;
   } else if (name.indexOf("airpods pro") !== -1) {
     return 13955;
-  } else if (name.indexOf("airpods 3") !== -1 && name.indexOf("magsafe") !== -1) {
+  } else if (
+    name.indexOf("airpods 3") !== -1 &&
+    name.indexOf("magsafe") !== -1
+  ) {
     return 27128;
   } else if (
     name.indexOf("airpods 3 lighting") !== -1 ||
@@ -139,15 +142,9 @@ export const returnIDApple = (name) => {
     return 18977;
 
     // apple tv
-  } else if (
-    name.indexOf("apple tv") !== -1 &&
-    name.indexOf("32") !== -1
-  ) {
+  } else if (name.indexOf("apple tv") !== -1 && name.indexOf("32") !== -1) {
     return 20151;
-  } else if (
-    name.indexOf("apple tv") !== -1 &&
-    name.indexOf("64") !== -1
-  ) {
+  } else if (name.indexOf("apple tv") !== -1 && name.indexOf("64") !== -1) {
     return 27026;
 
     // home pod
@@ -698,20 +695,17 @@ export const returnIDApple = (name) => {
     return 13769;
   } else if (
     name.indexOf("magic mouse 2") !== -1 &&
-    (name.indexOf("white") !== -1 ||
-    name.indexOf("бел") !== -1)
+    (name.indexOf("white") !== -1 || name.indexOf("бел") !== -1)
   ) {
     return 2071;
   } else if (
     name.indexOf("magic mouse 3") !== -1 &&
-    (name.indexOf("black") !== -1 ||
-    name.indexOf("черн") !== -1)
+    (name.indexOf("black") !== -1 || name.indexOf("черн") !== -1)
   ) {
     return 38001;
   } else if (
     name.indexOf("magic mouse 3") !== -1 &&
-    (name.indexOf("white") !== -1 ||
-    name.indexOf("бел") !== -1)
+    (name.indexOf("white") !== -1 || name.indexOf("бел") !== -1)
   ) {
     return 38011;
   } else if (
@@ -818,6 +812,41 @@ export const returnIDApple = (name) => {
     name.indexOf("black") !== -1
   ) {
     return 13909;
+  } else if (
+    name.indexOf("magic keyboard with touch") !== -1 &&
+    name.indexOf("numeric") !== -1 &&
+    name.indexOf("mac") !== -1 &&
+    name.indexOf("silicon") !== -1 &&
+    name.indexOf("usb-c") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 38756;
+  } else if (
+    name.indexOf("magic keyboard with touch") !== -1 &&
+    name.indexOf("numeric") !== -1 &&
+    name.indexOf("mac") !== -1 &&
+    name.indexOf("silicon") !== -1 &&
+    name.indexOf("usb-c") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 38757;
+  } else if (
+    name.indexOf("magic keyboard") !== -1 &&
+    name.indexOf("usb-c") !== -1 &&
+    name.indexOf("white") !== -1 &&
+    name.indexOf("mac ") === -1 &&
+    name.indexOf("numeric") === -1
+  ) {
+    return 38758;
+  } else if (
+    name.indexOf("magic keyboard with touch") !== -1 &&
+    name.indexOf("mac") !== -1 &&
+    name.indexOf("silicon") != -1 &&
+    name.indexOf("usb-c") !== -1 &&
+    name.indexOf("white") !== -1 &&
+    name.indexOf("numeric") === -1
+  ) {
+    return 38759;
 
     // iPad mini
   } else if (
@@ -2034,8 +2063,7 @@ export const returnIDApple = (name) => {
     return 22185;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2043,8 +2071,7 @@ export const returnIDApple = (name) => {
     return 36208;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2052,8 +2079,7 @@ export const returnIDApple = (name) => {
     return 36207;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2061,8 +2087,7 @@ export const returnIDApple = (name) => {
     return 36172;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2070,8 +2095,7 @@ export const returnIDApple = (name) => {
     return 36206;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2079,8 +2103,7 @@ export const returnIDApple = (name) => {
     return 36401;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2088,8 +2111,7 @@ export const returnIDApple = (name) => {
     return 36402;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2097,8 +2119,7 @@ export const returnIDApple = (name) => {
     return 36403;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2106,8 +2127,7 @@ export const returnIDApple = (name) => {
     return 36404;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2115,8 +2135,7 @@ export const returnIDApple = (name) => {
     return 36217;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2124,8 +2143,7 @@ export const returnIDApple = (name) => {
     return 36218;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2133,8 +2151,7 @@ export const returnIDApple = (name) => {
     return 36219;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2142,8 +2159,7 @@ export const returnIDApple = (name) => {
     return 36220;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2151,8 +2167,7 @@ export const returnIDApple = (name) => {
     return 36405;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2160,8 +2175,7 @@ export const returnIDApple = (name) => {
     return 36406;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2169,8 +2183,7 @@ export const returnIDApple = (name) => {
     return 36407;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2178,8 +2191,7 @@ export const returnIDApple = (name) => {
     return 36408;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2187,8 +2199,7 @@ export const returnIDApple = (name) => {
     return 36209;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2196,8 +2207,7 @@ export const returnIDApple = (name) => {
     return 36210;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2205,8 +2215,7 @@ export const returnIDApple = (name) => {
     return 36211;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2214,8 +2223,7 @@ export const returnIDApple = (name) => {
     return 36212;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2223,8 +2231,7 @@ export const returnIDApple = (name) => {
     return 36409;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2232,8 +2239,7 @@ export const returnIDApple = (name) => {
     return 36410;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2241,8 +2247,7 @@ export const returnIDApple = (name) => {
     return 36411;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2250,8 +2255,7 @@ export const returnIDApple = (name) => {
     return 36412;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2259,8 +2263,7 @@ export const returnIDApple = (name) => {
     return 36213;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2268,8 +2271,7 @@ export const returnIDApple = (name) => {
     return 36214;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2277,8 +2279,7 @@ export const returnIDApple = (name) => {
     return 36215;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2286,8 +2287,7 @@ export const returnIDApple = (name) => {
     return 36216;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2295,8 +2295,7 @@ export const returnIDApple = (name) => {
     return 36413;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("lte) !== -1") !== -1
@@ -2312,8 +2311,7 @@ export const returnIDApple = (name) => {
     return 36415;
   } else if (
     name.indexOf("air 11") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2833,8 +2831,7 @@ export const returnIDApple = (name) => {
     return 38586;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2842,8 +2839,7 @@ export const returnIDApple = (name) => {
     return 36455;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2851,8 +2847,7 @@ export const returnIDApple = (name) => {
     return 36456;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2860,8 +2855,7 @@ export const returnIDApple = (name) => {
     return 36454;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2869,8 +2863,7 @@ export const returnIDApple = (name) => {
     return 36457;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2878,8 +2871,7 @@ export const returnIDApple = (name) => {
     return 36232;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2887,8 +2879,7 @@ export const returnIDApple = (name) => {
     return 36233;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2896,8 +2887,7 @@ export const returnIDApple = (name) => {
     return 36234;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 1tb ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2905,8 +2895,7 @@ export const returnIDApple = (name) => {
     return 36235;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2914,8 +2903,7 @@ export const returnIDApple = (name) => {
     return 36459;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2923,8 +2911,7 @@ export const returnIDApple = (name) => {
     return 36460;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2932,8 +2919,7 @@ export const returnIDApple = (name) => {
     return 36458;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2941,8 +2927,7 @@ export const returnIDApple = (name) => {
     return 36461;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2950,8 +2935,7 @@ export const returnIDApple = (name) => {
     return 38657;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2959,8 +2943,7 @@ export const returnIDApple = (name) => {
     return 38655;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2968,8 +2951,7 @@ export const returnIDApple = (name) => {
     return 38656;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 128 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("lte") !== -1
@@ -2977,8 +2959,7 @@ export const returnIDApple = (name) => {
     return 38658;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2986,8 +2967,7 @@ export const returnIDApple = (name) => {
     return 36463;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -2995,8 +2975,7 @@ export const returnIDApple = (name) => {
     return 36464;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -3004,8 +2983,7 @@ export const returnIDApple = (name) => {
     return 36462;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -3013,8 +2991,7 @@ export const returnIDApple = (name) => {
     return 36465;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("lte") !== -1
@@ -3022,8 +2999,7 @@ export const returnIDApple = (name) => {
     return 36224;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("lte") !== -1
@@ -3031,8 +3007,7 @@ export const returnIDApple = (name) => {
     return 38659;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("lte") !== -1
@@ -3040,8 +3015,7 @@ export const returnIDApple = (name) => {
     return 38660;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 256 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("lte") !== -1
@@ -3049,8 +3023,7 @@ export const returnIDApple = (name) => {
     return 38661;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -3058,8 +3031,7 @@ export const returnIDApple = (name) => {
     return 36467;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -3067,8 +3039,7 @@ export const returnIDApple = (name) => {
     return 36468;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -3076,8 +3047,7 @@ export const returnIDApple = (name) => {
     return 36466;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("wi-fi") !== -1
@@ -3085,8 +3055,7 @@ export const returnIDApple = (name) => {
     return 36469;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("gray") !== -1 &&
     name.indexOf("lte") !== -1
@@ -3094,8 +3063,7 @@ export const returnIDApple = (name) => {
     return 36228;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("blue") !== -1 &&
     name.indexOf("lte") !== -1
@@ -3103,8 +3071,7 @@ export const returnIDApple = (name) => {
     return 36229;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
     name.indexOf("lte") !== -1
@@ -3112,8 +3079,7 @@ export const returnIDApple = (name) => {
     return 36230;
   } else if (
     name.indexOf("air 13") !== -1 &&
-    (name.indexOf(" m2 ") !== -1 ||
-    name.indexOf("2024") !== -1) &&
+    (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("starlight") !== -1 &&
     name.indexOf("lte") !== -1
@@ -3613,47 +3579,38 @@ export const returnIDApple = (name) => {
     // iphone se
   } else if (
     name.indexOf("se3 64 black") !== -1 ||
-    name.indexOf("se 64 midnight") !== -1
+    name.indexOf("se3 64 midnight") !== -1
   ) {
     return 22162;
-  } else if (
-    name.indexOf("se3 64 red") !== -1 ||
-    name.indexOf("se 64 red") !== -1
-  ) {
+  } else if (name.indexOf("se3 64 red") !== -1) {
     return 22164;
   } else if (
     name.indexOf("se3 64 white") !== -1 ||
-    name.indexOf("se 64 starlight") !== -1
+    name.indexOf("se3 64 starlight") !== -1
   ) {
     return 22163;
   } else if (
     name.indexOf("se3 128 black") !== -1 ||
-    name.indexOf("se 128 midnight") !== -1
+    name.indexOf("se3 128 midnight") !== -1
   ) {
     return 22165;
-  } else if (
-    name.indexOf("se3 128 red") !== -1 ||
-    name.indexOf("se 128 red") !== -1
-  ) {
+  } else if (name.indexOf("se3 128 red") !== -1) {
     return 22166;
   } else if (
     name.indexOf("se3 128 white") !== -1 ||
-    name.indexOf("se 128 starlight") !== -1
+    name.indexOf("se3 128 starlight") !== -1
   ) {
     return 22167;
   } else if (
     name.indexOf("se3 256 black") !== -1 ||
-    name.indexOf("se 256 midnight") !== -1
+    name.indexOf("se3 256 midnight") !== -1
   ) {
     return 22168;
-  } else if (
-    name.indexOf("se3 256 red") !== -1 ||
-    name.indexOf("se 256 red") !== -1
-  ) {
+  } else if (name.indexOf("se3 256 red") !== -1) {
     return 22169;
   } else if (
     name.indexOf("se3 256 white") !== -1 ||
-    name.indexOf("se 256 starlight") !== -1
+    name.indexOf("se3 256 starlight") !== -1
   ) {
     return 22170;
 
