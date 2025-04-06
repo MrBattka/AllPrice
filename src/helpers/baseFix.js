@@ -48,7 +48,6 @@ export const baseFix = (el) => {
       el.Модификация?.indexOf("HERO 11 mini") == -1 &&
       el.Модификация?.indexOf("HERO 12 Creator Edition") == -1 &&
       el.Модификация?.indexOf("HERO 12 Special Bundle") == -1 &&
-      el.Модификация?.indexOf("Honor") == -1 &&
       el.Модификация?.indexOf("freebuds") == -1 &&
       el.Модификация?.indexOf("Soundgear") == -1 &&
       el.Модификация?.indexOf("Go 3") == -1 &&
@@ -760,7 +759,6 @@ export const baseFixRacmag = (el) => {
       toLowerCase.indexOf("xiaomi") == -1 &&
       toLowerCase.indexOf("realme") == -1 &&
       toLowerCase.indexOf("infinix") == -1 &&
-      toLowerCase.indexOf("honor") == -1 &&
       toLowerCase.indexOf("freebuds") == -1 &&
       toLowerCase.indexOf("tecno") == -1 &&
       toLowerCase.indexOf("samsung") == -1 &&

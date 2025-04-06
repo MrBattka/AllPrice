@@ -2349,7 +2349,7 @@ export const returnIDApple = (name) => {
     name.indexOf("starlight") !== -1
   ) {
     return 38473;
-  } else if (
+  } else if ( 
     name.indexOf("air 11") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
     name.indexOf("128") !== -1 &&

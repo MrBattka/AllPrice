@@ -18,6 +18,7 @@ const IndexLowPrice = ({ el, lowPriceData }) => {
       return (
         returnIDSamsung(fixNameLowPrice(lowPrice.name)) !== "No match" &&
         returnStockPriceLowPrice(lowPrice.name) &&
+        returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)).indexOf("00") !== -1 &&
         resultArr.push({
           id: returnIDSamsung(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))),
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
