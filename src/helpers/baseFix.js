@@ -1838,6 +1838,7 @@ export const baseFixL27 = (el) => {
       toLowerCase?.indexOf("короб") == -1 &&
       toLowerCase?.indexOf("пломба") == -1 &&
       toLowerCase.indexOf(" r ") == -1 &&
+      toLowerCase.indexOf("airpods 4   l") == -1 &&
       toLowerCase.indexOf("airpods 2  l") == -1 &&
       toLowerCase.indexOf("airpods 2  r") == -1 &&
       toLowerCase.indexOf("airpods 3   r") == -1 &&
@@ -1848,6 +1849,7 @@ export const baseFixL27 = (el) => {
       toLowerCase.indexOf("airpods 3  box") == -1 &&
       toLowerCase.indexOf("airpods pro  l") == -1 &&
       toLowerCase.indexOf("airpods pro  r") == -1 &&
+      toLowerCase.indexOf("airpods pro 2 usb-c  r") == -1 &&
       toLowerCase.indexOf("airpods pro 2 usb-c  l") == -1 &&
       toLowerCase.indexOf("airpods pro 2 usb-c box") == -1 &&
       toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&

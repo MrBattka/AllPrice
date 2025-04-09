@@ -53,8 +53,9 @@ export const returnNameTagir = (name) => {
 
 export const returnStockPriceTagir = (name) => {
   let reverseStrName = name.split("").reverse().join("");
-  let splitPrice = reverseStrName.split(" ")[0];
-  let reverseBackStrName = splitPrice.split("").reverse().join("");
+  let splitPrice = reverseStrName.indexOf("- ") === -1 ? reverseStrName.split(" ")[0] : reverseStrName.split("-")[0]
+  let splitSpace = splitPrice.replace(" ", "")
+  let reverseBackStrName = splitSpace.split("").reverse().join("");
 
   return reverseBackStrName;
 };

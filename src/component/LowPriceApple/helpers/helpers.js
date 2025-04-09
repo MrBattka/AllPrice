@@ -119,7 +119,8 @@ export const returnStockPriceLowPrice = (name) => {
   let replaceKZ = replaceCF.replace("🇰🇿", "");
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceZA = replaceKR.replace("🇿🇦", "");
-  let replaceUSBC = replaceZA.replace("USB-C", "USBC");
+  let fixStick = replaceZA.replace("–", "-");
+  let replaceUSBC = fixStick.replace("USB-C", "USBC");
   let replaceBuds3White = replaceUSBC.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
     "Tab S9FE 8/256 Lavender 5G",
@@ -135,7 +136,9 @@ export const returnStockPriceLowPrice = (name) => {
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let splitPrice =
-    checkSpace4.indexOf("-") != -1 ? checkSpace4.split("-")[0] : checkSpace4;
+    checkSpace4.indexOf("-") !== -1
+      ? checkSpace4.split("-")[0]
+      : checkSpace4;
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 
@@ -155,7 +158,7 @@ export const returnStockPriceLowPrice = (name) => {
       ? removeDot.replace("SD8gen3", "")
       : removeDot;
 
-    let fixUSBC = removeSD8gen3.replace("USBC", "US-C");
+  let fixUSBC = removeSD8gen3.replace("USBC", "US-C");
 
   return fixUSBC;
 };
