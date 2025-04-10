@@ -178,21 +178,30 @@ export const returnStockPriceDiscount = (name) => {
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceGU = replaceKR.replace("🇬🇺", "");
   let replaceDot = replaceGU.replace(".", "");
-  let replace = replaceDot.replace(",", "");
+  let replaceSM = replaceDot.replace("SM-", "SM");
+  let replace = replaceSM.replace(",", "");
   let replaceStick = replace.replace("-", "");
 
-  let reverseStrName = replaceStick.split("").reverse().join("");
+  let reverseStrName = replace.split("").reverse().join("");
   let checkSpace1 =
     reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
   let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
   let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
-  let splitPrice = checkSpace4.split(" ")[0];
-  let removeStick = splitPrice.indexOf("-")
-    ? splitPrice.split("-")[0]
-    : splitPrice;
-  let reverseBackStrName = removeStick.split("").reverse().join("");
+  // let splitPrice = checkSpace4.split(" ")[0];
+  let removeStick = checkSpace4.indexOf("–") !== -1
+    ? checkSpace4.split("–")[0]
+    : checkSpace4.split(" ")[0];
+
+  let removeStick2 = removeStick.indexOf("-") !== -1
+    ? removeStick.split("-")[0]
+    : removeStick
+
+  let removeSpace = removeStick2.indexOf(" ") !== -1
+    ? removeStick2.replace(" ", "")
+    : removeStick2;
+  let reverseBackStrName = removeSpace.split("").reverse().join("");
 
   return reverseBackStrName;
 };

@@ -7,8 +7,9 @@ export const fixNameLowPrice = (name) => {
   const fixGray = fixSE3.replace("Grey", "Gray");
   const fixWiFi1 = fixGray.replace("WIFI", "Wi-Fi");
   const fixWiFi2 = fixWiFi1.replace("WiFi", "Wi-Fi");
+  const fixMilanese = fixWiFi2.replace("Milanse", "Milanese");
 
-  return fixWiFi2;
+  return fixMilanese;
 };
 
 const checkFlags = (str) => {
@@ -144,7 +145,7 @@ export const returnStockPriceLowPrice = (name) => {
 
   let reverseBackStrName = replaceDoubleSpace.split("").reverse().join("");
 
-  let removeOther = reverseBackStrName.indexOf(" ")
+  let removeOther = reverseBackStrName.indexOf(" ") !== -1
     ? reverseBackStrName.split(" ")[0]
     : reverseBackStrName;
 
