@@ -58,6 +58,7 @@ import IndexUnimtrn from "./Unimtrn/indexUNIMTRN";
 import IndexUnimtrnNotID from "./Unimtrn/indexUNIMTRNNotID";
 import IndexVseMi from "./VseMi/indexVseMi";
 import IndexVseMiNotID from "./VseMi/indexVseMiNotID";
+import AllPriceQuickID from "./AllPrice/AllPriceQuickID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -421,6 +422,37 @@ const IndexAllPrice = () => {
         </div>
       </div>
       <div className="wrapper_cat">
+        {/* Quick Price */}
+        <AllPriceQuickID
+          dataSuperprice={superprice}
+          dataVsemi={vsemi}
+          dataUnimtrn={dataUNIMTRN}
+          dataHi={hi}
+          dataMihonor={mihonor}
+          dataGarmin={garmin}
+          S5Data={S5}
+          rptradeData={rptrade}
+          racmagData={racmag}
+          electrozonData={electrozon}
+          artiData={arti}
+          resaleData={resale}
+          tagirData={tagir}
+          narodData={narod}
+          f51Data={f51}
+          discountData={discount}
+          baseData={deleteDoubleProduct}
+          otherData={other}
+          mioptsData={miopts}
+          lowPriceData={lowprice}
+          l27Data={l27}
+          sunriseData={sunrise}
+          infinityData={infinity}
+          likemobData={likemob}
+          mtaData={mta}
+          bonusData={bonus}
+          bigApData={bigAp}
+          rootOptData={rootOpt}
+        />
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />

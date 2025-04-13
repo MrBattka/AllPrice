@@ -5,10 +5,12 @@ import BasicTable from "../Create Table/Table";
 import { returnCategoryArti } from "./category/Category";
 import { returnFixNameArti, returnNameArti, returnStockPriceArti } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnQuickID } from "../../helpers/returnQuickID";
 
 const IndexArti = ({ el, artiData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
+  const resultArrQuickID = [];
 
   artiData.map((arti) => {
     baseFixArti(arti) && returnStockPriceArti(returnFixNameArti(arti.name));
