@@ -4,7 +4,8 @@ export const returnFixNameMTA = (name) => {
     const replaceSmartphone = name.replace(" (nano texture)", "")
     const replaceGb = replaceSmartphone.replace("Gb", "")
     const replaceGB = replaceGb.replace("GB", "")
-    const replace5G = replaceGB.indexOf("SM") !== -1 ? replaceGb.replace("5G", "") : replaceGB
+    const fixS24Plus = replaceGB.replace("S24 +", "S24+")
+    const replace5G = fixS24Plus.indexOf("SM") !== -1 ? fixS24Plus.replace("5G", "") : fixS24Plus
     return replace5G
 }
 
