@@ -118,7 +118,8 @@ export const returnStockPriceInfinity = (name) => {
   let replaceKZ = replaceCF.replace("🇰🇿", "");
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceZA = replaceKR.replace("🇿🇦", "");
-  let replaceBuds3White = replaceZA.replace("Buds 3 White", "");
+  let replace2Sim = replaceZA.replace("2sim", "");
+  let replaceBuds3White = replace2Sim.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
     "Tab S9FE 8/256 Lavender 5G",
     ""

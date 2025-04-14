@@ -92,7 +92,8 @@ export const returnNameNarod = (name) => {
 export const returnStockPriceNarod = (name) => {
   let replaceEU = name.replace("🇪🇺", "");
   let replaceAE = replaceEU.replace("🇦🇪", "");
-  let replaceIN = replaceAE.replace("🇮🇳", "");
+  let replaceAEAE = replaceAE.replace("🇦🇪🇦🇪", "");
+  let replaceIN = replaceAEAE.replace("🇮🇳", "");
   let replaceBR = replaceIN.replace("🇧🇷", "");
   let replaceJP = replaceBR.replace("🇯🇵", "");
   let replaceVN = replaceJP.replace("🇻🇳", "");

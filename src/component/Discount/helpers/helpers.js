@@ -156,7 +156,8 @@ export const returnNameInArrDiscount = (name) => {
 export const returnStockPriceDiscount = (name) => {
   let replaceEU = name.replace("🇪🇺", "");
   let replaceAE = replaceEU.replace("🇦🇪", "");
-  let replaceIN = replaceAE.replace("🇮🇳", "");
+  let replacePY = replaceAE.replace("🇵🇾", "");
+  let replaceIN = replacePY.replace("🇮🇳", "");
   let replaceBR = replaceIN.replace("🇧🇷", "");
   let replaceJP = replaceBR.replace("🇯🇵", "");
   let replaceVN = replaceJP.replace("🇻🇳", "");
@@ -180,9 +181,9 @@ export const returnStockPriceDiscount = (name) => {
   let replaceDot = replaceGU.replace(".", "");
   let replaceSM = replaceDot.replace("SM-", "SM");
   let replace = replaceSM.replace(",", "");
-  let replaceStick = replace.replace("-", "");
+  let replace2Sim = replace.replace("2Sim", "");
 
-  let reverseStrName = replace.split("").reverse().join("");
+  let reverseStrName = replace2Sim.split("").reverse().join("");
   let checkSpace1 =
     reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
   let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
@@ -203,7 +204,11 @@ export const returnStockPriceDiscount = (name) => {
     : removeStick2;
   let reverseBackStrName = removeSpace.split("").reverse().join("");
 
-  return reverseBackStrName;
+  let remove2Sim = reverseBackStrName.indexOf("2sim") !== -1
+    ? reverseBackStrName.replace("2sim", "")
+    : reverseBackStrName;
+
+  return remove2Sim;
 };
 
 export const returnExtraPriceRacmag = (name) => {

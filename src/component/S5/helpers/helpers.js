@@ -110,16 +110,16 @@ export const returnNameInArrS5 = (name) => {
   const fixFlags = checkFlags(name);
 
   let reverseStrName = fixFlags.split("").reverse().join("");
-  let splitPrice = reverseStrName.indexOf(" ") !== -1 ? /\s(.+)/.exec(reverseStrName)[1] : reverseStrName
+  let splitPrice =
+    reverseStrName.indexOf(" ") !== -1
+      ? /\s(.+)/.exec(reverseStrName)[1]
+      : reverseStrName;
   // let replaceStick = /\s(.+)/.exec(splitPrice)[1];
 
-  let checkSpace1 =
-  splitPrice[0] === " "
-    ? splitPrice.slice(1)
-    : splitPrice;
-let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
-let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
-let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
+  let checkSpace1 = splitPrice[0] === " " ? splitPrice.slice(1) : splitPrice;
+  let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
+  let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
+  let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let checkTriple = checkSpace4.split("-")[4]
     ? `${checkSpace4.split("-")[1]}-${checkSpace4.split("-")[2]}-${
@@ -175,17 +175,13 @@ export const returnStockPriceS5 = (name) => {
   let reverseStrName = replaceS9feLavander.split("").reverse().join("");
 
   let checkSpace1 =
-    reverseStrName[0] === " "
-      ? reverseStrName.slice(1)
-      : reverseStrName;
+    reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
   let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
   let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let splitPrice =
-    checkSpace4.indexOf(" ") != -1
-      ? checkSpace4.split(" ")[0]
-      : checkSpace4;
+    checkSpace4.indexOf("-") != -1 ? checkSpace4.split("-")[0] : checkSpace4;
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 
@@ -195,7 +191,28 @@ export const returnStockPriceS5 = (name) => {
     ? reverseBackStrName.split(" ")[0]
     : reverseBackStrName;
 
-  return removeOther;
+  let removeStick = removeOther.indexOf("-")
+    ? removeOther.replace("-", "")
+    : removeOther;
+
+  let remove2024 = removeStick.indexOf("(2024)")
+    ? removeStick.replace("(2024)", "")
+    : removeStick;
+
+  let removeLoop = remove2024.indexOf("Loop")
+    ? remove2024.replace("Loop", "")
+    : remove2024;
+  let remove = removeLoop.indexOf(",")
+    ? removeLoop.replace(",", "")
+    : removeLoop;
+  let remove1sim = remove.indexOf("1сим+есим")
+    ? remove.replace("1сим+есим", "")
+    : remove;
+  let removePlenka = remove1sim.indexOf("(пленка)")
+    ? remove1sim.replace("(пленка)", "")
+    : remove1sim;
+
+  return removePlenka;
 };
 
 export const returnExtraPriceS5 = (name) => {

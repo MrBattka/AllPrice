@@ -59,6 +59,8 @@ import IndexUnimtrnNotID from "./Unimtrn/indexUNIMTRNNotID";
 import IndexVseMi from "./VseMi/indexVseMi";
 import IndexVseMiNotID from "./VseMi/indexVseMiNotID";
 import AllPriceQuickID from "./AllPrice/AllPriceQuickID";
+import IndexA18 from "./A18/IndexA18";
+import IndexA18NotID from "./A18/IndexA18NotID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -91,6 +93,7 @@ const IndexAllPrice = () => {
   const [dataMTA, setDataMTA] = useState([]);
   const [dataBonus, setDataBonus] = useState([]);
   const [dataRootOpt, setDataRootOpt] = useState([]);
+  const [dataA18, setDataA18] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -120,6 +123,7 @@ const IndexAllPrice = () => {
   const mta = [];
   const bonus = [];
   const rootOpt = [];
+  const a18 = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -321,6 +325,12 @@ const IndexAllPrice = () => {
       rootOpt.push({ name: rootOptEl.НАИМЕНОВАНИЕ, price: rootOptEl.ЦЕНА });
   });
 
+  dataA18.map((a18El) => {
+    a18El.A18 &&
+      a18El.A18.length &&
+      a18.push({ name: a18El.A18 });
+  });
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -387,6 +397,8 @@ const IndexAllPrice = () => {
           setDataBonus(rowBonus);
           const rowRootOpt = utils.sheet_to_json(wb.Sheets[sheets[27]]);
           setDataRootOpt(rowRootOpt);
+          const rowA18 = utils.sheet_to_json(wb.Sheets[sheets[28]]);
+          setDataA18(rowA18);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -422,6 +434,7 @@ const IndexAllPrice = () => {
         </div>
       </div>
       <div className="wrapper_cat">
+        
         {/* Quick Price */}
         <AllPriceQuickID
           dataSuperprice={superprice}
@@ -452,6 +465,7 @@ const IndexAllPrice = () => {
           bonusData={bonus}
           bigApData={bigAp}
           rootOptData={rootOpt}
+          a18Data={a18}
         />
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
@@ -541,6 +555,9 @@ const IndexAllPrice = () => {
         {/* Root OPT */}
         <IndexRootOpt el={dataRootOpt} rootOptData={rootOpt} />
         <IndexRootOptNotID el={dataRootOpt} rootOptData={rootOpt} />
+        {/* A18 */}
+        <IndexA18 el={dataA18} a18Data={a18} />
+        <IndexA18NotID el={dataA18} a18Data={a18} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -572,6 +589,7 @@ const IndexAllPrice = () => {
           bonusData={bonus}
           bigApData={bigAp}
           rootOptData={rootOpt}
+          a18Data={a18}
         />
 
         {/* <AllPrice

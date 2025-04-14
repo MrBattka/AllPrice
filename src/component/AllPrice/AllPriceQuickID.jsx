@@ -165,6 +165,7 @@ import {
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
 import TableQuickPrice from "../CreateAllPriceTable/TableQuickPrice";
+import { returnFixNameA18, returnNameInArrA18, returnStockPriceA18 } from "../A18/helpers/helpers";
 
 const AllPriceQuickID = ({
   dataSuperprice,
@@ -195,6 +196,7 @@ const AllPriceQuickID = ({
   bonusData,
   bigApData,
   rootOptData,
+  a18Data
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArrQuickID = [];
@@ -844,6 +846,31 @@ const AllPriceQuickID = ({
       );
     }
   });
+
+  // a18Data.map((A18) => {
+  //       // baseFixA18(A18) &&
+  //         returnStockPriceA18(returnFixNameA18(A18.name))
+  //       if (
+  //         A18.name &&
+  //         typeof A18.name === "string" &&
+  //         returnStockPriceA18(returnFixNameA18(A18.name)).indexOf("00") !== -1 &&
+  //         // baseFixA18(A18) &&
+  //         isOpen
+  //       ) {
+  //         return (
+  //           returnQuickID(returnFixNameA18(A18.name)) !== "No match" &&
+  //           returnStockPriceA18(A18.name) &&
+  //           returnQuickID.push({
+  //             id: returnQuickID(
+  //               returnNameInArrA18(returnFixNameA18(A18.name))
+  //             ),
+  //             name: returnNameInArrA18(returnFixNameA18(A18.name)),
+  //             stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
+  //             provider: "A18",
+  //           })
+  //         );
+  //       }
+  //     });
 
   return (
     <div>
