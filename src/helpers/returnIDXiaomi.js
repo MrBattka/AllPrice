@@ -128,13 +128,13 @@ export const returnIDXiaomi = (name) => {
     return 37018;
   } else if (name.indexOf("m6 8/128 silver") !== -1) {
     return 37019;
-  } else if (name.indexOf("poco c61 3/64 black") != -1) {
+  } else if (name.indexOf("c61 3/64 black") != -1) {
     return 38687;
-  } else if (name.indexOf("poco c61 3/64 blue") != -1) {
+  } else if (name.indexOf("c61 3/64 blue") != -1) {
     return 38688;
-  } else if (name.indexOf("poco c61 3/64 green") != -1) {
+  } else if (name.indexOf("c61 3/64 green") != -1) {
     return 38689;
-  } else if (name.indexOf("poco c61 3/64 white") != -1) {
+  } else if (name.indexOf("c61 3/64 white") != -1) {
     return 38690;
   } else if (name.indexOf("poco c61 4/128 white") != -1) {
     return 38684;
@@ -1849,7 +1849,7 @@ export const returnIDXiaomi = (name) => {
     name.indexOf("note 14 pro") !== -1 &&
     name.indexOf("note 14 pro +") === -1 &&
     name.indexOf("5g") === -1 &&
-    name.indexOf("8/128") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
     name.indexOf("black") !== -1
   ) {
     return 37671;
@@ -1857,7 +1857,7 @@ export const returnIDXiaomi = (name) => {
     name.indexOf("note 14 pro") !== -1 &&
     name.indexOf("note 14 pro +") === -1 &&
     name.indexOf("5g") === -1 &&
-    name.indexOf("8/128") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
     name.indexOf("blue") !== -1
   ) {
     return 37672;
@@ -1865,7 +1865,7 @@ export const returnIDXiaomi = (name) => {
     name.indexOf("note 14 pro") !== -1 &&
     name.indexOf("note 14 pro +") === -1 &&
     name.indexOf("5g") === -1 &&
-    name.indexOf("8/128") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
     name.indexOf("purple") !== -1
   ) {
     return 37673;
@@ -3208,7 +3208,8 @@ export const returnIDXiaomi = (name) => {
   } else if (
     name.indexOf("mi pad 7") !== -1 &&
     name.indexOf("12/256") !== -1 &&
-    name.indexOf("black") !== -1 &&
+    (name.indexOf("black") !== -1 ||
+    name.indexOf("gray") !== -1) &&
     name.indexOf("mi pad 7 pro") === -1
   ) {
     return 37428;
@@ -3229,7 +3230,8 @@ export const returnIDXiaomi = (name) => {
   } else if (
     name.indexOf("mi pad 7") !== -1 &&
     name.indexOf("8/128") !== -1 &&
-    name.indexOf("black") !== -1 &&
+    (name.indexOf("black") !== -1 ||
+    name.indexOf("gray") !== -1) &&
     name.indexOf("mi pad 7 pro") === -1
   ) {
     return 37423;
@@ -3250,7 +3252,8 @@ export const returnIDXiaomi = (name) => {
   } else if (
     name.indexOf("mi pad 7") !== -1 &&
     name.indexOf("8/256") !== -1 &&
-    name.indexOf("black") !== -1 &&
+    (name.indexOf("black") !== -1 ||
+    name.indexOf("gray") !== -1) &&
     name.indexOf("mi pad 7 pro") === -1
   ) {
     return 37425;
@@ -3271,7 +3274,8 @@ export const returnIDXiaomi = (name) => {
   } else if (
     name.indexOf("mi pad 7 pro") !== -1 &&
     name.indexOf("12/256") !== -1 &&
-    name.indexOf("black") !== -1
+    (name.indexOf("black") !== -1 ||
+    name.indexOf("gray") !== -1)
   ) {
     return 37437;
   } else if (
@@ -3289,7 +3293,8 @@ export const returnIDXiaomi = (name) => {
   } else if (
     name.indexOf("mi pad 7 pro") !== -1 &&
     name.indexOf("12/512") !== -1 &&
-    name.indexOf("black") !== -1
+    (name.indexOf("black") !== -1 ||
+    name.indexOf("gray") !== -1)
   ) {
     return 37440;
   } else if (
@@ -3307,7 +3312,8 @@ export const returnIDXiaomi = (name) => {
   } else if (
     name.indexOf("mi pad 7 pro") !== -1 &&
     name.indexOf("8/128") !== -1 &&
-    name.indexOf("black") !== -1
+    (name.indexOf("black") !== -1 ||
+    name.indexOf("gray") !== -1)
   ) {
     return 37431;
   } else if (
@@ -3325,7 +3331,8 @@ export const returnIDXiaomi = (name) => {
   } else if (
     name.indexOf("mi pad 7 pro") !== -1 &&
     name.indexOf("8/256") !== -1 &&
-    name.indexOf("black") !== -1
+    (name.indexOf("black") !== -1 ||
+    name.indexOf("gray") !== -1)
   ) {
     return 37434;
   } else if (

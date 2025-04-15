@@ -1,14 +1,14 @@
 import { newPrice } from "../../../helpers/NewPrice";
 
 export const returnFixNameA18 = (name) => {
-  const replaceCar = name.replace("🚚", "");
-  const replaceLaptop = replaceCar.replace("Ноутбук ", "");
-  const replaceGb = replaceLaptop.replace("Gb", "");
-  const replaceNanoSIM = replaceGb.replace("NanoSIM ", "");
-  const fix8Plus = replaceNanoSIM.replace("8+", "8/");
-  const replaceRU = fix8Plus.replace("RU ", "");
-  const replace375 = replaceRU.replace("3.75 ", "");
-  const fix15Plus = replace375.replace("15+", "15 plus");
+  const fixX7 = name.replace("X7 ", "poco x7 ");
+  const fixF7 = fixX7.replace("F7 ", "poco f7 ");
+  const replaceGb = fixF7.replace("Gb", "");
+  const fixOnePlus = replaceGb.replace("One Plus", "OnePlus");
+  const fixPorcelain = fixOnePlus.replace("Procelain", "porcelain");
+  const fix23FE = fixPorcelain.replace("S23FE", "S23 FE");
+  const fixStemDeck = fix23FE.replace("Steam Deck Black", "Steam Deck");
+  const fix15Plus = fixStemDeck.replace("15+", "15 plus");
   const fix24FE = fix15Plus.replace("S24FE", "S24 FE");
   const fix1TB = fix24FE.replace("1T ", "1tb ");
   const fixFlip = fix1TB.replace("Flip", "Z Flip");

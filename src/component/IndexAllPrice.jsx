@@ -434,7 +434,6 @@ const IndexAllPrice = () => {
         </div>
       </div>
       <div className="wrapper_cat">
-        
         {/* Quick Price */}
         <AllPriceQuickID
           dataSuperprice={superprice}
