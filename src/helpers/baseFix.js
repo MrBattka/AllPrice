@@ -1836,7 +1836,8 @@ export const baseFixBase = (el) => {
 };
 
 export const baseFixDiscount = (el) => {
-  let toLowerCase = el.name?.toLowerCase();
+  const removeDoubleSpace = el.name.replace(/\s+/g, " ");
+  let toLowerCase = removeDoubleSpace.toLowerCase();
   return toLowerCase?.indexOf("🇺🇸") != -1 &&
     (toLowerCase.indexOf("16 128") != -1 ||
     toLowerCase.indexOf("16 256") != -1 ||
@@ -1860,6 +1861,7 @@ export const baseFixDiscount = (el) => {
     toLowerCase.indexOf("15 pro 1") != -1 ||
     toLowerCase.indexOf("15 plus 128") != -1 ||
     toLowerCase.indexOf("15 plus 256") != -1 ||
+    toLowerCase.indexOf("15 plus 512") != -1 ||
     toLowerCase.indexOf("15 plus 512") != -1 ||
     toLowerCase.indexOf("14 128") != -1 ||
     toLowerCase.indexOf("14 256") != -1 ||

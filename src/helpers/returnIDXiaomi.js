@@ -2686,28 +2686,24 @@ export const returnIDXiaomi = (name) => {
     // Redmi Pad
   } else if (
     name.indexOf("poco pad ") !== -1 &&
-    name.indexOf("5g") !== -1 &&
     name.indexOf("8/128") !== -1 &&
     name.indexOf("blue") !== -1
   ) {
     return 37117;
   } else if (
     name.indexOf("poco pad ") !== -1 &&
-    name.indexOf("5g") !== -1 &&
     name.indexOf("8/128") !== -1 &&
     name.indexOf("gray") !== -1
   ) {
     return 37120;
   } else if (
     name.indexOf("poco pad ") !== -1 &&
-    name.indexOf("5g") !== -1 &&
     name.indexOf("8/256") !== -1 &&
     name.indexOf("blue") !== -1
   ) {
     return 37119;
   } else if (
     name.indexOf("poco pad ") !== -1 &&
-    name.indexOf("5g") !== -1 &&
     name.indexOf("8/256") !== -1 &&
     name.indexOf("gray") !== -1
   ) {

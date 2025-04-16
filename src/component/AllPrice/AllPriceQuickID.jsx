@@ -165,7 +165,11 @@ import {
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
 import TableQuickPrice from "../CreateAllPriceTable/TableQuickPrice";
-import { returnFixNameA18, returnNameInArrA18, returnStockPriceA18 } from "../A18/helpers/helpers";
+import {
+  returnFixNameA18,
+  returnNameInArrA18,
+  returnStockPriceA18,
+} from "../A18/helpers/helpers";
 
 const AllPriceQuickID = ({
   dataSuperprice,
@@ -196,7 +200,7 @@ const AllPriceQuickID = ({
   bonusData,
   bigApData,
   rootOptData,
-  a18Data
+  a18Data,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArrQuickID = [];
@@ -283,13 +287,12 @@ const AllPriceQuickID = ({
     ) {
       return (
         returnQuickID(fixNameHi(hi.name)) !== "No match" &&
-        returnExtraPriceHi(hi.name) &&
-        returnStockPriceHi(hi.name) &&
+        returnStockPriceHi(fixNameHi(hi.name)) &&
+        returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
         resultArrQuickID.push({
           id: returnQuickID(fixNameHi(hi.name)),
           name: returnNameInArrHi(fixNameHi(hi.name)),
-          extraPrice: returnExtraPriceHi(hi.name),
-          stockPrice: returnStockPriceHi(hi.name),
+          stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",
         })
       );
@@ -478,9 +481,7 @@ const AllPriceQuickID = ({
           "00"
         ) != -1 &&
         resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameReSale(returnFixNameReSale(resale.name))
-          ),
+          id: returnQuickID(returnNameReSale(returnFixNameReSale(resale.name))),
           name: returnNameReSale(returnFixNameReSale(resale.name)),
           extraPrice: returnExtraPriceReSale(returnFixNameReSale(resale.name)),
           stockPrice: returnStockPriceReSale(returnFixNameReSale(resale.name)),
@@ -638,9 +639,7 @@ const AllPriceQuickID = ({
         returnExtraPriceMiOpts(miopts.name) &&
         returnStockPriceMiOpts(miopts.name) &&
         resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameInArrMiOpts(fixNameMiOpts(miopts.name))
-          ),
+          id: returnQuickID(returnNameInArrMiOpts(fixNameMiOpts(miopts.name))),
           name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
           extraPrice: returnExtraPriceMiOpts(fixNameMiOpts(miopts.name)),
           stockPrice: returnStockPriceMiOpts(fixNameMiOpts(miopts.name)),

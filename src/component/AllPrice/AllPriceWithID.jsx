@@ -164,7 +164,11 @@ import {
   returnNameInArrVseMi,
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
-import { returnFixNameA18, returnNameInArrA18, returnStockPriceA18 } from "../A18/helpers/helpers";
+import {
+  returnFixNameA18,
+  returnNameInArrA18,
+  returnStockPriceA18,
+} from "../A18/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -195,7 +199,7 @@ const AllPriceWithID = ({
   bonusData,
   bigApData,
   rootOptData,
-  a18Data
+  a18Data,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -282,13 +286,12 @@ const AllPriceWithID = ({
     ) {
       return (
         returnIDSamsung(fixNameHi(hi.name)) !== "No match" &&
-        returnExtraPriceHi(hi.name) &&
-        returnStockPriceHi(hi.name) &&
+        returnStockPriceHi(fixNameHi(hi.name)) &&
+        returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
         allPriceArr.push({
           id: returnIDSamsung(fixNameHi(hi.name)),
           name: returnNameInArrHi(fixNameHi(hi.name)),
-          extraPrice: returnExtraPriceHi(hi.name),
-          stockPrice: returnStockPriceHi(hi.name),
+          stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",
         })
       );
@@ -847,29 +850,27 @@ const AllPriceWithID = ({
   });
 
   a18Data.map((A18) => {
+    // baseFixA18(A18) &&
+    returnStockPriceA18(returnFixNameA18(A18.name));
+    if (
+      A18.name &&
+      typeof A18.name === "string" &&
+      returnStockPriceA18(returnFixNameA18(A18.name)).indexOf("00") !== -1 &&
       // baseFixA18(A18) &&
-        returnStockPriceA18(returnFixNameA18(A18.name))
-      if (
-        A18.name &&
-        typeof A18.name === "string" &&
-        returnStockPriceA18(returnFixNameA18(A18.name)).indexOf("00") !== -1 &&
-        // baseFixA18(A18) &&
-        isOpen
-      ) {
-        return (
-          returnIDSamsung(returnFixNameA18(A18.name)) !== "No match" &&
-          returnStockPriceA18(A18.name) &&
-          allPriceArr.push({
-            id: returnIDSamsung(
-              returnNameInArrA18(returnFixNameA18(A18.name))
-            ),
-            name: returnNameInArrA18(returnFixNameA18(A18.name)),
-            stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
-            provider: "A18",
-          })
-        );
-      }
-    });
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameA18(A18.name)) !== "No match" &&
+        returnStockPriceA18(A18.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrA18(returnFixNameA18(A18.name))),
+          name: returnNameInArrA18(returnFixNameA18(A18.name)),
+          stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
+          provider: "A18",
+        })
+      );
+    }
+  });
 
   return (
     <div>

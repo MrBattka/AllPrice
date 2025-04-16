@@ -34,11 +34,12 @@ const IndexHi = ({ el, hi }) => {
     ) {
       return (
         returnIDSamsung(fixNameHi(hi.name)) !== 'No match' &&
-        returnStockPriceHi(hi.name) &&
+        returnStockPriceHi(fixNameHi(hi.name)) &&
+        returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
         resultArr.push({
           id: returnIDSamsung(fixNameHi(hi.name)),
           name: returnNameInArrHi(fixNameHi(hi.name)),
-          stockPrice: returnStockPriceHi(hi.name),
+          stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",
         })
       );
