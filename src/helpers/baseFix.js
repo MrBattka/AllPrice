@@ -2338,6 +2338,11 @@ export const baseFixL27 = (el) => {
       toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
       toLowerCase.indexOf("airpods pro  l") == -1 &&
       toLowerCase.indexOf("airpods pro 2 usb-c  l") == -1 &&
+
+      toLowerCase.indexOf("airpods 4 anc r") == -1 &&
+      toLowerCase.indexOf("airpods 4 anc l") == -1 &&
+      toLowerCase.indexOf("airpods 4 anc box") == -1 &&
+
       toLowerCase.indexOf("freebuds") == -1 &&
       toLowerCase.indexOf("pixel buds") == -1 &&
       toLowerCase.indexOf("oneplus buds") == -1 &&
