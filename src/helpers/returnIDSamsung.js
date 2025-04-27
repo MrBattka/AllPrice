@@ -4079,6 +4079,7 @@ export const returnIDSamsung = (nameStock) => {
     return 31065;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("6/128") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     name.indexOf("gray") !== -1
@@ -4086,6 +4087,7 @@ export const returnIDSamsung = (nameStock) => {
     return 31050;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("6/128") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     (name.indexOf("lavender") !== -1 || name.indexOf("pink") !== -1)
@@ -4093,6 +4095,7 @@ export const returnIDSamsung = (nameStock) => {
     return 31051;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("6/128") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
@@ -4100,6 +4103,7 @@ export const returnIDSamsung = (nameStock) => {
     return 31052;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("6/128") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     name.indexOf("silver") !== -1
@@ -4107,6 +4111,7 @@ export const returnIDSamsung = (nameStock) => {
     return 31053;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("8/128") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     name.indexOf("gray") !== -1
@@ -4114,6 +4119,7 @@ export const returnIDSamsung = (nameStock) => {
     return 30570;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("8/128") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     (name.indexOf("lavender") !== -1 || name.indexOf("pink") !== -1)
@@ -4121,6 +4127,7 @@ export const returnIDSamsung = (nameStock) => {
     return 30571;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("8/128") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
@@ -4128,6 +4135,7 @@ export const returnIDSamsung = (nameStock) => {
     return 30572;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("8/128") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     name.indexOf("silver") !== -1
@@ -4135,6 +4143,7 @@ export const returnIDSamsung = (nameStock) => {
     return 30573;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("8/256") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     name.indexOf("gray") !== -1
@@ -4142,6 +4151,7 @@ export const returnIDSamsung = (nameStock) => {
     return 31054;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("8/256") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     (name.indexOf("lavender") !== -1 || name.indexOf("pink") !== -1)
@@ -4149,6 +4159,7 @@ export const returnIDSamsung = (nameStock) => {
     return 31055;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("8/256") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
@@ -4156,6 +4167,7 @@ export const returnIDSamsung = (nameStock) => {
     return 31056;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("8/256") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     name.indexOf("silver") !== -1
@@ -4163,48 +4175,56 @@ export const returnIDSamsung = (nameStock) => {
     return 31057;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("128") !== -1 &&
     name.indexOf("gray") !== -1
   ) {
     return 30146;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("128") !== -1 &&
     (name.indexOf("lavender") !== -1 || name.indexOf("pink") !== -1)
   ) {
     return 30148;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("256") !== -1 &&
     name.indexOf("gray") !== -1
   ) {
     return 30147;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("256") !== -1 &&
     (name.indexOf("lavender") !== -1 || name.indexOf("pink") !== -1)
   ) {
     return 30149;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("128") !== -1 &&
     (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
   ) {
     return 30142;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("128") !== -1 &&
     name.indexOf("silver") !== -1
   ) {
     return 30144;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("256") !== -1 &&
     (name.indexOf("mint") !== -1 || name.indexOf("green") !== -1)
   ) {
     return 30143;
   } else if (
     name.indexOf("tab s9 fe") !== -1 &&
+    name.indexOf("tab s9 fe +") === -1 &&
     name.indexOf("256") !== -1 &&
     name.indexOf("silver") !== -1
   ) {
@@ -4396,6 +4416,8 @@ export const returnIDSamsung = (nameStock) => {
     return 27938;
   } else if (
     name.indexOf("tab s9") !== -1 &&
+    name.indexOf("tab s9 fe") === -1 &&
+    name.indexOf("tab s9 +") === -1 &&
     name.indexOf("256") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     name.indexOf("beige") !== -1
@@ -4403,6 +4425,8 @@ export const returnIDSamsung = (nameStock) => {
     return 31014;
   } else if (
     name.indexOf("tab s9") !== -1 &&
+    name.indexOf("tab s9 fe") === -1 &&
+    name.indexOf("tab s9 +") === -1 &&
     name.indexOf("256") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     (name.indexOf("graphite") !== -1 || name.indexOf("gray") !== -1)
@@ -4410,6 +4434,8 @@ export const returnIDSamsung = (nameStock) => {
     return 31015;
   } else if (
     name.indexOf("tab s9") !== -1 &&
+    name.indexOf("tab s9 fe") === -1 &&
+    name.indexOf("tab s9 +") === -1 &&
     name.indexOf("128") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     name.indexOf("beige") !== -1
@@ -4417,6 +4443,8 @@ export const returnIDSamsung = (nameStock) => {
     return 31016;
   } else if (
     name.indexOf("tab s9") !== -1 &&
+    name.indexOf("tab s9 fe") === -1 &&
+    name.indexOf("tab s9 +") === -1 &&
     name.indexOf("128") !== -1 &&
     (name.indexOf("lte") !== -1 || name.indexOf("5g") !== -1) &&
     (name.indexOf("graphite") !== -1 || name.indexOf("gray") !== -1)
@@ -4424,24 +4452,32 @@ export const returnIDSamsung = (nameStock) => {
     return 31017;
   } else if (
     name.indexOf("tab s9") !== -1 &&
+    name.indexOf("tab s9 fe") === -1 &&
+    name.indexOf("tab s9 +") === -1 &&
     name.indexOf("256") !== -1 &&
     name.indexOf("beige") !== -1
   ) {
     return 27927;
   } else if (
     name.indexOf("tab s9") !== -1 &&
+    name.indexOf("tab s9 fe") === -1 &&
+    name.indexOf("tab s9 +") === -1 &&
     name.indexOf("256") !== -1 &&
     (name.indexOf("graphite") !== -1 || name.indexOf("gray") !== -1)
   ) {
     return 27928;
   } else if (
     name.indexOf("tab s9") !== -1 &&
+    name.indexOf("tab s9 fe") === -1 &&
+    name.indexOf("tab s9 +") === -1 &&
     name.indexOf("128") !== -1 &&
     name.indexOf("beige") !== -1
   ) {
     return 27925;
   } else if (
     name.indexOf("tab s9") !== -1 &&
+    name.indexOf("tab s9 fe") === -1 &&
+    name.indexOf("tab s9 +") === -1 &&
     name.indexOf("128") !== -1 &&
     (name.indexOf("graphite") !== -1 || name.indexOf("gray") !== -1)
   ) {

@@ -61,6 +61,7 @@ const checkFlags = (str) => {
 };
 
 export const returnNameInArrLowPrice = (name) => {
+
   const fixFlags = checkFlags(name);
 
   let reverseStrName = fixFlags.split("").reverse().join("");
@@ -121,7 +122,8 @@ export const returnStockPriceLowPrice = (name) => {
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceZA = replaceKR.replace("🇿🇦", "");
   let fixStick = replaceZA.replace("–", "-");
-  let replaceUSBC = fixStick.replace("USB-C", "USBC");
+  let feixWiFi = fixStick.replace("Wi-Fi", "WiFi")
+  let replaceUSBC = feixWiFi.replace("USB-C", "USBC");
   let replaceBuds3White = replaceUSBC.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
     "Tab S9FE 8/256 Lavender 5G",
@@ -159,7 +161,8 @@ export const returnStockPriceLowPrice = (name) => {
       ? removeDot.replace("SD8gen3", "")
       : removeDot;
 
-  let fixUSBC = removeSD8gen3.replace("USBC", "US-C");
+  let fixUSBC = removeSD8gen3.replace("USBC", "USB-C");
+  let fixWiFi1 = fixUSBC.replace("WiFi", "Wi-Fi");
 
-  return fixUSBC;
+  return fixWiFi1;
 };
