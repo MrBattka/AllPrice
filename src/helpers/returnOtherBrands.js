@@ -2525,7 +2525,7 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
-    name.indexOf("pixel 9") !== -1 &&
+    name.indexOf("pixel 9 ") !== -1 &&
     name.indexOf("128") !== -1 &&
     (name.indexOf("obsidian") !== -1 || name.indexOf("black") !== -1)
   ) {
@@ -2533,7 +2533,7 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
-    name.indexOf("pixel 9") !== -1 &&
+    name.indexOf("pixel 9 ") !== -1 &&
     name.indexOf("128") !== -1 &&
     (name.indexOf("peony") !== -1 ||
       name.indexOf("pink") !== -1 ||
@@ -2543,7 +2543,7 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
-    name.indexOf("pixel 9") !== -1 &&
+    name.indexOf("pixel 9 ") !== -1 &&
     name.indexOf("128") !== -1 &&
     (name.indexOf("porcelain") !== -1 || name.indexOf("white") !== -1)
   ) {
@@ -2551,7 +2551,7 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
-    name.indexOf("pixel 9") !== -1 &&
+    name.indexOf("pixel 9 ") !== -1 &&
     name.indexOf("128") !== -1 &&
     (name.indexOf("wintergreen") !== -1 || name.indexOf("green") !== -1)
   ) {
@@ -2567,7 +2567,7 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
-    name.indexOf("pixel 9") !== -1 &&
+    name.indexOf("pixel 9 ") !== -1 &&
     name.indexOf("256") !== -1 &&
     (name.indexOf("peony") !== -1 ||
       name.indexOf("pink") !== -1 ||
@@ -2577,7 +2577,7 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
-    name.indexOf("pixel 9") !== -1 &&
+    name.indexOf("pixel 9 ") !== -1 &&
     name.indexOf("256") !== -1 &&
     (name.indexOf("porcelain") !== -1 || name.indexOf("white") !== -1)
   ) {
@@ -2585,7 +2585,7 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
-    name.indexOf("pixel 9") !== -1 &&
+    name.indexOf("pixel 9 ") !== -1 &&
     name.indexOf("256") !== -1 &&
     (name.indexOf("wintergreen") !== -1 || name.indexOf("green") !== -1)
   ) {
