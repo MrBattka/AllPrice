@@ -77,7 +77,10 @@ export const fixNameMihonor = (name) => {
 
   const fixMi = returnNameInArrMihonor(name.toLowerCase())[0] === "M" ? remove8256.replace("MI ", "XIAOMI ") : remove8256
 
-  const remove874g = fixMi.replace("8.7 4G ", "");
+  const fixA5G = (fixMi.indexOf("A25") !== -1 || fixMi.indexOf("A26") !== -1 || fixMi.indexOf("A35") !== -1 ||
+  fixMi.indexOf("A36") !== -1 || fixMi.indexOf("A55") !== -1 || fixMi.indexOf("A56") !== -1) ? fixMi.replace("5G ", "") : fixMi
+
+  const remove874g = fixA5G.replace("8.7 4G ", "");
   const remove874wifi = remove874g.replace("8.7 WI FI ", "");
 
   const removeLightGreen = remove874wifi.replace("LIGHT GREEN", "green");

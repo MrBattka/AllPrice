@@ -289,17 +289,16 @@ export const returnIDOtherBrand = (name) => {
   ) {
     return 37122;
   } else if (
-    name.indexOf("v12") !== -1 ||
-    (name.indexOf("v12") !== -1 &&
-      name.indexOf("yellow") !== -1 &&
-      name.indexOf("nickel") !== -1)
+    (name.indexOf("v15 ") !== -1 || name.indexOf("v15 ") !== -1) &&
+    name.indexOf("yellow") !== -1 &&
+    name.indexOf("nickel") !== -1
   ) {
     return 27101;
   } else if (
-    name.indexOf("v15s") !== -1 ||
-    (name.indexOf("submarine") !== -1 &&
-      name.indexOf("absolute") !== -1 &&
-      name.indexOf("gold") !== -1)
+    name.indexOf("v15s") !== -1 &&
+    name.indexOf("submarine") !== -1 &&
+    name.indexOf("absolute") !== -1 &&
+    name.indexOf("gold") !== -1
   ) {
     return 37131;
   } else if (name.indexOf("v12 detect slim") !== -1) {
