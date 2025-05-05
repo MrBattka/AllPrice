@@ -22,7 +22,7 @@ export const returnNameInArrMiOpts = (name) => {
   let removeRUB =
     reverseStrName[0] === "-" ? reverseStrName.slice(1) : reverseStrName;
   let splitStick =
-    removeRUB.indexOf("-") !== -1 ? /\-(.+)/.exec(removeRUB)[1] : removeRUB;
+  sliceFlags.indexOf("-") !== -1 ? /\-(.+)/.exec(removeRUB)[1] : removeRUB;
   // let splitPrice = /\s(.+)/.exec(splitStick)[1];
 
   let reverseBackStrName = splitStick.split("").reverse().join("");
