@@ -3349,6 +3349,38 @@ export const returnIDApple = (name) => {
     return 37351;
 
     // macbook
+  } else if (name.indexOf("mw123") != -1) {
+    return 38896;
+  } else if (name.indexOf("mw0w3") != -1) {
+    return 38900;
+  } else if (name.indexOf("mc6t4") != -1) {
+    return 38898;
+  } else if (name.indexOf("mw0y3") != -1) {
+    return 38902;
+  } else if (name.indexOf("mc6v4") != -1) {
+    return 38907;
+  } else if (name.indexOf("mw0x3") != -1) {
+    return 38908;
+  } else if (name.indexOf("mc6v4") != -1) {
+    return 38909;
+  } else if (name.indexOf("mw103") != -1) {
+    return 38910;
+  } else if (name.indexOf("mw1l3") != -1) {
+    return 38884;
+  } else if (name.indexOf("mw1g3") != -1) {
+    return 38882;
+  } else if (name.indexOf("mc7a4") != -1) {
+    return 38880;
+  } else if (name.indexOf("mw1j3") != -1) {
+    return 38886;
+  } else if (name.indexOf("mw1m3") != -1) {
+    return 38891;
+  } else if (name.indexOf("mw1h3") != -1) {
+    return 38892;
+  } else if (name.indexOf("mc7c4") != -1) {
+    return 38893;
+  } else if (name.indexOf("mw1k3") != -1) {
+    return 38894;
   } else if (name.indexOf("mqku3") !== -1) {
     return 27983;
   } else if (name.indexOf("mgn63") !== -1) {
