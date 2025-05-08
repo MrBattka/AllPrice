@@ -2734,7 +2734,8 @@ export const baseFixLikemob = (el) => {
       toLowerCase.indexOf("poco") == -1 &&
       toLowerCase.indexOf("oneplus") == -1 &&
       toLowerCase.indexOf("nechno") == -1 &&
-      toLowerCase.indexOf("infinix") == -1
+      toLowerCase.indexOf("infinix") == -1 &&
+      toLowerCase.indexOf("❌") == -1
 };
 
 export const baseFixBigAp = (el) => {
