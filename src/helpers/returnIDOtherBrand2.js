@@ -155,6 +155,28 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("4 major brown") !== -1
   ) {
     return 28101;
+  } else if (
+    name.indexOf("major 5 black") !== -1 ||
+    name.indexOf("major v black") !== -1 ||
+    name.indexOf("4 major black") !== -1
+  ) {
+    return 38985;
+  } else if (
+    name.indexOf("major 5 brown") !== -1 ||
+    name.indexOf("major v brown") !== -1 ||
+    name.indexOf("5 major brown") !== -1
+  ) {
+    return 38986;
+  } else if (
+    name.indexOf("major 5 cream") !== -1 ||
+    name.indexOf("major v cream") !== -1 ||
+    name.indexOf("5 major cream") !== -1
+  ) {
+    return 38987;
+  } else if (name.indexOf("minor 4 black") !== -1) {
+    return 38989;
+  } else if (name.indexOf("minor 4 cream") !== -1) {
+    return 38990;
 
     // Nintendo
   } else if (name.indexOf("switch oled neon") !== -1) {

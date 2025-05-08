@@ -1518,6 +1518,36 @@ export const returnIDOtherBrand = (name) => {
     return 37468;
   } else if (name.indexOf("oneplus 13 24/1tb white") !== -1) {
     return 37469;
+  } else if (name.indexOf("oneplus 13t 12/256 black") != -1) {
+    return 38868;
+  } else if (name.indexOf("oneplus 13t 12/256 gray") != -1) {
+    return 38924;
+  } else if (name.indexOf("oneplus 13t 12/256 pink") != -1) {
+    return 38926;
+  } else if (name.indexOf("oneplus 13t 12/512 black") != -1) {
+    return 38936;
+  } else if (name.indexOf("oneplus 13t 12/512 gray") != -1) {
+    return 38937;
+  } else if (name.indexOf("oneplus 13t 12/512 pink") != -1) {
+    return 38938;
+  } else if (name.indexOf("oneplus 13t 16/1tb black") != -1) {
+    return 38948;
+  } else if (name.indexOf("oneplus 13t 16/1tb gray") != -1) {
+    return 38949;
+  } else if (name.indexOf("oneplus 13t 16/1tb pink") != -1) {
+    return 38950;
+  } else if (name.indexOf("oneplus 13t 16/256 black") != -1) {
+    return 38930;
+  } else if (name.indexOf("oneplus 13t 16/256 gray") != -1) {
+    return 38931;
+  } else if (name.indexOf("oneplus 13t 16/256 pink") != -1) {
+    return 38932;
+  } else if (name.indexOf("oneplus 13t 16/512 black") != -1) {
+    return 38942;
+  } else if (name.indexOf("oneplus 13t 16/512 gray") != -1) {
+    return 38943;
+  } else if (name.indexOf("oneplus 13t 16/512 pink") != -1) {
+    return 38944;
   } else if (name.indexOf("oneplus ace 3 12/256 black") !== -1) {
     return 34452;
   } else if (name.indexOf("oneplus ace 3 12/256 blue") !== -1) {

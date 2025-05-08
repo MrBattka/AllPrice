@@ -4753,6 +4753,96 @@ export const returnIDSamsung = (nameStock) => {
     name.indexOf("pink") !== -1
   ) {
     return 22824;
+  } else if (
+    name.indexOf("tab s10 fe") !== -1 &&
+    name.indexOf("tab s10 fe +") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 38958;
+  } else if (
+    name.indexOf("tab s10 fe") !== -1 &&
+    name.indexOf("tab s10 fe +") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 38959;
+  } else if (
+    name.indexOf("tab s10 fe") !== -1 &&
+    name.indexOf("tab s10 fe +") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 38960;
+  } else if (
+    name.indexOf("tab s10 fe") !== -1 &&
+    name.indexOf("tab s10 fe +") === -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 38953;
+  } else if (
+    name.indexOf("tab s10 fe") !== -1 &&
+    name.indexOf("tab s10 fe +") === -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 38870;
+  } else if (
+    name.indexOf("tab s10 fe") !== -1 &&
+    name.indexOf("tab s10 fe +") === -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 38954;
+  } else if (
+    name.indexOf("tab s10 fe +") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 38968;
+  } else if (
+    name.indexOf("tab s10 fe +") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 38969;
+  } else if (
+    name.indexOf("tab s10 fe +") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 38970;
+  } else if (
+    name.indexOf("tab s10 fe +") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 38963;
+  } else if (
+    name.indexOf("tab s10 fe +") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 38872;
+  } else if (
+    name.indexOf("tab s10 fe +") !== -1 &&
+    name.indexOf("8/128") !== -1 &&
+    name.indexOf("lte") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 38964;
 
     // Watch
   } else if (name.indexOf("watch fe 40 black") !== -1) {
