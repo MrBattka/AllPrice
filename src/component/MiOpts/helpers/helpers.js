@@ -21,9 +21,7 @@ export const returnNameInArrMiOpts = (name) => {
 
   let removeRUB =
     reverseStrName[0] === "-" ? reverseStrName.slice(1) : reverseStrName;
-  let splitStick =
-  sliceFlags.indexOf("-") !== -1 ? /\-(.+)/.exec(removeRUB)[1] : removeRUB;
-  // let splitPrice = /\s(.+)/.exec(splitStick)[1];
+  let splitStick = removeRUB.indexOf("-") !== -1 ? removeRUB.split("-")[1] : removeRUB
 
   let reverseBackStrName = splitStick.split("").reverse().join("");
 

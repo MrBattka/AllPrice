@@ -207,8 +207,9 @@ export const returnStockPriceDiscount = (name) => {
   let remove2Sim = reverseBackStrName.indexOf("2sim") !== -1
     ? reverseBackStrName.replace("2sim", "")
     : reverseBackStrName;
+  let replaceWhiteColor = remove2Sim.replace("⚪️", "");
 
-  return remove2Sim;
+  return replaceWhiteColor;
 };
 
 export const returnExtraPriceRacmag = (name) => {
