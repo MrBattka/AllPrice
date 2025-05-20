@@ -40,17 +40,20 @@ export const returnNameInArrSunrise = (name) => {
 export const returnStockPriceSunrise = (name) => {
 
   let reverseStrName = name.split("").reverse().join("");
+  
   let checkSpace1 =
     reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
   let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
   let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
-  // let splitPrice = checkSpace4.split(" ")[0];
+  
   let removeStick = checkSpace4.indexOf("-")
     ? checkSpace4.split("-")[0]
     : checkSpace4;
   let reverseBackStrName = removeStick.split("").reverse().join("");
+  let replaceCase = reverseBackStrName.replace(" [без кейса]", "");
+  let replaceWithCase = replaceCase.replace(" [с кейсом]", "");
 
-  return returnFixNameSunrise(reverseBackStrName);
+  return returnFixNameSunrise(replaceWithCase);
 };

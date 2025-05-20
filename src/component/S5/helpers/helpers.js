@@ -167,7 +167,9 @@ export const returnStockPriceS5 = (name) => {
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceZA = replaceKR.replace("🇿🇦", "");
   let replacePY = replaceZA.replace("🇵🇾", "");
-  let replaceBuds3White = replacePY.replace("Buds 3 White", "");
+  let replaceSim = replacePY.replace("1Sim+Esim", "");
+  let replaceCar = replaceSim.replace("🚘", "");
+  let replaceBuds3White = replaceCar.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
     "Tab S9FE 8/256 Lavender 5G",
     ""

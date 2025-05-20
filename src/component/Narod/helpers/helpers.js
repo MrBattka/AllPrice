@@ -120,8 +120,9 @@ export const returnStockPriceNarod = (name) => {
   let reverseStrName = replaceRub.split("").reverse().join("");
   let splitPrice = reverseStrName.split(" ")[0];
   let reverseBackStrName = splitPrice.split("").reverse().join("");
+  let replaceAA = reverseBackStrName.replace("🇦🇪", "")
 
-  return reverseBackStrName;
+  return replaceAA;
 };
 
 export const returnExtraPriceS5 = (name) => {

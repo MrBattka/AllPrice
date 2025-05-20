@@ -2589,7 +2589,7 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("xl") === -1 &&
     name.indexOf("pro") === -1 &&
-    name.indexOf("pixel 9") !== -1 &&
+    name.indexOf("pixel 9 ") !== -1 &&
     name.indexOf("256") !== -1 &&
     (name.indexOf("obsidian") !== -1 || name.indexOf("black") !== -1)
   ) {
