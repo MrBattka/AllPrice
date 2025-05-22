@@ -61,6 +61,8 @@ import IndexVseMiNotID from "./VseMi/indexVseMiNotID";
 import AllPriceQuickID from "./AllPrice/AllPriceQuickID";
 import IndexA18 from "./A18/IndexA18";
 import IndexA18NotID from "./A18/IndexA18NotID";
+import IndexTrub from "./Trub/IndexTrub";
+import IndexTrubNotID from "./Trub/IndexTrubNotID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -94,6 +96,7 @@ const IndexAllPrice = () => {
   const [dataBonus, setDataBonus] = useState([]);
   const [dataRootOpt, setDataRootOpt] = useState([]);
   const [dataA18, setDataA18] = useState([]);
+  const [dataTrub, setDataTrub] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -124,6 +127,7 @@ const IndexAllPrice = () => {
   const bonus = [];
   const rootOpt = [];
   const a18 = [];
+  const trub = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -326,9 +330,11 @@ const IndexAllPrice = () => {
   });
 
   dataA18.map((a18El) => {
-    a18El.A18 &&
-      a18El.A18.length &&
-      a18.push({ name: a18El.A18 });
+    a18El.A18 && a18El.A18.length && a18.push({ name: a18El.A18 });
+  });
+
+  dataTrub.map((trubEl) => {
+    trubEl.Trub && trubEl.Trub.length && trub.push({ name: trubEl.Trub });
   });
 
   const handleImport = ($event) => {
@@ -399,6 +405,8 @@ const IndexAllPrice = () => {
           setDataRootOpt(rowRootOpt);
           const rowA18 = utils.sheet_to_json(wb.Sheets[sheets[28]]);
           setDataA18(rowA18);
+          const rowTrub = utils.sheet_to_json(wb.Sheets[sheets[29]]);
+          setDataTrub(rowTrub);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -465,6 +473,7 @@ const IndexAllPrice = () => {
           bigApData={bigAp}
           rootOptData={rootOpt}
           a18Data={a18}
+          trubData={trub}
         />
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
@@ -557,6 +566,9 @@ const IndexAllPrice = () => {
         {/* A18 */}
         <IndexA18 el={dataA18} a18Data={a18} />
         <IndexA18NotID el={dataA18} a18Data={a18} />
+        {/* Трубный */}
+        <IndexTrub el={dataTrub} trubData={trub} />
+        <IndexTrubNotID el={dataTrub} trubData={trub} />
 
         {/* All Price */}
         <AllPriceWithID
@@ -589,28 +601,8 @@ const IndexAllPrice = () => {
           bigApData={bigAp}
           rootOptData={rootOpt}
           a18Data={a18}
+          trubData={trub}
         />
-
-        {/* <AllPrice
-          dataSuperprice={superprice}
-          dataVsemi={vsemi}
-          dataUnimtrn={dataUNIMTRN}
-          dataHi={hi}
-          dataMihonor={mihonor}
-          dataGarmin={garmin}
-          S5Data={S5}
-          rptradeData={rptrade}
-          racmagData={racmag}
-          electrozonData={electrozon}
-          artiData={arti}
-          resaleData={resale}
-          tagirData={tagir}
-          narodData={narod}
-          f51Data={f51}
-          discountData={discount}
-          baseData={deleteDoubleProduct}
-          otherData={other}
-        /> */}
       </div>
     </div>
   );

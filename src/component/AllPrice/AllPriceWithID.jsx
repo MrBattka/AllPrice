@@ -27,6 +27,7 @@ import {
   baseFixSunrise,
   baseFixSuperPrice,
   baseFixTagir,
+  baseFixTrub,
   baseFixVsemi,
 } from "../../helpers/baseFix";
 import { returnFixPrice } from "../../helpers/fixPrice";
@@ -169,6 +170,7 @@ import {
   returnNameInArrA18,
   returnStockPriceA18,
 } from "../A18/helpers/helpers";
+import { fixNameTrub, returnNameInArrTrub, returnStockPriceTrub } from "../Trub/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -200,6 +202,7 @@ const AllPriceWithID = ({
   bigApData,
   rootOptData,
   a18Data,
+  trubData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -867,6 +870,27 @@ const AllPriceWithID = ({
           name: returnNameInArrA18(returnFixNameA18(A18.name)),
           stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
           provider: "A18",
+        })
+      );
+    }
+  });
+
+  trubData.map((trub) => {
+    if (
+      trub.name &&
+      typeof trub.name === "string" &&
+      baseFixTrub(trub) &&
+      isOpen &&
+      returnStockPriceTrub(fixNameTrub(trub.name)).indexOf("0") != -1
+    ) {
+      return (
+        returnIDSamsung(fixNameTrub(trub.name)) !== "No match" &&
+        returnStockPriceTrub(trub.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(trub.name))),
+          name: returnNameInArrTrub(fixNameTrub(trub.name)),
+          stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
+          provider: "Трубный",
         })
       );
     }

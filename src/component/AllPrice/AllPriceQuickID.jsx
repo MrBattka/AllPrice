@@ -27,6 +27,7 @@ import {
   baseFixSunrise,
   baseFixSuperPrice,
   baseFixTagir,
+  baseFixTrub,
   baseFixVsemi,
 } from "../../helpers/baseFix";
 import { returnFixPrice } from "../../helpers/fixPrice";
@@ -170,6 +171,7 @@ import {
   returnNameInArrA18,
   returnStockPriceA18,
 } from "../A18/helpers/helpers";
+import { fixNameTrub, returnNameInArrTrub, returnStockPriceTrub } from "../Trub/helpers/helpers";
 
 const AllPriceQuickID = ({
   dataSuperprice,
@@ -201,6 +203,7 @@ const AllPriceQuickID = ({
   bigApData,
   rootOptData,
   a18Data,
+  trubData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArrQuickID = [];
@@ -845,6 +848,27 @@ const AllPriceQuickID = ({
       );
     }
   });
+  
+  trubData.map((trub) => {
+      if (
+        trub.name &&
+        typeof trub.name === "string" &&
+        baseFixTrub(trub) &&
+        isOpen &&
+        returnStockPriceTrub(fixNameTrub(trub.name)).indexOf("0") != -1
+      ) {
+        return (
+          returnQuickID(fixNameTrub(trub.name)) !== "No match" &&
+          returnStockPriceTrub(trub.name) &&
+          resultArrQuickID.push({
+            id: returnQuickID(returnNameInArrTrub(fixNameTrub(trub.name))),
+            name: returnNameInArrTrub(fixNameTrub(trub.name)),
+            stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
+            provider: "Трубный",
+          })
+        );
+      }
+    });
 
   // a18Data.map((A18) => {
   //       // baseFixA18(A18) &&
