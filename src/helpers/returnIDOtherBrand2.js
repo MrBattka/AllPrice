@@ -2017,7 +2017,8 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("honor magic v3") !== -1 &&
     name.indexOf("12/256") !== -1 &&
-    name.indexOf("red") !== -1
+    (name.indexOf("red") !== -1 ||
+    name.indexOf("brown") !== -1)
   ) {
     return 38728;
   } else if (
@@ -2041,7 +2042,8 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("honor magic v3") !== -1 &&
     name.indexOf("12/512") !== -1 &&
-    name.indexOf("red") !== -1
+    (name.indexOf("red") !== -1 ||
+    name.indexOf("brown") !== -1)
   ) {
     return 38736;
   } else if (
@@ -2065,7 +2067,8 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("honor magic v3") !== -1 &&
     name.indexOf("16/1tb") !== -1 &&
-    name.indexOf("red") !== -1
+    (name.indexOf("red") !== -1 ||
+    name.indexOf("brown") !== -1)
   ) {
     return 38752;
   } else if (
@@ -2089,7 +2092,8 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("honor magic v3") !== -1 &&
     name.indexOf("16/512") !== -1 &&
-    name.indexOf("red") !== -1
+    (name.indexOf("red") !== -1 ||
+    name.indexOf("brown") !== -1)
   ) {
     return 38744;
   } else if (
@@ -2287,7 +2291,8 @@ export const returnIDOtherBrand2 = (name) => {
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
     name.indexOf("2") !== -1 &&
     name.indexOf("лайт") !== -1 &&
-    name.indexOf("сини") !== -1
+    (name.indexOf("сини") !== -1 ||
+    name.indexOf("blue") !== -1)
   ) {
     return 37162;
   } else if (
@@ -2301,7 +2306,8 @@ export const returnIDOtherBrand2 = (name) => {
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
     name.indexOf("2") !== -1 &&
     name.indexOf("лайт") !== -1 &&
-    name.indexOf("зелен") !== -1
+    (name.indexOf("зелен") !== -1 ||
+    name.indexOf("green") !== -1)
   ) {
     return 37164;
   } else if (

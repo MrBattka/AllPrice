@@ -336,7 +336,7 @@ export const returnIDSamsung = (nameStock) => {
   ) {
     return 36994;
   } else if (
-    name.indexOf("a16 8/25628") !== -1 &&
+    name.indexOf("a16 8/256") !== -1 &&
     name.indexOf("green") !== -1 &&
     name.indexOf("5g") !== -1
   ) {
@@ -2935,7 +2935,8 @@ export const returnIDSamsung = (nameStock) => {
     name.indexOf("ultra") === -1 &&
     name.indexOf("s25+") === -1 &&
     name.indexOf("12/256") !== -1 &&
-    name.indexOf("icyblue") !== -1
+    (name.indexOf("icyblue") !== -1 ||
+    name.indexOf("iceblue") !== -1)
   ) {
     return 37495;
   } else if (
@@ -2975,7 +2976,8 @@ export const returnIDSamsung = (nameStock) => {
     name.indexOf("ultra") === -1 &&
     name.indexOf("s25+") === -1 &&
     name.indexOf("12/512") !== -1 &&
-    name.indexOf("icyblue") !== -1
+    (name.indexOf("icyblue") !== -1 ||
+    name.indexOf("iceblue") !== -1)
   ) {
     return 37510;
   } else if (
@@ -3031,7 +3033,8 @@ export const returnIDSamsung = (nameStock) => {
     name.indexOf("ultra") === -1 &&
     name.indexOf("s25+") === -1 &&
     name.indexOf("12/128") !== -1 &&
-    name.indexOf("icyblue") !== -1
+    (name.indexOf("icyblue") !== -1 ||
+    name.indexOf("iceblue") !== -1)
   ) {
     return 37524;
   } else if (
@@ -3084,7 +3087,8 @@ export const returnIDSamsung = (nameStock) => {
     name.indexOf("s25+") !== -1 &&
     name.indexOf("ultra") === -1 &&
     name.indexOf("12/256") !== -1 &&
-    name.indexOf("icy") !== -1
+    (name.indexOf("icyblue") !== -1 ||
+    name.indexOf("iceblue") !== -1)
   ) {
     return 37566;
   } else if (
@@ -3126,7 +3130,8 @@ export const returnIDSamsung = (nameStock) => {
     name.indexOf("s25+") !== -1 &&
     name.indexOf("ultra") === -1 &&
     name.indexOf("12/512") !== -1 &&
-    name.indexOf("icy") !== -1
+    (name.indexOf("icyblue") !== -1 ||
+    name.indexOf("iceblue") !== -1)
   ) {
     return 37580;
   } else if (
@@ -4491,7 +4496,8 @@ export const returnIDSamsung = (nameStock) => {
   } else if (
     name.indexOf("tab a9 +") !== -1 &&
     name.indexOf("64") !== -1 &&
-    name.indexOf("navy") !== -1
+    (name.indexOf("navy") !== -1 ||
+    name.indexOf("blue") !== -1)
   ) {
     return 30180;
   } else if (
@@ -4509,7 +4515,8 @@ export const returnIDSamsung = (nameStock) => {
   } else if (
     name.indexOf("tab a9 +") !== -1 &&
     name.indexOf("128") !== -1 &&
-    name.indexOf("navy") !== -1
+    (name.indexOf("navy") !== -1 ||
+    name.indexOf("blue") !== -1)
   ) {
     return 30181;
   } else if (
@@ -4527,7 +4534,8 @@ export const returnIDSamsung = (nameStock) => {
   } else if (
     name.indexOf("tab a9") !== -1 &&
     name.indexOf("64") !== -1 &&
-    name.indexOf("navy") !== -1
+    (name.indexOf("navy") !== -1 ||
+    name.indexOf("blue") !== -1)
   ) {
     return 30174;
   } else if (
@@ -4545,7 +4553,8 @@ export const returnIDSamsung = (nameStock) => {
   } else if (
     name.indexOf("tab a9") !== -1 &&
     name.indexOf("128") !== -1 &&
-    name.indexOf("navy") !== -1
+    (name.indexOf("navy") !== -1 ||
+    name.indexOf("blue") !== -1)
   ) {
     return 30175;
   } else if (
@@ -4915,29 +4924,36 @@ export const returnIDSamsung = (nameStock) => {
   } else if (name.indexOf("watch6 classic 47 silver") !== -1) {
     return 27919;
   } else if (
-    name.indexOf("watch 7 40") !== -1 &&
+    name.indexOf("watch 7") !== -1 &&
+    name.indexOf("40") !== -1 &&
     name.indexOf("cream") !== -1
   ) {
     return 36526;
-  } else if (name.indexOf("watch 7 40") !== -1) {
+  } else if (name.indexOf("watch 7") !== -1 &&
+  name.indexOf("40") !== -1 &&
+  name.indexOf("green") !== -1) {
     return 36528;
   } else if (
-    name.indexOf("watch 7 40") !== -1 &&
+    name.indexOf("watch 7") !== -1 &&
+    name.indexOf("40") !== -1 &&
     name.indexOf("silver") !== -1
   ) {
     return 36495;
   } else if (
-    name.indexOf("watch 7 44") !== -1 &&
+    name.indexOf("watch 7") !== -1 &&
+    name.indexOf("44") !== -1 &&
     name.indexOf("cream") !== -1
   ) {
     return 36527;
   } else if (
-    name.indexOf("watch 7 44") !== -1 &&
+    name.indexOf("watch 7") !== -1 &&
+    name.indexOf("44") !== -1 &&
     name.indexOf("green") !== -1
   ) {
     return 36529;
   } else if (
-    name.indexOf("watch 7 44") !== -1 &&
+    name.indexOf("watch 7") !== -1 &&
+    name.indexOf("44") !== -1 &&
     name.indexOf("silver") !== -1
   ) {
     return 36496;

@@ -681,7 +681,6 @@ export const baseFixGarmin = (el) => {
       toLowerCase?.indexOf("rfb") == -1 &&
       toLowerCase?.indexOf("обме") == -1 &&
       toLowerCase?.indexOf("короб") == -1 &&
-      toLowerCase.indexOf("fenix 8") == -1 &&
       toLowerCase.indexOf("freebuds") == -1 &&
       toLowerCase.indexOf("pixel buds") == -1 &&
       toLowerCase.indexOf("oneplus buds") == -1 &&

@@ -9,9 +9,70 @@ export const fixNameTrub = (name) => {
     "+ Чехол-клавиатура с тачпадом",
     ""
   );
-  const replaceBlack = replaceKeyboardWithTouchpad.replace("Черный", "");
-  const replaceWhite = replaceBlack.replace("Белый", "");
-  const replace1Sim = replaceWhite.replace("1sim", "");
+  const fixBlackRus = replaceKeyboardWithTouchpad.replace("Черный", "Black");
+  const fixNavyRus = fixBlackRus.indexOf("Z Fold") !== -1 ? replaceKeyboardWithTouchpad.replace(" Темно-Синий", "Navy") : fixBlackRus
+  const fixBlackRus1 = fixNavyRus.replace("Чёрный", "Black");
+  const fixS9FEPlus = fixBlackRus1.replace("S9FE+", "S9 Fe +");
+  const fixS9FE = fixS9FEPlus.replace("S9FE", "S9 FE");
+  const fixA164G = fixS9FE.replace("4G ", "");
+  const fixS10Plus = fixA164G.replace("S10+", "S10 +");
+  const fixA9Plus = fixS10Plus.replace("A9+", "A9 +");
+  const fixS25Plus = fixA9Plus.replace("S25 Plus", "S25+");
+  const fixS24Plus = fixS25Plus.replace("S24 Plus", "S24+");
+  const fixS24FE = fixS24Plus.replace("S24FE", "S24 FE");
+  const fixS23FE = fixS24FE.replace("S23FE", "S23 FE");
+  const fixS22FE = fixS23FE.replace("S22FE", "S22 FE");
+  const fixS21FE = fixS22FE.replace("S21FE", "S21 FE");
+  const fixS20FE = fixS21FE.replace("S20FE", "S20 FE");
+  const fixS23Plus = fixS20FE.replace("S23 Plus", "S23+");
+  const fixS22Plus = fixS23Plus.replace("S22 Plus", "S22+");
+  const fixS21Plus = fixS22Plus.replace("S21 Plus", "S21+");
+  const fixS20Plus = fixS21Plus.replace("S20 Plus", "S20+");
+  const replaceWhite = fixS20Plus.replace("Белый", "");
+  const fixGreen = replaceWhite.replace("Зеленый", "Green");
+  const fixYellow = fixGreen.replace("Желтый", "Yellow");
+  const fixPurple = fixYellow.replace("Фиолетовый", "Purple");
+  const fixBlueRu1 = fixPurple.replace("Синий", "Blue");
+  const fixCoral = fixBlueRu1.replace("Coral", "Red");
+  const fixSilverRu = fixCoral.replace("Серебро", "Silver");
+  const fixGraphiteRu =
+    fixSilverRu.indexOf("S10 ") !== -1 || fixSilverRu.indexOf("S9 ") !== -1
+      ? fixSilverRu.replace("Графит", "Gray")
+      : fixSilverRu.replace("Графит", "Graphite");
+  const fixBeigeRu = fixGraphiteRu.replace("Бежевый", "Beige");
+  const fixLavenderRu = fixBeigeRu.replace("Лаванда", "Lavender");
+  const fixMintRu = fixLavenderRu.replace("Мятный", "Mint");
+  const fixMintRu1 = fixMintRu.replace("Мята", "Mint");
+  const fixGoldRu = fixMintRu1.replace("золото", "Gold");
+  const fixGrayRu =
+    fixGoldRu.indexOf("Magic 7 Pro") !== -1
+      ? fixGoldRu.replace("Серый", "White")
+      : fixGoldRu.replace("Серый", "Gray");
+  const fixBlackRu = fixGrayRu.replace("Черный", "Black");
+  const fixBlueRu = fixBlackRu.replace("Голубой", "Blue");
+  const fixPinkRu = fixBlueRu.replace("Розовый", "Pink");
+  const fixGray = fixPinkRu.replace("Grey", "Gray");
+  
+  const fixA =
+  fixGray.indexOf("А16") !== -1 ||
+    fixGray.indexOf("А25") !== -1 ||
+    fixGray.indexOf("А26") !== -1 ||
+    fixGray.indexOf("А35") !== -1 ||
+    fixGray.indexOf("А36") !== -1 ||
+    fixGray.indexOf("А55") !== -1 ||
+    fixGray.indexOf("А56") !== -1
+      ? fixGray.replace("А", "A")
+      : fixGray;
+      const fixA5G =
+      fixA.indexOf("A25") !== -1 ||
+      fixA.indexOf("A26") !== -1 ||
+      fixA.indexOf("A35") !== -1 ||
+      fixA.indexOf("A36") !== -1 ||
+      fixA.indexOf("A55") !== -1 ||
+      fixA.indexOf("A56") !== -1
+        ? fixA.replace("5G ", "")
+        : fixA;
+  const replace1Sim = fixA5G.replace("1sim", "");
   const fixPixel5G =
     replace1Sim.indexOf("Pixel") != -1 ||
     replace1Sim.indexOf("M55") != -1 ||

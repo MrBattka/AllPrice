@@ -569,7 +569,6 @@ const IndexAllPrice = () => {
         {/* Трубный */}
         <IndexTrub el={dataTrub} trubData={trub} />
         <IndexTrubNotID el={dataTrub} trubData={trub} />
-
         {/* All Price */}
         <AllPriceWithID
           dataSuperprice={superprice}
