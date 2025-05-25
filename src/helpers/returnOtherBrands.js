@@ -302,7 +302,7 @@ export const returnIDOtherBrand = (name) => {
   ) {
     return 37131;
   } else if (name.indexOf("v12 detect slim") !== -1) {
-    return 35670;
+    return 28199;
   } else if (name.indexOf("v15 detect absolute") !== -1) {
     return 28202;
   } else if (name.indexOf("gen5 detect absolute") !== -1) {
@@ -310,7 +310,7 @@ export const returnIDOtherBrand = (name) => {
   } else if (name.indexOf("gen5 outsize absolute") !== -1) {
     return 28208;
   } else if (name.indexOf("v15s detect submarine") !== -1) {
-    return 35670;
+    return 37131;
   } else if (
     name.indexOf("dyson") !== -1 &&
     name.indexOf("evo") !== -1 &&

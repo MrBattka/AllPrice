@@ -185,17 +185,23 @@ export const returnIDGarmin = (nameStock) => {
     return 27338;
   } else if (name.indexOf("forerunner 255 music black") !== -1) {
     return 27337;
-  } else if (name.indexOf("forerunner 265 black") !== -1) {
+  } else if (name.indexOf("forerunner 265") !== -1 &&
+  name.indexOf("black") !== -1) {
     return 27327;
-  } else if (name.indexOf("forerunner 265 aqua") !== -1) {
+  } else if (name.indexOf("forerunner 265") !== -1 &&
+  name.indexOf("aqua") !== -1) {
     return 27328;
-  } else if (name.indexOf("forerunner 265 white") !== -1) {
+  } else if (name.indexOf("forerunner 265") !== -1 &&
+  name.indexOf("white") !== -1) {
     return 27326;
-  } else if (name.indexOf("forerunner 265s black") !== -1) {
+  } else if (name.indexOf("forerunner 265s") !== -1 &&
+  name.indexOf("black") !== -1) {
     return 27325;
-  } else if (name.indexOf("forerunner 265s pink") !== -1) {
+  } else if (name.indexOf("forerunner 265s") !== -1 &&
+  name.indexOf("pink") !== -1) {
     return 27324;
-  } else if (name.indexOf("forerunner 265s white") !== -1) {
+  } else if (name.indexOf("forerunner 265s") !== -1 &&
+  name.indexOf("white") !== -1) {
     return 27323;
   } else if (name.indexOf("forerunner 45 black") !== -1) {
     return 35807;
