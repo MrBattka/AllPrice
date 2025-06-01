@@ -918,7 +918,7 @@ export const returnIDApple = (name) => {
     name.indexOf("256") !== -1 &&
     name.indexOf("pink") !== -1
   ) {
-    return 37308;
+    return 20637;
 
     // ipad 9
   } else if (
