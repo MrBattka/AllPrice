@@ -205,7 +205,9 @@ export const returnStockPriceTrub = (name) => {
 
   let reverseStrName = removeOther.split("").reverse().join("");
 
-  return reverseStrName;
+  let replaceSilverblue = reverseStrName.replace("Silverblue", "")
+
+  return replaceSilverblue;
 };
 
 export const returnExtraPriceS5 = (name) => {

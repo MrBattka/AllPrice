@@ -2598,6 +2598,7 @@ export const baseFixInfinity = (el) => {
       toLowerCase.indexOf("pixel buds") == -1 &&
       toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("дисковод") == -1 &&
+      toLowerCase.indexOf("active") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -2973,6 +2974,7 @@ export const baseFixMTA = (el) => {
       toLowerCase.indexOf("pixel buds") == -1 &&
       toLowerCase.indexOf("oneplus buds") == -1 &&
       toLowerCase.indexOf("дисковод") == -1 &&
+      toLowerCase.indexOf("active") == -1 &&
       toLowerCase.indexOf("ремешок") == -1;
 };
 

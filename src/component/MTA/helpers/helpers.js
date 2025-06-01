@@ -66,7 +66,11 @@ export const returnStockPriceMTA = (name) => {
   let replaceCF = replaceMY.replace("🇨🇫", "");
   let replaceKZ = replaceCF.replace("🇰🇿", "");
   let replaceKR = replaceKZ.replace("🇰🇷", "");
-  let replaceGU = replaceKR.replace("🇬🇺", "");
+  let replaceZA = replaceKR.replace("🇿🇦", "");
+  let replaceBlue = replaceZA.replace("Blue", "");
+  let replaceNatural = replaceBlue.replace("Natural", "");
+  let replacesim = replaceNatural.replace("1Sim+Esim", "");
+  let replaceGU = replacesim.replace("🇬🇺", "");
   let replaceSpace = replaceGU.replace(" ", "");
   let replaceSpace1 = replaceSpace.replace(" ", "");
   let replaceDot = replaceSpace1.replace(".", "");
