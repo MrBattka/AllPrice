@@ -3397,39 +3397,78 @@ export const returnIDSamsung = (nameStock) => {
     return 30830;
   } else if (name.indexOf("z flip 5 8/512 yellow 🇰🇿") !== -1) {
     return 30831;
-  } else if (name.indexOf("z flip 6 12/256 black") !== -1) {
+  } else if (name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/256") !== -1 ||
+name.indexOf("black") !== -1) {
     return 36517;
-  } else if (name.indexOf("z flip 6 12/256 blue") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/256") !== -1 ||
+name.indexOf("blue") !== -1) {
     return 36513;
-  } else if (name.indexOf("z flip 6 12/256 mint") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/256") !== -1 ||
+name.indexOf("mint") !== -1) {
     return 36514;
-  } else if (name.indexOf("z flip 6 12/256 peach") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/256") !== -1 ||
+name.indexOf("peach") !== -1) {
     return 36518;
   } else if (
-    name.indexOf("z flip 6 12/256 silver") !== -1 ||
-    name.indexOf("z flip 6 12/256 gray") !== -1
+    name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/256") !== -1 ||
+(name.indexOf("silver") !== -1 ||
+name.indexOf("gray") !== -1)
   ) {
     return 36515;
-  } else if (name.indexOf("z flip 6 12/256 white") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/256") !== -1 ||
+name.indexOf("white") !== -1) {
     return 36516;
-  } else if (name.indexOf("z flip 6 12/256 yellow") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/256") !== -1 ||
+name.indexOf("yellow") !== -1) {
     return 36494;
-  } else if (name.indexOf("z flip 6 12/512 black") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/512") !== -1 ||
+name.indexOf("black") !== -1) {
     return 36519;
-  } else if (name.indexOf("z flip 6 12/512 blue") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/512") !== -1 ||
+name.indexOf("blue") !== -1) {
     return 36520;
-  } else if (name.indexOf("z flip 6 12/512 mint") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/512") !== -1 ||
+name.indexOf("mint") !== -1) {
     return 36521;
-  } else if (name.indexOf("z flip 6 12/512 peach") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/512") !== -1 ||
+name.indexOf("peach") !== -1) {
     return 36522;
   } else if (
-    name.indexOf("z flip 6 12/512 silver") !== -1 ||
-    name.indexOf("z flip 6 12/512 gray") !== -1
+    name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/512") !== -1 ||
+(name.indexOf("silver") !== -1 ||
+name.indexOf("gray") !== -1)
   ) {
     return 36523;
-  } else if (name.indexOf("z flip 6 12/512 white") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/512") !== -1 ||
+name.indexOf("white") !== -1) {
     return 36524;
-  } else if (name.indexOf("z flip 6 12/512 yellow") !== -1) {
+  } else if (
+name.indexOf("z flip 6") !== -1 ||
+name.indexOf("12/512") !== -1 ||
+name.indexOf("yellow") !== -1) {
     return 36525;
   } else if (name.indexOf("z flip 5 8/256 blue") !== -1) {
     return 27949;

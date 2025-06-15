@@ -173,9 +173,11 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("5 major cream") !== -1
   ) {
     return 38987;
-  } else if (name.indexOf("minor 4 black") !== -1) {
+  } else if (name.indexOf("minor 4 black") !== -1 ||
+name.indexOf("4 minor black") !== -1) {
     return 38989;
-  } else if (name.indexOf("minor 4 cream") !== -1) {
+  } else if (name.indexOf("minor 4 cream") !== -1 ||
+name.indexOf("4 minor cream") !== -1) {
     return 38990;
 
     // Nintendo

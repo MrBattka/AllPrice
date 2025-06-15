@@ -2574,7 +2574,7 @@ export const returnIDApple = (name) => {
   ) {
     return 38521;
   } else if (
-    name.indexOf("air 11") !== -1 &&
+    name.indexOf("air 13") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
     name.indexOf("128") !== -1 &&
     name.indexOf("wi-fi") !== -1 &&
@@ -2582,7 +2582,7 @@ export const returnIDApple = (name) => {
   ) {
     return 38535;
   } else if (
-    name.indexOf("air 11") !== -1 &&
+    name.indexOf("air 13") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
     name.indexOf("128") !== -1 &&
     name.indexOf("wi-fi") !== -1 &&
@@ -2590,7 +2590,7 @@ export const returnIDApple = (name) => {
   ) {
     return 38536;
   } else if (
-    name.indexOf("air 11") !== -1 &&
+    name.indexOf("air 13") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
     name.indexOf("128") !== -1 &&
     name.indexOf("wi-fi") !== -1 &&
@@ -2598,7 +2598,7 @@ export const returnIDApple = (name) => {
   ) {
     return 38537;
   } else if (
-    name.indexOf("air 11") !== -1 &&
+    name.indexOf("air 13") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
     name.indexOf("128") !== -1 &&
     name.indexOf("wi-fi") !== -1 &&
@@ -2606,7 +2606,7 @@ export const returnIDApple = (name) => {
   ) {
     return 38538;
   } else if (
-    name.indexOf("air 11") !== -1 &&
+    name.indexOf("air 13") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
     name.indexOf("128") !== -1 &&
     name.indexOf("lte") !== -1 &&
@@ -2614,7 +2614,7 @@ export const returnIDApple = (name) => {
   ) {
     return 38567;
   } else if (
-    name.indexOf("air 11") !== -1 &&
+    name.indexOf("air 13") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
     name.indexOf("128") !== -1 &&
     name.indexOf("lte") !== -1 &&
@@ -2622,7 +2622,7 @@ export const returnIDApple = (name) => {
   ) {
     return 38568;
   } else if (
-    name.indexOf("air 11") !== -1 &&
+    name.indexOf("air 13") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
     name.indexOf("128") !== -1 &&
     name.indexOf("lte") !== -1 &&
@@ -2630,7 +2630,7 @@ export const returnIDApple = (name) => {
   ) {
     return 38569;
   } else if (
-    name.indexOf("air 11") !== -1 &&
+    name.indexOf("air 13") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
     name.indexOf("128") !== -1 &&
     name.indexOf("lte") !== -1 &&
@@ -2733,6 +2733,8 @@ export const returnIDApple = (name) => {
     name.indexOf("starlight") !== -1
   ) {
     return 38546;
+
+
   } else if (
     name.indexOf("air 13") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
