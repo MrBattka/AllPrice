@@ -1956,7 +1956,8 @@ export const returnIDOtherBrand2 = (name) => {
     return 20306;
   } else if (name.indexOf("jbl clip 4 pink") !== -1) {
     return 20304;
-  } else if (name.indexOf("jbl clip 4 teal") !== -1) {
+  } else if (name.indexOf("jbl clip 4 teal") !== -1 ||
+name.indexOf("jbl clip 4 green") !== -1) {
     return 20307;
   } else if (name.indexOf("jbl clip 4 white") !== -1) {
     return 20308;
@@ -2755,7 +2756,7 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("без zigbee") === -1 &&
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
-    name.indexOf("макс") !== -1 &&
+    (name.indexOf("макс") !== -1 || name.indexOf("max") !== -1) &&
     name.indexOf("zigbee") !== -1 &&
     name.indexOf("красн") !== -1
   ) {
@@ -2763,7 +2764,7 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("без zigbee") === -1 &&
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
-    name.indexOf("макс") !== -1 &&
+    (name.indexOf("макс") !== -1 || name.indexOf("max") !== -1) &&
     name.indexOf("zigbee") !== -1 &&
     name.indexOf("сер") !== -1
   ) {
@@ -2771,7 +2772,7 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("без zigbee") === -1 &&
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
-    name.indexOf("макс") !== -1 &&
+    (name.indexOf("макс") !== -1 || name.indexOf("max") !== -1) &&
     name.indexOf("zigbee") !== -1 &&
     name.indexOf("син") !== -1
   ) {
@@ -2779,57 +2780,53 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("без zigbee") === -1 &&
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
-    name.indexOf("макс") !== -1 &&
+    (name.indexOf("макс") !== -1 || name.indexOf("max") !== -1) &&
     name.indexOf("zigbee") !== -1 &&
     (name.indexOf("черн") !== -1 || name.indexOf("графит") !== -1)
   ) {
     return 30293;
   } else if (
-    name.indexOf("яндекс") !== -1 &&
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
     name.indexOf("zigbee") !== -1 &&
     name.indexOf("зелен") !== -1
   ) {
     return 30291;
   } else if (
-    name.indexOf("без zigbee") === -1 &&
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
-    name.indexOf("макс") !== -1 &&
+    (name.indexOf("макс") !== -1 || name.indexOf("max") !== -1) &&
     name.indexOf("zigbee") !== -1 &&
-    name.indexOf("бежев") !== -1
+    (name.indexOf("бежев") !== -1 || name.indexOf("beige") !== -1)
   ) {
     return 30288;
   } else if (
-    name.indexOf("без zigbee") === -1 &&
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
-    name.indexOf("макс") !== -1 &&
+    (name.indexOf("макс") !== -1 || name.indexOf("max") !== -1) &&
     name.indexOf("zigbee") !== -1 &&
     name.indexOf("бел") !== -1
   ) {
     return 30286;
   } else if (
-    name.indexOf("без zigbee") === -1 &&
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
-    name.indexOf("макс") !== -1 &&
+    (name.indexOf("макс") !== -1 || name.indexOf("max") !== -1) &&
     name.indexOf("zigbee") !== -1 &&
     name.indexOf("бирюзов") !== -1
   ) {
     return 30290;
   } else if (
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
-    name.indexOf("макс") !== -1 &&
+    (name.indexOf("макс") !== -1 || name.indexOf("max") !== -1) &&
     name.indexOf("красн") !== -1
   ) {
     return 23957;
   } else if (
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
-    name.indexOf("макс") !== -1 &&
+    (name.indexOf("макс") !== -1 || name.indexOf("max") !== -1) &&
     name.indexOf("син") !== -1
   ) {
     return 23958;
   } else if (
     (name.indexOf("яндекс") !== -1 || name.indexOf("станция") !== -1) &&
-    name.indexOf("макс") !== -1 &&
+    (name.indexOf("макс") !== -1 || name.indexOf("max") !== -1) &&
     (name.indexOf("черн") !== -1 || name.indexOf("black") !== -1)
   ) {
     return 18974;
