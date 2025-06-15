@@ -232,6 +232,47 @@ export const returnIDOtherBrand2 = (name) => {
     return 19102;
 
     // Sony
+  } else if (name.indexOf("xperia 1 vii ") != -1 &&
+name.indexOf("12/256") != -1 && 
+name.indexOf("black") != -1 &&
+name.indexOf("dual") != -1) {
+    return 39577;
+  } else if (
+    name.indexOf("xperia 1 vii ") != -1 &&
+name.indexOf("12/256") != -1 && 
+name.indexOf("green") != -1 &&
+name.indexOf("dual") != -1) {
+    return 39578;
+  } else if (
+name.indexOf("xperia 1 vii ") != -1 &&
+name.indexOf("12/256") != -1 && 
+name.indexOf("purple") != -1 &&
+name.indexOf("dual") != -1) {
+    return 39579;
+  } else if (
+name.indexOf("xperia 1 vii ") != -1 &&
+name.indexOf("12/512") != -1 && 
+name.indexOf("green") != -1 &&
+name.indexOf("dual") != -1) {
+    return 39581;
+  } else if (
+name.indexOf("xperia 1 vii ") != -1 &&
+name.indexOf("12/512") != -1 && 
+name.indexOf("purple") != -1 &&
+name.indexOf("dual") != -1) {
+    return 39582;
+  } else if (
+name.indexOf("xperia 1 vii ") != -1 &&
+name.indexOf("12/512") != -1 && 
+name.indexOf("black") != -1 &&
+name.indexOf("dual") != -1) {
+    return 39580;
+  } else if (name.indexOf("xperia pro-i") != -1 &&
+name.indexOf("12/512") != -1 &&
+name.indexOf("5g") != -1 &&
+name.indexOf("black") != -1) {
+    return 21233;
+
   } else if (
     name.indexOf("xperia 1 vii ") != -1 &&
     name.indexOf("12/256") != -1 &&
@@ -1956,8 +1997,10 @@ export const returnIDOtherBrand2 = (name) => {
     return 20306;
   } else if (name.indexOf("jbl clip 4 pink") !== -1) {
     return 20304;
-  } else if (name.indexOf("jbl clip 4 teal") !== -1 ||
-name.indexOf("jbl clip 4 green") !== -1) {
+  } else if (
+    name.indexOf("jbl clip 4 teal") !== -1 ||
+    name.indexOf("jbl clip 4 green") !== -1
+  ) {
     return 20307;
   } else if (name.indexOf("jbl clip 4 white") !== -1) {
     return 20308;
@@ -3457,6 +3500,26 @@ name.indexOf("jbl clip 4 green") !== -1) {
     name.indexOf("black") !== -1
   ) {
     return 37472;
+
+} else if (
+    name.indexOf("openrun pro 2") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 37663;
+    } else if (
+    name.indexOf("openrun pro 2") !== -1 &&
+    name.indexOf("orange") !== -1
+  ) {
+    return 37665;
+    } else if (
+    name.indexOf("shokz") !== -1 &&
+    name.indexOf("openrun pro") !== -1 &&
+    name.indexOf("openrun pro 2") === -1 &&
+    name.indexOf("orange") !== -1
+  ) {
+    return 37666;
+
+
   } else if (
     name.indexOf("shokz") !== -1 &&
     name.indexOf("openswim") !== -1 &&

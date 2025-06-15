@@ -9,6 +9,206 @@ export const returnIDGarmin = (nameStock) => {
     name.indexOf("42") !== -1
   ) {
     return 30296;
+  } else if (name.indexOf("010-02582-01") != -1) {
+    return 28170;
+  } else if (name.indexOf("010-02582-30") != -1) {
+    return 39242;
+  } else if (name.indexOf("010-02582-11") != -1) {
+    return 39244;
+  } else if (name.indexOf("010-02582-21") != -1) {
+    return 28171;
+  } else if (
+    name.indexOf("Epix") != -1 &&
+    name.indexOf("Gen 2") != -1 &&
+    name.indexOf("Sapphire") != -1 &&
+    name.indexOf("Black Titanium") != -1 &&
+    name.indexOf("Black Band") != -1
+  ) {
+    return 28172;
+  } else if (name.indexOf("010-02802-01") != -1) {
+    return 30296;
+  } else if (name.indexOf("010-02803-01") != -1) {
+    return 28173;
+  } else if (name.indexOf("010-02804-21") != -1) {
+    return 30295;
+  } else if (name.indexOf("010-02802-15") != -1) {
+    return 39246;
+  } else if (name.indexOf("010-02802-15") != -1) {
+    return 30294;
+  } else if (name.indexOf("010-02802-11") != -1) {
+    return 30297;
+  } else if (name.indexOf("010-02803-11") != -1) {
+    return 28174;
+  } else if (name.indexOf("010-02803-21") != -1) {
+    return 28175;
+  } else if (name.indexOf("010-02804-01") != -1) {
+    return 28177;
+  } else if (name.indexOf("010-02804-11") != -1) {
+    return 28176;
+  } else if (name.indexOf("010-02804-30") != -1) {
+    return 39250;
+  } else if (name.indexOf("010-02776-11") != -1) {
+    return 28179;
+  } else if (name.indexOf("010-02776-15") != -1) {
+    return 28180;
+  } else if (name.indexOf("010-02778-11") != -1) {
+    return 28181;
+  } else if (name.indexOf("010-02778-15") != -1) {
+    return 28182;
+  } else if (name.indexOf("010-02778-01") != -1) {
+    return 35810;
+  } else if (name.indexOf("010-02541-15") != -1) {
+    return 24807;
+  } else if (name.indexOf("010-02903-00") != -1) {
+    return 36844;
+  } else if (name.indexOf("010-02905-00") != -1) {
+    return 39255;
+  } else if (name.indexOf("010-02903-21") != -1) {
+    return 36837;
+  } else if (name.indexOf("010-02903-11") != -1) {
+    return 27153;
+  } else if (name.indexOf("010-02903-40") != -1) {
+    return 36843;
+  } else if (name.indexOf("010-02904-11") != -1) {
+    return 36838;
+  } else if (name.indexOf("010-02904-21") != -1) {
+    return 36839;
+  } else if (name.indexOf("010-02904-40") != -1) {
+    return 36840;
+  } else if (name.indexOf("010-02904-00") != -1) {
+    return 39252;
+  } else if (name.indexOf("010-02905-40") != -1) {
+    return 38241;
+  } else if (name.indexOf("010-02905-21") != -1) {
+    return 36842;
+  } else if (name.indexOf("010-02905-11") != -1) {
+    return 38242;
+  } else if (name.indexOf("010-02906-11") != -1) {
+    return 38238;
+  } else if (name.indexOf("010-02906-21") != -1) {
+    return 38240;
+  } else if (name.indexOf("010-02907-11") != -1) {
+    return 38243;
+  } else if (name.indexOf("010-02907-21") != -1) {
+    return 38244;
+  } else if (name.indexOf("010-03025-01") != -1) {
+    return 39269;
+  } else if (name.indexOf("010-03025-00") != -1) {
+    return 39283;
+  } else if (name.indexOf("010-02863-20") != -1) {
+    return 37168;
+  } else if (name.indexOf("010-02863-31") != -1) {
+    return 37171;
+  } else if (name.indexOf("010-02863-32") != -1) {
+    return 37172;
+  } else if (name.indexOf("010-02810-10") != -1) {
+    return 27327;
+  } else if (name.indexOf("010-02810-12") != -1) {
+    return 27328;
+  } else if (name.indexOf("010-02810-11") != -1) {
+    return 27326;
+  } else if (name.indexOf("010-02810-13") != -1) {
+    return 27325;
+  } else if (name.indexOf("010-02810-15") != -1) {
+    return 27324;
+  } else if (name.indexOf("010-02810-14") != -1) {
+    return 27323;
+  } else if (name.indexOf("010-02809-12") != -1) {
+    return 27320;
+  } else if (name.indexOf("010-02809-10") != -1) {
+    return 27321;
+  } else if (name.indexOf("010-02809-11") != -1) {
+    return 27322;
+  } else if (name.indexOf("010-02626-03") != -1) {
+    return 35788;
+  } else if (name.indexOf("010-02627-00") != -1) {
+    return 35787;
+  } else if (name.indexOf("010-02627-01") != -1) {
+    return 35786;
+  } else if (name.indexOf("010-02627-03") != -1) {
+    return 35789;
+  } else if (name.indexOf("010-02626-01") != -1) {
+    return 35785;
+  } else if (name.indexOf("010-02626-00") != -1) {
+    return 34461;
+  } else if (name.indexOf("010-02563-03") != -1) {
+    return 35766;
+  } else if (name.indexOf("010-02564-00") != -1) {
+    return 35761;
+  } else if (name.indexOf("010-02564-01") != -1) {
+    return 35762;
+  } else if (name.indexOf("010-02564-02") != -1) {
+    return 35763;
+  } else if (name.indexOf("010-02563-04") != -1) {
+    return 35764;
+  } else if (name.indexOf("010-02563-00") != -1) {
+    return 35765;
+  } else if (name.indexOf("010-02805-01") != -1) {
+    return 34465;
+  } else if (name.indexOf("010-02805-00") != -1) {
+    return 34466;
+  } else if (name.indexOf("010-02805-05") != -1) {
+    return 34467;
+  } else if (name.indexOf("010-02805-04") != -1) {
+    return 34468;
+  } else if (name.indexOf("010-02936-00") != -1) {
+    return 39301;
+  } else if (name.indexOf("010-02936-01") != -1) {
+    return 39304;
+  } else if (name.indexOf("010-02934-00") != -1) {
+    return 39312;
+  } else if (name.indexOf("010-02934-01") != -1) {
+    return 39314;
+  } else if (name.indexOf("010-02935-50") != -1) {
+    return 39326;
+  } else if (name.indexOf("010-03020-00") != -1) {
+    return 39306;
+  } else if (name.indexOf("010-03020-01") != -1) {
+    return 39308;
+  } else if (name.indexOf("010-03020-50") != -1) {
+    return 39310;
+  } else if (name.indexOf("010-02935-00") != -1) {
+    return 39317;
+  } else if (name.indexOf("010-02935-01") != -1) {
+    return 39321;
+  } else if (name.indexOf("010-02932-00") != -1) {
+    return 39342;
+  } else if (name.indexOf("010-02932-01") != -1) {
+    return 39344;
+  } else if (name.indexOf("010-02933-00") != -1) {
+    return 39346;
+  } else if (name.indexOf("010-02933-01") != -1) {
+    return 39347;
+  } else if (name.indexOf("010-02648-31") != -1) {
+    return 35815;
+  } else if (name.indexOf("010-02722-10") != -1) {
+    return 35811;
+  } else if (name.indexOf("010-02648-51") != -1) {
+    return 35814;
+  } else if (name.indexOf("010-02648-01") != -1) {
+    return 35816;
+  } else if (name.indexOf("010-02648-11") != -1) {
+    return 35817;
+  } else if (name.indexOf("010-02722-00") != -1) {
+    return 35813;
+  } else if (name.indexOf("010-02722-21") != -1) {
+    return 35812;
+  } else if (name.indexOf("010-02784-00") != -1) {
+    return 39349;
+  } else if (name.indexOf("010-02784-52") != -1) {
+    return 39351;
+  } else if (name.indexOf("010-02785-01") != -1) {
+    return 39650;
+  } else if (name.indexOf("010-02785-00") != -1) {
+    return 39656;
+  } else if (name.indexOf("010-02785-03") != -1) {
+    return 39354;
+  } else if (name.indexOf("010-02785-02") != -1) {
+    return 39669;
+  } else if (name.indexOf("010-02785-55") != -1) {
+    return 39672;
+  } else if (name.indexOf("010-02785-04") != -1) {
+    return 39667;
   } else if (
     name.indexOf("epix pro") !== -1 &&
     name.indexOf("gen 2") !== -1 &&
@@ -185,23 +385,35 @@ export const returnIDGarmin = (nameStock) => {
     return 27338;
   } else if (name.indexOf("forerunner 255 music black") !== -1) {
     return 27337;
-  } else if (name.indexOf("forerunner 265") !== -1 &&
-  name.indexOf("black") !== -1) {
+  } else if (
+    name.indexOf("forerunner 265") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
     return 27327;
-  } else if (name.indexOf("forerunner 265") !== -1 &&
-  name.indexOf("aqua") !== -1) {
+  } else if (
+    name.indexOf("forerunner 265") !== -1 &&
+    name.indexOf("aqua") !== -1
+  ) {
     return 27328;
-  } else if (name.indexOf("forerunner 265") !== -1 &&
-  name.indexOf("white") !== -1) {
+  } else if (
+    name.indexOf("forerunner 265") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
     return 27326;
-  } else if (name.indexOf("forerunner 265s") !== -1 &&
-  name.indexOf("black") !== -1) {
+  } else if (
+    name.indexOf("forerunner 265s") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
     return 27325;
-  } else if (name.indexOf("forerunner 265s") !== -1 &&
-  name.indexOf("pink") !== -1) {
+  } else if (
+    name.indexOf("forerunner 265s") !== -1 &&
+    name.indexOf("pink") !== -1
+  ) {
     return 27324;
-  } else if (name.indexOf("forerunner 265s") !== -1 &&
-  name.indexOf("white") !== -1) {
+  } else if (
+    name.indexOf("forerunner 265s") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
     return 27323;
   } else if (name.indexOf("forerunner 45 black") !== -1) {
     return 35807;
@@ -911,7 +1123,7 @@ export const returnIDGarmin = (nameStock) => {
     name.indexOf("43") !== -1 &&
     name.indexOf("silver") !== -1 &&
     (name.indexOf("white silicone") !== -1 ||
-    name.indexOf("whitestone silicone") !== -1)
+      name.indexOf("whitestone silicone") !== -1)
   ) {
     return 36844;
   } else if (
@@ -1297,7 +1509,8 @@ export const returnIDGarmin = (nameStock) => {
   ) {
     return 25023;
   } else if (
-    name.indexOf("garmin venu 2 slate bezel / black case / silicone band") !== -1
+    name.indexOf("garmin venu 2 slate bezel / black case / silicone band") !==
+    -1
   ) {
     return 25024;
   } else if (
@@ -1337,14 +1550,17 @@ export const returnIDGarmin = (nameStock) => {
   ) {
     return 14386;
   } else if (
-    name.indexOf("garmin vivoactive 3 music granite blue / silicone band") !== -1
+    name.indexOf("garmin vivoactive 3 music granite blue / silicone band") !==
+    -1
   ) {
     return 14385;
   } else if (
     name.indexOf("garmin vivoactive 4 серые с серебристым безелем") !== -1
   ) {
     return 20440;
-  } else if (name.indexOf("garmin vivoactive 4 черные с серым безелем") !== -1) {
+  } else if (
+    name.indexOf("garmin vivoactive 4 черные с серым безелем") !== -1
+  ) {
     return 20439;
   } else if (
     name.indexOf("garmin vivoactive 4 gray / silver bezel / silicone band") !==
