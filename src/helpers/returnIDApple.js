@@ -2349,7 +2349,7 @@ export const returnIDApple = (name) => {
     name.indexOf("starlight") !== -1
   ) {
     return 38473;
-  } else if ( 
+  } else if (
     name.indexOf("air 11") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
     name.indexOf("128") !== -1 &&
@@ -2733,8 +2733,6 @@ export const returnIDApple = (name) => {
     name.indexOf("starlight") !== -1
   ) {
     return 38546;
-
-
   } else if (
     name.indexOf("air 13") !== -1 &&
     (name.indexOf("2025") !== -1 || name.indexOf("m3") !== -1) &&
@@ -5628,170 +5626,1046 @@ export const returnIDApple = (name) => {
     return 28278;
   } else if (name.indexOf("15 pro max 512 white") !== -1) {
     return 28281;
-  } else if (name.indexOf("16 128 black") !== -1) {
+  } else if (
+    name.indexOf("16 128 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36611;
-  } else if (name.indexOf("16 128 pink") !== -1) {
+  } else if (
+    name.indexOf("16 128 pink") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36618;
   } else if (
-    name.indexOf("16 128 teal") !== -1 ||
-    name.indexOf("16 128 green") !== -1
+    (name.indexOf("16 128 teal") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 128 green") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36617;
   } else if (
-    name.indexOf("16 128 ultramarine") !== -1 ||
-    name.indexOf("16 128 blue") !== -1
+    (name.indexOf("16 128 ultramarine") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 128 blue") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36615;
-  } else if (name.indexOf("16 128 white") !== -1) {
+  } else if (
+    name.indexOf("16 128 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36616;
-  } else if (name.indexOf("16 256 black") !== -1) {
+  } else if (
+    name.indexOf("16 256 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36619;
-  } else if (name.indexOf("16 256 pink") !== -1) {
+  } else if (
+    name.indexOf("16 256 pink") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36620;
   } else if (
-    name.indexOf("16 256 teal") !== -1 ||
-    name.indexOf("16 256 green") !== -1
+    (name.indexOf("16 256 teal") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 256 green") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36621;
   } else if (
-    name.indexOf("16 256 ultramarine") !== -1 ||
-    name.indexOf("16 256 blue") !== -1
+    (name.indexOf("16 256 ultramarine") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 256 blue") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36622;
-  } else if (name.indexOf("16 256 white") !== -1) {
+  } else if (
+    name.indexOf("16 256 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36623;
-  } else if (name.indexOf("16 512 black") !== -1) {
+  } else if (
+    name.indexOf("16 512 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36624;
-  } else if (name.indexOf("16 512 pink") !== -1) {
+  } else if (
+    name.indexOf("16 512 pink") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36625;
   } else if (
-    name.indexOf("16 512 teal") !== -1 ||
-    name.indexOf("16 512 green") !== -1
+    (name.indexOf("16 512 teal") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 512 green") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36626;
   } else if (
-    name.indexOf("16 512 ultramarine") !== -1 ||
-    name.indexOf("16 512 blue") !== -1
+    (name.indexOf("16 512 ultramarine") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 512 blue") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36627;
-  } else if (name.indexOf("16 512 white") !== -1) {
+  } else if (
+    name.indexOf("16 512 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36628;
-  } else if (name.indexOf("16 plus 128 black") !== -1) {
+  } else if (
+    name.indexOf("16 plus 128 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36612;
-  } else if (name.indexOf("16 plus 128 pink") !== -1) {
+  } else if (
+    name.indexOf("16 plus 128 pink") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36630;
   } else if (
-    name.indexOf("16 plus 128 teal") !== -1 ||
-    name.indexOf("16 plus 128 green") !== -1
+    (name.indexOf("16 plus 128 teal") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 plus 128 green") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36629;
   } else if (
-    name.indexOf("16 plus 128 ultramarine") !== -1 ||
-    name.indexOf("16 plus 128 blue") !== -1
+    (name.indexOf("16 plus 128 ultramarine") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 plus 128 blue") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36632;
-  } else if (name.indexOf("16 plus 128 white") !== -1) {
+  } else if (
+    name.indexOf("16 plus 128 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36631;
-  } else if (name.indexOf("16 plus 256 black") !== -1) {
+  } else if (
+    name.indexOf("16 plus 256 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36633;
-  } else if (name.indexOf("16 plus 256 pink") !== -1) {
+  } else if (
+    name.indexOf("16 plus 256 pink") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36634;
   } else if (
-    name.indexOf("16 plus 256 teal") !== -1 ||
-    name.indexOf("16 plus 256 green") !== -1
+    (name.indexOf("16 plus 256 teal") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 plus 256 green") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36635;
   } else if (
-    name.indexOf("16 plus 256 ultramarine") !== -1 ||
-    name.indexOf("16 plus 256 blue") !== -1
+    (name.indexOf("16 plus 256 ultramarine") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 plus 256 blue") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36636;
-  } else if (name.indexOf("16 plus 256 white") !== -1) {
+  } else if (
+    name.indexOf("16 plus 256 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36637;
-  } else if (name.indexOf("16 plus 512 black") !== -1) {
+  } else if (
+    name.indexOf("16 plus 512 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36638;
-  } else if (name.indexOf("16 plus 512 pink") !== -1) {
+  } else if (
+    name.indexOf("16 plus 512 pink") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36639;
   } else if (
-    name.indexOf("16 plus 512 teal") !== -1 ||
-    name.indexOf("16 plus 512 green") !== -1
+    (name.indexOf("16 plus 512 teal") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 plus 512 green") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36640;
   } else if (
-    name.indexOf("16 plus 512 ultramarine") !== -1 ||
-    name.indexOf("16 plus 512 blue") !== -1
+    (name.indexOf("16 plus 512 ultramarine") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1) ||
+    (name.indexOf("16 plus 512 blue") !== -1 &&
+      name.indexOf("🇨🇳") === -1 &&
+      name.indexOf("🇭🇰") === -1 &&
+      name.indexOf("🇺🇸") === -1)
   ) {
     return 36641;
-  } else if (name.indexOf("16 plus 512 white") !== -1) {
+  } else if (
+    name.indexOf("16 plus 512 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36642;
-  } else if (name.indexOf("16 pro 1tb black") !== -1) {
+  } else if (
+    name.indexOf("16 pro 1tb black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36655;
-  } else if (name.indexOf("16 pro 1tb desert") !== -1) {
+  } else if (
+    name.indexOf("16 pro 1tb desert") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36645;
-  } else if (name.indexOf("16 pro 1tb natural") !== -1) {
+  } else if (
+    name.indexOf("16 pro 1tb natural") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36661;
-  } else if (name.indexOf("16 pro 1tb white") !== -1) {
+  } else if (
+    name.indexOf("16 pro 1tb white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36658;
-  } else if (name.indexOf("16 pro 128 black") !== -1) {
+  } else if (
+    name.indexOf("16 pro 128 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 38662;
-  } else if (name.indexOf("16 pro 128 desert") !== -1) {
+  } else if (
+    name.indexOf("16 pro 128 desert") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36652;
-  } else if (name.indexOf("16 pro 128 natural") !== -1) {
+  } else if (
+    name.indexOf("16 pro 128 natural") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36659;
-  } else if (name.indexOf("16 pro 128 white") !== -1) {
+  } else if (
+    name.indexOf("16 pro 128 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36657;
-  } else if (name.indexOf("16 pro 256 black") !== -1) {
+  } else if (
+    name.indexOf("16 pro 256 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36653;
-  } else if (name.indexOf("16 pro 256 desert") !== -1) {
+  } else if (
+    name.indexOf("16 pro 256 desert") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36650;
-  } else if (name.indexOf("16 pro 256 natural") !== -1) {
+  } else if (
+    name.indexOf("16 pro 256 natural") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36660;
-  } else if (name.indexOf("16 pro 256 white") !== -1) {
+  } else if (
+    name.indexOf("16 pro 256 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36613;
-  } else if (name.indexOf("16 pro 512 black") !== -1) {
+  } else if (
+    name.indexOf("16 pro 512 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36654;
-  } else if (name.indexOf("16 pro 512 desert") !== -1) {
+  } else if (
+    name.indexOf("16 pro 512 desert") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36651;
-  } else if (name.indexOf("16 pro 512 natural") !== -1) {
+  } else if (
+    name.indexOf("16 pro 512 natural") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36644;
-  } else if (name.indexOf("16 pro 512 white") !== -1) {
+  } else if (
+    name.indexOf("16 pro 512 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36656;
-  } else if (name.indexOf("16 pro max 1tb black") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 1tb black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36664;
-  } else if (name.indexOf("16 pro max 1tb desert") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 1tb desert") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36673;
-  } else if (name.indexOf("16 pro max 1tb natural") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 1tb natural") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36665;
-  } else if (name.indexOf("16 pro max 1tb white") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 1tb white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 38663;
-  } else if (name.indexOf("16 pro max 256 black") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 256 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36662;
-  } else if (name.indexOf("16 pro max 256 desert") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 256 desert") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36675;
-  } else if (name.indexOf("16 pro max 256 natural") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 256 natural") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36667;
-  } else if (name.indexOf("16 pro max 256 white") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 256 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 38664;
-  } else if (name.indexOf("16 pro max 512 black") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 512 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36663;
-  } else if (name.indexOf("16 pro max 512 desert") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 512 desert") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36676;
-  } else if (name.indexOf("16 pro max 512 natural") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 512 natural") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 36668;
-  } else if (name.indexOf("16 pro max 512 white") !== -1) {
+  } else if (
+    name.indexOf("16 pro max 512 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 38665;
-  } else if (name.indexOf("16e 128 black") !== -1) {
+  } else if (
+    name.indexOf("16e 128 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 38256;
-  } else if (name.indexOf("16e 128 white") !== -1) {
+  } else if (
+    name.indexOf("16e 128 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 38257;
-  } else if (name.indexOf("16e 256 black") !== -1) {
+  } else if (
+    name.indexOf("16e 256 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 38258;
-  } else if (name.indexOf("16e 256 white") !== -1) {
+  } else if (
+    name.indexOf("16e 256 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 38259;
-  } else if (name.indexOf("16e 512 black") !== -1) {
+  } else if (
+    name.indexOf("16e 512 black") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 38262;
-  } else if (name.indexOf("16e 512 white") !== -1) {
+  } else if (
+    name.indexOf("16e 512 white") !== -1 &&
+    name.indexOf("🇨🇳") === -1 &&
+    name.indexOf("🇭🇰") === -1 &&
+    name.indexOf("🇺🇸") === -1
+  ) {
     return 38263;
+  } else if (name.indexOf("16 128 black") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39259;
+  } else if (name.indexOf("16 128 pink") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39261;
+  } else if (name.indexOf("16 128 teal") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39268;
+  } else if (
+    name.indexOf("16 128 ultramarine") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39271;
+  } else if (name.indexOf("16 128 white") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39278;
+  } else if (name.indexOf("16 256 black") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39281;
+  } else if (name.indexOf("16 256 pink") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39288;
+  } else if (name.indexOf("16 256 teal") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39293;
+  } else if (
+    name.indexOf("16 256 ultramarine") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39295;
+  } else if (name.indexOf("16 256 white") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39302;
+  } else if (name.indexOf("16 512 black") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39318;
+  } else if (name.indexOf("16 512 pink") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39327;
+  } else if (name.indexOf("16 512 teal") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39330;
+  } else if (
+    name.indexOf("16 512 ultramarine") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39334;
+  } else if (name.indexOf("16 512 white") != -1 && name.indexOf("🇺🇸") != -1) {
+    return 39340;
+  } else if (
+    name.indexOf("16 plus 128 black") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39473;
+  } else if (
+    name.indexOf("16 plus 128 pink") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39478;
+  } else if (
+    name.indexOf("16 plus 128 teal") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39490;
+  } else if (
+    name.indexOf("16 plus 128 ultramarine") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39501;
+  } else if (
+    name.indexOf("16 plus 128 white") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39504;
+  } else if (
+    name.indexOf("16 plus 256 black") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39514;
+  } else if (
+    name.indexOf("16 plus 256 pink") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39518;
+  } else if (
+    name.indexOf("16 plus 256 teal") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39520;
+  } else if (
+    name.indexOf("16 plus 256 ultramarine") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39532;
+  } else if (
+    name.indexOf("16 plus 256 white") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39531;
+  } else if (
+    name.indexOf("16 plus 512 black") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39507;
+  } else if (
+    name.indexOf("16 plus 512 pink") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39508;
+  } else if (
+    name.indexOf("16 plus 512 teal") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39509;
+  } else if (
+    name.indexOf("16 plus 512 ultramarine") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39510;
+  } else if (
+    name.indexOf("16 plus 512 white") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39511;
+  } else if (
+    name.indexOf("16 pro 1tb black") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39443;
+  } else if (
+    name.indexOf("16 pro 1tb desert") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39457;
+  } else if (
+    name.indexOf("16 pro 1tb natural") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39463;
+  } else if (
+    name.indexOf("16 pro 1tb white") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39469;
+  } else if (
+    name.indexOf("16 pro 128 black") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39358;
+  } else if (
+    name.indexOf("16 pro 128 desert") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39364;
+  } else if (
+    name.indexOf("16 pro 128 natural") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39366;
+  } else if (
+    name.indexOf("16 pro 128 white") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39373;
+  } else if (
+    name.indexOf("16 pro 256 black") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39375;
+  } else if (
+    name.indexOf("16 pro 256 desert") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39381;
+  } else if (
+    name.indexOf("16 pro 256 natural") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39383;
+  } else if (
+    name.indexOf("16 pro 256 white") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39389;
+  } else if (
+    name.indexOf("16 pro 512 black") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39391;
+  } else if (
+    name.indexOf("16 pro 512 desert") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39397;
+  } else if (
+    name.indexOf("16 pro 512 natural") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39413;
+  } else if (
+    name.indexOf("16 pro 512 white") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39426;
+  } else if (
+    name.indexOf("16 pro max 1tb black") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39458;
+  } else if (
+    name.indexOf("16 pro max 1tb desert") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39459;
+  } else if (
+    name.indexOf("16 pro max 1tb natural") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39460;
+  } else if (
+    name.indexOf("16 pro max 1tb white") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39461;
+  } else if (
+    name.indexOf("16 pro max 256 black") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39434;
+  } else if (
+    name.indexOf("16 pro max 256 desert") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39435;
+  } else if (
+    name.indexOf("16 pro max 256 natural") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39436;
+  } else if (
+    name.indexOf("16 pro max 256 white") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39437;
+  } else if (
+    name.indexOf("16 pro max 512 black") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39449;
+  } else if (
+    name.indexOf("16 pro max 512 desert") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39450;
+  } else if (
+    name.indexOf("16 pro max 512 natural") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39451;
+  } else if (
+    name.indexOf("16 pro max 512 white") != -1 &&
+    name.indexOf("🇺🇸") != -1
+  ) {
+    return 39452;
+  } else if (
+    name.indexOf("16 128 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39257;
+  } else if (
+    name.indexOf("16 128 pink") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39263;
+  } else if (
+    name.indexOf("16 128 teal") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39273;
+  } else if (
+    name.indexOf("16 128 ultramarine") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39274;
+  } else if (
+    name.indexOf("16 128 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39276;
+  } else if (
+    name.indexOf("16 256 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39284;
+  } else if (
+    name.indexOf("16 256 pink") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39286;
+  } else if (
+    name.indexOf("16 256 teal") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39290;
+  } else if (
+    name.indexOf("16 256 ultramarine") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39297;
+  } else if (
+    name.indexOf("16 256 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39299;
+  } else if (
+    name.indexOf("16 512 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39322;
+  } else if (
+    name.indexOf("16 512 pink") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39328;
+  } else if (
+    name.indexOf("16 512 teal") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39332;
+  } else if (
+    name.indexOf("16 512 ultramarine") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39336;
+  } else if (
+    name.indexOf("16 512 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39338;
+  } else if (
+    name.indexOf("16 plus 128 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39474;
+  } else if (
+    name.indexOf("16 plus 128 pink") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39477;
+  } else if (
+    name.indexOf("16 plus 128 teal") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39497;
+  } else if (
+    name.indexOf("16 plus 128 ultramarine") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39499;
+  } else if (
+    name.indexOf("16 plus 128 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39505;
+  } else if (
+    name.indexOf("16 plus 256 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39512;
+  } else if (
+    name.indexOf("16 plus 256 pink") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39516;
+  } else if (
+    name.indexOf("16 plus 256 teal") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39522;
+  } else if (
+    name.indexOf("16 plus 256 ultramarine") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39526;
+  } else if (
+    name.indexOf("16 plus 256 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39529;
+  } else if (
+    name.indexOf("16 plus 512 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39485;
+  } else if (
+    name.indexOf("16 plus 512 pink") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39489;
+  } else if (
+    name.indexOf("16 plus 512 teal") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39486;
+  } else if (
+    name.indexOf("16 plus 512 ultramarine") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39487;
+  } else if (
+    name.indexOf("16 plus 512 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39488;
+  } else if (
+    name.indexOf("16 pro 1tb black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39445;
+  } else if (
+    name.indexOf("16 pro 1tb desert") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39447;
+  } else if (
+    name.indexOf("16 pro 1tb natural") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39465;
+  } else if (
+    name.indexOf("16 pro 1tb white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39468;
+  } else if (
+    name.indexOf("16 pro 128 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39360;
+  } else if (
+    name.indexOf("16 pro 128 desert") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39362;
+  } else if (
+    name.indexOf("16 pro 128 natural") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39369;
+  } else if (
+    name.indexOf("16 pro 128 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39371;
+  } else if (
+    name.indexOf("16 pro 256 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39377;
+  } else if (
+    name.indexOf("16 pro 256 desert") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39379;
+  } else if (
+    name.indexOf("16 pro 256 natural") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39385;
+  } else if (
+    name.indexOf("16 pro 256 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39387;
+  } else if (
+    name.indexOf("16 pro 512 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39393;
+  } else if (
+    name.indexOf("16 pro 512 desert") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39472;
+  } else if (
+    name.indexOf("16 pro 512 natural") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39417;
+  } else if (
+    name.indexOf("16 pro 512 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39419;
+  } else if (
+    name.indexOf("16 pro max 1tb black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39425;
+  } else if (
+    name.indexOf("16 pro max 1tb desert") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39427;
+  } else if (
+    name.indexOf("16 pro max 1tb natural") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39428;
+  } else if (
+    name.indexOf("16 pro max 1tb white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39429;
+  } else if (
+    name.indexOf("16 pro max 256 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39402;
+  } else if (
+    name.indexOf("16 pro max 256 desert") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39403;
+  } else if (
+    name.indexOf("16 pro max 256 natural") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39404;
+  } else if (
+    name.indexOf("16 pro max 256 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39405;
+  } else if (
+    name.indexOf("16 pro max 512 black") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39411;
+  } else if (
+    name.indexOf("16 pro max 512 desert") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39412;
+  } else if (
+    name.indexOf("16 pro max 512 natural") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39415;
+  } else if (
+    name.indexOf("16 pro max 512 white") != -1 &&
+    (name.indexOf("🇨🇳") != -1 || name.indexOf("🇭🇰") != -1)
+  ) {
+    return 39416;
   } else {
     return "No match";
   }
