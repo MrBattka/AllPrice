@@ -3287,6 +3287,6 @@ export const returnIDSamsung = (nameStock) => {
   ) {
     return 37584;
   } else {
-    return returnIDSamsung2(name) || "No match";
+    return returnIDXiaomi(name) || "No match";
   }
 };
