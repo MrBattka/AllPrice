@@ -351,7 +351,7 @@ export const returnIDApple = (name) => {
   } else if (
     name.indexOf("s10") !== -1 &&
     name.indexOf("42") !== -1 &&
-    // name.indexOf("steel") !== -1 &&
+    name.indexOf("steel") !== -1 &&
     name.indexOf("gold ti") !== -1 &&
     name.indexOf("natural") !== -1 &&
     name.indexOf("bracelete") !== -1
@@ -360,6 +360,7 @@ export const returnIDApple = (name) => {
   } else if (
     name.indexOf("s10") !== -1 &&
     name.indexOf("42") !== -1 &&
+    name.indexOf("steel") !== -1 &&
     name.indexOf("gold") !== -1 &&
     name.indexOf("milanese") !== -1
   ) {
@@ -409,6 +410,7 @@ export const returnIDApple = (name) => {
   } else if (
     name.indexOf("s10") !== -1 &&
     name.indexOf("42") !== -1 &&
+    name.indexOf("steel") !== -1 &&
     name.indexOf("natural") !== -1 &&
     name.indexOf("milanese") === -1
   ) {
@@ -423,6 +425,7 @@ export const returnIDApple = (name) => {
   } else if (
     name.indexOf("s10") !== -1 &&
     name.indexOf("42") !== -1 &&
+    name.indexOf("steel") !== -1 &&
     name.indexOf("gold") !== -1 &&
     name.indexOf("milanese") === -1
   ) {
@@ -437,6 +440,7 @@ export const returnIDApple = (name) => {
   } else if (
     name.indexOf("s10") !== -1 &&
     name.indexOf("42") !== -1 &&
+    name.indexOf("steel") !== -1 &&
     name.indexOf("slate") !== -1 &&
     name.indexOf("milanese") === -1
   ) {
@@ -452,6 +456,7 @@ export const returnIDApple = (name) => {
     name.indexOf("s10") !== -1 &&
     name.indexOf("46") !== -1 &&
     name.indexOf("natural") !== -1 &&
+    name.indexOf("steel") !== -1 &&
     name.indexOf("milanese") === -1
   ) {
     return 36606;
@@ -472,6 +477,7 @@ export const returnIDApple = (name) => {
   } else if (
     name.indexOf("s10") !== -1 &&
     name.indexOf("46") !== -1 &&
+    name.indexOf("steel") !== -1 &&
     name.indexOf("silver") !== -1 &&
     name.indexOf("milanese") === -1
   ) {
@@ -479,6 +485,7 @@ export const returnIDApple = (name) => {
   } else if (
     name.indexOf("s10") !== -1 &&
     name.indexOf("46") !== -1 &&
+    name.indexOf("steel") !== -1 &&
     name.indexOf("slate") !== -1 &&
     name.indexOf("milanese") === -1
   ) {
