@@ -1,4 +1,3 @@
-import { returnIDGarmin } from "./returnIDGarmin";
 import { returnIDXiaomi } from "./returnIDXiaomi";
 
 export const returnIDSamsung2 = (name) => {
@@ -2526,6 +2525,6 @@ export const returnIDSamsung2 = (name) => {
   } else if (name.indexOf("buds pro") !== -1 && name.indexOf("white") !== -1) {
     return 26586;
   } else {
-    return returnIDGarmin(name) || "No match";
+    return returnIDXiaomi(name) || "No match";
   }
 };
