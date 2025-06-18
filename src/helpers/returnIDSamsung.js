@@ -1,4 +1,5 @@
 import { returnIDSamsung2 } from "./returnIDSamsung2";
+import { returnIDXiaomi } from "./returnIDXiaomi";
 
 
 export const returnIDSamsung = (nameStock) => {
