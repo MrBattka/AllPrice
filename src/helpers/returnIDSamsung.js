@@ -1,4 +1,5 @@
-import { returnIDXiaomi } from "./returnIDXiaomi";
+import { returnIDSamsung2 } from "./returnIDSamsung2";
+
 
 export const returnIDSamsung = (nameStock) => {
   const removeDoubleSpace = nameStock.replace(/\s+/g, " ");
@@ -3286,6 +3287,6 @@ export const returnIDSamsung = (nameStock) => {
   ) {
     return 37584;
   } else {
-    return returnIDXiaomi(name) || "No match";
+    return returnIDSamsung2(name) || "No match";
   }
 };
