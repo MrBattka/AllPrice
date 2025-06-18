@@ -114,7 +114,9 @@ export const returnStockPriceNarod = (name) => {
   let replaceKZ = replaceCF.replace("🇰🇿", "");
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceGU = replaceKR.replace("🇬🇺", "");
-  const replaceDot = replaceGU.replace(".", "");
+  let replacePA = replaceGU.replace("🇵🇦", "");
+  let replaceMC = replacePA.replace("🇲🇨", "");
+  const replaceDot = replaceMC.replace(".", "");
   const replaceRub = replaceDot.replace("₽", "");
 
   let reverseStrName = replaceRub.split("").reverse().join("");

@@ -179,7 +179,8 @@ export const returnStockPriceDiscount = (name) => {
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceGU = replaceKR.replace("🇬🇺", "");
   let replaceDot = replaceGU.replace(".", "");
-  let replaceSM = replaceDot.replace("SM-", "SM");
+  let replacePA = replaceDot.replace("🇵🇦", "");
+  let replaceSM = replacePA.replace("SM-", "SM");
   let replace = replaceSM.replace(",", "");
   let replace2Sim = replace.replace("2Sim", "");
 
@@ -208,8 +209,9 @@ export const returnStockPriceDiscount = (name) => {
     ? reverseBackStrName.replace("2sim", "")
     : reverseBackStrName;
   let replaceWhiteColor = remove2Sim.replace("⚪️", "");
+  let replaceRub = replaceWhiteColor.replace("₽", "");
 
-  return replaceWhiteColor;
+  return replaceRub;
 };
 
 export const returnExtraPriceRacmag = (name) => {
