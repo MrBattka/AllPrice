@@ -171,6 +171,7 @@ import {
   returnStockPriceA18,
 } from "../A18/helpers/helpers";
 import { fixNameTrub, returnNameInArrTrub, returnStockPriceTrub } from "../Trub/helpers/helpers";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -215,11 +216,13 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameSuperPrice(superprice.name)) !== "No match" &&
+        (returnIDSamsung(fixNameSuperPrice(superprice.name)) !== "No match" ||
+      returnIDSamsung2(fixNameSuperPrice(superprice.name)) !== "No match") &&
         newPrice(superprice.name, superprice.price) &&
         superprice.price &&
         allPriceArr.push({
-          id: returnIDSamsung(fixNameSuperPrice(superprice.name)),
+          id: returnIDSamsung(fixNameSuperPrice(superprice.name)) |
+          returnIDSamsung2(fixNameSuperPrice(superprice.name)),
           name: fixNameSuperPrice(superprice.name),
           stockPrice: superprice.price,
           provider: "SuperPrice",
@@ -238,11 +241,13 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameVseMi(vsemi.name)) !== "No match" &&
+        (returnIDSamsung(fixNameVseMi(vsemi.name)) !== "No match" ||
+      returnIDSamsung2(fixNameVseMi(vsemi.name)) !== "No match") &&
         returnExtraPriceVseMi(vsemi.name) &&
         returnStockPriceVseMi(vsemi.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameInArrVseMi(fixNameVseMi(vsemi.name))),
+          id: returnIDSamsung(returnNameInArrVseMi(fixNameVseMi(vsemi.name))) |
+          returnIDSamsung(returnNameInArrVseMi(fixNameVseMi(vsemi.name))),
           name: returnNameInArrVseMi(fixNameVseMi(vsemi.name)),
           stockPrice: returnStockPriceVseMi(fixNameVseMi(vsemi.name)),
           provider: "VseMi",
@@ -254,8 +259,10 @@ const AllPriceWithID = ({
   dataUnimtrn.map((unimtrn) => {
     if (
       unimtrn.Модификация &&
-      returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
-        "No match" &&
+      (returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
+        "No match" ||
+      returnIDSamsung2(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
+        "No match") &&
       isOpen &&
       baseFix(unimtrn) &&
       (returnApple(unimtrn) ||
@@ -266,7 +273,8 @@ const AllPriceWithID = ({
         returnOtherProduct(unimtrn))
     ) {
       allPriceArr.push({
-        id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
+        id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) |
+        returnIDSamsung2(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
         name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
         stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
         provider: "Метреон",
@@ -288,11 +296,13 @@ const AllPriceWithID = ({
         returnDysonHi(hi.name))
     ) {
       return (
-        returnIDSamsung(fixNameHi(hi.name)) !== "No match" &&
+        (returnIDSamsung(fixNameHi(hi.name)) !== "No match" ||
+      returnIDSamsung2(fixNameHi(hi.name)) !== "No match") &&
         returnStockPriceHi(fixNameHi(hi.name)) &&
         returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
         allPriceArr.push({
-          id: returnIDSamsung(fixNameHi(hi.name)),
+          id: returnIDSamsung(fixNameHi(hi.name)) |
+          returnIDSamsung2(fixNameHi(hi.name)),
           name: returnNameInArrHi(fixNameHi(hi.name)),
           stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",
@@ -311,11 +321,15 @@ const AllPriceWithID = ({
     ) {
       return (
         mihonor.name.indexOf("₽") !== -1 &&
-        returnIDSamsung(fixNameMihonor(mihonor.name)) !== "No match" &&
+        (returnIDSamsung(fixNameMihonor(mihonor.name)) !== "No match" ||
+      returnIDSamsung2(fixNameMihonor(mihonor.name)) !== "No match") &&
         returnExtraPriceMihonor(mihonor.name) &&
         returnStockPriceMihonor(mihonor.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameInArrMihonor(fixNameMihonor(mihonor.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrMihonor(fixNameMihonor(mihonor.name))
           ),
           name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
@@ -336,11 +350,15 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameGarmin(garmin.name)) !== "No match" &&
+        (returnIDSamsung(fixNameGarmin(garmin.name)) !== "No match" ||
+      returnIDSamsung2(fixNameGarmin(garmin.name)) !== "No match") &&
         returnExtraPriceGarmin(garmin.name) &&
         returnStockPriceGarmin(garmin.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnFixNameProductGarmin(fixNameGarmin(garmin.name))
+          ) |
+          returnIDSamsung2(
             returnFixNameProductGarmin(fixNameGarmin(garmin.name))
           ),
           name: returnFixNameProductGarmin(fixNameGarmin(garmin.name)),
@@ -357,11 +375,13 @@ const AllPriceWithID = ({
     baseFixS5(S5) && returnExtraPriceS5(fixNameS5(S5.name));
     if (S5.name && typeof S5.name === "string" && baseFixS5(S5) && isOpen) {
       return (
-        returnIDSamsung(fixNameS5(S5.name)) !== "No match" &&
+        (returnIDSamsung(fixNameS5(S5.name)) !== "No match" ||
+      returnIDSamsung2(fixNameS5(S5.name)) !== "No match") &&
         returnExtraPriceS5(S5.name) &&
         returnStockPriceS5(S5.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameInArrS5(fixNameS5(S5.name))),
+          id: returnIDSamsung(returnNameInArrS5(fixNameS5(S5.name))) |
+          returnIDSamsung2(returnNameInArrS5(fixNameS5(S5.name))),
           name: returnNameInArrS5(fixNameS5(S5.name)),
           extraPrice: returnExtraPriceS5(fixNameS5(S5.name)),
           stockPrice: returnStockPriceS5(fixNameS5(S5.name)),
@@ -379,10 +399,12 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameRPTrade(rptrade.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameRPTrade(rptrade.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameRPTrade(rptrade.name)) !== "No match") &&
         rptrade.price &&
         allPriceArr.push({
-          id: returnIDSamsung(returnFixNameRPTrade(rptrade.name)),
+          id: returnIDSamsung(returnFixNameRPTrade(rptrade.name)) |
+          returnIDSamsung2(returnFixNameRPTrade(rptrade.name)),
           name: returnFixNameRPTrade(rptrade.name),
           extraPrice: newPrice(rptrade.name, rptrade.price),
           stockPrice: rptrade.price,
@@ -404,10 +426,14 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameRacmag(racmag.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameRacmag(racmag.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameRacmag(racmag.name)) !== "No match") &&
         returnStockPriceRacmag(racmag.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameInArrRacmag(returnFixNameRacmag(racmag.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrRacmag(returnFixNameRacmag(racmag.name))
           ),
           name: returnNameInArrRacmag(returnFixNameRacmag(racmag.name)),
@@ -428,11 +454,13 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameArti(arti.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameArti(arti.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameArti(arti.name)) !== "No match") &&
         returnStockPriceArti(arti.name) &&
         returnCategoryArti(arti.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameArti(returnFixNameArti(arti.name))),
+          id: returnIDSamsung(returnNameArti(returnFixNameArti(arti.name))) |
+          returnIDSamsung2(returnNameArti(returnFixNameArti(arti.name))),
           name: returnNameArti(returnFixNameArti(arti.name)),
           extraPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
           stockPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
@@ -450,11 +478,14 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameElectrozon(electrozon.name)) !==
-          "No match" &&
+        (returnIDSamsung(returnFixNameElectrozon(electrozon.name)) !==
+          "No match" ||
+        returnIDSamsung2(returnFixNameElectrozon(electrozon.name)) !==
+          "No match") &&
         electrozon.price &&
         allPriceArr.push({
-          id: returnIDSamsung(returnFixNameElectrozon(electrozon.name)),
+          id: returnIDSamsung(returnFixNameElectrozon(electrozon.name)) |
+          returnIDSamsung2(returnFixNameElectrozon(electrozon.name)),
           name: returnFixNameElectrozon(electrozon.name),
           extraPrice: newPrice(electrozon.name, electrozon.price),
           stockPrice: electrozon.price,
@@ -474,7 +505,8 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameReSale(resale.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameReSale(resale.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameReSale(resale.name)) !== "No match") &&
         returnExtraPriceReSale(resale.name) &&
         returnStockPriceReSale(resale.name) &&
         returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("А") ==
@@ -484,6 +516,9 @@ const AllPriceWithID = ({
         ) != -1 &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameReSale(returnFixNameReSale(resale.name))
+          ) |
+          returnIDSamsung2(
             returnNameReSale(returnFixNameReSale(resale.name))
           ),
           name: returnNameReSale(returnFixNameReSale(resale.name)),
@@ -504,10 +539,12 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameTagir(tagir.name)) !== "No match" &&
+        (returnIDSamsung(fixNameTagir(tagir.name)) !== "No match" ||
+      returnIDSamsung2(fixNameTagir(tagir.name)) !== "No match") &&
         returnStockPriceTagir(tagir.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameTagir(fixNameTagir(tagir.name))),
+          id: returnIDSamsung(returnNameTagir(fixNameTagir(tagir.name))) |
+          returnIDSamsung2(returnNameTagir(fixNameTagir(tagir.name))),
           name: returnNameTagir(fixNameTagir(tagir.name)),
           extraPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
           stockPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
@@ -526,10 +563,12 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameNarod(narod.name)) !== "No match" &&
+        (returnIDSamsung(fixNameNarod(narod.name)) !== "No match" ||
+      returnIDSamsung2(fixNameNarod(narod.name)) !== "No match") &&
         returnStockPriceNarod(narod.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameNarod(fixNameNarod(narod.name))),
+          id: returnIDSamsung(returnNameNarod(fixNameNarod(narod.name))) |
+          returnIDSamsung2(returnNameNarod(fixNameNarod(narod.name))),
           name: returnNameNarod(fixNameNarod(narod.name)),
           extraPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
           stockPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
@@ -543,10 +582,12 @@ const AllPriceWithID = ({
     baseFixF51(f51) && returnNameF51(f51.name);
     if (f51.name && typeof f51.name === "string" && baseFixF51(f51) && isOpen) {
       return (
-        returnIDSamsung(returnNameF51(f51.name)) !== "No match" &&
+        (returnIDSamsung(returnNameF51(f51.name)) !== "No match" ||
+      returnIDSamsung2(returnNameF51(f51.name)) !== "No match") &&
         f51.price &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameF51(f51.name)),
+          id: returnIDSamsung(returnNameF51(f51.name)) |
+          returnIDSamsung2(returnNameF51(f51.name)),
           name: returnNameF51(f51.name),
           extraPrice: f51.price,
           stockPrice: f51.price,
@@ -566,10 +607,14 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameDiscount(discount.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameDiscount(discount.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameDiscount(discount.name)) !== "No match") &&
         returnStockPriceDiscount(discount.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameInArrDiscount(returnFixNameDiscount(discount.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrDiscount(returnFixNameDiscount(discount.name))
           ),
           name: returnNameInArrDiscount(returnFixNameDiscount(discount.name)),
@@ -590,11 +635,13 @@ const AllPriceWithID = ({
       baseFixBase(base)
     ) {
       return (
-        returnIDSamsung(returnFixNameBase(base.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameBase(base.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameBase(base.name)) !== "No match") &&
         base.price &&
         baseFixBase(base) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnFixNameBase(base.name)),
+          id: returnIDSamsung(returnFixNameBase(base.name)) |
+          returnIDSamsung2(returnFixNameBase(base.name)),
           name: returnFixNameBase(base.name),
           extraPrice: base.extra,
           stockPrice: base.price,
@@ -614,11 +661,15 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameOther(other.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameOther(other.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameOther(other.name)) !== "No match") &&
         returnStockPriceOther(other.name) &&
         baseFixOther(other) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameInArrOther(returnFixNameOther(other.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrOther(returnFixNameOther(other.name))
           ),
           name: returnNameInArrOther(returnFixNameOther(other.name)),
@@ -639,11 +690,15 @@ const AllPriceWithID = ({
       baseFixMiOpts(miopts)
     ) {
       return (
-        returnIDSamsung(fixNameMiOpts(miopts.name)) !== "No match" &&
+        (returnIDSamsung(fixNameMiOpts(miopts.name)) !== "No match" ||
+      returnIDSamsung2(fixNameMiOpts(miopts.name)) !== "No match") &&
         returnExtraPriceMiOpts(miopts.name) &&
         returnStockPriceMiOpts(miopts.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameInArrMiOpts(fixNameMiOpts(miopts.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrMiOpts(fixNameMiOpts(miopts.name))
           ),
           name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
@@ -662,10 +717,14 @@ const AllPriceWithID = ({
       baseFixLowPrice(lowPrice)
     ) {
       return (
-        returnIDSamsung(fixNameLowPrice(lowPrice.name)) !== "No match" &&
+        (returnIDSamsung(fixNameLowPrice(lowPrice.name)) !== "No match" ||
+      returnIDSamsung2(fixNameLowPrice(lowPrice.name)) !== "No match") &&
         returnStockPriceLowPrice(lowPrice.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))
           ),
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
@@ -686,10 +745,12 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameL27(l27.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameL27(l27.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameL27(l27.name)) !== "No match") &&
         returnStockPriceL27(l27.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameInArrL27(returnFixNameL27(l27.name))),
+          id: returnIDSamsung(returnNameInArrL27(returnFixNameL27(l27.name))) |
+          returnIDSamsung2(returnNameInArrL27(returnFixNameL27(l27.name))),
           name: returnNameInArrL27(returnFixNameL27(l27.name)),
           stockPrice: returnStockPriceL27(returnFixNameL27(l27.name)),
           provider: "Л27-28",
@@ -708,10 +769,14 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameSunrise(sunrise.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameSunrise(sunrise.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameSunrise(sunrise.name)) !== "No match") &&
         returnStockPriceSunrise(sunrise.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))
           ),
           name: returnNameInArrSunrise(returnFixNameSunrise(sunrise.name)),
@@ -731,10 +796,14 @@ const AllPriceWithID = ({
       baseFixInfinity(infinity)
     ) {
       return (
-        returnIDSamsung(fixNameInfinity(infinity.name)) !== "No match" &&
+        (returnIDSamsung(fixNameInfinity(infinity.name)) !== "No match" ||
+      returnIDSamsung2(fixNameInfinity(infinity.name)) !== "No match") &&
         returnStockPriceInfinity(infinity.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameInArrInfinity(fixNameInfinity(infinity.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrInfinity(fixNameInfinity(infinity.name))
           ),
           name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
@@ -755,10 +824,14 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameLikemob(likemob.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameLikemob(likemob.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameLikemob(likemob.name)) !== "No match") &&
         returnStockPriceLikemob(likemob.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
           ),
           name: returnNameInArrLikemob(returnFixNameLikemob(likemob.name)),
@@ -781,10 +854,14 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameBigAp(bigAp.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameBigAp(bigAp.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameBigAp(bigAp.name)) !== "No match") &&
         returnStockPriceBigAp(bigAp.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
+            returnNameInArrBigAp(returnFixNameBigAp(bigAp.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrBigAp(returnFixNameBigAp(bigAp.name))
           ),
           name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),
@@ -799,10 +876,12 @@ const AllPriceWithID = ({
     baseFixMTA(mta) && returnStockPriceMTA(returnFixNameMTA(mta.name));
     if (mta.name && typeof mta.name === "string" && baseFixMTA(mta) && isOpen) {
       return (
-        returnIDSamsung(returnFixNameMTA(mta.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameMTA(mta.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameMTA(mta.name)) !== "No match") &&
         returnStockPriceMTA(returnFixNameMTA(mta.name)).indexOf("00") !== -1 &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameInArrMTA(returnFixNameMTA(mta.name))),
+          id: returnIDSamsung(returnNameInArrMTA(returnFixNameMTA(mta.name))) |
+          returnIDSamsung2(returnNameInArrMTA(returnFixNameMTA(mta.name))),
           name: returnNameInArrMTA(returnFixNameMTA(mta.name)),
           stockPrice: returnStockPriceMTA(returnFixNameMTA(mta.name)),
           provider: "MTA Store",
@@ -819,10 +898,12 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameBonus(bonus.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameBonus(bonus.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameBonus(bonus.name)) !== "No match") &&
         bonus.price &&
         allPriceArr.push({
-          id: returnIDSamsung(returnFixNameBonus(bonus.name)),
+          id: returnIDSamsung(returnFixNameBonus(bonus.name)) |
+          returnIDSamsung2(returnFixNameBonus(bonus.name)),
           name: returnFixNameBonus(bonus.name),
           stockPrice: bonus.price,
           provider: "БонусОПТ",
@@ -840,10 +921,12 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameRootOpt(rootOpt.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameRootOpt(rootOpt.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameRootOpt(rootOpt.name)) !== "No match") &&
         rootOpt.price &&
         allPriceArr.push({
-          id: returnIDSamsung(returnFixNameRootOpt(rootOpt.name)),
+          id: returnIDSamsung(returnFixNameRootOpt(rootOpt.name)) |
+          returnIDSamsung2(returnFixNameRootOpt(rootOpt.name)),
           name: returnFixNameRootOpt(rootOpt.name),
           stockPrice: rootOpt.price,
           provider: "RootOPT",
@@ -863,10 +946,12 @@ const AllPriceWithID = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameA18(A18.name)) !== "No match" &&
+        (returnIDSamsung(returnFixNameA18(A18.name)) !== "No match" ||
+      returnIDSamsung2(returnFixNameA18(A18.name)) !== "No match") &&
         returnStockPriceA18(A18.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameInArrA18(returnFixNameA18(A18.name))),
+          id: returnIDSamsung(returnNameInArrA18(returnFixNameA18(A18.name))) |
+          returnIDSamsung2(returnNameInArrA18(returnFixNameA18(A18.name))),
           name: returnNameInArrA18(returnFixNameA18(A18.name)),
           stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
           provider: "A18",
@@ -884,13 +969,15 @@ const AllPriceWithID = ({
       returnStockPriceTrub(fixNameTrub(trub.name)).indexOf("0") != -1
     ) {
       return (
-        returnIDSamsung(fixNameTrub(trub.name)) !== "No match" &&
+        (returnIDSamsung(fixNameTrub(trub.name)) !== "No match" ||
+      returnIDSamsung2(fixNameTrub(trub.name)) !== "No match") &&
         returnStockPriceTrub(trub.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(trub.name))),
+          id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(trub.name))) |
+          returnIDSamsung2(returnNameInArrTrub(fixNameTrub(trub.name))),
           name: returnNameInArrTrub(fixNameTrub(trub.name)),
           stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
-          provider: "Трубный",
+          provider: " Трубный",
         })
       );
     }

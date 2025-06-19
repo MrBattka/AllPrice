@@ -4,6 +4,7 @@ import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnFixNameElectrozon } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexElectrozon = ({ el, electrozonData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,12 @@ const IndexElectrozon = ({ el, electrozonData }) => {
       )
        {
         return (
-          returnIDSamsung(returnFixNameElectrozon(electrozon.name)) !== 'No match' &&
+          (returnIDSamsung(returnFixNameElectrozon(electrozon.name)) !== 'No match' ||
+        returnIDSamsung2(returnFixNameElectrozon(electrozon.name)) !== 'No match') &&
           electrozon.price &&
           resultArr.push({
-            id: returnIDSamsung(returnFixNameElectrozon(electrozon.name)),
+            id: returnIDSamsung(returnFixNameElectrozon(electrozon.name)) |
+            returnIDSamsung2(returnFixNameElectrozon(electrozon.name)),
             name: returnFixNameElectrozon(electrozon.name),
             stockPrice: electrozon.price,
             provider: "Electrozon",

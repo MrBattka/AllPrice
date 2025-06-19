@@ -8,6 +8,7 @@ import {
   returnStockPriceMihonor
 } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexMiHonorNotID = ({ el, mihonorData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,10 +25,12 @@ const IndexMiHonorNotID = ({ el, mihonorData }) => {
      {
       return (
         mihonor.name.indexOf("₽") !== -1 &&
-        returnIDSamsung(fixNameMihonor(mihonor.name)) === 'No match' &&
+        (returnIDSamsung(fixNameMihonor(mihonor.name)) === 'No match' ||
+      returnIDSamsung2(fixNameMihonor(mihonor.name)) === 'No match') &&
         returnStockPriceMihonor(mihonor.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrMihonor(fixNameMihonor(mihonor.name))),
+          id: returnIDSamsung(returnNameInArrMihonor(fixNameMihonor(mihonor.name))) |
+          returnIDSamsung2(returnNameInArrMihonor(fixNameMihonor(mihonor.name))),
           name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
           stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
           provider: "MiHonor",

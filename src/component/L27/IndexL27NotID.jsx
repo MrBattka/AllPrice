@@ -8,6 +8,7 @@ import {
   returnNameInArrL27,
   returnStockPriceL27,
 } from "./helpers/helpers";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexL27NotID = ({ el, l27Data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,10 +25,14 @@ const IndexL27NotID = ({ el, l27Data }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameL27(l27.name)) === "No match" &&
+        (returnIDSamsung(returnFixNameL27(l27.name)) === "No match" ||
+      returnIDSamsung2(returnFixNameL27(l27.name)) === "No match") &&
         returnStockPriceL27(l27.name) &&
         resultArr.push({
           id: returnIDSamsung(
+            returnNameInArrL27(returnFixNameL27(l27.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrL27(returnFixNameL27(l27.name))
           ),
           name: returnNameInArrL27(returnFixNameL27(l27.name)),

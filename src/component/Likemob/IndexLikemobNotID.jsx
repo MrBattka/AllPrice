@@ -4,6 +4,7 @@ import style from "../styles.module.css";
 import { baseFixLikemob } from "../../helpers/baseFix";
 import { returnFixNameLikemob, returnNameInArrLikemob, returnStockPriceLikemob } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexLikemobNotID = ({ el, likemobData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +20,14 @@ const IndexLikemobNotID = ({ el, likemobData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameLikemob(likemob.name)) === "No match" &&
+        (returnIDSamsung(returnFixNameLikemob(likemob.name)) === "No match" ||
+      returnIDSamsung2(returnFixNameLikemob(likemob.name)) === "No match") &&
         returnStockPriceLikemob(likemob.name) &&
         resultArr.push({
           id: returnIDSamsung(
+            returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
           ),
           name: returnNameInArrLikemob(returnFixNameLikemob(likemob.name)),

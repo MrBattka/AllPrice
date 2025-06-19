@@ -4,6 +4,7 @@ import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { fixNameVseMi, returnNameInArrVseMi, returnStockPriceVseMi } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexVseMi = ({ el, vsemiData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +20,12 @@ const IndexVseMi = ({ el, vsemiData }) => {
     )
      {
       return (
-        returnIDSamsung(fixNameVseMi(vsemi.name)) !== 'No match' &&
+        (returnIDSamsung(fixNameVseMi(vsemi.name)) !== 'No match' ||
+      returnIDSamsung2(fixNameVseMi(vsemi.name)) !== 'No match') &&
         returnStockPriceVseMi(vsemi.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrVseMi(fixNameVseMi(vsemi.name))),
+          id: returnIDSamsung(returnNameInArrVseMi(fixNameVseMi(vsemi.name))) |
+          returnIDSamsung2(returnNameInArrVseMi(fixNameVseMi(vsemi.name))),
           name: returnNameInArrVseMi(fixNameVseMi(vsemi.name)),
           stockPrice: returnStockPriceVseMi(fixNameVseMi(vsemi.name)),
           provider: "VseMi",

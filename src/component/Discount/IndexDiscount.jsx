@@ -8,6 +8,7 @@ import {
   returnStockPriceDiscount,
 } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexDiscount = ({ el, discountData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +24,12 @@ const IndexDiscount = ({ el, discountData }) => {
     )
      {
       return (
-        returnIDSamsung(returnFixNameDiscount(discount.name)) !== 'No match' &&
+        (returnIDSamsung(returnFixNameDiscount(discount.name)) !== 'No match' ||
+      returnIDSamsung2(returnFixNameDiscount(discount.name)) !== 'No match') &&
         returnStockPriceDiscount(discount.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrDiscount(returnFixNameDiscount(discount.name))),
+          id: returnIDSamsung(returnNameInArrDiscount(returnFixNameDiscount(discount.name))) |
+          returnIDSamsung2(returnNameInArrDiscount(returnFixNameDiscount(discount.name))),
           name: returnNameInArrDiscount(returnFixNameDiscount(discount.name)),
           stockPrice: returnStockPriceDiscount(returnFixNameDiscount(discount.name)),
           provider: "Discount",

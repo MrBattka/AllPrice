@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
-import { returnFixNameA18, returnNameInArrA18, returnStockPriceA18 } from "./helpers/helpers";
+import {
+  returnFixNameA18,
+  returnNameInArrA18,
+  returnStockPriceA18,
+} from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexA18NotID = ({ el, a18Data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +15,7 @@ const IndexA18NotID = ({ el, a18Data }) => {
 
   a18Data.map((A18) => {
     // baseFixA18(A18) &&
-      returnStockPriceA18(returnFixNameA18(A18.name))
+    returnStockPriceA18(returnFixNameA18(A18.name));
     if (
       A18.name &&
       typeof A18.name === "string" &&
@@ -19,11 +24,13 @@ const IndexA18NotID = ({ el, a18Data }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameA18(A18.name)) === "No match" &&
+        (returnIDSamsung(returnFixNameA18(A18.name)) === "No match" ||
+        returnIDSamsung2(returnFixNameA18(A18.name)) === "No match") &&
         returnStockPriceA18(A18.name) &&
         resultArr.push({
           id: returnIDSamsung(
-            returnNameInArrA18(returnFixNameA18(A18.name))
+            returnNameInArrA18(returnFixNameA18(A18.name)) |
+              returnIDSamsung2(returnNameInArrA18(returnFixNameA18(A18.name)))
           ),
           name: returnNameInArrA18(returnFixNameA18(A18.name)),
           stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),

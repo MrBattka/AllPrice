@@ -4,6 +4,7 @@ import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnFixNameRPTrade } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexRPTradeNotID = ({ el, rptradeData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,12 @@ const IndexRPTradeNotID = ({ el, rptradeData }) => {
       )
        {
         return (
-          returnIDSamsung(returnFixNameRPTrade(rptrade.name)) === 'No match' &&
+          (returnIDSamsung(returnFixNameRPTrade(rptrade.name)) === 'No match' ||
+        returnIDSamsung2(returnFixNameRPTrade(rptrade.name)) === 'No match') &&
           rptrade.price &&
           resultArr.push({
-            id: returnIDSamsung(returnFixNameRPTrade(rptrade.name)),
+            id: returnIDSamsung(returnFixNameRPTrade(rptrade.name)) |
+            returnIDSamsung2(returnFixNameRPTrade(rptrade.name)),
             name: returnFixNameRPTrade(rptrade.name),
             stockPrice: rptrade.price,
             provider: "RPTrade",

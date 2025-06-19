@@ -4,6 +4,7 @@ import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnFixNameBase } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexBaseNotID = ({ el, baseData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,13 @@ const IndexBaseNotID = ({ el, baseData }) => {
       )
        {
         return (
-          returnIDSamsung(returnFixNameBase(base.name)) === 'No match' &&
+          (returnIDSamsung(returnFixNameBase(base.name)) === 'No match' ||
+        returnIDSamsung2(returnFixNameBase(base.name)) === 'No match') &&
           base.price &&
           baseFixBase(base) &&
           resultArr.push({
-            id: returnIDSamsung(returnFixNameBase(base.name)),
+            id: returnIDSamsung(returnFixNameBase(base.name)) |
+            returnIDSamsung2(returnFixNameBase(base.name)),
             name: returnFixNameBase(base.name),
             stockPrice: base.price,
             provider: "База",

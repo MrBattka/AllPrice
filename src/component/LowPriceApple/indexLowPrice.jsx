@@ -4,6 +4,7 @@ import style from "../styles.module.css";
 import { baseFixLowPrice } from "../../helpers/baseFix";
 import { fixNameLowPrice, returnNameInArrLowPrice, returnStockPriceLowPrice } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexLowPrice = ({ el, lowPriceData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,11 +17,13 @@ const IndexLowPrice = ({ el, lowPriceData }) => {
       baseFixLowPrice(lowPrice)
     ) {
       return (
-        returnIDSamsung(fixNameLowPrice(lowPrice.name)) !== "No match" &&
+        (returnIDSamsung(fixNameLowPrice(lowPrice.name)) !== "No match" ||
+      returnIDSamsung2(fixNameLowPrice(lowPrice.name)) !== "No match") &&
         returnStockPriceLowPrice(lowPrice.name) &&
         returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)).indexOf("00") !== -1 &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))),
+          id: returnIDSamsung(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))) |
+          returnIDSamsung2(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))),
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
           stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
           provider: "LowPrice",

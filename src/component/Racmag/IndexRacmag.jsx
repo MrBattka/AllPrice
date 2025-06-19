@@ -4,6 +4,7 @@ import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnFixNameRacmag, returnNameInArrRacmag, returnStockPriceRacmag } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexRacmag = ({ el, racmagData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +20,12 @@ const IndexRacmag = ({ el, racmagData }) => {
       )
        {
         return (
-          returnIDSamsung(returnFixNameRacmag(racmag.name)) !== 'No match' &&
+          (returnIDSamsung(returnFixNameRacmag(racmag.name)) !== 'No match' ||
+        returnIDSamsung2(returnFixNameRacmag(racmag.name)) !== 'No match') &&
           returnStockPriceRacmag(racmag.name) &&
           resultArr.push({
-            id: returnIDSamsung(returnNameInArrRacmag(returnFixNameRacmag(racmag.name))),
+            id: returnIDSamsung(returnNameInArrRacmag(returnFixNameRacmag(racmag.name))) |
+            returnIDSamsung2(returnNameInArrRacmag(returnFixNameRacmag(racmag.name))),
             name: returnNameInArrRacmag(returnFixNameRacmag(racmag.name)),
             stockPrice: returnStockPriceRacmag(returnFixNameRacmag(racmag.name)),
             provider: "Рацмаг",

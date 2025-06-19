@@ -14,6 +14,7 @@ import {
 import { returnSamsungHi } from "./Samsung/samsung";
 import style from "../styles.module.css";
 import { returnXiaomiHi } from "./Xiaomi/xiaomi";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexHi = ({ el, hi }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,11 +34,13 @@ const IndexHi = ({ el, hi }) => {
         returnDysonHi(hi.name))
     ) {
       return (
-        returnIDSamsung(fixNameHi(hi.name)) !== 'No match' &&
+        (returnIDSamsung(fixNameHi(hi.name)) !== 'No match' ||
+      returnIDSamsung2(fixNameHi(hi.name)) !== 'No match') &&
         returnStockPriceHi(fixNameHi(hi.name)) &&
         returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
         resultArr.push({
-          id: returnIDSamsung(fixNameHi(hi.name)),
+          id: returnIDSamsung(fixNameHi(hi.name)) |
+          returnIDSamsung2(fixNameHi(hi.name)),
           name: returnNameInArrHi(fixNameHi(hi.name)),
           stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",

@@ -4,6 +4,7 @@ import style from "../styles.module.css";
 import { baseFixBonus } from "../../helpers/baseFix";
 import { returnFixNameBonus } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexBonus = ({ el, bonusData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,12 @@ const IndexBonus = ({ el, bonusData }) => {
       )
        {
         return (
-          returnIDSamsung(returnFixNameBonus(bonus.name)) !== 'No match' &&
+          (returnIDSamsung(returnFixNameBonus(bonus.name)) !== 'No match' ||
+        returnIDSamsung2(returnFixNameBonus(bonus.name)) !== 'No match') &&
           bonus.price &&
           resultArr.push({
-            id: returnIDSamsung(returnFixNameBonus(bonus.name)),
+            id: returnIDSamsung(returnFixNameBonus(bonus.name)) |
+            returnIDSamsung2(returnFixNameBonus(bonus.name)),
             name: returnFixNameBonus(bonus.name),
             stockPrice: bonus.price,
             provider: "БонусОПТ",

@@ -4,6 +4,7 @@ import BasicTable from "../Create Table/Table";
 import { returnFixNameOther, returnNameInArrOther, returnStockPriceOther } from "./helpers/helpers";
 import style from "../styles.module.css";
 import { baseFixOther } from "../../helpers/baseFix";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexOtherNotID = ({ el, otherData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,11 +19,13 @@ const IndexOtherNotID = ({ el, otherData }) => {
       )
        {
         return (
-          returnIDSamsung(returnFixNameOther(other.name)) === 'No match' &&
+          (returnIDSamsung(returnFixNameOther(other.name)) === 'No match' ||
+        returnIDSamsung2(returnFixNameOther(other.name)) === 'No match') &&
           returnStockPriceOther(other.name) &&
           baseFixOther(other) &&
           resultArr.push({
-            id: returnIDSamsung(returnNameInArrOther(returnFixNameOther(other.name))),
+            id: returnIDSamsung(returnNameInArrOther(returnFixNameOther(other.name))) |
+            returnIDSamsung2(returnNameInArrOther(returnFixNameOther(other.name))),
             name: returnNameInArrOther(returnFixNameOther(other.name)),
             stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
             provider: "All",

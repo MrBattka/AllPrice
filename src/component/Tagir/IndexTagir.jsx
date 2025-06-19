@@ -8,6 +8,7 @@ import {
   returnStockPriceTagir,
 } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexTagir = ({ el, tagirData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,10 +23,12 @@ const IndexTagir = ({ el, tagirData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameTagir(tagir.name)) !== "No match" &&
+        (returnIDSamsung(fixNameTagir(tagir.name)) !== "No match" ||
+      returnIDSamsung2(fixNameTagir(tagir.name)) !== "No match") &&
         returnStockPriceTagir(tagir.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameTagir(fixNameTagir(tagir.name))),
+          id: returnIDSamsung(returnNameTagir(fixNameTagir(tagir.name))) |
+          returnIDSamsung2(returnNameTagir(fixNameTagir(tagir.name))),
           name: returnNameTagir(fixNameTagir(tagir.name)),
           stockPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
           provider: "Тагир",

@@ -8,6 +8,7 @@ import {
   returnStockPriceMTA,
 } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexMTANotID = ({ el, mtaData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +24,14 @@ const IndexMTANotID = ({ el, mtaData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameMTA(mta.name)) === "No match" &&
+        (returnIDSamsung(returnFixNameMTA(mta.name)) === "No match" ||
+      returnIDSamsung2(returnFixNameMTA(mta.name)) === "No match") &&
         returnStockPriceMTA(returnFixNameMTA(mta.name)).indexOf("00") !== -1 &&
         resultArr.push({
           id: returnIDSamsung(
+            returnNameInArrMTA(returnFixNameMTA(mta.name))
+          ) |
+          returnIDSamsung2(
             returnNameInArrMTA(returnFixNameMTA(mta.name))
           ),
           name: returnNameInArrMTA(returnFixNameMTA(mta.name)),

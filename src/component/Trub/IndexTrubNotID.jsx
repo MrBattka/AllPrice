@@ -4,6 +4,7 @@ import style from "../styles.module.css";
 import { baseFixTrub } from "../../helpers/baseFix";
 import { fixNameTrub, returnNameInArrTrub, returnStockPriceTrub } from "./helpers/helpers";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexTrubNotID = ({ el, trubData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,10 +20,12 @@ const IndexTrubNotID = ({ el, trubData }) => {
       )
        {
         return (
-          returnIDSamsung(fixNameTrub(trub.name)) === 'No match' &&
+          (returnIDSamsung(fixNameTrub(trub.name)) === 'No match' ||
+        returnIDSamsung2(fixNameTrub(trub.name)) === 'No match') &&
           returnStockPriceTrub(trub.name) &&
           resultArr.push({
-            id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(trub.name))),
+            id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(trub.name))) |
+            returnIDSamsung2(returnNameInArrTrub(fixNameTrub(trub.name))),
             name: returnNameInArrTrub(fixNameTrub(trub.name)),
             stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
             provider: "Трубный",

@@ -4,6 +4,7 @@ import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { fixNameS5, returnNameInArrS5, returnStockPriceS5 } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexS5NotID = ({ el, S5Data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,12 @@ const IndexS5NotID = ({ el, S5Data }) => {
       )
        {
         return (
-          returnIDSamsung(fixNameS5(S5.name)) === 'No match' &&
+          (returnIDSamsung(fixNameS5(S5.name)) === 'No match' ||
+        returnIDSamsung2(fixNameS5(S5.name)) === 'No match') &&
           returnStockPriceS5(S5.name) &&
           resultArr.push({
-            id: returnIDSamsung(returnNameInArrS5(fixNameS5(S5.name))),
+            id: returnIDSamsung(returnNameInArrS5(fixNameS5(S5.name))) |
+            returnIDSamsung2(returnNameInArrS5(fixNameS5(S5.name))),
             name: returnNameInArrS5(fixNameS5(S5.name)),
             stockPrice: returnStockPriceS5(fixNameS5(S5.name)),
             provider: "S5",

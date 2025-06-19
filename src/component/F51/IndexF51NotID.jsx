@@ -4,6 +4,7 @@ import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import { returnNameF51 } from "./helpers/helpers";
 import style from "../styles.module.css";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexF51NotID = ({ el, f51Data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,10 +19,12 @@ const IndexF51NotID = ({ el, f51Data }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnNameF51(f51.name)) === "No match" &&
+        (returnIDSamsung(returnNameF51(f51.name)) === "No match" ||
+      returnIDSamsung2(returnNameF51(f51.name)) === "No match") &&
         f51.price &&
         resultArr.push({
-          id: returnIDSamsung(returnNameF51(f51.name)),
+          id: returnIDSamsung(returnNameF51(f51.name)) |
+          returnIDSamsung2(returnNameF51(f51.name)),
           name: returnNameF51(f51.name),
           stockPrice: f51.price,
           provider: "F51",

@@ -11,6 +11,7 @@ import { returnOtherProduct } from "./OtherProduct/otherProduct";
 import { returnSamsung } from "./Samsung/samsung";
 import style from "../styles.module.css";
 import { returnXiaomi } from "./Xiaomi/xiaomi";
+import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexUnimtrnNotID = ({ el, dataUNIMTRN }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +20,11 @@ const IndexUnimtrnNotID = ({ el, dataUNIMTRN }) => {
   el.map((unimtrn) => {
     if (
       baseFix(unimtrn) &&
-      returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) ===
-        "No match" &&
-        (unimtrn.Товар || unimtrn.Модификация) &&
+      (returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) ===
+        "No match" ||
+      returnIDSamsung2(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) ===
+        "No match") &&
+      (unimtrn.Товар || unimtrn.Модификация) &&
       isOpen &&
       (returnApple(unimtrn) ||
         returnDyson(unimtrn) ||
@@ -31,7 +34,9 @@ const IndexUnimtrnNotID = ({ el, dataUNIMTRN }) => {
         returnOtherProduct(unimtrn))
     ) {
       resultArr.push({
-        id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
+        id:
+          returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) |
+          returnIDSamsung2(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
         name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
         stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
         provider: "Метреон",
