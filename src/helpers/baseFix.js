@@ -99,6 +99,9 @@ export const baseFix = (el) => {
         el.Модификация?.indexOf("Pixel Buds") == -1 &&
         el.Модификация?.indexOf("OnePlus Buds") == -1 &&
         el.Модификация?.indexOf("Дисковод") == -1 &&
+        el.Модификация?.indexOf("Asis") == -1 &&
+        el.Модификация?.indexOf("Asis") == -1 &&
+        el.Модификация?.indexOf("ASIS") == -1 &&
         el.Модификация &&
         el !== "Товар";
 };
@@ -186,6 +189,7 @@ export const baseFixHi = (el) => {
         el.name?.indexOf("🎵 Airpods") == -1 &&
         el.name?.indexOf("Asis") == -1 &&
         el.name?.indexOf("Asis") == -1 &&
+        el.name?.indexOf("ASIS") == -1 &&
         el.name?.indexOf("Pixel Buds") == -1 &&
         el.name?.indexOf("OnePlus Buds") == -1 &&
         el.name?.indexOf("Дисковод") == -1 &&
@@ -261,6 +265,9 @@ export const baseFixMiHonor = (el) => {
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -342,6 +349,9 @@ export const baseFixVsemi = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -397,6 +407,9 @@ export const baseFixSuperPrice = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase?.indexOf("обме") == -1 &&
         toLowerCase?.indexOf("короб") == -1 &&
@@ -470,6 +483,9 @@ export const baseFixGarmin = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -563,6 +579,9 @@ export const baseFixS5 = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("🔫🔫") == -1;
 };
@@ -615,6 +634,9 @@ export const baseFixRPTrade = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -682,6 +704,9 @@ export const baseFixRacmag = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -773,6 +798,9 @@ export const baseFixArti = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -828,6 +856,9 @@ export const baseFixElectrozon = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -913,6 +944,9 @@ export const baseFixReSale = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -965,6 +999,9 @@ export const baseFixTagir = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -1017,6 +1054,9 @@ export const baseFixNarod = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -1068,6 +1108,9 @@ export const baseFixF51 = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -1156,6 +1199,9 @@ export const baseFixOther = (el) => {
         toLowerCase.indexOf("airpods pro usb - c box") == -1 &&
         toLowerCase.indexOf("airpods pro usb - c l") == -1 &&
         toLowerCase.indexOf("airpods pro usb - c r") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("deppo") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
@@ -1215,6 +1261,9 @@ export const baseFixBase = (el) => {
         toLowerCase?.indexOf("уцен") == -1 &&
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
         toLowerCase?.indexOf("обме") == -1 &&
         toLowerCase?.indexOf("короб") == -1 &&
@@ -1296,6 +1345,9 @@ export const baseFixDiscount = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase?.indexOf("rfb") == -1 &&
         toLowerCase?.indexOf("vr") == -1 &&
         toLowerCase?.indexOf("se2 6") == -1 &&
@@ -1390,6 +1442,9 @@ export const baseFixMiOpts = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -1480,6 +1535,9 @@ export const baseFixLowPrice = (el) => {
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -1592,6 +1650,9 @@ export const baseFixL27 = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -1666,6 +1727,9 @@ export const baseFixSunrise = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -1739,6 +1803,9 @@ export const baseFixInfinity = (el) => {
         toLowerCase.indexOf("oneplus buds") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("active") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -1839,6 +1906,9 @@ export const baseFixLikemob = (el) => {
         toLowerCase.indexOf("oneplus") == -1 &&
         toLowerCase.indexOf("nechno") == -1 &&
         toLowerCase.indexOf("infinix") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("❌") == -1;
 };
 
@@ -1909,6 +1979,9 @@ export const baseFixBigAp = (el) => {
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -2006,6 +2079,9 @@ export const baseFixMTA = (el) => {
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("active") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -2086,6 +2162,9 @@ export const baseFixBonus = (el) => {
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
 
@@ -2164,6 +2243,9 @@ export const baseFixRootOpt = (el) => {
         toLowerCase.indexOf("freebuds") == -1 &&
         toLowerCase.indexOf("pixel buds") == -1 &&
         toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
@@ -2249,6 +2331,9 @@ export const baseFixTrub = (el) => {
         toLowerCase.indexOf("трубный") == -1 &&
         toLowerCase.indexOf("наличие") == -1 &&
         toLowerCase.indexOf("чехол") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
         toLowerCase.indexOf("☑️") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };

@@ -7,7 +7,8 @@ export const fixNameInfinity = (name) => {
  const replaceGen = replaceMouse.replace("Pencil 1-gen (USB-C)", "Pencil USB C ")
  const replaceGb = replaceGen.replace("Gb ", "")
  const replaceGB = replaceGb.replace("GB ", "")
-  return replaceGB;
+ const replace2Sim = replaceGB.replace("2sim", "")
+  return replace2Sim;
 };
 
 const checkFlags = (str) => {
