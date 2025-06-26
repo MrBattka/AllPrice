@@ -25,13 +25,12 @@ const IndexA18NotID = ({ el, a18Data }) => {
     ) {
       return (
         (returnIDSamsung(returnFixNameA18(A18.name)) === "No match" ||
-        returnIDSamsung2(returnFixNameA18(A18.name)) === "No match") &&
+          returnIDSamsung2(returnFixNameA18(A18.name)) === "No match") &&
         returnStockPriceA18(A18.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrA18(returnFixNameA18(A18.name)) |
-              returnIDSamsung2(returnNameInArrA18(returnFixNameA18(A18.name)))
-          ),
+          id:
+            returnIDSamsung(returnNameInArrA18(returnFixNameA18(A18.name))) |
+            returnIDSamsung2(returnNameInArrA18(returnFixNameA18(A18.name))),
           name: returnNameInArrA18(returnFixNameA18(A18.name)),
           stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
           provider: "A18",

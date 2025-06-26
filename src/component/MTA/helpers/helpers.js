@@ -74,6 +74,20 @@ export const returnStockPriceMTA = (name) => {
   let replaceSpace = replaceGU.replace(" ", "");
   let replaceSpace1 = replaceSpace.replace(" ", "");
   let replaceDot = replaceSpace1.replace(".", "");
+  let replaceFire = replaceDot.replace("🔥", "");
+  let replace1 = replaceFire.replace("🌫️", "");
+  let replace2 = replace1.replace("⚫️", "");
 
-  return replaceDot;
+  let replace3 = replace2.replace("QA", "");
+  let replace4 = replace3.replace("LL", "");
+  let replace5 = replace4.replace("🌸", "");
+  let replace6 = replace5.replace("👻", "");
+  let replace7 = replace6.replace("🥶", "");
+  let replace8 = replace7.replace("ZP", "");
+  let replace9 = replace8.replace("👚", "");
+  let replace10 = replace9.replace("👽", "");
+  
+  
+
+  return replace10;
 };
