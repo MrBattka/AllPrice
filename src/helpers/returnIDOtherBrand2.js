@@ -173,11 +173,15 @@ export const returnIDOtherBrand2 = (name) => {
     name.indexOf("5 major cream") !== -1
   ) {
     return 38987;
-  } else if (name.indexOf("minor 4 black") !== -1 ||
-name.indexOf("4 minor black") !== -1) {
+  } else if (
+    name.indexOf("minor 4 black") !== -1 ||
+    name.indexOf("4 minor black") !== -1
+  ) {
     return 38989;
-  } else if (name.indexOf("minor 4 cream") !== -1 ||
-name.indexOf("4 minor cream") !== -1) {
+  } else if (
+    name.indexOf("minor 4 cream") !== -1 ||
+    name.indexOf("4 minor cream") !== -1
+  ) {
     return 38990;
 
     // Nintendo
@@ -234,47 +238,95 @@ name.indexOf("4 minor cream") !== -1) {
     return 19102;
 
     // Sony
-  } else if (name.indexOf("xperia 1 vii ") != -1 &&
-name.indexOf("12/256") != -1 && 
-name.indexOf("black") != -1 &&
-name.indexOf("dual") != -1) {
+  } else if (name.indexOf("sony ult wear black") != -1) {
+    return 39724;
+  } else if (name.indexOf("sony ult wear gray") != -1) {
+    return 39722;
+  } else if (name.indexOf("sony ult wear white-silver") != -1) {
+    return 39721;
+  } else if (name.indexOf("sony wh-1000xm4 black") != -1) {
+    return 39799;
+  } else if (name.indexOf("sony wh-1000xm4 platinum silver") != -1) {
+    return 39803;
+  } else if (name.indexOf("sony wh-1000xm5 black") != -1) {
+    return 39708;
+  } else if (name.indexOf("sony wh-1000xm5 blue") != -1) {
+    return 39706;
+  } else if (name.indexOf("sony wh-1000xm5 pink") != -1) {
+    return 39703;
+  } else if (name.indexOf("sony wh-1000xm5 platinum silver") != -1) {
+    return 39710;
+  } else if (name.indexOf("sony wh-1000xm6 black") != -1) {
+    return 39699;
+  } else if (name.indexOf("sony wh-1000xm6 blue") != -1) {
+    return 39697;
+  } else if (name.indexOf("sony wh-1000xm6 platinum silver") != -1) {
+    return 39701;
+  } else if (name.indexOf("sony wh-ch520 beige") != -1) {
+    return 39734;
+  } else if (name.indexOf("sony wh-ch520 black") != -1) {
+    return 39737;
+  } else if (name.indexOf("sony wh-ch520 blue") != -1) {
+    return 39732;
+  } else if (name.indexOf("sony wh-ch520 white") != -1) {
+    return 39736;
+  } else if (name.indexOf("sony wh-ch720n blue") != -1) {
+    return 39726;
+  } else if (name.indexOf("sony wh-ch720n black") != -1) {
+    return 39730;
+  } else if (name.indexOf("sony wh-ch720n pink") != -1) {
+    return 39718;
+  } else if (name.indexOf("sony wh-ch720n white") != -1) {
+    return 39728;
+  } else if (
+    name.indexOf("xperia 1 vii ") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("black") != -1 &&
+    name.indexOf("dual") != -1
+  ) {
     return 39577;
   } else if (
     name.indexOf("xperia 1 vii ") != -1 &&
-name.indexOf("12/256") != -1 && 
-name.indexOf("green") != -1 &&
-name.indexOf("dual") != -1) {
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("green") != -1 &&
+    name.indexOf("dual") != -1
+  ) {
     return 39578;
   } else if (
-name.indexOf("xperia 1 vii ") != -1 &&
-name.indexOf("12/256") != -1 && 
-name.indexOf("purple") != -1 &&
-name.indexOf("dual") != -1) {
+    name.indexOf("xperia 1 vii ") != -1 &&
+    name.indexOf("12/256") != -1 &&
+    name.indexOf("purple") != -1 &&
+    name.indexOf("dual") != -1
+  ) {
     return 39579;
   } else if (
-name.indexOf("xperia 1 vii ") != -1 &&
-name.indexOf("12/512") != -1 && 
-name.indexOf("green") != -1 &&
-name.indexOf("dual") != -1) {
+    name.indexOf("xperia 1 vii ") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("green") != -1 &&
+    name.indexOf("dual") != -1
+  ) {
     return 39581;
   } else if (
-name.indexOf("xperia 1 vii ") != -1 &&
-name.indexOf("12/512") != -1 && 
-name.indexOf("purple") != -1 &&
-name.indexOf("dual") != -1) {
+    name.indexOf("xperia 1 vii ") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("purple") != -1 &&
+    name.indexOf("dual") != -1
+  ) {
     return 39582;
   } else if (
-name.indexOf("xperia 1 vii ") != -1 &&
-name.indexOf("12/512") != -1 && 
-name.indexOf("black") != -1 &&
-name.indexOf("dual") != -1) {
+    name.indexOf("xperia 1 vii ") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("black") != -1 &&
+    name.indexOf("dual") != -1
+  ) {
     return 39580;
-  } else if (name.indexOf("xperia pro-i") != -1 &&
-name.indexOf("12/512") != -1 &&
-name.indexOf("5g") != -1 &&
-name.indexOf("black") != -1) {
+  } else if (
+    name.indexOf("xperia pro-i") != -1 &&
+    name.indexOf("12/512") != -1 &&
+    name.indexOf("5g") != -1 &&
+    name.indexOf("black") != -1
+  ) {
     return 21233;
-
   } else if (
     name.indexOf("xperia 1 vii ") != -1 &&
     name.indexOf("12/256") != -1 &&
@@ -3502,26 +3554,23 @@ name.indexOf("black") != -1) {
     name.indexOf("black") !== -1
   ) {
     return 37472;
-
-} else if (
+  } else if (
     name.indexOf("openrun pro 2") !== -1 &&
     name.indexOf("white") !== -1
   ) {
     return 37663;
-    } else if (
+  } else if (
     name.indexOf("openrun pro 2") !== -1 &&
     name.indexOf("orange") !== -1
   ) {
     return 37665;
-    } else if (
+  } else if (
     name.indexOf("shokz") !== -1 &&
     name.indexOf("openrun pro") !== -1 &&
     name.indexOf("openrun pro 2") === -1 &&
     name.indexOf("orange") !== -1
   ) {
     return 37666;
-
-
   } else if (
     name.indexOf("shokz") !== -1 &&
     name.indexOf("openswim") !== -1 &&

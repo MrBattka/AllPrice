@@ -486,6 +486,7 @@ export const baseFixGarmin = (el) => {
         toLowerCase.indexOf("Asis") == -1 &&
         toLowerCase.indexOf("Asis") == -1 &&
         toLowerCase.indexOf("ASIS") == -1 &&
+        toLowerCase.indexOf("——") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };

@@ -1,3 +1,4 @@
+import { returnIDGarmin2 } from "./returnIDGarmin2";
 
 export const returnIDSamsung2 = (nameStock) => {
   const removeDoubleSpace = nameStock.replace(/\s+/g, " ");
@@ -2921,6 +2922,6 @@ export const returnIDSamsung2 = (nameStock) => {
   } else if (name.indexOf("buds pro") !== -1 && name.indexOf("white") !== -1) {
     return 26586;
   } else {
-    return "No match";
+    return returnIDGarmin2 || "No match";
   }
 };

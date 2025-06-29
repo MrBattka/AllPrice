@@ -3741,6 +3741,80 @@ export const returnIDXiaomi = (name) => {
     return 27421;
   } else if (name.indexOf("mi tv a2 43 4k") !== -1) {
     return 28469;
+  } else if (name.indexOf("mi 15s pro 16/1tb black") != -1) {
+    return 39769;
+  } else if (name.indexOf("mi 15s pro 16/1tb blue") != -1) {
+    return 39771;
+  } else if (name.indexOf("mi 15s pro 16/512 black") != -1) {
+    return 39691;
+  } else if (name.indexOf("mi 15s pro 16/512 blue") != -1) {
+    return 39767;
+  } else if (name.indexOf("mi pad 7 ultra 12/256 wi-fi blue") != -1) {
+    return 39780;
+  } else if (name.indexOf("mi pad 7 ultra 12/256 wi-fi gray") != -1) {
+    return 39717;
+  } else if (name.indexOf("mi pad 7 ultra 12/512 wi-fi blue") != -1) {
+    return 39784;
+  } else if (name.indexOf("mi pad 7 ultra 12/512 wi-fi gray") != -1) {
+    return 39785;
+  } else if (name.indexOf("mi pad 7 ultra 16/1tb wi-fi blue") != -1) {
+    return 39790;
+  } else if (name.indexOf("mi pad 7 ultra 16/1tb wi-fi gray") != -1) {
+    return 39791;
+  } else if (name.indexOf("mi redmi 13x 8/128 black") != -1) {
+    return 39709;
+  } else if (name.indexOf("mi redmi 13x 8/128 blue") != -1) {
+    return 39775;
+  } else if (name.indexOf("mi redmi 13x 8/128 gold") != -1) {
+    return 39783;
+  } else if (name.indexOf("mi redmi 13x 8/256 black") != -1) {
+    return 39773;
+  } else if (name.indexOf("mi redmi 13x 8/256 blue") != -1) {
+    return 39777;
+  } else if (name.indexOf("mi redmi 13x 8/256 gold") != -1) {
+    return 39786;
+  } else if (name.indexOf("mi redmi a5 3/64 blue") != -1) {
+    return 39739;
+  } else if (name.indexOf("mi redmi a5 3/64 gold") != -1) {
+    return 39741;
+  } else if (name.indexOf("mi redmi a5 3/64 green") != -1) {
+    return 39740;
+  } else if (name.indexOf("mi redmi a5 3/64 midnight black") != -1) {
+    return 39689;
+  } else if (name.indexOf("mi redmi a5 4/128 blue") != -1) {
+    return 39743;
+  } else if (name.indexOf("mi redmi a5 4/128 gold") != -1) {
+    return 39744;
+  } else if (name.indexOf("mi redmi a5 4/128 green") != -1) {
+    return 39746;
+  } else if (name.indexOf("mi redmi a5 4/128 midnight black") != -1) {
+    return 39748;
+  } else if (name.indexOf("mi redmi a5 6/128 blue") != -1) {
+    return 39750;
+  } else if (name.indexOf("mi redmi a5 6/128 gold") != -1) {
+    return 39752;
+  } else if (name.indexOf("mi redmi a5 6/128 green") != -1) {
+    return 39754;
+  } else if (name.indexOf("mi redmi a5 6/128 midnight black") != -1) {
+    return 39756;
+  } else if (name.indexOf("mi redmi pad 2 4/128 graphite gray") != -1) {
+    return 39714;
+  } else if (name.indexOf("mi redmi pad 2 4/128 lavender purple") != -1) {
+    return 39804;
+  } else if (name.indexOf("mi redmi pad 2 4/128 mint green") != -1) {
+    return 39792;
+  } else if (name.indexOf("mi redmi pad 2 6/128 graphite gray") != -1) {
+    return 39797;
+  } else if (name.indexOf("mi redmi pad 2 6/128 lavender purple") != -1) {
+    return 39802;
+  } else if (name.indexOf("mi redmi pad 2 6/128 mint green") != -1) {
+    return 39794;
+  } else if (name.indexOf("mi redmi pad 2 8/256 graphite gray") != -1) {
+    return 39798;
+  } else if (name.indexOf("mi redmi pad 2 8/256 lavender purple") != -1) {
+    return 39801;
+  } else if (name.indexOf("mi redmi pad 2 8/256 mint green") != -1) {
+    return 39795;
   } else {
     return returnIDGarmin(name) || "No match";
   }

@@ -19,7 +19,7 @@ const IndexBonus = ({ el, bonusData }) => {
       )
        {
         return (
-          (returnIDSamsung(returnFixNameBonus(bonus.name)) !== 'No match' ||
+          (returnIDSamsung(returnFixNameBonus(bonus.name)) !== 'No match' &&
         returnIDSamsung2(returnFixNameBonus(bonus.name)) !== 'No match') &&
           bonus.price &&
           resultArr.push({
