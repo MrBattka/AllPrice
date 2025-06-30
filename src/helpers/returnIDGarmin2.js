@@ -1,5 +1,6 @@
-export const returnIDGarmin2 = (name) => {
+import { returnIDOtherBrand } from "./returnOtherBrands";
 
+export const returnIDGarmin2 = (name) => {
   if (
     (name.indexOf("epix") != -1 &&
       name.indexOf("pro") === -1 &&
@@ -1621,6 +1622,6 @@ export const returnIDGarmin2 = (name) => {
   ) {
     return 35792;
   } else {
-    return "No match";
+    return returnIDOtherBrand(name) || "No match";
   }
 };

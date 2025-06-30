@@ -1,26 +1,43 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   baseFix,
   baseFixArti,
   baseFixBase,
+  baseFixBigAp,
+  baseFixBonus,
   baseFixDiscount,
   baseFixElectrozon,
   baseFixF51,
   baseFixGarmin,
   baseFixHi,
+  baseFixInfinity,
+  baseFixL27,
+  baseFixLikemob,
+  baseFixLowPrice,
   baseFixMiHonor,
+  baseFixMiOpts,
+  baseFixMTA,
   baseFixNarod,
+  baseFixOther,
   baseFixRacmag,
   baseFixReSale,
+  baseFixRootOpt,
   baseFixRPTrade,
   baseFixS5,
+  baseFixSunrise,
   baseFixSuperPrice,
   baseFixTagir,
+  baseFixTrub,
   baseFixVsemi,
 } from "../../helpers/baseFix";
 import { returnFixPrice } from "../../helpers/fixPrice";
 import { newPrice } from "../../helpers/NewPrice";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import {
+  returnFixNameA18,
+  returnNameInArrA18,
+  returnStockPriceA18,
+} from "../A18/helpers/helpers";
 import { returnCategoryArti } from "../Arti/category/Category";
 import {
   returnFixNameArti,
@@ -28,6 +45,12 @@ import {
   returnStockPriceArti,
 } from "../Arti/helpers/helpers";
 import { returnFixNameBase } from "../Base/helpers/helpers";
+import {
+  returnFixNameBigAp,
+  returnNameInArrBigAp,
+  returnStockPriceBigAp,
+} from "../BigAp/helpers/helpers";
+import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
 import TableAllPrice from "../CreateAllPriceTable/TableAllPrice";
 import {
   returnFixNameDiscount,
@@ -48,19 +71,48 @@ import { returnGarminHi } from "../Hi/Garmin/garmin";
 import { returnGoogleHi } from "../Hi/Google/google";
 import {
   fixNameHi,
-  returnExtraPriceHi,
   returnNameInArrHi,
-  returnStockPriceHi,
+  returnStockPriceHi
 } from "../Hi/helpers/helpers";
 import { returnSamsungHi } from "../Hi/Samsung/samsung";
-import style from "../Hi/styles.module.css";
 import { returnXiaomiHi } from "../Hi/Xiaomi/xiaomi";
+import {
+  fixNameInfinity,
+  returnNameInArrInfinity,
+  returnStockPriceInfinity,
+} from "../Infinity/helpers/helpers";
+import {
+  returnFixNameL27,
+  returnNameInArrL27,
+  returnStockPriceL27,
+} from "../L27/helpers/helpers";
+import {
+  returnFixNameLikemob,
+  returnNameInArrLikemob,
+  returnStockPriceLikemob,
+} from "../Likemob/helpers/helpers";
+import {
+  fixNameLowPrice,
+  returnNameInArrLowPrice,
+  returnStockPriceLowPrice,
+} from "../LowPriceApple/helpers/helpers";
 import {
   fixNameMihonor,
   returnExtraPriceMihonor,
   returnNameInArrMihonor,
   returnStockPriceMihonor,
 } from "../MiHonor/helpers/helpers";
+import {
+  fixNameMiOpts,
+  returnExtraPriceMiOpts,
+  returnNameInArrMiOpts,
+  returnStockPriceMiOpts,
+} from "../MiOpts/helpers/helpers";
+import {
+  returnFixNameMTA,
+  returnNameInArrMTA,
+  returnStockPriceMTA,
+} from "../MTA/helpers/helpers";
 import {
   fixNameNarod,
   returnNameNarod,
@@ -84,6 +136,7 @@ import {
   returnNameReSale,
   returnStockPriceReSale,
 } from "../ReSale/helpers/helpers";
+import { returnFixNameRootOpt } from "../RootOPT/helpers/helpers";
 import { returnFixNameRPTrade } from "../RPTrade/helpers/helpers";
 import {
   fixNameS5,
@@ -91,12 +144,23 @@ import {
   returnNameInArrS5,
   returnStockPriceS5,
 } from "../S5/helpers/helpers";
+import style from "../styles.module.css";
+import {
+  returnFixNameSunrise,
+  returnNameInArrSunrise,
+  returnStockPriceSunrise,
+} from "../Sunrise/helpers/helpers";
 import { fixNameSuperPrice } from "../SuperPrice/helpers/helpers";
 import {
   fixNameTagir,
   returnNameTagir,
   returnStockPriceTagir,
 } from "../Tagir/helpers/helpers";
+import {
+  fixNameTrub,
+  returnNameInArrTrub,
+  returnStockPriceTrub,
+} from "../Trub/helpers/helpers";
 import { returnApple } from "../Unimtrn/Apple/apple";
 import { returnDyson } from "../Unimtrn/Dyson/dyson";
 import { returnGameConsole } from "../Unimtrn/GameConsole/gameConsole";
@@ -111,7 +175,7 @@ import {
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
 
-const AllPrice = ({
+const AllPriceNotID = ({
   dataSuperprice,
   dataVsemi,
   dataUnimtrn,
@@ -130,6 +194,18 @@ const AllPrice = ({
   baseData,
   otherData,
   discountData,
+  mioptsData,
+  lowPriceData,
+  l27Data,
+  sunriseData,
+  infinityData,
+  likemobData,
+  mtaData,
+  bonusData,
+  bigApData,
+  rootOptData,
+  a18Data,
+  trubData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -142,15 +218,13 @@ const AllPrice = ({
       isOpen
     ) {
       return (
+        returnIDSamsung(fixNameSuperPrice(superprice.name)) === "No match" &&
         newPrice(superprice.name, superprice.price) &&
         superprice.price &&
         allPriceArr.push({
           id: returnIDSamsung(fixNameSuperPrice(superprice.name)),
           name: fixNameSuperPrice(superprice.name),
-          extraPrice: newPrice(
-            fixNameSuperPrice(superprice.name),
-            superprice.price
-          ),
+          stockPrice: superprice.price,
           provider: "SuperPrice",
         })
       );
@@ -167,12 +241,13 @@ const AllPrice = ({
       isOpen
     ) {
       return (
+        returnIDSamsung(fixNameVseMi(vsemi.name)) === "No match" &&
         returnExtraPriceVseMi(vsemi.name) &&
         returnStockPriceVseMi(vsemi.name) &&
         allPriceArr.push({
           id: returnIDSamsung(returnNameInArrVseMi(fixNameVseMi(vsemi.name))),
           name: returnNameInArrVseMi(fixNameVseMi(vsemi.name)),
-          extraPrice: returnExtraPriceVseMi(fixNameVseMi(vsemi.name)),
+          stockPrice: returnStockPriceVseMi(fixNameVseMi(vsemi.name)),
           provider: "VseMi",
         })
       );
@@ -181,7 +256,9 @@ const AllPrice = ({
 
   dataUnimtrn.map((unimtrn) => {
     if (
-      unimtrn.Товар &&
+      unimtrn.Модификация &&
+      returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) ===
+        "No match" &&
       isOpen &&
       baseFix(unimtrn) &&
       (returnApple(unimtrn) ||
@@ -194,10 +271,7 @@ const AllPrice = ({
       allPriceArr.push({
         id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
         name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
-        extraPrice: newPrice(
-          unimtrn.Товар,
-          unimtrn.Стоимость || unimtrn.Cтоимость
-        ),
+        stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
         provider: "Метреон",
       });
     }
@@ -217,13 +291,13 @@ const AllPrice = ({
         returnDysonHi(hi.name))
     ) {
       return (
-        returnExtraPriceHi(hi.name) &&
-        returnStockPriceHi(hi.name) &&
+        returnIDSamsung(fixNameHi(hi.name)) === "No match" &&
+        returnStockPriceHi(fixNameHi(hi.name)) &&
+        returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
         allPriceArr.push({
           id: returnIDSamsung(fixNameHi(hi.name)),
           name: returnNameInArrHi(fixNameHi(hi.name)),
-          extraPrice: returnExtraPriceHi(hi.name),
-          stockPrice: returnStockPriceHi(hi.name),
+          stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",
         })
       );
@@ -231,17 +305,16 @@ const AllPrice = ({
   });
 
   dataMihonor.map((mihonor) => {
-    baseFixMiHonor(mihonor) &&
-      returnStockPriceMihonor(fixNameMihonor(mihonor.name));
-    baseFixMiHonor(mihonor) &&
-      returnExtraPriceMihonor(fixNameMihonor(mihonor.name));
     if (
       mihonor.name &&
       typeof mihonor.name === "string" &&
+      mihonor.name.indexOf("₽") !== -1 &&
       baseFixMiHonor(mihonor) &&
       isOpen
     ) {
       return (
+        mihonor.name.indexOf("₽") !== -1 &&
+        returnIDSamsung(fixNameMihonor(mihonor.name)) === "No match" &&
         returnExtraPriceMihonor(mihonor.name) &&
         returnStockPriceMihonor(mihonor.name) &&
         allPriceArr.push({
@@ -249,7 +322,7 @@ const AllPrice = ({
             returnNameInArrMihonor(fixNameMihonor(mihonor.name))
           ),
           name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
-          extraPrice: returnExtraPriceMihonor(fixNameMihonor(mihonor.name)),
+          stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
           provider: "MiHonor",
         })
       );
@@ -266,6 +339,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
+        returnIDSamsung(fixNameGarmin(garmin.name)) === "No match" &&
         returnExtraPriceGarmin(garmin.name) &&
         returnStockPriceGarmin(garmin.name) &&
         allPriceArr.push({
@@ -286,7 +360,7 @@ const AllPrice = ({
     baseFixS5(S5) && returnExtraPriceS5(fixNameS5(S5.name));
     if (S5.name && typeof S5.name === "string" && baseFixS5(S5) && isOpen) {
       return (
-        returnIDSamsung(fixNameS5(S5.name)) !== "No match" &&
+        returnIDSamsung(fixNameS5(S5.name)) === "No match" &&
         returnExtraPriceS5(S5.name) &&
         returnStockPriceS5(S5.name) &&
         allPriceArr.push({
@@ -308,7 +382,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameRPTrade(rptrade.name)) !== "No match" &&
+        returnIDSamsung(returnFixNameRPTrade(rptrade.name)) === "No match" &&
         rptrade.price &&
         allPriceArr.push({
           id: returnIDSamsung(returnFixNameRPTrade(rptrade.name)),
@@ -333,7 +407,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameRacmag(racmag.name)) !== "No match" &&
+        returnIDSamsung(returnFixNameRacmag(racmag.name)) === "No match" &&
         returnStockPriceRacmag(racmag.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
@@ -357,7 +431,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameArti(arti.name)) !== "No match" &&
+        returnIDSamsung(returnFixNameArti(arti.name)) === "No match" &&
         returnStockPriceArti(arti.name) &&
         returnCategoryArti(arti.name) &&
         allPriceArr.push({
@@ -379,7 +453,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameElectrozon(electrozon.name)) !==
+        returnIDSamsung(returnFixNameElectrozon(electrozon.name)) ===
           "No match" &&
         electrozon.price &&
         allPriceArr.push({
@@ -403,7 +477,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameReSale(resale.name)) !== "No match" &&
+        returnIDSamsung(returnFixNameReSale(resale.name)) === "No match" &&
         returnExtraPriceReSale(resale.name) &&
         returnStockPriceReSale(resale.name) &&
         returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("А") ==
@@ -433,7 +507,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameTagir(tagir.name)) !== "No match" &&
+        returnIDSamsung(fixNameTagir(tagir.name)) === "No match" &&
         returnStockPriceTagir(tagir.name) &&
         allPriceArr.push({
           id: returnIDSamsung(returnNameTagir(fixNameTagir(tagir.name))),
@@ -455,7 +529,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameNarod(narod.name)) !== "No match" &&
+        returnIDSamsung(fixNameNarod(narod.name)) === "No match" &&
         returnStockPriceNarod(narod.name) &&
         allPriceArr.push({
           id: returnIDSamsung(returnNameNarod(fixNameNarod(narod.name))),
@@ -472,7 +546,7 @@ const AllPrice = ({
     baseFixF51(f51) && returnNameF51(f51.name);
     if (f51.name && typeof f51.name === "string" && baseFixF51(f51) && isOpen) {
       return (
-        returnIDSamsung(returnNameF51(f51.name)) !== "No match" &&
+        returnIDSamsung(returnNameF51(f51.name)) === "No match" &&
         f51.price &&
         allPriceArr.push({
           id: returnIDSamsung(returnNameF51(f51.name)),
@@ -495,7 +569,7 @@ const AllPrice = ({
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameDiscount(discount.name)) !== "No match" &&
+        returnIDSamsung(returnFixNameDiscount(discount.name)) === "No match" &&
         returnStockPriceDiscount(discount.name) &&
         allPriceArr.push({
           id: returnIDSamsung(
@@ -519,7 +593,7 @@ const AllPrice = ({
       baseFixBase(base)
     ) {
       return (
-        returnIDSamsung(returnFixNameBase(base.name)) !== "No match" &&
+        returnIDSamsung(returnFixNameBase(base.name)) === "No match" &&
         base.price &&
         baseFixBase(base) &&
         allPriceArr.push({
@@ -536,10 +610,16 @@ const AllPrice = ({
   otherData.map((other) => {
     returnStockPriceOther(returnFixNameOther(other.name));
     returnExtraPriceOther(returnFixNameOther(other.name));
-    if (other.name && typeof other.name === "string" && isOpen) {
+    if (
+      other.name &&
+      typeof other.name === "string" &&
+      baseFixOther(other) &&
+      isOpen
+    ) {
       return (
-        returnIDSamsung(returnFixNameOther(other.name)) !== "No match" &&
+        returnIDSamsung(returnFixNameOther(other.name)) === "No match" &&
         returnStockPriceOther(other.name) &&
+        baseFixOther(other) &&
         allPriceArr.push({
           id: returnIDSamsung(
             returnNameInArrOther(returnFixNameOther(other.name))
@@ -547,7 +627,273 @@ const AllPrice = ({
           name: returnNameInArrOther(returnFixNameOther(other.name)),
           extraPrice: returnExtraPriceOther(returnFixNameOther(other.name)),
           stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
-          provider: "Разное",
+          provider: "All",
+        })
+      );
+    }
+  });
+
+  mioptsData.map((miopts) => {
+    baseFixMiOpts(miopts) && returnStockPriceMiOpts(fixNameMiOpts(miopts.name));
+    baseFixMiOpts(miopts) && returnExtraPriceMiOpts(fixNameMiOpts(miopts.name));
+    if (
+      miopts.name &&
+      typeof miopts.name === "string" &&
+      baseFixMiOpts(miopts)
+    ) {
+      return (
+        returnIDSamsung(fixNameMiOpts(miopts.name)) === "No match" &&
+        returnExtraPriceMiOpts(miopts.name) &&
+        returnStockPriceMiOpts(miopts.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrMiOpts(fixNameMiOpts(miopts.name))
+          ),
+          name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
+          extraPrice: returnExtraPriceMiOpts(fixNameMiOpts(miopts.name)),
+          stockPrice: returnStockPriceMiOpts(fixNameMiOpts(miopts.name)),
+          provider: "MiOpts",
+        })
+      );
+    }
+  });
+
+  lowPriceData.map((lowPrice) => {
+    if (
+      lowPrice.name &&
+      typeof lowPrice.name === "string" &&
+      baseFixLowPrice(lowPrice)
+    ) {
+      return (
+        returnIDSamsung(fixNameLowPrice(lowPrice.name)) === "No match" &&
+        returnStockPriceLowPrice(lowPrice.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))
+          ),
+          name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
+          stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
+          provider: "LowPrice",
+        })
+      );
+    }
+  });
+
+  l27Data.map((l27) => {
+    baseFixL27(l27) && returnStockPriceL27(returnFixNameL27(l27.name));
+    if (
+      l27.name &&
+      typeof l27.name === "string" &&
+      baseFixL27(l27) &&
+      returnStockPriceL27(returnFixNameL27(l27.name)).indexOf("00") !== -1 &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameL27(l27.name)) === "No match" &&
+        returnStockPriceL27(l27.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrL27(returnFixNameL27(l27.name))),
+          name: returnNameInArrL27(returnFixNameL27(l27.name)),
+          stockPrice: returnStockPriceL27(returnFixNameL27(l27.name)),
+          provider: "Л27-28",
+        })
+      );
+    }
+  });
+
+  sunriseData.map((sunrise) => {
+    baseFixSunrise(sunrise) &&
+      returnStockPriceSunrise(returnFixNameSunrise(sunrise.name));
+    if (
+      sunrise.name &&
+      typeof sunrise.name === "string" &&
+      baseFixSunrise(sunrise) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameSunrise(sunrise.name)) === "No match" &&
+        returnStockPriceSunrise(sunrise.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))
+          ),
+          name: returnNameInArrSunrise(returnFixNameSunrise(sunrise.name)),
+          stockPrice: returnStockPriceSunrise(
+            returnFixNameSunrise(sunrise.name)
+          ),
+          provider: "Восход",
+        })
+      );
+    }
+  });
+
+  infinityData.map((infinity) => {
+    if (
+      infinity.name &&
+      typeof infinity.name === "string" &&
+      baseFixInfinity(infinity)
+    ) {
+      return (
+        returnIDSamsung(fixNameInfinity(infinity.name)) === "No match" &&
+        returnStockPriceInfinity(infinity.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrInfinity(fixNameInfinity(infinity.name))
+          ),
+          name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
+          stockPrice: returnStockPriceInfinity(fixNameInfinity(infinity.name)),
+          provider: "Infinity",
+        })
+      );
+    }
+  });
+
+  likemobData.map((likemob) => {
+    baseFixLikemob(likemob) &&
+      returnStockPriceLikemob(returnFixNameLikemob(likemob.name));
+    if (
+      likemob.name &&
+      typeof likemob.name === "string" &&
+      baseFixLikemob(likemob) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameLikemob(likemob.name)) === "No match" &&
+        returnStockPriceLikemob(likemob.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
+          ),
+          name: returnNameInArrLikemob(returnFixNameLikemob(likemob.name)),
+          stockPrice: returnStockPriceLikemob(
+            returnFixNameLikemob(likemob.name)
+          ),
+          provider: "Likemob",
+        })
+      );
+    }
+  });
+
+  bigApData.map((bigAp) => {
+    baseFixBigAp(bigAp) &&
+      returnStockPriceBigAp(returnFixNameBigAp(bigAp.name));
+    if (
+      bigAp.name &&
+      typeof bigAp.name === "string" &&
+      baseFixBigAp(bigAp) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameBigAp(bigAp.name)) === "No match" &&
+        returnStockPriceBigAp(bigAp.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(
+            returnNameInArrBigAp(returnFixNameBigAp(bigAp.name))
+          ),
+          name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),
+          stockPrice: returnStockPriceBigAp(returnFixNameBigAp(bigAp.name)),
+          provider: "BigAp",
+        })
+      );
+    }
+  });
+
+  mtaData.map((mta) => {
+    baseFixMTA(mta) && returnStockPriceMTA(returnFixNameMTA(mta.name));
+    if (mta.name && typeof mta.name === "string" && baseFixMTA(mta) && isOpen) {
+      return (
+        returnIDSamsung(returnFixNameMTA(mta.name)) === "No match" &&
+        returnStockPriceMTA(returnFixNameMTA(mta.name)).indexOf("00") !== -1 &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrMTA(returnFixNameMTA(mta.name))),
+          name: returnNameInArrMTA(returnFixNameMTA(mta.name)),
+          stockPrice: returnStockPriceMTA(returnFixNameMTA(mta.name)),
+          provider: "MTA Store",
+        })
+      );
+    }
+  });
+
+  bonusData.map((bonus) => {
+    if (
+      bonus.name &&
+      typeof bonus.name === "string" &&
+      baseFixBonus(bonus) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameBonus(bonus.name)) === "No match" &&
+        bonus.price &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnFixNameBonus(bonus.name)),
+          name: returnFixNameBonus(bonus.name),
+          stockPrice: bonus.price,
+          provider: "БонусОПТ",
+        })
+      );
+    }
+  });
+
+  rootOptData.map((rootOpt) => {
+    if (
+      rootOpt.name &&
+      typeof rootOpt.name === "string" &&
+      baseFixRootOpt(rootOpt) &&
+      rootOpt.price !== "ожидается" &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameRootOpt(rootOpt.name)) === "No match" &&
+        rootOpt.price &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnFixNameRootOpt(rootOpt.name)),
+          name: returnFixNameRootOpt(rootOpt.name),
+          stockPrice: rootOpt.price,
+          provider: "RootOPT",
+        })
+      );
+    }
+  });
+
+  a18Data.map((A18) => {
+    // baseFixA18(A18) &&
+    returnStockPriceA18(returnFixNameA18(A18.name));
+    if (
+      A18.name &&
+      typeof A18.name === "string" &&
+      returnStockPriceA18(returnFixNameA18(A18.name)).indexOf("00") !== -1 &&
+      // baseFixA18(A18) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameA18(A18.name)) === "No match" &&
+        returnStockPriceA18(A18.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrA18(returnFixNameA18(A18.name))),
+          name: returnNameInArrA18(returnFixNameA18(A18.name)),
+          stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
+          provider: "A18",
+        })
+      );
+    }
+  });
+
+  trubData.map((trub) => {
+    if (
+      trub.name &&
+      typeof trub.name === "string" &&
+      baseFixTrub(trub) &&
+      isOpen &&
+      returnStockPriceTrub(fixNameTrub(trub.name)).indexOf("0") != -1
+    ) {
+      return (
+        returnIDSamsung(fixNameTrub(trub.name)) === "No match" &&
+        returnStockPriceTrub(trub.name) &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(trub.name))),
+          name: returnNameInArrTrub(fixNameTrub(trub.name)),
+          stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
+          provider: " Трубный",
         })
       );
     }
@@ -567,7 +913,7 @@ const AllPrice = ({
           rptradeData?.length > 2 ||
           racmagData?.length > 2) && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "All Price Для Лехи ▲" : "All Price Для Лехи ▼"}
+            {isOpen ? "All Price Not ID ▲" : "All Price Not ID ▼"}
           </span>
         )}
       </div>
@@ -576,4 +922,4 @@ const AllPrice = ({
   );
 };
 
-export default AllPrice;
+export default AllPriceNotID;

@@ -63,6 +63,7 @@ import IndexA18 from "./A18/IndexA18";
 import IndexA18NotID from "./A18/IndexA18NotID";
 import IndexTrub from "./Trub/IndexTrub";
 import IndexTrubNotID from "./Trub/IndexTrubNotID";
+import AllPriceNotID from "./AllPrice/AllPriceNotID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -571,6 +572,38 @@ const IndexAllPrice = () => {
         <IndexTrubNotID el={dataTrub} trubData={trub} />
         {/* All Price */}
         <AllPriceWithID
+          dataSuperprice={superprice}
+          dataVsemi={vsemi}
+          dataUnimtrn={dataUNIMTRN}
+          dataHi={hi}
+          dataMihonor={mihonor}
+          dataGarmin={garmin}
+          S5Data={S5}
+          rptradeData={rptrade}
+          racmagData={racmag}
+          electrozonData={electrozon}
+          artiData={arti}
+          resaleData={resale}
+          tagirData={tagir}
+          narodData={narod}
+          f51Data={f51}
+          discountData={discount}
+          baseData={deleteDoubleProduct}
+          otherData={other}
+          mioptsData={miopts}
+          lowPriceData={lowprice}
+          l27Data={l27}
+          sunriseData={sunrise}
+          infinityData={infinity}
+          likemobData={likemob}
+          mtaData={mta}
+          bonusData={bonus}
+          bigApData={bigAp}
+          rootOptData={rootOpt}
+          a18Data={a18}
+          trubData={trub}
+        />
+        <AllPriceNotID
           dataSuperprice={superprice}
           dataVsemi={vsemi}
           dataUnimtrn={dataUNIMTRN}

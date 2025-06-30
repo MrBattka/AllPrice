@@ -1,3 +1,4 @@
+import { returnIDGarmin2 } from "./returnIDGarmin2";
 import { returnIDOtherBrand } from "./returnOtherBrands";
 
 export const returnIDGarmin = (nameStock) => {
@@ -1579,6 +1580,6 @@ export const returnIDGarmin = (nameStock) => {
   } else if (name.indexOf("garmin vivosmart 4 black") !== -1) {
     return 14449;
   } else {
-    return returnIDOtherBrand(name) || "No match";
+    return returnIDGarmin2(name) || "No match";
   }
 };
