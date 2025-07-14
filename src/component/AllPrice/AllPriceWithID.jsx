@@ -4,6 +4,7 @@ import {
   baseFixArti,
   baseFixBase,
   baseFixBigAp,
+  baseFixBoltun,
   baseFixBonus,
   baseFixDiscount,
   baseFixElectrozon,
@@ -72,7 +73,7 @@ import { returnGoogleHi } from "../Hi/Google/google";
 import {
   fixNameHi,
   returnNameInArrHi,
-  returnStockPriceHi
+  returnStockPriceHi,
 } from "../Hi/helpers/helpers";
 import { returnSamsungHi } from "../Hi/Samsung/samsung";
 import { returnXiaomiHi } from "../Hi/Xiaomi/xiaomi";
@@ -174,6 +175,7 @@ import {
   returnNameInArrVseMi,
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
+import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -206,6 +208,7 @@ const AllPriceWithID = ({
   rootOptData,
   a18Data,
   trubData,
+  boltunData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -894,6 +897,26 @@ const AllPriceWithID = ({
           name: returnNameInArrTrub(fixNameTrub(trub.name)),
           stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
           provider: " Трубный",
+        })
+      );
+    }
+  });
+
+  boltunData.map((boltun) => {
+    if (
+      boltun.name &&
+      typeof boltun.name === "string" &&
+      baseFixBoltun(boltun) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameBoltun(boltun.name)) !== "No match" &&
+        boltun.price &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnFixNameBoltun(boltun.name)),
+          name: returnFixNameBoltun(boltun.name),
+          stockPrice: boltun.price,
+          provider: "Болтун",
         })
       );
     }

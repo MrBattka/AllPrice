@@ -4,6 +4,7 @@ import {
   baseFixArti,
   baseFixBase,
   baseFixBigAp,
+  baseFixBoltun,
   baseFixBonus,
   baseFixDiscount,
   baseFixElectrozon,
@@ -174,6 +175,7 @@ import {
   returnNameInArrVseMi,
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
+import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 
 const AllPriceNotID = ({
   dataSuperprice,
@@ -206,6 +208,7 @@ const AllPriceNotID = ({
   rootOptData,
   a18Data,
   trubData,
+  boltunData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -898,6 +901,26 @@ const AllPriceNotID = ({
       );
     }
   });
+
+  boltunData.map((boltun) => {
+      if (
+        boltun.name &&
+        typeof boltun.name === "string" &&
+        baseFixBoltun(boltun) &&
+        isOpen
+      ) {
+        return (
+          returnIDSamsung(returnFixNameBoltun(boltun.name)) === "No match" &&
+          boltun.price &&
+          allPriceArr.push({
+            id: returnIDSamsung(returnFixNameBoltun(boltun.name)),
+            name: returnFixNameBoltun(boltun.name),
+            stockPrice: boltun.price,
+            provider: "Болтун",
+          })
+        );
+      }
+    });
 
   return (
     <div>

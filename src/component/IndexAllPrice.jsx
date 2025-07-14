@@ -64,6 +64,10 @@ import IndexA18NotID from "./A18/IndexA18NotID";
 import IndexTrub from "./Trub/IndexTrub";
 import IndexTrubNotID from "./Trub/IndexTrubNotID";
 import AllPriceNotID from "./AllPrice/AllPriceNotID";
+import IndexBoltun from "./Boltun/IndexBolltun";
+import IndexStore77 from "./Store77/IndexStore77";
+import IndexBoltunNotID from "./Boltun/IndexBoltunNotID";
+import IndexStore77NotID from "./Store77/IndexStore77NotID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -98,6 +102,8 @@ const IndexAllPrice = () => {
   const [dataRootOpt, setDataRootOpt] = useState([]);
   const [dataA18, setDataA18] = useState([]);
   const [dataTrub, setDataTrub] = useState([]);
+  const [dataBoltun, setDataBoltun] = useState([]);
+  const [dataStore77, setDataStore77] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -129,6 +135,8 @@ const IndexAllPrice = () => {
   const rootOpt = [];
   const a18 = [];
   const trub = [];
+  const boltun = [];
+  const store77 = [];
 
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
@@ -338,6 +346,14 @@ const IndexAllPrice = () => {
     trubEl.Trub && trubEl.Trub.length && trub.push({ name: trubEl.Trub });
   });
 
+  dataBoltun.map((boltunEl) => {
+    boltunEl.name && boltunEl.name.length && boltun.push({ name: boltunEl.name, price: boltunEl.price });
+  });
+
+  dataStore77.map((store77El) => {
+    store77El.name && store77El.name.length && store77.push({ name: store77El.name, price: store77El.price });
+  });
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -408,6 +424,10 @@ const IndexAllPrice = () => {
           setDataA18(rowA18);
           const rowTrub = utils.sheet_to_json(wb.Sheets[sheets[29]]);
           setDataTrub(rowTrub);
+          const rowBoltun = utils.sheet_to_json(wb.Sheets[sheets[30]]);
+          setDataBoltun(rowBoltun);
+          const rowStore77 = utils.sheet_to_json(wb.Sheets[sheets[31]]);
+          setDataStore77(rowStore77);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -475,6 +495,7 @@ const IndexAllPrice = () => {
           rootOptData={rootOpt}
           a18Data={a18}
           trubData={trub}
+          boltunData={boltun}
         />
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
@@ -570,6 +591,12 @@ const IndexAllPrice = () => {
         {/* Трубный */}
         <IndexTrub el={dataTrub} trubData={trub} />
         <IndexTrubNotID el={dataTrub} trubData={trub} />
+        {/* Boltun */}
+        <IndexBoltun el={dataBoltun} boltunData={boltun} />
+        <IndexBoltunNotID el={dataBoltun} boltunData={boltun} />
+        {/* Store 77 */}
+        <IndexStore77 el={dataStore77} store77Data={store77} />
+        <IndexStore77NotID el={dataStore77} store77Data={store77} />
         {/* All Price */}
         <AllPriceWithID
           dataSuperprice={superprice}
@@ -602,6 +629,7 @@ const IndexAllPrice = () => {
           rootOptData={rootOpt}
           a18Data={a18}
           trubData={trub}
+          boltunData={boltun}
         />
         <AllPriceNotID
           dataSuperprice={superprice}
@@ -634,7 +662,9 @@ const IndexAllPrice = () => {
           rootOptData={rootOpt}
           a18Data={a18}
           trubData={trub}
+          boltunData={boltun}
         />
+        
       </div>
     </div>
   );

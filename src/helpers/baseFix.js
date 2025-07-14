@@ -2338,3 +2338,181 @@ export const baseFixTrub = (el) => {
         toLowerCase.indexOf("☑️") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;
 };
+
+export const baseFixBoltun = (el) => {
+  let toLowerCase = el.name?.toLowerCase();
+  return toLowerCase?.indexOf("airpods") != -1 &&
+    (toLowerCase?.indexOf("left") != -1 ||
+      toLowerCase?.indexOf("левый") != -1 ||
+      toLowerCase?.indexOf("right") != -1 ||
+      toLowerCase?.indexOf("правый") != -1 ||
+      toLowerCase?.indexOf("case") != -1 ||
+      toLowerCase?.indexOf("кейс") != -1 ||
+      toLowerCase?.indexOf("box") != -1)
+    ? toLowerCase?.indexOf("airpods") == -1
+    : toLowerCase &&
+        toLowerCase.indexOf("отдельности") == -1 &&
+        toLowerCase.indexOf("adapter") == -1 &&
+        toLowerCase.indexOf("игры") == -1 &&
+        toLowerCase.indexOf("остальн") == -1 &&
+        toLowerCase.indexOf("airpods 2 l ") == -1 &&
+        toLowerCase.indexOf("airpods 2 r ") == -1 &&
+        toLowerCase.indexOf("airpods 2 box") == -1 &&
+        toLowerCase.indexOf("airpods 3 l ") == -1 &&
+        toLowerCase.indexOf("airpods 3 r ") == -1 &&
+        toLowerCase.indexOf("airpods 3 box") == -1 &&
+        toLowerCase.indexOf("airpods pro 2023 box") == -1 &&
+        toLowerCase.indexOf("airpods pro 2023 l ") == -1 &&
+        toLowerCase.indexOf("airpods pro 2023 r") == -1 &&
+        toLowerCase?.indexOf("распак") == -1 &&
+        toLowerCase?.indexOf("ремонт") == -1 &&
+        toLowerCase?.indexOf("потертости") == -1 &&
+        toLowerCase?.indexOf("скол") == -1 &&
+        toLowerCase?.indexOf("пятна") == -1 &&
+        toLowerCase?.indexOf("замена") == -1 &&
+        toLowerCase?.indexOf("пиксель") == -1 &&
+        toLowerCase?.indexOf("на экране") == -1 &&
+        toLowerCase?.indexOf("мятый") == -1 &&
+        toLowerCase?.indexOf("Мятый") == -1 &&
+        toLowerCase?.indexOf("открытый") == -1 &&
+        toLowerCase?.indexOf("дефект") == -1 &&
+        toLowerCase?.indexOf("вскрыт") == -1 &&
+        toLowerCase?.indexOf("реболл") == -1 &&
+        toLowerCase?.indexOf("No charger") == -1 &&
+        toLowerCase?.indexOf("открыт") == -1 &&
+        toLowerCase?.indexOf("Мятый") == -1 &&
+        toLowerCase?.indexOf("мятый") == -1 &&
+        toLowerCase?.indexOf("без пломб") == -1 &&
+        toLowerCase?.indexOf("прошит") == -1 &&
+        toLowerCase?.indexOf("blackview") == -1 &&
+        toLowerCase?.indexOf("вскрыт") == -1 &&
+        toLowerCase?.indexOf("угол") == -1 &&
+        toLowerCase?.indexOf("прошит") == -1 &&
+        toLowerCase?.indexOf("потерто") == -1 &&
+        toLowerCase?.indexOf("экран") == -1 &&
+        toLowerCase?.indexOf("актив") == -1 &&
+        toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase.indexOf("обменка") == -1 &&
+        toLowerCase?.indexOf("rfb") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
+        toLowerCase?.indexOf("пломба") == -1 &&
+        toLowerCase.indexOf(" r ") == -1 &&
+        toLowerCase.indexOf("airpods 2  l") == -1 &&
+        toLowerCase.indexOf("airpods 2  r") == -1 &&
+        toLowerCase.indexOf("airpods 3   r") == -1 &&
+        toLowerCase.indexOf("airpods 3   l") == -1 &&
+        toLowerCase.indexOf("airpods 4   r") == -1 &&
+        toLowerCase.indexOf("airpods 4   l") == -1 &&
+        toLowerCase.indexOf("airpods 4  box") == -1 &&
+        toLowerCase.indexOf("airpods 3  box") == -1 &&
+        toLowerCase.indexOf("airpods pro l") == -1 &&
+        toLowerCase.indexOf("airpods pro r") == -1 &&
+        toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
+        toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
+        toLowerCase.indexOf("freebuds") == -1 &&
+        toLowerCase.indexOf("pixel buds") == -1 &&
+        toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("дисковод") == -1 &&
+        toLowerCase.indexOf("уценка") == -1 &&
+        toLowerCase.indexOf("✅") == -1 &&
+        toLowerCase.indexOf("трубный") == -1 &&
+        toLowerCase.indexOf("наличие") == -1 &&
+        toLowerCase.indexOf("чехол") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
+        toLowerCase.indexOf("☑️") == -1 &&
+        toLowerCase.indexOf("ремешок") == -1;
+};
+
+export const baseFixStore77 = (el) => {
+  let toLowerCase = el.name?.toLowerCase();
+  return toLowerCase?.indexOf("airpods") != -1 &&
+    (toLowerCase?.indexOf("left") != -1 ||
+      toLowerCase?.indexOf("левый") != -1 ||
+      toLowerCase?.indexOf("right") != -1 ||
+      toLowerCase?.indexOf("правый") != -1 ||
+      toLowerCase?.indexOf("case") != -1 ||
+      toLowerCase?.indexOf("кейс") != -1 ||
+      toLowerCase?.indexOf("airpods") != -1 ||
+      toLowerCase?.indexOf("box") != -1)
+    ? toLowerCase?.indexOf("airpods") == -1
+    : toLowerCase &&
+        toLowerCase.indexOf("отдельности") == -1 &&
+        toLowerCase.indexOf("adapter") == -1 &&
+        toLowerCase.indexOf("игры") == -1 &&
+        toLowerCase.indexOf("остальн") == -1 &&
+        toLowerCase.indexOf("airpods 2 l ") == -1 &&
+        toLowerCase.indexOf("airpods 2 r ") == -1 &&
+        toLowerCase.indexOf("airpods 2 box") == -1 &&
+        toLowerCase.indexOf("airpods 3 l ") == -1 &&
+        toLowerCase.indexOf("airpods 3 r ") == -1 &&
+        toLowerCase.indexOf("airpods 3 box") == -1 &&
+        toLowerCase.indexOf("airpods pro 2023 box") == -1 &&
+        toLowerCase.indexOf("airpods pro 2023 l ") == -1 &&
+        toLowerCase.indexOf("airpods pro 2023 r") == -1 &&
+        toLowerCase?.indexOf("распак") == -1 &&
+        toLowerCase?.indexOf("ремонт") == -1 &&
+        toLowerCase?.indexOf("потертости") == -1 &&
+        toLowerCase?.indexOf("скол") == -1 &&
+        toLowerCase?.indexOf("пятна") == -1 &&
+        toLowerCase?.indexOf("замена") == -1 &&
+        toLowerCase?.indexOf("пиксель") == -1 &&
+        toLowerCase?.indexOf("на экране") == -1 &&
+        toLowerCase?.indexOf("мятый") == -1 &&
+        toLowerCase?.indexOf("Мятый") == -1 &&
+        toLowerCase?.indexOf("открытый") == -1 &&
+        toLowerCase?.indexOf("дефект") == -1 &&
+        toLowerCase?.indexOf("вскрыт") == -1 &&
+        toLowerCase?.indexOf("реболл") == -1 &&
+        toLowerCase?.indexOf("No charger") == -1 &&
+        toLowerCase?.indexOf("открыт") == -1 &&
+        toLowerCase?.indexOf("Мятый") == -1 &&
+        toLowerCase?.indexOf("мятый") == -1 &&
+        toLowerCase?.indexOf("без пломб") == -1 &&
+        toLowerCase?.indexOf("прошит") == -1 &&
+        toLowerCase?.indexOf("blackview") == -1 &&
+        toLowerCase?.indexOf("вскрыт") == -1 &&
+        toLowerCase?.indexOf("угол") == -1 &&
+        toLowerCase?.indexOf("прошит") == -1 &&
+        toLowerCase?.indexOf("потерто") == -1 &&
+        toLowerCase?.indexOf("экран") == -1 &&
+        toLowerCase?.indexOf("актив") == -1 &&
+        toLowerCase?.indexOf("realme") == -1 &&
+        toLowerCase.indexOf("обменка") == -1 &&
+        toLowerCase?.indexOf("rfb") == -1 &&
+        toLowerCase?.indexOf("уцен") == -1 &&
+        toLowerCase?.indexOf("обме") == -1 &&
+        toLowerCase?.indexOf("короб") == -1 &&
+        toLowerCase?.indexOf("пломба") == -1 &&
+        toLowerCase.indexOf(" r ") == -1 &&
+        toLowerCase.indexOf("airpods 2  l") == -1 &&
+        toLowerCase.indexOf("airpods 2  r") == -1 &&
+        toLowerCase.indexOf("airpods 3   r") == -1 &&
+        toLowerCase.indexOf("airpods 3   l") == -1 &&
+        toLowerCase.indexOf("airpods 4   r") == -1 &&
+        toLowerCase.indexOf("airpods 4   l") == -1 &&
+        toLowerCase.indexOf("airpods 4  box") == -1 &&
+        toLowerCase.indexOf("airpods 3  box") == -1 &&
+        toLowerCase.indexOf("airpods pro l") == -1 &&
+        toLowerCase.indexOf("airpods pro r") == -1 &&
+        toLowerCase.indexOf("airpods pro 2 type-c  l") == -1 &&
+        toLowerCase.indexOf("airpods pro 2 type-c   r") == -1 &&
+        toLowerCase.indexOf("freebuds") == -1 &&
+        toLowerCase.indexOf("pixel buds") == -1 &&
+        toLowerCase.indexOf("oneplus buds") == -1 &&
+        toLowerCase.indexOf("дисковод") == -1 &&
+        toLowerCase.indexOf("уценка") == -1 &&
+        toLowerCase.indexOf("✅") == -1 &&
+        toLowerCase.indexOf("трубный") == -1 &&
+        toLowerCase.indexOf("наличие") == -1 &&
+        toLowerCase.indexOf("чехол") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("Asis") == -1 &&
+        toLowerCase.indexOf("ASIS") == -1 &&
+        toLowerCase.indexOf("☑️") == -1 &&
+        toLowerCase.indexOf("ремешок") == -1;
+};
+

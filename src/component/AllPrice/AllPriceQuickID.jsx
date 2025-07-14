@@ -4,6 +4,7 @@ import {
   baseFixArti,
   baseFixBase,
   baseFixBigAp,
+  baseFixBoltun,
   baseFixBonus,
   baseFixDiscount,
   baseFixElectrozon,
@@ -171,7 +172,12 @@ import {
   returnNameInArrA18,
   returnStockPriceA18,
 } from "../A18/helpers/helpers";
-import { fixNameTrub, returnNameInArrTrub, returnStockPriceTrub } from "../Trub/helpers/helpers";
+import {
+  fixNameTrub,
+  returnNameInArrTrub,
+  returnStockPriceTrub,
+} from "../Trub/helpers/helpers";
+import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 
 const AllPriceQuickID = ({
   dataSuperprice,
@@ -203,7 +209,8 @@ const AllPriceQuickID = ({
   bigApData,
   rootOptData,
   a18Data,
-  trubData
+  trubData,
+  boltunData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArrQuickID = [];
@@ -848,27 +855,47 @@ const AllPriceQuickID = ({
       );
     }
   });
-  
+
   trubData.map((trub) => {
-      if (
-        trub.name &&
-        typeof trub.name === "string" &&
-        baseFixTrub(trub) &&
-        isOpen &&
-        returnStockPriceTrub(fixNameTrub(trub.name)).indexOf("0") != -1
-      ) {
-        return (
-          returnQuickID(fixNameTrub(trub.name)) !== "No match" &&
-          returnStockPriceTrub(trub.name) &&
-          resultArrQuickID.push({
-            id: returnQuickID(returnNameInArrTrub(fixNameTrub(trub.name))),
-            name: returnNameInArrTrub(fixNameTrub(trub.name)),
-            stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
-            provider: "Трубный",
-          })
-        );
-      }
-    });
+    if (
+      trub.name &&
+      typeof trub.name === "string" &&
+      baseFixTrub(trub) &&
+      isOpen &&
+      returnStockPriceTrub(fixNameTrub(trub.name)).indexOf("0") != -1
+    ) {
+      return (
+        returnQuickID(fixNameTrub(trub.name)) !== "No match" &&
+        returnStockPriceTrub(trub.name) &&
+        resultArrQuickID.push({
+          id: returnQuickID(returnNameInArrTrub(fixNameTrub(trub.name))),
+          name: returnNameInArrTrub(fixNameTrub(trub.name)),
+          stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
+          provider: "Трубный",
+        })
+      );
+    }
+  });
+
+  boltunData.map((boltun) => {
+    if (
+      boltun.name &&
+      typeof boltun.name === "string" &&
+      baseFixBoltun(boltun) &&
+      isOpen
+    ) {
+      return (
+        returnQuickID(returnFixNameBoltun(boltun.name)) !== "No match" &&
+        boltun.price &&
+        resultArrQuickID.push({
+          id: returnQuickID(returnFixNameBoltun(boltun.name)),
+          name: returnFixNameBoltun(boltun.name),
+          stockPrice: boltun.price,
+          provider: "Болтун",
+        })
+      );
+    }
+  });
 
   // a18Data.map((A18) => {
   //       // baseFixA18(A18) &&
