@@ -1,7 +1,12 @@
 import { newPrice } from "../../../helpers/NewPrice";
 
 export const returnNameInArrHi = (name) => {
-  let reverseStrName = name.split("").reverse().join("");
+  let fixUSBC = name.replace("USB-C", "USBC");
+  let fixTYPEC = fixUSBC.replace("TYPE-C", "USBC");
+  let fixWiFi = fixTYPEC.replace("Wi-Fi", "WiFi");
+  let fixZero = fixWiFi.replace("🛩️", "");
+
+  let reverseStrName = fixZero.split("").reverse().join("");
   let checkSpace =
     reverseStrName[0] === " "
       ? reverseStrName.replace(" ", "")
@@ -10,11 +15,23 @@ export const returnNameInArrHi = (name) => {
     checkSpace[0] === " " ? checkSpace.replace(" ", "") : checkSpace;
   let checkSpace2 =
     checkSpace1[0] === " " ? checkSpace1.replace(" ", "") : checkSpace1;
-    
-  let splitPrice = /\s(.+)/.exec(checkSpace2)[1];
-  let reverseBackStrName = splitPrice.split("").reverse().join("");
 
-  return reverseBackStrName;
+  let checkSpace3 =
+    checkSpace2[0] === " " ? checkSpace2.replace(" ", "") : checkSpace2;
+
+  // let splitPrice = checkSpace3.indexOf(" ") !== -1 ? /\s(.+)/.exec(checkSpace3)[1] : checkSpace3
+
+  let removeStick =
+    reverseStrName.indexOf("-") !== -1
+      ? reverseStrName.split("-")[1]
+      : reverseStrName;
+
+  let reverseBackStrName = removeStick.split("").reverse().join("");
+
+  let fixTYPEC1 = reverseBackStrName.replace("USBC", "USB-C");
+  let fixWiFi1 = fixTYPEC1.replace("WiFi", "Wi-Fi")
+
+  return fixWiFi1;
 };
 
 export const returnExtraPriceHi = (name) => {
@@ -37,8 +54,8 @@ export const returnExtraPriceHi = (name) => {
   ) {
     let fixLemonPrice = name.replace("🍏 ", "");
     let fixDoubleCarPrice = fixLemonPrice.replace(" 🏎", "");
-    let fixDoubleSpaceCarPrice = fixDoubleCarPrice.replace("  🏎", "");
-    let fixCarPricePrice = fixDoubleSpaceCarPrice.replace("🏎", "");
+    let fixDoubleSpaceCarPrice = fixDoubleCarPrice.replace(" 🛩", "");
+    let fixCarPricePrice = fixDoubleSpaceCarPrice.replace(" 🚙", "");
     let flagSearch =
       fixCarPricePrice.search("🇪🇺") &
       fixCarPricePrice.search("🇷🇺") &
@@ -105,8 +122,8 @@ export const returnExtraPriceHi = (name) => {
 
     let fixLemon = splitPricesSG.replace("🍏 ", "");
     let fixDoubleCar = fixLemon.replace(" 🏎", "");
-    let fixDoubleSpaceCar = fixDoubleCar.replace("  🏎", "");
-    let fixCarPrice = fixDoubleSpaceCar.replace("🏎", "");
+    let fixDoubleSpaceCar = fixDoubleCar.replace(" 🛩", "");
+    let fixCarPrice = fixDoubleSpaceCar.replace(" 🚙", "");
     let fixAirPods = fixCarPrice.replace("🎧", "");
     let fixMacbook = fixAirPods.replace("💻", "");
     let fixAppleName = fixMacbook.replace("Apple", "");
@@ -115,8 +132,8 @@ export const returnExtraPriceHi = (name) => {
   } else {
     let fixLemonPrice = name.replace("🍏 ", "");
     let fixDoubleCarPrice = fixLemonPrice.replace(" 🏎", "");
-    let fixDoubleSpaceCarPrice = fixDoubleCarPrice.replace("  🏎", "");
-    let fixCarPricePrice = fixDoubleSpaceCarPrice.replace("🏎", "");
+    let fixDoubleSpaceCarPrice = fixDoubleCarPrice.replace(" 🛩", "");
+    let fixCarPricePrice = fixDoubleSpaceCarPrice.replace(" 🚙", "");
 
     let reverseStr = fixCarPricePrice.split("").reverse().join("");
     let removeSpace1 = reverseStr[0] === " " ? reverseStr.slice(1) : reverseStr;
@@ -131,8 +148,8 @@ export const returnExtraPriceHi = (name) => {
 
     let fixLemon = name.replace("🍏 ", "");
     let fixDoubleCar = fixLemon.replace(" 🏎", "");
-    let fixDoubleSpaceCar = fixDoubleCar.replace("  🏎", "");
-    let fixCarPrice = fixDoubleSpaceCar.replace("🏎", "");
+    let fixDoubleSpaceCar = fixDoubleCar.replace(" 🛩", "");
+    let fixCarPrice = fixDoubleSpaceCar.replace(" 🚙", "");
     let fixAirPods = fixCarPrice.replace("🎧", "");
     let fixMacbook = fixAirPods.replace("💻", "");
 
@@ -147,7 +164,10 @@ export const returnExtraPriceHi = (name) => {
       removeSpaceName2[0] === " "
         ? removeSpaceName2.slice(1)
         : removeSpaceName2;
-    let splitPriceEU = /\s(.+)/.exec(removeSpaceName3)[1];
+    let splitPriceEU =
+      removeSpaceName3.indexOf(" ") != -1
+        ? /\s(.+)/.exec(removeSpaceName3)[1]
+        : removeSpaceName3;
     let reverseBackStrName = splitPriceEU.split("").reverse().join("");
 
     return newPrice(reverseBackStrName, fixCar);
@@ -155,8 +175,12 @@ export const returnExtraPriceHi = (name) => {
 };
 
 export const returnStockPriceHi = (name) => {
+  const removeDoubleSpace = name.replace(/\s+/g, " ");
+  let replaceCar = removeDoubleSpace.replace(" 🏎️", "");
+  let fixZero = replaceCar.replace("🛩️", "");
 
-  let reverseStrName = name.split("").reverse().join("");
+
+  let reverseStrName = fixZero.split("").reverse().join("");
   let checkSpace =
     reverseStrName[0] === " "
       ? reverseStrName.replace(" ", "")
@@ -168,16 +192,29 @@ export const returnStockPriceHi = (name) => {
   let checkSpace3 =
     checkSpace1[0] === " " ? checkSpace2.replace(" ", "") : checkSpace2;
   let splitPrice = checkSpace3.split(" ")[0];
-  let reverseBackStrName = splitPrice.split("").reverse().join("");
+  const removeDoubleSpace2 = splitPrice.replace(" ", "");
 
-  return reverseBackStrName;
+  let slicePrice =
+    reverseStrName.indexOf("-") !== -1
+      ? reverseStrName.split("-")[0]
+      : reverseStrName;
+
+  let reverseBackStrName = slicePrice.split("").reverse().join("");
+  let w = reverseBackStrName.replace(" ", "");
+  let s = w.replace(" ", "");
+
+  let removeStick = s.replace("-", "")
+  
+  let fixZero1 = removeStick.replace("50600️", "50600");
+
+  return fixZero1.replace(" ", "");
 };
+
 
 export const fixNameHi = (name) => {
   // const toLowercase = name.toLowerCase();
   const removeDoubleSpace = name.replace(/\s+/g, " ");
-  let fixZero = removeDoubleSpace.replace("0️", "0");
-  let fixCar = fixZero.replace("🛩", "");
+  let fixCar = removeDoubleSpace.replace("🛩", "");
   let fixCar1 = fixCar.replace("🏎", "");
   let fixCar2 = fixCar1.replace("🚙", "");
   let fixCar3 = fixCar2.replace("🚕", "");
@@ -185,11 +222,15 @@ export const fixNameHi = (name) => {
   let fixCar5 = fixCar4.replace("🚗", "");
   let fixCar6 = fixCar5.replace("🚘", "");
   let fixCar7 = fixCar6.replace("🚖", "");
+  
+  let fixCar8 = fixCar7.replace("🛩️", "");
+  
+  let fixZero = fixCar8.replace("0️", "0");
   // let fixCar8 = fixCar7.replace("🏎️", "");
   
   
 
-  const fixPlus = fixCar7.replace("S24 +", "S24+");
+  const fixPlus = fixZero.replace("S24 +", "S24+");
   const fixMarbleGray = fixPlus.replace(
     "S24 8/128 Gray",
     "S24 8/128 Marble Gray"

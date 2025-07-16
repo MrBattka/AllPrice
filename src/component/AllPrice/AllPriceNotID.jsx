@@ -176,6 +176,7 @@ import {
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
 import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
+import { returnFixPriceHi } from "../../helpers/fixFlags";
 
 const AllPriceNotID = ({
   dataSuperprice,
@@ -299,7 +300,7 @@ const AllPriceNotID = ({
         returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
         allPriceArr.push({
           id: returnIDSamsung(fixNameHi(hi.name)),
-          name: returnNameInArrHi(fixNameHi(hi.name)),
+          name: returnFixPriceHi(hi, returnNameInArrHi(fixNameHi(hi.name))),
           stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",
         })

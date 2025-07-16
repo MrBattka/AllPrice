@@ -15,6 +15,7 @@ import { returnSamsungHi } from "./Samsung/samsung";
 import style from "../styles.module.css";
 import { returnXiaomiHi } from "./Xiaomi/xiaomi";
 import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
+import { returnFixPriceHi } from "../../helpers/fixFlags";
 
 const IndexHi = ({ el, hi }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +42,7 @@ const IndexHi = ({ el, hi }) => {
         resultArr.push({
           id: returnIDSamsung(fixNameHi(hi.name)) |
           returnIDSamsung2(fixNameHi(hi.name)),
-          name: returnNameInArrHi(fixNameHi(hi.name)),
+          name: returnFixPriceHi(hi, returnNameInArrHi(fixNameHi(hi.name))),
           stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",
         })

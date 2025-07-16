@@ -178,6 +178,7 @@ import {
   returnStockPriceTrub,
 } from "../Trub/helpers/helpers";
 import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
+import { returnFixPriceHi } from "../../helpers/fixFlags";
 
 const AllPriceQuickID = ({
   dataSuperprice,
@@ -301,7 +302,7 @@ const AllPriceQuickID = ({
         returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
         resultArrQuickID.push({
           id: returnQuickID(fixNameHi(hi.name)),
-          name: returnNameInArrHi(fixNameHi(hi.name)),
+          name: returnFixPriceHi(returnNameInArrHi(fixNameHi(hi.name))),
           stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",
         })
