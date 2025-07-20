@@ -300,7 +300,7 @@ const AllPriceWithID = ({
         returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
         allPriceArr.push({
           id: returnIDSamsung(fixNameHi(hi.name)),
-          name: returnFixPriceHi(returnNameInArrHi(fixNameHi(hi.name))),
+          name: returnFixPriceHi(hi, returnNameInArrHi(fixNameHi(hi.name))),
           stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",
         })

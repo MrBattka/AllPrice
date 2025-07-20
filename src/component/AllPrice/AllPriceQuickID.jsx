@@ -302,7 +302,7 @@ const AllPriceQuickID = ({
         returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
         resultArrQuickID.push({
           id: returnQuickID(fixNameHi(hi.name)),
-          name: returnFixPriceHi(returnNameInArrHi(fixNameHi(hi.name))),
+          name: returnFixPriceHi(hi, returnNameInArrHi(fixNameHi(hi.name))),
           stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
           provider: "Hi",
         })

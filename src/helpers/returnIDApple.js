@@ -688,10 +688,12 @@ export const returnIDApple = (name) => {
     // pencil
   } else if (
     name.indexOf("pencil type") !== -1 ||
-    name.indexOf("pencil usb") !== -1
+    name.indexOf("pencil usb") !== -1 ||
+    name.indexOf("pencil 1 usb") !== -1
   ) {
     return 36571;
-  } else if (name.indexOf("pencil 1") !== -1) {
+  } else if (name.indexOf("pencil 1 Lightning") !== -1 ||
+name.indexOf("pencil Lightning") !== -1) {
     return 2072;
   } else if (name.indexOf("pencil 2") !== -1) {
     return 11873;
