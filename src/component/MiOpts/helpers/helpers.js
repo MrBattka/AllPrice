@@ -50,10 +50,11 @@ export const returnStockPriceMiOpts = (name) => {
     reverseStrName.indexOf("₽") != -1
       ? reverseStrName.split("₽", 2)
       : reverseStrName;
+      
   let slicePrice =
     sliceFlags[1].indexOf("-") != -1 && sliceFlags[1].indexOf("Wi-Fi") == -1
       ? sliceFlags[1].split("-", 2)
-      : sliceFlags[1];
+      : sliceFlags[1].split(" ", 2);
   let reverseBackStrName = slicePrice[0].split("").reverse().join("");
   let extraPrice = Number(reverseBackStrName) + 400;
 

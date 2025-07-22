@@ -36,7 +36,8 @@ export const returnExtraPriceMihonor = (name) => {
 };
 
 export const returnStockPriceMihonor = (name) => {
-  let reverseStrName = name.split("").reverse().join("");
+  let checkNumber = name.indexOf("₽ 2") !== -1 ? name.replace("₽ 2", "₽") : name
+  let reverseStrName = checkNumber.split("").reverse().join("");
   let removeSpaceName =
     reverseStrName[0] !== "₽" ? reverseStrName.slice(1) : reverseStrName;
   let removeRUB =

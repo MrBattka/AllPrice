@@ -193,6 +193,18 @@ export const returnIDOtherBrand2 = (name) => {
     return 38990;
 
     // Nintendo
+  } else if (
+    name.indexOf("nintendo switch 2 + mario kart world 256 black") !== -1 &&
+    name.indexOf("mario") !== -1 &&
+    name.indexOf("256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39887;
+  } else if (
+    name.indexOf("nintendo switch 2 256 black") !== -1 &&
+    name.indexOf("mario") === -1
+  ) {
+    return 39886;
   } else if (name.indexOf("switch oled neon") !== -1) {
     return 27654;
   } else if (
@@ -808,6 +820,111 @@ export const returnIDOtherBrand2 = (name) => {
     return 28471;
 
     // ZTE
+  } else if (
+    (name.indexOf("red magic 10s pro") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("dusk") !== -1
+  ) {
+    return 40173;
+  } else if (
+    (name.indexOf("red magic 10s pro") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("moonlight") !== -1
+  ) {
+    return 39827;
+  } else if (
+    (name.indexOf("red magic 10s pro") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("nightfall") !== -1
+  ) {
+    return 39809;
+  } else if (
+    (name.indexOf("red magic 10s pro") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("dusk") !== -1
+  ) {
+    return 39831;
+  } else if (
+    (name.indexOf("red magic 10s pro") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("moonlight") !== -1
+  ) {
+    return 39836;
+  } else if (
+    (name.indexOf("red magic 10s pro") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("nightfall") !== -1
+  ) {
+    return 39830;
+  } else if (
+    (name.indexOf("red magic 10s pro") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("24/1tb") !== -1 &&
+    name.indexOf("dusk") !== -1
+  ) {
+    return 39832;
+  } else if (
+    (name.indexOf("red magic 10s pro") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("24/1tb") !== -1 &&
+    name.indexOf("moonlight") !== -1
+  ) {
+    return 39837;
+  } else if (
+    (name.indexOf("red magic 10s pro") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("24/1tb") !== -1 &&
+    name.indexOf("nightfall") !== -1
+  ) {
+    return 39834;
+  } else if (
+    (name.indexOf("red magic 10 air") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39812;
+  } else if (
+    (name.indexOf("red magic 10 air") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("orange") !== -1
+  ) {
+    return 39816;
+  } else if (
+    (name.indexOf("red magic 10 air") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 39815;
+  } else if (
+    (name.indexOf("red magic 10 air") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39822;
+  } else if (
+    (name.indexOf("red magic 10 air") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("orange") !== -1
+  ) {
+    return 39817;
+  } else if (
+    (name.indexOf("red magic 10 air") !== -1 ||
+      name.indexOf("redmagic 10s pro") !== -1) &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 39823;
   } else if (
     name.indexOf("nubia z70s ultra") != -1 &&
     name.indexOf("12/256") != -1 &&
@@ -2136,6 +2253,174 @@ export const returnIDOtherBrand2 = (name) => {
     return 19639;
 
     //  Honor
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40102;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40101;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40037;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40109;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40103;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40100;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40095;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40108;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40105;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40098;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40097;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40106;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("8/512") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40104;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("8/512") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40099;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("8/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40096;
+  } else if (
+    name.indexOf("honor 400") !== -1 &&
+    name.indexOf("8/512") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40107;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("brown") !== -1
+  ) {
+    return 40121;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40039;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40116;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40115;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40112;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40118;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40113;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("brown") !== -1
+  ) {
+    return 40119;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40111;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40117;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40114;
+  } else if (
+    name.indexOf("honor magic v5") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("brown") !== -1
+  ) {
+    return 40120;
   } else if (
     name.indexOf("honor 200") != -1 &&
     name.indexOf("12/256") != -1 &&
@@ -3600,6 +3885,513 @@ export const returnIDOtherBrand2 = (name) => {
   ) {
     return 24581;
     // Huawei
+  } else if (
+    name.indexOf("huawei nova 14") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("ultra") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40035;
+  } else if (
+    name.indexOf("huawei nova 14") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("ultra") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40092;
+  } else if (
+    name.indexOf("huawei nova 14") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("ultra") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40091;
+  } else if (
+    name.indexOf("huawei nova 14") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("ultra") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40089;
+  } else if (
+    name.indexOf("huawei nova 14") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("ultra") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40093;
+  } else if (
+    name.indexOf("huawei nova 14") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("ultra") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40090;
+  } else if (
+    name.indexOf("huawei nova 14 pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40033;
+  } else if (
+    name.indexOf("huawei nova 14 pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40087;
+  } else if (
+    name.indexOf("huawei nova 14 pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40084;
+  } else if (
+    name.indexOf("huawei nova 14 pro") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40083;
+  } else if (
+    name.indexOf("huawei nova 14 pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40081;
+  } else if (
+    name.indexOf("huawei nova 14 pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40086;
+  } else if (
+    name.indexOf("huawei nova 14 pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40085;
+  } else if (
+    name.indexOf("huawei nova 14 pro") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40082;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40070;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40077;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40076;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40071;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40030;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40079;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40074;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40073;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40069;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40078;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40075;
+  } else if (
+    name.indexOf("huawei nova 14 ultra") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40072;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39987;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40006;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 40016;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 39988;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39863;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 39998;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 40018;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 39994;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39985;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40005;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 40017;
+  } else if (
+    name.indexOf("huawei pura 80") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 39992;
+  } else if (
+    name.indexOf("huawei pura 80 pro") !== -1 &&
+    (name.indexOf("+") === -1 || name.indexOf("plus") === -1) &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39945;
+  } else if (
+    name.indexOf("huawei pura 80 pro") !== -1 &&
+    (name.indexOf("+") === -1 || name.indexOf("plus") === -1) &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 39974;
+  } else if (
+    name.indexOf("huawei pura 80 pro") !== -1 &&
+    (name.indexOf("+") === -1 || name.indexOf("plus") === -1) &&
+    name.indexOf("12/1tb") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 39964;
+  } else if (
+    name.indexOf("huawei pura 80 pro") !== -1 &&
+    (name.indexOf("+") === -1 || name.indexOf("plus") === -1) &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39870;
+  } else if (
+    name.indexOf("huawei pura 80 pro") !== -1 &&
+    (name.indexOf("+") === -1 || name.indexOf("plus") === -1) &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 39972;
+  } else if (
+    name.indexOf("huawei pura 80 pro") !== -1 &&
+    (name.indexOf("+") === -1 || name.indexOf("plus") === -1) &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 39968;
+  } else if (
+    name.indexOf("huawei pura 80 pro") !== -1 &&
+    (name.indexOf("+") === -1 || name.indexOf("plus") === -1) &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39939;
+  } else if (
+    name.indexOf("huawei pura 80 pro") !== -1 &&
+    (name.indexOf("+") === -1 || name.indexOf("plus") === -1) &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 39973;
+  } else if (
+    name.indexOf("huawei pura 80 pro") !== -1 &&
+    (name.indexOf("+") === -1 || name.indexOf("plus") === -1) &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 39967;
+  } else if (
+    name.indexOf("huawei pura 80 pro +") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39861;
+  } else if (
+    name.indexOf("huawei pura 80 pro +") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 39934;
+  } else if (
+    name.indexOf("huawei pura 80 pro +") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("red") !== -1
+  ) {
+    return 39933;
+  } else if (
+    name.indexOf("huawei pura 80 pro +") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 39930;
+  } else if (
+    name.indexOf("huawei pura 80 pro +") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39937;
+  } else if (
+    name.indexOf("huawei pura 80 pro +") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 39935;
+  } else if (
+    name.indexOf("huawei pura 80 pro +") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("red") !== -1
+  ) {
+    return 39932;
+  } else if (
+    name.indexOf("huawei pura 80 pro +") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 39931;
+  } else if (
+    name.indexOf("huawei pura 80 ultra") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39859;
+  } else if (
+    name.indexOf("huawei pura 80 ultra") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 39865;
+  } else if (
+    name.indexOf("huawei pura 80 ultra") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39868;
+  } else if (
+    name.indexOf("huawei pura 80 ultra") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 39866;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 39872;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 40061;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 40052;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("red") !== -1
+  ) {
+    return 40051;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40062;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40045;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 40060;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 40053;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("red") !== -1
+  ) {
+    return 40050;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40063;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40047;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 40059;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 40058;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("reb") !== -1
+  ) {
+    return 40048;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40065;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40046;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 40057;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 40055;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("red") !== -1
+  ) {
+    return 40049;
+  } else if (
+    name.indexOf("huawei pura x") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40064;
   } else if (
     name.indexOf("mate x6") != -1 &&
     name.indexOf("12/256") != -1 &&

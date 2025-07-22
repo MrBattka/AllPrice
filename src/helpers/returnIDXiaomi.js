@@ -3815,6 +3815,230 @@ export const returnIDXiaomi = (name) => {
     return 39801;
   } else if (name.indexOf("mi redmi pad 2 8/256 mint green") != -1) {
     return 39795;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40133;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("graphite") !== -1
+  ) {
+    return 40041;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 40128;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40127;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40132;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("graphite") !== -1
+  ) {
+    return 40123;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 40129;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40126;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("gold") !== -1
+  ) {
+    return 40131;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("graphite") !== -1
+  ) {
+    return 40124;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("green") !== -1
+  ) {
+    return 40130;
+  } else if (
+    name.indexOf("mi mix flip 2 ") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40125;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 40169;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40151;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40159;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40162;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 40168;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40153;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40158;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40163;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 40166;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40155;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40156;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40165;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 40167;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40154;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40157;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40164;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("gray") !== -1
+  ) {
+    return 40170;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40145;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("purple") !== -1
+  ) {
+    return 40160;
+  } else if (
+    name.indexOf("mi pad 7s pro 12.5") !== -1 &&
+    name.indexOf("8/256") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40161;
+  } else if (
+    name.indexOf("poco f7") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("ultra") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40148;
+  } else if (
+    name.indexOf("poco f7") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("ultra") === -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40176;
+  } else if (
+    name.indexOf("poco f7") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("ultra") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40174;
+  } else if (
+    name.indexOf("poco f7") !== -1 &&
+    name.indexOf("pro") === -1 &&
+    name.indexOf("ultra") === -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("silver") !== -1
+  ) {
+    return 40175;
   } else {
     return returnIDGarmin(name) || "No match";
   }
