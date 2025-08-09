@@ -34,78 +34,80 @@ export const returnIDApple = (name) => {
   } else if (name.indexOf("airpods 4") !== -1) {
     return 36586;
   } else if (
-    name.indexOf("airpods max 2024 blue") !== -1 ||
-    name.indexOf("airpods max 2 blue") !== -1 ||
-    name.indexOf("airpods max usb-c blue") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("blue") !== -1
   ) {
     return 36593;
   } else if (
-    name.indexOf("airpods max 2024 green") !== -1 ||
-    name.indexOf("airpods max 2 green") !== -1 ||
-    name.indexOf("airpods max usb-c green") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("green") !== -1
   ) {
     return 36588;
   } else if (
-    name.indexOf("airpods max 2024 midnight") !== -1 ||
-    name.indexOf("airpods max 2 midnight") !== -1 ||
-    name.indexOf("airpods max midnight") !== -1 ||
-    name.indexOf("airpods max usb-c midnight") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("midnight") !== -1
   ) {
     return 36595;
   } else if (
-    name.indexOf("airpods max 2024 black") !== -1 ||
-    name.indexOf("airpods max 2 black") !== -1 ||
-    name.indexOf("airpods max usb-c black") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("starlight") !== -1
   ) {
     return 36596;
   } else if (
-    name.indexOf("airpods max 2024 orange") !== -1 ||
-    name.indexOf("airpods max 2 orange") !== -1 ||
-    name.indexOf("airpods max orange") !== -1 ||
-    name.indexOf("airpods max usb-c orange") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("orange") !== -1
   ) {
     return 36597;
   } else if (
-    name.indexOf("airpods max 2024 pink") !== -1 ||
-    name.indexOf("airpods max 2 pink") !== -1 ||
-    name.indexOf("airpods max usb-c pink") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("pink") !== -1
   ) {
     return 36589;
   } else if (
-    name.indexOf("airpods max 2024 purple") !== -1 ||
-    name.indexOf("airpods max 2 purple") !== -1 ||
-    name.indexOf("airpods max usb-c purple") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("purple") !== -1
   ) {
     return 36594;
   } else if (
-    name.indexOf("airpods max 2024 silver") !== -1 ||
-    name.indexOf("airpods max 2 silver") !== -1 ||
-    name.indexOf("airpods max usb-c silver") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("silver") !== -1
   ) {
     return 36590;
   } else if (
-    name.indexOf("airpods max 2024 sky blue") !== -1 ||
-    name.indexOf("airpods max 2 sky blue") !== -1 ||
-    name.indexOf("airpods max usb-c sky blue") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("sky blue") !== -1
   ) {
     return 36591;
   } else if (
-    name.indexOf("airpods max 2024 starlight") !== -1 ||
-    name.indexOf("airpods max 2 starlight") !== -1 ||
-    name.indexOf("airpods max starlight") !== -1 ||
-    name.indexOf("airpods max usb-c starlight") !== -1
-  ) {
-    return 36596;
-  } else if (
-    name.indexOf("airpods max 2024 white") !== -1 ||
-    name.indexOf("airpods max 2 white") !== -1 ||
-    name.indexOf("airpods max usb-c white") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("white") !== -1
   ) {
     return 36597;
   } else if (
-    name.indexOf("airpods max 2024 space gray") !== -1 ||
-    name.indexOf("airpods max 2 space gray") !== -1 ||
-    name.indexOf("airpods max usb-c space gray") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+  name.indexOf("2") !== -1) &&
+    name.indexOf("blue") !== -1
   ) {
     return 36592;
   } else if (

@@ -6,8 +6,9 @@ export const returnFixNameBoltun = (name) => {
   const replaceSpaceGray = replaceSpaceBlack.replace("Space Gray", "Gray");
   const replaceNanoSim = replaceSpaceGray.replace("nano SIM + eSIM ", "");
   const fixNatural = replaceNanoSim.replace("Narural", "Natural");
+  const fixSony = fixNatural.replace("Sony Xperia", "Dual 🇭🇰 Sony Xperia");
    
   
 
-  return fixNatural;
+  return fixSony;
 };

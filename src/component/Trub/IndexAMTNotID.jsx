@@ -6,29 +6,27 @@ import { fixNameTrub, returnNameInArrTrub, returnStockPriceTrub } from "./helper
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
-const IndexTrubNotID = ({ el, trubData }) => {
+const IndexAMTNotID = ({ el, AMTData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
-    trubData.map((trub) => {
+    AMTData.map((amt) => {
       if (
-        trub.name &&
-        typeof trub.name === "string" &&
-        baseFixTrub(trub) &&
+        amt.name &&
+        typeof amt.name === "string" &&
+        baseFixTrub(amt) &&
         isOpen &&
-        returnStockPriceTrub(fixNameTrub(trub.name)).indexOf("0") != -1
+        returnStockPriceTrub(fixNameTrub(amt.name)).indexOf("0") != -1
       )
        {
         return (
-          (returnIDSamsung(fixNameTrub(trub.name)) === 'No match' ||
-        returnIDSamsung2(fixNameTrub(trub.name)) === 'No match') &&
-          returnStockPriceTrub(trub.name) &&
+          returnIDSamsung(fixNameTrub(amt.name)) === 'No match'  &&
+          returnStockPriceTrub(amt.name) &&
           resultArr.push({
-            id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(trub.name))) |
-            returnIDSamsung2(returnNameInArrTrub(fixNameTrub(trub.name))),
-            name: returnNameInArrTrub(fixNameTrub(trub.name)),
-            stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
-            provider: "Трубный",
+            id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(amt.name))),
+            name: returnNameInArrTrub(fixNameTrub(amt.name)),
+            stockPrice: returnStockPriceTrub(fixNameTrub(amt.name)),
+            provider: "AMT",
           })
         );
       }
@@ -39,7 +37,7 @@ const IndexTrubNotID = ({ el, trubData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Трубный Not ID ▲" : "Трубный Not ID ▼"}
+            {isOpen ? "AMT Not ID ▲" : "AMT Not ID ▼"}
           </span>
         )}
       </div>
@@ -53,4 +51,4 @@ const IndexTrubNotID = ({ el, trubData }) => {
   );
 };
 
-export default IndexTrubNotID;
+export default IndexAMTNotID;

@@ -1579,6 +1579,78 @@ export const returnIDGarmin = (nameStock) => {
     return 20441;
   } else if (name.indexOf("garmin vivosmart 4 black") !== -1) {
     return 14449;
+  } else if (
+    (name.indexOf("forerunner 570") != -1 &&
+      name.indexOf("42") != -1 &&
+      name.indexOf("mango") != -1) ||
+    name.indexOf("010-02970-42") != -1
+  ) {
+    return 40250;
+  } else if (
+    (name.indexOf("forerunner 570") != -1 &&
+      name.indexOf("42") != -1 &&
+      name.indexOf("slate gray") != -1 &&
+      name.indexOf("translucent") != -1 &&
+      name.indexOf("black/black band") != -1) ||
+    name.indexOf("010-02970-40") != -1
+  ) {
+    return 40248;
+  } else if (
+    (name.indexOf("forerunner 570") != -1 &&
+      name.indexOf("42") != -1 &&
+      name.indexOf("white") != -1) ||
+    name.indexOf("010-02970-41") != -1
+  ) {
+    return 40249;
+  } else if (
+    (name.indexOf("forerunner 570") != -1 &&
+      name.indexOf("47") != -1 &&
+      name.indexOf("amp yellow") != -1 &&
+      name.indexOf("translucent") != -1 &&
+      name.indexOf("whitestone/turquoise band") != -1) ||
+    name.indexOf("010-02971-41") != -1
+  ) {
+    return 40246;
+  } else if (
+    (name.indexOf("forerunner 570") != -1 &&
+      name.indexOf("47") != -1 &&
+      name.indexOf("indigo") != -1 &&
+      name.indexOf("translucent") != -1 &&
+      name.indexOf("imperial purple/indigo band") != -1) ||
+    name.indexOf("010-02971-02") != -1
+  ) {
+    return 40247;
+  } else if (
+    (name.indexOf("forerunner 570") != -1 &&
+      name.indexOf("47") != -1 &&
+      name.indexOf("slate gray") != -1 &&
+      name.indexOf("translucent") != -1 &&
+      name.indexOf("black/black band") != -1) ||
+    name.indexOf("010-02971-00") != -1
+  ) {
+    return 40244;
+  } else if (
+    (name.indexOf("forerunner 970") != -1 &&
+      name.indexOf("carbon gray") != -1 &&
+      name.indexOf("black case") != -1 &&
+      name.indexOf("whitestone band") != -1) ||
+    name.indexOf("010-02969-10") != -1
+  ) {
+    return 40243;
+  } else if (
+    (name.indexOf("forerunner 970") != -1 &&
+      name.indexOf("soft gold violet") != -1) ||
+    name.indexOf("010-02969-12") != -1
+  ) {
+    return 40240;
+  } else if (
+    (name.indexOf("forerunner 970") != -1 &&
+      name.indexOf("titanium") != -1 &&
+      name.indexOf("whitestone case") != -1 &&
+      name.indexOf("amp yellow band") != -1) ||
+    name.indexOf("010-02969-61") != -1
+  ) {
+    return 40242;
   } else {
     return returnIDGarmin2(name) || "No match";
   }

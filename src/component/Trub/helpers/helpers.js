@@ -28,11 +28,14 @@ export const fixNameTrub = (name) => {
   const fixS22Plus = fixS23Plus.replace("S22 Plus", "S22+");
   const fixS21Plus = fixS22Plus.replace("S21 Plus", "S21+");
   const fixS20Plus = fixS21Plus.replace("S20 Plus", "S20+");
-  const replaceWhite = fixS20Plus.replace("Белый", "");
+  const fix1tb = fixS20Plus.replace("1 tb", "1tb");
+  const replaceWhite = fix1tb.replace("Белый", "");
   const fixGreen = replaceWhite.replace("Зеленый", "Green");
   const fixYellow = fixGreen.replace("Желтый", "Yellow");
   const fixPurple = fixYellow.replace("Фиолетовый", "Purple");
-  const fixBlueRu1 = fixPurple.replace("Синий", "Blue");
+  const fixPoco = fixPurple.replace("PocoPhone", "Poco");
+  const fixPocoPad = fixPoco.replace("PocoPad", "Poco Pad");
+  const fixBlueRu1 = fixPocoPad.replace("Синий", "Blue");
   const fixCoral = fixBlueRu1.replace("Coral", "Red");
   const fixSilverRu = fixCoral.replace("Серебро", "Silver");
   const fixGraphiteRu =
@@ -206,8 +209,9 @@ export const returnStockPriceTrub = (name) => {
   let reverseStrName = removeOther.split("").reverse().join("");
 
   let replaceSilverblue = reverseStrName.replace("Silverblue", "")
+  let replaceDot = replaceSilverblue.replace(".", "")
 
-  return replaceSilverblue;
+  return replaceDot;
 };
 
 export const returnExtraPriceS5 = (name) => {

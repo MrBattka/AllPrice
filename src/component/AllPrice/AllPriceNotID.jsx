@@ -31,6 +31,7 @@ import {
   baseFixTrub,
   baseFixVsemi,
 } from "../../helpers/baseFix";
+import { returnFixPriceHi } from "../../helpers/fixFlags";
 import { returnFixPrice } from "../../helpers/fixPrice";
 import { newPrice } from "../../helpers/NewPrice";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
@@ -51,6 +52,7 @@ import {
   returnNameInArrBigAp,
   returnStockPriceBigAp,
 } from "../BigAp/helpers/helpers";
+import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
 import TableAllPrice from "../CreateAllPriceTable/TableAllPrice";
 import {
@@ -175,8 +177,6 @@ import {
   returnNameInArrVseMi,
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
-import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
-import { returnFixPriceHi } from "../../helpers/fixFlags";
 
 const AllPriceNotID = ({
   dataSuperprice,
@@ -208,7 +208,7 @@ const AllPriceNotID = ({
   bigApData,
   rootOptData,
   a18Data,
-  trubData,
+  AMTData,
   boltunData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -882,22 +882,22 @@ const AllPriceNotID = ({
     }
   });
 
-  trubData.map((trub) => {
+  AMTData.map((amt) => {
     if (
-      trub.name &&
-      typeof trub.name === "string" &&
-      baseFixTrub(trub) &&
+      amt.name &&
+      typeof amt.name === "string" &&
+      baseFixTrub(amt) &&
       isOpen &&
-      returnStockPriceTrub(fixNameTrub(trub.name)).indexOf("0") != -1
+      returnStockPriceTrub(fixNameTrub(amt.name)).indexOf("0") != -1
     ) {
       return (
-        returnIDSamsung(fixNameTrub(trub.name)) === "No match" &&
-        returnStockPriceTrub(trub.name) &&
+        returnIDSamsung(fixNameTrub(amt.name)) === "No match" &&
+        returnStockPriceTrub(amt.name) &&
         allPriceArr.push({
-          id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(trub.name))),
-          name: returnNameInArrTrub(fixNameTrub(trub.name)),
-          stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
-          provider: " Трубный",
+          id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(amt.name))),
+          name: returnNameInArrTrub(fixNameTrub(amt.name)),
+          stockPrice: returnStockPriceTrub(fixNameTrub(amt.name)),
+          provider: "AMT",
         })
       );
     }

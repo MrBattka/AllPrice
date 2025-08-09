@@ -210,7 +210,7 @@ const AllPriceQuickID = ({
   bigApData,
   rootOptData,
   a18Data,
-  trubData,
+  AMTData,
   boltunData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -857,22 +857,22 @@ const AllPriceQuickID = ({
     }
   });
 
-  trubData.map((trub) => {
+  AMTData.map((amt) => {
     if (
-      trub.name &&
-      typeof trub.name === "string" &&
-      baseFixTrub(trub) &&
+      amt.name &&
+      typeof amt.name === "string" &&
+      baseFixTrub(amt) &&
       isOpen &&
-      returnStockPriceTrub(fixNameTrub(trub.name)).indexOf("0") != -1
+      returnStockPriceTrub(fixNameTrub(amt.name)).indexOf("0") != -1
     ) {
       return (
-        returnQuickID(fixNameTrub(trub.name)) !== "No match" &&
-        returnStockPriceTrub(trub.name) &&
+        returnQuickID(fixNameTrub(amt.name)) !== "No match" &&
+        returnStockPriceTrub(amt.name) &&
         resultArrQuickID.push({
-          id: returnQuickID(returnNameInArrTrub(fixNameTrub(trub.name))),
-          name: returnNameInArrTrub(fixNameTrub(trub.name)),
-          stockPrice: returnStockPriceTrub(fixNameTrub(trub.name)),
-          provider: "Трубный",
+          id: returnQuickID(returnNameInArrTrub(fixNameTrub(amt.name))),
+          name: returnNameInArrTrub(fixNameTrub(amt.name)),
+          stockPrice: returnStockPriceTrub(fixNameTrub(amt.name)),
+          provider: "AMT",
         })
       );
     }

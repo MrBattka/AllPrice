@@ -61,13 +61,13 @@ import IndexVseMiNotID from "./VseMi/indexVseMiNotID";
 import AllPriceQuickID from "./AllPrice/AllPriceQuickID";
 import IndexA18 from "./A18/IndexA18";
 import IndexA18NotID from "./A18/IndexA18NotID";
-import IndexTrub from "./Trub/IndexTrub";
-import IndexTrubNotID from "./Trub/IndexTrubNotID";
 import AllPriceNotID from "./AllPrice/AllPriceNotID";
 import IndexBoltun from "./Boltun/IndexBolltun";
 import IndexStore77 from "./Store77/IndexStore77";
 import IndexBoltunNotID from "./Boltun/IndexBoltunNotID";
 import IndexStore77NotID from "./Store77/IndexStore77NotID";
+import IndexAMT from "./Trub/IndexAMT";
+import IndexAMTNotID from "./Trub/IndexAMTNotID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -101,7 +101,7 @@ const IndexAllPrice = () => {
   const [dataBonus, setDataBonus] = useState([]);
   const [dataRootOpt, setDataRootOpt] = useState([]);
   const [dataA18, setDataA18] = useState([]);
-  const [dataTrub, setDataTrub] = useState([]);
+  const [dataAMT, setDataAMT] = useState([]);
   const [dataBoltun, setDataBoltun] = useState([]);
   const [dataStore77, setDataStore77] = useState([]);
 
@@ -134,7 +134,7 @@ const IndexAllPrice = () => {
   const bonus = [];
   const rootOpt = [];
   const a18 = [];
-  const trub = [];
+  const amt = [];
   const boltun = [];
   const store77 = [];
 
@@ -342,8 +342,8 @@ const IndexAllPrice = () => {
     a18El.A18 && a18El.A18.length && a18.push({ name: a18El.A18 });
   });
 
-  dataTrub.map((trubEl) => {
-    trubEl.Trub && trubEl.Trub.length && trub.push({ name: trubEl.Trub });
+  dataAMT.map((AMTEl) => {
+    AMTEl.AMT && AMTEl.AMT.length && amt.push({ name: AMTEl.AMT });
   });
 
   dataBoltun.map((boltunEl) => {
@@ -422,8 +422,8 @@ const IndexAllPrice = () => {
           setDataRootOpt(rowRootOpt);
           const rowA18 = utils.sheet_to_json(wb.Sheets[sheets[28]]);
           setDataA18(rowA18);
-          const rowTrub = utils.sheet_to_json(wb.Sheets[sheets[29]]);
-          setDataTrub(rowTrub);
+          const rowAMT = utils.sheet_to_json(wb.Sheets[sheets[29]]);
+          setDataAMT(rowAMT);
           const rowBoltun = utils.sheet_to_json(wb.Sheets[sheets[30]]);
           setDataBoltun(rowBoltun);
           const rowStore77 = utils.sheet_to_json(wb.Sheets[sheets[31]]);
@@ -463,8 +463,8 @@ const IndexAllPrice = () => {
         </div>
       </div>
       <div className="wrapper_cat">
-        {/* Quick Price */}
-        <AllPriceQuickID
+        {/* Quick Price */}   
+       <AllPriceQuickID
           dataSuperprice={superprice}
           dataVsemi={vsemi}
           dataUnimtrn={dataUNIMTRN}
@@ -494,7 +494,7 @@ const IndexAllPrice = () => {
           bigApData={bigAp}
           rootOptData={rootOpt}
           a18Data={a18}
-          trubData={trub}
+          AMTData={amt}
           boltunData={boltun}
         />
         {/* Сема */}
@@ -589,8 +589,8 @@ const IndexAllPrice = () => {
         <IndexA18 el={dataA18} a18Data={a18} />
         <IndexA18NotID el={dataA18} a18Data={a18} />
         {/* Трубный */}
-        <IndexTrub el={dataTrub} trubData={trub} />
-        <IndexTrubNotID el={dataTrub} trubData={trub} />
+        <IndexAMT el={dataAMT} AMTData={amt} />
+        <IndexAMTNotID el={dataAMT} AMTData={amt} />
         {/* Boltun */}
         <IndexBoltun el={dataBoltun} boltunData={boltun} />
         <IndexBoltunNotID el={dataBoltun} boltunData={boltun} />
@@ -628,7 +628,7 @@ const IndexAllPrice = () => {
           bigApData={bigAp}
           rootOptData={rootOpt}
           a18Data={a18}
-          trubData={trub}
+          AMTData={amt}
           boltunData={boltun}
         />
         <AllPriceNotID
@@ -661,7 +661,7 @@ const IndexAllPrice = () => {
           bigApData={bigAp}
           rootOptData={rootOpt}
           a18Data={a18}
-          trubData={trub}
+          AMTData={amt}
           boltunData={boltun}
         />
         
