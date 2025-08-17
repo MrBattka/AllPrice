@@ -6,20 +6,20 @@ export const returnIDOtherBrand2 = (name) => {
     return 24539;
   } else if (
     name.indexOf("xbox") !== -1 &&
-    name.indexOf(" s") !== -1 &&
+    name.indexOf(" s ") !== -1 &&
     name.indexOf("1tb") === -1
   ) {
     return 24537;
   } else if (
     name.indexOf("xbox") !== -1 &&
-    name.indexOf(" s") !== -1 &&
+    name.indexOf(" s ") !== -1 &&
     name.indexOf("1tb") !== -1 &&
     name.indexOf("black") !== -1
   ) {
     return 38005;
   } else if (
     name.indexOf("xbox") !== -1 &&
-    name.indexOf(" s") !== -1 &&
+    name.indexOf(" s ") !== -1 &&
     name.indexOf("1tb") !== -1 &&
     name.indexOf("black") === -1
   ) {
@@ -87,13 +87,15 @@ export const returnIDOtherBrand2 = (name) => {
 
     //  Steam deck
   } else if (
-    name.indexOf("steam deck oled 512") !== -1 ||
-    name.indexOf("steam deck oled 16/512") !== -1
+    name.indexOf("steam deck") !== -1 &&
+    name.indexOf("oled") !== -1 &&
+    name.indexOf("512") !== -1
   ) {
     return 34401;
   } else if (
-    name.indexOf("steam deck oled 1tb") !== -1 ||
-    name.indexOf("steam deck oled 16/1tb") !== -1
+    name.indexOf("steam deck") !== -1 &&
+    name.indexOf("oled") !== -1 &&
+    name.indexOf("1tb") !== -1
   ) {
     return 34403;
   } else if (name.indexOf("steam deck 16/64") !== -1) {
@@ -194,40 +196,66 @@ export const returnIDOtherBrand2 = (name) => {
 
     // Nintendo
   } else if (
-    name.indexOf("nintendo switch 2 + mario kart world 256 black") !== -1 &&
+    name.indexOf("nintendo switch 2") !== -1 &&
     name.indexOf("mario") !== -1 &&
-    name.indexOf("256") !== -1 &&
-    name.indexOf("black") !== -1
+    name.indexOf("256") !== -1
   ) {
     return 39887;
   } else if (
-    name.indexOf("nintendo switch 2 256 black") !== -1 &&
+    name.indexOf("nintendo switch 2") !== -1 &&
     name.indexOf("mario") === -1
   ) {
     return 39886;
-  } else if (name.indexOf("switch oled neon") !== -1) {
+  } else if ((name.indexOf("nintendo") !== -1 || 
+name.indexOf("switch") !== -1) &&
+name.indexOf("oled") !== -1 &&
+name.indexOf("neon") !== -1) {
     return 27654;
   } else if (
-    name.indexOf("switch oled pokemon") !== -1 ||
-    name.indexOf("switch oled violet") !== -1
+    (name.indexOf("nintendo") !== -1 || 
+name.indexOf("switch") !== -1) &&
+name.indexOf("oled") !== -1 &&
+(name.indexOf("pokemon") !== -1 ||
+name.indexOf("violet") !== -1)
   ) {
     return 27656;
-  } else if (name.indexOf("switch oled splatoon") !== -1) {
+  } else if (
+(name.indexOf("nintendo") !== -1 || 
+name.indexOf("switch") !== -1) &&
+name.indexOf("oled") !== -1 &&
+name.indexOf("splatoon") !== -1) {
     return 27655;
-  } else if (name.indexOf("switch oled white") !== -1) {
+  } else if (
+(name.indexOf("nintendo") !== -1 || 
+name.indexOf("switch") !== -1) &&
+name.indexOf("oled") !== -1 &&
+name.indexOf("white") !== -1) {
     return 20467;
   } else if (
-    name.indexOf("switch lite gray") !== -1 ||
-    name.indexOf("switch lite grey") !== -1
+    name.indexOf("nintendo") !== -1 && 
+name.indexOf("lite") !== -1 &&
+name.indexOf("gray") !== -1
   ) {
     return 17231;
-  } else if (name.indexOf("switch lite yellow") !== -1) {
+  } else if (
+name.indexOf("nintendo") !== -1 && 
+name.indexOf("lite") !== -1 &&
+name.indexOf("yellow") !== -1) {
     return 17232;
-  } else if (name.indexOf("switch lite coral") !== -1) {
+  } else if (
+name.indexOf("nintendo") !== -1 && 
+name.indexOf("lite") !== -1 &&
+name.indexOf("coral") !== -1) {
     return 17228;
-  } else if (name.indexOf("switch lite turquoise") !== -1) {
+  } else if (
+name.indexOf("nintendo") !== -1 && 
+name.indexOf("lite") !== -1 &&
+name.indexOf("turquoise") !== -1) {
     return 17230;
-  } else if (name.indexOf("switch lite zacian") !== -1) {
+  } else if (
+name.indexOf("nintendo") !== -1 && 
+name.indexOf("lite") !== -1 &&
+name.indexOf("zacian") !== -1) {
     return 17229;
   } else if (name.indexOf("switch 32 gray") !== -1) {
     return 17228;
@@ -1035,42 +1063,42 @@ export const returnIDOtherBrand2 = (name) => {
     return 39834;
   } else if (
     (name.indexOf("red magic 10 air") !== -1 ||
-      name.indexOf("redmagic 10s pro") !== -1) &&
+      name.indexOf("redmagic 10 air") !== -1) &&
     name.indexOf("12/256") !== -1 &&
     name.indexOf("black") !== -1
   ) {
     return 39812;
   } else if (
     (name.indexOf("red magic 10 air") !== -1 ||
-      name.indexOf("redmagic 10s pro") !== -1) &&
+      name.indexOf("redmagic 10 air") !== -1) &&
     name.indexOf("12/256") !== -1 &&
     name.indexOf("orange") !== -1
   ) {
     return 39816;
   } else if (
     (name.indexOf("red magic 10 air") !== -1 ||
-      name.indexOf("redmagic 10s pro") !== -1) &&
+      name.indexOf("redmagic 10 air") !== -1) &&
     name.indexOf("12/256") !== -1 &&
     name.indexOf("white") !== -1
   ) {
     return 39815;
   } else if (
     (name.indexOf("red magic 10 air") !== -1 ||
-      name.indexOf("redmagic 10s pro") !== -1) &&
+      name.indexOf("redmagic 10 air") !== -1) &&
     name.indexOf("12/512") !== -1 &&
     name.indexOf("black") !== -1
   ) {
     return 39822;
   } else if (
     (name.indexOf("red magic 10 air") !== -1 ||
-      name.indexOf("redmagic 10s pro") !== -1) &&
+      name.indexOf("redmagic 10 air") !== -1) &&
     name.indexOf("12/512") !== -1 &&
     name.indexOf("orange") !== -1
   ) {
     return 39817;
   } else if (
     (name.indexOf("red magic 10 air") !== -1 ||
-      name.indexOf("redmagic 10s pro") !== -1) &&
+      name.indexOf("redmagic 10 air") !== -1) &&
     name.indexOf("12/512") !== -1 &&
     name.indexOf("white") !== -1
   ) {
@@ -2770,13 +2798,13 @@ export const returnIDOtherBrand2 = (name) => {
   } else if (
     name.indexOf("honor 200 pro") != -1 &&
     name.indexOf("12/512") != -1 &&
-    name.indexOf("black") != -1
+    name.indexOf("green") != -1
   ) {
     return 39049;
   } else if (
     name.indexOf("honor 200 pro") != -1 &&
     name.indexOf("12/512") != -1 &&
-    name.indexOf("black") != -1
+    name.indexOf("white") != -1
   ) {
     return 39050;
   } else if (
@@ -3152,73 +3180,85 @@ export const returnIDOtherBrand2 = (name) => {
   ) {
     return 38747;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("black") != -1
   ) {
     return 38815;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("blue") != -1
   ) {
     return 38818;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("12/256") != -1 &&
     name.indexOf("white") != -1
   ) {
     return 38819;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("black") != -1
   ) {
     return 38823;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("blue") != -1
   ) {
     return 38824;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("12/512") != -1 &&
     name.indexOf("white") != -1
   ) {
     return 38825;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("16/512") != -1 &&
     name.indexOf("black") != -1
   ) {
     return 38838;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("16/512") != -1 &&
     name.indexOf("blue") != -1
   ) {
     return 38839;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("16/512") != -1 &&
     name.indexOf("white") != -1
   ) {
     return 38840;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("16/1tb") != -1 &&
     name.indexOf("black") != -1
   ) {
     return 38832;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("16/1tb") != -1 &&
     name.indexOf("blue") != -1
   ) {
     return 38833;
   } else if (
-    name.indexOf("honor magic 7 pro") != -1 &&
+    name.indexOf("magic 7 pro") != -1 &&
+    name.indexOf("red") === -1 &&
     name.indexOf("16/1tb") != -1 &&
     name.indexOf("white") != -1
   ) {

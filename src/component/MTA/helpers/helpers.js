@@ -5,8 +5,12 @@ export const returnFixNameMTA = (name) => {
   const replaceGb = replaceSmartphone.replace("Gb", "");
   const replaceGB = replaceGb.replace("GB", "");
   const fixS24Plus = replaceGB.replace("S24 +", "S24+");
+  const fixS23FE = fixS24Plus.replace("S23FE", "S23 FE");
+  const fixS24FE = fixS23FE.replace("S24FE", "S24 FE");
+  const fixSGray = fixS24FE.replace("Grey", "Gray");
+  const fixS25FE = fixSGray.replace("S25FE", "S25 FE");
   const replace5G =
-    fixS24Plus.indexOf("SM") !== -1 ? fixS24Plus.replace("5G", "") : fixS24Plus;
+    fixS25FE.indexOf("SM") !== -1 ? fixS25FE.replace("5G", "") : fixS25FE;
   return replace5G;
 };
 
@@ -67,7 +71,9 @@ export const returnStockPriceMTA = (name) => {
   let replaceKZ = replaceCF.replace("🇰🇿", "");
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceZA = replaceKR.replace("🇿🇦", "");
-  let replaceBlue = replaceZA.replace("Blue", "");
+  let replaceHuman = replaceZA.replace("🧟", "");
+  let replaceUEU = replaceHuman.replace("EU", "");
+  let replaceBlue = replaceUEU.replace("Blue", "");
   let replaceNatural = replaceBlue.replace("Natural", "");
   let replacesim = replaceNatural.replace("1Sim+Esim", "");
   let replaceGU = replacesim.replace("🇬🇺", "");

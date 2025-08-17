@@ -4,12 +4,31 @@ export const fixNameLowPrice = (name) => {
   const fixFlip6 = name.replace("Flip6", "Flip 6");
   const fixWiFi = fixFlip6.replace(" Wi ", " Wi-Fi ");
   const fixSE3 = fixWiFi.replace("SE 3", "SE3");
-  const fixGray = fixSE3.replace("Grey", "Gray");
-  const fixWiFi1 = fixGray.replace("WIFI", "Wi-Fi");
+  const fix16ProMax = fixSE3.replace("Prо Maх", "16 Pro Max");
+  const fix16Pro = fix16ProMax.replace("16 Prо", "16 Pro");
+  const fixGray = fix16Pro.replace("Grey", "Gray");
+  const fix1Tb = fixGray.replace("1 Tb", "1Tb");
+  const fixMouse = fix1Tb.replace("Mause", "Mouse");
+  const fixWiFi1 = fixMouse.replace("WIFI", "Wi-Fi");
   const fixWiFi2 = fixWiFi1.replace("WiFi", "Wi-Fi");
   const fixMilanese = fixWiFi2.replace("Milanse", "Milanese");
+  const replace5G =
+    fixMilanese.indexOf("M55 ") !== -1 ||
+    fixMilanese.indexOf("A25 ") !== -1 ||
+    fixMilanese.indexOf("A35 ") !== -1 ||
+    fixMilanese.indexOf("A55 ") !== -1 ||
+    fixMilanese.indexOf("A26 ") !== -1 ||
+    fixMilanese.indexOf("A36 ") !== -1 ||
+    fixMilanese.indexOf("A56 ") !== -1 ||
+    fixMilanese.indexOf("S24 ") !== -1 ||
+    fixMilanese.indexOf("S25 ") !== -1 ||
+    fixMilanese.indexOf("Mi 1") !== -1 ||
+    fixMilanese.indexOf("POCO") !== -1 ||
+    fixMilanese.indexOf("X7 ") !== -1
+      ? fixMilanese.replace("5G", "")
+      : fixMilanese;
 
-  return fixMilanese;
+  return replace5G;
 };
 
 const checkFlags = (str) => {
@@ -107,8 +126,8 @@ export const returnStockPriceLowPrice = (name) => {
   let replaceKW = replaceVN.replace("🇰🇼", "");
   let replaceUS = replaceKW.replace("🇺🇸", "");
   let replaceHK = replaceUS.replace("🇭🇰", "");
-  let replaceGB = replaceHK.replace("🇬🇧", "");
-  let replaceCN = replaceGB.replace("🇨🇳", "");
+  let fixMilanese = replaceHK.replace("🇬🇧", "");
+  let replaceCN = fixMilanese.replace("🇨🇳", "");
   let replaceTW = replaceCN.replace("🇹🇼", "");
   let replaceBU = replaceTW.replace("🇷🇺", "");
   let replaceAU = replaceBU.replace("🇦🇺", "");

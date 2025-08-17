@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { baseFixArti } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
-import { returnCategoryArti } from "./category/Category";
-import { returnFixNameArti, returnNameArti, returnStockPriceArti } from "./helpers/helpers";
 import style from "../styles.module.css";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
+import { returnCategoryArti } from "./category/Category";
+import {
+  returnFixNameArti,
+  returnNameArti,
+  returnStockPriceArti,
+} from "./helpers/helpers";
 
 const IndexArtiNotID = ({ el, artiData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,16 +21,13 @@ const IndexArtiNotID = ({ el, artiData }) => {
       typeof arti.name === "string" &&
       baseFixArti(arti) &&
       isOpen
-    )
-     {
+    ) {
       return (
-        (returnIDSamsung(returnFixNameArti(arti.name)) === 'No match' ||
-      returnIDSamsung2(returnFixNameArti(arti.name)) === 'No match') &&
+        returnIDSamsung(returnFixNameArti(arti.name)) === "No match" &&
         returnStockPriceArti(arti.name) &&
         returnCategoryArti(arti.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameArti(returnFixNameArti(arti.name))) |
-          returnIDSamsung2(returnNameArti(returnFixNameArti(arti.name))),
+          id: returnIDSamsung(returnNameArti(returnFixNameArti(arti.name))),
           name: returnNameArti(returnFixNameArti(arti.name)),
           stockPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
           provider: "Arti",

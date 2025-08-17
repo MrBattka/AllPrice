@@ -16,9 +16,17 @@ export const returnFixNameA18 = (name) => {
   const fixNote14Plus = fixFold.replace("14 Pro+", "14 pro +");
   const fixMi1 = fixNote14Plus.replace("MI1", "Mi 1");
   const fixS10Plus = fixMi1.replace("S10+", "s10 +");
-  const fixLTE = fixS10Plus.replace("LTE", "5G");
-  const fixProPlus = fixLTE.replace("Pro Plus", "Pro +");
-  return fixProPlus;
+  const fixRog = fixS10Plus.replace("Rog ", "Rog Phone ");
+  const fixLTE = fixRog.replace("LTE", "5G");
+  const fixCE4 = fixLTE.replace("CE 4", "CE4");
+  const fixIris = fixCE4.replace("Irbis", "iris");
+  const fixS10Plus1 = fixIris.replace("S10 Plus", "S10 +");
+  const fixS10FEPlus = fixS10Plus1.replace("S10FE Plus", "S10 FE +");
+  const fixProPlus = fixS10FEPlus.replace("Pro Plus", "Pro +");
+  
+  const fixSnow = fixProPlus.indexOf("Pixel") !== -1 ? fixProPlus.replace("White", "Snow") : fixProPlus
+  const fixObsidian = fixSnow.indexOf("Pixel") !== -1 ? fixSnow.replace("Black", "Obsidian") : fixSnow
+  return fixObsidian  ;
 };
 
 export const returnNameInArrA18 = (name) => {

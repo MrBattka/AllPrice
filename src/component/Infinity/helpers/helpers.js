@@ -8,7 +8,9 @@ export const fixNameInfinity = (name) => {
  const replaceGb = replaceGen.replace("Gb ", "")
  const replaceGB = replaceGb.replace("GB ", "")
  const replace2Sim = replaceGB.replace("2sim", "")
-  return replace2Sim;
+ const fix1TB = replace2Sim.replace("1 TB", "1TB")
+ const fixAirPods = fix1TB.replace("Air Pods", "AirPods")
+  return fixAirPods;
 };
 
 const checkFlags = (str) => {

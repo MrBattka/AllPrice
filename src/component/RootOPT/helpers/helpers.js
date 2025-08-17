@@ -21,7 +21,12 @@ export const returnFixNameRootOpt = (name) => {
   const replaceSimbol = replaceWatch7.replace(", ", "");
   const replaceSimbol1 = replaceSimbol.replace("8/256, Gold", "8/256 Gold");
   const replaceS24FE = replaceSimbol1.replace("S24FE", "s24 FE");
-  const replaceS23FE = replaceS24FE.replace("S23FE", "s23 FE");
+  const fix2a = replaceS24FE.replace("2а", "2a");
+  const fix3a = fix2a.replace("3а", "3a");
+  const fixZFlip7 = fix3a.replace("Z Flip7", "Z Flip 7");
+  const fixZFold7 = fixZFlip7.replace("Z Fold7", "Z Fold 7");
+  const fixce5 = fixZFold7.replace("CE 5", "ce5");
+  const replaceS23FE = fixce5.replace("S23FE", "s23 FE");
   const replaceNFC = replaceS23FE.replace("NFC", "");
   const replaceBluetooth = replaceNFC.replace("Беспроводные наушники ", "");
 

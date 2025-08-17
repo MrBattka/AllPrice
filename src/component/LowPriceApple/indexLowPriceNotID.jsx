@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { baseFixLowPrice } from "../../helpers/baseFix";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
-import { baseFixLowPrice } from "../../helpers/baseFix";
-import { fixNameLowPrice, returnNameInArrLowPrice, returnStockPriceLowPrice } from "./helpers/helpers";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
+import {
+  fixNameLowPrice,
+  returnNameInArrLowPrice,
+  returnStockPriceLowPrice,
+} from "./helpers/helpers";
 
 const IndexLowPriceNotID = ({ el, lowPriceData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,12 +20,12 @@ const IndexLowPriceNotID = ({ el, lowPriceData }) => {
       baseFixLowPrice(lowPrice)
     ) {
       return (
-        (returnIDSamsung(fixNameLowPrice(lowPrice.name)) === "No match" ||
-      returnIDSamsung2(fixNameLowPrice(lowPrice.name)) === "No match") &&
+        returnIDSamsung(fixNameLowPrice(lowPrice.name)) === "No match" &&
         returnStockPriceLowPrice(lowPrice.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))) |
-          returnIDSamsung2(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))),
+          id: returnIDSamsung(
+            returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))
+          ),
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
           stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
           provider: "MiOpts",

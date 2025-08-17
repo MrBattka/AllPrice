@@ -6,15 +6,24 @@ export const returnFixNameDiscount = (name) => {
   const replaceMi12 = replaceMi12Lite.replace("12 5G ", "Mi 12 ");
   const replaceMi13 = replaceMi12.replace("13 5G ", "Mi 13 ");
   const replaceMi14 = replaceMi13.replace("14 5G ", "Mi 14 ");
-  const fixiPadLTE = replaceMi14.indexOf("iPad") !== -1 ? replaceMi14.replace("5G", "LTE") : replaceMi14
-  
+  const fixiPadLTE =
+    replaceMi14.indexOf("iPad") !== -1
+      ? replaceMi14.replace("5G", "LTE")
+      : replaceMi14;
+
   const replaceGB = fixiPadLTE.replace("GB", "");
   const replace4G = replaceGB.replace("4G ", "");
   const replaceProPlus = replace4G.replace("Pro+", "Pro +");
   const replaceAwesome = replaceProPlus.replace("Awesome ", "");
-  const replace2sim = replaceAwesome.replace("2sim ", "");
-  const replacedual = replace2sim.replace("DUAL", "");
-  const replaceSE = replacedual.replace("SE 8.7", "SE");
+  const fix16PM = replaceAwesome.replace("16 Prо Maх", "16 Pro Max");
+  const replace2sim = fix16PM.replace("2sim ", "");
+  const fixSE3 = replace2sim.replace("SE 3", "SE3");
+  const fixS9 = fixSE3.replace("AW 9", "S9");
+  const fixS10 = fixS9.replace("AW 10", "S10"); 
+  const fixSteamDeck = fixS10.replace("SteamDeck", "Steam Deck");
+  const replacedual = fixSteamDeck.replace("DUAL", "");
+  const fixPrо = replacedual.replace("Prо", "Pro");
+  const replaceSE = fixPrо.replace("SE 8.7", "SE");
   const replaceNoteBlue =
     replaceSE.indexOf("Note ") !== -1
       ? replaceSE.replace("Ice Blue", "Blue")
@@ -73,8 +82,9 @@ export const returnFixNameDiscount = (name) => {
   const fixWiFi1 = fixWiFi.replace("WIFI", "Wi-Fi");
   const fixWi = fixWiFi1.replace("Wi ", "Wi-Fi");
   const fixWiFi2 = fixWi.replace("WiFi", "Wi-Fi");
+  const replace2Sim = fixWiFi2.replace("2Sim", "");
 
-  const fixAir11 = fixWiFi2.replace("iPad Air 11", "iPad Air 11 M2");
+  const fixAir11 = replace2Sim.replace("iPad Air 11", "iPad Air 11 M2");
   const fixAir13 = fixAir11.replace("iPad Air 13", "iPad Air 13 M2");
   const fixPro11 = fixAir13.replace("iPad Pro 11", "iPad Pro 11 M4");
   const fixPro13 = fixPro11.replace("iPad Pro 13", "iPad Pro 13 M4");
@@ -192,22 +202,24 @@ export const returnStockPriceDiscount = (name) => {
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   // let splitPrice = checkSpace4.split(" ")[0];
-  let removeStick = checkSpace4.indexOf("–") !== -1
-    ? checkSpace4.split("–")[0]
-    : checkSpace4.split(" ")[0];
+  let removeStick =
+    checkSpace4.indexOf("–") !== -1
+      ? checkSpace4.split("–")[0]
+      : checkSpace4.split(" ")[0];
 
-  let removeStick2 = removeStick.indexOf("-") !== -1
-    ? removeStick.split("-")[0]
-    : removeStick
+  let removeStick2 =
+    removeStick.indexOf("-") !== -1 ? removeStick.split("-")[0] : removeStick;
 
-  let removeSpace = removeStick2.indexOf(" ") !== -1
-    ? removeStick2.replace(" ", "")
-    : removeStick2;
+  let removeSpace =
+    removeStick2.indexOf(" ") !== -1
+      ? removeStick2.replace(" ", "")
+      : removeStick2;
   let reverseBackStrName = removeSpace.split("").reverse().join("");
 
-  let remove2Sim = reverseBackStrName.indexOf("2sim") !== -1
-    ? reverseBackStrName.replace("2sim", "")
-    : reverseBackStrName;
+  let remove2Sim =
+    reverseBackStrName.indexOf("2sim") !== -1
+      ? reverseBackStrName.replace("2sim", "")
+      : reverseBackStrName;
   let replaceWhiteColor = remove2Sim.replace("⚪️", "");
   let replaceRub = replaceWhiteColor.replace("₽", "");
 

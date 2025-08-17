@@ -7,7 +7,8 @@ export const returnFixNameBase = (name) => {
     replaceNote4G.indexOf("OnePlus") === -1
       ? replaceNote4G.replace("Plus", "+")
       : replaceNote4G;
-  const fixNordCE3 = fixPlus.replace("Nord CE 3", "Nord CE3");
+  const fixiPhone16Plus = fixPlus.indexOf("iPhone") !== -1 ? fixPlus.replace("16 +", "16 Plus") : fixPlus
+  const fixNordCE3 = fixiPhone16Plus.replace("Nord CE 3", "Nord CE3");
   const replace5G =
     fixNordCE3.indexOf("A53") ||
     fixNordCE3.indexOf("A55") ||

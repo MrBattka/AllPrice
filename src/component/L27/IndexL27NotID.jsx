@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { baseFixL27 } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
@@ -8,15 +8,13 @@ import {
   returnNameInArrL27,
   returnStockPriceL27,
 } from "./helpers/helpers";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexL27NotID = ({ el, l27Data }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
   l27Data.map((l27) => {
-    baseFixL27(l27) &&
-      returnStockPriceL27(returnFixNameL27(l27.name));
+    baseFixL27(l27) && returnStockPriceL27(returnFixNameL27(l27.name));
     if (
       l27.name &&
       typeof l27.name === "string" &&
@@ -25,16 +23,10 @@ const IndexL27NotID = ({ el, l27Data }) => {
       isOpen
     ) {
       return (
-        (returnIDSamsung(returnFixNameL27(l27.name)) === "No match" ||
-      returnIDSamsung2(returnFixNameL27(l27.name)) === "No match") &&
+        returnIDSamsung(returnFixNameL27(l27.name)) === "No match" &&
         returnStockPriceL27(l27.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrL27(returnFixNameL27(l27.name))
-          ) |
-          returnIDSamsung2(
-            returnNameInArrL27(returnFixNameL27(l27.name))
-          ),
+          id: returnIDSamsung(returnNameInArrL27(returnFixNameL27(l27.name))),
           name: returnNameInArrL27(returnFixNameL27(l27.name)),
           stockPrice: returnStockPriceL27(returnFixNameL27(l27.name)),
           provider: "Л27-28",

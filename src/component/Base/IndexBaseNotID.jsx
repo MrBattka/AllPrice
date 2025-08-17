@@ -1,38 +1,34 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { baseFixBase } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
-import { returnFixNameBase } from "./helpers/helpers";
 import style from "../styles.module.css";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
+import { returnFixNameBase } from "./helpers/helpers";
 
 const IndexBaseNotID = ({ el, baseData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
-    baseData.map((base) => {
-      if (
-        base.name &&
-        typeof base.name === "string" &&
-        isOpen &&
-        baseFixBase(base)
-      )
-       {
-        return (
-          (returnIDSamsung(returnFixNameBase(base.name)) === 'No match' ||
-        returnIDSamsung2(returnFixNameBase(base.name)) === 'No match') &&
-          base.price &&
-          baseFixBase(base) &&
-          resultArr.push({
-            id: returnIDSamsung(returnFixNameBase(base.name)) |
-            returnIDSamsung2(returnFixNameBase(base.name)),
-            name: returnFixNameBase(base.name),
-            stockPrice: base.price,
-            provider: "База",
-          })
-        );
-      }
-    });
+  baseData.map((base) => {
+    if (
+      base.name &&
+      typeof base.name === "string" &&
+      isOpen &&
+      baseFixBase(base)
+    ) {
+      return (
+        returnIDSamsung(returnFixNameBase(base.name)) === "No match" &&
+        base.price &&
+        baseFixBase(base) &&
+        resultArr.push({
+          id: returnIDSamsung(returnFixNameBase(base.name)),
+          name: returnFixNameBase(base.name),
+          stockPrice: base.price,
+          provider: "База",
+        })
+      );
+    }
+  });
 
   return (
     <div>

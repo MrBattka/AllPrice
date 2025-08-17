@@ -13,7 +13,8 @@ export const fixNameS5 = (name) => {
   const replace1TB = replaceVilka.replace("1 TB", "1TB");
   const replaceGB = replace1TB.replace("GB", "");
   const replaceGb = replaceGB.replace("Gb", "");
-  const fixmm = replaceGb.replace("mm", "");
+  const fixS24fe = replaceGb.replace("S24FE", "S24 FE");
+  const fixmm = fixS24fe.replace("mm", "");
   const fixStarlight1 = fixmm.replace("Starilgt ", "Starlight");
   const fixGray = fixStarlight1.replace("Grey ", "Gray");
   const replaceAirpods = fixGray.replace("Air Pods", "AirPods");
@@ -49,8 +50,14 @@ export const fixNameS5 = (name) => {
   const fixStarlight = replaceS9FE.replace("starling", "starlight");
   const fixS10 = fixStarlight.replace("S 10", "S10");
   const fixS23FE = fixS10.replace("S23FE", "S23 FE");
-  const fixFEPlus = fixS23FE.replace("FE Plus", "FE +");
-  const fixA55 = fixFEPlus.replace("А55 ", "A55 ");
+  const fixS10FE = fixS23FE.replace("Tab S10FE", "Tab S10 FE");
+  const fixS10Plus = fixS10FE.replace("Tab S10 Plus", "Tab S10 +");
+  const fixFEPlus = fixS10Plus.replace("FE Plus", "FE +");
+  const fixs25Edge256 = fixFEPlus.indexOf("S25 edge") !== -1 ? fixFEPlus.replace("256", "12/256") : fixFEPlus
+  const fixs25Edge512 = fixs25Edge256.indexOf("S25 edge") !== -1 ? fixs25Edge256.replace("512", "12/512") : fixs25Edge256
+  const fixTabS10128 = fixs25Edge512.indexOf("Tab S10") !== -1 ? fixs25Edge512.replace("128", "8/128") : fixs25Edge512
+  const fixTabS10256 = fixTabS10128.indexOf("Tab S10") !== -1 ? fixTabS10128.replace("256", "12/256") : fixTabS10128
+  const fixA55 = fixTabS10256.replace("А55 ", "A55 ");
   const fixA55IceBlue = fixA55.indexOf("A55 ")
     ? fixA55.replace("Ice blue", "iceblue")
     : fixA55;

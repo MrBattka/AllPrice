@@ -36,83 +36,97 @@ export const returnIDApple = (name) => {
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("blue") !== -1
   ) {
     return 36593;
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("green") !== -1
   ) {
     return 36588;
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("midnight") !== -1
   ) {
     return 36595;
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("starlight") !== -1
   ) {
     return 36596;
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("orange") !== -1
   ) {
     return 36597;
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("pink") !== -1
   ) {
     return 36589;
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("purple") !== -1
   ) {
     return 36594;
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("silver") !== -1
   ) {
     return 36590;
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("sky blue") !== -1
   ) {
     return 36591;
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("white") !== -1
   ) {
     return 36597;
   } else if (
     name.indexOf("airpods max") !== -1 &&
     (name.indexOf("2024") !== -1 ||
-  name.indexOf("2") !== -1) &&
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
     name.indexOf("blue") !== -1
   ) {
     return 36592;
   } else if (
-    name.indexOf("airpods max 2024 gray") !== -1 ||
-    name.indexOf("airpods max 2 gray") !== -1
+    name.indexOf("airpods max") !== -1 &&
+    (name.indexOf("2024") !== -1 ||
+      name.indexOf("2") !== -1 ||
+      name.indexOf("usb-c") !== -1) &&
+    name.indexOf("gray") !== -1
   ) {
     return 36593;
   } else if (
@@ -671,8 +685,7 @@ export const returnIDApple = (name) => {
   } else if (
     (name.indexOf("ultra 2") !== -1 || name.indexOf("ul 2") !== -1) &&
     name.indexOf("black") !== -1 &&
-    (name.indexOf("black titanium") !== -1 ||
-      name.indexOf("black case") !== -1) &&
+    name.indexOf("black") !== -1 &&
     (name.indexOf("milanese loop") !== -1 || name.indexOf("ml") !== -1) &&
     name.indexOf("2024") !== -1
   ) {
@@ -694,8 +707,10 @@ export const returnIDApple = (name) => {
     name.indexOf("pencil 1 usb") !== -1
   ) {
     return 36571;
-  } else if (name.indexOf("pencil 1 Lightning") !== -1 ||
-name.indexOf("pencil Lightning") !== -1) {
+  } else if (
+    name.indexOf("pencil 1 Lightning") !== -1 ||
+    name.indexOf("pencil Lightning") !== -1
+  ) {
     return 2072;
   } else if (name.indexOf("pencil 2") !== -1) {
     return 11873;
@@ -712,12 +727,14 @@ name.indexOf("pencil Lightning") !== -1) {
   ) {
     return 2071;
   } else if (
-    name.indexOf("magic mouse 3") !== -1 &&
+    (name.indexOf("magic mouse 3") !== -1 ||
+      name.indexOf("magic mouse usb-c") !== -1) &&
     (name.indexOf("black") !== -1 || name.indexOf("черн") !== -1)
   ) {
     return 38001;
   } else if (
-    name.indexOf("magic mouse 3") !== -1 &&
+    (name.indexOf("magic mouse 3") !== -1 ||
+      name.indexOf("magic mouse usb-c") !== -1) &&
     (name.indexOf("white") !== -1 || name.indexOf("бел") !== -1)
   ) {
     return 38011;

@@ -9,13 +9,15 @@ export const returnFixNameL27 = (name) => {
   const fix15Pro1 = fix15Pro.replace("15Pro ", "15 Pro ");
   const fix16Plus = fix15Pro1.replace("16+ ", "16 Plus ");
   const fix15Plus = fix16Plus.replace("15+ ", "15 Plus ");
-  const fix15Plus1 = fix15Plus.replace("15+  ", "15 Plus ");
+  const fix14Plus = fix15Plus.replace("14+ ", "14 Plus ");
+  const fix15Plus1 = fix14Plus.replace("15+  ", "15 Plus ");
   const fix16Plus1 = fix15Plus1.replace("16+  ", "16 Plus ");
   const fix14Pro = fix16Plus1.replace("14Pro ", "14 Pro ");
   const fix12Pro = fix14Pro.replace("12Pro  ", "12 Pro ");
   const fixMouse = fix12Pro.replace("Maus ", "Mouse ");
 
-  return fixMouse;
+  const fixMouse1 = fixMouse.replace("Mause", "Mouse");
+  return fixMouse1;
 };
 
 const checkFlags = (str) => {

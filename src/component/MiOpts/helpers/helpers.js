@@ -71,12 +71,17 @@ export const fixNameMiOpts = (name) => {
   const fixPoco = fixMI.replace("Poco", "POCO");
   const replaceGB = fixPoco.replace("GB", "");
   const replace5G =
-    replaceGB.indexOf("Mi 14") !== -1 ||
+    replaceGB.indexOf("M55 ") !== -1 ||
     replaceGB.indexOf("A25 ") !== -1 ||
     replaceGB.indexOf("A35 ") !== -1 ||
     replaceGB.indexOf("A55 ") !== -1 ||
+    replaceGB.indexOf("A26 ") !== -1 ||
     replaceGB.indexOf("A36 ") !== -1 ||
     replaceGB.indexOf("A56 ") !== -1 ||
+    replaceGB.indexOf("S24 ") !== -1 ||
+    replaceGB.indexOf("S25 ") !== -1 ||
+    replaceGB.indexOf("Mi 1") !== -1 ||
+    replaceGB.indexOf("POCO") !== -1 ||
     replaceGB.indexOf("X7 ") !== -1
       ? replaceGB.replace("5G", "")
       : replaceGB;

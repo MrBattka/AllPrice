@@ -5,12 +5,17 @@ export const returnFixNameElectrozon = (name) => {
   const replaceXiaomi = replaceSams.replace("Xiaomi ", "");
   const replaceGb = replaceXiaomi.replace("Gb", "");
   const replaceGB = replaceGb.replace("GB", "");
-  const fixBlueBlack =
-    replaceGB.indexOf("A05") != -1 &&
-    replaceGB.indexOf("A15") != -1 &&
-    replaceGB.indexOf("A25") != -1
-      ? replaceGB.replace("Dark", "Navy")
+  const fixS25Silver =
+    replaceGB.indexOf("S25 Ultra") != -1
+      ? replaceGB.replace("Silver", "Gray")
       : replaceGB;
+
+  const fixBlueBlack =
+    fixS25Silver.indexOf("A05") != -1 &&
+    fixS25Silver.indexOf("A15") != -1 &&
+    fixS25Silver.indexOf("A25") != -1
+      ? fixS25Silver.replace("Dark", "Navy")
+      : fixS25Silver;
   const fixWhiteA55 =
     fixBlueBlack.indexOf("A55") != -1
       ? fixBlueBlack.replace("White", "Iceblue")

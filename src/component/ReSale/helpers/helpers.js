@@ -192,7 +192,9 @@ export const returnFixNameReSale = (name) => {
   const fixGB = fixMM.replace("GB", "");
   const fixZflip5 = fixGB.replace("Flip5", "Flip 5");
   const fixZflip6 = fixZflip5.replace("Flip6", "Flip 6");
-  const fixDualSenseBlack = fixZflip6.replace("Чёрный", "dualsense Black ");
+  const fixZflip7 = fixZflip6.replace("Flip7", "Flip 7");
+  const fixZFold7 = fixZflip7.replace("Fold7", "Fold 7");
+  const fixDualSenseBlack = fixZFold7.replace("Чёрный", "dualsense Black ");
   const fixDualSenseWhite = fixDualSenseBlack.replace(
     "Белый",
     "dualsense White "
@@ -230,9 +232,16 @@ export const returnFixNameReSale = (name) => {
     fixAWUltraGray.indexOf("Ultra 2") != -1
       ? fixAWUltraGray.replace("Blue Black", "Black")
       : fixAWUltraGray;
+
   const fix5G =
+fixAWUltraBlack.indexOf("A25") !== -1 ||
+    fixAWUltraBlack.indexOf("A26") !== -1 ||
+    fixAWUltraBlack.indexOf("M35") !== -1 ||
+    fixAWUltraBlack.indexOf("A36") !== -1 ||
+    fixAWUltraBlack.indexOf("M56") !== -1 ||
     fixAWUltraBlack.indexOf("M55") !== -1 ||
     fixAWUltraBlack.indexOf("A55") !== -1 ||
+    fixAWUltraBlack.indexOf("A56") !== -1 ||
     fixAWUltraBlack.indexOf("Note 14 Pro +") !== -1 ||
     fixAWUltraBlack.indexOf("S21") !== -1
       ? fixAWUltraBlack.replace("5G ", "")

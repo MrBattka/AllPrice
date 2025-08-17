@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { baseFixReSale } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
+import style from "../styles.module.css";
 import {
   returnFixNameReSale,
   returnNameReSale,
-  returnStockPriceReSale
+  returnStockPriceReSale,
 } from "./helpers/helpers";
-import style from "../styles.module.css";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexReSaleNotID = ({ el, resaleData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,8 +23,7 @@ const IndexReSaleNotID = ({ el, resaleData }) => {
       isOpen
     ) {
       return (
-        (returnIDSamsung(returnFixNameReSale(resale.name)) === "No match" ||
-      returnIDSamsung2(returnFixNameReSale(resale.name)) === "No match") &&
+        returnIDSamsung(returnFixNameReSale(resale.name)) === "No match" &&
         returnStockPriceReSale(resale.name) &&
         returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("А") ==
           -1 &&
@@ -33,8 +31,9 @@ const IndexReSaleNotID = ({ el, resaleData }) => {
           "00"
         ) != -1 &&
         resultArr.push({
-          id: returnIDSamsung(returnNameReSale(returnFixNameReSale(resale.name))) |
-          returnIDSamsung2(returnNameReSale(returnFixNameReSale(resale.name))),
+          id: returnIDSamsung(
+            returnNameReSale(returnFixNameReSale(resale.name))
+          ),
           name: returnNameReSale(returnFixNameReSale(resale.name)),
           stockPrice: returnStockPriceReSale(returnFixNameReSale(resale.name)),
           provider: "Re:Sale",
@@ -56,8 +55,6 @@ const IndexReSaleNotID = ({ el, resaleData }) => {
       {isOpen && (
         <div className={style.row}>
           <BasicTable resultArr={resultArr} />
-
-          
         </div>
       )}
     </div>

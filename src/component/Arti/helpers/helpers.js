@@ -27,7 +27,9 @@ export const returnFixNameArti = (name) => {
       : fixiPadMiniWhite.replace("⚪", " White");
   const fixYellow = fixWhite.replace("🟡", " Yellow");
   const fixRed = fixYellow.replace("🔴", " Red");
-  const fixPink = fixRed.replace("💕", " Pink");
+  const fixAirPods3 = fixRed.replace("AirPods3", "AirPods 3");
+  const fixZFlip7 = fixAirPods3.replace("Flip7⃣", "Flip 7");
+  const fixPink = fixZFlip7.replace("💕", " Pink");
   const fixGray = fixPink.replace("🔘", " Gray");
   const fixOrange = fixGray.replace("🟠", " Orange");
 

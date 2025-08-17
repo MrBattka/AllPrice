@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { baseFixMiOpts } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
-import { fixNameMiOpts, returnExtraPriceMiOpts, returnNameInArrMiOpts, returnStockPriceMiOpts } from "./helpers/helpers";
 import style from "../styles.module.css";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
+import {
+  fixNameMiOpts,
+  returnExtraPriceMiOpts,
+  returnNameInArrMiOpts,
+  returnStockPriceMiOpts,
+} from "./helpers/helpers";
 
 const IndexMiOptsNotID = ({ el, mioptsData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,13 +23,13 @@ const IndexMiOptsNotID = ({ el, mioptsData }) => {
       baseFixMiOpts(miopts)
     ) {
       return (
-        (returnIDSamsung(fixNameMiOpts(miopts.name)) === "No match" ||
-      returnIDSamsung2(fixNameMiOpts(miopts.name)) === "No match") &&
+        returnIDSamsung(fixNameMiOpts(miopts.name)) === "No match" &&
         returnExtraPriceMiOpts(miopts.name) &&
         returnStockPriceMiOpts(miopts.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrMiOpts(fixNameMiOpts(miopts.name))) |
-          returnIDSamsung2(returnNameInArrMiOpts(fixNameMiOpts(miopts.name))),
+          id: returnIDSamsung(
+            returnNameInArrMiOpts(fixNameMiOpts(miopts.name))
+          ),
           name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
           extraPrice: returnExtraPriceMiOpts(fixNameMiOpts(miopts.name)),
           stockPrice: returnStockPriceMiOpts(fixNameMiOpts(miopts.name)),

@@ -19,9 +19,12 @@ export const fixNameSuperPrice = (name) => {
   const fixmm = fixWatch6.replace("mm", "");
   const fix125g = fixmm.replace("12 5G", "12");
   const fix12pro4g = fix125g.replace("12 Pro 5G", "12 Pro");
-  const fix135g = fix12pro4g.replace("13 5G", "13");
+  const fixLavander = fix12pro4g.replace("Lavander", "Lavender");
+  const fix135g = fixLavander.replace("13 5G", "13");
   const fix13t5g = fix135g.replace("13T 5G", "13T");
-  const fix13tpro5g = fix13t5g.replace("13T Pro 5G", "13T Pro");
+  const fixZFlip7 = fix13t5g.replace("Z Flip7", "Z Flip 7");
+  const fixZFold7 = fixZFlip7.replace("Z Fold7", "Z Fold 7");
+  const fix13tpro5g = fixZFold7.replace("13T Pro 5G", "13T Pro");
   const fix145g = fix13tpro5g.replace("14 5G", "14");
   const fix14ultra5g = fix145g.replace("14 Ultra 5G", "14 Ultra");
   const fixA155g = fix14ultra5g.replace("A15 5G", "A15");
@@ -43,7 +46,9 @@ export const fixNameSuperPrice = (name) => {
   const fixSilver = fixPixel5G.replace("Platinum Silver 12/512", "12/512 Platinum Silver");
   const fixPhantomBlack = fixSilver.replace("Phantom Black", "Black");
   const fixMidnightBlack = fixPhantomBlack.replace("Midnight Black", "Black");
-  const fixNote13Iceblue = fixMidnightBlack.replace("Note 13 8/256 Iceblue", "Note 13 8/256 blue");
+  const fixWatch8 = fixMidnightBlack.replace("Watch8", "Watch 8");
+  const fixNote13Iceblue = fixWatch8.replace("Note 13 8/256 Iceblue", "Note 13 8/256 blue");
+  const fixTabS105G = fixNote13Iceblue.indexOf("Tab S") !== -1 ? fixNote13Iceblue.replace("5G", "LTE") : fixNote13Iceblue
 
-  return fixNote13Iceblue;
+  return fixTabS105G;
 };

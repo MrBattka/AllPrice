@@ -771,15 +771,27 @@ export const returnIDOtherBrand = (name) => {
     return 37448;
 
     // Go Pro
-  } else if (name.indexOf("hero 9") !== -1) {
+  } else if (name.indexOf("gopro 9") !== -1 || name.indexOf("hero 9") !== -1) {
     return 17531;
-  } else if (name.indexOf("hero 10") !== -1) {
+  } else if (
+    name.indexOf("gopro 10") !== -1 ||
+    name.indexOf("hero 10") !== -1
+  ) {
     return 20821;
-  } else if (name.indexOf("hero 11") !== -1) {
+  } else if (
+    name.indexOf("gopro 11") !== -1 ||
+    name.indexOf("hero 11") !== -1
+  ) {
     return 27657;
-  } else if (name.indexOf("hero 12") !== -1) {
+  } else if (
+    name.indexOf("gopro 12") !== -1 ||
+    name.indexOf("hero 12") !== -1
+  ) {
     return 30285;
-  } else if (name.indexOf("hero 13") !== -1) {
+  } else if (
+    name.indexOf("gopro 13") !== -1 ||
+    name.indexOf("hero 13") !== -1
+  ) {
     return 37167;
   } else if (name.indexOf("el grande") !== -1) {
     return 17242;
@@ -895,13 +907,15 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("12/256") !== -1 &&
-    name.indexOf("ice") !== -1
+    (name.indexOf("ice") !== -1 ||
+  name.indexOf("blue") !== -1)
   ) {
     return 39941;
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("12/256") !== -1 &&
-    name.indexOf("sands") !== -1
+    (name.indexOf("sands") !== -1 ||
+  name.indexOf("white") !== -1)
   ) {
     return 39944;
   } else if (
@@ -913,13 +927,15 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("12/512") !== -1 &&
-    name.indexOf("ice") !== -1
+    (name.indexOf("ice") !== -1 ||
+  name.indexOf("blue") !== -1)
   ) {
     return 39955;
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("12/5126") !== -1 &&
-    name.indexOf("sands") !== -1
+    (name.indexOf("sands") !== -1 ||
+  name.indexOf("white") !== -1)
   ) {
     return 39956;
   } else if (
@@ -931,13 +947,15 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("8/256") !== -1 &&
-    name.indexOf("ice") !== -1
+    (name.indexOf("ice") !== -1 ||
+  name.indexOf("blue") !== -1)
   ) {
     return 39949;
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("8/256") !== -1 &&
-    name.indexOf("sands") !== -1
+    (name.indexOf("sands") !== -1 ||
+  name.indexOf("white") !== -1)
   ) {
     return 39950;
   } else if (
@@ -955,7 +973,9 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("nord ce5") !== -1 &&
     name.indexOf("12/256") !== -1 &&
-    name.indexOf("mist") !== -1
+    (name.indexOf("mist") !== -1 ||
+  name.indexOf("gray") !== -1 ||
+name.indexOf("white") !== -1)
   ) {
     return 39959;
   } else if (
@@ -967,7 +987,9 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("nord ce5") !== -1 &&
     name.indexOf("8/128") !== -1 &&
-    name.indexOf("mist") !== -1
+    (name.indexOf("mist") !== -1 ||
+  name.indexOf("gray") !== -1 ||
+name.indexOf("white") !== -1)
   ) {
     return 39970;
   } else if (
@@ -979,7 +1001,9 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("nord ce5") !== -1 &&
     name.indexOf("8/256") !== -1 &&
-    name.indexOf("mist") !== -1
+    (name.indexOf("mist") !== -1 ||
+  name.indexOf("gray") !== -1 ||
+name.indexOf("white") !== -1)
   ) {
     return 39963;
   } else if (
@@ -1638,47 +1662,86 @@ export const returnIDOtherBrand = (name) => {
     return 34447;
   } else if (
     name.indexOf("oneplus 13r 12/256") !== -1 &&
-    (name.indexOf("trail") !== -1 || name.indexOf("trail") !== -1)
+    (name.indexOf("trail") !== -1 || name.indexOf("trail") !== -1 || name.indexOf("black") !== -1)
   ) {
     return 37804;
   } else if (
     name.indexOf("oneplus 13r 12/256") !== -1 &&
-    (name.indexOf("nebula") !== -1 || name.indexOf("noir") !== -1)
+    (name.indexOf("nebula") !== -1 || name.indexOf("noir") !== -1 || name.indexOf("silver") !== -1)
   ) {
     return 37792;
   } else if (
     name.indexOf("oneplus 13r 16/512") !== -1 &&
-    (name.indexOf("trail") !== -1 || name.indexOf("trail") !== -1)
+    (name.indexOf("trail") !== -1 || name.indexOf("trail") !== -1 || name.indexOf("black") !== -1)
   ) {
     return 37806;
   } else if (
     name.indexOf("oneplus 13r 16/512") !== -1 &&
-    (name.indexOf("nebula") !== -1 || name.indexOf("noir") !== -1)
+    (name.indexOf("nebula") !== -1 || name.indexOf("noir") !== -1 || name.indexOf("silver") !== -1)
   ) {
     return 37802;
-  } else if (name.indexOf("oneplus 13 12/256 black") !== -1) {
+  } else if (name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("12/256") !== -1 &&
+name.indexOf("black") !== -1) {
     return 37204;
-  } else if (name.indexOf("oneplus 13 12/256 blue") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("12/256") !== -1 &&
+(name.indexOf("blue") !== -1 ||
+name.indexOf("ocean") !== -1)) {
     return 37459;
-  } else if (name.indexOf("oneplus 13 12/256 white") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("12/256") !== -1 &&
+name.indexOf("white") !== -1) {
     return 37460;
-  } else if (name.indexOf("oneplus 13 12/512 black") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("12/512") !== -1 &&
+name.indexOf("black") !== -1) {
     return 37461;
-  } else if (name.indexOf("oneplus 13 12/512 blue") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("12/512") !== -1 &&
+(name.indexOf("blue") !== -1 ||
+name.indexOf("ocean") !== -1)) {
     return 37462;
-  } else if (name.indexOf("oneplus 13 12/512 white") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("12/512") !== -1 &&
+name.indexOf("white") !== -1) {
     return 37463;
-  } else if (name.indexOf("oneplus 13 16/512 black") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("16/512") !== -1 &&
+name.indexOf("black") !== -1) {
     return 37464;
-  } else if (name.indexOf("oneplus 13 16/512 blue") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("16/512") !== -1 &&
+(name.indexOf("blue") !== -1 ||
+name.indexOf("ocean") !== -1)) {
     return 37465;
-  } else if (name.indexOf("oneplus 13 16/512 white") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("16/512") !== -1 &&
+name.indexOf("white") !== -1) {
     return 37466;
-  } else if (name.indexOf("oneplus 13 24/1tb black") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("24/1tb") !== -1 &&
+name.indexOf("black") !== -1) {
     return 37467;
-  } else if (name.indexOf("oneplus 13 24/1tb blue") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("24/1tb") !== -1 &&
+(name.indexOf("blue") !== -1 ||
+name.indexOf("ocean") !== -1)) {
     return 37468;
-  } else if (name.indexOf("oneplus 13 24/1tb white") !== -1) {
+  } else if (
+name.indexOf("oneplus 13 ") !== -1 &&
+name.indexOf("24/white") !== -1 &&
+name.indexOf("black") !== -1) {
     return 37469;
   } else if (name.indexOf("oneplus 13t 12/256 black") != -1) {
     return 38868;
@@ -2225,16 +2288,19 @@ export const returnIDOtherBrand = (name) => {
     name.indexOf("pixel 8 8/128 black") !== -1
   ) {
     return 30267;
-  } else if (name.indexOf("pixel 8 8/128 rose") !== -1) {
+  } else if (name.indexOf("pixel 8 128") !== -1 &&
+(name.indexOf("rose") !== -1 ||
+name.indexOf("pink") !== -1)) {
     return 30271;
-  } else if (name.indexOf("pixel 8 8/256 hazel") !== -1) {
+  } else if (name.indexOf("pixel 8 256 hazel") !== -1) {
     return 30270;
   } else if (
     name.indexOf("pixel 8 8/256 obsidian") !== -1 ||
     name.indexOf("pixel 8 8/256 black") !== -1
   ) {
     return 30268;
-  } else if (name.indexOf("pixel 8 8/256 rose") !== -1) {
+  } else if (name.indexOf("pixel 8 256 rose") !== -1 ||
+name.indexOf("pixel 8 256 pink") !== -1) {
     return 30272;
   } else if (name.indexOf("pixel 8 pro 12/128 bay") !== -1) {
     return 30281;
@@ -2301,7 +2367,9 @@ export const returnIDOtherBrand = (name) => {
     name.indexOf("pixel 7 128 black") !== -1
   ) {
     return 23959;
-  } else if (name.indexOf("pixel 7 128 snow") !== -1) {
+  } else if (name.indexOf("pixel 7 128") !== -1 &&
+(name.indexOf("snow") !== -1 ||
+name.indexOf("white") !== -1)) {
     return 23963;
   } else if (name.indexOf("pixel 7 256 lemongras") !== -1) {
     return 23962;
@@ -2319,7 +2387,8 @@ export const returnIDOtherBrand = (name) => {
     name.indexOf("pixel 7 pro 128 black") !== -1
   ) {
     return 23965;
-  } else if (name.indexOf("pixel 7 pro 128 snow") !== -1) {
+  } else if (name.indexOf("pixel 7 pro 128 snow") !== -1 ||
+name.indexOf("pixel 7 pro 128 white") !== -1) {
     return 23968;
   } else if (name.indexOf("pixel 7 pro 256 hazel") !== -1) {
     return 23972;
@@ -2784,49 +2853,49 @@ export const returnIDOtherBrand = (name) => {
     return 36698;
   } else if (
     name.indexOf("pixel 9a") != -1 &&
-    name.indexOf("8/128") != -1 &&
+    name.indexOf("128") != -1 &&
     name.indexOf("iris") != -1
   ) {
     return 38802;
   } else if (
     name.indexOf("pixel 9a") != -1 &&
-    name.indexOf("8/128") != -1 &&
+    name.indexOf("128") != -1 &&
     name.indexOf("obsidian") != -1
   ) {
     return 38803;
   } else if (
     name.indexOf("pixel 9a") != -1 &&
-    name.indexOf("8/128") != -1 &&
+    name.indexOf("128") != -1 &&
     name.indexOf("peony") != -1
   ) {
     return 38804;
   } else if (
     name.indexOf("pixel 9a") != -1 &&
-    name.indexOf("8/128") != -1 &&
+    name.indexOf("128") != -1 &&
     name.indexOf("porcelain") != -1
   ) {
     return 38805;
   } else if (
     name.indexOf("pixel 9a") != -1 &&
-    name.indexOf("8/256") != -1 &&
+    name.indexOf("256") != -1 &&
     name.indexOf("iris") != -1
   ) {
     return 38810;
   } else if (
     name.indexOf("pixel 9a") != -1 &&
-    name.indexOf("8/256") != -1 &&
+    name.indexOf("256") != -1 &&
     name.indexOf("obsidian") != -1
   ) {
     return 38811;
   } else if (
     name.indexOf("pixel 9a") != -1 &&
-    name.indexOf("8/256") != -1 &&
+    name.indexOf("256") != -1 &&
     name.indexOf("peony") != -1
   ) {
     return 38812;
   } else if (
     name.indexOf("pixel 9a") != -1 &&
-    name.indexOf("8/256") != -1 &&
+    name.indexOf("256") != -1 &&
     name.indexOf("porcelain") != -1
   ) {
     return 38813;

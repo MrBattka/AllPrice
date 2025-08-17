@@ -10,9 +10,14 @@ export const fixNameNarod = (name) => {
   const fix24Plus12 = fixViolete.replace("24+12", "24+ 12");
   const fixCream = fix24Plus12.replace("Ceram", "Cream");
   const fixLavanda = fixCream.replace("Lavanda", "Lavender");
-  const fixZFlip5 = fixLavanda.replace("Z Flip5", "Z Flip 5");
+  const fixMi14T = fixLavanda.replace("Mi 14T12/256", "Mi 14T 12/256");
+  const fixZFlip5 = fixMi14T.replace("Z Flip5", "Z Flip 5");
   const fixLavendelr = fixZFlip5.replace("Lavendel", "Lavender");
-  const fixMinit = fixLavendelr.replace("Minit", "Mint");
+  const fixOnePlus = fixLavendelr.replace("One plus", "OnePlus");
+  const fixOnePlus1 = fixOnePlus.replace("One Plus", "OnePlus");
+  const fixGraffiti = fixOnePlus1.replace("Graffiti", "Graphite");
+  const fix1tb = fixGraffiti.replace("1024", "1TB");
+  const fixMinit = fix1tb.replace("Minit", "Mint");
   const fixMint = fixMinit.replace("Мята", "Mint");
   const fixs23feGraphite =
     fixMint.indexOf("S23 FE") != -1
@@ -93,7 +98,8 @@ export const returnStockPriceNarod = (name) => {
   let replaceEU = name.replace("🇪🇺", "");
   let replaceAE = replaceEU.replace("🇦🇪", "");
   let replaceAEAE = replaceAE.replace("🇦🇪🇦🇪", "");
-  let replaceIN = replaceAEAE.replace("🇮🇳", "");
+  let replaceFKGS = replaceAEAE.replace("🇫🇰🇬🇸", "");
+  let replaceIN = replaceFKGS.replace("🇮🇳", "");
   let replaceBR = replaceIN.replace("🇧🇷", "");
   let replaceJP = replaceBR.replace("🇯🇵", "");
   let replaceVN = replaceJP.replace("🇻🇳", "");

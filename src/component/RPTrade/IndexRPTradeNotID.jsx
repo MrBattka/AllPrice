@@ -1,37 +1,33 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { baseFixRPTrade } from "../../helpers/baseFix";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
-import { returnFixNameRPTrade } from "./helpers/helpers";
 import style from "../styles.module.css";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
+import { returnFixNameRPTrade } from "./helpers/helpers";
 
 const IndexRPTradeNotID = ({ el, rptradeData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
-    rptradeData.map((rptrade) => {
-      if (
-        rptrade.name &&
-        typeof rptrade.name === "string" &&
-        baseFixRPTrade(rptrade) &&
-        isOpen
-      )
-       {
-        return (
-          (returnIDSamsung(returnFixNameRPTrade(rptrade.name)) === 'No match' ||
-        returnIDSamsung2(returnFixNameRPTrade(rptrade.name)) === 'No match') &&
-          rptrade.price &&
-          resultArr.push({
-            id: returnIDSamsung(returnFixNameRPTrade(rptrade.name)) |
-            returnIDSamsung2(returnFixNameRPTrade(rptrade.name)),
-            name: returnFixNameRPTrade(rptrade.name),
-            stockPrice: rptrade.price,
-            provider: "RPTrade",
-          })
-        );
-      }
-    });
+  rptradeData.map((rptrade) => {
+    if (
+      rptrade.name &&
+      typeof rptrade.name === "string" &&
+      baseFixRPTrade(rptrade) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameRPTrade(rptrade.name)) === "No match" &&
+        rptrade.price &&
+        resultArr.push({
+          id: returnIDSamsung(returnFixNameRPTrade(rptrade.name)),
+          name: returnFixNameRPTrade(rptrade.name),
+          stockPrice: rptrade.price,
+          provider: "RPTrade",
+        })
+      );
+    }
+  });
 
   return (
     <div>

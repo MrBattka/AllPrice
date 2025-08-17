@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -6,8 +7,6 @@ import {
   returnNameInArrA18,
   returnStockPriceA18,
 } from "./helpers/helpers";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexA18 = ({ el, a18Data }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,13 +23,10 @@ const IndexA18 = ({ el, a18Data }) => {
       isOpen
     ) {
       return (
-        (returnIDSamsung(returnFixNameA18(A18.name)) !== "No match" ||
-          returnIDSamsung2(returnFixNameA18(A18.name)) !== "No match") &&
+        returnIDSamsung(returnFixNameA18(A18.name)) !== "No match" &&
         returnStockPriceA18(A18.name) &&
         resultArr.push({
-          id:
-            returnIDSamsung(returnNameInArrA18(returnFixNameA18(A18.name))) |
-            returnIDSamsung2(returnNameInArrA18(returnFixNameA18(A18.name))),
+          id: returnIDSamsung(returnNameInArrA18(returnFixNameA18(A18.name))),
           name: returnNameInArrA18(returnFixNameA18(A18.name)),
           stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
           provider: "A18",

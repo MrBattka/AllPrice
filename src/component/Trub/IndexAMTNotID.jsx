@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { baseFixTrub } from "../../helpers/baseFix";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
-import { baseFixTrub } from "../../helpers/baseFix";
 import { fixNameTrub, returnNameInArrTrub, returnStockPriceTrub } from "./helpers/helpers";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
 
 const IndexAMTNotID = ({ el, AMTData }) => {
   const [isOpen, setIsOpen] = useState(false);

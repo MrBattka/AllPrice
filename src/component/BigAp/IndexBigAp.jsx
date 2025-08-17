@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { baseFixBigAp } from "../../helpers/baseFix";
+import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
-import { baseFixBigAp } from "../../helpers/baseFix";
-import { returnFixNameBigAp, returnNameInArrBigAp, returnStockPriceBigAp } from "./helpers/helpers";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
+import {
+  returnFixNameBigAp,
+  returnNameInArrBigAp,
+  returnStockPriceBigAp,
+} from "./helpers/helpers";
 
 const IndexBigAp = ({ el, bigApData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,14 +23,10 @@ const IndexBigAp = ({ el, bigApData }) => {
       isOpen
     ) {
       return (
-        (returnIDSamsung(returnFixNameBigAp(bigAp.name)) !== "No match" ||
-      returnIDSamsung2(returnFixNameBigAp(bigAp.name)) !== "No match") &&
+        returnIDSamsung(returnFixNameBigAp(bigAp.name)) !== "No match" &&
         returnStockPriceBigAp(bigAp.name) &&
         resultArr.push({
           id: returnIDSamsung(
-            returnNameInArrBigAp(returnFixNameBigAp(bigAp.name))
-          ) |
-          returnIDSamsung2(
             returnNameInArrBigAp(returnFixNameBigAp(bigAp.name))
           ),
           name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),

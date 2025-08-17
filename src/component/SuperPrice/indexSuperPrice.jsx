@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { baseFixSuperPrice } from "../../helpers/baseFix";
 import { newPrice } from "../../helpers/NewPrice";
 import { returnIDSamsung } from "../../helpers/returnIDSamsung";
 import BasicTable from "../Create Table/Table";
-import { fixNameSuperPrice } from "./helpers/helpers";
 import style from "../styles.module.css";
-import { returnIDSamsung2 } from "../../helpers/returnIDSamsung2";
+import { fixNameSuperPrice } from "./helpers/helpers";
 
 const IndexSuperPrice = ({ el, superpriceData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,13 +18,11 @@ const IndexSuperPrice = ({ el, superpriceData }) => {
       isOpen
     ) {
       return (
-        (returnIDSamsung(fixNameSuperPrice(superprice.name)) !== "No match" ||
-      returnIDSamsung2(fixNameSuperPrice(superprice.name)) !== "No match") &&
+        returnIDSamsung(fixNameSuperPrice(superprice.name)) !== "No match" &&
         newPrice(superprice.name, superprice.price) &&
         superprice.price &&
         resultArr.push({
-          id: returnIDSamsung(fixNameSuperPrice(superprice.name)) |
-          returnIDSamsung2(fixNameSuperPrice(superprice.name)),
+          id: returnIDSamsung(fixNameSuperPrice(superprice.name)),
           name: fixNameSuperPrice(superprice.name),
           stockPrice: superprice.price,
           provider: "Super Price",
