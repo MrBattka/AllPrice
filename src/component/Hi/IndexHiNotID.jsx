@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixHi } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { returnAppleHi } from "./Apple/apple";
@@ -33,10 +34,10 @@ const IndexHiNotID = ({ el, hi, main }) => {
         returnDysonHi(hi.name))
     ) {
       return (
-        returnIDSamsung(fixNameHi(hi.name)) === "No match" &&
+        getIdByName(defaultFixName(fixNameHi(hi.name))) === "No match" &&
         returnStockPriceHi(hi.name) &&
         resultArr.push({
-          id: returnIDSamsung(fixNameHi(hi.name)),
+          id: getIdByName(defaultFixName(fixNameHi(hi.name))),
           name: returnNameInArrHi(fixNameHi(hi.name)),
           stockPrice: returnStockPriceHi(hi.name),
           provider: "Hi",

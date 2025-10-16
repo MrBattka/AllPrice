@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
-  baseFix,
   baseFixArti,
   baseFixBase,
   baseFixBigAp,
@@ -29,8 +28,9 @@ import {
   baseFixSuperPrice,
   baseFixTagir,
   baseFixTrub,
-  baseFixVsemi,
+  baseFixVsemi
 } from "../../helpers/baseFix";
+import { returnFixPriceHi } from "../../helpers/fixFlags";
 import { returnFixPrice } from "../../helpers/fixPrice";
 import { newPrice } from "../../helpers/NewPrice";
 import { returnQuickID } from "../../helpers/returnQuickID";
@@ -46,8 +46,9 @@ import {
   returnNameInArrBigAp,
   returnStockPriceBigAp,
 } from "../BigAp/helpers/helpers";
+import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
-import TableAllPrice from "../CreateAllPriceTable/TableAllPrice";
+import TableQuickPrice from "../CreateAllPriceTable/TableQuickPrice";
 import {
   returnFixNameDiscount,
   returnNameInArrDiscount,
@@ -67,9 +68,8 @@ import { returnGarminHi } from "../Hi/Garmin/garmin";
 import { returnGoogleHi } from "../Hi/Google/google";
 import {
   fixNameHi,
-  returnExtraPriceHi,
   returnNameInArrHi,
-  returnStockPriceHi,
+  returnStockPriceHi
 } from "../Hi/helpers/helpers";
 import { returnSamsungHi } from "../Hi/Samsung/samsung";
 import { returnXiaomiHi } from "../Hi/Xiaomi/xiaomi";
@@ -153,32 +153,18 @@ import {
   returnNameTagir,
   returnStockPriceTagir,
 } from "../Tagir/helpers/helpers";
-import { returnApple } from "../Unimtrn/Apple/apple";
-import { returnDyson } from "../Unimtrn/Dyson/dyson";
-import { returnGameConsole } from "../Unimtrn/GameConsole/gameConsole";
+import {
+  fixNameTrub,
+  returnNameInArrTrub,
+  returnStockPriceTrub,
+} from "../Trub/helpers/helpers";
 import { fixNameUnimtrn } from "../Unimtrn/helpers/helpers";
-import { returnOtherProduct } from "../Unimtrn/OtherProduct/otherProduct";
-import { returnSamsung } from "../Unimtrn/Samsung/samsung";
-import { returnXiaomi } from "../Unimtrn/Xiaomi/xiaomi";
 import {
   fixNameVseMi,
   returnExtraPriceVseMi,
   returnNameInArrVseMi,
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
-import TableQuickPrice from "../CreateAllPriceTable/TableQuickPrice";
-import {
-  returnFixNameA18,
-  returnNameInArrA18,
-  returnStockPriceA18,
-} from "../A18/helpers/helpers";
-import {
-  fixNameTrub,
-  returnNameInArrTrub,
-  returnStockPriceTrub,
-} from "../Trub/helpers/helpers";
-import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
-import { returnFixPriceHi } from "../../helpers/fixFlags";
 
 const AllPriceQuickID = ({
   dataSuperprice,
@@ -211,7 +197,7 @@ const AllPriceQuickID = ({
   rootOptData,
   a18Data,
   AMTData,
-  boltunData
+  boltunData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArrQuickID = [];
@@ -265,14 +251,7 @@ const AllPriceQuickID = ({
       unimtrn.Модификация &&
       returnQuickID(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
         "No match" &&
-      isOpen &&
-      baseFix(unimtrn) &&
-      (returnApple(unimtrn) ||
-        returnDyson(unimtrn) ||
-        returnSamsung(unimtrn) ||
-        returnXiaomi(unimtrn) ||
-        returnGameConsole(unimtrn) ||
-        returnOtherProduct(unimtrn))
+      isOpen
     ) {
       resultArrQuickID.push({
         id: returnQuickID(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
@@ -649,6 +628,9 @@ const AllPriceQuickID = ({
         returnQuickID(fixNameMiOpts(miopts.name)) !== "No match" &&
         returnExtraPriceMiOpts(miopts.name) &&
         returnStockPriceMiOpts(miopts.name) &&
+        returnStockPriceMiOpts(fixNameMiOpts(miopts.name)) > 1000 &&
+        (returnNameInArrMiOpts(miopts.name).indexOf("GB") !== -1 ||
+          returnNameInArrMiOpts(miopts.name).indexOf("TRB") !== -1) &&
         resultArrQuickID.push({
           id: returnQuickID(returnNameInArrMiOpts(fixNameMiOpts(miopts.name))),
           name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
@@ -675,7 +657,7 @@ const AllPriceQuickID = ({
           ),
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
           stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
-          provider: "LowPrice",
+          provider: "Ghost Re:Sale",
         })
       );
     }

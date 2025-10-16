@@ -164,19 +164,19 @@ import {
   returnNameInArrTrub,
   returnStockPriceTrub,
 } from "../Trub/helpers/helpers";
-import { returnApple } from "../Unimtrn/Apple/apple";
-import { returnDyson } from "../Unimtrn/Dyson/dyson";
-import { returnGameConsole } from "../Unimtrn/GameConsole/gameConsole";
-import { fixNameUnimtrn } from "../Unimtrn/helpers/helpers";
-import { returnOtherProduct } from "../Unimtrn/OtherProduct/otherProduct";
-import { returnSamsung } from "../Unimtrn/Samsung/samsung";
-import { returnXiaomi } from "../Unimtrn/Xiaomi/xiaomi";
+import {
+  fixNameUnimtrn,
+  returnNameInArrUnimtrn,
+  returnStockPriceUnimtrn,
+} from "../Unimtrn/helpers/helpers";
 import {
   fixNameVseMi,
   returnExtraPriceVseMi,
   returnNameInArrVseMi,
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 
 const AllPriceWithID = ({
   dataSuperprice,
@@ -209,7 +209,7 @@ const AllPriceWithID = ({
   rootOptData,
   a18Data,
   AMTData,
-  boltunData
+  boltunData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -258,24 +258,36 @@ const AllPriceWithID = ({
     }
   });
 
+  // dataUnimtrn.map((unimtrn) => {
+  //   if (
+  //     unimtrn.Модификация &&
+  //     returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)) !==
+  //       "No match" &&
+  //     isOpen &&
+  //     baseFix(unimtrn)
+  //   ) {
+  //     allPriceArr.push({
+  //       id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
+  //       name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
+  //       stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
+  //       provider: "Метреон",
+  //     });
+  //   }
+  // });
+
   dataUnimtrn.map((unimtrn) => {
     if (
-      unimtrn.Модификация &&
-      returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
-        "No match" &&
+      unimtrn.name &&
+      returnIDSamsung(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name))
+      ) !== "No match" &&
       isOpen &&
-      baseFix(unimtrn) &&
-      (returnApple(unimtrn) ||
-        returnDyson(unimtrn) ||
-        returnSamsung(unimtrn) ||
-        returnXiaomi(unimtrn) ||
-        returnGameConsole(unimtrn) ||
-        returnOtherProduct(unimtrn))
+      baseFix(unimtrn)
     ) {
       allPriceArr.push({
-        id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
-        name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
-        stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
+        id: returnIDSamsung(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name))
+        ),
+        name: returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)),
+        stockPrice: returnStockPriceUnimtrn(unimtrn.name),
         provider: "Метреон",
       });
     }
@@ -649,6 +661,9 @@ const AllPriceWithID = ({
         returnIDSamsung(fixNameMiOpts(miopts.name)) !== "No match" &&
         returnExtraPriceMiOpts(miopts.name) &&
         returnStockPriceMiOpts(miopts.name) &&
+        returnStockPriceMiOpts(fixNameMiOpts(miopts.name)) > 1000 &&
+        (returnNameInArrMiOpts(miopts.name).indexOf("GB") !== -1 ||
+          returnNameInArrMiOpts(miopts.name).indexOf("TRB") !== -1) &&
         allPriceArr.push({
           id: returnIDSamsung(
             returnNameInArrMiOpts(fixNameMiOpts(miopts.name))
@@ -677,7 +692,7 @@ const AllPriceWithID = ({
           ),
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
           stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
-          provider: "LowPrice",
+          provider: "Ghost Re:Sale",
         })
       );
     }
@@ -739,13 +754,13 @@ const AllPriceWithID = ({
     ) {
       return (
         returnIDSamsung(fixNameInfinity(infinity.name)) !== "No match" &&
-        returnStockPriceInfinity(infinity.name) &&
+        returnStockPriceInfinity(fixNameInfinity(infinity.name)).indexOf("00") !== -1 &&
         allPriceArr.push({
           id: returnIDSamsung(
             returnNameInArrInfinity(fixNameInfinity(infinity.name))
           ),
           name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
-          stockPrice: returnStockPriceInfinity(fixNameInfinity(infinity.name)),
+          stockPrice: returnStockPriceInfinity(fixNameInfinity(fixNameInfinity(infinity.name))),
           provider: "Infinity",
         })
       );

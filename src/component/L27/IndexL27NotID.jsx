@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixL27 } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -23,10 +24,13 @@ const IndexL27NotID = ({ el, l27Data }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameL27(l27.name)) === "No match" &&
+        getIdByName(defaultFixName(returnFixNameL27(l27.name))) ===
+          "No match" &&
         returnStockPriceL27(l27.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrL27(returnFixNameL27(l27.name))),
+          id: getIdByName(
+            defaultFixName(returnNameInArrL27(returnFixNameL27(l27.name)))
+          ),
           name: returnNameInArrL27(returnFixNameL27(l27.name)),
           stockPrice: returnStockPriceL27(returnFixNameL27(l27.name)),
           provider: "Л27-28",

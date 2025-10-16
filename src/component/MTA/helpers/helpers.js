@@ -7,7 +7,10 @@ export const returnFixNameMTA = (name) => {
   const fixS24Plus = replaceGB.replace("S24 +", "S24+");
   const fixS23FE = fixS24Plus.replace("S23FE", "S23 FE");
   const fixS24FE = fixS23FE.replace("S24FE", "S24 FE");
-  const fixSGray = fixS24FE.replace("Grey", "Gray");
+  const fixS2TB = fixS24FE.replace("2 TB", "2TB");
+  
+  const fixS25Plus = fixS2TB.replace("S25 Plus", "S25+");
+  const fixSGray = fixS25Plus.replace("Grey", "Gray");
   const fixS25FE = fixSGray.replace("S25FE", "S25 FE");
   const replace5G =
     fixS25FE.indexOf("SM") !== -1 ? fixS25FE.replace("5G", "") : fixS25FE;
@@ -83,8 +86,9 @@ export const returnStockPriceMTA = (name) => {
   let replaceFire = replaceDot.replace("🔥", "");
   let replace1 = replaceFire.replace("🌫️", "");
   let replace2 = replace1.replace("⚫️", "");
+  let replaceAM = replace2.replace("🇦🇲", "");
 
-  let replace3 = replace2.replace("QA", "");
+  let replace3 = replaceAM.replace("QA", "");
   let replace4 = replace3.replace("LL", "");
   let replace5 = replace4.replace("🌸", "");
   let replace6 = replace5.replace("👻", "");
@@ -92,8 +96,11 @@ export const returnStockPriceMTA = (name) => {
   let replace8 = replace7.replace("ZP", "");
   let replace9 = replace8.replace("👚", "");
   let replace10 = replace9.replace("👽", "");
+  let replaceRub = replace10.replace("₽", "");
+  let replacePoint = replaceRub.replace(",", "");
+  let replace11= replacePoint.replace("CH720NPink: ", "");
   
   
 
-  return replace10;
+  return replace11;
 };

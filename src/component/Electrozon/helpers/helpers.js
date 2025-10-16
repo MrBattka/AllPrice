@@ -82,21 +82,8 @@ export const returnFixNameElectrozon = (name) => {
       ? fixLavenderS9FE.replace("Dark", "Navy")
       : fixLavenderS9FE;
 
-  let [q, w, e, r, t, y] = fixNavy.split(" ");
-  const replaceSM1 =
-    e.indexOf("SM-") != -1
-      ? `${q} ${w} ${r} ${t} ${y === "🇷🇺" ? y : ""}`
-      : fixNavy;
-  let [a, s, d, f, g, h, j, k] = fixNavy.split(" ");
-  const replaceSM2 =
-    f.indexOf("SM-") != -1
-      ? `${a} ${s} ${d} ${g} ${h} ${typeof j !== "undefined" && j}`
-      : replaceSM1;
-  const replaceSM3 =
-    g.indexOf("SM-") != -1
-      ? `${a} ${s} ${d} ${f} ${h} ${j} ${typeof k !== "undefined" && k}`
-      : replaceSM2;
-  const fixFEPlus = replaceSM3.replace("FE+", "FE +");
+ 
+  const fixFEPlus = fixNavy.replace("FE+", "FE +");
   const fixS9Plus = fixFEPlus.replace("S9+", "S9 +");
   const fixA9Plus = fixS9Plus.replace("A9+", "A9 +");
   const FixLightBlue = fixA9Plus.replace("White-Blue", "Light Blue");

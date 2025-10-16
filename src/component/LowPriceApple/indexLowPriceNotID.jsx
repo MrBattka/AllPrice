@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixLowPrice } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -20,15 +21,15 @@ const IndexLowPriceNotID = ({ el, lowPriceData }) => {
       baseFixLowPrice(lowPrice)
     ) {
       return (
-        returnIDSamsung(fixNameLowPrice(lowPrice.name)) === "No match" &&
+        getIdByName(defaultFixName(fixNameLowPrice(lowPrice.name))) === "No match" &&
         returnStockPriceLowPrice(lowPrice.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))
+          id: getIdByName(defaultFixName(
+            returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)))
           ),
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
           stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
-          provider: "MiOpts",
+          provider: "Ghost Re:Sale",
         })
       );
     }
@@ -39,7 +40,7 @@ const IndexLowPriceNotID = ({ el, lowPriceData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.titleNotID} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "LowPriceApple Not ID ▲" : "LowPriceApple Not ID ▼"}
+            {isOpen ? "Ghost Re:Sale Not ID ▲" : "Ghost Re:Sale Not ID ▼"}
           </span>
         )}
       </div>

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { baseFixSuperPrice } from "../../helpers/baseFix";
+import { defaultFixName } from "../../helpers/defaultFixName";
 import { newPrice } from "../../helpers/NewPrice";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { fixNameSuperPrice } from "./helpers/helpers";
@@ -18,11 +19,11 @@ const IndexSuperPrice = ({ el, superpriceData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameSuperPrice(superprice.name)) !== "No match" &&
+        getIdByName(defaultFixName(fixNameSuperPrice(superprice.name))) !== "No match" &&
         newPrice(superprice.name, superprice.price) &&
         superprice.price &&
         resultArr.push({
-          id: returnIDSamsung(fixNameSuperPrice(superprice.name)),
+          id: getIdByName(defaultFixName(fixNameSuperPrice(superprice.name))),
           name: fixNameSuperPrice(superprice.name),
           stockPrice: superprice.price,
           provider: "Super Price",

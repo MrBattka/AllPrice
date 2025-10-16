@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixVsemi } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -22,10 +23,10 @@ const IndexVseMi = ({ el, vsemiData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameVseMi(vsemi.name)) !== "No match" &&
+        getIdByName(defaultFixName(fixNameVseMi(vsemi.name))) !== "No match" &&
         returnStockPriceVseMi(vsemi.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrVseMi(fixNameVseMi(vsemi.name))),
+          id: getIdByName(defaultFixName(returnNameInArrVseMi(fixNameVseMi(vsemi.name)))),
           name: returnNameInArrVseMi(fixNameVseMi(vsemi.name)),
           stockPrice: returnStockPriceVseMi(fixNameVseMi(vsemi.name)),
           provider: "VseMi",

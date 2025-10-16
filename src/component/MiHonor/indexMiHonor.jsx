@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixMiHonor } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -24,11 +25,11 @@ const IndexMiHonor = ({ el, mihonorData }) => {
     ) {
       return (
         mihonor.name.indexOf("₽") !== -1 &&
-        returnIDSamsung(fixNameMihonor(mihonor.name)) !== "No match" &&
+        getIdByName(defaultFixName(fixNameMihonor(mihonor.name))) !== "No match" &&
         returnStockPriceMihonor(mihonor.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrMihonor(fixNameMihonor(mihonor.name))
+          id: getIdByName(defaultFixName(
+            returnNameInArrMihonor(fixNameMihonor(mihonor.name)))
           ),
           name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
           stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixMTA } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -17,13 +18,13 @@ const IndexMTA = ({ el, mtaData }) => {
     baseFixMTA(mta) && returnStockPriceMTA(returnFixNameMTA(mta.name));
     if (mta.name && typeof mta.name === "string" && baseFixMTA(mta) && isOpen) {
       return (
-        returnIDSamsung(returnFixNameMTA(mta.name)) !== "No match" &&
+        getIdByName(defaultFixName(returnFixNameMTA(mta.name))) !== "No match" &&
         returnStockPriceMTA(returnFixNameMTA(mta.name)).indexOf("00") !== -1 &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrMTA(returnFixNameMTA(mta.name))),
+          id: getIdByName(defaultFixName(returnNameInArrMTA(returnFixNameMTA(mta.name)))),
           name: returnNameInArrMTA(returnFixNameMTA(mta.name)),
           stockPrice: returnStockPriceMTA(returnFixNameMTA(mta.name)),
-          provider: "MTA Store",
+          provider: "DStore",
         })
       );
     }
@@ -34,7 +35,7 @@ const IndexMTA = ({ el, mtaData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "MTA Store ▲" : "MTA Store ▼"}
+            {isOpen ? "DStore ▲" : "DStore ▼"}
           </span>
         )}
       </div>

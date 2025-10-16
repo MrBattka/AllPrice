@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixMiOpts } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -23,12 +24,15 @@ const IndexMiOptsNotID = ({ el, mioptsData }) => {
       baseFixMiOpts(miopts)
     ) {
       return (
-        returnIDSamsung(fixNameMiOpts(miopts.name)) === "No match" &&
+        getIdByName(defaultFixName(fixNameMiOpts(miopts.name))) === "No match" &&
         returnExtraPriceMiOpts(miopts.name) &&
         returnStockPriceMiOpts(miopts.name) &&
+        returnStockPriceMiOpts(fixNameMiOpts(miopts.name)) > 1000 &&
+        !Number.isInteger(Number(fixNameMiOpts(miopts.name)[0])) &&
+        (miopts.name.includes("GB") || miopts.name.includes("TRB")) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrMiOpts(fixNameMiOpts(miopts.name))
+          id: getIdByName(defaultFixName(
+            returnNameInArrMiOpts(fixNameMiOpts(miopts.name)))
           ),
           name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
           extraPrice: returnExtraPriceMiOpts(fixNameMiOpts(miopts.name)),

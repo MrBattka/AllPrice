@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixStore77 } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { returnFixNameStore77 } from "./helpers/helpers";
@@ -17,10 +18,10 @@ const IndexStore77NotID = ({ el, store77Data }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameStore77(store77.name)) === "No match" &&
+        getIdByName(defaultFixName(returnFixNameStore77(store77.name))) === "No match" &&
         store77.price &&
         resultArr.push({
-          id: returnIDSamsung(returnFixNameStore77(store77.name)),
+          id: getIdByName(defaultFixName(returnFixNameStore77(store77.name))),
           name: returnFixNameStore77(store77.name),
           stockPrice: store77.price,
           provider: "Store 77",

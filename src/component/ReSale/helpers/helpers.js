@@ -38,7 +38,8 @@ export const returnNameReSale = (name) => {
         ? /\s(.+)/.exec(removeSpaceName3)[1]
         : removeSpaceName3;
     let splitDoubleSpace =
-      removeSpaceName3.split(" ")[0].length === 3
+      (removeSpaceName3.split(" ")[0].length === 3 &&
+    removeSpaceName3.length > 3)
         ? /\s(.+)/.exec(splitSpace)[1]
         : splitSpace;
 
@@ -88,7 +89,10 @@ export const returnStockPriceReSale = (name) => {
       : splitPrice;
     let reverseBackStrName = removeSimbol.split("").reverse().join("");
 
-    return reverseBackStrName;
+    let replaceSimEsim = reverseBackStrName.replace("(1Sim+eSim)", "")
+    let replaceEsim = replaceSimEsim.replace("eSim", "")
+
+    return replaceEsim;
   } else {
     let reverseStrName = replaceKR.split("").reverse().join("");
 
@@ -107,7 +111,10 @@ export const returnStockPriceReSale = (name) => {
     let removeStick = removeSimbol.replace("-", "");
     let reverseBackStrName = removeStick.split("").reverse().join("");
 
-    return reverseBackStrName;
+    let replaceSimEsim = reverseBackStrName.replace("(1Sim+eSim)", "")
+    let replaceEsim = replaceSimEsim.replace("eSim", "")
+
+    return replaceEsim;
   }
 };
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixS5 } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -16,10 +17,10 @@ const IndexS5NotID = ({ el, S5Data }) => {
   S5Data.map((S5) => {
     if (S5.name && typeof S5.name === "string" && baseFixS5(S5) && isOpen) {
       return (
-        returnIDSamsung(fixNameS5(S5.name)) === "No match" &&
+        getIdByName(defaultFixName(fixNameS5(S5.name))) === "No match" &&
         returnStockPriceS5(S5.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrS5(fixNameS5(S5.name))),
+          id: getIdByName(defaultFixName(returnNameInArrS5(fixNameS5(S5.name)))),
           name: returnNameInArrS5(fixNameS5(S5.name)),
           stockPrice: returnStockPriceS5(fixNameS5(S5.name)),
           provider: "S5",

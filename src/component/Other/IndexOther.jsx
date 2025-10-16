@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixOther } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -24,11 +25,11 @@ const IndexOther = ({ el, otherData }) => {
       return (
         returnStockPriceOther(returnFixNameOther(other.name)).indexOf("0") !==
           -1 &&
-        returnIDSamsung(returnFixNameOther(other.name)) !== "No match" &&
+        getIdByName(defaultFixName(returnFixNameOther(other.name))) !== "No match" &&
         returnStockPriceOther(returnFixNameOther(other.name)) &&
         baseFixOther(other) &&
         resultArr.push({
-          id: returnIDSamsung(returnFixNameOther(other.name)),
+          id: getIdByName(defaultFixName(returnFixNameOther(other.name))),
           name:
             baseFixOther(other) &&
             returnNameInArrOther(returnFixNameOther(other.name)),

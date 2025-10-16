@@ -1,6 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { read, utils } from "xlsx";
 import "../App.css";
+import IndexA18 from "./A18/IndexA18";
+import IndexA18NotID from "./A18/IndexA18NotID";
+import AllPriceNotID from "./AllPrice/AllPriceNotID";
+import AllPriceQuickID from "./AllPrice/AllPriceQuickID";
 import AllPriceWithID from "./AllPrice/AllPriceWithID";
 import IndexArti from "./Arti/indexArti";
 import IndexArtiNotID from "./Arti/indexArtiNotID";
@@ -8,6 +12,8 @@ import IndexBase from "./Base/IndexBase";
 import IndexBaseNotID from "./Base/IndexBaseNotID";
 import IndexBigAp from "./BigAp/IndexBigAp";
 import IndexBigApNotID from "./BigAp/IndexBigApNotID";
+import IndexBoltun from "./Boltun/IndexBolltun";
+import IndexBoltunNotID from "./Boltun/IndexBoltunNotID";
 import IndexBonusNotID from "./BonusOPT/IndexBonusNotID";
 import IndexBonus from "./BonusOPT/IndexEBonus";
 import IndexDiscount from "./Discount/IndexDiscount";
@@ -48,26 +54,23 @@ import IndexRootOpt from "./RootOPT/IndexERootOpt";
 import IndexRootOptNotID from "./RootOPT/IndexRootOptNotID";
 import IndexS5 from "./S5/IndexS5";
 import IndexS5NotID from "./S5/IndexS5NotID";
+import IndexStore77 from "./Store77/IndexStore77";
+import IndexStore77NotID from "./Store77/IndexStore77NotID";
 import IndexSunrise from "./Sunrise/IndexSunrise";
 import IndexSunriseNotID from "./Sunrise/IndexSunriseNotID";
 import IndexSuperPrice from "./SuperPrice/indexSuperPrice";
 import IndexSuperPriceNotID from "./SuperPrice/indexSuperPriceNotID";
 import IndexTagir from "./Tagir/IndexTagir";
 import IndexTagirNotID from "./Tagir/IndexTagirNotID";
+import IndexAMT from "./Trub/IndexAMT";
+import IndexAMTNotID from "./Trub/IndexAMTNotID";
 import IndexUnimtrn from "./Unimtrn/indexUNIMTRN";
 import IndexUnimtrnNotID from "./Unimtrn/indexUNIMTRNNotID";
 import IndexVseMi from "./VseMi/indexVseMi";
 import IndexVseMiNotID from "./VseMi/indexVseMiNotID";
-import AllPriceQuickID from "./AllPrice/AllPriceQuickID";
-import IndexA18 from "./A18/IndexA18";
-import IndexA18NotID from "./A18/IndexA18NotID";
-import AllPriceNotID from "./AllPrice/AllPriceNotID";
-import IndexBoltun from "./Boltun/IndexBolltun";
-import IndexStore77 from "./Store77/IndexStore77";
-import IndexBoltunNotID from "./Boltun/IndexBoltunNotID";
-import IndexStore77NotID from "./Store77/IndexStore77NotID";
-import IndexAMT from "./Trub/IndexAMT";
-import IndexAMTNotID from "./Trub/IndexAMTNotID";
+import IndexUnimtrn_1 from "./Unimtrn/indexUNIMTRN_1";
+import IndexUnimtrnNotID_1 from "./Unimtrn/indexUNIMTRNNotID_1";
+import AllPriceWithIDTest from "./AllPrice/AllPriceWithIDTest";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -138,15 +141,49 @@ const IndexAllPrice = () => {
   const boltun = [];
   const store77 = [];
 
+  const allItems = [];
+
+  const returnNewMiopt = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+      const item = arr[i];
+      if (
+        item.MiOpts.includes("₽") &&
+        (item.MiOpts.includes("GB") || item.MiOpts.includes("TRB"))
+      ) {
+        allItems.push({ MiOpts: item.MiOpts });
+      } else if (!item.MiOpts.includes("GB") || !item.MiOpts.includes("TRB")) {
+        const priceItem = arr[i + 1];
+        if (
+          priceItem &&
+          priceItem.MiOpts.includes("₽") &&
+          (item.MiOpts.includes("GB") || item.MiOpts.includes("TRB"))
+        ) {
+          allItems.push({ MiOpts: item.MiOpts + " " + priceItem.MiOpts });
+        } else {
+          allItems.push({ MiOpts: item.MiOpts });
+        }
+      }
+    }
+  };
+
+  // returnNewMiopt(dataMiopts);
+
   dataHi.map((hiEl) => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
   });
+
+  // dataUNIMTRN.map((unimtrnEl) => {
+  //   (unimtrnEl.Товар || unimtrnEl.Модификация) &&
+  //     unimtrn.push({
+  //       name: unimtrnEl.Товар || unimtrnEl.Модификация,
+  //       price: unimtrnEl.Стоимость || unimtrnEl.Cтоимость || unimtrnEl.Цена,
+  //     });
+  // });
+
   dataUNIMTRN.map((unimtrnEl) => {
-    (unimtrnEl.Товар || unimtrnEl.Модификация) &&
-      unimtrn.push({
-        name: unimtrnEl.Товар || unimtrnEl.Модификация,
-        price: unimtrnEl.Стоимость || unimtrnEl.Cтоимость || unimtrnEl.Цена,
-      });
+    unimtrnEl.Metr &&
+      typeof unimtrnEl.Metr === "string" &&
+      unimtrn.push({ name: unimtrnEl.Metr });
   });
 
   dataMihonor.map((mihonorEl) => {
@@ -347,11 +384,15 @@ const IndexAllPrice = () => {
   });
 
   dataBoltun.map((boltunEl) => {
-    boltunEl.name && boltunEl.name.length && boltun.push({ name: boltunEl.name, price: boltunEl.price });
+    boltunEl.name &&
+      boltunEl.name.length &&
+      boltun.push({ name: boltunEl.name, price: boltunEl.price });
   });
 
   dataStore77.map((store77El) => {
-    store77El.name && store77El.name.length && store77.push({ name: store77El.name, price: store77El.price });
+    store77El.name &&
+      store77El.name.length &&
+      store77.push({ name: store77El.name, price: store77El.price });
   });
 
   const handleImport = ($event) => {
@@ -433,7 +474,6 @@ const IndexAllPrice = () => {
       reader.readAsArrayBuffer(file);
     }
   };
-  console.log(dataBigAp);
 
   return (
     <div className="wrapper_control">
@@ -463,208 +503,74 @@ const IndexAllPrice = () => {
         </div>
       </div>
       <div className="wrapper_cat">
-        {/* Quick Price */}   
-       <AllPriceQuickID
-          dataSuperprice={superprice}
-          dataVsemi={vsemi}
-          dataUnimtrn={dataUNIMTRN}
-          dataHi={hi}
-          dataMihonor={mihonor}
-          dataGarmin={garmin}
-          S5Data={S5}
-          rptradeData={rptrade}
-          racmagData={racmag}
-          electrozonData={electrozon}
-          artiData={arti}
-          resaleData={resale}
-          tagirData={tagir}
-          narodData={narod}
-          f51Data={f51}
-          discountData={discount}
-          baseData={deleteDoubleProduct}
-          otherData={other}
-          mioptsData={miopts}
-          lowPriceData={lowprice}
-          l27Data={l27}
-          sunriseData={sunrise}
-          infinityData={infinity}
-          likemobData={likemob}
-          mtaData={mta}
-          bonusData={bonus}
-          bigApData={bigAp}
-          rootOptData={rootOpt}
-          a18Data={a18}
-          AMTData={amt}
-          boltunData={boltun}
-        />
-        {/* Сема */}
-        <IndexHi el={dataHi} hi={hi} />
-        <IndexHiNotID el={dataHi} hi={hi} />
-        {/* Метры */}
-        <IndexUnimtrn el={dataUNIMTRN} />
-        <IndexUnimtrnNotID el={dataUNIMTRN} />
-        {/* MiHonor */}
-        <IndexMiHonor el={dataMihonor} mihonorData={mihonor} />
-        <IndexMiHonorNotID el={dataMihonor} mihonorData={mihonor} />
-        {/* VseMi */}
-        <IndexVseMi el={dataVsemi} vsemiData={vsemi} />
-        <IndexVseMiNotID el={dataVsemi} vsemiData={vsemi} />
-        {/* Super Price */}
-        <IndexSuperPrice
-          el={dataSuperprice}
-          superpriceData={superprice}
-          allPrice={allPrice}
-        />
-        <IndexSuperPriceNotID el={dataSuperprice} superpriceData={superprice} />
-        {/* Garmin */}
-        <IndexGarmin el={dataGarmin} garminData={garmin} />
-        <IndexGarminNotID el={dataGarmin} garminData={garmin} />
-        {/* S5 */}
-        <IndexS5 el={dataS5} S5Data={S5} />
-        <IndexS5NotID el={dataS5} S5Data={S5} />
-        {/* RPTrade */}
-        <IndexRPTrade el={dataRPTrade} rptradeData={rptrade} />
-        <IndexRPTradeNotID el={dataRPTrade} rptradeData={rptrade} />
-        {/* Рацмаг */}
-        <IndexRacmag el={dataRacmag} racmagData={racmag} />
-        <IndexRacmagNotID el={dataRacmag} racmagData={racmag} />
-        {/* Arti */}
-        <IndexArti el={dataArti} artiData={arti} />
-        <IndexArtiNotID el={dataArti} artiData={arti} />
-        {/* Electrozon */}
-        <IndexElectrozon el={dataElectrozon} electrozonData={electrozon} />
-        <IndexElectrozonNotID el={dataElectrozon} electrozonData={electrozon} />
-        {/* ReSale */}
-        <IndexReSale el={dataReSale} resaleData={resale} />
-        <IndexReSaleNotID el={dataReSale} resaleData={resale} />
-        {/* Тагир */}
-        <IndexTagir el={dataTagir} tagirData={tagir} />
-        <IndexTagirNotID el={dataTagir} tagirData={tagir} />
-        {/* Народ */}
-        <IndexNarod el={dataNarod} narodData={narod} />
-        <IndexNarodNotID el={dataNarod} narodData={narod} />
-        {/* F51 */}
-        <IndexF51 el={dataF51} f51Data={f51} />
-        <IndexF51NotID el={dataF51} f51Data={f51} />
-        {/* Discount */}
-        <IndexDiscount el={dataDiscount} discountData={discount} />
-        <IndexDiscountNotID el={dataDiscount} discountData={discount} />
-        {/* Base */}
-        <IndexBase el={dataBase} baseData={deleteDoubleProduct} />
-        <IndexBaseNotID el={dataBase} baseData={deleteDoubleProduct} />
-        {/* Other */}
-        <IndexOther el={dataOther} otherData={other} />
-        <IndexOtherNotID el={dataOther} otherData={other} />
-        {/* MiOpts */}
-        <IndexMiOpts el={dataMiopts} mioptsData={miopts} />
-        <IndexMiOptsNotID el={dataMiopts} mioptsData={miopts} />
-        {/* LowPriceApple */}
-        <IndexLowPrice el={dataLowPrice} lowPriceData={lowprice} />
-        <IndexLowPriceNotID el={dataLowPrice} lowPriceData={lowprice} />
-        {/* Л27-28 */}
-        <IndexL27 el={dataL27} l27Data={l27} />
-        <IndexL27NotID el={dataL27} l27Data={l27} />
-        {/* Восход */}
-        <IndexSunrise el={dataSunrise} sunriseData={sunrise} />
-        <IndexSunriseNotID el={dataSunrise} sunriseData={sunrise} />
-        {/* Infinity */}
-        <IndexInfinity el={dataInfinity} infinityData={infinity} />
-        <IndexInfinityNotID el={dataInfinity} infinityData={infinity} />
-        {/* Alikson */}
-        <IndexLikemob el={dataLikemob} likemobData={likemob} />
-        <IndexLikemobNotID el={dataLikemob} likemobData={likemob} />
-        {/* BigAp */}
-        <IndexBigAp el={dataBigAp} bigApData={bigAp} />
-        <IndexBigApNotID el={dataBigAp} bigApData={bigAp} />
-        {/* MTA Store */}
-        <IndexMTA el={dataMTA} mtaData={mta} />
-        <IndexMTANotID el={dataMTA} mtaData={mta} />
-        {/* Bonus OPT */}
-        <IndexBonus el={dataBonus} bonusData={bonus} />
-        <IndexBonusNotID el={dataBonus} bonusData={bonus} />
-        {/* Root OPT */}
-        <IndexRootOpt el={dataRootOpt} rootOptData={rootOpt} />
-        <IndexRootOptNotID el={dataRootOpt} rootOptData={rootOpt} />
-        {/* A18 */}
-        <IndexA18 el={dataA18} a18Data={a18} />
-        <IndexA18NotID el={dataA18} a18Data={a18} />
-        {/* Трубный */}
-        <IndexAMT el={dataAMT} AMTData={amt} />
-        <IndexAMTNotID el={dataAMT} AMTData={amt} />
-        {/* Boltun */}
-        <IndexBoltun el={dataBoltun} boltunData={boltun} />
-        <IndexBoltunNotID el={dataBoltun} boltunData={boltun} />
-        {/* Store 77 */}
-        <IndexStore77 el={dataStore77} store77Data={store77} />
-        <IndexStore77NotID el={dataStore77} store77Data={store77} />
-        {/* All Price */}
-        <AllPriceWithID
-          dataSuperprice={superprice}
-          dataVsemi={vsemi}
-          dataUnimtrn={dataUNIMTRN}
-          dataHi={hi}
-          dataMihonor={mihonor}
-          dataGarmin={garmin}
-          S5Data={S5}
-          rptradeData={rptrade}
-          racmagData={racmag}
-          electrozonData={electrozon}
-          artiData={arti}
-          resaleData={resale}
-          tagirData={tagir}
-          narodData={narod}
-          f51Data={f51}
-          discountData={discount}
-          baseData={deleteDoubleProduct}
-          otherData={other}
-          mioptsData={miopts}
-          lowPriceData={lowprice}
-          l27Data={l27}
-          sunriseData={sunrise}
-          infinityData={infinity}
-          likemobData={likemob}
-          mtaData={mta}
-          bonusData={bonus}
-          bigApData={bigAp}
-          rootOptData={rootOpt}
-          a18Data={a18}
-          AMTData={amt}
-          boltunData={boltun}
-        />
-        <AllPriceNotID
-          dataSuperprice={superprice}
-          dataVsemi={vsemi}
-          dataUnimtrn={dataUNIMTRN}
-          dataHi={hi}
-          dataMihonor={mihonor}
-          dataGarmin={garmin}
-          S5Data={S5}
-          rptradeData={rptrade}
-          racmagData={racmag}
-          electrozonData={electrozon}
-          artiData={arti}
-          resaleData={resale}
-          tagirData={tagir}
-          narodData={narod}
-          f51Data={f51}
-          discountData={discount}
-          baseData={deleteDoubleProduct}
-          otherData={other}
-          mioptsData={miopts}
-          lowPriceData={lowprice}
-          l27Data={l27}
-          sunriseData={sunrise}
-          infinityData={infinity}
-          likemobData={likemob}
-          mtaData={mta}
-          bonusData={bonus}
-          bigApData={bigAp}
-          rootOptData={rootOpt}
-          a18Data={a18}
-          AMTData={amt}
-          boltunData={boltun}
-        />
         
+        {/* All Price */}
+        <AllPriceWithIDTest
+          dataSuperprice={superprice}
+          dataVsemi={vsemi}
+          dataUnimtrn={unimtrn}
+          dataHi={hi}
+          dataMihonor={mihonor}
+          dataGarmin={garmin}
+          S5Data={S5}
+          rptradeData={rptrade}
+          racmagData={racmag}
+          electrozonData={electrozon}
+          artiData={arti}
+          resaleData={resale}
+          tagirData={tagir}
+          narodData={narod}
+          f51Data={f51}
+          discountData={discount}
+          baseData={deleteDoubleProduct}
+          otherData={other}
+          mioptsData={miopts}
+          lowPriceData={lowprice}
+          l27Data={l27}
+          sunriseData={sunrise}
+          infinityData={infinity}
+          likemobData={likemob}
+          mtaData={mta}
+          bonusData={bonus}
+          bigApData={bigAp}
+          rootOptData={rootOpt}
+          a18Data={a18}
+          AMTData={amt}
+          boltunData={boltun}
+        />
+        {/* <AllPriceNotID
+          dataSuperprice={superprice}
+          dataVsemi={vsemi}
+          dataUnimtrn={unimtrn}
+          dataHi={hi}
+          dataMihonor={mihonor}
+          dataGarmin={garmin}
+          S5Data={S5}
+          rptradeData={rptrade}
+          racmagData={racmag}
+          electrozonData={electrozon}
+          artiData={arti}
+          resaleData={resale}
+          tagirData={tagir}
+          narodData={narod}
+          f51Data={f51}
+          discountData={discount}
+          baseData={deleteDoubleProduct}
+          otherData={other}
+          mioptsData={miopts}
+          lowPriceData={lowprice}
+          l27Data={l27}
+          sunriseData={sunrise}
+          infinityData={infinity}
+          likemobData={likemob}
+          mtaData={mta}
+          bonusData={bonus}
+          bigApData={bigAp}
+          rootOptData={rootOpt}
+          a18Data={a18}
+          AMTData={amt}
+          boltunData={boltun}
+        /> */}
       </div>
     </div>
   );

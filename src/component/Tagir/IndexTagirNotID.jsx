@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixTagir } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -22,10 +23,10 @@ const IndexTagirNotID = ({ el, tagirData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameTagir(tagir.name)) === "No match" &&
+        getIdByName(defaultFixName(fixNameTagir(tagir.name))) === "No match" &&
         returnStockPriceTagir(tagir.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameTagir(fixNameTagir(tagir.name))),
+          id: getIdByName(defaultFixName(returnNameTagir(fixNameTagir(tagir.name)))),
           name: returnNameTagir(fixNameTagir(tagir.name)),
           stockPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
           provider: "Тагир",

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixBoltun } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { returnFixNameBoltun } from "./helpers/helpers";
@@ -17,10 +18,10 @@ const IndexBoltunNotID = ({ el, boltunData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameBoltun(boltun.name)) === "No match" &&
+        getIdByName(defaultFixName(returnFixNameBoltun(boltun.name))) === "No match" &&
         boltun.price &&
         resultArr.push({
-          id: returnIDSamsung(returnFixNameBoltun(boltun.name)),
+          id: getIdByName(defaultFixName(returnFixNameBoltun(boltun.name))),
           name: returnFixNameBoltun(boltun.name),
           stockPrice: boltun.price,
           provider: "Болтун",

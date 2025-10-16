@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixDiscount } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -20,15 +21,20 @@ const IndexDiscountNotID = ({ el, discountData }) => {
       discount.name &&
       typeof discount.name === "string" &&
       baseFixDiscount(discount) &&
-      returnStockPriceDiscount(returnFixNameDiscount(discount.name)).indexOf("00") !== -1 &&
+      returnStockPriceDiscount(returnFixNameDiscount(discount.name)).indexOf(
+        "00"
+      ) !== -1 &&
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameDiscount(discount.name)) === "No match" &&
+        getIdByName(defaultFixName(returnFixNameDiscount(discount.name))) ===
+          "No match" &&
         returnStockPriceDiscount(discount.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrDiscount(returnFixNameDiscount(discount.name))
+          id: getIdByName(
+            defaultFixName(
+              returnNameInArrDiscount(returnFixNameDiscount(discount.name))
+            )
           ),
           name: returnNameInArrDiscount(returnFixNameDiscount(discount.name)),
           stockPrice: returnStockPriceDiscount(

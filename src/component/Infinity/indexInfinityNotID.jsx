@@ -8,6 +8,8 @@ import {
   returnNameInArrInfinity,
   returnStockPriceInfinity,
 } from "./helpers/helpers";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 
 const IndexInfinityNotID = ({ el, infinityData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,11 +22,11 @@ const IndexInfinityNotID = ({ el, infinityData }) => {
       baseFixInfinity(infinity)
     ) {
       return (
-        returnIDSamsung(fixNameInfinity(infinity.name)) === "No match" &&
+        getIdByName(defaultFixName(fixNameInfinity(infinity.name))) === "No match" &&
         returnStockPriceInfinity(infinity.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrInfinity(fixNameInfinity(infinity.name))
+          id: getIdByName(defaultFixName(
+            returnNameInArrInfinity(fixNameInfinity(infinity.name)))
           ),
           name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
           stockPrice: returnStockPriceInfinity(fixNameInfinity(infinity.name)),

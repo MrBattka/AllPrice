@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixRacmag } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -23,11 +24,11 @@ const IndexRacmag = ({ el, racmagData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameRacmag(racmag.name)) !== "No match" &&
+        getIdByName(defaultFixName(returnFixNameRacmag(racmag.name))) !== "No match" &&
         returnStockPriceRacmag(racmag.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrRacmag(returnFixNameRacmag(racmag.name))
+          id: getIdByName(defaultFixName(
+            returnNameInArrRacmag(returnFixNameRacmag(racmag.name)))
           ),
           name: returnNameInArrRacmag(returnFixNameRacmag(racmag.name)),
           stockPrice: returnStockPriceRacmag(returnFixNameRacmag(racmag.name)),

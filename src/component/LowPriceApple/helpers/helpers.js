@@ -157,11 +157,16 @@ export const returnStockPriceLowPrice = (name) => {
   let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
+
   let splitPrice =
-    checkSpace4.indexOf("-") !== -1
-      ? checkSpace4.split("-")[0]
+    checkSpace4.indexOf("—") !== -1
+      ? checkSpace4.split("—")[0]
       : checkSpace4;
-  let replaceSpace = splitPrice.replace(" ", "");
+      let splitPrice1 =
+    splitPrice.indexOf("-") !== -1
+      ? splitPrice.split("-")[0]
+      : splitPrice;
+  let replaceSpace = splitPrice1.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 
   let reverseBackStrName = replaceDoubleSpace.split("").reverse().join("");
@@ -182,6 +187,10 @@ export const returnStockPriceLowPrice = (name) => {
 
   let fixUSBC = removeSD8gen3.replace("USBC", "USB-C");
   let fixWiFi1 = fixUSBC.replace("WiFi", "Wi-Fi");
+  let fixRub = fixWiFi1.replace("₽", "");
+  let fix1Sim = fixRub.replace("1sim", "");
+  let fixeSim = fix1Sim.replace("Esim", "");
+  let replacePoint = fixeSim.replace(".", "");
 
-  return fixWiFi1;
+  return replacePoint;
 };

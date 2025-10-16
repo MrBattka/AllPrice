@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixRootOpt } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { returnFixNameRootOpt } from "./helpers/helpers";
@@ -17,10 +18,10 @@ const IndexRootOptNotID = ({ el, rootOptData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameRootOpt(rootOpt.name)) === "No match" &&
+        getIdByName(defaultFixName(returnFixNameRootOpt(rootOpt.name))) === "No match" &&
         rootOpt.price &&
         resultArr.push({
-          id: returnIDSamsung(returnFixNameRootOpt(rootOpt.name)),
+          id: getIdByName(defaultFixName(returnFixNameRootOpt(rootOpt.name))),
           name: returnFixNameRootOpt(rootOpt.name),
           stockPrice: rootOpt.price,
           provider: "RootOPT",

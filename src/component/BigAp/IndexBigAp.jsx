@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixBigAp } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -23,11 +24,11 @@ const IndexBigAp = ({ el, bigApData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameBigAp(bigAp.name)) !== "No match" &&
+        getIdByName(defaultFixName(returnFixNameBigAp(bigAp.name))) !== "No match" &&
         returnStockPriceBigAp(bigAp.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrBigAp(returnFixNameBigAp(bigAp.name))
+          id: getIdByName(defaultFixName(
+            returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)))
           ),
           name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),
           stockPrice: returnStockPriceBigAp(returnFixNameBigAp(bigAp.name)),

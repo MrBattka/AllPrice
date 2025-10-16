@@ -1,16 +1,22 @@
 import { newPrice } from "../../../helpers/NewPrice";
 
 export const fixNameInfinity = (name) => {
- const replaceHeadphone = name.replace("🎧", "")
- const replacePencil = replaceHeadphone.replace(" ✏️", "")
- const replaceMouse = replacePencil.replace("🖱️", "")
- const replaceGen = replaceMouse.replace("Pencil 1-gen (USB-C)", "Pencil USB C ")
- const replaceGb = replaceGen.replace("Gb ", "")
- const replaceGB = replaceGb.replace("GB ", "")
- const replace2Sim = replaceGB.replace("2sim", "")
- const fix1TB = replace2Sim.replace("1 TB", "1TB")
- const fixAirPods = fix1TB.replace("Air Pods", "AirPods")
-  return fixAirPods;
+  const replaceHeadphone = name.replace("🎧", "");
+  const replacePencil = replaceHeadphone.replace(" ✏️", "");
+  const replaceMouse = replacePencil.replace("🖱️", "");
+  const replaceGen = replaceMouse.replace(
+    "Pencil 1-gen (USB-C)",
+    "Pencil USB C "
+  );
+  const replaceGb = replaceGen.replace("Gb ", "");
+  const replaceGB = replaceGb.replace("GB ", "");
+  const replace2Sim = replaceGB.replace("2sim", "");
+  const fix1TB = replace2Sim.replace("1 TB", "1TB");
+  const fixAirPods = fix1TB.replace("Air Pods", "AirPods");
+  const fixeSIM = fixAirPods.replace("eSIM", "🇺🇸");
+  const fixeSIM1 = fixeSIM.replace("(e-sim)", "🇺🇸");
+  const fix2SIM = fixeSIM1.replace("(2-sim)", "dual");
+  return fix2SIM;
 };
 
 const checkFlags = (str) => {
@@ -51,10 +57,19 @@ const checkFlags = (str) => {
     checkSpace4.slice(-4) === "🇨🇫" ||
     checkSpace4.slice(-4) === "🇰🇿" ||
     checkSpace4.slice(-4) === "🇰🇷" ||
-    checkSpace4.slice(-4) === "🇬🇺"
+    checkSpace4.slice(-4) === "🇬🇺" ||
+    checkSpace4.slice(-4) === "eSIM" ||
+    checkSpace4.slice(-4) === "dual"
   ) {
     return (
       checkSpace4.slice(-4) + checkSpace4.substring(0, checkSpace4.length - 4)
+    );
+  } else if (
+    checkSpace4.slice(-7) === "(e-sim)" ||
+    checkSpace4.slice(-7) === "(2-sim)"
+  ) {
+    return (
+      checkSpace4.slice(-7) + checkSpace4.substring(0, checkSpace4.length - 7)
     );
   } else {
     return checkSpace4;
@@ -65,16 +80,16 @@ export const returnNameInArrInfinity = (name) => {
   const fixFlags = checkFlags(name);
 
   let reverseStrName = fixFlags.split("").reverse().join("");
-  let splitPrice = reverseStrName.indexOf(" ") !== -1 ? /\s(.+)/.exec(reverseStrName)[1] : reverseStrName
+  let splitPrice =
+    reverseStrName.indexOf(" ") !== -1
+      ? /\s(.+)/.exec(reverseStrName)[1]
+      : reverseStrName;
   // let replaceStick = /\s(.+)/.exec(splitPrice)[1];
 
-  let checkSpace1 =
-  splitPrice[0] === " "
-    ? splitPrice.slice(1)
-    : splitPrice;
-let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
-let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
-let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
+  let checkSpace1 = splitPrice[0] === " " ? splitPrice.slice(1) : splitPrice;
+  let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
+  let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
+  let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let checkTriple = checkSpace4.split("-")[4]
     ? `${checkSpace4.split("-")[1]}-${checkSpace4.split("-")[2]}-${
@@ -98,7 +113,8 @@ let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 };
 
 export const returnStockPriceInfinity = (name) => {
-  let replaceEU = name.replace("🇪🇺", "");
+  const fixFlags = checkFlags(name);
+  let replaceEU = fixFlags.replace("🇪🇺", "");
   let replaceAE = replaceEU.replace("🇦🇪", "");
   let replaceIN = replaceAE.replace("🇮🇳", "");
   let replaceBR = replaceIN.replace("🇧🇷", "");
@@ -127,22 +143,18 @@ export const returnStockPriceInfinity = (name) => {
     "Tab S9FE 8/256 Lavender 5G",
     ""
   );
-  let replaceSick = replaceS9feLavander.replace("-", "")
+  let replaceSick = replaceS9feLavander.replace("-", "");
 
   let reverseStrName = replaceSick.split("").reverse().join("");
 
   let checkSpace1 =
-    reverseStrName[0] === " "
-      ? reverseStrName.slice(1)
-      : reverseStrName;
+    reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
   let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
   let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let splitPrice =
-    checkSpace4.indexOf(" ") != -1
-      ? checkSpace4.split(" ")[0]
-      : checkSpace4;
+    checkSpace4.indexOf(" ") != -1 ? checkSpace4.split(" ")[0] : checkSpace4;
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 
@@ -151,9 +163,11 @@ export const returnStockPriceInfinity = (name) => {
   let removeOther = reverseBackStrName.indexOf(" ")
     ? reverseBackStrName.split(" ")[0]
     : reverseBackStrName;
-  let removeFire = removeOther.replace("💥", "")
+  let removeFire = removeOther.replace("💥", "");
 
-  let removeDot = removeFire.indexOf(",") !== - 1 ? removeFire.replace(",", "") : removeFire
-
-  return removeDot;
+  let removeDot =
+    removeFire.indexOf(",") !== -1 ? removeFire.replace(",", "") : removeFire;
+  let removeUS = removeDot.replace("🇺🇸", "");
+  const fixFlags1 = checkFlags(removeUS);
+  return fixFlags1;
 };

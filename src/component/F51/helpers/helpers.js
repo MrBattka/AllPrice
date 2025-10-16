@@ -72,6 +72,9 @@ export const returnNameF51 = (name) => {
     fixmi12Black.indexOf("S23 FE") != -1
       ? fixmi12Black.replace("Gray", "Graphite")
       : fixmi12Black;
+  const fix512 = fixS23FEGraphite.replace("1512", "512")
+  const fix256 = fix512.replace("1256", "256")
+  const fix128 = fix256.replace("1128", "128")
 
-  return fixS23FEGraphite;
+  return fix128;
 };

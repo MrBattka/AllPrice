@@ -9,6 +9,8 @@ import {
   returnNameInArrMiOpts,
   returnStockPriceMiOpts,
 } from "./helpers/helpers";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 
 const IndexMiOpts = ({ el, mioptsData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,12 +25,15 @@ const IndexMiOpts = ({ el, mioptsData }) => {
       baseFixMiOpts(miopts)
     ) {
       return (
-        returnIDSamsung(fixNameMiOpts(miopts.name)) !== "No match" &&
+        getIdByName(defaultFixName(fixNameMiOpts(miopts.name))) !== "No match" &&
         returnExtraPriceMiOpts(miopts.name) &&
         returnStockPriceMiOpts(miopts.name) &&
+        returnStockPriceMiOpts(fixNameMiOpts(miopts.name)) > 1000 &&
+        (returnNameInArrMiOpts(miopts.name).indexOf("GB") !== -1 ||
+          returnNameInArrMiOpts(miopts.name).indexOf("TRB") !== -1) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrMiOpts(fixNameMiOpts(miopts.name))
+          id: getIdByName(
+            defaultFixName(returnNameInArrMiOpts(fixNameMiOpts(miopts.name)))
           ),
           name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
           extraPrice: returnExtraPriceMiOpts(fixNameMiOpts(miopts.name)),

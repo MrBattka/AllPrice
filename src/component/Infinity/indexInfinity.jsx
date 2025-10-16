@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixInfinity } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -20,11 +21,11 @@ const IndexInfinity = ({ el, infinityData }) => {
       baseFixInfinity(infinity)
     ) {
       return (
-        returnIDSamsung(fixNameInfinity(infinity.name)) !== "No match" &&
+        getIdByName(defaultFixName(fixNameInfinity(infinity.name))) !== "No match" &&
         returnStockPriceInfinity(infinity.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrInfinity(fixNameInfinity(infinity.name))
+          id: getIdByName(defaultFixName(
+            returnNameInArrInfinity(fixNameInfinity(infinity.name)))
           ),
           name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
           stockPrice: returnStockPriceInfinity(fixNameInfinity(infinity.name)),

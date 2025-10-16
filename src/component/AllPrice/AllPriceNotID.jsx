@@ -75,7 +75,7 @@ import { returnGoogleHi } from "../Hi/Google/google";
 import {
   fixNameHi,
   returnNameInArrHi,
-  returnStockPriceHi
+  returnStockPriceHi,
 } from "../Hi/helpers/helpers";
 import { returnSamsungHi } from "../Hi/Samsung/samsung";
 import { returnXiaomiHi } from "../Hi/Xiaomi/xiaomi";
@@ -164,13 +164,7 @@ import {
   returnNameInArrTrub,
   returnStockPriceTrub,
 } from "../Trub/helpers/helpers";
-import { returnApple } from "../Unimtrn/Apple/apple";
-import { returnDyson } from "../Unimtrn/Dyson/dyson";
-import { returnGameConsole } from "../Unimtrn/GameConsole/gameConsole";
-import { fixNameUnimtrn } from "../Unimtrn/helpers/helpers";
-import { returnOtherProduct } from "../Unimtrn/OtherProduct/otherProduct";
-import { returnSamsung } from "../Unimtrn/Samsung/samsung";
-import { returnXiaomi } from "../Unimtrn/Xiaomi/xiaomi";
+import { fixNameUnimtrn, returnNameInArrUnimtrn, returnStockPriceUnimtrn } from "../Unimtrn/helpers/helpers";
 import {
   fixNameVseMi,
   returnExtraPriceVseMi,
@@ -209,7 +203,7 @@ const AllPriceNotID = ({
   rootOptData,
   a18Data,
   AMTData,
-  boltunData
+  boltunData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const allPriceArr = [];
@@ -258,28 +252,42 @@ const AllPriceNotID = ({
     }
   });
 
+  // dataUnimtrn.map((unimtrn) => {
+  //   if (
+  //     unimtrn.Модификация &&
+  //     returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) ===
+  //       "No match" &&
+  //     isOpen &&
+  //     baseFix(unimtrn)
+  //   ) {
+  //     allPriceArr.push({
+  //       id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
+  //       name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
+  //       stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
+  //       provider: "Метреон",
+  //     });
+  //   }
+  // });
+
   dataUnimtrn.map((unimtrn) => {
-    if (
-      unimtrn.Модификация &&
-      returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) ===
-        "No match" &&
-      isOpen &&
-      baseFix(unimtrn) &&
-      (returnApple(unimtrn) ||
-        returnDyson(unimtrn) ||
-        returnSamsung(unimtrn) ||
-        returnXiaomi(unimtrn) ||
-        returnGameConsole(unimtrn) ||
-        returnOtherProduct(unimtrn))
-    ) {
-      allPriceArr.push({
-        id: returnIDSamsung(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
-        name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
-        stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
-        provider: "Метреон",
-      });
-    }
-  });
+      if (
+        unimtrn.name &&
+        returnIDSamsung(
+            returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)
+          )
+        ) !== "No match" &&
+        isOpen &&
+        baseFix(unimtrn)
+      ) {
+        allPriceArr.push({
+          id: returnIDSamsung(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name))
+          ),
+          name: returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)),
+          stockPrice: returnStockPriceUnimtrn(unimtrn.name),
+          provider: "Метреон",
+        });
+      }
+    });
 
   dataHi.map((hi) => {
     if (
@@ -649,6 +657,9 @@ const AllPriceNotID = ({
         returnIDSamsung(fixNameMiOpts(miopts.name)) === "No match" &&
         returnExtraPriceMiOpts(miopts.name) &&
         returnStockPriceMiOpts(miopts.name) &&
+        returnStockPriceMiOpts(fixNameMiOpts(miopts.name)) > 1000 &&
+        !Number.isInteger(Number(fixNameMiOpts(miopts.name)[0])) &&
+        (miopts.name.includes("GB") || miopts.name.includes("TRB")) &&
         allPriceArr.push({
           id: returnIDSamsung(
             returnNameInArrMiOpts(fixNameMiOpts(miopts.name))
@@ -677,7 +688,7 @@ const AllPriceNotID = ({
           ),
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
           stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
-          provider: "LowPrice",
+          provider: "Ghost Re:Sale",
         })
       );
     }
@@ -904,24 +915,24 @@ const AllPriceNotID = ({
   });
 
   boltunData.map((boltun) => {
-      if (
-        boltun.name &&
-        typeof boltun.name === "string" &&
-        baseFixBoltun(boltun) &&
-        isOpen
-      ) {
-        return (
-          returnIDSamsung(returnFixNameBoltun(boltun.name)) === "No match" &&
-          boltun.price &&
-          allPriceArr.push({
-            id: returnIDSamsung(returnFixNameBoltun(boltun.name)),
-            name: returnFixNameBoltun(boltun.name),
-            stockPrice: boltun.price,
-            provider: "Болтун",
-          })
-        );
-      }
-    });
+    if (
+      boltun.name &&
+      typeof boltun.name === "string" &&
+      baseFixBoltun(boltun) &&
+      isOpen
+    ) {
+      return (
+        returnIDSamsung(returnFixNameBoltun(boltun.name)) === "No match" &&
+        boltun.price &&
+        allPriceArr.push({
+          id: returnIDSamsung(returnFixNameBoltun(boltun.name)),
+          name: returnFixNameBoltun(boltun.name),
+          stockPrice: boltun.price,
+          provider: "Болтун",
+        })
+      );
+    }
+  });
 
   return (
     <div>

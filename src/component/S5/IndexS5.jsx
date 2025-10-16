@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixS5 } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -22,10 +23,10 @@ const IndexS5 = ({ el, S5Data }) => {
       returnStockPriceS5(fixNameS5(S5.name)).indexOf("0") != -1
     ) {
       return (
-        returnIDSamsung(fixNameS5(S5.name)) !== "No match" &&
+        getIdByName(defaultFixName(fixNameS5(S5.name))) !== "No match" &&
         returnStockPriceS5(S5.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrS5(fixNameS5(S5.name))),
+          id: getIdByName(defaultFixName(returnNameInArrS5(fixNameS5(S5.name)))),
           name: returnNameInArrS5(fixNameS5(S5.name)),
           stockPrice: returnStockPriceS5(fixNameS5(S5.name)),
           provider: "S5",

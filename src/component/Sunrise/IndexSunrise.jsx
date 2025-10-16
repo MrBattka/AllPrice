@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixSunrise } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -23,11 +24,11 @@ const IndexSunrise = ({ el, sunriseData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameSunrise(sunrise.name)) !== "No match" &&
+        getIdByName(defaultFixName(returnFixNameSunrise(sunrise.name))) !== "No match" &&
         returnStockPriceSunrise(sunrise.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))
+          id: getIdByName(defaultFixName(
+            returnNameInArrSunrise(returnFixNameSunrise(sunrise.name)))
           ),
           name: returnNameInArrSunrise(returnFixNameSunrise(sunrise.name)),
           stockPrice: returnStockPriceSunrise(

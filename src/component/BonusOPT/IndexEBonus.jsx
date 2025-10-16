@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixBonus } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { returnFixNameBonus } from "./helpers/helpers";
@@ -17,10 +18,10 @@ const IndexBonus = ({ el, bonusData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameBonus(bonus.name)) !== "No match" &&
+        getIdByName(defaultFixName(returnFixNameBonus(bonus.name))) !== "No match" &&
         bonus.price &&
         resultArr.push({
-          id: returnIDSamsung(returnFixNameBonus(bonus.name)),
+          id: getIdByName(defaultFixName(returnFixNameBonus(bonus.name))),
           name: returnFixNameBonus(bonus.name),
           stockPrice: bonus.price,
           provider: "БонусОПТ",

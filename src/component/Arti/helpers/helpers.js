@@ -187,6 +187,7 @@ export const returnStockPriceArti = (name) => {
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 
   let reverseBackStrName = replaceDoubleSpace.split("").reverse().join("");
+  let replaceBlock = reverseBackStrName.replace("Блок❌", "")
 
-  return reverseBackStrName;
+  return replaceBlock;
 };

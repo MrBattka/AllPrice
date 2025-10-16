@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixLowPrice } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -20,18 +21,18 @@ const IndexLowPrice = ({ el, lowPriceData }) => {
       baseFixLowPrice(lowPrice)
     ) {
       return (
-        returnIDSamsung(fixNameLowPrice(lowPrice.name)) !== "No match" &&
+        getIdByName(defaultFixName(fixNameLowPrice(lowPrice.name))) !== "No match" &&
         returnStockPriceLowPrice(lowPrice.name) &&
         returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)).indexOf(
           "00"
         ) !== -1 &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))
+          id: getIdByName(defaultFixName(
+            returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)))
           ),
           name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
           stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
-          provider: "LowPrice",
+          provider: "Ghost Re:Sale",
         })
       );
     }
@@ -42,7 +43,7 @@ const IndexLowPrice = ({ el, lowPriceData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "LowPriceApple ▲" : "LowPriceApple ▼"}
+            {isOpen ? "Ghost Re:Sale ▲" : "Ghost Re:Sale ▼"}
           </span>
         )}
       </div>

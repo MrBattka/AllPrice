@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixNarod } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -22,10 +23,10 @@ const IndexNarod = ({ el, narodData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameNarod(narod.name)) !== "No match" &&
+        getIdByName(defaultFixName(fixNameNarod(narod.name))) !== "No match" &&
         returnStockPriceNarod(narod.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameNarod(fixNameNarod(narod.name))),
+          id: getIdByName(defaultFixName(returnNameNarod(fixNameNarod(narod.name)))),
           name: returnNameNarod(fixNameNarod(narod.name)),
           stockPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
           provider: "Народ",

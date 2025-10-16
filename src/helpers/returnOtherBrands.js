@@ -154,6 +154,68 @@ export const returnIDOtherBrand = (name) => {
 
     // Dyson
   } else if (
+    name.indexOf("hs08") != -1 &&
+    name.indexOf("complete long") != -1 &&
+    name.indexOf("ceramic pop") != -1
+  ) {
+    return 40340;
+  } else if (
+    name.indexOf("hs08") != -1 &&
+    name.indexOf("complete long") != -1 &&
+    name.indexOf("diffuse") != -1 &&
+    name.indexOf("topaz/vinca") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 40339;
+  } else if (
+    name.indexOf("hs08") != -1 &&
+    name.indexOf("complete long") === -1 &&
+    name.indexOf("jasper plum") != -1
+  ) {
+    return 40341;
+  } else if (
+    name.indexOf("hs08") != -1 &&
+    name.indexOf("complete long") === -1 &&
+    name.indexOf("straigh wavy") != -1 &&
+    name.indexOf("topaz/vinca") != -1 &&
+    name.indexOf("blue") != -1
+  ) {
+    return 40350;
+  } else if (
+    name.indexOf("hs09") != -1 &&
+    name.indexOf("coanda2x") !== -1 &&
+    name.indexOf("ceramic") != -1 &&
+    name.indexOf("pink/roze") != -1 &&
+    name.indexOf("gold") != -1
+  ) {
+    return 40342;
+  } else if (
+    name.indexOf("hs09") != -1 &&
+    name.indexOf("coanda2x") !== -1 &&
+    name.indexOf("jasper plum") != -1
+  ) {
+    return 40343;
+  } else if (
+    name.indexOf("hs07") != -1 &&
+    name.indexOf("corrale") !== -1 &&
+    name.indexOf("nickel/copper") != -1
+  ) {
+    return 40355;
+  } else if (
+    name.indexOf("v12s") != -1 &&
+    name.indexOf("detect slim") !== -1 &&
+    name.indexOf("submarine") != -1 &&
+    name.indexOf("sv46") === -1
+  ) {
+    return 40349;
+  } else if (
+    name.indexOf("v12s") != -1 &&
+    name.indexOf("detect slim") !== -1 &&
+    name.indexOf("submarine") != -1 &&
+    name.indexOf("sv46") != -1
+  ) {
+    return 40336;
+  } else if (
     name.indexOf("hs05 airwrap long barrel prussian blue/cooper") !== -1
   ) {
     return 27087;
@@ -267,7 +329,7 @@ export const returnIDOtherBrand = (name) => {
     name.indexOf("v11 nickel/purple") !== -1 ||
     (name.indexOf("v11") !== -1 &&
       name.indexOf("nickel") !== -1 &&
-      name.indexOf("blue") !== -1)
+      name.indexOf("purple") !== -1)
   ) {
     return 28204;
   } else if (name.indexOf("ht01") !== -1 && name.indexOf("blue") !== -1) {
@@ -305,108 +367,13 @@ export const returnIDOtherBrand = (name) => {
     return 28199;
   } else if (name.indexOf("v15 detect absolute") !== -1) {
     return 28202;
-  } else if (name.indexOf("gen5 detect absolute") !== -1) {
-    return 28208;
-  } else if (name.indexOf("gen5 outsize absolute") !== -1) {
-    return 28208;
   } else if (name.indexOf("v15s detect submarine") !== -1) {
     return 37131;
-  } else if (
-    name.indexOf("dyson") !== -1 &&
-    name.indexOf("evo") !== -1 &&
-    name.indexOf("hepa") !== -1
-  ) {
-    return 35666;
-  } else if (
-    name.indexOf("dyson") !== -1 &&
-    name.indexOf("вакуумный") !== -1 &&
-    name.indexOf("адаптер") !== -1
-  ) {
-    return 35047;
-  } else if (
-    name.indexOf("dyson corrale в чехле и с расческами цвет фуксия") !== -1
-  ) {
-    return 35048;
-  } else if (name.indexOf("dyson corrale в чехле цвет медный") !== -1) {
-    return 35049;
-  } else if (name.indexOf("dyson corrale в чехле цвет никель/фуксия") !== -1) {
-    return 35050;
-  } else if (name.indexOf("dyson corrale в чехле цвет пурпурный") !== -1) {
-    return 35051;
-  } else if (
-    name.indexOf("dyson corrale с чехлом и кейсом цвет красный") !== -1
-  ) {
-    return 35052;
-  } else if (
-    name.indexOf(
-      "dyson corrale с чехлом, кейсом и расческами цвет берлинская лазурь/медный"
-    ) !== -1
-  ) {
-    return 35053;
-  } else if (
-    name.indexOf(
-      "dyson corrale с чехлом, кейсом и расческами цвет vinca blue и rose"
-    ) !== -1
-  ) {
-    return 35685;
-  } else if (name.indexOf("dyson corrale стальной/фуксия") !== -1) {
-    return 27083;
-  } else if (name.indexOf("dyson corrale цвет фуксия") !== -1) {
-    return 35056;
-  } else if (
-    name.indexOf("dyson corrale c чехлом профессиональная версия") !== -1
-  ) {
-    return 35057;
-  } else if (name.indexOf("dyson solarcycle morph белый/серебристый") !== -1) {
-    return 27084;
-  } else if (name.indexOf("dyson solarcycle morph черный") !== -1) {
-    return 27085;
-  } else if (name.indexOf("dyson hp05 pure hot + cool") !== -1) {
-    return 27086;
-  } else if (name.indexOf("dyson gen5detect") !== -1) {
-    return 28207;
-  } else if (name.indexOf("dyson gen5detect absolute") !== -1) {
-    return 28208;
-  } else if (name.indexOf("dyson gen5outsize") !== -1) {
-    return 28205;
-  } else if (name.indexOf("dyson gen5outsize absolute") !== -1) {
-    return 28206;
-  } else if (name.indexOf("dyson omni-glide") !== -1) {
-    return 28198;
-  } else if (name.indexOf("dyson outsize") !== -1) {
-    return 28201;
-  } else if (
-    name.indexOf("dyson v10 absolute cordless vacuum cleaner") !== -1
-  ) {
-    return 27103;
-  } else if (
-    name.indexOf("dyson v10 cyclone parquet серый (станция и 5 насадок)") !== -1
-  ) {
-    return 35672;
-  } else if (
-    name.indexOf(
-      "dyson v10 cyclone total clean серый (станция и 8 насадок)"
-    ) !== -1
-  ) {
-    return 35674;
-  } else if (
-    name.indexOf(
-      "dyson v11 absolute беспроводной синий (станция и 7 насадок)"
-    ) !== -1
-  ) {
-    return 35671;
-  } else if (name.indexOf("dyson v11 absolute extra") !== -1) {
-    return 28204;
-  } else if (
-    name.indexOf("dyson v11 absolute pro золотистый (станция и 9 насадок)") !==
-    -1
-  ) {
-    return 35673;
   } else if (name.indexOf("dyson v12 detect slim") !== -1) {
     return 28199;
   } else if (name.indexOf("dyson v12 detect slim absolute") !== -1) {
     return 28200;
-  } else if (name.indexOf("dyson v12 vacuum cleaner detech slim") !== -1) {
+  } else if (name.indexOf("dyson v12 vacuum cleaner detect slim") !== -1) {
     return 27102;
   } else if (name.indexOf("dyson v15 detect") !== -1) {
     return 28203;
@@ -424,59 +391,6 @@ export const returnIDOtherBrand = (name) => {
     return 27082;
   } else if (name.indexOf("робот dyson 360 vis nav") !== -1) {
     return 28195;
-  } else if (
-    name.indexOf(
-      "dyson airwrap hs01 complete blue/copper (берлинская лазурь) с дорожным чехлом"
-    ) !== -1
-  ) {
-    return 35041;
-  } else if (
-    name.indexOf(
-      "dyson airwrap hs01 complete blue/copper (берлинская лазурь) с дорожным чехлом и расческами"
-    ) !== -1
-  ) {
-    return 35042;
-  } else if (
-    name.indexOf(
-      "dyson airwrap hs01 complete nickel/copper (никель/медный) для разных типов волос с набором фирменных чехлов"
-    ) !== -1
-  ) {
-    return 35062;
-  } else if (
-    name.indexOf(
-      "dyson airwrap hs01 complete nickel/fuchsia (никель/фуксия) для длинных волос"
-    ) !== -1
-  ) {
-    return 35061;
-  } else if (
-    name.indexOf(
-      "dyson airwrap hs01 complete nickel/fuchsia (никель/фуксия) для объема и формы"
-    ) !== -1
-  ) {
-    return 35063;
-  } else if (
-    name.indexOf(
-      "dyson airwrap hs01 complete nickel/fuchsia (никель/фуксия) для разных типов волос"
-    ) !== -1
-  ) {
-    return 35040;
-  } else if (
-    name.indexOf(
-      "dyson airwrap hs01 complete nickel/fuchsia (никель/фуксия) для разных типов волос с дорожным чехлом"
-    ) !== -1
-  ) {
-    return 35043;
-  } else if (
-    name.indexOf(
-      "dyson airwrap hs01 complete nickel/purple (пурпурный) для разных типов волос"
-    ) !== -1
-  ) {
-    return 35060;
-  } else if (
-    name.indexOf("dyson airwrap hs01 complete nickel/red (никель/красный)") !==
-    -1
-  ) {
-    return 35064;
   } else if (
     name.indexOf("dyson airwrap hs05 complete long ceramic pop с кейсом") !== -1
   ) {
@@ -529,121 +443,8 @@ export const returnIDOtherBrand = (name) => {
     ) !== -1
   ) {
     return 35065;
-  } else if (name.indexOf("dyson airblade v ab 12 nickel") !== -1) {
-    return 27091;
-  } else if (name.indexOf("dyson airblade v hu02 белая") !== -1) {
-    return 27092;
   } else if (name.indexOf("dyson humidifier ph04 wt/gd") !== -1) {
     return 27107;
-  } else if (name.indexOf("dyson hd01 белый с чехлом для хранения") !== -1) {
-    return 34759;
-  } else if (
-    name.indexOf("dyson hd01 сиреневый с чехлом для хранения") !== -1
-  ) {
-    return 34760;
-  } else if (name.indexOf("dyson hd01 фуксия без чехла") !== -1) {
-    return 34758;
-  } else if (name.indexOf("dyson hd01 фуксия с чехлом для хранения") !== -1) {
-    return 34761;
-  } else if (
-    name.indexOf("dyson hd01 черный/серебристый с 5 насадками") !== -1
-  ) {
-    return 34762;
-  } else if (
-    name.indexOf("dyson supersonic hd03 с 4 насадками в дорожном чехле") !== -1
-  ) {
-    return 34753;
-  } else if (
-    name.indexOf("dyson supersonic hd03 с 4 насадками в чехле") !== -1
-  ) {
-    return 34752;
-  } else if (
-    name.indexOf("dyson supersonic hd03 с 4 насадками и подставкой") !== -1
-  ) {
-    return 34756;
-  } else if (
-    name.indexOf("dyson supersonic hd03 с 4 насадками и расческами") !== -1
-  ) {
-    return 34754;
-  } else if (
-    name.indexOf("dyson supersonic hd03 фуксия с 2 фирменными расческами") !==
-    -1
-  ) {
-    return 34755;
-  } else if (name.indexOf("dyson supersonic hd03 черный /никель") !== -1) {
-    return 27093;
-  } else if (
-    name.indexOf(
-      "dyson supersonic hd03 черный с дорожным чехлом и 4 насадками"
-    ) !== -1
-  ) {
-    return 34757;
-  } else if (name.indexOf("dyson supersonic hd07 белый с 5 насадками") !== -1) {
-    return 34748;
-  } else if (
-    name.indexOf(
-      "dyson supersonic hd07 белый с 5 насадками и дорожным чехлом"
-    ) !== -1
-  ) {
-    return 34747;
-  } else if (
-    name.indexOf(
-      "dyson supersonic hd07 берлинская лазурь/медный) с 5 насадками в чехле и расческами"
-    ) !== -1
-  ) {
-    return 34744;
-  } else if (
-    name.indexOf(
-      "dyson supersonic hd07 красный с 5 насадками и дорожным чехлом"
-    ) !== -1
-  ) {
-    return 34743;
-  } else if (
-    name.indexOf(
-      "dyson supersonic hd07 с 5 насадками в дорожном чехле и расческами"
-    ) !== -1
-  ) {
-    return 34749;
-  } else if (
-    name.indexOf("dyson supersonic hd07 с 5 насадками и подставкой") !== -1
-  ) {
-    return 34750;
-  } else if (
-    name.indexOf("dyson supersonic hd07 с 5 насадками и расческами") !== -1
-  ) {
-    return 34751;
-  } else if (
-    name.indexOf(
-      "dyson supersonic hd07 синий/медный с 5 насадками в чехле и расческами"
-    ) !== -1
-  ) {
-    return 34745;
-  } else if (name.indexOf("dyson supersonic hd07 стальной/фуксия") !== -1) {
-    return 27094;
-  } else if (name.indexOf("dyson supersonic hd07 темно-синий/розовый") !== -1) {
-    return 27106;
-  } else if (
-    name.indexOf(
-      "dyson supersonic hd07 черный/серебристый с 5 насадками и дорожным чехлом"
-    ) !== -1
-  ) {
-    return 34746;
-  } else if (name.indexOf("dyson supersonic hd08 медный") !== -1) {
-    return 27098;
-  } else if (
-    name.indexOf("dyson supersonic hd08 прусский синий/насыщенная медь") !== -1
-  ) {
-    return 27095;
-  } else if (name.indexOf("dyson supersonic hd08 розовый") !== -1) {
-    return 27097;
-  } else if (
-    name.indexOf("dyson supersonic hd08 limited edition прусский синий") !== -1
-  ) {
-    return 27090;
-  } else if (
-    name.indexOf("dyson supersonic hd08 limited edition синий/розовый") !== -1
-  ) {
-    return 27099;
   } else if (
     name.indexOf("dyson supersonic hd12 professional salon edition серый") !==
     -1
@@ -663,50 +464,6 @@ export const returnIDOtherBrand = (name) => {
     return 34740;
   } else if (name.indexOf("dyson air purifier tp09") !== -1) {
     return 27108;
-  } else if (name.indexOf("dyson am10 воздуха цвет металлик") !== -1) {
-    return 35664;
-  } else if (name.indexOf("dyson ball animal 2") !== -1) {
-    return 28196;
-  } else if (name.indexOf("dyson ball animal 3") !== -1) {
-    return 28197;
-  } else if (name.indexOf("dyson bp01 pure cool me цвет металлик") !== -1) {
-    return 35659;
-  } else if (name.indexOf("dyson cinetic big ball multi floor 2") !== -1) {
-    return 27081;
-  } else if (
-    name.indexOf(
-      "dyson combi сменный стеклянный фильтр для очистителя воздуха"
-    ) !== -1
-  ) {
-    return 35665;
-  } else if (
-    name.indexOf(
-      "dyson coralle hair straightner синий / розовый подарочный набор"
-    ) !== -1
-  ) {
-    return 27104;
-  } else if (name.indexOf("dyson filter for all ") !== -1) {
-    return 27105;
-  } else if (name.indexOf("dyson hp05 pure hot cool цвет металлик") !== -1) {
-    return 35660;
-  } else if (
-    name.indexOf(
-      "dyson pure hot + cool link hp02 нагреватель-очиститель черный/никель"
-    ) !== -1
-  ) {
-    return 35663;
-  } else if (
-    name.indexOf(
-      "dyson pure hot cool hp01 очищающий нагреватель вентилятор белый/серебристый"
-    ) !== -1
-  ) {
-    return 35661;
-  } else if (
-    name.indexOf(
-      "dyson purifier hot cool очищающий тепловентилятор белый/серебристый"
-    ) !== -1
-  ) {
-    return 35662;
   } else if (
     name.indexOf("hs08") !== -1 &&
     name.indexOf("airwrap") !== -1 &&
@@ -862,7 +619,7 @@ export const returnIDOtherBrand = (name) => {
   } else if (name.indexOf("jbl flip 5 white") !== -1) {
     return 15239;
   } else if (name.indexOf("jbl flip 6 black") !== -1) {
-    return 27639;
+    return 15234;
   } else if (name.indexOf("jbl flip 6 blue") !== -1) {
     return 28084;
   } else if (name.indexOf("jbl flip 6 gray") !== -1) {
@@ -877,11 +634,6 @@ export const returnIDOtherBrand = (name) => {
     return 18958;
   } else if (name.indexOf("jbl go 3 green") !== -1) {
     return 18959;
-  } else if (
-    name.indexOf("jbl go 3") !== -1 &&
-    (name.indexOf("blue") !== -1 || name.indexOf("pink") !== -1)
-  ) {
-    return 18960;
   } else if (name.indexOf("jbl go 3 grey") !== -1) {
     return 18961;
   } else if (name.indexOf("jbl go 3 teal") !== -1) {
@@ -907,15 +659,13 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("12/256") !== -1 &&
-    (name.indexOf("ice") !== -1 ||
-  name.indexOf("blue") !== -1)
+    (name.indexOf("ice") !== -1 || name.indexOf("blue") !== -1)
   ) {
     return 39941;
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("12/256") !== -1 &&
-    (name.indexOf("sands") !== -1 ||
-  name.indexOf("white") !== -1)
+    (name.indexOf("sands") !== -1 || name.indexOf("white") !== -1)
   ) {
     return 39944;
   } else if (
@@ -927,15 +677,13 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("12/512") !== -1 &&
-    (name.indexOf("ice") !== -1 ||
-  name.indexOf("blue") !== -1)
+    (name.indexOf("ice") !== -1 || name.indexOf("blue") !== -1)
   ) {
     return 39955;
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("12/5126") !== -1 &&
-    (name.indexOf("sands") !== -1 ||
-  name.indexOf("white") !== -1)
+    (name.indexOf("sands") !== -1 || name.indexOf("white") !== -1)
   ) {
     return 39956;
   } else if (
@@ -947,15 +695,13 @@ export const returnIDOtherBrand = (name) => {
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("8/256") !== -1 &&
-    (name.indexOf("ice") !== -1 ||
-  name.indexOf("blue") !== -1)
+    (name.indexOf("ice") !== -1 || name.indexOf("blue") !== -1)
   ) {
     return 39949;
   } else if (
     name.indexOf("nord 5") !== -1 &&
     name.indexOf("8/256") !== -1 &&
-    (name.indexOf("sands") !== -1 ||
-  name.indexOf("white") !== -1)
+    (name.indexOf("sands") !== -1 || name.indexOf("white") !== -1)
   ) {
     return 39950;
   } else if (
@@ -974,8 +720,8 @@ export const returnIDOtherBrand = (name) => {
     name.indexOf("nord ce5") !== -1 &&
     name.indexOf("12/256") !== -1 &&
     (name.indexOf("mist") !== -1 ||
-  name.indexOf("gray") !== -1 ||
-name.indexOf("white") !== -1)
+      name.indexOf("gray") !== -1 ||
+      name.indexOf("white") !== -1)
   ) {
     return 39959;
   } else if (
@@ -988,8 +734,8 @@ name.indexOf("white") !== -1)
     name.indexOf("nord ce5") !== -1 &&
     name.indexOf("8/128") !== -1 &&
     (name.indexOf("mist") !== -1 ||
-  name.indexOf("gray") !== -1 ||
-name.indexOf("white") !== -1)
+      name.indexOf("gray") !== -1 ||
+      name.indexOf("white") !== -1)
   ) {
     return 39970;
   } else if (
@@ -1002,8 +748,8 @@ name.indexOf("white") !== -1)
     name.indexOf("nord ce5") !== -1 &&
     name.indexOf("8/256") !== -1 &&
     (name.indexOf("mist") !== -1 ||
-  name.indexOf("gray") !== -1 ||
-name.indexOf("white") !== -1)
+      name.indexOf("gray") !== -1 ||
+      name.indexOf("white") !== -1)
   ) {
     return 39963;
   } else if (
@@ -1662,86 +1408,103 @@ name.indexOf("white") !== -1)
     return 34447;
   } else if (
     name.indexOf("oneplus 13r 12/256") !== -1 &&
-    (name.indexOf("trail") !== -1 || name.indexOf("trail") !== -1 || name.indexOf("black") !== -1)
+    (name.indexOf("trail") !== -1 ||
+      name.indexOf("trail") !== -1 ||
+      name.indexOf("black") !== -1)
   ) {
     return 37804;
   } else if (
     name.indexOf("oneplus 13r 12/256") !== -1 &&
-    (name.indexOf("nebula") !== -1 || name.indexOf("noir") !== -1 || name.indexOf("silver") !== -1)
+    (name.indexOf("nebula") !== -1 ||
+      name.indexOf("noir") !== -1 ||
+      name.indexOf("silver") !== -1)
   ) {
     return 37792;
   } else if (
     name.indexOf("oneplus 13r 16/512") !== -1 &&
-    (name.indexOf("trail") !== -1 || name.indexOf("trail") !== -1 || name.indexOf("black") !== -1)
+    (name.indexOf("trail") !== -1 ||
+      name.indexOf("trail") !== -1 ||
+      name.indexOf("black") !== -1)
   ) {
     return 37806;
   } else if (
     name.indexOf("oneplus 13r 16/512") !== -1 &&
-    (name.indexOf("nebula") !== -1 || name.indexOf("noir") !== -1 || name.indexOf("silver") !== -1)
+    (name.indexOf("nebula") !== -1 ||
+      name.indexOf("noir") !== -1 ||
+      name.indexOf("silver") !== -1)
   ) {
     return 37802;
-  } else if (name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("12/256") !== -1 &&
-name.indexOf("black") !== -1) {
+  } else if (
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
     return 37204;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("12/256") !== -1 &&
-(name.indexOf("blue") !== -1 ||
-name.indexOf("ocean") !== -1)) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    (name.indexOf("blue") !== -1 || name.indexOf("ocean") !== -1)
+  ) {
     return 37459;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("12/256") !== -1 &&
-name.indexOf("white") !== -1) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
     return 37460;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("12/512") !== -1 &&
-name.indexOf("black") !== -1) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
     return 37461;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("12/512") !== -1 &&
-(name.indexOf("blue") !== -1 ||
-name.indexOf("ocean") !== -1)) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    (name.indexOf("blue") !== -1 || name.indexOf("ocean") !== -1)
+  ) {
     return 37462;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("12/512") !== -1 &&
-name.indexOf("white") !== -1) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
     return 37463;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("16/512") !== -1 &&
-name.indexOf("black") !== -1) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
     return 37464;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("16/512") !== -1 &&
-(name.indexOf("blue") !== -1 ||
-name.indexOf("ocean") !== -1)) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    (name.indexOf("blue") !== -1 || name.indexOf("ocean") !== -1)
+  ) {
     return 37465;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("16/512") !== -1 &&
-name.indexOf("white") !== -1) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
     return 37466;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("24/1tb") !== -1 &&
-name.indexOf("black") !== -1) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("24/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
     return 37467;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("24/1tb") !== -1 &&
-(name.indexOf("blue") !== -1 ||
-name.indexOf("ocean") !== -1)) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("24/1tb") !== -1 &&
+    (name.indexOf("blue") !== -1 || name.indexOf("ocean") !== -1)
+  ) {
     return 37468;
   } else if (
-name.indexOf("oneplus 13 ") !== -1 &&
-name.indexOf("24/white") !== -1 &&
-name.indexOf("black") !== -1) {
+    name.indexOf("oneplus 13 ") !== -1 &&
+    name.indexOf("24/white") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
     return 37469;
   } else if (name.indexOf("oneplus 13t 12/256 black") != -1) {
     return 38868;
@@ -1889,6 +1652,7 @@ name.indexOf("black") !== -1) {
     return 27316;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("12/256") !== -1 &&
     name.indexOf("gray") !== -1
@@ -1896,6 +1660,7 @@ name.indexOf("black") !== -1) {
     return 38002;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("12/256") !== -1 &&
     name.indexOf("green") !== -1
@@ -1903,6 +1668,7 @@ name.indexOf("black") !== -1) {
     return 38022;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("12/256") !== -1 &&
     (name.indexOf("white") !== -1 || name.indexOf("silver") !== -1)
@@ -1910,6 +1676,7 @@ name.indexOf("black") !== -1) {
     return 38023;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("16/256") !== -1 &&
     name.indexOf("gray") !== -1
@@ -1917,6 +1684,7 @@ name.indexOf("black") !== -1) {
     return 38027;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("16/256") !== -1 &&
     name.indexOf("green") !== -1
@@ -1924,6 +1692,7 @@ name.indexOf("black") !== -1) {
     return 38028;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("16/256") !== -1 &&
     (name.indexOf("white") !== -1 || name.indexOf("silver") !== -1)
@@ -1931,6 +1700,7 @@ name.indexOf("black") !== -1) {
     return 38029;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("12/512") !== -1 &&
     name.indexOf("gray") !== -1
@@ -1938,6 +1708,7 @@ name.indexOf("black") !== -1) {
     return 38033;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("12/512") !== -1 &&
     name.indexOf("green") !== -1
@@ -1945,6 +1716,7 @@ name.indexOf("black") !== -1) {
     return 38034;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("12/512") !== -1 &&
     (name.indexOf("white") !== -1 || name.indexOf("silver") !== -1)
@@ -1952,6 +1724,7 @@ name.indexOf("black") !== -1) {
     return 38035;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("16/512") !== -1 &&
     name.indexOf("gray") !== -1
@@ -1959,6 +1732,7 @@ name.indexOf("black") !== -1) {
     return 38039;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("16/512") !== -1 &&
     name.indexOf("green") !== -1
@@ -1966,6 +1740,7 @@ name.indexOf("black") !== -1) {
     return 38040;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("16/512") !== -1 &&
     (name.indexOf("white") !== -1 || name.indexOf("silver") !== -1)
@@ -1973,6 +1748,7 @@ name.indexOf("black") !== -1) {
     return 38041;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("16/1tb") !== -1 &&
     name.indexOf("gray") !== -1
@@ -1980,6 +1756,7 @@ name.indexOf("black") !== -1) {
     return 38045;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("16/1tb") !== -1 &&
     name.indexOf("green") !== -1
@@ -1987,6 +1764,7 @@ name.indexOf("black") !== -1) {
     return 38046;
   } else if (
     name.indexOf("oneplus ace 5") !== -1 &&
+    name.indexOf("ultra") === -1 &&
     name.indexOf("pro") === -1 &&
     name.indexOf("16/1tb") !== -1 &&
     (name.indexOf("white") !== -1 || name.indexOf("silver") !== -1)
@@ -2082,6 +1860,96 @@ name.indexOf("black") !== -1) {
     name.indexOf("white") !== -1
   ) {
     return 38073;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40264;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40319;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("12/256") !== -1 &&
+    name.indexOf("titan") !== -1
+  ) {
+    return 40327;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40317;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40318;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("12/512") !== -1 &&
+    name.indexOf("white") !== -1
+  ) {
+    return 40328;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("16/256") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40314;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("16/256") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40320;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("16/256") !== -1 &&
+    name.indexOf("titan") !== -1
+  ) {
+    return 40325;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40315;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40321;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("16/512") !== -1 &&
+    name.indexOf("titan") !== -1
+  ) {
+    return 40324;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("black") !== -1
+  ) {
+    return 40316;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("blue") !== -1
+  ) {
+    return 40322;
+  } else if (
+    name.indexOf("oneplus ace 5 ultra") !== -1 &&
+    name.indexOf("16/1tb") !== -1 &&
+    name.indexOf("titan") !== -1
+  ) {
+    return 40323;
 
     // Google
   } else if (
@@ -2288,9 +2156,10 @@ name.indexOf("black") !== -1) {
     name.indexOf("pixel 8 8/128 black") !== -1
   ) {
     return 30267;
-  } else if (name.indexOf("pixel 8 128") !== -1 &&
-(name.indexOf("rose") !== -1 ||
-name.indexOf("pink") !== -1)) {
+  } else if (
+    name.indexOf("pixel 8 128") !== -1 &&
+    (name.indexOf("rose") !== -1 || name.indexOf("pink") !== -1)
+  ) {
     return 30271;
   } else if (name.indexOf("pixel 8 256 hazel") !== -1) {
     return 30270;
@@ -2299,8 +2168,10 @@ name.indexOf("pink") !== -1)) {
     name.indexOf("pixel 8 8/256 black") !== -1
   ) {
     return 30268;
-  } else if (name.indexOf("pixel 8 256 rose") !== -1 ||
-name.indexOf("pixel 8 256 pink") !== -1) {
+  } else if (
+    name.indexOf("pixel 8 256 rose") !== -1 ||
+    name.indexOf("pixel 8 256 pink") !== -1
+  ) {
     return 30272;
   } else if (name.indexOf("pixel 8 pro 12/128 bay") !== -1) {
     return 30281;
@@ -2367,9 +2238,10 @@ name.indexOf("pixel 8 256 pink") !== -1) {
     name.indexOf("pixel 7 128 black") !== -1
   ) {
     return 23959;
-  } else if (name.indexOf("pixel 7 128") !== -1 &&
-(name.indexOf("snow") !== -1 ||
-name.indexOf("white") !== -1)) {
+  } else if (
+    name.indexOf("pixel 7 128") !== -1 &&
+    (name.indexOf("snow") !== -1 || name.indexOf("white") !== -1)
+  ) {
     return 23963;
   } else if (name.indexOf("pixel 7 256 lemongras") !== -1) {
     return 23962;
@@ -2387,8 +2259,10 @@ name.indexOf("white") !== -1)) {
     name.indexOf("pixel 7 pro 128 black") !== -1
   ) {
     return 23965;
-  } else if (name.indexOf("pixel 7 pro 128 snow") !== -1 ||
-name.indexOf("pixel 7 pro 128 white") !== -1) {
+  } else if (
+    name.indexOf("pixel 7 pro 128 snow") !== -1 ||
+    name.indexOf("pixel 7 pro 128 white") !== -1
+  ) {
     return 23968;
   } else if (name.indexOf("pixel 7 pro 256 hazel") !== -1) {
     return 23972;
@@ -2899,6 +2773,340 @@ name.indexOf("pixel 7 pro 128 white") !== -1) {
     name.indexOf("porcelain") != -1
   ) {
     return 38813;
+  } else if (
+    name.indexOf("pixel 10 ") != -1 &&
+    name.indexOf("128") != -1 &&
+    name.indexOf("frost") != -1 &&
+    name.indexOf("pro") === -1
+  ) {
+    return 40428;
+  } else if (
+    name.indexOf("pixel 10 ") != -1 &&
+    name.indexOf("128") != -1 &&
+    name.indexOf("indigo") != -1 &&
+    name.indexOf("pro") === -1
+  ) {
+    return 40425;
+  } else if (
+    name.indexOf("pixel 10 ") != -1 &&
+    name.indexOf("128") != -1 &&
+    name.indexOf("lemongrass") != -1 &&
+    name.indexOf("pro") === -1
+  ) {
+    return 40430;
+  } else if (
+    name.indexOf("pixel 10 ") != -1 &&
+    name.indexOf("128") != -1 &&
+    name.indexOf("obsidian") != -1 &&
+    name.indexOf("pro") === -1
+  ) {
+    return 40424;
+  } else if (
+    name.indexOf("pixel 10 ") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("frost") != -1 &&
+    name.indexOf("pro") === -1
+  ) {
+    return 40427;
+  } else if (
+    name.indexOf("pixel 10 ") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("indigo") != -1 &&
+    name.indexOf("pro") === -1
+  ) {
+    return 40426;
+  } else if (
+    name.indexOf("pixel 10 ") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("lemongrass") != -1 &&
+    name.indexOf("pro") === -1
+  ) {
+    return 40431;
+  } else if (
+    name.indexOf("pixel 10 ") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("obsidian") != -1 &&
+    name.indexOf("pro") === -1
+  ) {
+    return 40432;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("128") != -1 &&
+    name.indexOf("jade") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40442;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("128") != -1 &&
+    name.indexOf("moonstone") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40450;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("128") != -1 &&
+    name.indexOf("obsidian") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40419;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("128") != -1 &&
+    name.indexOf("porcelain") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40443;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("jade") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40441;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("moonstone") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40449;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("obsidian") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40435;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("porcelain") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40444;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("jade") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40440;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("moonstone") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40448;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("obsidian") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40436;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("porcelain") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40445;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("jade") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40439;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("moonstone") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40447;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("obsidian") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40438;
+  } else if (
+    name.indexOf("pixel 10 pro") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("porcelain") != -1 &&
+    name.indexOf("xl") === -1 &&
+    name.indexOf("fold") === -1
+  ) {
+    return 40446;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("jade") != -1
+  ) {
+    return 40460;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("moonstone") != -1
+  ) {
+    return 40454;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("obsidian") != -1
+  ) {
+    return 40453;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("porcelain") != -1
+  ) {
+    return 40461;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("jade") != -1
+  ) {
+    return 40459;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("moonstone") != -1
+  ) {
+    return 40455;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("obsidian") != -1
+  ) {
+    return 40452;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("porcelain") != -1
+  ) {
+    return 40462;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("jade") != -1
+  ) {
+    return 40457;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("moonstone") != -1
+  ) {
+    return 40456;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("obsidian") != -1
+  ) {
+    return 40422;
+  } else if (
+    name.indexOf("pixel 10 pro xl") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("porcelain") != -1
+  ) {
+    return 40463;
+  } else if (
+    name.indexOf("pixel 10 pro fold") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("jade") != -1
+  ) {
+    return 40474;
+  } else if (
+    name.indexOf("pixel 10 pro fold") != -1 &&
+    name.indexOf("256") != -1 &&
+    name.indexOf("moonstone") != -1
+  ) {
+    return 40466;
+  } else if (
+    name.indexOf("pixel 10 pro fold") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("jade") != -1
+  ) {
+    return 40473;
+  } else if (
+    name.indexOf("pixel 10 pro fold") != -1 &&
+    name.indexOf("512") != -1 &&
+    name.indexOf("moonstone") != -1
+  ) {
+    return 40470;
+  } else if (
+    name.indexOf("pixel 10 pro fold") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("jade") != -1
+  ) {
+    return 40472;
+  } else if (
+    name.indexOf("pixel 10 pro fold") != -1 &&
+    name.indexOf("1tb") != -1 &&
+    name.indexOf("moonstone") != -1
+  ) {
+    return 40471;
+  } else if (
+    name.indexOf("pixel watch 4 ") != -1 &&
+    name.indexOf("41") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 40492;
+  } else if (
+    name.indexOf("pixel watch 4 ") != -1 &&
+    name.indexOf("41") != -1 &&
+    name.indexOf("silver") != -1
+  ) {
+    return 40494;
+  } else if (
+    name.indexOf("pixel watch 4 ") != -1 &&
+    name.indexOf("41") != -1 &&
+    name.indexOf("gold") != -1
+  ) {
+    return 40495;
+  } else if (
+    name.indexOf("pixel watch 4 ") != -1 &&
+    name.indexOf("45") != -1 &&
+    name.indexOf("black") != -1
+  ) {
+    return 40498;
+  } else if (
+    name.indexOf("pixel watch 4 ") != -1 &&
+    name.indexOf("45") != -1 &&
+    name.indexOf("silver") != -1
+  ) {
+    return 40499;
+  } else if (
+    name.indexOf("pixel watch 4 ") != -1 &&
+    name.indexOf("41") != -1 &&
+    name.indexOf("moon") != -1
+  ) {
+    return 40500;
+  } else if (
+    name.indexOf("pixel watch 4 ") != -1 &&
+    name.indexOf("45") != -1 &&
+    name.indexOf("moon") != -1
+  ) {
+    return 40501;
   } else {
     return returnIDOtherBrand2(name) || "No match";
   }

@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { baseFixLikemob } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
   returnFixNameLikemob,
   returnNameInArrLikemob,
-  returnStockPriceLikemob
+  returnStockPriceLikemob,
 } from "./helpers/helpers";
 
 const IndexLikemob = ({ el, likemobData }) => {
@@ -23,11 +24,14 @@ const IndexLikemob = ({ el, likemobData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameLikemob(likemob.name)) !== "No match" &&
+        getIdByName(defaultFixName(returnFixNameLikemob(likemob.name))) !==
+          "No match" &&
         returnStockPriceLikemob(likemob.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
+          id: getIdByName(
+            defaultFixName(
+              returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
+            )
           ),
           name: returnNameInArrLikemob(returnFixNameLikemob(likemob.name)),
           stockPrice: returnStockPriceLikemob(

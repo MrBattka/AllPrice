@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixTrub } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { fixNameTrub, returnNameInArrTrub, returnStockPriceTrub } from "./helpers/helpers";
@@ -19,10 +20,10 @@ const IndexAMT = ({ el, AMTData }) => {
       )
        {
         return (
-          returnIDSamsung(fixNameTrub(amt.name)) !== 'No match' &&
+          getIdByName(defaultFixName(fixNameTrub(amt.name))) !== 'No match' &&
           returnStockPriceTrub(amt.name) &&
           resultArr.push({
-            id: returnIDSamsung(returnNameInArrTrub(fixNameTrub(amt.name))),
+            id: getIdByName(defaultFixName(returnNameInArrTrub(fixNameTrub(amt.name)))),
             name: returnNameInArrTrub(fixNameTrub(amt.name)),
             stockPrice: returnStockPriceTrub(fixNameTrub(amt.name)),
             provider: "AMT",

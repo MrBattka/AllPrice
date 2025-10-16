@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixArti } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { returnCategoryArti } from "./category/Category";
@@ -24,11 +25,14 @@ const IndexArti = ({ el, artiData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameArti(arti.name)) !== "No match" &&
+        getIdByName(defaultFixName(returnFixNameArti(arti.name))) !==
+          "No match" &&
         returnStockPriceArti(arti.name) &&
         returnCategoryArti(arti.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameArti(returnFixNameArti(arti.name))),
+          id: getIdByName(
+            defaultFixName(returnNameArti(returnFixNameArti(arti.name)))
+          ),
           name: returnNameArti(returnFixNameArti(arti.name)),
           stockPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
           provider: "Arti",

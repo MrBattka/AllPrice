@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixF51 } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { returnNameF51 } from "./helpers/helpers";
@@ -13,11 +14,16 @@ const IndexF51 = ({ el, f51Data }) => {
     baseFixF51(f51) && returnNameF51(f51.name);
     if (f51.name && typeof f51.name === "string" && baseFixF51(f51) && isOpen) {
       return (
-        returnIDSamsung(returnNameF51(f51.name + " " + f51.country)) !==
-          "No match" &&
+        // returnIDSamsung(returnNameF51(f51.name + " " + f51.country)) !==
+        //   "No match" &&
+        getIdByName(
+          defaultFixName(returnNameF51(f51.name + " " + f51.country))
+        ) !== "No match" &&
         f51.price &&
         resultArr.push({
-          id: returnIDSamsung(returnNameF51(f51.name + " " + f51.country)),
+          id: getIdByName(
+            defaultFixName(returnNameF51(f51.name + " " + f51.country))
+          ),
           name: returnNameF51(f51.name),
           stockPrice: f51.price,
           provider: "F51",

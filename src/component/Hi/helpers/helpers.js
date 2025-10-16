@@ -222,8 +222,9 @@ export const fixNameHi = (name) => {
   let fixCar5 = fixCar4.replace("🚗", "");
   let fixCar6 = fixCar5.replace("🚘", "");
   let fixCar7 = fixCar6.replace("🚖", "");
+  let fixKeyboard = fixCar7.replace("⌨️", "Keyboard ");
   
-  let fixCar8 = fixCar7.replace("🛩️", "");
+  let fixCar8 = fixKeyboard.replace("🛩️", "");
   
   let fixZero = fixCar8.replace("0️", "0");
   // let fixCar8 = fixCar7.replace("🏎️", "");

@@ -51,7 +51,7 @@ let tecno = /T.Tecno/gi;
 let realme = /T.Realme/gi;
 
 export const fixNameUnimtrn = (el) => {
-  const fixGb = el.Модификация?.replace(gb, "");
+  const fixGb = el.replace(gb, "");
   const removeDoubleSpace = fixGb.replace(/\s+/g, " ");
   const fixIPad9 = removeDoubleSpace.replace(IPad9, "iPad 9");
   const fixWiSpaceFi = fixIPad9.replace("Wi Fi", "Wi-Fi");
@@ -76,7 +76,11 @@ export const fixNameUnimtrn = (el) => {
   const fixAir15 = fixAir13.replace(air15, "Air 15 M");
   const fixAirAir13 = fixAir15.replace(airAir13, "13.6");
   const fixAirAir15 = fixAirAir13.replace(airAir15, "15");
-  const fixMGN63 = fixAirAir15.replace(MGN63, "Air M1 256 Gold MGND3");
+  const fix166 = fixAirAir15.replace("166", "16");
+  const fix266 = fix166.replace("266", "26");
+  const fix366 = fix266.replace("366", "36");
+  const fix566 = fix366.replace("566", "56");
+  const fixMGN63 = fix566.replace(MGN63, "Air M1 256 Gold MGND3");
   const fixMGN93 = fixMGN63.replace(MGN93, "Air M1 256 Silver MGN93");
   const fixMGND3 = fixMGN93.replace(MGND3, "Air M1 256 Space Grey MGN63");
   const fixHeapdphone = fixMGND3.replace(heapdphone, "Headphone");
@@ -458,5 +462,69 @@ export const fixNameUnimtrn = (el) => {
       const fixTabS9Plus = replaceCrafted.replace("Tab S9+", "Tab S9 +")
       const fixFEPlus = fixTabS9Plus.replace("FE Plus", "FE +")
       const fixStarlight = fixFEPlus.replace("Starlinght", "Starlight")
-  return fixStarlight;
+      const fixS1 = fixStarlight.replace("Series 1", "S1")
+      const fixSE1 = fixS1.replace("SEries 1", "S1")
+      const fixAW1 = fixSE1.replace("AW 1", "S1")
+  return fixAW1;
+};
+
+
+export const returnNameInArrUnimtrn = (name) => {
+
+  let reverseStrName = name.split("").reverse().join("");
+  let checkSpace =
+    reverseStrName[0] === " "
+      ? reverseStrName.replace(" ", "")
+      : reverseStrName;
+  let checkSpace1 =
+    checkSpace[0] === " " ? checkSpace.replace(" ", "") : checkSpace;
+  let checkSpace2 =
+    checkSpace1[0] === " " ? checkSpace1.replace(" ", "") : checkSpace1;
+
+  let checkSpace3 =
+    checkSpace2[0] === " " ? checkSpace2.replace(" ", "") : checkSpace2;
+
+  let splitPrice = checkSpace3.indexOf(" ") !== -1 ? /\s(.+)/.exec(checkSpace3)[1] : checkSpace3
+
+  let removeStick =
+    checkSpace3.indexOf(" ") !== -1
+      ? checkSpace3.split(" ")[1]
+      : checkSpace3;
+
+  let reverseBackStrName = splitPrice.split("").reverse().join("");
+
+  return reverseBackStrName;
+};
+
+export const returnStockPriceUnimtrn = (name) => {
+  const removeDoubleSpace = name.replace(/\s+/g, " ");
+  let replaceCar = removeDoubleSpace.replace(" 🏎️", "");
+  let fixZero = replaceCar.replace("🛩️", "");
+
+
+  let reverseStrName = fixZero.split("").reverse().join("");
+  let checkSpace =
+    reverseStrName[0] === " "
+      ? reverseStrName.replace(" ", "")
+      : reverseStrName;
+  let checkSpace1 =
+    checkSpace[0] === " " ? checkSpace.replace(" ", "") : checkSpace;
+  let checkSpace2 =
+    checkSpace1[0] === " " ? checkSpace1.replace(" ", "") : checkSpace1;
+  let checkSpace3 =
+    checkSpace1[0] === " " ? checkSpace2.replace(" ", "") : checkSpace2;
+  let splitPrice = checkSpace3.split(" ")[0];
+  const removeDoubleSpace2 = splitPrice.replace(" ", "");
+
+  let slicePrice =
+    removeDoubleSpace2.indexOf(" ") !== -1
+      ? removeDoubleSpace2.split(" ")[0]
+      : removeDoubleSpace2;
+
+  let reverseBackStrName = slicePrice.split("").reverse().join("");
+  
+  let replaceEU = reverseBackStrName.replace("🇪🇺", "");
+  let replaceCA = replaceEU.replace("🇨🇦", "");
+
+  return replaceCA.replace(" ", "");
 };

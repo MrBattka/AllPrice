@@ -26,12 +26,12 @@ export const returnIDApple = (name) => {
   ) {
     return 20959;
   } else if (
-    (name.indexOf("airpods 4") !== -1 &&
-      (name.indexOf(" anc ") !== -1 || name.indexOf("(anc)") !== -1)) ||
-    (name.indexOf("airpods 4 ") !== -1 && name.indexOf("с шумо") !== -1)
+    name.indexOf("airpods 4") !== -1 &&
+    name.indexOf("anc") !== -1
   ) {
     return 36587;
-  } else if (name.indexOf("airpods 4") !== -1) {
+  } else if (name.indexOf("airpods 4") !== -1 &&
+name.indexOf("anc") === -1) {
     return 36586;
   } else if (
     name.indexOf("airpods max") !== -1 &&
@@ -118,17 +118,9 @@ export const returnIDApple = (name) => {
     (name.indexOf("2024") !== -1 ||
       name.indexOf("2") !== -1 ||
       name.indexOf("usb-c") !== -1) &&
-    name.indexOf("blue") !== -1
-  ) {
-    return 36592;
-  } else if (
-    name.indexOf("airpods max") !== -1 &&
-    (name.indexOf("2024") !== -1 ||
-      name.indexOf("2") !== -1 ||
-      name.indexOf("usb-c") !== -1) &&
     name.indexOf("gray") !== -1
   ) {
-    return 36593;
+    return 36592;
   } else if (
     name.indexOf("airpods max green") !== -1 ||
     name.indexOf("airpods max green") !== -1
@@ -164,6 +156,12 @@ export const returnIDApple = (name) => {
     return 20151;
   } else if (name.indexOf("apple tv") !== -1 && name.indexOf("64") !== -1) {
     return 27026;
+  } else if(name.indexOf("mac studio") != -1 &&
+    name.indexOf("m3 ultra") != -1 &&
+    name.indexOf("96/1tb") != -1 &&
+    name.indexOf("silver") != -1) {    
+  return 40468;  
+
 
     // home pod
   } else if (
@@ -306,7 +304,7 @@ export const returnIDApple = (name) => {
     return 28293;
   } else if (
     name.indexOf("s9 41") !== -1 &&
-    (name.indexOf("strlight") !== -1 || name.indexOf("white") !== -1) &&
+    (name.indexOf("starlight") !== -1 || name.indexOf("white") !== -1) &&
     (name.indexOf("steel") === -1 || name.indexOf("steal") === -1)
   ) {
     return 28290;
@@ -384,6 +382,7 @@ export const returnIDApple = (name) => {
   } else if (
     name.indexOf("s10") !== -1 &&
     name.indexOf("42") !== -1 &&
+    name.indexOf("steel") !== -1 &&
     name.indexOf("natural") !== -1 &&
     name.indexOf("milanese") !== -1
   ) {
@@ -486,6 +485,7 @@ export const returnIDApple = (name) => {
   } else if (
     name.indexOf("s10") !== -1 &&
     name.indexOf("46") !== -1 &&
+    name.indexOf("steel") !== -1 &&
     name.indexOf("gold") !== -1 &&
     name.indexOf("milanese") === -1
   ) {
@@ -1163,7 +1163,7 @@ export const returnIDApple = (name) => {
     return 38623;
   } else if (
     name.indexOf("ipad 11") !== -1 &&
-    name.indexOf("4/128") !== -1 &&
+    name.indexOf("128") !== -1 &&
     name.indexOf("lte") !== -1 &&
     name.indexOf("pink") !== -1
   ) {
@@ -2328,7 +2328,7 @@ export const returnIDApple = (name) => {
     (name.indexOf(" m2 ") !== -1 || name.indexOf("2024") !== -1) &&
     name.indexOf(" 512 ") !== -1 &&
     name.indexOf("purple") !== -1 &&
-    name.indexOf("lte) !== -1") !== -1
+    name.indexOf("lte") !== -1
   ) {
     return 36414;
   } else if (

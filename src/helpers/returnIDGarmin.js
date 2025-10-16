@@ -459,7 +459,7 @@ export const returnIDGarmin = (nameStock) => {
       name.indexOf("solar") === -1 &&
       name.indexOf("sapphire") === -1 &&
       name.indexOf("silver") !== -1 &&
-      name.indexOf("white silicone band") !== -1) ||
+      name.indexOf("silicone band") !== -1) ||
     name.indexOf("010-02903-00") != -1 ||
     name.indexOf("010-02903-06") != -1
   ) {

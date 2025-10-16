@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixBase } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { returnFixNameBase } from "./helpers/helpers";
@@ -17,11 +18,11 @@ const IndexBaseNotID = ({ el, baseData }) => {
       baseFixBase(base)
     ) {
       return (
-        returnIDSamsung(returnFixNameBase(base.name)) === "No match" &&
+        getIdByName(defaultFixName(returnFixNameBase(base.name))) === "No match" &&
         base.price &&
         baseFixBase(base) &&
         resultArr.push({
-          id: returnIDSamsung(returnFixNameBase(base.name)),
+          id: getIdByName(defaultFixName(returnFixNameBase(base.name))),
           name: returnFixNameBase(base.name),
           stockPrice: base.price,
           provider: "База",

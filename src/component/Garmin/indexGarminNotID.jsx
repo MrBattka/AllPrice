@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixGarmin } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -22,11 +23,11 @@ const IndexGarminNotID = ({ el, garminData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(fixNameGarmin(garmin.name)) === "No match" &&
+        getIdByName(defaultFixName(fixNameGarmin(garmin.name))) === "No match" &&
         returnStockPriceGarmin(garmin.name) &&
         resultArr.push({
-          id: returnIDSamsung(
-            returnFixNameProductGarmin(fixNameGarmin(garmin.name))
+          id: getIdByName(defaultFixName(
+            returnFixNameProductGarmin(fixNameGarmin(garmin.name)))
           ),
           name: returnFixNameProductGarmin(fixNameGarmin(garmin.name)),
           stockPrice: returnStockPriceGarmin(fixNameGarmin(garmin.name)),

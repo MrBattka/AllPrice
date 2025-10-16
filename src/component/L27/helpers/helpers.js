@@ -7,7 +7,8 @@ export const returnFixNameL27 = (name) => {
   const fix16Pro1 = fix16Pro.replace("16Pro  ", "16 Pro ");
   const fix15Pro = fix16Pro1.replace("15Pro ", "15 Pro ");
   const fix15Pro1 = fix15Pro.replace("15Pro ", "15 Pro ");
-  const fix16Plus = fix15Pro1.replace("16+ ", "16 Plus ");
+  const fix17Pro1 = fix15Pro1.replace("17Pro ", "17 Pro ");
+  const fix16Plus = fix17Pro1.replace("16+ ", "16 Plus ");
   const fix15Plus = fix16Plus.replace("15+ ", "15 Plus ");
   const fix14Plus = fix15Plus.replace("14+ ", "14 Plus ");
   const fix15Plus1 = fix14Plus.replace("15+  ", "15 Plus ");

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { baseFixRPTrade } from "../../helpers/baseFix";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { returnFixNameRPTrade } from "./helpers/helpers";
@@ -17,10 +18,10 @@ const IndexRPTradeNotID = ({ el, rptradeData }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameRPTrade(rptrade.name)) === "No match" &&
+        getIdByName(defaultFixName(returnFixNameRPTrade(rptrade.name))) === "No match" &&
         rptrade.price &&
         resultArr.push({
-          id: returnIDSamsung(returnFixNameRPTrade(rptrade.name)),
+          id: getIdByName(defaultFixName(returnFixNameRPTrade(rptrade.name))),
           name: returnFixNameRPTrade(rptrade.name),
           stockPrice: rptrade.price,
           provider: "RPTrade",

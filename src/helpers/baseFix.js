@@ -1,108 +1,108 @@
 export const baseFix = (el) => {
   return el[0] !== "(" &&
-    el.Модификация?.indexOf("airpods") != -1 &&
-    (el.Модификация?.indexOf("left") != -1 ||
-      el.Модификация?.indexOf("левый") != -1 ||
-      el.Модификация?.indexOf("right") != -1 ||
-      el.Модификация?.indexOf("правый") != -1 ||
-      el.Модификация?.indexOf("case") != -1 ||
-      el.Модификация?.indexOf("кейс") != -1 ||
-      el.Модификация?.indexOf("box") != -1)
-    ? el.Модификация?.indexOf("airpods") == -1
-    : el.Модификация &&
-        el.Модификация?.indexOf("MagEZ Case") == -1 &&
-        el.Модификация?.indexOf("PITAKA") == -1 &&
-        el.Модификация?.indexOf("USB-C 25W") == -1 &&
-        el.Модификация?.indexOf("Кабель") == -1 &&
-        el.Модификация?.indexOf("Charge Cable") == -1 &&
-        el.Модификация?.indexOf("20W") == -1 &&
-        el.Модификация?.indexOf("USB-С Lightning") == -1 &&
-        el.Модификация?.indexOf("Муляж") == -1 &&
-        el.Модификация?.indexOf("кожа") == -1 &&
-        el.Модификация?.indexOf("Silicon") == -1 &&
-        el.Модификация?.indexOf("Grip Case") == -1 &&
-        el.Модификация?.indexOf("Sult Case") == -1 &&
-        el.Модификация?.indexOf("Folio") == -1 &&
-        el.Модификация?.indexOf("Smart Tag") == -1 &&
-        el.Модификация?.indexOf("Vision Pro") == -1 &&
-        el.Модификация?.indexOf("Rog AMD") == -1 &&
-        el.Модификация?.indexOf("AeroActive Cooler") == -1 &&
-        el.Модификация?.indexOf("Beats") == -1 &&
-        el.Модификация?.indexOf("Blackview") == -1 &&
-        el.Модификация?.indexOf("DJI") == -1 &&
-        el.Модификация?.indexOf("Media Mod") == -1 &&
-        el.Модификация?.indexOf("Съемные") == -1 &&
-        el.Модификация?.indexOf("HERO 11 mini") == -1 &&
-        el.Модификация?.indexOf("HERO 12 Creator Edition") == -1 &&
-        el.Модификация?.indexOf("HERO 12 Special Bundle") == -1 &&
-        el.Модификация?.indexOf("freebuds") == -1 &&
-        el.Модификация?.indexOf("Soundgear") == -1 &&
-        el.Модификация?.indexOf("Go 3") == -1 &&
-        el.Модификация?.indexOf("Nothing") == -1 &&
-        el.Модификация?.indexOf("Oculus") == -1 &&
-        el.Модификация?.indexOf("OnePlus Pad") == -1 &&
-        el.Модификация?.indexOf("OnePlus Buds") == -1 &&
-        el.Модификация?.indexOf("Pico ") == -1 &&
-        el.Модификация?.indexOf("Pixel Tablet") == -1 &&
-        el.Модификация?.indexOf("Pixel Watch") == -1 &&
-        el.Модификация?.indexOf("Backbone") == -1 &&
-        el.Модификация?.indexOf("VR2") == -1 &&
-        el.Модификация?.indexOf("DualSense") == -1 &&
-        el.Модификация?.indexOf("Buds") == -1 &&
-        el.Модификация?.indexOf("Watch 4") == -1 &&
-        el.Модификация?.indexOf("Watch 5") == -1 &&
-        el.Модификация?.indexOf("Watch 6") == -1 &&
-        el.Модификация?.indexOf("Xperia 1 V ") == -1 &&
-        el.Модификация?.indexOf("Steam Desk") == -1 &&
-        el.Модификация?.indexOf("Steam Deck") == -1 &&
-        el.Модификация?.indexOf("Tecno") == -1 &&
-        el.Модификация?.indexOf("Nubia Flip") == -1 &&
-        el.Модификация?.indexOf("Nubia Neo") == -1 &&
-        el.Модификация?.indexOf("Wireless") == -1 &&
-        el.Модификация?.indexOf("царапин") == -1 &&
-        el.Модификация?.indexOf("ремонт") == -1 &&
-        el.Модификация?.indexOf("потертости") == -1 &&
-        el.Модификация?.indexOf("скол") == -1 &&
-        el.Модификация?.indexOf("пятна") == -1 &&
-        el.Модификация?.indexOf("замена") == -1 &&
-        el.Модификация?.indexOf("пиксель") == -1 &&
-        el.Модификация?.indexOf("на экране") == -1 &&
-        el.Модификация?.indexOf("мятый") == -1 &&
-        el.Модификация?.indexOf("Мятый") == -1 &&
-        el.Модификация?.indexOf("открытый") == -1 &&
-        el.Модификация?.indexOf("дефект") == -1 &&
-        el.Модификация?.indexOf("вскрыт") == -1 &&
-        el.Модификация?.indexOf("реболл") == -1 &&
-        el.Модификация?.indexOf("No charger") == -1 &&
-        el.Модификация?.indexOf("открыт") == -1 &&
-        el.Модификация?.indexOf("Мятый") == -1 &&
-        el.Модификация?.indexOf("мятый") == -1 &&
-        el.Модификация?.indexOf("без пломб") == -1 &&
-        el.Модификация?.indexOf("прошит") == -1 &&
-        el.Модификация?.indexOf("Открыт") == -1 &&
-        el.Модификация?.indexOf("поврежд") == -1 &&
-        el.Модификация?.indexOf("упаковка") == -1 &&
-        el.Модификация?.indexOf("вскрыт") == -1 &&
-        el.Модификация?.indexOf("угол") == -1 &&
-        el.Модификация?.indexOf("прошит") == -1 &&
-        el.Модификация?.indexOf("потерто") == -1 &&
-        el.Модификация?.indexOf("экран") == -1 &&
-        el.Модификация?.indexOf("Realme") == -1 &&
-        el.Модификация?.indexOf("уцен") == -1 &&
-        el.Модификация?.indexOf("RFB") == -1 &&
-        el.Модификация?.indexOf("обме") == -1 &&
-        el.Модификация?.indexOf("короб") == -1 &&
-        el.Модификация?.indexOf("ремешок") == -1 &&
-        el.Модификация?.indexOf("blackview") == -1 &&
-        el.Модификация?.indexOf("Asis") == -1 &&
-        el.Модификация?.indexOf("FreeBuds") == -1 &&
-        el.Модификация?.indexOf("Pixel Buds") == -1 &&
-        el.Модификация?.indexOf("OnePlus Buds") == -1 &&
-        el.Модификация?.indexOf("Дисковод") == -1 &&
-        el.Модификация?.indexOf("Asis") == -1 &&
-        el.Модификация?.indexOf("Asis") == -1 &&
-        el.Модификация?.indexOf("ASIS") == -1 &&
-        el.Модификация &&
+    el.name?.indexOf("airpods") != -1 &&
+    (el.name?.indexOf("left") != -1 ||
+      el.name?.indexOf("левый") != -1 ||
+      el.name?.indexOf("right") != -1 ||
+      el.name?.indexOf("правый") != -1 ||
+      el.name?.indexOf("case") != -1 ||
+      el.name?.indexOf("кейс") != -1 ||
+      el.name?.indexOf("box") != -1)
+    ? el.name?.indexOf("airpods") == -1
+    : el.name &&
+        el.name?.indexOf("MagEZ Case") == -1 &&
+        el.name?.indexOf("PITAKA") == -1 &&
+        el.name?.indexOf("USB-C 25W") == -1 &&
+        el.name?.indexOf("Кабель") == -1 &&
+        el.name?.indexOf("Charge Cable") == -1 &&
+        el.name?.indexOf("20W") == -1 &&
+        el.name?.indexOf("USB-С Lightning") == -1 &&
+        el.name?.indexOf("Муляж") == -1 &&
+        el.name?.indexOf("кожа") == -1 &&
+        el.name?.indexOf("Silicon") == -1 &&
+        el.name?.indexOf("Grip Case") == -1 &&
+        el.name?.indexOf("Sult Case") == -1 &&
+        el.name?.indexOf("Folio") == -1 &&
+        el.name?.indexOf("Smart Tag") == -1 &&
+        el.name?.indexOf("Vision Pro") == -1 &&
+        el.name?.indexOf("Rog AMD") == -1 &&
+        el.name?.indexOf("AeroActive Cooler") == -1 &&
+        el.name?.indexOf("Beats") == -1 &&
+        el.name?.indexOf("Blackview") == -1 &&
+        el.name?.indexOf("DJI") == -1 &&
+        el.name?.indexOf("Media Mod") == -1 &&
+        el.name?.indexOf("Съемные") == -1 &&
+        el.name?.indexOf("HERO 11 mini") == -1 &&
+        el.name?.indexOf("HERO 12 Creator Edition") == -1 &&
+        el.name?.indexOf("HERO 12 Special Bundle") == -1 &&
+        el.name?.indexOf("freebuds") == -1 &&
+        el.name?.indexOf("Soundgear") == -1 &&
+        el.name?.indexOf("Go 3") == -1 &&
+        el.name?.indexOf("Nothing") == -1 &&
+        el.name?.indexOf("Oculus") == -1 &&
+        el.name?.indexOf("OnePlus Pad") == -1 &&
+        el.name?.indexOf("OnePlus Buds") == -1 &&
+        el.name?.indexOf("Pico ") == -1 &&
+        el.name?.indexOf("Pixel Tablet") == -1 &&
+        el.name?.indexOf("Pixel Watch") == -1 &&
+        el.name?.indexOf("Backbone") == -1 &&
+        el.name?.indexOf("VR2") == -1 &&
+        el.name?.indexOf("DualSense") == -1 &&
+        el.name?.indexOf("Buds") == -1 &&
+        el.name?.indexOf("Watch 4") == -1 &&
+        el.name?.indexOf("Watch 5") == -1 &&
+        el.name?.indexOf("Watch 6") == -1 &&
+        el.name?.indexOf("Xperia 1 V ") == -1 &&
+        el.name?.indexOf("Steam Desk") == -1 &&
+        el.name?.indexOf("Steam Deck") == -1 &&
+        el.name?.indexOf("Tecno") == -1 &&
+        el.name?.indexOf("Nubia Flip") == -1 &&
+        el.name?.indexOf("Nubia Neo") == -1 &&
+        el.name?.indexOf("Wireless") == -1 &&
+        el.name?.indexOf("царапин") == -1 &&
+        el.name?.indexOf("ремонт") == -1 &&
+        el.name?.indexOf("потертости") == -1 &&
+        el.name?.indexOf("скол") == -1 &&
+        el.name?.indexOf("пятна") == -1 &&
+        el.name?.indexOf("замена") == -1 &&
+        el.name?.indexOf("пиксель") == -1 &&
+        el.name?.indexOf("на экране") == -1 &&
+        el.name?.indexOf("мятый") == -1 &&
+        el.name?.indexOf("Мятый") == -1 &&
+        el.name?.indexOf("открытый") == -1 &&
+        el.name?.indexOf("дефект") == -1 &&
+        el.name?.indexOf("вскрыт") == -1 &&
+        el.name?.indexOf("реболл") == -1 &&
+        el.name?.indexOf("No charger") == -1 &&
+        el.name?.indexOf("открыт") == -1 &&
+        el.name?.indexOf("Мятый") == -1 &&
+        el.name?.indexOf("мятый") == -1 &&
+        el.name?.indexOf("без пломб") == -1 &&
+        el.name?.indexOf("прошит") == -1 &&
+        el.name?.indexOf("Открыт") == -1 &&
+        el.name?.indexOf("поврежд") == -1 &&
+        el.name?.indexOf("упаковка") == -1 &&
+        el.name?.indexOf("вскрыт") == -1 &&
+        el.name?.indexOf("угол") == -1 &&
+        el.name?.indexOf("прошит") == -1 &&
+        el.name?.indexOf("потерто") == -1 &&
+        el.name?.indexOf("экран") == -1 &&
+        el.name?.indexOf("Realme") == -1 &&
+        el.name?.indexOf("уцен") == -1 &&
+        el.name?.indexOf("RFB") == -1 &&
+        el.name?.indexOf("обме") == -1 &&
+        el.name?.indexOf("короб") == -1 &&
+        el.name?.indexOf("ремешок") == -1 &&
+        el.name?.indexOf("blackview") == -1 &&
+        el.name?.indexOf("Asis") == -1 &&
+        el.name?.indexOf("FreeBuds") == -1 &&
+        el.name?.indexOf("Pixel Buds") == -1 &&
+        el.name?.indexOf("OnePlus Buds") == -1 &&
+        el.name?.indexOf("Дисковод") == -1 &&
+        el.name?.indexOf("Asis") == -1 &&
+        el.name?.indexOf("Asis") == -1 &&
+        el.name?.indexOf("ASIS") == -1 &&
+        el.name &&
         el !== "Товар";
 };
 
@@ -1625,6 +1625,7 @@ export const baseFixL27 = (el) => {
         toLowerCase?.indexOf("короб") == -1 &&
         toLowerCase?.indexOf("пломба") == -1 &&
         toLowerCase.indexOf(" r ") == -1 &&
+        toLowerCase.indexOf("airpods pro      l") == -1 &&
         toLowerCase.indexOf("airpods 4   l") == -1 &&
         toLowerCase.indexOf("airpods 2  l") == -1 &&
         toLowerCase.indexOf("airpods 2  r") == -1 &&
@@ -1655,6 +1656,10 @@ export const baseFixL27 = (el) => {
         toLowerCase.indexOf("asis") == -1 &&
         toLowerCase.indexOf("asis") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
+        toLowerCase.indexOf("airpods 3  r") == -1 &&
+        toLowerCase.indexOf("airpods pro      l") == -1 &&
+        toLowerCase.indexOf("airpods pro      r") == -1 &&
+        
         toLowerCase.indexOf("ремешок") == -1;
 };
 
