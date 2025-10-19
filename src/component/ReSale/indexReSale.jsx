@@ -26,11 +26,6 @@ const IndexReSale = ({ el, resaleData }) => {
       return (
         getIdByName(defaultFixName(returnFixNameReSale(resale.name))) !== "No match" &&
         returnStockPriceReSale(resale.name) &&
-        returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("А") ==
-          -1 &&
-        returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf(
-          "00"
-        ) != -1 &&
         resultArr.push({
           id: getIdByName(defaultFixName(
             returnNameReSale(returnFixNameReSale(resale.name)))

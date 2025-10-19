@@ -38,8 +38,7 @@ export const returnNameReSale = (name) => {
         ? /\s(.+)/.exec(removeSpaceName3)[1]
         : removeSpaceName3;
     let splitDoubleSpace =
-      (removeSpaceName3.split(" ")[0].length === 3 &&
-    removeSpaceName3.length > 3)
+      removeSpaceName3.split(" ")[0].length === 3 && removeSpaceName3.length > 3
         ? /\s(.+)/.exec(splitSpace)[1]
         : splitSpace;
 
@@ -47,7 +46,9 @@ export const returnNameReSale = (name) => {
       splitDoubleSpace.indexOf("-") != -1
         ? splitDoubleSpace.split("-")[1]
         : splitDoubleSpace;
-    let reverseBackStrName = splitDash.split("").reverse().join("");
+    let splitDash1 =
+      splitDash.indexOf("—") != -1 ? splitDash.split("—")[1] : splitDash;
+    let reverseBackStrName = splitDash1.split("").reverse().join("");
 
     return reverseBackStrName;
   }
@@ -89,8 +90,8 @@ export const returnStockPriceReSale = (name) => {
       : splitPrice;
     let reverseBackStrName = removeSimbol.split("").reverse().join("");
 
-    let replaceSimEsim = reverseBackStrName.replace("(1Sim+eSim)", "")
-    let replaceEsim = replaceSimEsim.replace("eSim", "")
+    let replaceSimEsim = reverseBackStrName.replace("(1Sim+eSim)", "");
+    let replaceEsim = replaceSimEsim.replace("eSim", "");
 
     return replaceEsim;
   } else {
@@ -111,8 +112,8 @@ export const returnStockPriceReSale = (name) => {
     let removeStick = removeSimbol.replace("-", "");
     let reverseBackStrName = removeStick.split("").reverse().join("");
 
-    let replaceSimEsim = reverseBackStrName.replace("(1Sim+eSim)", "")
-    let replaceEsim = replaceSimEsim.replace("eSim", "")
+    let replaceSimEsim = reverseBackStrName.replace("(1Sim+eSim)", "");
+    let replaceEsim = replaceSimEsim.replace("eSim", "");
 
     return replaceEsim;
   }
@@ -188,8 +189,8 @@ export const returnFixNameReSale = (name) => {
   const replaceSM = fixAW.replace("SM-", "SM");
   const replaceG = replaceSM.replace("G-", "G");
   const fixUSBC = replaceG.replace("Type-C", "Type C");
-  const replaceDash = fixUSBC.replace(" –", "");
-  const fixSimESim = replaceDash.replace("Sim-e", "Sim+e");
+  // const replaceDash = fixUSBC.replace(" –", "");
+  const fixSimESim = fixUSBC.replace("Sim-e", "Sim+e");
   const fixSFold5 = fixSimESim.replace("Fold5", "Fold 5");
   const fixSFold6 = fixSFold5.replace("Fold6", "Fold 6");
   const fixLTE = fixSFold6.replace("Wi-Fi + Cellular", "LTE");
@@ -241,7 +242,7 @@ export const returnFixNameReSale = (name) => {
       : fixAWUltraGray;
 
   const fix5G =
-fixAWUltraBlack.indexOf("A25") !== -1 ||
+    fixAWUltraBlack.indexOf("A25") !== -1 ||
     fixAWUltraBlack.indexOf("A26") !== -1 ||
     fixAWUltraBlack.indexOf("M35") !== -1 ||
     fixAWUltraBlack.indexOf("A36") !== -1 ||

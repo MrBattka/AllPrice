@@ -160,7 +160,7 @@ export const returnNameInArrTrub = (name) => {
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let splitPrice =
-    checkSpace4.indexOf(" ") !== -1
+    checkSpace4.indexOf("-") !== -1
       ? /\s(.+)/.exec(checkSpace4)[1]
       : checkSpace4;
   // let replaceStick = /\s(.+)/.exec(splitPrice)[1];

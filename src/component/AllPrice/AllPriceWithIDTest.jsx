@@ -3,17 +3,30 @@ import {
   baseFix,
   baseFixArti,
   baseFixBase,
+  baseFixBigAp,
+  baseFixBoltun,
+  baseFixBonus,
   baseFixDiscount,
   baseFixElectrozon,
   baseFixF51,
   baseFixGarmin,
   baseFixHi,
+  baseFixInfinity,
+  baseFixL27,
+  baseFixLikemob,
+  baseFixLowPrice,
   baseFixMiHonor,
+  baseFixMiOpts,
+  baseFixMTA,
+  baseFixOther,
   baseFixRacmag,
   baseFixReSale,
+  baseFixRootOpt,
   baseFixRPTrade,
   baseFixS5,
+  baseFixSunrise,
   baseFixSuperPrice,
+  baseFixTrub,
   baseFixVsemi,
 } from "../../helpers/baseFix";
 import { defaultFixName } from "../../helpers/defaultFixName";
@@ -76,6 +89,64 @@ import {
   returnStockPriceDiscount,
 } from "../Discount/helpers/helpers";
 import { returnFixNameBase } from "../Base/helpers/helpers";
+import {
+  returnFixNameOther,
+  returnNameInArrOther,
+  returnStockPriceOther,
+} from "../Other/helpers/helpers";
+import {
+  fixNameMiOpts,
+  returnNameInArrMiOpts,
+  returnStockPriceMiOpts,
+} from "../MiOpts/helpers/helpers";
+import {
+  fixNameLowPrice,
+  returnNameInArrLowPrice,
+  returnStockPriceLowPrice,
+} from "../LowPriceApple/helpers/helpers";
+import {
+  returnFixNameL27,
+  returnNameInArrL27,
+  returnStockPriceL27,
+} from "../L27/helpers/helpers";
+import {
+  returnFixNameSunrise,
+  returnNameInArrSunrise,
+  returnStockPriceSunrise,
+} from "../Sunrise/helpers/helpers";
+import {
+  fixNameInfinity,
+  returnNameInArrInfinity,
+  returnStockPriceInfinity,
+} from "../Infinity/helpers/helpers";
+import {
+  returnFixNameLikemob,
+  returnNameInArrLikemob,
+  returnStockPriceLikemob,
+} from "../Likemob/helpers/helpers";
+import {
+  returnFixNameBigAp,
+  returnNameInArrBigAp,
+  returnStockPriceBigAp,
+} from "../BigAp/helpers/helpers";
+import {
+  returnFixNameMTA,
+  returnNameInArrMTA,
+  returnStockPriceMTA,
+} from "../MTA/helpers/helpers";
+import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
+import { returnFixNameRootOpt } from "../RootOPT/helpers/helpers";
+import {
+  returnFixNameA18,
+  returnNameInArrA18,
+  returnStockPriceA18,
+} from "../A18/helpers/helpers";
+import {
+  fixNameTrub,
+  returnNameInArrTrub,
+  returnStockPriceTrub,
+} from "../Trub/helpers/helpers";
+import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 
 const processors = {
   superprice: {
@@ -181,14 +252,16 @@ const processors = {
     filters: [baseFixElectrozon],
   },
   resale: {
-    processItem: (resale) => ({
-      id: getIdByName(
-        defaultFixName(returnNameReSale(returnFixNameReSale(resale.name)))
-      ),
-      name: returnNameReSale(returnFixNameReSale(resale.name)),
-      stockPrice: returnStockPriceReSale(returnFixNameReSale(resale.name)),
-      provider: "Re:Sale",
-    }),
+    processItem: (resale) =>
+      returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("00") !==
+        -1 && {
+        id: getIdByName(
+          defaultFixName(returnNameReSale(returnFixNameReSale(resale.name)))
+        ),
+        name: returnNameReSale(returnFixNameReSale(resale.name)),
+        stockPrice: returnStockPriceReSale(returnFixNameReSale(resale.name)),
+        provider: "Re:Sale",
+      },
     filters: [baseFixReSale],
   },
   f51: {
@@ -224,6 +297,160 @@ const processors = {
     }),
     filters: [baseFixBase],
   },
+  other: {
+    processItem: (other) => ({
+      id: getIdByName(
+        defaultFixName(returnNameInArrOther(returnFixNameOther(other.name)))
+      ),
+      name: returnNameInArrOther(returnFixNameOther(other.name)),
+      stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
+      provider: "All",
+    }),
+    filters: [baseFixOther],
+  },
+  miopts: {
+    processItem: (miopts) => ({
+      id: getIdByName(
+        defaultFixName(returnNameInArrMiOpts(fixNameMiOpts(miopts.name)))
+      ),
+      name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
+      stockPrice: returnStockPriceMiOpts(fixNameMiOpts(miopts.name)),
+      provider: "MiOpts",
+    }),
+    filters: [baseFixMiOpts],
+  },
+  lowPrice: {
+    processItem: (lowPrice) => ({
+      id: getIdByName(
+        defaultFixName(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)))
+      ),
+      name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
+      stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
+      provider: "Ghost Re:Sale",
+    }),
+    filters: [baseFixLowPrice],
+  },
+  l27: {
+    processItem: (l27) => ({
+      id: getIdByName(
+        defaultFixName(returnNameInArrL27(returnFixNameL27(l27.name)))
+      ),
+      name: returnNameInArrL27(returnFixNameL27(l27.name)),
+      stockPrice: returnStockPriceL27(returnFixNameL27(l27.name)),
+      provider: "Л27-28",
+    }),
+    filters: [baseFixL27],
+  },
+  sunrise: {
+    processItem: (sunrise) => ({
+      id: getIdByName(
+        defaultFixName(
+          returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))
+        )
+      ),
+      name: returnNameInArrSunrise(returnFixNameSunrise(sunrise.name)),
+      stockPrice: returnStockPriceSunrise(returnFixNameSunrise(sunrise.name)),
+      provider: "Восход",
+    }),
+    filters: [baseFixSunrise],
+  },
+  infinity: {
+    processItem: (infinity) => ({
+      id: getIdByName(
+        defaultFixName(returnNameInArrInfinity(fixNameInfinity(infinity.name)))
+      ),
+      name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
+      stockPrice: returnStockPriceInfinity(
+        fixNameInfinity(fixNameInfinity(infinity.name))
+      ),
+      provider: "Infinity",
+    }),
+    filters: [baseFixInfinity],
+  },
+  likemob: {
+    processItem: (likemob) => ({
+      id: getIdByName(
+        defaultFixName(
+          returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
+        )
+      ),
+      name: returnNameInArrLikemob(returnFixNameLikemob(likemob.name)),
+      stockPrice: returnStockPriceLikemob(returnFixNameLikemob(likemob.name)),
+      provider: "Likemob",
+    }),
+    filters: [baseFixLikemob],
+  },
+  bigAp: {
+    processItem: (bigAp) => ({
+      id: getIdByName(
+        defaultFixName(returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)))
+      ),
+      name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),
+      stockPrice: returnStockPriceBigAp(returnFixNameBigAp(bigAp.name)),
+      provider: "BigAp",
+    }),
+    filters: [baseFixBigAp],
+  },
+  mta: {
+    processItem: (mta) => ({
+      id: getIdByName(
+        defaultFixName(returnNameInArrMTA(returnFixNameMTA(mta.name)))
+      ),
+      name: returnNameInArrMTA(returnFixNameMTA(mta.name)),
+      stockPrice: returnStockPriceMTA(returnFixNameMTA(mta.name)),
+      provider: "MTA Store",
+    }),
+    filters: [baseFixMTA],
+  },
+  bonus: {
+    processItem: (bonus) => ({
+      id: getIdByName(defaultFixName(returnFixNameBonus(bonus.name))),
+      name: returnFixNameBonus(bonus.name),
+      stockPrice: bonus.price,
+      provider: "БонусОПТ",
+    }),
+    filters: [baseFixBonus],
+  },
+  rootOpt: {
+    processItem: (rootOpt) => ({
+      id: getIdByName(defaultFixName(returnFixNameRootOpt(rootOpt.name))),
+      name: returnFixNameRootOpt(rootOpt.name),
+      stockPrice: rootOpt.price,
+      provider: "RootOPT",
+    }),
+    filters: [baseFixRootOpt],
+  },
+  A18: {
+    processItem: (A18) => ({
+      id: getIdByName(
+        defaultFixName(returnNameInArrA18(returnFixNameA18(A18.name)))
+      ),
+      name: returnNameInArrA18(returnFixNameA18(A18.name)),
+      stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
+      provider: "A18",
+    }),
+    filters: [],
+  },
+  amt: {
+    processItem: (amt) => ({
+      id: getIdByName(
+        defaultFixName(returnNameInArrTrub(fixNameTrub(amt.name)))
+      ),
+      name: returnNameInArrTrub(fixNameTrub(amt.name)),
+      stockPrice: returnStockPriceTrub(fixNameTrub(amt.name)),
+      provider: "AMT",
+    }),
+    filters: [baseFixTrub],
+  },
+  boltun: {
+    processItem: (boltun) => ({
+      id: getIdByName(defaultFixName(returnFixNameBoltun(boltun.name))),
+      name: returnFixNameBoltun(boltun.name),
+      stockPrice: boltun.price,
+      provider: "Болтун",
+    }),
+    filters: [baseFixBoltun],
+  },
 };
 
 const processData = (data, processor, isOpen) => {
@@ -258,6 +485,20 @@ const AllPriceWithIDTest = ({
   f51Data,
   discountData,
   baseData,
+  otherData,
+  mioptsData,
+  lowPriceData,
+  l27Data,
+  sunriseData,
+  infinityData,
+  likemobData,
+  bigApData,
+  mtaData,
+  bonusData,
+  rootOptData,
+  a18Data,
+  AMTData,
+  boltunData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -278,6 +519,20 @@ const AllPriceWithIDTest = ({
     results.push(...processData(f51Data, processors.f51, isOpen));
     results.push(...processData(discountData, processors.discount, isOpen));
     results.push(...processData(baseData, processors.base, isOpen));
+    results.push(...processData(otherData, processors.other, isOpen));
+    results.push(...processData(mioptsData, processors.miopts, isOpen));
+    results.push(...processData(lowPriceData, processors.lowPrice, isOpen));
+    results.push(...processData(l27Data, processors.l27, isOpen));
+    results.push(...processData(sunriseData, processors.sunrise, isOpen));
+    results.push(...processData(infinityData, processors.infinity, isOpen));
+    results.push(...processData(likemobData, processors.likemob, isOpen));
+    results.push(...processData(bigApData, processors.bigAp, isOpen));
+    results.push(...processData(mtaData, processors.mta, isOpen));
+    results.push(...processData(bonusData, processors.bonus, isOpen));
+    results.push(...processData(rootOptData, processors.rootOpt, isOpen));
+    results.push(...processData(a18Data, processors.A18, isOpen));
+    results.push(...processData(AMTData, processors.amt, isOpen));
+    results.push(...processData(boltunData, processors.boltun, isOpen));
 
     return results;
   }, [isOpen]);

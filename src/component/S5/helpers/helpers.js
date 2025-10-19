@@ -53,16 +53,30 @@ export const fixNameS5 = (name) => {
   const fixS10FE = fixS23FE.replace("Tab S10FE", "Tab S10 FE");
   const fixS10Plus = fixS10FE.replace("Tab S10 Plus", "Tab S10 +");
   const fixFEPlus = fixS10Plus.replace("FE Plus", "FE +");
-  const fixs25Edge256 = fixFEPlus.indexOf("S25 edge") !== -1 ? fixFEPlus.replace("256", "12/256") : fixFEPlus
-  const fixs25Edge512 = fixs25Edge256.indexOf("S25 edge") !== -1 ? fixs25Edge256.replace("512", "12/512") : fixs25Edge256
-  const fixTabS10128 = fixs25Edge512.indexOf("Tab S10") !== -1 ? fixs25Edge512.replace("128", "8/128") : fixs25Edge512
-  const fixTabS10256 = fixTabS10128.indexOf("Tab S10") !== -1 ? fixTabS10128.replace("256", "12/256") : fixTabS10128
+  const fixs25Edge256 =
+    fixFEPlus.indexOf("S25 edge") !== -1
+      ? fixFEPlus.replace("256", "12/256")
+      : fixFEPlus;
+  const fixs25Edge512 =
+    fixs25Edge256.indexOf("S25 edge") !== -1
+      ? fixs25Edge256.replace("512", "12/512")
+      : fixs25Edge256;
+  const fixTabS10128 =
+    fixs25Edge512.indexOf("Tab S10") !== -1
+      ? fixs25Edge512.replace("128", "8/128")
+      : fixs25Edge512;
+  const fixTabS10256 =
+    fixTabS10128.indexOf("Tab S10") !== -1
+      ? fixTabS10128.replace("256", "12/256")
+      : fixTabS10128;
   const fixA55 = fixTabS10256.replace("А55 ", "A55 ");
   const fixA55IceBlue = fixA55.indexOf("A55 ")
     ? fixA55.replace("Ice blue", "iceblue")
     : fixA55;
+  const fixeSim = fixA55IceBlue.replace("(e-sim)","(esim)")
+  const fix2Sim = fixeSim.replace("(2-sim)","(2sim)")
 
-  return fixA55IceBlue;
+  return fix2Sim;
 };
 
 const checkFlags = (str) => {
@@ -107,6 +121,13 @@ const checkFlags = (str) => {
   ) {
     return (
       checkSpace4.slice(-4) + checkSpace4.substring(0, checkSpace4.length - 4)
+    );
+  } else if (
+    checkSpace4.slice(-6) === "(esim)" ||
+    checkSpace4.slice(-6) === "(2sim)"
+  ) {
+    return (
+      checkSpace4.slice(-6) + checkSpace4.substring(0, checkSpace4.length - 6)
     );
   } else {
     return checkSpace4;
@@ -222,7 +243,11 @@ export const returnStockPriceS5 = (name) => {
     ? remove1sim.replace("(пленка)", "")
     : remove1sim;
 
-  return removePlenka;
+    let removeeSim= removePlenka.replace("(esim)", "")
+
+    let remove2Sim = removeeSim.replace("(2sim)", "")
+
+  return remove2Sim;
 };
 
 export const returnExtraPriceS5 = (name) => {

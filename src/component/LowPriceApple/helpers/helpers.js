@@ -191,6 +191,8 @@ export const returnStockPriceLowPrice = (name) => {
   let fix1Sim = fixRub.replace("1sim", "");
   let fixeSim = fix1Sim.replace("Esim", "");
   let replacePoint = fixeSim.replace(".", "");
+  let replaceCar = replacePoint.replace("🚛", "");
+  
 
-  return replacePoint;
+  return replaceCar;
 };
