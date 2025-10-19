@@ -30,7 +30,6 @@ import {
   baseFixVsemi,
 } from "../../helpers/baseFix";
 import { defaultFixName } from "../../helpers/defaultFixName";
-import { getIdByName } from "../../helpers/returnIDByName";
 import { fixNameSuperPrice } from "../SuperPrice/helpers/helpers";
 import {
   fixNameVseMi,
@@ -147,11 +146,12 @@ import {
   returnStockPriceTrub,
 } from "../Trub/helpers/helpers";
 import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
+import { getIdByNameTest } from "../../helpers/returnIDByNameTest"
 
 const processors = {
   superprice: {
     processItem: (superprice) => ({
-      id: getIdByName(defaultFixName(fixNameSuperPrice(superprice.name))),
+      id: getIdByNameTest(defaultFixName(fixNameSuperPrice(superprice.name))),
       name: fixNameSuperPrice(superprice.name),
       stockPrice: superprice.price,
       provider: "SuperPrice",
@@ -160,7 +160,7 @@ const processors = {
   },
   vsemi: {
     processItem: (vsemi) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrVseMi(fixNameVseMi(vsemi.name)))
       ),
       name: returnNameInArrVseMi(fixNameVseMi(vsemi.name)),
@@ -171,7 +171,7 @@ const processors = {
   },
   unimtrn: {
     processItem: (unimtrn) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)))
       ),
       name: returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)),
@@ -182,7 +182,7 @@ const processors = {
   },
   hi: {
     processItem: (hi) => ({
-      id: getIdByName(defaultFixName(returnNameInArrHi(fixNameHi(hi.name)))),
+      id: getIdByNameTest(defaultFixName(returnNameInArrHi(fixNameHi(hi.name)))),
       name: returnFixPriceHi(hi, returnNameInArrHi(fixNameHi(hi.name))),
       stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
       provider: "Hi",
@@ -191,7 +191,7 @@ const processors = {
   },
   mihonor: {
     processItem: (mihonor) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrMihonor(fixNameMihonor(mihonor.name)))
       ),
       name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
@@ -202,7 +202,7 @@ const processors = {
   },
   garmin: {
     processItem: (garmin) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnFixNameProductGarmin(fixNameGarmin(garmin.name)))
       ),
       name: returnFixNameProductGarmin(fixNameGarmin(garmin.name)),
@@ -213,7 +213,7 @@ const processors = {
   },
   S5: {
     processItem: (S5) => ({
-      id: getIdByName(defaultFixName(returnNameInArrS5(fixNameS5(S5.name)))),
+      id: getIdByNameTest(defaultFixName(returnNameInArrS5(fixNameS5(S5.name)))),
       name: returnNameInArrS5(fixNameS5(S5.name)),
       stockPrice: returnStockPriceS5(fixNameS5(S5.name)),
       provider: "S5",
@@ -222,7 +222,7 @@ const processors = {
   },
   racmag: {
     processItem: (racmag) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrRacmag(returnFixNameRacmag(racmag.name)))
       ),
       name: returnNameInArrRacmag(returnFixNameRacmag(racmag.name)),
@@ -233,7 +233,7 @@ const processors = {
   },
   arti: {
     processItem: (arti) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameArti(returnFixNameArti(arti.name)))
       ),
       name: returnNameArti(returnFixNameArti(arti.name)),
@@ -244,7 +244,7 @@ const processors = {
   },
   electrozon: {
     processItem: (electrozon) => ({
-      id: getIdByName(defaultFixName(returnFixNameElectrozon(electrozon.name))),
+      id: getIdByNameTest(defaultFixName(returnFixNameElectrozon(electrozon.name))),
       name: returnFixNameElectrozon(electrozon.name),
       stockPrice: electrozon.price,
       provider: "Electrozon",
@@ -255,7 +255,7 @@ const processors = {
     processItem: (resale) =>
       returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("00") !==
         -1 && {
-        id: getIdByName(
+        id: getIdByNameTest(
           defaultFixName(returnNameReSale(returnFixNameReSale(resale.name)))
         ),
         name: returnNameReSale(returnFixNameReSale(resale.name)),
@@ -266,7 +266,7 @@ const processors = {
   },
   f51: {
     processItem: (f51) => ({
-      id: getIdByName(defaultFixName(returnNameF51(f51.name))),
+      id: getIdByNameTest(defaultFixName(returnNameF51(f51.name))),
       name: returnNameF51(f51.name),
       stockPrice: f51.price,
       provider: "F51",
@@ -275,7 +275,7 @@ const processors = {
   },
   discount: {
     processItem: (discount) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(
           returnNameInArrDiscount(returnFixNameDiscount(discount.name))
         )
@@ -290,7 +290,7 @@ const processors = {
   },
   base: {
     processItem: (base) => ({
-      id: getIdByName(defaultFixName(returnFixNameBase(base.name))),
+      id: getIdByNameTest(defaultFixName(returnFixNameBase(base.name))),
       name: returnFixNameBase(base.name),
       stockPrice: base.price,
       provider: "База",
@@ -299,7 +299,7 @@ const processors = {
   },
   other: {
     processItem: (other) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrOther(returnFixNameOther(other.name)))
       ),
       name: returnNameInArrOther(returnFixNameOther(other.name)),
@@ -310,7 +310,7 @@ const processors = {
   },
   miopts: {
     processItem: (miopts) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrMiOpts(fixNameMiOpts(miopts.name)))
       ),
       name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
@@ -321,7 +321,7 @@ const processors = {
   },
   lowPrice: {
     processItem: (lowPrice) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)))
       ),
       name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
@@ -332,7 +332,7 @@ const processors = {
   },
   l27: {
     processItem: (l27) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrL27(returnFixNameL27(l27.name)))
       ),
       name: returnNameInArrL27(returnFixNameL27(l27.name)),
@@ -343,7 +343,7 @@ const processors = {
   },
   sunrise: {
     processItem: (sunrise) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(
           returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))
         )
@@ -356,7 +356,7 @@ const processors = {
   },
   infinity: {
     processItem: (infinity) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrInfinity(fixNameInfinity(infinity.name)))
       ),
       name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
@@ -369,7 +369,7 @@ const processors = {
   },
   likemob: {
     processItem: (likemob) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(
           returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
         )
@@ -382,7 +382,7 @@ const processors = {
   },
   bigAp: {
     processItem: (bigAp) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)))
       ),
       name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),
@@ -393,7 +393,7 @@ const processors = {
   },
   mta: {
     processItem: (mta) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrMTA(returnFixNameMTA(mta.name)))
       ),
       name: returnNameInArrMTA(returnFixNameMTA(mta.name)),
@@ -404,7 +404,7 @@ const processors = {
   },
   bonus: {
     processItem: (bonus) => ({
-      id: getIdByName(defaultFixName(returnFixNameBonus(bonus.name))),
+      id: getIdByNameTest(defaultFixName(returnFixNameBonus(bonus.name))),
       name: returnFixNameBonus(bonus.name),
       stockPrice: bonus.price,
       provider: "БонусОПТ",
@@ -413,7 +413,7 @@ const processors = {
   },
   rootOpt: {
     processItem: (rootOpt) => ({
-      id: getIdByName(defaultFixName(returnFixNameRootOpt(rootOpt.name))),
+      id: getIdByNameTest(defaultFixName(returnFixNameRootOpt(rootOpt.name))),
       name: returnFixNameRootOpt(rootOpt.name),
       stockPrice: rootOpt.price,
       provider: "RootOPT",
@@ -422,7 +422,7 @@ const processors = {
   },
   A18: {
     processItem: (A18) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrA18(returnFixNameA18(A18.name)))
       ),
       name: returnNameInArrA18(returnFixNameA18(A18.name)),
@@ -433,7 +433,7 @@ const processors = {
   },
   amt: {
     processItem: (amt) => ({
-      id: getIdByName(
+      id: getIdByNameTest(
         defaultFixName(returnNameInArrTrub(fixNameTrub(amt.name)))
       ),
       name: returnNameInArrTrub(fixNameTrub(amt.name)),
@@ -444,7 +444,7 @@ const processors = {
   },
   boltun: {
     processItem: (boltun) => ({
-      id: getIdByName(defaultFixName(returnFixNameBoltun(boltun.name))),
+      id: getIdByNameTest(defaultFixName(returnFixNameBoltun(boltun.name))),
       name: returnFixNameBoltun(boltun.name),
       stockPrice: boltun.price,
       provider: "Болтун",

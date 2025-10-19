@@ -4,6 +4,7 @@ import idProductXiaomiData from "../data/idProductXiaomiData.json";
 import idProductGarminData from "../data/idProductGarminData.json";
 import idProductOtherBrandData from "../data/idProductOtherBrandData.json";
 import idProductOtherBrandData2 from "../data/idProductOtherBrandData2.json";
+import { memoize } from "lodash";
 
 const checkEntry = (name, entry) => {
   const [id, params] = entry;
@@ -17,7 +18,7 @@ const checkEntry = (name, entry) => {
   return null;
 };
 
-export const getIdByName = (name) => {
+export const getIdByName = memoize((name) => {
   const toLowerCase = name.toLowerCase();
   const entries = Object.entries({
     ...idProductAppleData,
@@ -33,4 +34,6 @@ export const getIdByName = (name) => {
       .map((entry) => checkEntry(toLowerCase, entry))
       .filter((i) => i !== null)[0] ?? "No match"
   );
-};
+})
+
+
