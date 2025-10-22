@@ -6072,7 +6072,8 @@
     },
     "41020": {
       "include": [
-        "mi 15t 12/256 rose gold"
+        "mi 15t 12/256",
+        "gold"
       ],
       "exclude": []
     },
@@ -6090,7 +6091,8 @@
     },
     "41021": {
       "include": [
-        "mi 15t 12/512 rose gold"
+        "mi 15t 12/512",
+        "gold"
       ],
       "exclude": []
     },
@@ -6492,7 +6494,8 @@
     },
     "41022": {
       "include": [
-        "mi 15t pro 12/1tb mocha gold"
+        "mi 15t pro 12/1tb",
+        "gold"
       ],
       "exclude": []
     },
@@ -6510,7 +6513,8 @@
     },
     "41028": {
       "include": [
-        "mi 15t pro 12/256 mocha gold"
+        "mi 15t pro 12/256",
+        "gold"
       ],
       "exclude": []
     },
@@ -6528,7 +6532,8 @@
     },
     "41030": {
       "include": [
-        "mi 15t pro 12/512 mocha gold"
+        "mi 15t pro 12/512",
+        "gold"
       ],
       "exclude": []
     }

@@ -59,7 +59,7 @@ export const fixNameUnimtrn = (el) => {
   const fixWiFi = fixWatchS8.replace(wiFi, "Wi-Fi");
   const fixAWS9Space = fixWiFi.replace(aw9Space, "S9");
   const fixAWS9 = fixAWS9Space.replace(aws9, "S9");
-  const fixCPH2691  = fixAWS9.replace('CPH2691 ', "");
+  const fixCPH2691 = fixAWS9.replace("CPH2691 ", "");
   const fixAW9 = fixCPH2691.replace(aw9, "S9");
   const fixAW8 = fixAW9.replace(aws8, "S8");
   const fixAW8Space = fixAW8.replace(aw8Spaces, "S8");
@@ -76,7 +76,11 @@ export const fixNameUnimtrn = (el) => {
   const fixAir15 = fixAir13.replace(air15, "Air 15 M");
   const fixAirAir13 = fixAir15.replace(airAir13, "13.6");
   const fixAirAir15 = fixAirAir13.replace(airAir15, "15");
-  const fix166 = fixAirAir15.replace("166", "16");
+  const fix176 = fixAirAir15.replace("175", "17");
+  const fix276 = fix176.replace("275", "27");
+  const fix376 = fix276.replace("375", "37");
+  const fix576 = fix376.replace("575", "57");
+  const fix166 = fix576.replace("166", "16");
   const fix266 = fix166.replace("266", "26");
   const fix366 = fix266.replace("366", "36");
   const fix566 = fix366.replace("566", "56");
@@ -147,7 +151,10 @@ export const fixNameUnimtrn = (el) => {
   const fixs916b = fixxqde72.replace("S916B ", "");
   const fixUltra2SM = fixs916b.replace("Ultra 2 S/M ", "ultra 2 ");
 
-  const fixCellular = fixUltra2SM.indexOf("Cellular") !== - 1 ? fixUltra2SM.replace("Wi-Fi", "LTE") : fixUltra2SM
+  const fixCellular =
+    fixUltra2SM.indexOf("Cellular") !== -1
+      ? fixUltra2SM.replace("Wi-Fi", "LTE")
+      : fixUltra2SM;
 
   const fixGreenGray = fixCellular.replace(
     "ultra 2 Green/Gray",
@@ -454,24 +461,24 @@ export const fixNameUnimtrn = (el) => {
     fixNote13ProOlive.indexOf("MI 12") != -1
       ? fixNote13ProOlive.replace("Gray", "Black")
       : fixNote13ProOlive;
-      const fixMi12Pink =
+  const fixMi12Pink =
     fixMi12Gray.indexOf("MI 12") != -1
       ? fixMi12Gray.replace("Purple", "Pink")
       : fixMi12Gray;
-      const replaceCrafted = fixMi12Pink.replace("Crafted ", "")
-      const fixTabS9Plus = replaceCrafted.replace("Tab S9+", "Tab S9 +")
-      const fixFEPlus = fixTabS9Plus.replace("FE Plus", "FE +")
-      const fixStarlight = fixFEPlus.replace("Starlinght", "Starlight")
-      const fixS1 = fixStarlight.replace("Series 1", "S1")
-      const fixSE1 = fixS1.replace("SEries 1", "S1")
-      const fixAW1 = fixSE1.replace("AW 1", "S1")
-  return fixAW1;
+  const replaceCrafted = fixMi12Pink.replace("Crafted ", "");
+  const fixTabS9Plus = replaceCrafted.replace("Tab S9+", "Tab S9 +");
+  const fixFEPlus = fixTabS9Plus.replace("FE Plus", "FE +");
+  const fixStarlight = fixFEPlus.replace("Starlinght", "Starlight");
+  const fixS1 = fixStarlight.replace("Series 1", "S1");
+  const fixSE1 = fixS1.replace("SEries 1", "S1");
+  const fixAW1 = fixSE1.replace("AW 1", "S1");
+  const fixStick = fixAW1.replace("-", " ");
+  return fixStick;
 };
 
-
 export const returnNameInArrUnimtrn = (name) => {
-
-  let reverseStrName = name.split("").reverse().join("");
+  let removeStick1 = name.replace("-", " ");
+  let reverseStrName = removeStick1.split("").reverse().join("");
   let checkSpace =
     reverseStrName[0] === " "
       ? reverseStrName.replace(" ", "")
@@ -484,12 +491,13 @@ export const returnNameInArrUnimtrn = (name) => {
   let checkSpace3 =
     checkSpace2[0] === " " ? checkSpace2.replace(" ", "") : checkSpace2;
 
-  let splitPrice = checkSpace3.indexOf(" ") !== -1 ? /\s(.+)/.exec(checkSpace3)[1] : checkSpace3
+  let splitPrice =
+    checkSpace3.indexOf(" ") !== -1
+      ? /\s(.+)/.exec(checkSpace3)[1]
+      : checkSpace3;
 
   let removeStick =
-    checkSpace3.indexOf(" ") !== -1
-      ? checkSpace3.split(" ")[1]
-      : checkSpace3;
+    checkSpace3.indexOf(" ") !== -1 ? checkSpace3.split(" ")[1] : checkSpace3;
 
   let reverseBackStrName = splitPrice.split("").reverse().join("");
 
@@ -500,7 +508,6 @@ export const returnStockPriceUnimtrn = (name) => {
   const removeDoubleSpace = name.replace(/\s+/g, " ");
   let replaceCar = removeDoubleSpace.replace(" 🏎️", "");
   let fixZero = replaceCar.replace("🛩️", "");
-
 
   let reverseStrName = fixZero.split("").reverse().join("");
   let checkSpace =
@@ -522,7 +529,7 @@ export const returnStockPriceUnimtrn = (name) => {
       : removeDoubleSpace2;
 
   let reverseBackStrName = slicePrice.split("").reverse().join("");
-  
+
   let replaceEU = reverseBackStrName.replace("🇪🇺", "");
   let replaceCA = replaceEU.replace("🇨🇦", "");
 

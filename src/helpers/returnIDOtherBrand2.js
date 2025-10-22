@@ -3954,35 +3954,7 @@ export const returnIDOtherBrand2 = (name) => {
   ) {
     return 38700;
 
-    // Casio
-  } else if (name.indexOf("gwg-2000 1a1") !== -1) {
-    return 37449;
-  } else if (name.indexOf("gwg-2000 1a3") !== -1) {
-    return 37450;
-  } else if (name.indexOf("gwg-2000 1a5") !== -1) {
-    return 37451;
-  } else if (name.indexOf("gwg-b1000 1a4") !== -1) {
-    return 37452;
-  } else if (name.indexOf("gwg-b1000 3a") !== -1) {
-    return 37453;
-  } else if (name.indexOf("mtg-b1000-1a") !== -1) {
-    return 37454;
-  } else if (name.indexOf("mtg-b1000b-1a") !== -1) {
-    return 37455;
-  } else if (name.indexOf("mtg-b1000d-1a") !== -1) {
-    return 37456;
-  } else if (name.indexOf("mtg-b1000xbd-1a") !== -1) {
-    return 37457;
-  } else if (name.indexOf("mtg-b2000b-1a") !== -1) {
-    return 37297;
-  } else if (name.indexOf("mtg-b2000bd-1a") !== -1) {
-    return 37296;
-  } else if (name.indexOf("mtg-b2000ybd-1a") !== -1) {
-    return 37298;
-  } else if (name.indexOf("mtg-b2000yr-1a") !== -1) {
-    return 37473;
-  } else if (name.indexOf("mtg-b3000-1a") !== -1) {
-    return 37458;
+   
   } else if (
     name.indexOf("shokz") !== -1 &&
     name.indexOf("openrun pro 2") !== -1 &&

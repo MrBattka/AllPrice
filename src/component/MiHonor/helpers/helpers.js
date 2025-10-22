@@ -74,8 +74,10 @@ export const fixNameMihonor = (name) => {
   const remove161 = remove16512.replace("16+1TB", "15/1tb");
   const remove162 = remove161.replace("16+2TB", "16/2tb");
   const fix161024 = remove162.replace("16+1024", "16/1tb");
+  const removeA174G = fix161024.replace("A17 4G", "A17");
+  const fixBLCK = removeA174G.replace("BLACК", "Black");
   
-  const fixProPlus = fix161024.replace("PRO PLUS", "Pro +");
+  const fixProPlus = fixBLCK.replace("PRO PLUS", "Pro +");
   const remove8256 = fixProPlus.replace("8+256", "8/256");
 
   const fixMi = returnNameInArrMihonor(name.toLowerCase())[0] === "M" ? remove8256.replace("MI ", "XIAOMI ") : remove8256

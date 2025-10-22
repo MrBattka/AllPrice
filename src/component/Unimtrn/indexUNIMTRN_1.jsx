@@ -19,19 +19,17 @@ const IndexUnimtrn_1 = ({ el, unimtrnData }) => {
     if (
       unimtrn.name &&
       getIdByName(
-        defaultFixName(
-          returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name))
-        )
+        defaultFixName(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)))
       ) !== "No match" &&
       isOpen &&
       baseFix(unimtrn)
     ) {
       resultArr.push({
         id: getIdByName(
-          defaultFixName(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)))
+          defaultFixName(fixNameUnimtrn(unimtrn.name))
         ),
         name: returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)),
-        stockPrice: returnStockPriceUnimtrn(unimtrn.name),
+        stockPrice: returnStockPriceUnimtrn(fixNameUnimtrn(unimtrn.name)),
         provider: "Метреон",
       });
     }

@@ -51,8 +51,7 @@ export const defaultFixName = (el) => {
       ? fixPencilUsb.replace("2024", "7")
       : fixPencilUsb;
   const fixHK =
-    fixiPadMini7.indexOf("🇭🇰") !== -1 &&
-    fixiPadMini7.indexOf("17") === -1
+    fixiPadMini7.indexOf("🇭🇰") !== -1 && fixiPadMini7.indexOf("17") === -1
       ? fixiPadMini7.replace("🇭🇰", " dual ")
       : fixiPadMini7;
   const fixCH =
@@ -102,7 +101,10 @@ export const defaultFixName = (el) => {
     fixMidnight.indexOf("z flip 5") === -1
       ? fixMidnight.replace("mint", "Green")
       : fixMidnight;
-  const fixLime = fixMint.replace("lime", "Yellow");
+
+  const fixA36Lime =
+    fixMint.indexOf("a36") !== -1 ? fixMint.replace("lime", "Green") : fixMint;
+  const fixLime = fixA36Lime.replace("lime", "Yellow");
   const fixGraphite =
     fixLime.indexOf("s22") === -1 ||
     fixLime.indexOf("s23") === -1 ||
@@ -609,5 +611,19 @@ export const defaultFixName = (el) => {
       ? fixYandexWhite.replace("beige", "беж")
       : fixYandexWhite;
 
-  return fixYandexBeige;
+  const fixS23Plus = fixYandexBeige.replace("s23 plus", "S23+");
+  const fixS23Plus1 = fixS23Plus.replace("s23 +", "S23+");
+  const fixS24Plus = fixS23Plus1.replace("s24 plus", "S24+");
+  const fixS24Plus1 = fixS24Plus.replace("s24 +", "S24+");
+  const fixS25Plus = fixS24Plus1.replace("s25 plus", "S25+");
+  const fixS25Plus1 = fixS25Plus.replace("s25 +", "S25+");
+  const fixA07Gray =
+    fixS25Plus1.indexOf("a07 4/64") !== -1 ||
+    fixS25Plus1.indexOf("a07 4/128") !== -1 ||
+    fixS25Plus1.indexOf("a07 6/128") !== -1 ||
+    fixS25Plus1.indexOf("a07 8/256") !== -1
+      ? fixS25Plus1.replace("black", "gray")
+      : fixS25Plus1;
+
+  return fixA07Gray;
 };

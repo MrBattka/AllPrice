@@ -4620,7 +4620,7 @@
     },
     "40357": {
       "include": [
-        "amc654"
+        "mc654"
       ],
       "exclude": []
     },
@@ -10907,6 +10907,78 @@
         "🇺🇸",
         "🇻🇮"
       ]
+    },
+
+
+    "41141": {
+      "include": [
+        "17 256 black",
+        "dual"
+      ],
+      "exclude": []
+    },
+    "41142": {
+      "include": [
+        "17 512 black",
+        "dual"
+      ],
+      "exclude": []
+    },
+    "41145": {
+      "include": [
+        "17 256 white",
+        "dual"
+      ],
+      "exclude": []
+    },
+    "41146": {
+      "include": [
+        "17 512 white",
+        "dual"
+      ],
+      "exclude": []
+    },
+    "41144": {
+      "include": [
+        "17 256 blue",
+        "dual"
+      ],
+      "exclude": []
+    },
+    "41143": {
+      "include": [
+        "17 512 blue",
+        "dual"
+      ],
+      "exclude": []
+    },
+    "41149": {
+      "include": [
+        "17 256 green",
+        "dual"
+      ],
+      "exclude": []
+    },
+    "41150": {
+      "include": [
+        "17 512 green",
+        "dual"
+      ],
+      "exclude": []
+    },
+    "41148": {
+      "include": [
+        "17 256 purple",
+        "dual"
+      ],
+      "exclude": []
+    },
+    "41147": {
+      "include": [
+        "17 512 purple",
+        "dual"
+      ],
+      "exclude": []
     },
     "40518": {
       "include": [

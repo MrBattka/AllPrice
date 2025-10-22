@@ -4587,9 +4587,7 @@
             "white"
         ],
         "exclude": []
-    }
-
-    ,
+    },
     "23952": {
         "include": [
             "яндекс",
@@ -4597,7 +4595,6 @@
             "крас"
         ],
         "exclude": [
-            
             "лайт"
         ]
     },
@@ -4608,7 +4605,6 @@
             "син"
         ],
         "exclude": [
-            
             "лайт"
         ]
     },
@@ -4619,7 +4615,6 @@
             "черн"
         ],
         "exclude": [
-            
             "лайт"
         ]
     },
@@ -4630,7 +4625,6 @@
             "беж"
         ],
         "exclude": [
-            
             "лайт"
         ]
     },
@@ -4641,7 +4635,6 @@
             "бел"
         ],
         "exclude": [
-            
             "лайт"
         ]
     },
@@ -4675,12 +4668,2070 @@
     "37164": {
         "include": [
             "яндекс",
+            "2",
+            "лайт",
+            "зелен"
+        ],
+        "exclude": []
+    },
+    "30289": {
+        "include": [
+            "яндекс",
             "макс",
             "zigbee",
-            "красн"
+            "крсн"
         ],
         "exclude": [
             "без zigbee"
         ]
+    },
+    "30287": {
+        "include": [
+            "яндекс",
+            "макс",
+            "zigbee",
+            "сер"
+        ],
+        "exclude": [
+            "без zigbee"
+        ]
+    },
+    "30292": {
+        "include": [
+            "яндекс",
+            "макс",
+            "zigbee",
+            "син"
+        ],
+        "exclude": [
+            "без zigbee"
+        ]
+    },
+    "30291": {
+        "include": [
+            "яндекс",
+            "макс",
+            "zigbee",
+            "зелен"
+        ],
+        "exclude": [
+            "без zigbee"
+        ]
+    },
+    "30288": {
+        "include": [
+            "яндекс",
+            "макс",
+            "zigbee",
+            "бежев"
+        ],
+        "exclude": [
+            "без zigbee"
+        ]
+    },
+    "30286": {
+        "include": [
+            "яндекс",
+            "макс",
+            "zigbee",
+            "бел"
+        ],
+        "exclude": [
+            "без zigbee"
+        ]
+    },
+    "30290": {
+        "include": [
+            "яндекс",
+            "макс",
+            "zigbee",
+            "бирюз"
+        ],
+        "exclude": [
+            "без zigbee"
+        ]
+    },
+    "23957": {
+        "include": [
+            "яндекс",
+            "макс",
+            "крас"
+        ],
+        "exclude": []
+    },
+    "23958": {
+        "include": [
+            "яндекс",
+            "макс",
+            "син"
+        ],
+        "exclude": []
+    },
+    "18974": {
+        "include": [
+            "яндекс",
+            "макс",
+            "черн"
+        ],
+        "exclude": []
+    },
+    "18973": {
+        "include": [
+            "яндекс",
+            "макс",
+            "бел"
+        ],
+        "exclude": []
+    },
+    "23955": {
+        "include": [
+            "яндекс",
+            "мини",
+            "красн",
+            "с часами"
+        ],
+        "exclude": []
+    },
+    "23956": {
+        "include": [
+            "яндекс",
+            "мини",
+            "син",
+            "с часами"
+        ],
+        "exclude": []
+    },
+    "23954": {
+        "include": [
+            "яндекс",
+            "мини",
+            "черн",
+            "с часами"
+        ],
+        "exclude": []
+    },
+    "37470": {
+        "include": [
+            "яндекс",
+            "мини",
+            "черн",
+            "3"
+        ],
+        "exclude": []
+    },
+    "38013": {
+        "include": [
+            "яндекс",
+            "мини",
+            "сер",
+            "3"
+        ],
+        "exclude": []
+    },
+    "38015": {
+        "include": [
+            "яндекс",
+            "мини",
+            "фиол",
+            "3"
+        ],
+        "exclude": []
+    },
+    "30892": {
+        "include": [
+            "яндекс",
+            "миди",
+            "черн",
+            "3"
+        ],
+        "exclude": []
+    },
+    "30893": {
+        "include": [
+            "яндекс",
+            "миди",
+            "зелен",
+            "3"
+        ],
+        "exclude": []
+    },
+    "30894": {
+        "include": [
+            "яндекс",
+            "миди",
+            "бел",
+            "3"
+        ],
+        "exclude": []
+    },
+    "35837": {
+        "include": [
+            "яндекс",
+            "миди",
+            "оран",
+            "3"
+        ],
+        "exclude": []
+    },
+    "35838": {
+        "include": [
+            "яндекс",
+            "миди",
+            "малин",
+            "3"
+        ],
+        "exclude": []
+    },
+    "27150": {
+        "include": [
+            "coros pod 2"
+        ],
+        "exclude": []
+    },
+    "27127": {
+        "include": [
+            "openswim",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "26204": {
+        "include": [
+            "finis",
+            "smart",
+            "goggle"
+        ],
+        "exclude": []
+    },
+    "40334": {
+        "include": [
+            "nothing phone",
+            "3",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "3a"
+        ]
+    },
+    "40368": {
+        "include": [
+            "nothing phone",
+            "3",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "3a"
+        ]
+    },
+    "40371": {
+        "include": [
+            "nothing phone",
+            "3",
+            "16/512",
+            "black"
+        ],
+        "exclude": [
+            "3a"
+        ]
+    },
+    "40372": {
+        "include": [
+            "nothing phone",
+            "3",
+            "16/512",
+            "white"
+        ],
+        "exclude": [
+            "3a"
+        ]
+    },
+    "39156": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "2",
+            "pro",
+            "8/128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "39157": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "2",
+            "pro",
+            "8/128",
+            "green"
+        ],
+        "exclude": []
+    },
+    "39158": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "2",
+            "pro",
+            "8/128",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "39159": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "2",
+            "pro",
+            "8/128",
+            "white"
+        ],
+        "exclude": []
+    },
+    "39164": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "2",
+            "pro",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "39165": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "2",
+            "pro",
+            "8/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "39166": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "2",
+            "pro",
+            "8/256",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "39167": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "2",
+            "pro",
+            "8/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "38082": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "1",
+            "6/128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "38120": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "1",
+            "8/128",
+            "green"
+        ],
+        "exclude": []
+    },
+    "38119": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "1",
+            "8/128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "38121": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "1",
+            "8/128",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "38115": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "1",
+            "6/128",
+            "green"
+        ],
+        "exclude": []
+    },
+    "38114": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "1",
+            "6/128",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "38125": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "1",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "38126": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "1",
+            "8/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "38127": {
+        "include": [
+            "nothing phone",
+            "cmf",
+            "1",
+            "8/256",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "27993": {
+        "include": [
+            "nothing phone",
+            "1",
+            "8/128",
+            "black"
+        ],
+        "exclude": [
+            "cmf"
+        ]
+    },
+    "27989": {
+        "include": [
+            "nothing phone",
+            "1",
+            "8/128",
+            "white"
+        ],
+        "exclude": [
+            "cmf"
+        ]
+    },
+    "27994": {
+        "include": [
+            "nothing phone",
+            "1",
+            "8/256",
+            "black"
+        ],
+        "exclude": [
+            "cmf"
+        ]
+    },
+    "27991": {
+        "include": [
+            "nothing phone",
+            "1",
+            "8/256",
+            "white"
+        ],
+        "exclude": [
+            "cmf"
+        ]
+    },
+    "27992": {
+        "include": [
+            "nothing phone",
+            "1",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "cmf"
+        ]
+    },
+    "27990": {
+        "include": [
+            "nothing phone",
+            "1",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "cmf"
+        ]
+    },
+    "27995": {
+        "include": [
+            "nothing phone",
+            "2",
+            "8/128",
+            "gray"
+        ],
+        "exclude": [
+            "2a",
+            "plus"
+        ]
+    },
+    "28000": {
+        "include": [
+            "nothing phone",
+            "2",
+            "8/128",
+            "white"
+        ],
+        "exclude": [
+            "2a",
+            "plus"
+        ]
+    },
+    "27996": {
+        "include": [
+            "nothing phone",
+            "2",
+            "12/256",
+            "gray"
+        ],
+        "exclude": [
+            "2a",
+            "plus"
+        ]
+    },
+    "27998": {
+        "include": [
+            "nothing phone",
+            "2",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "2a",
+            "plus"
+        ]
+    },
+    "27997": {
+        "include": [
+            "nothing phone",
+            "2",
+            "12/512",
+            "gray"
+        ],
+        "exclude": [
+            "2a",
+            "plus"
+        ]
+    },
+    "27999": {
+        "include": [
+            "nothing phone",
+            "2",
+            "12/512",
+            "white"
+        ],
+        "exclude": [
+            "2a",
+            "plus"
+        ]
+    },
+    "35902": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "8/128",
+            "black"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "35909": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "8/128",
+            "milk"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "35906": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "8/128",
+            "white"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "35903": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "8/256",
+            "black"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "35910": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "8/256",
+            "milk"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "35907": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "8/256",
+            "white"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "35904": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "35908": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "12/256",
+            "milk"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "35905": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "37124": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "plus",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "37127": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "plus",
+            "8/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "37126": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "plus",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "37125": {
+        "include": [
+            "nothing phone",
+            "2a",
+            "plus",
+            "12/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "38722": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "plus",
+            "pro"
+        ]
+    },
+    "38723": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "12/256",
+            "blue"
+        ],
+        "exclude": [
+            "plus",
+            "pro"
+        ]
+    },
+    "38724": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "plus",
+            "pro"
+        ]
+    },
+    "38678": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "8/128",
+            "black"
+        ],
+        "exclude": [
+            "plus",
+            "pro"
+        ]
+    },
+    "38711": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "8/128",
+            "blue"
+        ],
+        "exclude": [
+            "plus",
+            "pro"
+        ]
+    },
+    "38712": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "8/128",
+            "white"
+        ],
+        "exclude": [
+            "plus",
+            "pro"
+        ]
+    },
+    "38716": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "8/256",
+            "black"
+        ],
+        "exclude": [
+            "plus",
+            "pro"
+        ]
+    },
+    "38717": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "8/256",
+            "blue"
+        ],
+        "exclude": [
+            "plus",
+            "pro"
+        ]
+    },
+    "38718": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "8/256",
+            "white"
+        ],
+        "exclude": [
+            "plus",
+            "pro"
+        ]
+    },
+    "38703": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "pro",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "38704": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "pro",
+            "12/256",
+            "gray"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "38676": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "pro",
+            "8/128",
+            "black"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "38694": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "pro",
+            "8/128",
+            "gray"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "38699": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "pro",
+            "8/256",
+            "black"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "38700": {
+        "include": [
+            "nothing phone",
+            "3a",
+            "pro",
+            "8/256",
+            "gray"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "37472": {
+        "include": [
+            "openrun pro 2",
+            "black"
+        ],
+        "exclude": []
+    },
+    "37663": {
+        "include": [
+            "openrun pro 2",
+            "white"
+        ],
+        "exclude": []
+    },
+    "37665": {
+        "include": [
+            "openrun pro 2",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "37666": {
+        "include": [
+            "openrun pro",
+            "orange"
+        ],
+        "exclude": [
+            "pro 2"
+        ]
+    },
+    "37471": {
+        "include": [
+            "openswim pro",
+            "gray"
+        ],
+        "exclude": [
+            "pro 2"
+        ]
+    },
+    "24581": {
+        "include": [
+            "openswim",
+            "black"
+        ],
+        "exclude": [
+            "pro 2"
+        ]
+    },
+    "40035": {
+        "include": [
+            "nova 14",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "40092": {
+        "include": [
+            "nova 14",
+            "12/256",
+            "blue"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "40091": {
+        "include": [
+            "nova 14",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "40089": {
+        "include": [
+            "nova 14",
+            "12/512",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "40093": {
+        "include": [
+            "nova 14",
+            "12/512",
+            "blue"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "40090": {
+        "include": [
+            "nova 14",
+            "12/512",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "40033": {
+        "include": [
+            "nova 14 pro",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40087": {
+        "include": [
+            "nova 14 pro",
+            "12/256",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "40084": {
+        "include": [
+            "nova 14 pro",
+            "12/256",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "40083": {
+        "include": [
+            "nova 14 pro",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "40081": {
+        "include": [
+            "nova 14 pro",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40086": {
+        "include": [
+            "nova 14 pro",
+            "12/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "40085": {
+        "include": [
+            "nova 14 pro",
+            "12/512",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "40082": {
+        "include": [
+            "nova 14 pro",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "40070": {
+        "include": [
+            "nova 14 ultra",
+            "12/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40077": {
+        "include": [
+            "nova 14 ultra",
+            "12/1tb",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "40076": {
+        "include": [
+            "nova 14 ultra",
+            "12/1tb",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "40071": {
+        "include": [
+            "nova 14 ultra",
+            "12/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "40030": {
+        "include": [
+            "nova 14 ultra",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40079": {
+        "include": [
+            "nova 14 ultra",
+            "12/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "40074": {
+        "include": [
+            "nova 14 ultra",
+            "12/256",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "40073": {
+        "include": [
+            "nova 14 ultra",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "40069": {
+        "include": [
+            "nova 14 ultra",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40078": {
+        "include": [
+            "nova 14 ultra",
+            "12/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "40075": {
+        "include": [
+            "nova 14 ultra",
+            "12/512",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "40072": {
+        "include": [
+            "nova 14 ultra",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "39987": {
+        "include": [
+            "pura 80",
+            "12/1tb",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "40006": {
+        "include": [
+            "pura 80",
+            "12/1tb",
+            "gold"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "40016": {
+        "include": [
+            "pura 80",
+            "12/1tb",
+            "green"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "39988": {
+        "include": [
+            "pura 80",
+            "12/1tb",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "39863": {
+        "include": [
+            "pura 80",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "39998": {
+        "include": [
+            "pura 80",
+            "12/256",
+            "gold"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "40018": {
+        "include": [
+            "pura 80",
+            "12/256",
+            "green"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "39994": {
+        "include": [
+            "pura 80",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "39985": {
+        "include": [
+            "pura 80",
+            "12/512",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "40005": {
+        "include": [
+            "pura 80",
+            "12/512",
+            "gold"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "40017": {
+        "include": [
+            "pura 80",
+            "12/512",
+            "green"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "39992": {
+        "include": [
+            "pura 80",
+            "12/512",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "39945": {
+        "include": [
+            "pura 80 pro",
+            "12/1tb",
+            "black"
+        ],
+        "exclude": [
+            "+",
+            "plus"
+        ]
+    },
+    "39974": {
+        "include": [
+            "pura 80 pro",
+            "12/1tb",
+            "gold"
+        ],
+        "exclude": [
+            "+",
+            "plus"
+        ]
+    },
+    "39964": {
+        "include": [
+            "pura 80 pro",
+            "12/1tb",
+            "white"
+        ],
+        "exclude": [
+            "+",
+            "plus"
+        ]
+    },
+    "39870": {
+        "include": [
+            "pura 80 pro",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "+",
+            "plus"
+        ]
+    },
+    "39972": {
+        "include": [
+            "pura 80 pro",
+            "12/256",
+            "gold"
+        ],
+        "exclude": [
+            "+",
+            "plus"
+        ]
+    },
+    "39968": {
+        "include": [
+            "pura 80 pro",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "+",
+            "plus"
+        ]
+    },
+    "39939": {
+        "include": [
+            "pura 80 pro",
+            "12/512",
+            "black"
+        ],
+        "exclude": [
+            "+",
+            "plus"
+        ]
+    },
+    "39973": {
+        "include": [
+            "pura 80 pro",
+            "12/512",
+            "gold"
+        ],
+        "exclude": [
+            "+",
+            "plus"
+        ]
+    },
+    "39967": {
+        "include": [
+            "pura 80 pro",
+            "12/512",
+            "white"
+        ],
+        "exclude": [
+            "+",
+            "plus"
+        ]
+    },
+    "39861": {
+        "include": [
+            "pura 80 pro +",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "39934": {
+        "include": [
+            "pura 80 pro +",
+            "16/1tb",
+            "green"
+        ],
+        "exclude": []
+    },
+    "39933": {
+        "include": [
+            "pura 80 pro +",
+            "16/1tb",
+            "red"
+        ],
+        "exclude": []
+    },
+    "39930": {
+        "include": [
+            "pura 80 pro +",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "39937": {
+        "include": [
+            "pura 80 pro +",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "39935": {
+        "include": [
+            "pura 80 pro +",
+            "16/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "39932": {
+        "include": [
+            "pura 80 pro +",
+            "16/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "39931": {
+        "include": [
+            "pura 80 pro +",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "39859": {
+        "include": [
+            "pura 80 ultra",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "39865": {
+        "include": [
+            "pura 80 ultra",
+            "16/1tb",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "39868": {
+        "include": [
+            "pura 80 ultra",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "39866": {
+        "include": [
+            "pura 80 ultra",
+            "16/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "39872": {
+        "include": [
+            "pura x",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40061": {
+        "include": [
+            "pura x",
+            "12/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "40052": {
+        "include": [
+            "pura x",
+            "12/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "40051": {
+        "include": [
+            "pura x",
+            "12/256",
+            "red"
+        ],
+        "exclude": []
+    },
+    "40062": {
+        "include": [
+            "pura x",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "40045": {
+        "include": [
+            "pura x",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40060": {
+        "include": [
+            "pura x",
+            "12/512",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "40053": {
+        "include": [
+            "pura x",
+            "12/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "40050": {
+        "include": [
+            "pura x",
+            "12/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "40063": {
+        "include": [
+            "pura x",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "40047": {
+        "include": [
+            "pura x",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40059": {
+        "include": [
+            "pura x",
+            "16/1tb",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "40058": {
+        "include": [
+            "pura x",
+            "16/1tb",
+            "green"
+        ],
+        "exclude": []
+    },
+    "40048": {
+        "include": [
+            "pura x",
+            "16/1tb",
+            "red"
+        ],
+        "exclude": []
+    },
+    "40065": {
+        "include": [
+            "pura x",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "40046": {
+        "include": [
+            "pura x",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40057": {
+        "include": [
+            "pura x",
+            "16/512",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "40055": {
+        "include": [
+            "pura x",
+            "16/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "40049": {
+        "include": [
+            "pura x",
+            "16/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "40064": {
+        "include": [
+            "pura x",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "38993": {
+        "include": [
+            "mate x6",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "39021": {
+        "include": [
+            "mate x6",
+            "12/256",
+            "red"
+        ],
+        "exclude": []
+    },
+    "39019": {
+        "include": [
+            "mate x6",
+            "12/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "39025": {
+        "include": [
+            "mate x6",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "39027": {
+        "include": [
+            "mate x6",
+            "12/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "39026": {
+        "include": [
+            "mate x6",
+            "12/512",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "39031": {
+        "include": [
+            "mate x6",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "39033": {
+        "include": [
+            "mate x6",
+            "16/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "39032": {
+        "include": [
+            "mate x6",
+            "16/512",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "39037": {
+        "include": [
+            "mate x6",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "39039": {
+        "include": [
+            "mate x6",
+            "16/1tb",
+            "red"
+        ],
+        "exclude": []
+    },
+    "39038": {
+        "include": [
+            "mate x6",
+            "16/1tb",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "38154": {
+        "include": [
+            "pura 70 ultra 16/512 black"
+        ],
+        "exclude": []
+    },
+    "38164": {
+        "include": [
+            "pura 70 ultra 16/1tb green"
+        ],
+        "exclude": []
+    },
+    "38163": {
+        "include": [
+            "pura 70 ultra 16/1tb brown"
+        ],
+        "exclude": []
+    },
+    "38162": {
+        "include": [
+            "pura 70 ultra 16/1tb black"
+        ],
+        "exclude": []
+    },
+    "38155": {
+        "include": [
+            "pura 70 ultra 16/512 brown"
+        ],
+        "exclude": []
+    },
+    "38156": {
+        "include": [
+            "pura 70 ultra 16/512 green"
+        ],
+        "exclude": []
+    },
+    "38157": {
+        "include": [
+            "pura 70 ultra 16/512 white"
+        ],
+        "exclude": []
+    },
+    "38165": {
+        "include": [
+            "pura 70 ultra 16/1tb white"
+        ],
+        "exclude": []
+    },
+    "38179": {
+        "include": [
+            "pura 70 pro 16/512 white"
+        ],
+        "exclude": []
+    },
+    "38172": {
+        "include": [
+            "pura 70 pro 12/512 purple"
+        ],
+        "exclude": []
+    },
+    "38185": {
+        "include": [
+            "pura 70 pro 12/1tb white"
+        ],
+        "exclude": []
+    },
+    "38168": {
+        "include": [
+            "pura 70 pro 12/256 black"
+        ],
+        "exclude": []
+    },
+    "38169": {
+        "include": [
+            "pura 70 pro 12/256 purple"
+        ],
+        "exclude": []
+    },
+    "38170": {
+        "include": [
+            "pura 70 pro 12/256 white"
+        ],
+        "exclude": []
+    },
+    "38177": {
+        "include": [
+            "pura 70 pro 16/512 black"
+        ],
+        "exclude": []
+    },
+    "38178": {
+        "include": [
+            "pura 70 pro 16/512 purple"
+        ],
+        "exclude": []
+    },
+    "38183": {
+        "include": [
+            "pura 70 pro 12/1tb black"
+        ],
+        "exclude": []
+    },
+    "38184": {
+        "include": [
+            "pura 70 pro 12/1tb purple"
+        ],
+        "exclude": []
+    },
+    "38207": {
+        "include": [
+            "pura 70 12/1tb pink"
+        ],
+        "exclude": []
+    },
+    "38192": {
+        "include": [
+            "pura 70 12/256 white"
+        ],
+        "exclude": []
+    },
+    "38191": {
+        "include": [
+            "pura 70 12/256 pink"
+        ],
+        "exclude": []
+    },
+    "38197": {
+        "include": [
+            "pura 70 12/512 black"
+        ],
+        "exclude": []
+    },
+    "38189": {
+        "include": [
+            "pura 70 12/256 black"
+        ],
+        "exclude": []
+    },
+    "38190": {
+        "include": [
+            "pura 70 12/256 blue"
+        ],
+        "exclude": []
+    },
+    "38199": {
+        "include": [
+            "pura 70 12/512 pink"
+        ],
+        "exclude": []
+    },
+    "38200": {
+        "include": [
+            "pura 70 12/512 white"
+        ],
+        "exclude": []
+    },
+    "38198": {
+        "include": [
+            "pura 70 12/512 blue"
+        ],
+        "exclude": []
+    },
+    "38205": {
+        "include": [
+            "pura 70 12/1tb black"
+        ],
+        "exclude": []
+    },
+    "38206": {
+        "include": [
+            "pura 70 12/1tb blue"
+        ],
+        "exclude": []
+    },
+    "38208": {
+        "include": [
+            "pura 70 12/1tb white"
+        ],
+        "exclude": []
+    }
+    ,
+    "40485": {
+        "include": [
+            "insta",
+            "360",
+            "go 3 ",
+            "128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40484": {
+        "include": [
+            "insta",
+            "360",
+            "go 3 ",
+            "32",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40483": {
+        "include": [
+            "insta",
+            "360",
+            "go 3 ",
+            "64",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40482": {
+        "include": [
+            "insta",
+            "360",
+            "go 3s",
+            "128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40477": {
+        "include": [
+            "insta",
+            "360",
+            "go 3s",
+            "64",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40480": {
+        "include": [
+            "insta",
+            "360",
+            "x4",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40487": {
+        "include": [
+            "insta",
+            "360",
+            "x5",
+            "black"
+        ],
+        "exclude": []
+    },
+    "40503": {
+        "include": [
+            "insta",
+            "360",
+            "go",
+            "3s",
+            "128"
+        ],
+        "exclude": []
+    },
+    "40504": {
+        "include": [
+            "insta",
+            "360",
+            "go",
+            "3s",
+            "64"
+        ],
+        "exclude": []
+    },
+    "40506": {
+        "include": [
+            "insta",
+            "360",
+            "go",
+            "3 ",
+            "32"
+        ],
+        "exclude": []
+    },
+    "40507": {
+        "include": [
+            "insta",
+            "360",
+            "go",
+            "3 ",
+            "64"
+        ],
+        "exclude": []
+    },
+    "40508": {
+        "include": [
+            "insta",
+            "360",
+            "go",
+            "3 ",
+            "128"
+        ],
+        "exclude": []
+    },
+    "40510": {
+        "include": [
+            "insta",
+            "360",
+            "x5"
+        ],
+        "exclude": []
     }
 }

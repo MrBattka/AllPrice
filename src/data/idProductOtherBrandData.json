@@ -418,7 +418,7 @@
     "40340": {
         "include": [
             "hs08",
-            "complete long",
+            "long",
             "ceramic pop"
         ],
         "exclude": []
@@ -426,7 +426,7 @@
     "40339": {
         "include": [
             "hs08",
-            "complete long",
+            "long",
             "diffuse",
             "topaz/vinca",
             "blue"
@@ -436,7 +436,7 @@
     "40341": {
         "include": [
             "hs08",
-            "complete long",
+            "long",
             "jasper plum"
         ],
         "exclude": []
@@ -444,7 +444,7 @@
     "40350": {
         "include": [
             "hs08",
-            "complete long",
+            "long",
             "straigh wavy",
             "topaz/vinca",
             "blue"
@@ -2545,7 +2545,7 @@
     "20983": {
         "include": [
             "pixel 6",
-            "8/128",
+            "128",
             "coral"
         ],
         "exclude": [
@@ -2555,7 +2555,7 @@
     "20982": {
         "include": [
             "pixel 6",
-            "8/128",
+            "128",
             "green"
         ],
         "exclude": [
@@ -2565,7 +2565,7 @@
     "20984": {
         "include": [
             "pixel 6",
-            "8/128",
+            "128",
             "black"
         ],
         "exclude": [
@@ -2575,7 +2575,7 @@
     "20985": {
         "include": [
             "pixel 6",
-            "8/256",
+            "256",
             "coral"
         ],
         "exclude": [
@@ -2585,7 +2585,7 @@
     "20986": {
         "include": [
             "pixel 6",
-            "8/256",
+            "256",
             "green"
         ],
         "exclude": [
@@ -2595,7 +2595,7 @@
     "20987": {
         "include": [
             "pixel 6",
-            "8/256",
+            "256",
             "black"
         ],
         "exclude": [
@@ -2605,7 +2605,7 @@
     "20988": {
         "include": [
             "pixel 6 pro",
-            "12/128",
+            "128",
             "white"
         ],
         "exclude": []
@@ -2613,7 +2613,7 @@
     "20989": {
         "include": [
             "pixel 6 pro",
-            "12/128",
+            "128",
             "sunny"
         ],
         "exclude": []
@@ -2621,7 +2621,7 @@
     "20990": {
         "include": [
             "pixel 6 pro",
-            "12/128",
+            "128",
             "black"
         ],
         "exclude": []
@@ -2629,7 +2629,7 @@
     "20991": {
         "include": [
             "pixel 6 pro",
-            "12/256",
+            "256",
             "white"
         ],
         "exclude": []
@@ -2637,7 +2637,7 @@
     "20992": {
         "include": [
             "pixel 6 pro",
-            "12/256",
+            "256",
             "sunny"
         ],
         "exclude": []
@@ -2645,7 +2645,7 @@
     "20993": {
         "include": [
             "pixel 6 pro",
-            "12/256",
+            "256",
             "black"
         ],
         "exclude": []
@@ -2653,7 +2653,7 @@
     "28307": {
         "include": [
             "pixel 6 pro",
-            "12/512",
+            "512",
             "white"
         ],
         "exclude": []
@@ -2661,7 +2661,7 @@
     "28308": {
         "include": [
             "pixel 6 pro",
-            "12/512",
+            "512",
             "sunny"
         ],
         "exclude": []
@@ -2669,7 +2669,7 @@
     "28309": {
         "include": [
             "pixel 6 pro",
-            "12/512",
+            "512",
             "black"
         ],
         "exclude": []
@@ -2677,7 +2677,7 @@
     "23961": {
         "include": [
             "pixel 7 ",
-            "8/128",
+            "128",
             "lemon"
         ],
         "exclude": [
@@ -2687,7 +2687,7 @@
     "23959": {
         "include": [
             "pixel 7 ",
-            "8/128",
+            "128",
             "black"
         ],
         "exclude": [
@@ -2697,7 +2697,7 @@
     "23963": {
         "include": [
             "pixel 7 ",
-            "8/128",
+            "128",
             "white"
         ],
         "exclude": [
@@ -2707,7 +2707,7 @@
     "23962": {
         "include": [
             "pixel 7 ",
-            "8/256",
+            "256",
             "lemon"
         ],
         "exclude": [
@@ -2717,7 +2717,7 @@
     "23960": {
         "include": [
             "pixel 7 ",
-            "8/256",
+            "256",
             "black"
         ],
         "exclude": [
@@ -2727,7 +2727,7 @@
     "23964": {
         "include": [
             "pixel 7 ",
-            "8/256",
+            "256",
             "white"
         ],
         "exclude": [
@@ -2737,7 +2737,7 @@
     "23971": {
         "include": [
             "pixel 7 pro",
-            "12/128",
+            "128",
             "hazel"
         ],
         "exclude": []
@@ -2745,7 +2745,7 @@
     "23965": {
         "include": [
             "pixel 7 pro",
-            "12/128",
+            "128",
             "black"
         ],
         "exclude": []
@@ -2753,7 +2753,7 @@
     "23968": {
         "include": [
             "pixel 7 pro",
-            "12/128",
+            "128",
             "white"
         ],
         "exclude": []
@@ -2761,7 +2761,7 @@
     "23972": {
         "include": [
             "pixel 7 pro",
-            "12/256",
+            "256",
             "hazel"
         ],
         "exclude": []
@@ -2769,7 +2769,7 @@
     "23967": {
         "include": [
             "pixel 7 pro",
-            "12/256",
+            "256",
             "black"
         ],
         "exclude": []
@@ -2777,7 +2777,7 @@
     "23969": {
         "include": [
             "pixel 7 pro",
-            "12/256",
+            "256",
             "white"
         ],
         "exclude": []
@@ -2785,7 +2785,7 @@
     "23973": {
         "include": [
             "pixel 7 pro",
-            "12/512",
+            "512",
             "hazel"
         ],
         "exclude": []
@@ -2793,7 +2793,7 @@
     "23966": {
         "include": [
             "pixel 7 pro",
-            "12/512",
+            "512",
             "black"
         ],
         "exclude": []
@@ -2801,7 +2801,7 @@
     "23970": {
         "include": [
             "pixel 7 pro",
-            "12/512",
+            "512",
             "white"
         ],
         "exclude": []
@@ -2809,7 +2809,7 @@
     "27902": {
         "include": [
             "pixel 7a",
-            "8/128",
+            "128",
             "black"
         ],
         "exclude": []
@@ -2817,7 +2817,7 @@
     "27903": {
         "include": [
             "pixel 7a",
-            "8/128",
+            "128",
             "coral"
         ],
         "exclude": []
@@ -2825,7 +2825,7 @@
     "27905": {
         "include": [
             "pixel 7a",
-            "8/128",
+            "128",
             "blue"
         ],
         "exclude": []
@@ -2833,7 +2833,7 @@
     "27904": {
         "include": [
             "pixel 7a",
-            "8/128",
+            "128",
             "white"
         ],
         "exclude": []
@@ -2841,7 +2841,7 @@
     "30269": {
         "include": [
             "pixel 7a",
-            "8/128",
+            "128",
             "hazel"
         ],
         "exclude": []
@@ -2889,7 +2889,7 @@
     "30281": {
         "include": [
             "pixel 8 pro",
-            "12/128",
+            "128",
             "blue"
         ],
         "exclude": []
@@ -2897,7 +2897,7 @@
     "30273": {
         "include": [
             "pixel 8 pro",
-            "12/128",
+            "128",
             "black"
         ],
         "exclude": []
@@ -2905,7 +2905,7 @@
     "30277": {
         "include": [
             "pixel 8 pro",
-            "12/128",
+            "128",
             "gold"
         ],
         "exclude": []
@@ -2913,7 +2913,7 @@
     "30282": {
         "include": [
             "pixel 8 pro",
-            "12/1tb",
+            "1tb",
             "blue"
         ],
         "exclude": []
@@ -2921,7 +2921,7 @@
     "30276": {
         "include": [
             "pixel 8 pro",
-            "12/1tb",
+            "1tb",
             "black"
         ],
         "exclude": []
@@ -2929,7 +2929,7 @@
     "30278": {
         "include": [
             "pixel 8 pro",
-            "12/1tb",
+            "1tb",
             "gold"
         ],
         "exclude": []
@@ -2937,7 +2937,7 @@
     "30283": {
         "include": [
             "pixel 8 pro",
-            "12/256",
+            "256",
             "blue"
         ],
         "exclude": []
@@ -2945,7 +2945,7 @@
     "30274": {
         "include": [
             "pixel 8 pro",
-            "12/256",
+            "256",
             "black"
         ],
         "exclude": []
@@ -2953,7 +2953,7 @@
     "30279": {
         "include": [
             "pixel 8 pro",
-            "12/256",
+            "256",
             "gold"
         ],
         "exclude": []
@@ -2961,7 +2961,7 @@
     "30284": {
         "include": [
             "pixel 8 pro",
-            "12/512",
+            "512",
             "blue"
         ],
         "exclude": []
@@ -2969,7 +2969,7 @@
     "30275": {
         "include": [
             "pixel 8 pro",
-            "12/512",
+            "512",
             "black"
         ],
         "exclude": []
@@ -2977,7 +2977,7 @@
     "30280": {
         "include": [
             "pixel 8 pro",
-            "12/512",
+            "512",
             "gold"
         ],
         "exclude": []
@@ -2985,7 +2985,7 @@
     "36335": {
         "include": [
             "pixel 8a",
-            "8/128",
+            "128",
             "green"
         ],
         "exclude": []
@@ -2993,7 +2993,7 @@
     "36333": {
         "include": [
             "pixel 8a",
-            "8/128",
+            "128",
             "blue"
         ],
         "exclude": []
@@ -3001,7 +3001,7 @@
     "36189": {
         "include": [
             "pixel 8a",
-            "8/128",
+            "128",
             "black"
         ],
         "exclude": []
@@ -3009,7 +3009,7 @@
     "36334": {
         "include": [
             "pixel 8a",
-            "8/128",
+            "128",
             "gold"
         ],
         "exclude": []
@@ -3017,7 +3017,7 @@
     "36381": {
         "include": [
             "pixel 8a",
-            "8/256",
+            "256",
             "green"
         ],
         "exclude": []
@@ -3025,7 +3025,7 @@
     "36385": {
         "include": [
             "pixel 8a",
-            "8/256",
+            "256",
             "blue"
         ],
         "exclude": []
@@ -3033,7 +3033,7 @@
     "36383": {
         "include": [
             "pixel 8a",
-            "8/256",
+            "256",
             "black"
         ],
         "exclude": []
@@ -3041,7 +3041,7 @@
     "36384": {
         "include": [
             "pixel 8a",
-            "8/256",
+            "256",
             "gold"
         ],
         "exclude": []
