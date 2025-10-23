@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import {
+  baseFix,
   baseFixArti,
   baseFixBase,
   baseFixBigAp,
@@ -17,24 +18,24 @@ import {
   baseFixMiHonor,
   baseFixMiOpts,
   baseFixMTA,
-  baseFixNarod,
   baseFixOther,
   baseFixRacmag,
   baseFixReSale,
   baseFixRootOpt,
-  baseFixRPTrade,
   baseFixS5,
   baseFixSunrise,
   baseFixSuperPrice,
-  baseFixTagir,
   baseFixTrub,
   baseFixVsemi
 } from "../../helpers/baseFix";
+import { defaultFixName } from "../../helpers/defaultFixName";
 import { returnFixPriceHi } from "../../helpers/fixFlags";
-import { returnFixPrice } from "../../helpers/fixPrice";
-import { newPrice } from "../../helpers/NewPrice";
-import { returnQuickID } from "../../helpers/returnQuickID";
-import { returnCategoryArti } from "../Arti/category/Category";
+import { getIdByNameQuickID } from "../../helpers/returnIDByNameQuickID";
+import {
+  returnFixNameA18,
+  returnNameInArrA18,
+  returnStockPriceA18,
+} from "../A18/helpers/helpers";
 import {
   returnFixNameArti,
   returnNameArti,
@@ -48,7 +49,7 @@ import {
 } from "../BigAp/helpers/helpers";
 import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
-import TableQuickPrice from "../CreateAllPriceTable/TableQuickPrice";
+import TableAllPrice from "../CreateAllPriceTable/TableAllPrice";
 import {
   returnFixNameDiscount,
   returnNameInArrDiscount,
@@ -58,21 +59,14 @@ import { returnFixNameElectrozon } from "../Electrozon/helpers/helpers";
 import { returnNameF51 } from "../F51/helpers/helpers";
 import {
   fixNameGarmin,
-  returnExtraPriceGarmin,
   returnFixNameProductGarmin,
   returnStockPriceGarmin,
 } from "../Garmin/helpers/helpers";
-import { returnAppleHi } from "../Hi/Apple/apple";
-import { returnDysonHi } from "../Hi/Dyson/dyson";
-import { returnGarminHi } from "../Hi/Garmin/garmin";
-import { returnGoogleHi } from "../Hi/Google/google";
 import {
   fixNameHi,
   returnNameInArrHi,
-  returnStockPriceHi
+  returnStockPriceHi,
 } from "../Hi/helpers/helpers";
-import { returnSamsungHi } from "../Hi/Samsung/samsung";
-import { returnXiaomiHi } from "../Hi/Xiaomi/xiaomi";
 import {
   fixNameInfinity,
   returnNameInArrInfinity,
@@ -94,54 +88,41 @@ import {
   returnStockPriceLowPrice,
 } from "../LowPriceApple/helpers/helpers";
 import {
-  fixNameMihonor,
-  returnExtraPriceMihonor,
-  returnNameInArrMihonor,
-  returnStockPriceMihonor,
-} from "../MiHonor/helpers/helpers";
-import {
-  fixNameMiOpts,
-  returnExtraPriceMiOpts,
-  returnNameInArrMiOpts,
-  returnStockPriceMiOpts,
-} from "../MiOpts/helpers/helpers";
-import {
   returnFixNameMTA,
   returnNameInArrMTA,
   returnStockPriceMTA,
 } from "../MTA/helpers/helpers";
 import {
-  fixNameNarod,
-  returnNameNarod,
-  returnStockPriceNarod,
-} from "../Narod/helpers/helpers";
+  fixNameMihonor,
+  returnNameInArrMihonor,
+  returnStockPriceMihonor,
+} from "../MiHonor/helpers/helpers";
 import {
-  returnExtraPriceOther,
+  fixNameMiOpts,
+  returnNameInArrMiOpts,
+  returnStockPriceMiOpts,
+} from "../MiOpts/helpers/helpers";
+import {
   returnFixNameOther,
   returnNameInArrOther,
   returnStockPriceOther,
 } from "../Other/helpers/helpers";
 import {
-  returnExtraPriceRacmag,
   returnFixNameRacmag,
   returnNameInArrRacmag,
   returnStockPriceRacmag,
 } from "../Racmag/helpers/helpers";
 import {
-  returnExtraPriceReSale,
   returnFixNameReSale,
   returnNameReSale,
   returnStockPriceReSale,
 } from "../ReSale/helpers/helpers";
 import { returnFixNameRootOpt } from "../RootOPT/helpers/helpers";
-import { returnFixNameRPTrade } from "../RPTrade/helpers/helpers";
 import {
   fixNameS5,
-  returnExtraPriceS5,
   returnNameInArrS5,
   returnStockPriceS5,
 } from "../S5/helpers/helpers";
-import style from "../styles.module.css";
 import {
   returnFixNameSunrise,
   returnNameInArrSunrise,
@@ -149,22 +130,351 @@ import {
 } from "../Sunrise/helpers/helpers";
 import { fixNameSuperPrice } from "../SuperPrice/helpers/helpers";
 import {
-  fixNameTagir,
-  returnNameTagir,
-  returnStockPriceTagir,
-} from "../Tagir/helpers/helpers";
-import {
   fixNameTrub,
   returnNameInArrTrub,
   returnStockPriceTrub,
 } from "../Trub/helpers/helpers";
-import { fixNameUnimtrn } from "../Unimtrn/helpers/helpers";
+import {
+  fixNameUnimtrn,
+  returnNameInArrUnimtrn,
+  returnStockPriceUnimtrn,
+} from "../Unimtrn/helpers/helpers";
 import {
   fixNameVseMi,
-  returnExtraPriceVseMi,
   returnNameInArrVseMi,
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
+import style from "../styles.module.css";
+
+const processors = {
+  superprice: {
+    processItem: (superprice) => ({
+      id: getIdByNameQuickID(defaultFixName(fixNameSuperPrice(superprice.name))),
+      name: fixNameSuperPrice(superprice.name),
+      stockPrice: superprice.price,
+      provider: "SuperPrice",
+    }),
+    filters: [baseFixSuperPrice],
+  },
+  vsemi: {
+    processItem: (vsemi) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrVseMi(fixNameVseMi(vsemi.name)))
+      ),
+      name: returnNameInArrVseMi(fixNameVseMi(vsemi.name)),
+      stockPrice: returnStockPriceVseMi(fixNameVseMi(vsemi.name)),
+      provider: "VseMi",
+    }),
+    filters: [baseFixVsemi],
+  },
+  unimtrn: {
+    processItem: (unimtrn) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)))
+      ),
+      name: returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)),
+      stockPrice: returnStockPriceUnimtrn(unimtrn.name),
+      provider: "Метреон",
+    }),
+    filters: [baseFix],
+  },
+  hi: {
+    processItem: (hi) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrHi(fixNameHi(hi.name)))
+      ),
+      name: returnFixPriceHi(hi, returnNameInArrHi(fixNameHi(hi.name))),
+      stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
+      provider: "Hi",
+    }),
+    filters: [baseFixHi],
+  },
+  mihonor: {
+    processItem: (mihonor) => (
+      mihonor.name.indexOf("₽") !== -1 &&
+      {
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrMihonor(fixNameMihonor(mihonor.name)))
+      ),
+      name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
+      stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
+      provider: "MiHonor",
+    }),
+    filters: [baseFixMiHonor],
+  },
+  garmin: {
+    processItem: (garmin) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnFixNameProductGarmin(fixNameGarmin(garmin.name)))
+      ),
+      name: returnFixNameProductGarmin(fixNameGarmin(garmin.name)),
+      stockPrice: returnStockPriceGarmin(fixNameGarmin(garmin.name)),
+      provider: "Garmin",
+    }),
+    filters: [baseFixGarmin],
+  },
+  S5: {
+    processItem: (S5) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrS5(fixNameS5(S5.name)))
+      ),
+      name: returnNameInArrS5(fixNameS5(S5.name)),
+      stockPrice: returnStockPriceS5(fixNameS5(S5.name)),
+      provider: "S5",
+    }),
+    filters: [baseFixS5],
+  },
+  racmag: {
+    processItem: (racmag) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrRacmag(returnFixNameRacmag(racmag.name)))
+      ),
+      name: returnNameInArrRacmag(returnFixNameRacmag(racmag.name)),
+      stockPrice: returnStockPriceRacmag(returnFixNameRacmag(racmag.name)),
+      provider: "Рацмаг",
+    }),
+    filters: [baseFixRacmag],
+  },
+  arti: {
+    processItem: (arti) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameArti(returnFixNameArti(arti.name)))
+      ),
+      name: returnNameArti(returnFixNameArti(arti.name)),
+      stockPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
+      provider: "Arti",
+    }),
+    filters: [baseFixArti],
+  },
+  electrozon: {
+    processItem: (electrozon) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnFixNameElectrozon(electrozon.name))
+      ),
+      name: returnFixNameElectrozon(electrozon.name),
+      stockPrice: electrozon.price,
+      provider: "Electrozon",
+    }),
+    filters: [baseFixElectrozon],
+  },
+  resale: {
+    processItem: (resale) =>
+      returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("00") !==
+        -1 && {
+        id: getIdByNameQuickID(
+          defaultFixName(returnNameReSale(returnFixNameReSale(resale.name)))
+        ),
+        name: returnNameReSale(returnFixNameReSale(resale.name)),
+        stockPrice: returnStockPriceReSale(returnFixNameReSale(resale.name)),
+        provider: "Re:Sale",
+      },
+    filters: [baseFixReSale],
+  },
+  f51: {
+    processItem: (f51) => ({
+      id: getIdByNameQuickID(defaultFixName(returnNameF51(f51.name))),
+      name: returnNameF51(f51.name),
+      stockPrice: f51.price,
+      provider: "F51",
+    }),
+    filters: [baseFixF51],
+  },
+  discount: {
+    processItem: (discount) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(
+          returnNameInArrDiscount(returnFixNameDiscount(discount.name))
+        )
+      ),
+      name: returnNameInArrDiscount(returnFixNameDiscount(discount.name)),
+      stockPrice: returnStockPriceDiscount(
+        returnFixNameDiscount(discount.name)
+      ),
+      provider: "Discount",
+    }),
+    filters: [baseFixDiscount],
+  },
+  base: {
+    processItem: (base) => ({
+      id: getIdByNameQuickID(defaultFixName(returnFixNameBase(base.name))),
+      name: returnFixNameBase(base.name),
+      stockPrice: base.price,
+      provider: "База",
+    }),
+    filters: [baseFixBase],
+  },
+  other: {
+    processItem: (other) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrOther(returnFixNameOther(other.name)))
+      ),
+      name: returnNameInArrOther(returnFixNameOther(other.name)),
+      stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
+      provider: "All",
+    }),
+    filters: [baseFixOther],
+  },
+  miopts: {
+    processItem: (miopts) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrMiOpts(fixNameMiOpts(miopts.name)))
+      ),
+      name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
+      stockPrice: returnStockPriceMiOpts(fixNameMiOpts(miopts.name)),
+      provider: "MiOpts",
+    }),
+    filters: [baseFixMiOpts],
+  },
+  lowPrice: {
+    processItem: (lowPrice) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)))
+      ),
+      name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
+      stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
+      provider: "Ghost Re:Sale",
+    }),
+    filters: [baseFixLowPrice],
+  },
+  l27: {
+    processItem: (l27) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrL27(returnFixNameL27(l27.name)))
+      ),
+      name: returnNameInArrL27(returnFixNameL27(l27.name)),
+      stockPrice: returnStockPriceL27(returnFixNameL27(l27.name)),
+      provider: "Л27-28",
+    }),
+    filters: [baseFixL27],
+  },
+  sunrise: {
+    processItem: (sunrise) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(
+          returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))
+        )
+      ),
+      name: returnNameInArrSunrise(returnFixNameSunrise(sunrise.name)),
+      stockPrice: returnStockPriceSunrise(returnFixNameSunrise(sunrise.name)),
+      provider: "Восход",
+    }),
+    filters: [baseFixSunrise],
+  },
+  infinity: {
+    processItem: (infinity) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrInfinity(fixNameInfinity(infinity.name)))
+      ),
+      name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
+      stockPrice: returnStockPriceInfinity(
+        fixNameInfinity(fixNameInfinity(infinity.name))
+      ),
+      provider: "Infinity",
+    }),
+    filters: [baseFixInfinity],
+  },
+  likemob: {
+    processItem: (likemob) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(
+          returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
+        )
+      ),
+      name: returnNameInArrLikemob(returnFixNameLikemob(likemob.name)),
+      stockPrice: returnStockPriceLikemob(returnFixNameLikemob(likemob.name)),
+      provider: "Likemob",
+    }),
+    filters: [baseFixLikemob],
+  },
+  bigAp: {
+    processItem: (bigAp) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)))
+      ),
+      name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),
+      stockPrice: returnStockPriceBigAp(returnFixNameBigAp(bigAp.name)),
+      provider: "BigAp",
+    }),
+    filters: [baseFixBigAp],
+  },
+  mta: {
+    processItem: (mta) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrMTA(returnFixNameMTA(mta.name)))
+      ),
+      name: returnNameInArrMTA(returnFixNameMTA(mta.name)),
+      stockPrice: returnStockPriceMTA(returnFixNameMTA(mta.name)),
+      provider: "MTA Store",
+    }),
+    filters: [baseFixMTA],
+  },
+  bonus: {
+    processItem: (bonus) => ({
+      id: getIdByNameQuickID(defaultFixName(returnFixNameBonus(bonus.name))),
+      name: returnFixNameBonus(bonus.name),
+      stockPrice: bonus.price,
+      provider: "БонусОПТ",
+    }),
+    filters: [baseFixBonus],
+  },
+  rootOpt: {
+    processItem: (rootOpt) => ({
+      id: getIdByNameQuickID(defaultFixName(returnFixNameRootOpt(rootOpt.name))),
+      name: returnFixNameRootOpt(rootOpt.name),
+      stockPrice: rootOpt.price,
+      provider: "RootOPT",
+    }),
+    filters: [baseFixRootOpt],
+  },
+  A18: {
+    processItem: (A18) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrA18(returnFixNameA18(A18.name)))
+      ),
+      name: returnNameInArrA18(returnFixNameA18(A18.name)),
+      stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
+      provider: "A18",
+    }),
+    filters: [],
+  },
+  amt: {
+    processItem: (amt) => ({
+      id: getIdByNameQuickID(
+        defaultFixName(returnNameInArrTrub(fixNameTrub(amt.name)))
+      ),
+      name: returnNameInArrTrub(fixNameTrub(amt.name)),
+      stockPrice: returnStockPriceTrub(fixNameTrub(amt.name)),
+      provider: "AMT",
+    }),
+    filters: [baseFixTrub],
+  },
+  boltun: {
+    processItem: (boltun) => ({
+      id: getIdByNameQuickID(defaultFixName(returnFixNameBoltun(boltun.name))),
+      name: returnFixNameBoltun(boltun.name),
+      stockPrice: boltun.price,
+      provider: "Болтун",
+    }),
+    filters: [baseFixBoltun],
+  },
+};
+
+const processData = (data, processor, isOpen) => {
+  if (!data || !Array.isArray(data) || !processor) return [];
+
+  return data
+    .filter(
+      (item) =>
+        item.name &&
+        typeof item.name === "string" &&
+        processor.filters.every((fn) => fn(item))
+    )
+    .map((item) => {
+      const processed = processor.processItem(item);
+      return processed.id !== "No match" && isOpen ? processed : null;
+    })
+    .filter(Boolean);
+};
 
 const AllPriceQuickID = ({
   dataSuperprice,
@@ -174,756 +484,80 @@ const AllPriceQuickID = ({
   dataMihonor,
   dataGarmin,
   S5Data,
-  rptradeData,
   racmagData,
-  electrozonData,
   artiData,
+  electrozonData,
   resaleData,
-  tagirData,
-  narodData,
   f51Data,
+  discountData,
   baseData,
   otherData,
-  discountData,
   mioptsData,
   lowPriceData,
   l27Data,
   sunriseData,
   infinityData,
   likemobData,
+  bigApData,
   mtaData,
   bonusData,
-  bigApData,
   rootOptData,
   a18Data,
   AMTData,
   boltunData,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const resultArrQuickID = [];
 
-  dataSuperprice.map((superprice) => {
-    if (
-      superprice.name &&
-      typeof superprice.name === "string" &&
-      baseFixSuperPrice(superprice) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(fixNameSuperPrice(superprice.name)) !== "No match" &&
-        newPrice(superprice.name, superprice.price) &&
-        superprice.price &&
-        resultArrQuickID.push({
-          id: returnQuickID(fixNameSuperPrice(superprice.name)),
-          name: fixNameSuperPrice(superprice.name),
-          stockPrice: superprice.price,
-          provider: "SuperPrice",
-        })
-      );
-    }
-  });
+  const allPriceArr = useMemo(() => {
+    const results = [];
 
-  dataVsemi.map((vsemi) => {
-    baseFixVsemi(vsemi) && returnStockPriceVseMi(fixNameVseMi(vsemi.name));
-    baseFixVsemi(vsemi) && returnExtraPriceVseMi(fixNameVseMi(vsemi.name));
-    if (
-      vsemi.name &&
-      typeof vsemi.name === "string" &&
-      baseFixVsemi(vsemi) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(fixNameVseMi(vsemi.name)) !== "No match" &&
-        returnExtraPriceVseMi(vsemi.name) &&
-        returnStockPriceVseMi(vsemi.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameInArrVseMi(fixNameVseMi(vsemi.name))),
-          name: returnNameInArrVseMi(fixNameVseMi(vsemi.name)),
-          stockPrice: returnStockPriceVseMi(fixNameVseMi(vsemi.name)),
-          provider: "VseMi",
-        })
-      );
-    }
-  });
+    results.push(...processData(dataSuperprice, processors.superprice, isOpen));
+    results.push(...processData(dataVsemi, processors.vsemi, isOpen));
+    results.push(...processData(dataUnimtrn, processors.unimtrn, isOpen));
+    results.push(...processData(dataHi, processors.hi, isOpen));
+    results.push(...processData(dataMihonor, processors.mihonor, isOpen));
+    results.push(...processData(dataGarmin, processors.garmin, isOpen));
+    results.push(...processData(S5Data, processors.S5, isOpen));
+    results.push(...processData(racmagData, processors.racmag, isOpen));
+    results.push(...processData(artiData, processors.arti, isOpen));
+    results.push(...processData(electrozonData, processors.electrozon, isOpen));
+    results.push(...processData(resaleData, processors.resale, isOpen));
+    results.push(...processData(f51Data, processors.f51, isOpen));
+    results.push(...processData(discountData, processors.discount, isOpen));
+    results.push(...processData(baseData, processors.base, isOpen));
+    results.push(...processData(otherData, processors.other, isOpen));
+    results.push(...processData(mioptsData, processors.miopts, isOpen));
+    results.push(...processData(lowPriceData, processors.lowPrice, isOpen));
+    results.push(...processData(l27Data, processors.l27, isOpen));
+    results.push(...processData(sunriseData, processors.sunrise, isOpen));
+    results.push(...processData(infinityData, processors.infinity, isOpen));
+    results.push(...processData(likemobData, processors.likemob, isOpen));
+    results.push(...processData(bigApData, processors.bigAp, isOpen));
+    results.push(...processData(mtaData, processors.mta, isOpen));
+    results.push(...processData(bonusData, processors.bonus, isOpen));
+    results.push(...processData(rootOptData, processors.rootOpt, isOpen));
+    results.push(...processData(a18Data, processors.A18, isOpen));
+    results.push(...processData(AMTData, processors.amt, isOpen));
+    results.push(...processData(boltunData, processors.boltun, isOpen));
 
-  dataUnimtrn.map((unimtrn) => {
-    if (
-      unimtrn.Модификация &&
-      returnQuickID(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))) !==
-        "No match" &&
-      isOpen
-    ) {
-      resultArrQuickID.push({
-        id: returnQuickID(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn))),
-        name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
-        stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
-        provider: "Метреон",
-      });
-    }
-  });
+    return results;
+  }, [isOpen]);
 
-  dataHi.map((hi) => {
-    if (
-      hi.name &&
-      typeof hi.name === "string" &&
-      baseFixHi(hi) &&
-      isOpen &&
-      (returnAppleHi(hi.name) ||
-        returnSamsungHi(hi.name) ||
-        returnXiaomiHi(hi.name) ||
-        returnGoogleHi(hi.name) ||
-        returnGarminHi(hi.name) ||
-        returnDysonHi(hi.name))
-    ) {
-      return (
-        returnQuickID(fixNameHi(hi.name)) !== "No match" &&
-        returnStockPriceHi(fixNameHi(hi.name)) &&
-        returnStockPriceHi(fixNameHi(hi.name)).indexOf("00") !== -1 &&
-        resultArrQuickID.push({
-          id: returnQuickID(fixNameHi(hi.name)),
-          name: returnFixPriceHi(hi, returnNameInArrHi(fixNameHi(hi.name))),
-          stockPrice: returnStockPriceHi(fixNameHi(hi.name)),
-          provider: "Hi",
-        })
-      );
-    }
-  });
-
-  dataMihonor.map((mihonor) => {
-    if (
-      mihonor.name &&
-      typeof mihonor.name === "string" &&
-      mihonor.name.indexOf("₽") !== -1 &&
-      baseFixMiHonor(mihonor) &&
-      isOpen
-    ) {
-      return (
-        mihonor.name.indexOf("₽") !== -1 &&
-        returnQuickID(fixNameMihonor(mihonor.name)) !== "No match" &&
-        returnExtraPriceMihonor(mihonor.name) &&
-        returnStockPriceMihonor(mihonor.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameInArrMihonor(fixNameMihonor(mihonor.name))
-          ),
-          name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
-          stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
-          provider: "MiHonor",
-        })
-      );
-    }
-  });
-
-  dataGarmin.map((garmin) => {
-    baseFixGarmin(garmin) && returnStockPriceGarmin(fixNameGarmin(garmin.name));
-    baseFixGarmin(garmin) && returnExtraPriceGarmin(fixNameGarmin(garmin.name));
-    if (
-      garmin.name &&
-      typeof garmin.name === "string" &&
-      baseFixGarmin(garmin) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(fixNameGarmin(garmin.name)) !== "No match" &&
-        returnExtraPriceGarmin(garmin.name) &&
-        returnStockPriceGarmin(garmin.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(
-            returnFixNameProductGarmin(fixNameGarmin(garmin.name))
-          ),
-          name: returnFixNameProductGarmin(fixNameGarmin(garmin.name)),
-          extraPrice: returnExtraPriceGarmin(fixNameGarmin(garmin.name)),
-          stockPrice: returnStockPriceGarmin(fixNameGarmin(garmin.name)),
-          provider: "Garmin",
-        })
-      );
-    }
-  });
-
-  S5Data.map((S5) => {
-    baseFixS5(S5) && returnStockPriceS5(fixNameS5(S5.name));
-    baseFixS5(S5) && returnExtraPriceS5(fixNameS5(S5.name));
-    if (S5.name && typeof S5.name === "string" && baseFixS5(S5) && isOpen) {
-      return (
-        returnQuickID(fixNameS5(S5.name)) !== "No match" &&
-        returnExtraPriceS5(S5.name) &&
-        returnStockPriceS5(S5.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameInArrS5(fixNameS5(S5.name))),
-          name: returnNameInArrS5(fixNameS5(S5.name)),
-          extraPrice: returnExtraPriceS5(fixNameS5(S5.name)),
-          stockPrice: returnStockPriceS5(fixNameS5(S5.name)),
-          provider: "S5",
-        })
-      );
-    }
-  });
-
-  rptradeData.map((rptrade) => {
-    if (
-      rptrade.name &&
-      typeof rptrade.name === "string" &&
-      baseFixRPTrade(rptrade) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameRPTrade(rptrade.name)) !== "No match" &&
-        rptrade.price &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnFixNameRPTrade(rptrade.name)),
-          name: returnFixNameRPTrade(rptrade.name),
-          extraPrice: newPrice(rptrade.name, rptrade.price),
-          stockPrice: rptrade.price,
-          provider: "RPTrade",
-        })
-      );
-    }
-  });
-
-  racmagData.map((racmag) => {
-    baseFixRacmag(racmag) &&
-      returnStockPriceRacmag(returnFixNameRacmag(racmag.name));
-    baseFixRacmag(racmag) &&
-      returnExtraPriceRacmag(returnFixNameRacmag(racmag.name));
-    if (
-      racmag.name &&
-      typeof racmag.name === "string" &&
-      baseFixRacmag(racmag) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameRacmag(racmag.name)) !== "No match" &&
-        returnStockPriceRacmag(racmag.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameInArrRacmag(returnFixNameRacmag(racmag.name))
-          ),
-          name: returnNameInArrRacmag(returnFixNameRacmag(racmag.name)),
-          extraPrice: returnExtraPriceRacmag(returnFixNameRacmag(racmag.name)),
-          stockPrice: returnStockPriceRacmag(returnFixNameRacmag(racmag.name)),
-          provider: "Рацмаг",
-        })
-      );
-    }
-  });
-
-  artiData.map((arti) => {
-    baseFixArti(arti) && returnStockPriceArti(returnFixNameArti(arti.name));
-    if (
-      arti.name &&
-      typeof arti.name === "string" &&
-      baseFixArti(arti) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameArti(arti.name)) !== "No match" &&
-        returnStockPriceArti(arti.name) &&
-        returnCategoryArti(arti.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameArti(returnFixNameArti(arti.name))),
-          name: returnNameArti(returnFixNameArti(arti.name)),
-          extraPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
-          stockPrice: returnStockPriceArti(returnFixNameArti(arti.name)),
-          provider: "Arti",
-        })
-      );
-    }
-  });
-
-  electrozonData.map((electrozon) => {
-    if (
-      electrozon.name &&
-      typeof electrozon.name === "string" &&
-      baseFixElectrozon(electrozon) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameElectrozon(electrozon.name)) !==
-          "No match" &&
-        electrozon.price &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnFixNameElectrozon(electrozon.name)),
-          name: returnFixNameElectrozon(electrozon.name),
-          extraPrice: newPrice(electrozon.name, electrozon.price),
-          stockPrice: electrozon.price,
-          provider: "Electrozon",
-        })
-      );
-    }
-  });
-
-  resaleData.map((resale) => {
-    baseFixReSale(resale) &&
-      returnStockPriceReSale(returnFixNameReSale(resale.name));
-    if (
-      resale.name &&
-      typeof resale.name === "string" &&
-      baseFixReSale(resale) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameReSale(resale.name)) !== "No match" &&
-        returnExtraPriceReSale(resale.name) &&
-        returnStockPriceReSale(resale.name) &&
-        returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("А") ==
-          -1 &&
-        returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf(
-          "00"
-        ) != -1 &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameReSale(returnFixNameReSale(resale.name))),
-          name: returnNameReSale(returnFixNameReSale(resale.name)),
-          extraPrice: returnExtraPriceReSale(returnFixNameReSale(resale.name)),
-          stockPrice: returnStockPriceReSale(returnFixNameReSale(resale.name)),
-          provider: "Re:Sale",
-        })
-      );
-    }
-  });
-
-  tagirData.map((tagir) => {
-    baseFixTagir(tagir) && returnStockPriceTagir(fixNameTagir(tagir.name));
-    if (
-      tagir.name &&
-      typeof tagir.name === "string" &&
-      baseFixTagir(tagir) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(fixNameTagir(tagir.name)) !== "No match" &&
-        returnStockPriceTagir(tagir.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameTagir(fixNameTagir(tagir.name))),
-          name: returnNameTagir(fixNameTagir(tagir.name)),
-          extraPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
-          stockPrice: returnStockPriceTagir(fixNameTagir(tagir.name)),
-          provider: "Тагир",
-        })
-      );
-    }
-  });
-
-  narodData.map((narod) => {
-    baseFixNarod(narod) && returnStockPriceNarod(fixNameNarod(narod.name));
-    if (
-      narod.name &&
-      typeof narod.name === "string" &&
-      baseFixNarod(narod) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(fixNameNarod(narod.name)) !== "No match" &&
-        returnStockPriceNarod(narod.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameNarod(fixNameNarod(narod.name))),
-          name: returnNameNarod(fixNameNarod(narod.name)),
-          extraPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
-          stockPrice: returnStockPriceNarod(fixNameNarod(narod.name)),
-          provider: "Народ",
-        })
-      );
-    }
-  });
-
-  f51Data.map((f51) => {
-    baseFixF51(f51) && returnNameF51(f51.name);
-    if (f51.name && typeof f51.name === "string" && baseFixF51(f51) && isOpen) {
-      return (
-        returnQuickID(returnNameF51(f51.name)) !== "No match" &&
-        f51.price &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameF51(f51.name)),
-          name: returnNameF51(f51.name),
-          extraPrice: f51.price,
-          stockPrice: f51.price,
-          provider: "F51",
-        })
-      );
-    }
-  });
-
-  discountData.map((discount) => {
-    baseFixDiscount(discount) &&
-      returnStockPriceDiscount(returnFixNameDiscount(discount.name));
-    if (
-      discount.name &&
-      typeof discount.name === "string" &&
-      baseFixDiscount(discount) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameDiscount(discount.name)) !== "No match" &&
-        returnStockPriceDiscount(discount.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameInArrDiscount(returnFixNameDiscount(discount.name))
-          ),
-          name: returnNameInArrDiscount(returnFixNameDiscount(discount.name)),
-          stockPrice: returnStockPriceDiscount(
-            returnFixNameDiscount(discount.name)
-          ),
-          provider: "Discount",
-        })
-      );
-    }
-  });
-
-  baseData.map((base) => {
-    if (
-      base.name &&
-      typeof base.name === "string" &&
-      isOpen &&
-      baseFixBase(base)
-    ) {
-      return (
-        returnQuickID(returnFixNameBase(base.name)) !== "No match" &&
-        base.price &&
-        baseFixBase(base) &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnFixNameBase(base.name)),
-          name: returnFixNameBase(base.name),
-          extraPrice: base.extra,
-          stockPrice: base.price,
-          provider: "База",
-        })
-      );
-    }
-  });
-
-  otherData.map((other) => {
-    returnStockPriceOther(returnFixNameOther(other.name));
-    returnExtraPriceOther(returnFixNameOther(other.name));
-    if (
-      other.name &&
-      typeof other.name === "string" &&
-      baseFixOther(other) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameOther(other.name)) !== "No match" &&
-        returnStockPriceOther(other.name) &&
-        baseFixOther(other) &&
-        resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameInArrOther(returnFixNameOther(other.name))
-          ),
-          name: returnNameInArrOther(returnFixNameOther(other.name)),
-          extraPrice: returnExtraPriceOther(returnFixNameOther(other.name)),
-          stockPrice: returnStockPriceOther(returnFixNameOther(other.name)),
-          provider: "All",
-        })
-      );
-    }
-  });
-
-  mioptsData.map((miopts) => {
-    baseFixMiOpts(miopts) && returnStockPriceMiOpts(fixNameMiOpts(miopts.name));
-    baseFixMiOpts(miopts) && returnExtraPriceMiOpts(fixNameMiOpts(miopts.name));
-    if (
-      miopts.name &&
-      typeof miopts.name === "string" &&
-      baseFixMiOpts(miopts)
-    ) {
-      return (
-        returnQuickID(fixNameMiOpts(miopts.name)) !== "No match" &&
-        returnExtraPriceMiOpts(miopts.name) &&
-        returnStockPriceMiOpts(miopts.name) &&
-        returnStockPriceMiOpts(fixNameMiOpts(miopts.name)) > 1000 &&
-        (returnNameInArrMiOpts(miopts.name).indexOf("GB") !== -1 ||
-          returnNameInArrMiOpts(miopts.name).indexOf("TRB") !== -1) &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameInArrMiOpts(fixNameMiOpts(miopts.name))),
-          name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
-          extraPrice: returnExtraPriceMiOpts(fixNameMiOpts(miopts.name)),
-          stockPrice: returnStockPriceMiOpts(fixNameMiOpts(miopts.name)),
-          provider: "MiOpts",
-        })
-      );
-    }
-  });
-
-  lowPriceData.map((lowPrice) => {
-    if (
-      lowPrice.name &&
-      typeof lowPrice.name === "string" &&
-      baseFixLowPrice(lowPrice)
-    ) {
-      return (
-        returnQuickID(fixNameLowPrice(lowPrice.name)) !== "No match" &&
-        returnStockPriceLowPrice(lowPrice.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name))
-          ),
-          name: returnNameInArrLowPrice(fixNameLowPrice(lowPrice.name)),
-          stockPrice: returnStockPriceLowPrice(fixNameLowPrice(lowPrice.name)),
-          provider: "Ghost Re:Sale",
-        })
-      );
-    }
-  });
-
-  l27Data.map((l27) => {
-    baseFixL27(l27) && returnStockPriceL27(returnFixNameL27(l27.name));
-    if (
-      l27.name &&
-      typeof l27.name === "string" &&
-      baseFixL27(l27) &&
-      returnStockPriceL27(returnFixNameL27(l27.name)).indexOf("00") !== -1 &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameL27(l27.name)) !== "No match" &&
-        returnStockPriceL27(l27.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameInArrL27(returnFixNameL27(l27.name))),
-          name: returnNameInArrL27(returnFixNameL27(l27.name)),
-          stockPrice: returnStockPriceL27(returnFixNameL27(l27.name)),
-          provider: "Л27-28",
-        })
-      );
-    }
-  });
-
-  sunriseData.map((sunrise) => {
-    baseFixSunrise(sunrise) &&
-      returnStockPriceSunrise(returnFixNameSunrise(sunrise.name));
-    if (
-      sunrise.name &&
-      typeof sunrise.name === "string" &&
-      baseFixSunrise(sunrise) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameSunrise(sunrise.name)) !== "No match" &&
-        returnStockPriceSunrise(sunrise.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameInArrSunrise(returnFixNameSunrise(sunrise.name))
-          ),
-          name: returnNameInArrSunrise(returnFixNameSunrise(sunrise.name)),
-          stockPrice: returnStockPriceSunrise(
-            returnFixNameSunrise(sunrise.name)
-          ),
-          provider: "Восход",
-        })
-      );
-    }
-  });
-
-  infinityData.map((infinity) => {
-    if (
-      infinity.name &&
-      typeof infinity.name === "string" &&
-      baseFixInfinity(infinity)
-    ) {
-      return (
-        returnQuickID(fixNameInfinity(infinity.name)) !== "No match" &&
-        returnStockPriceInfinity(infinity.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameInArrInfinity(fixNameInfinity(infinity.name))
-          ),
-          name: returnNameInArrInfinity(fixNameInfinity(infinity.name)),
-          stockPrice: returnStockPriceInfinity(fixNameInfinity(infinity.name)),
-          provider: "Infinity",
-        })
-      );
-    }
-  });
-
-  likemobData.map((likemob) => {
-    baseFixLikemob(likemob) &&
-      returnStockPriceLikemob(returnFixNameLikemob(likemob.name));
-    if (
-      likemob.name &&
-      typeof likemob.name === "string" &&
-      baseFixLikemob(likemob) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameLikemob(likemob.name)) !== "No match" &&
-        returnStockPriceLikemob(likemob.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameInArrLikemob(returnFixNameLikemob(likemob.name))
-          ),
-          name: returnNameInArrLikemob(returnFixNameLikemob(likemob.name)),
-          stockPrice: returnStockPriceLikemob(
-            returnFixNameLikemob(likemob.name)
-          ),
-          provider: "Likemob",
-        })
-      );
-    }
-  });
-
-  bigApData.map((bigAp) => {
-    baseFixBigAp(bigAp) &&
-      returnStockPriceBigAp(returnFixNameBigAp(bigAp.name));
-    if (
-      bigAp.name &&
-      typeof bigAp.name === "string" &&
-      baseFixBigAp(bigAp) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameBigAp(bigAp.name)) !== "No match" &&
-        returnStockPriceBigAp(bigAp.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(
-            returnNameInArrBigAp(returnFixNameBigAp(bigAp.name))
-          ),
-          name: returnNameInArrBigAp(returnFixNameBigAp(bigAp.name)),
-          stockPrice: returnStockPriceBigAp(returnFixNameBigAp(bigAp.name)),
-          provider: "BigAp",
-        })
-      );
-    }
-  });
-
-  mtaData.map((mta) => {
-    baseFixMTA(mta) && returnStockPriceMTA(returnFixNameMTA(mta.name));
-    if (mta.name && typeof mta.name === "string" && baseFixMTA(mta) && isOpen) {
-      return (
-        returnQuickID(returnFixNameMTA(mta.name)) !== "No match" &&
-        returnStockPriceMTA(returnFixNameMTA(mta.name)).indexOf("00") !== -1 &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameInArrMTA(returnFixNameMTA(mta.name))),
-          name: returnNameInArrMTA(returnFixNameMTA(mta.name)),
-          stockPrice: returnStockPriceMTA(returnFixNameMTA(mta.name)),
-          provider: "MTA Store",
-        })
-      );
-    }
-  });
-
-  bonusData.map((bonus) => {
-    if (
-      bonus.name &&
-      typeof bonus.name === "string" &&
-      baseFixBonus(bonus) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameBonus(bonus.name)) !== "No match" &&
-        bonus.price &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnFixNameBonus(bonus.name)),
-          name: returnFixNameBonus(bonus.name),
-          stockPrice: bonus.price,
-          provider: "БонусОПТ",
-        })
-      );
-    }
-  });
-
-  rootOptData.map((rootOpt) => {
-    if (
-      rootOpt.name &&
-      typeof rootOpt.name === "string" &&
-      baseFixRootOpt(rootOpt) &&
-      rootOpt.price !== "ожидается" &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameRootOpt(rootOpt.name)) !== "No match" &&
-        rootOpt.price &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnFixNameRootOpt(rootOpt.name)),
-          name: returnFixNameRootOpt(rootOpt.name),
-          stockPrice: rootOpt.price,
-          provider: "RootOPT",
-        })
-      );
-    }
-  });
-
-  AMTData.map((amt) => {
-    if (
-      amt.name &&
-      typeof amt.name === "string" &&
-      baseFixTrub(amt) &&
-      isOpen &&
-      returnStockPriceTrub(fixNameTrub(amt.name)).indexOf("0") != -1
-    ) {
-      return (
-        returnQuickID(fixNameTrub(amt.name)) !== "No match" &&
-        returnStockPriceTrub(amt.name) &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnNameInArrTrub(fixNameTrub(amt.name))),
-          name: returnNameInArrTrub(fixNameTrub(amt.name)),
-          stockPrice: returnStockPriceTrub(fixNameTrub(amt.name)),
-          provider: "AMT",
-        })
-      );
-    }
-  });
-
-  boltunData.map((boltun) => {
-    if (
-      boltun.name &&
-      typeof boltun.name === "string" &&
-      baseFixBoltun(boltun) &&
-      isOpen
-    ) {
-      return (
-        returnQuickID(returnFixNameBoltun(boltun.name)) !== "No match" &&
-        boltun.price &&
-        resultArrQuickID.push({
-          id: returnQuickID(returnFixNameBoltun(boltun.name)),
-          name: returnFixNameBoltun(boltun.name),
-          stockPrice: boltun.price,
-          provider: "Болтун",
-        })
-      );
-    }
-  });
-
-  // a18Data.map((A18) => {
-  //       // baseFixA18(A18) &&
-  //         returnStockPriceA18(returnFixNameA18(A18.name))
-  //       if (
-  //         A18.name &&
-  //         typeof A18.name === "string" &&
-  //         returnStockPriceA18(returnFixNameA18(A18.name)).indexOf("00") !== -1 &&
-  //         // baseFixA18(A18) &&
-  //         isOpen
-  //       ) {
-  //         return (
-  //           returnQuickID(returnFixNameA18(A18.name)) !== "No match" &&
-  //           returnStockPriceA18(A18.name) &&
-  //           returnQuickID.push({
-  //             id: returnQuickID(
-  //               returnNameInArrA18(returnFixNameA18(A18.name))
-  //             ),
-  //             name: returnNameInArrA18(returnFixNameA18(A18.name)),
-  //             stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
-  //             provider: "A18",
-  //           })
-  //         );
-  //       }
-  //     });
+  const hasData = Object.values({
+    dataSuperprice,
+    dataVsemi /* и т.д. */,
+  }).some((arr) => arr?.length > 2);
 
   return (
     <div>
       <div>
-        {(dataSuperprice?.length > 2 ||
-          dataVsemi?.length > 2 ||
-          dataUnimtrn?.length > 2 ||
-          dataHi?.length > 2 ||
-          dataMihonor?.length > 2 ||
-          dataGarmin?.length > 2 ||
-          dataGarmin?.length > 2 ||
-          S5Data?.length > 2 ||
-          rptradeData?.length > 2 ||
-          racmagData?.length > 2) && (
+        {hasData && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Быстрая выгрузка ▲" : "Быстрая выгрузка ▼"}
+            {isOpen ? "All Price Quick ID ▲" : "All Price Quick ID ▼"}
           </span>
         )}
       </div>
-      {isOpen && <TableQuickPrice resultArrQuickID={resultArrQuickID} />}
+      {isOpen && <TableAllPrice allPriceArr={allPriceArr} />}
     </div>
   );
 };

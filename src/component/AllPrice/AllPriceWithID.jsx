@@ -555,7 +555,7 @@ const AllPriceWithID = ({
       <div>
         {hasData && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "All Price Для Сайта ▲" : "All Price Для Сайта ▼"}
+            {isOpen ? "All Price With ID ▲" : "All Price With ID ▼"}
           </span>
         )}
       </div>

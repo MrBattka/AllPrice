@@ -67,7 +67,7 @@ import IndexUnimtrnNotID_1 from "./Unimtrn/indexUNIMTRNNotID_1";
 import IndexUnimtrn_1 from "./Unimtrn/indexUNIMTRN_1";
 import IndexVseMi from "./VseMi/indexVseMi";
 import IndexVseMiNotID from "./VseMi/indexVseMiNotID";
-import AllPriceNotID from "./AllPrice/AllPriceNotID"
+import AllPriceNotID from "./AllPrice/AllPriceNotID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -500,41 +500,6 @@ const IndexAllPrice = () => {
         </div>
       </div>
       <div className="wrapper_cat">
-        
-{/* Quick Price */}
-        <AllPriceQuickID
-          dataSuperprice={superprice}
-          dataVsemi={vsemi}
-          dataUnimtrn={dataUNIMTRN}
-          dataHi={hi}
-          dataMihonor={mihonor}
-          dataGarmin={garmin}
-          S5Data={S5}
-          rptradeData={rptrade}
-          racmagData={racmag}
-          electrozonData={electrozon}
-          artiData={arti}
-          resaleData={resale}
-          tagirData={tagir}
-          narodData={narod}
-          f51Data={f51}
-          discountData={discount}
-          baseData={deleteDoubleProduct}
-          otherData={other}
-          mioptsData={miopts}
-          lowPriceData={lowprice}
-          l27Data={l27}
-          sunriseData={sunrise}
-          infinityData={infinity}
-          likemobData={likemob}
-          mtaData={mta}
-          bonusData={bonus}
-          bigApData={bigAp}
-          rootOptData={rootOpt}
-          a18Data={a18}
-          AMTData={amt}
-          boltunData={boltun}
-        />
         {/* Сема */}
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
@@ -635,7 +600,40 @@ const IndexAllPrice = () => {
         {/* Store 77 */}
         <IndexStore77 el={dataStore77} store77Data={store77} />
         <IndexStore77NotID el={dataStore77} store77Data={store77} />
-
+        {/* Quick Price */}
+        <AllPriceQuickID
+          dataSuperprice={superprice}
+          dataVsemi={vsemi}
+          dataUnimtrn={dataUNIMTRN}
+          dataHi={hi}
+          dataMihonor={mihonor}
+          dataGarmin={garmin}
+          S5Data={S5}
+          rptradeData={rptrade}
+          racmagData={racmag}
+          electrozonData={electrozon}
+          artiData={arti}
+          resaleData={resale}
+          tagirData={tagir}
+          narodData={narod}
+          f51Data={f51}
+          discountData={discount}
+          baseData={deleteDoubleProduct}
+          otherData={other}
+          mioptsData={miopts}
+          lowPriceData={lowprice}
+          l27Data={l27}
+          sunriseData={sunrise}
+          infinityData={infinity}
+          likemobData={likemob}
+          mtaData={mta}
+          bonusData={bonus}
+          bigApData={bigAp}
+          rootOptData={rootOpt}
+          a18Data={a18}
+          AMTData={amt}
+          boltunData={boltun}
+        />
         {/* All Price */}
         <AllPriceWithID
           dataSuperprice={superprice}
