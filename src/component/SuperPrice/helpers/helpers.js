@@ -36,19 +36,30 @@ export const fixNameSuperPrice = (name) => {
       ? fixA35Awesome.replace("5G ", "")
       : fixA35Awesome;
   const fixPixel5G =
-    (fixXperia5G.indexOf("Pixel") != -1 ||
+    fixXperia5G.indexOf("Pixel") != -1 ||
     fixXperia5G.indexOf("M55") != -1 ||
     fixXperia5G.indexOf("S21") != -1 ||
     fixXperia5G.indexOf("A36") != -1 ||
-    fixXperia5G.indexOf("A56") != -1)
+    fixXperia5G.indexOf("A56") != -1
       ? fixXperia5G.replace("5G ", "")
       : fixXperia5G;
-  const fixSilver = fixPixel5G.replace("Platinum Silver 12/512", "12/512 Platinum Silver");
+  const fixSilver = fixPixel5G.replace(
+    "Platinum Silver 12/512",
+    "12/512 Platinum Silver"
+  );
   const fixPhantomBlack = fixSilver.replace("Phantom Black", "Black");
   const fixMidnightBlack = fixPhantomBlack.replace("Midnight Black", "Black");
   const fixWatch8 = fixMidnightBlack.replace("Watch8", "Watch 8");
-  const fixNote13Iceblue = fixWatch8.replace("Note 13 8/256 Iceblue", "Note 13 8/256 blue");
-  const fixTabS105G = fixNote13Iceblue.indexOf("Tab S") !== -1 ? fixNote13Iceblue.replace("5G", "LTE") : fixNote13Iceblue
+  const fixNote13Iceblue = fixWatch8.replace(
+    "Note 13 8/256 Iceblue",
+    "Note 13 8/256 blue"
+  );
+  const fixTabS105G =
+    fixNote13Iceblue.indexOf("Tab S") !== -1
+      ? fixNote13Iceblue.replace("5G", "LTE")
+      : fixNote13Iceblue;
+  const fixTaS10Plus = fixTabS105G.replace("Tab S10+", "Tab S10 +")
+  const fixNote14ProPlus = fixTaS10Plus.replace("Note 14 Pro+", "Note 14 Pro +")
 
-  return fixTabS105G;
+  return fixNote14ProPlus;
 };

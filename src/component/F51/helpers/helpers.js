@@ -75,6 +75,8 @@ export const returnNameF51 = (name) => {
   const fix512 = fixS23FEGraphite.replace("1512", "512")
   const fix256 = fix512.replace("1256", "256")
   const fix128 = fix256.replace("1128", "128")
+  const fixS10Plus = fix128.replace("S10+", "S10 +")
+  const fixBuds = fixS10Plus.replace("Samsung Buds", "Galaxy Buds")
 
-  return fix128;
+  return fixBuds;
 };

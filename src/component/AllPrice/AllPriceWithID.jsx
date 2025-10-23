@@ -192,16 +192,15 @@ const processors = {
     filters: [baseFixHi],
   },
   mihonor: {
-    processItem: (mihonor) => (
-      mihonor.name.indexOf("₽") !== -1 &&
-      {
-      id: getIdByNameTest(
-        defaultFixName(returnNameInArrMihonor(fixNameMihonor(mihonor.name)))
-      ),
-      name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
-      stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
-      provider: "MiHonor",
-    }),
+    processItem: (mihonor) =>
+      mihonor.name.indexOf("₽") !== -1 && {
+        id: getIdByNameTest(
+          defaultFixName(returnNameInArrMihonor(fixNameMihonor(mihonor.name)))
+        ),
+        name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
+        stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
+        provider: "MiHonor",
+      },
     filters: [baseFixMiHonor],
   },
   garmin: {
@@ -547,7 +546,33 @@ const AllPriceWithID = ({
 
   const hasData = Object.values({
     dataSuperprice,
-    dataVsemi /* и т.д. */,
+    dataVsemi,
+    dataUnimtrn,
+    dataHi,
+    dataMihonor,
+    dataGarmin,
+    S5Data,
+    racmagData,
+    artiData,
+    electrozonData,
+    resaleData,
+    f51Data,
+    discountData,
+    baseData,
+    otherData,
+    mioptsData,
+    lowPriceData,
+    l27Data,
+    sunriseData,
+    infinityData,
+    likemobData,
+    bigApData,
+    mtaData,
+    bonusData,
+    rootOptData,
+    a18Data,
+    AMTData,
+    boltunData,
   }).some((arr) => arr?.length > 2);
 
   return (

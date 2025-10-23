@@ -26,7 +26,7 @@ import {
   baseFixSunrise,
   baseFixSuperPrice,
   baseFixTrub,
-  baseFixVsemi
+  baseFixVsemi,
 } from "../../helpers/baseFix";
 import { defaultFixName } from "../../helpers/defaultFixName";
 import { returnFixPriceHi } from "../../helpers/fixFlags";
@@ -149,7 +149,9 @@ import style from "../styles.module.css";
 const processors = {
   superprice: {
     processItem: (superprice) => ({
-      id: getIdByNameQuickID(defaultFixName(fixNameSuperPrice(superprice.name))),
+      id: getIdByNameQuickID(
+        defaultFixName(fixNameSuperPrice(superprice.name))
+      ),
       name: fixNameSuperPrice(superprice.name),
       stockPrice: superprice.price,
       provider: "SuperPrice",
@@ -190,16 +192,15 @@ const processors = {
     filters: [baseFixHi],
   },
   mihonor: {
-    processItem: (mihonor) => (
-      mihonor.name.indexOf("₽") !== -1 &&
-      {
-      id: getIdByNameQuickID(
-        defaultFixName(returnNameInArrMihonor(fixNameMihonor(mihonor.name)))
-      ),
-      name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
-      stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
-      provider: "MiHonor",
-    }),
+    processItem: (mihonor) =>
+      mihonor.name.indexOf("₽") !== -1 && {
+        id: getIdByNameQuickID(
+          defaultFixName(returnNameInArrMihonor(fixNameMihonor(mihonor.name)))
+        ),
+        name: returnNameInArrMihonor(fixNameMihonor(mihonor.name)),
+        stockPrice: returnStockPriceMihonor(fixNameMihonor(mihonor.name)),
+        provider: "MiHonor",
+      },
     filters: [baseFixMiHonor],
   },
   garmin: {
@@ -419,7 +420,9 @@ const processors = {
   },
   rootOpt: {
     processItem: (rootOpt) => ({
-      id: getIdByNameQuickID(defaultFixName(returnFixNameRootOpt(rootOpt.name))),
+      id: getIdByNameQuickID(
+        defaultFixName(returnFixNameRootOpt(rootOpt.name))
+      ),
       name: returnFixNameRootOpt(rootOpt.name),
       stockPrice: rootOpt.price,
       provider: "RootOPT",
@@ -545,7 +548,33 @@ const AllPriceQuickID = ({
 
   const hasData = Object.values({
     dataSuperprice,
-    dataVsemi /* и т.д. */,
+    dataVsemi,
+    dataUnimtrn,
+    dataHi,
+    dataMihonor,
+    dataGarmin,
+    S5Data,
+    racmagData,
+    artiData,
+    electrozonData,
+    resaleData,
+    f51Data,
+    discountData,
+    baseData,
+    otherData,
+    mioptsData,
+    lowPriceData,
+    l27Data,
+    sunriseData,
+    infinityData,
+    likemobData,
+    bigApData,
+    mtaData,
+    bonusData,
+    rootOptData,
+    a18Data,
+    AMTData,
+    boltunData,
   }).some((arr) => arr?.length > 2);
 
   return (

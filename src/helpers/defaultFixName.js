@@ -625,5 +625,29 @@ export const defaultFixName = (el) => {
       ? fixS25Plus1.replace("black", "gray")
       : fixS25Plus1;
 
-  return fixA07Gray;
+  const fixS25Icyblue =
+    fixA07Gray.indexOf("s25") !== -1
+      ? fixA07Gray.replace("iceblue", "icyblue")
+      : fixA07Gray;
+
+  const fixRedmi15CBLCK =
+    fixS25Icyblue.indexOf("redmi 15 ") !== -1
+      ? fixS25Icyblue.replace("black", "gray")
+      : fixS25Icyblue;
+
+  const fixA36Lilac =
+    fixRedmi15CBLCK.indexOf("a36") !== -1
+      ? fixRedmi15CBLCK.replace("lilac", "purple")
+      : fixRedmi15CBLCK;
+  const fixCE4Black =
+    fixA36Lilac.indexOf("ce4") !== -1
+      ? fixA36Lilac.replace("gray", "black")
+      : fixA36Lilac;
+
+  const fix15C =
+    fixCE4Black.indexOf("15c") !== -1
+      ? fixCE4Black.replace("black", "gray")
+      : fixCE4Black;
+
+  return fix15C;
 };

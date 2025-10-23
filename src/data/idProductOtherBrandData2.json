@@ -150,42 +150,42 @@
     },
     "38653": {
         "include": [
-            "oculus quest 2",
+            "quest 2",
             "128"
         ],
         "exclude": []
     },
     "38654": {
         "include": [
-            "oculus quest 2",
+            "quest 2",
             "256"
         ],
         "exclude": []
     },
     "36846": {
         "include": [
-            "oculus quest 3 ",
+            "quest 3 ",
             "128"
         ],
         "exclude": []
     },
     "36847": {
         "include": [
-            "oculus quest 3 ",
+            "quest 3 ",
             "512"
         ],
         "exclude": []
     },
     "37132": {
         "include": [
-            "oculus quest pro",
+            "quest pro",
             "256"
         ],
         "exclude": []
     },
     "38683": {
         "include": [
-            "oculus quest 3s",
+            "quest 3s",
             "128"
         ],
         "exclude": []
@@ -6662,8 +6662,7 @@
         "include": [
             "insta",
             "360",
-            "x4",
-            "black"
+            "x4"
         ],
         "exclude": []
     },
@@ -6671,8 +6670,7 @@
         "include": [
             "insta",
             "360",
-            "x5",
-            "black"
+            "x5"
         ],
         "exclude": []
     },

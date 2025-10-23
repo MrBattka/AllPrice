@@ -4237,7 +4237,7 @@
     "include": [
       "s25 edge",
       "12/256",
-      "icyblue",
+      "blue",
       "dual"
     ],
     "exclude": []
@@ -4264,7 +4264,7 @@
     "include": [
       "s25 edge",
       "12/512",
-      "icyblue",
+      "blue",
       "dual"
     ],
     "exclude": []
@@ -4291,7 +4291,7 @@
     "include": [
       "s25 edge",
       "12/256",
-      "navy"
+      "blue"
     ],
     "exclude": [
       "dual"
@@ -4321,7 +4321,7 @@
     "include": [
       "s25 edge",
       "12/512",
-      "navy"
+      "blue"
     ],
     "exclude": [
       "dual"
@@ -4411,7 +4411,7 @@
     "include": [
       "s25 ",
       "12/256",
-      "icyblue"
+      "blue"
     ],
     "exclude": [
       "dual",
@@ -4483,7 +4483,7 @@
     "include": [
       "s25 ",
       "12/512",
-      "icyblue"
+      "blue"
     ],
     "exclude": [
       "dual",
@@ -4567,7 +4567,7 @@
     "include": [
       "s25 ",
       "12/128",
-      "icyblue"
+      "blue"
     ],
     "exclude": [
       "dual",
@@ -4639,7 +4639,7 @@
     "include": [
       "s25+",
       "12/256",
-      "icyblue"
+      "blue"
     ],
     "exclude": [
       "dual",
@@ -4699,7 +4699,7 @@
     "include": [
       "s25+",
       "12/512",
-      "icyblue"
+      "blue"
     ],
     "exclude": [
       "dual",
@@ -5625,6 +5625,16 @@
       "dual"
     ],
     "exclude": []
+  },
+  "37570": {
+    "include": [
+      "s25+",
+      "12/256",
+      "silver"
+    ],
+    "exclude": [
+      "dual"
+    ]
   },
   "39673": {
     "include": [
@@ -7490,7 +7500,7 @@
   "36974": {
     "include": [
       "tab s10 ultra",
-      "512",
+      "256",
       "5g",
       "silver"
     ],
@@ -7662,7 +7672,6 @@
     "include": [
       "tab s10 fe +",
       "12/256",
-      "5g",
       "blue"
     ],
     "exclude": []
@@ -7671,7 +7680,6 @@
     "include": [
       "tab s10 fe +",
       "12/256",
-      "5g",
       "gray"
     ],
     "exclude": []
@@ -7680,7 +7688,6 @@
     "include": [
       "tab s10 fe +",
       "12/256",
-      "5g",
       "silver"
     ],
     "exclude": []
@@ -7689,7 +7696,6 @@
     "include": [
       "tab s10 fe +",
       "8/128",
-      "5g",
       "blue"
     ],
     "exclude": []
@@ -7698,7 +7704,6 @@
     "include": [
       "tab s10 fe +",
       "8/128",
-      "5g",
       "gray"
     ],
     "exclude": []
@@ -7707,7 +7712,6 @@
     "include": [
       "tab s10 fe +",
       "8/128",
-      "5g",
       "silver"
     ],
     "exclude": []
@@ -8206,7 +8210,7 @@
     "include": [
       "watch 8",
       "classic",
-      "lte",
+      "5g",
       "46",
       "black"
     ],
@@ -8216,7 +8220,7 @@
     "include": [
       "watch 8",
       "classic",
-      "lte",
+      "5g",
       "46",
       "white"
     ],
@@ -8225,7 +8229,7 @@
   "39926": {
     "include": [
       "watch 8",
-      "lte",
+      "5g",
       "40",
       "black"
     ],
@@ -8236,7 +8240,7 @@
   "39922": {
     "include": [
       "watch 8",
-      "lte",
+      "5g",
       "40",
       "silver"
     ],
@@ -8247,7 +8251,7 @@
   "39924": {
     "include": [
       "watch 8",
-      "lte",
+      "5g",
       "44",
       "black"
     ],
@@ -8258,7 +8262,7 @@
   "39923": {
     "include": [
       "watch 8",
-      "lte",
+      "5g",
       "44",
       "silver"
     ],
@@ -8576,7 +8580,7 @@
     "include": [
       "s25 fe",
       "8/128",
-      "icyblue"
+      "blue"
     ],
     "exclude": []
   },
@@ -8584,7 +8588,7 @@
     "include": [
       "s25 fe",
       "8/128",
-      "jetblack"
+      "black"
     ],
     "exclude": []
   },
@@ -8608,7 +8612,7 @@
     "include": [
       "s25 fe",
       "8/256",
-      "icyblue"
+      "blue"
     ],
     "exclude": []
   },
@@ -8616,7 +8620,7 @@
     "include": [
       "s25 fe",
       "8/256",
-      "jetblack"
+      "black"
     ],
     "exclude": []
   },
@@ -8640,7 +8644,7 @@
     "include": [
       "s25 fe",
       "8/512",
-      "icyblue"
+      "blue"
     ],
     "exclude": []
   },
@@ -8648,7 +8652,7 @@
     "include": [
       "s25 fe",
       "8/512",
-      "jetblack"
+      "black"
     ],
     "exclude": []
   },

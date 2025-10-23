@@ -75,8 +75,12 @@ export const fixNameS5 = (name) => {
     : fixA55;
   const fixeSim = fixA55IceBlue.replace("(e-sim)","(esim)")
   const fix2Sim = fixeSim.replace("(2-sim)","(2sim)")
+  const fix2TB = fix2Sim.replace("2 TB","2TB")
+  const fixStarlight2 = fix2TB.replace("Starting","Starlight")
+  const fixS25Plus = fixStarlight2.replace("S25 Plus","S25+")
+  const fixS25FE = fixS25Plus.replace("S25FE","S25 FE")
 
-  return fix2Sim;
+  return fixS25FE;
 };
 
 const checkFlags = (str) => {
