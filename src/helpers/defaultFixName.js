@@ -649,5 +649,10 @@ export const defaultFixName = (el) => {
       ? fixCE4Black.replace("black", "gray")
       : fixCE4Black;
 
-  return fix15C;
+      const fixYLilac =
+    fix15C.indexOf("яндекс") !== -1
+      ? fix15C.replace("лиловая", "фиолет")
+      : fix15C;
+
+  return fixYLilac;
 };
