@@ -6536,5 +6536,69 @@
         "gold"
       ],
       "exclude": []
+    },
+    "41449": {
+      "include": [
+        "poco m7 pro",
+        "12/512",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "41446": {
+      "include": [
+        "poco m7 pro",
+        "12/512",
+        "lunar"
+      ],
+      "exclude": []
+    },
+    "41450": {
+      "include": [
+        "poco m7 pro",
+        "12/512",
+        "olive"
+      ],
+      "exclude": []
+    },
+    "41442": {
+      "include": [
+        "redmi 15c",
+        "8/256",
+        "gray"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41440": {
+      "include": [
+        "redmi 15c",
+        "8/256",
+        "green"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41438": {
+      "include": [
+        "redmi 15c",
+        "8/256",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41436": {
+      "include": [
+        "redmi 15c",
+        "8/256",
+        "orange"
+      ],
+      "exclude": [
+        "5g"
+      ]
     }
   }

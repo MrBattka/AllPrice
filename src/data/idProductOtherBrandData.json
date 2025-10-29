@@ -4005,5 +4005,292 @@
             "moon"
         ],
         "exclude": []
+    },
+    "41536": {
+        "include": [
+            "rb03",
+            "360 robot",
+            "vaccum"
+        ],
+        "exclude": []
+    },
+    "41545": {
+        "include": [
+            "airblade",
+            "V",
+            "hu02"
+        ],
+        "exclude": []
+    },
+    "41458": {
+        "include": [
+            "big ball absolute 2",
+            "cy26"
+        ],
+        "exclude": []
+    },
+    "41562": {
+        "include": [
+            "big ball absolute 2",
+            "cy28"
+        ],
+        "exclude": []
+    },
+    "41459": {
+        "include": [
+            "big ball multifloor 2"
+        ],
+        "exclude": []
+    },
+    "41465": {
+        "include": [
+            "big ball parquet 2"
+        ],
+        "exclude": []
+    },
+    "41539": {
+        "include": [
+            "g1",
+            "wash"
+        ],
+        "exclude": []
+    },
+    "41532": {
+        "include": [
+            "sv50 fc",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41542": {
+        "include": [
+            "v8",
+            "sv25"
+        ],
+        "exclude": []
+    },
+    "41537": {
+        "include": [
+            "bp03"
+        ],
+        "exclude": []
+    },
+    "41556": {
+        "include": [
+            "bp04"
+        ],
+        "exclude": []
+    },
+    "41540": {
+        "include": [
+            "ph05"
+        ],
+        "exclude": []
+    },
+    "41203": {
+        "include": [
+            "ace 5",
+            "12/256",
+            "extreme",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "41187": {
+        "include": [
+            "ace 5",
+            "12/512",
+            "extreme",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41204": {
+        "include": [
+            "ace 5",
+            "12/512",
+            "extreme",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "41206": {
+        "include": [
+            "ace 5",
+            "16/256",
+            "extreme",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41418": {
+        "include": [
+            "nord buds 2r",
+            "deep"
+        ],
+        "exclude": []
+    },
+    "41421": {
+        "include": [
+            "nord buds 2r",
+            "misty"
+        ],
+        "exclude": []
+    },
+    "41420": {
+        "include": [
+            "nord buds 2r",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "41528": {
+        "include": [
+            "nord buds 3",
+            "blue"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "41455": {
+        "include": [
+            "nord buds 3",
+            "gray"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "41527": {
+        "include": [
+            "nord buds 3",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "41456": {
+        "include": [
+            "nord buds 3 pro",
+            "jade"
+        ],
+        "exclude": []
+    },
+    "41529": {
+        "include": [
+            "nord buds 3 pro",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41176": {
+        "include": [
+            "oneplus pad 2",
+            "12/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "41342": {
+        "include": [
+            "oneplus pad 2",
+            "8/128",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "41349": {
+        "include": [
+            "oneplus pad pro",
+            "12/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "41344": {
+        "include": [
+            "oneplus pad pro",
+            "12/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "41350": {
+        "include": [
+            "oneplus pad pro",
+            "16/512",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "41177": {
+        "include": [
+            "oneplus pad pro",
+            "16/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "41347": {
+        "include": [
+            "oneplus pad pro",
+            "8/128",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "41346": {
+        "include": [
+            "oneplus pad pro",
+            "8/128",
+            "green"
+        ],
+        "exclude": []
+    },
+    "41348": {
+        "include": [
+            "oneplus pad pro",
+            "8/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "41345": {
+        "include": [
+            "oneplus pad pro",
+            "8/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "41352": {
+        "include": [
+            "oneplus watch 2 ",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41353": {
+        "include": [
+            "oneplus watch 2 ",
+            "radiant"
+        ],
+        "exclude": []
+    },
+    "41354": {
+        "include": [
+            "oneplus watch 2r",
+            "green"
+        ],
+        "exclude": []
+    },
+    "41182": {
+        "include": [
+            "oneplus watch 2r",
+            "gray"
+        ],
+        "exclude": []
     }
 }

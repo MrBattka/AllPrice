@@ -2139,5 +2139,21 @@
             "amp yellow band"
         ],
         "exclude": []
+    },
+    "41507": {
+        "include": [
+            "venu",
+            "x1",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41551": {
+        "include": [
+            "venu",
+            "x1",
+            "green"
+        ],
+        "exclude": []
     }
 }

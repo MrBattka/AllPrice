@@ -4058,7 +4058,9 @@
         "silver",
         "wi-fi"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36418": {
       "include": [
@@ -4068,7 +4070,9 @@
         "black",
         "wi-fi"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36242": {
       "include": [
@@ -4078,7 +4082,9 @@
         "silver",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36240": {
       "include": [
@@ -4088,7 +4094,9 @@
         "black",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36419": {
       "include": [
@@ -4098,7 +4106,9 @@
         "silver",
         "wi-fi"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36420": {
       "include": [
@@ -4108,7 +4118,9 @@
         "black",
         "wi-fi"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36247": {
       "include": [
@@ -4118,7 +4130,9 @@
         "silver",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36246": {
       "include": [
@@ -4128,7 +4142,9 @@
         "black",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36174": {
       "include": [
@@ -4138,7 +4154,9 @@
         "silver",
         "wi-fi"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "38667": {
       "include": [
@@ -4148,7 +4166,9 @@
         "black",
         "wi-fi"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36421": {
       "include": [
@@ -4158,7 +4178,9 @@
         "silver",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36422": {
       "include": [
@@ -4168,7 +4190,9 @@
         "black",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36238": {
       "include": [
@@ -4178,7 +4202,9 @@
         "silver",
         "wi-fi"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36244": {
       "include": [
@@ -4188,7 +4214,9 @@
         "black",
         "wi-fi"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36423": {
       "include": [
@@ -4198,7 +4226,9 @@
         "silver",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "36424": {
       "include": [
@@ -4208,7 +4238,9 @@
         "black",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "2025"
+      ]
     },
     "38245": {
       "include": [
@@ -10908,8 +10940,6 @@
         "🇻🇮"
       ]
     },
-
-
     "41141": {
       "include": [
         "17 256 black",
@@ -12243,5 +12273,181 @@
         "dual"
       ],
       "exclude": []
+    },
+    "41521": {
+      "include": [
+        "pro 11",
+        "2025",
+        "256",
+        "silver"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41522": {
+      "include": [
+        "pro 11",
+        "2025",
+        "256",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41510": {
+      "include": [
+        "pro 11",
+        "2025",
+        "512",
+        "silver"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41523": {
+      "include": [
+        "pro 11",
+        "2025",
+        "512",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41503": {
+      "include": [
+        "pro 11",
+        "2025",
+        "1tb",
+        "silver"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41524": {
+      "include": [
+        "pro 11",
+        "2025",
+        "1tb",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41509": {
+      "include": [
+        "pro 11",
+        "2025",
+        "2tb",
+        "silver"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41525": {
+      "include": [
+        "pro 11",
+        "2025",
+        "2tb",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41515": {
+      "include": [
+        "pro 13",
+        "2025",
+        "256",
+        "silver"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41516": {
+      "include": [
+        "pro 13",
+        "2025",
+        "256",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41514": {
+      "include": [
+        "pro 13",
+        "2025",
+        "512",
+        "silver"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41517": {
+      "include": [
+        "pro 13",
+        "2025",
+        "512",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41504": {
+      "include": [
+        "pro 13",
+        "2025",
+        "1tb",
+        "silver"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41519": {
+      "include": [
+        "pro 13",
+        "2025",
+        "1tb",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41513": {
+      "include": [
+        "pro 13",
+        "2025",
+        "2tb",
+        "silver"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "41520": {
+      "include": [
+        "pro 13",
+        "2025",
+        "2tb",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
     }
   }
