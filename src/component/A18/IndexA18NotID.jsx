@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { returnIDSamsung } from "../../helpers/returnIDSamsung";
+import { defaultFixName } from "../../helpers/defaultFixName";
+import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import {
@@ -23,10 +24,10 @@ const IndexA18NotID = ({ el, a18Data }) => {
       isOpen
     ) {
       return (
-        returnIDSamsung(returnFixNameA18(A18.name)) === "No match" &&
+        getIdByName(defaultFixName(returnFixNameA18(A18.name))) === "No match" &&
         returnStockPriceA18(A18.name) &&
         resultArr.push({
-          id: returnIDSamsung(returnNameInArrA18(returnFixNameA18(A18.name))),
+          id: getIdByName(defaultFixName(returnNameInArrA18(returnFixNameA18(A18.name)))),
           name: returnNameInArrA18(returnFixNameA18(A18.name)),
           stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
           provider: "A18",

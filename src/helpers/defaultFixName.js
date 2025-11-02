@@ -610,8 +610,12 @@ export const defaultFixName = (el) => {
     fixYandexWhite.indexOf("яндекс") !== -1
       ? fixYandexWhite.replace("beige", "беж")
       : fixYandexWhite;
+  const fixYandexMax =
+    fixYandexBeige.indexOf("яндекс") !== -1
+      ? fixYandexBeige.replace("max", "макс")
+      : fixYandexBeige;
 
-  const fixS23Plus = fixYandexBeige.replace("s23 plus", "S23+");
+  const fixS23Plus = fixYandexMax.replace("s23 plus", "S23+");
   const fixS23Plus1 = fixS23Plus.replace("s23 +", "S23+");
   const fixS24Plus = fixS23Plus1.replace("s24 plus", "S24+");
   const fixS24Plus1 = fixS24Plus.replace("s24 +", "S24+");
@@ -649,10 +653,20 @@ export const defaultFixName = (el) => {
       ? fixCE4Black.replace("black", "gray")
       : fixCE4Black;
 
-      const fixYLilac =
+  const fixYLilac =
     fix15C.indexOf("яндекс") !== -1
       ? fix15C.replace("лиловая", "фиолет")
       : fix15C;
 
-  return fixYLilac;
+  const fixNote14ProPlus = fixYLilac.replace(
+    "note 14 pro plus",
+    "note 14 pro +"
+  );
+
+  const fixOpenSwimOrange =
+    fixNote14ProPlus.indexOf("openswim") !== -1
+      ? fixNote14ProPlus.replace("coral", "orange")
+      : fixNote14ProPlus;
+
+  return fixOpenSwimOrange;
 };

@@ -4723,7 +4723,7 @@
             "яндекс",
             "макс",
             "zigbee",
-            "бежев"
+            "беж"
         ],
         "exclude": [
             "без zigbee"
@@ -4905,8 +4905,7 @@
     },
     "40334": {
         "include": [
-            "nothing phone",
-            "3",
+            "nothing phone 3 ",
             "12/256",
             "black"
         ],
@@ -4916,8 +4915,7 @@
     },
     "40368": {
         "include": [
-            "nothing phone",
-            "3",
+            "nothing phone 3 ",
             "12/256",
             "white"
         ],
@@ -4927,8 +4925,7 @@
     },
     "40371": {
         "include": [
-            "nothing phone",
-            "3",
+            "nothing phone 3 ",
             "16/512",
             "black"
         ],
@@ -4938,8 +4935,7 @@
     },
     "40372": {
         "include": [
-            "nothing phone",
-            "3",
+            "nothing phone 3 ",
             "16/512",
             "white"
         ],
@@ -4949,9 +4945,7 @@
     },
     "39156": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "2",
+            "nothing phone 2 cmf",
             "pro",
             "8/128",
             "black"
@@ -4960,9 +4954,7 @@
     },
     "39157": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "2",
+            "nothing phone 2 cmf",
             "pro",
             "8/128",
             "green"
@@ -4971,9 +4963,7 @@
     },
     "39158": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "2",
+            "nothing phone 2 cmf",
             "pro",
             "8/128",
             "orange"
@@ -4982,9 +4972,7 @@
     },
     "39159": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "2",
+            "nothing phone 2 cmf",
             "pro",
             "8/128",
             "white"
@@ -4993,9 +4981,7 @@
     },
     "39164": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "2",
+            "nothing phone 2 cmf",
             "pro",
             "8/256",
             "black"
@@ -5004,9 +4990,7 @@
     },
     "39165": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "2",
+            "nothing phone 2 cmf",
             "pro",
             "8/256",
             "green"
@@ -5015,9 +4999,7 @@
     },
     "39166": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "2",
+            "nothing phone 2 cmf",
             "pro",
             "8/256",
             "orange"
@@ -5026,9 +5008,7 @@
     },
     "39167": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "2",
+            "nothing phone 2 cmf",
             "pro",
             "8/256",
             "white"
@@ -5037,9 +5017,7 @@
     },
     "38082": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "1",
+            "nothing phone 1 cmf",
             "6/128",
             "black"
         ],
@@ -5047,9 +5025,7 @@
     },
     "38120": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "1",
+            "nothing phone 1 cmf",
             "8/128",
             "green"
         ],
@@ -5057,9 +5033,7 @@
     },
     "38119": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "1",
+            "nothing phone 1 cmf",
             "8/128",
             "black"
         ],
@@ -5067,9 +5041,7 @@
     },
     "38121": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "1",
+            "nothing phone 1 cmf",
             "8/128",
             "orange"
         ],
@@ -5077,9 +5049,7 @@
     },
     "38115": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "1",
+            "nothing phone 1 cmf",
             "6/128",
             "green"
         ],
@@ -5087,9 +5057,7 @@
     },
     "38114": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "1",
+            "nothing phone 1 cmf",
             "6/128",
             "orange"
         ],
@@ -5097,9 +5065,7 @@
     },
     "38125": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "1",
+            "nothing phone 1 cmf",
             "8/256",
             "black"
         ],
@@ -5107,9 +5073,7 @@
     },
     "38126": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "1",
+            "nothing phone 1 cmf",
             "8/256",
             "green"
         ],
@@ -5117,9 +5081,7 @@
     },
     "38127": {
         "include": [
-            "nothing phone",
-            "cmf",
-            "1",
+            "nothing phone 1 cmf",
             "8/256",
             "orange"
         ],
@@ -5127,8 +5089,7 @@
     },
     "27993": {
         "include": [
-            "nothing phone",
-            "1",
+            "nothing phone 1 ",
             "8/128",
             "black"
         ],
@@ -5138,8 +5099,7 @@
     },
     "27989": {
         "include": [
-            "nothing phone",
-            "1",
+            "nothing phone 1 ",
             "8/128",
             "white"
         ],
@@ -5149,8 +5109,7 @@
     },
     "27994": {
         "include": [
-            "nothing phone",
-            "1",
+            "nothing phone 1 ",
             "8/256",
             "black"
         ],
@@ -5160,8 +5119,7 @@
     },
     "27991": {
         "include": [
-            "nothing phone",
-            "1",
+            "nothing phone 1 ",
             "8/256",
             "white"
         ],
@@ -5171,8 +5129,7 @@
     },
     "27992": {
         "include": [
-            "nothing phone",
-            "1",
+            "nothing phone 1 ",
             "12/256",
             "black"
         ],
@@ -5182,8 +5139,7 @@
     },
     "27990": {
         "include": [
-            "nothing phone",
-            "1",
+            "nothing phone 1 ",
             "12/256",
             "white"
         ],
@@ -5193,8 +5149,7 @@
     },
     "27995": {
         "include": [
-            "nothing phone",
-            "2",
+            "nothing phone 2 ",
             "8/128",
             "gray"
         ],
@@ -5205,8 +5160,7 @@
     },
     "28000": {
         "include": [
-            "nothing phone",
-            "2",
+            "nothing phone 2 ",
             "8/128",
             "white"
         ],
@@ -5217,8 +5171,7 @@
     },
     "27996": {
         "include": [
-            "nothing phone",
-            "2",
+            "nothing phone 2 ",
             "12/256",
             "gray"
         ],
@@ -5229,8 +5182,7 @@
     },
     "27998": {
         "include": [
-            "nothing phone",
-            "2",
+            "nothing phone 2 ",
             "12/256",
             "white"
         ],
@@ -5241,8 +5193,7 @@
     },
     "27997": {
         "include": [
-            "nothing phone",
-            "2",
+            "nothing phone 2 ",
             "12/512",
             "gray"
         ],
@@ -5253,8 +5204,7 @@
     },
     "27999": {
         "include": [
-            "nothing phone",
-            "2",
+            "nothing phone 2 ",
             "12/512",
             "white"
         ],

@@ -23,15 +23,21 @@ export const returnFixNameA18 = (name) => {
   const fixS10Plus1 = fixIris.replace("S10 Plus", "S10 +");
   const fixS10FEPlus = fixS10Plus1.replace("S10FE Plus", "S10 FE +");
   const fixProPlus = fixS10FEPlus.replace("Pro Plus", "Pro +");
-  
-  const fixSnow = fixProPlus.indexOf("Pixel") !== -1 ? fixProPlus.replace("White", "Snow") : fixProPlus
-  const fixObsidian = fixSnow.indexOf("Pixel") !== -1 ? fixSnow.replace("Black", "Obsidian") : fixSnow
-  return fixObsidian  ;
+
+  const fixSnow =
+    fixProPlus.indexOf("Pixel") !== -1
+      ? fixProPlus.replace("White", "Snow")
+      : fixProPlus;
+  const fixObsidian =
+    fixSnow.indexOf("Pixel") !== -1
+      ? fixSnow.replace("Black", "Obsidian")
+      : fixSnow;
+  return fixObsidian;
 };
 
 export const returnNameInArrA18 = (name) => {
   let reverseStrName = name.split("").reverse().join("");
-  let toLowerCase = reverseStrName.toLowerCase()
+  let toLowerCase = reverseStrName.toLowerCase();
   // let splitPrice =
   //   reverseStrName.indexOf(" ") !== -1
   //     ? /\s(.+)/.exec(reverseStrName)[1]
@@ -57,12 +63,9 @@ export const returnNameInArrA18 = (name) => {
   // let splitPrice1 = checkDouble.split("-")[2]
   //   ? `${checkDouble.split("-")[1]}-${checkDouble.split("-")[2]}`
   //   : (checkDouble.split("-")[1] && checkDouble.split("-")[1]) || checkDouble;
-  let fixWiFi = toLowerCase.replace("wi-fi", "wifi")
+  let fixWiFi = toLowerCase.replace("wi-fi", "wifi");
 
-  let splitName =
-    fixWiFi.indexOf("-") !== -1
-      ? fixWiFi.split("-")[1]
-      : fixWiFi;
+  let splitName = fixWiFi.indexOf("-") !== -1 ? fixWiFi.split("-")[1] : fixWiFi;
 
   let reverseBackStrName = splitName.split("").reverse().join("");
 
@@ -97,11 +100,17 @@ export const returnStockPriceA18 = (name) => {
 
   let splitPrice =
     fixUSBC.indexOf("-") !== -1 ? fixUSBC.split("-")[1] : fixUSBC;
-  
+  let splitPrice1 =
+    (splitPrice.indexOf("-") === -1 && splitPrice.indexOf(" ") !== -1) ? splitPrice.split(" ")[1] : splitPrice;
+
   let splitFire =
-    splitPrice.indexOf("🧨") !== -1 ? splitPrice.replace("🧨", "") : splitPrice;
+    splitPrice1.indexOf("🧨") !== -1
+      ? splitPrice1.replace("🧨", "")
+      : splitPrice1;
   let splitDoubleFire =
     splitFire.indexOf("🧨") !== -1 ? splitFire.replace("🧨", "") : splitFire;
+  let replaceRub = splitDoubleFire.replace("₽", "");
+  let replaceDot = replaceRub.replace(".", "");
 
-  return splitDoubleFire;
+  return replaceDot;
 };

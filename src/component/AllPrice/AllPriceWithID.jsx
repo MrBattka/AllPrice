@@ -428,14 +428,15 @@ const processors = {
     filters: [baseFixRootOpt],
   },
   A18: {
-    processItem: (A18) => ({
-      id: getIdByNameTest(
-        defaultFixName(returnNameInArrA18(returnFixNameA18(A18.name)))
-      ),
-      name: returnNameInArrA18(returnFixNameA18(A18.name)),
-      stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
-      provider: "A18",
-    }),
+    processItem: (A18) =>
+      returnStockPriceA18(returnFixNameA18(A18.name)).indexOf("00") !== -1 && {
+        id: getIdByNameTest(
+          defaultFixName(returnNameInArrA18(returnFixNameA18(A18.name)))
+        ),
+        name: returnNameInArrA18(returnFixNameA18(A18.name)),
+        stockPrice: returnStockPriceA18(returnFixNameA18(A18.name)),
+        provider: "Богатырев",
+      },
     filters: [],
   },
   amt: {
