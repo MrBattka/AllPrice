@@ -97,7 +97,16 @@ export const fixNameTrub = (name) => {
       ? replace1Sim.replace("5G ", "")
       : replace1Sim;
 
-  return fixPixel5G;
+      const fixSE2 = fixPixel5G.replace(
+    "SE 2",
+    "SE2"
+  );
+  const fixSE3 = fixSE2.replace(
+    "SE 3",
+    "SE3"
+  );
+
+  return fixSE3;
 };
 
 const checkFlags = (str) => {

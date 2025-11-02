@@ -3275,73 +3275,85 @@
     },
     "38447": {
       "include": [
-        "mi 15 ultra 12/256 black"
+        "mi 15 ultra 12/256",
+        "black"
       ],
       "exclude": []
     },
     "38448": {
       "include": [
-        "mi 15 ultra 12/256 green"
+        "mi 15 ultra 12/256",
+        "green"
       ],
       "exclude": []
     },
     "38449": {
       "include": [
-        "mi 15 ultra 12/256 silver"
+        "mi 15 ultra 12/256",
+        "silver"
       ],
       "exclude": []
     },
     "38450": {
       "include": [
-        "mi 15 ultra 12/256 white"
+        "mi 15 ultra 12/256",
+        "white"
       ],
       "exclude": []
     },
     "38463": {
       "include": [
-        "mi 15 ultra 16/1tb black"
+        "mi 15 ultra 16/1tb",
+        "black"
       ],
       "exclude": []
     },
     "38464": {
       "include": [
-        "mi 15 ultra 16/1tb green"
+        "mi 15 ultra 16/1tb",
+        "green"
       ],
       "exclude": []
     },
     "38465": {
       "include": [
-        "mi 15 ultra 16/1tb silver"
+        "mi 15 ultra 16/1tb",
+        "silver"
       ],
       "exclude": []
     },
     "38466": {
       "include": [
-        "mi 15 ultra 16/1tb white"
+        "mi 15 ultra 16/1tb",
+        "white"
       ],
       "exclude": []
     },
     "38455": {
       "include": [
-        "mi 15 ultra 16/512 black"
+        "mi 15 ultra 16/512",
+        "black"
       ],
       "exclude": []
     },
     "38456": {
       "include": [
-        "mi 15 ultra 16/512 green"
+        "mi 15 ultra 16/512",
+        "green"
       ],
       "exclude": []
     },
     "38457": {
       "include": [
-        "mi 15 ultra 16/512 silver"
+        "mi 15 ultra 16/512",
+        "silver"
       ],
       "exclude": []
     },
     "38458": {
       "include": [
-        "mi 15 ultra 16/512 white"
+        "mi 15 ultra 16/512",
+        "white"
       ],
       "exclude": []
     },
@@ -5721,6 +5733,39 @@
         "ultra"
       ]
     },
+    "41164": {
+      "include": [
+        "poco m7",
+        "6/128",
+        "silver"
+      ],
+      "exclude": [
+        "pro",
+        "ultra"
+      ]
+    },
+    "41166": {
+      "include": [
+        "poco m7",
+        "8/256",
+        "silver"
+      ],
+      "exclude": [
+        "pro",
+        "ultra"
+      ]
+    },
+    "41165": {
+      "include": [
+        "poco m7",
+        "8/128",
+        "silver"
+      ],
+      "exclude": [
+        "pro",
+        "ultra"
+      ]
+    },
     "40397": {
       "include": [
         "poco m7",
@@ -5736,6 +5781,28 @@
       "include": [
         "poco m7",
         "6/128",
+        "black"
+      ],
+      "exclude": [
+        "pro",
+        "ultra"
+      ]
+    },
+    "41161": {
+      "include": [
+        "poco m7",
+        "8/256",
+        "blue"
+      ],
+      "exclude": [
+        "pro",
+        "ultra"
+      ]
+    },
+    "41160": {
+      "include": [
+        "poco m7",
+        "8/256",
         "black"
       ],
       "exclude": [
@@ -6060,13 +6127,15 @@
     },
     "41003": {
       "include": [
-        "mi 15t 12/256 black"
+        "mi 15t 12/256",
+        "black"
       ],
       "exclude": []
     },
     "41019": {
       "include": [
-        "mi 15t 12/256 gray"
+        "mi 15t 12/256",
+        "gray"
       ],
       "exclude": []
     },
@@ -6079,13 +6148,15 @@
     },
     "41017": {
       "include": [
-        "mi 15t 12/512 black"
+        "mi 15t 12/512",
+        "black"
       ],
       "exclude": []
     },
     "41018": {
       "include": [
-        "mi 15t 12/512 gray"
+        "mi 15t 12/512",
+        "gray"
       ],
       "exclude": []
     },
@@ -6482,13 +6553,15 @@
     },
     "41024": {
       "include": [
-        "mi 15t pro 12/1tb black"
+        "mi 15t pro 12/1tb",
+        "black"
       ],
       "exclude": []
     },
     "41025": {
       "include": [
-        "mi 15t pro 12/1tb gray"
+        "mi 15t pro 12/1tb",
+        "gray"
       ],
       "exclude": []
     },
@@ -6501,13 +6574,15 @@
     },
     "41004": {
       "include": [
-        "mi 15t pro 12/256 black"
+        "mi 15t pro 12/256",
+        "black"
       ],
       "exclude": []
     },
     "41027": {
       "include": [
-        "mi 15t pro 12/256 gray"
+        "mi 15t pro 12/256",
+        "gray"
       ],
       "exclude": []
     },
@@ -6520,13 +6595,15 @@
     },
     "41023": {
       "include": [
-        "mi 15t pro 12/512 black"
+        "mi 15t pro 12/512",
+        "black"
       ],
       "exclude": []
     },
     "41026": {
       "include": [
-        "mi 15t pro 12/512 gray"
+        "mi 15t pro 12/512",
+        "gray"
       ],
       "exclude": []
     },

@@ -32,7 +32,8 @@ export const returnFixNameA18 = (name) => {
     fixSnow.indexOf("Pixel") !== -1
       ? fixSnow.replace("Black", "Obsidian")
       : fixSnow;
-  return fixObsidian;
+  const fix2TB = fixObsidian.replace("2 TB", "2TB")
+  return fix2TB;
 };
 
 export const returnNameInArrA18 = (name) => {

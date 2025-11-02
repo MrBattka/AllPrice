@@ -1,7 +1,8 @@
 import { newPrice } from "../../../helpers/NewPrice";
 
 export const returnFixNameL27 = (name) => {
-  const fixTb = name.replace("1T ", "1Tb ");
+  const removeDoubleSpace = name.replace(/\s+/g, " ");
+  const fixTb = removeDoubleSpace.replace("1T ", "1Tb ");
   const fixTb1 = fixTb.replace("1T  ", "1Tb ");
   const fix16Pro = fixTb1.replace("16Pro ", "16 Pro ");
   const fix16Pro1 = fix16Pro.replace("16Pro  ", "16 Pro ");
@@ -16,9 +17,9 @@ export const returnFixNameL27 = (name) => {
   const fix14Pro = fix16Plus1.replace("14Pro ", "14 Pro ");
   const fix12Pro = fix14Pro.replace("12Pro  ", "12 Pro ");
   const fixMouse = fix12Pro.replace("Maus ", "Mouse ");
-
   const fixMouse1 = fixMouse.replace("Mause", "Mouse");
-  return fixMouse1;
+  const fixSE2 = fixMouse1.replace("SE 2024", "SE2");
+  return fixSE2;
 };
 
 const checkFlags = (str) => {

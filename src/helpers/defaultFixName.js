@@ -668,5 +668,18 @@ export const defaultFixName = (el) => {
       ? fixNote14ProPlus.replace("coral", "orange")
       : fixNote14ProPlus;
 
-  return fixOpenSwimOrange;
+  const fixHonorWhite =
+    fixOpenSwimOrange.indexOf("honor") !== -1
+      ? fixOpenSwimOrange.replace("белый", "white")
+      : fixOpenSwimOrange;
+  const fixHonorBlack =
+    fixHonorWhite.indexOf("honor") !== -1
+      ? fixHonorWhite.replace("чёрный", "black")
+      : fixHonorWhite;
+  const fixHonorGreen =
+    fixHonorBlack.indexOf("honor") !== -1
+      ? fixHonorBlack.replace("зелёный", "green")
+      : fixHonorBlack;
+
+  return fixHonorGreen;
 };

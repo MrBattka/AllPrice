@@ -12,11 +12,13 @@ export const fixNameInfinity = (name) => {
   const replaceGB = replaceGb.replace("GB ", "");
   const replace2Sim = replaceGB.replace("2sim", "");
   const fix1TB = replace2Sim.replace("1 TB", "1TB");
-  const fixAirPods = fix1TB.replace("Air Pods", "AirPods");
+  const fix2TB = fix1TB.replace("2 TB", "2TB");
+  const fixAirPods = fix2TB.replace("Air Pods", "AirPods");
   const fixeSIM = fixAirPods.replace("eSIM", "🇺🇸");
   const fixeSIM1 = fixeSIM.replace("(e-sim)", "🇺🇸");
   const fix2SIM = fixeSIM1.replace("(2-sim)", "dual");
-  return fix2SIM;
+  const fixStarlight = fix2SIM.replace("Starting", "Starlight")
+  return fixStarlight;
 };
 
 const checkFlags = (str) => {

@@ -8,8 +8,9 @@ export const returnFixNameSunrise = (name) => {
   const replaceFlash = replaceFireBall.replace("⚡️", "")
   const replaceS8Year = replaceFlash.replace("S8 2022", "S8")
   const replaceS9Year = replaceS8Year.replace("S9 2023", "S9")
+  const fixSE2 = replaceS9Year.replace("SE 2024", "SE2")
 
-  return replaceS9Year;
+  return fixSE2;
 };
 
 

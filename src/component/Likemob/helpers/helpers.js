@@ -18,12 +18,15 @@ export const returnFixNameLikemob = (name) => {
   const fixS10Plus = fixMi1.replace("S10+", "s10 +");
   const fixLTE = fixS10Plus.replace("LTE", "5G");
   const fixWatch7 = fixLTE.replace("Watch7", "Watch 7");
-  return fixWatch7;
+  const fixSE2 = fixWatch7.replace("SE(Gen 2)", "se2 ");
+  const fixWatchS11 = fixSE2.replace("Watch 11", "S11");
+  const fixWatchMM = fixWatchS11.replace("mm", "");
+  return fixWatchMM;
 };
 
 export const returnNameInArrLikemob = (name) => {
   let reverseStrName = name.split("").reverse().join("");
-  let toLowerCase = reverseStrName.toLowerCase()
+  // let toLowerCase = reverseStrName.toLowerCase()
   // let splitPrice =
   //   reverseStrName.indexOf(" ") !== -1
   //     ? /\s(.+)/.exec(reverseStrName)[1]
@@ -49,7 +52,7 @@ export const returnNameInArrLikemob = (name) => {
   // let splitPrice1 = checkDouble.split("-")[2]
   //   ? `${checkDouble.split("-")[1]}-${checkDouble.split("-")[2]}`
   //   : (checkDouble.split("-")[1] && checkDouble.split("-")[1]) || checkDouble;
-  let fixWiFi = toLowerCase.replace("wi-fi", "wifi")
+  let fixWiFi = reverseStrName.replace("Wi-Fi", "WiFi")
 
   let splitName =
     fixWiFi.indexOf("-") !== -1
@@ -57,8 +60,9 @@ export const returnNameInArrLikemob = (name) => {
       : fixWiFi;
 
   let reverseBackStrName = splitName.split("").reverse().join("");
+  let fixwiFi1 = reverseBackStrName.replace("WiFi", "Wi-Fi")
 
-  return reverseBackStrName;
+  return fixwiFi1;
 };
 
 export const returnStockPriceLikemob = (name) => {

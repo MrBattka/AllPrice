@@ -68,6 +68,11 @@ export const returnFixNameRootOpt = (name) => {
       : fixS10;
   const fixPocoEU =
     fixPoco5G.indexOf("POCO") !== -1 ? fixPoco5G.replace("EU", "") : fixPoco5G;
+    const fixCMFBuds = fixPocoEU.replace("CMF(Nothing)", "CMF")
+    const fixS25FE = fixCMFBuds.replace("S25FE", "S25 FE")
+    const fixZFlip7FE = fixS25FE.replace("Z Flip 7FE", "SZ Flip 7 FE")
+    const fixMi15 = fixZFlip7FE.replace("Mi15", "Mi 15")
+    const fixMagic7Pro = fixMi15.replace("Magic7 Pro", "Magic 7 Pro")
 
-  return fixPocoEU;
+  return fixMagic7Pro;
 };
