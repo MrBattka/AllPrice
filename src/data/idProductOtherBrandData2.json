@@ -1686,7 +1686,9 @@
             "12/256",
             "black"
         ],
-        "exclude": []
+        "exclude": [
+            "gaming"
+        ]
     },
     "36080": {
         "include": [
@@ -1695,7 +1697,9 @@
             "16/512",
             "black"
         ],
-        "exclude": []
+        "exclude": [
+            "gaming"
+        ]
     },
     "36865": {
         "include": [
