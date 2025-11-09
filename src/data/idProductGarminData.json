@@ -2155,5 +2155,164 @@
             "green"
         ],
         "exclude": []
+    },
+    "41605": {
+        "include": [
+            "venu 4",
+            "41",
+            "silver",
+            "periwinkle",
+            "silicone"
+        ],
+        "exclude": []
+    },
+    "41606": {
+        "include": [
+            "venu 4",
+            "45",
+            "slate",
+            "black",
+            "silicone"
+        ],
+        "exclude": [
+            "brown leather"
+        ]
+    },
+    "41623": {
+        "include": [
+            "venu 4",
+            "41",
+            "gold",
+            "bone",
+            "silicone"
+        ],
+        "exclude": [
+            "sand leather"
+        ]
+    },
+    "41624": {
+        "include": [
+            "venu 4",
+            "41",
+            "slate",
+            "black",
+            "silicone"
+        ],
+        "exclude": []
+    },
+    "41625": {
+        "include": [
+            "venu 4",
+            "41",
+            "gold",
+            "bone",
+            "silicone",
+            "sand leather"
+        ],
+        "exclude": []
+    },
+    "41627": {
+        "include": [
+            "venu 4",
+            "45",
+            "silver",
+            "silver gray",
+            "silicone"
+        ],
+        "exclude": []
+    },
+    "41628": {
+        "include": [
+            "venu 4",
+            "45",
+            "silver",
+            "citron",
+            "silicone"
+        ],
+        "exclude": []
+    },
+    "41629": {
+        "include": [
+            "venu 4",
+            "45",
+            "slate",
+            "black",
+            "silicone",
+            "brown leather"
+        ],
+        "exclude": []
+    },
+    "41607": {
+        "include": [
+            "fenix 8 pro",
+            "47",
+            "amoled",
+            "carbon gray",
+            "pebble",
+            "silicone"
+        ],
+        "exclude": []
+    },
+    "41608": {
+        "include": [
+            "fenix 8 pro",
+            "51",
+            "amoled",
+            "carbon gray",
+            "pebble",
+            "silicone"
+        ],
+        "exclude": []
+    },
+    "41639": {
+        "include": [
+            "fenix 8 pro",
+            "47",
+            "amoled",
+            "carbon gray",
+            "chestnut"
+        ],
+        "exclude": []
+    },
+    "41641": {
+        "include": [
+            "fenix 8 pro",
+            "47",
+            "amoled",
+            "graphite",
+            "black",
+            "silicone"
+        ],
+        "exclude": []
+    },
+    "41642": {
+        "include": [
+            "fenix 8 pro",
+            "51",
+            "amoled",
+            "carbon gray",
+            "chestnut"
+        ],
+        "exclude": []
+    },
+    "41643": {
+        "include": [
+            "fenix 8 pro",
+            "51",
+            "titanium",
+            "graphite",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41644": {
+        "include": [
+            "fenix 8 pro",
+            "microled",
+            "carbon gray",
+            "pebble",
+            "silicone"
+        ],
+        "exclude": []
     }
 }

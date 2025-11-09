@@ -8462,5 +8462,213 @@
             "silver"
         ],
         "exclude": []
+    },
+    "41575": {
+        "include": [
+            "redmagic 11 pro",
+            "12/256",
+            "black",
+            "cryo"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "41583": {
+        "include": [
+            "redmagic 11 pro",
+            "24/1tb",
+            "black",
+            "cryo"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "41584": {
+        "include": [
+            "redmagic 11 pro",
+            "16/512",
+            "black",
+            "cryo"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "41587": {
+        "include": [
+            "redmagic 11 pro",
+            "12/256",
+            "silver"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "41585": {
+        "include": [
+            "redmagic 11 pro",
+            "24/1tb",
+            "silver"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "41586": {
+        "include": [
+            "redmagic 11 pro",
+            "16/512",
+            "silver"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "41588": {
+        "include": [
+            "redmagic 11 pro",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "cryo",
+            "plus"
+        ]
+    },
+    "41590": {
+        "include": [
+            "redmagic 11 pro",
+            "24/1tb",
+            "black"
+        ],
+        "exclude": [
+            "cryo",
+            "plus"
+        ]
+    },
+    "41589": {
+        "include": [
+            "redmagic 11 pro",
+            "16/512",
+            "black"
+        ],
+        "exclude": [
+            "cryo",
+            "plus"
+        ]
+    },
+    "41576": {
+        "include": [
+            "redmagic 11 pro plus",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "trans"
+        ]
+    },
+    "41594": {
+        "include": [
+            "redmagic 11 pro plus",
+            "24/1tb",
+            "black"
+        ],
+        "exclude": [
+            "trans"
+        ]
+    },
+    "41593": {
+        "include": [
+            "redmagic 11 pro plus",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": [
+            "trans"
+        ]
+    },
+    "41592": {
+        "include": [
+            "redmagic 11 pro plus",
+            "16/512",
+            "black"
+        ],
+        "exclude": [
+            "trans"
+        ]
+    },
+    "41598": {
+        "include": [
+            "redmagic 11 pro plus",
+            "12/256",
+            "black",
+            "trans"
+        ],
+        "exclude": []
+    },
+    "41595": {
+        "include": [
+            "redmagic 11 pro plus",
+            "24/1tb",
+            "black",
+            "trans"
+        ],
+        "exclude": []
+    },
+    "41596": {
+        "include": [
+            "redmagic 11 pro plus",
+            "16/1tb",
+            "black",
+            "trans"
+        ],
+        "exclude": []
+    },
+    "41597": {
+        "include": [
+            "redmagic 11 pro plus",
+            "16/512",
+            "black",
+            "trans"
+        ],
+        "exclude": []
+    },
+    "41599": {
+        "include": [
+            "redmagic 11 pro plus",
+            "12/256",
+            "silver",
+            "trans"
+        ],
+        "exclude": []
+    },
+    "41602": {
+        "include": [
+            "redmagic 11 pro plus",
+            "24/1tb",
+            "silver",
+            "trans"
+        ],
+        "exclude": []
+    },
+    "41601": {
+        "include": [
+            "redmagic 11 pro plus",
+            "16/1tb",
+            "silver",
+            "trans"
+        ],
+        "exclude": []
+    },
+    "41600": {
+        "include": [
+            "redmagic 11 pro plus",
+            "16/512",
+            "silver",
+            "trans"
+        ],
+        "exclude": []
     }
 }
