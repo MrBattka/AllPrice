@@ -535,3 +535,37 @@ export const returnStockPriceUnimtrn = (name) => {
 
   return replaceCA.replace(" ", "");
 };
+
+export function splitNamePrice(items = []) {
+  return (items || [])
+    .map((it) => {
+      const parsed = parseNamePrice(it);
+      return parsed ? { original: it.name, name: parsed.name, price: parsed.price } : null;
+    })
+    .filter(Boolean);
+}
+
+export const parseNamePrice = (item) => {
+  const s = item && typeof item.name === "string" ? item.name.trim() : "";
+  if (!s) return null;
+  // Берём последнюю последовательность цифр (возможны пробелы внутри числа)
+  const m = s.match(/(\d[\d\s]*)\s*$/);
+  const price = m ? parseInt(m[1].replace(/\s+/g, ""), 10) : null;
+  // Обрезаем только найденную ценовую часть — эмодзи перед ценой останутся в name
+  const name = m ? s.slice(0, s.length - m[0].length).trim() : s;
+  if (!name) return null;
+  return name;
+}
+
+export const parsePrice = (item) => {
+  const s = (item && item.name) ? item.name.toString().trim() : "";
+  if (!s) return null;
+  // Берём последнюю последовательность цифр (возможно с пробелами)
+  const priceMatch = s.match(/(\d[\d\s]*)\s*$/);
+  const price = priceMatch ? parseInt(priceMatch[1].replace(/\s+/g, ""), 10) : null;
+  // Удаляем цену и возможные флаги/эмодзи в конце
+  let name = priceMatch ? s.slice(0, s.length - priceMatch[0].length).trim() : s;
+  name = name.replace(/[\u{1F1E6}-\u{1F1FF}\u{1F300}-\u{1F6FF}]+$/u, "").trim();
+  if (!name) return null;
+  return price;
+}

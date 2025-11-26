@@ -136,6 +136,8 @@ import {
 } from "../Trub/helpers/helpers";
 import {
   fixNameUnimtrn,
+  parseNamePrice,
+  parsePrice,
   returnNameInArrUnimtrn,
   returnStockPriceUnimtrn,
 } from "../Unimtrn/helpers/helpers";
@@ -170,10 +172,10 @@ const processors = {
   unimtrn: {
     processItem: (unimtrn) => ({
       id: getIdByNameTest(
-        defaultFixName(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)))
+        defaultFixName(fixNameUnimtrn(unimtrn.name))
       ),
-      name: returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)),
-      stockPrice: returnStockPriceUnimtrn(unimtrn.name),
+      name: parseNamePrice(unimtrn),
+      stockPrice: parsePrice(unimtrn),
       provider: "Метреон",
     }),
     filters: [baseFix],

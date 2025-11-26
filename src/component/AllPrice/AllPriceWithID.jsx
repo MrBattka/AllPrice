@@ -40,6 +40,8 @@ import style from "../styles.module.css";
 import TableAllPrice from "../CreateAllPriceTable/TableAllPrice";
 import {
   fixNameUnimtrn,
+  parseNamePrice,
+  parsePrice,
   returnNameInArrUnimtrn,
   returnStockPriceUnimtrn,
 } from "../Unimtrn/helpers/helpers";
@@ -170,16 +172,16 @@ const processors = {
     filters: [baseFixVsemi],
   },
   unimtrn: {
-    processItem: (unimtrn) => ({
-      id: getIdByNameTest(
-        defaultFixName(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)))
-      ),
-      name: returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)),
-      stockPrice: returnStockPriceUnimtrn(unimtrn.name),
-      provider: "Метреон",
-    }),
-    filters: [baseFix],
-  },
+      processItem: (unimtrn) => ({
+        id: getIdByNameTest(
+          defaultFixName(fixNameUnimtrn(unimtrn.name))
+        ),
+        name: parseNamePrice(unimtrn),
+        stockPrice: parsePrice(unimtrn),
+        provider: "Метреон",
+      }),
+      filters: [baseFix],
+    },
   hi: {
     processItem: (hi) => ({
       id: getIdByNameTest(

@@ -136,6 +136,8 @@ import {
 } from "../Trub/helpers/helpers";
 import {
   fixNameUnimtrn,
+  parseNamePrice,
+  parsePrice,
   returnNameInArrUnimtrn,
   returnStockPriceUnimtrn,
 } from "../Unimtrn/helpers/helpers";
@@ -170,16 +172,16 @@ const processors = {
     filters: [baseFixVsemi],
   },
   unimtrn: {
-    processItem: (unimtrn) => ({
-      id: getIdByNameQuickID(
-        defaultFixName(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)))
-      ),
-      name: returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)),
-      stockPrice: returnStockPriceUnimtrn(unimtrn.name),
-      provider: "Метреон",
-    }),
-    filters: [baseFix],
-  },
+      processItem: (unimtrn) => ({
+        id: getIdByNameQuickID(
+          defaultFixName(fixNameUnimtrn(unimtrn.name))
+        ),
+        name: parseNamePrice(unimtrn),
+        stockPrice: parsePrice(unimtrn),
+        provider: "Метреон",
+      }),
+      filters: [baseFix],
+    },
   hi: {
     processItem: (hi) => ({
       id: getIdByNameQuickID(
