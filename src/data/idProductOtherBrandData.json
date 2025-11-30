@@ -102,7 +102,8 @@
             "black"
         ],
         "exclude": [
-            "pro"
+            "pro",
+            "fe"
         ]
     },
     "37812": {
@@ -112,7 +113,8 @@
             "white"
         ],
         "exclude": [
-            "pro"
+            "pro",
+            "fe"
         ]
     },
     "37808": {
@@ -122,7 +124,8 @@
             "black"
         ],
         "exclude": [
-            "pro"
+            "pro",
+            "fe"
         ]
     },
     "37810": {
@@ -132,8 +135,39 @@
             "white"
         ],
         "exclude": [
-            "pro"
+            "pro",
+            "fe"
         ]
+    },
+    "41704": {
+        "include": [
+            "rog phone 9",
+            "12/512",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "fe"
+        ]
+    },
+    "41707": {
+        "include": [
+            "rog phone 9",
+            "12/512",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "fe"
+        ]
+    },
+    "41708": {
+        "include": [
+            "rog phone 9 fe",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
     },
     "37795": {
         "include": [
@@ -4308,5 +4342,290 @@
             "gray"
         ],
         "exclude": []
+    },
+    "41663": {
+        "include": [
+            "oneplus 15 ",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41680": {
+        "include": [
+            "oneplus 15 ",
+            "12/256",
+            "storm"
+        ],
+        "exclude": []
+    },
+    "41679": {
+        "include": [
+            "oneplus 15 ",
+            "12/256",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "41672": {
+        "include": [
+            "oneplus 15 ",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41683": {
+        "include": [
+            "oneplus 15 ",
+            "12/512",
+            "storm"
+        ],
+        "exclude": []
+    },
+    "41677": {
+        "include": [
+            "oneplus 15 ",
+            "12/512",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "41674": {
+        "include": [
+            "oneplus 15 ",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41684": {
+        "include": [
+            "oneplus 15 ",
+            "16/1tb",
+            "storm"
+        ],
+        "exclude": []
+    },
+    "41675": {
+        "include": [
+            "oneplus 15 ",
+            "16/1tb",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "41671": {
+        "include": [
+            "oneplus 15 ",
+            "16/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41681": {
+        "include": [
+            "oneplus 15 ",
+            "16/256",
+            "storm"
+        ],
+        "exclude": []
+    },
+    "41678": {
+        "include": [
+            "oneplus 15 ",
+            "16/256",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "41673": {
+        "include": [
+            "oneplus 15 ",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "41682": {
+        "include": [
+            "oneplus 15 ",
+            "16/512",
+            "storm"
+        ],
+        "exclude": []
+    },
+    "41676": {
+        "include": [
+            "oneplus 15 ",
+            "16/512",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "41669": {
+        "include": [
+            "oneplus ace 6 ",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41695": {
+        "include": [
+            "oneplus ace 6 ",
+            "12/256",
+            "silver"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41694": {
+        "include": [
+            "oneplus ace 6 ",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41688": {
+        "include": [
+            "oneplus ace 6 ",
+            "12/512",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41697": {
+        "include": [
+            "oneplus ace 6 ",
+            "12/512",
+            "silver"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41692": {
+        "include": [
+            "oneplus ace 6 ",
+            "12/512",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41689": {
+        "include": [
+            "oneplus ace 6 ",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41699": {
+        "include": [
+            "oneplus ace 6 ",
+            "16/1tb",
+            "silver"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41690": {
+        "include": [
+            "oneplus ace 6 ",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41686": {
+        "include": [
+            "oneplus ace 6 ",
+            "16/256",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41696": {
+        "include": [
+            "oneplus ace 6 ",
+            "16/256",
+            "silver"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41693": {
+        "include": [
+            "oneplus ace 6 ",
+            "16/256",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41687": {
+        "include": [
+            "oneplus ace 6 ",
+            "16/512",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41698": {
+        "include": [
+            "oneplus ace 6 ",
+            "16/512",
+            "silver"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "41691": {
+        "include": [
+            "oneplus ace 6 ",
+            "16/512",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
     }
 }

@@ -7658,10 +7658,77 @@
       "tab s10 fe +"
     ]
   },
+  "41718": {
+    "include": [
+      "tab s10 fe",
+      "12/256",
+      "blue"
+    ],
+    "exclude": [
+      "tab s10 fe +",
+      "5g"
+    ]
+  },
+  "41723": {
+    "include": [
+      "tab s10 fe",
+      "12/256",
+      "gray"
+    ],
+    "exclude": [
+      "tab s10 fe +",
+      "5g"
+    ]
+  },
+  "41722": {
+    "include": [
+      "tab s10 fe",
+      "12/256",
+      "silver"
+    ],
+    "exclude": [
+      "tab s10 fe +",
+      "5g"
+    ]
+  },
+  "41720": {
+    "include": [
+      "tab s10 fe",
+      "8/128",
+      "blue"
+    ],
+    "exclude": [
+      "tab s10 fe +",
+      "5g"
+    ]
+  },
+  "41724": {
+    "include": [
+      "tab s10 fe",
+      "8/128",
+      "gray"
+    ],
+    "exclude": [
+      "tab s10 fe +",
+      "5g"
+    ]
+  },
+  "41721": {
+    "include": [
+      "tab s10 fe",
+      "8/128",
+      "silver"
+    ],
+    "exclude": [
+      "tab s10 fe +",
+      "5g"
+    ]
+  },
   "38968": {
     "include": [
       "tab s10 fe +",
       "12/256",
+      "5g",
       "blue"
     ],
     "exclude": []
@@ -7670,6 +7737,7 @@
     "include": [
       "tab s10 fe +",
       "12/256",
+      "5g",
       "gray"
     ],
     "exclude": []
@@ -7678,6 +7746,7 @@
     "include": [
       "tab s10 fe +",
       "12/256",
+      "5g",
       "silver"
     ],
     "exclude": []
@@ -7686,6 +7755,7 @@
     "include": [
       "tab s10 fe +",
       "8/128",
+      "5g",
       "blue"
     ],
     "exclude": []
@@ -7694,6 +7764,7 @@
     "include": [
       "tab s10 fe +",
       "8/128",
+      "5g",
       "gray"
     ],
     "exclude": []
@@ -7702,9 +7773,70 @@
     "include": [
       "tab s10 fe +",
       "8/128",
+      "5g",
       "silver"
     ],
     "exclude": []
+  },
+  "41702": {
+    "include": [
+      "tab s10 fe +",
+      "12/256",
+      "blue"
+    ],
+    "exclude": [
+      "5g"
+    ]
+  },
+  "41715": {
+    "include": [
+      "tab s10 fe +",
+      "12/256",
+      "gray"
+    ],
+    "exclude": [
+      "5g"
+    ]
+  },
+  "41714": {
+    "include": [
+      "tab s10 fe +",
+      "12/256",
+      "silver"
+    ],
+    "exclude": [
+      "5g"
+    ]
+  },
+  "41712": {
+    "include": [
+      "tab s10 fe +",
+      "8/128",
+      "blue"
+    ],
+    "exclude": [
+      "5g"
+    ]
+  },
+  "41716": {
+    "include": [
+      "tab s10 fe +",
+      "8/128",
+      "gray"
+    ],
+    "exclude": [
+      "5g"
+    ]
+  },
+  "41713": {
+    "include": [
+      "tab s10 fe +",
+      "8/128",
+      "silver"
+    ],
+    "exclude": [
+      "5g"
+    ]
   },
   "38212": {
     "include": [
@@ -9149,8 +9281,7 @@
     "exclude": [
       "5g"
     ]
-  }
-  ,
+  },
   "41616": {
     "include": [
       "a17 4/128",
@@ -9186,9 +9317,7 @@
     "exclude": [
       "5g"
     ]
-  }
-
-  ,
+  },
   "41578": {
     "include": [
       "galaxy buds 3 fe black"
