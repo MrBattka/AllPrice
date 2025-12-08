@@ -162,8 +162,8 @@ export const returnStockPriceInfinity = (name) => {
 
   let reverseBackStrName = replaceDoubleSpace.split("").reverse().join("");
 
-  let removeOther = reverseBackStrName.indexOf(" ")
-    ? reverseBackStrName.split(" ")[0]
+  let removeOther = reverseBackStrName.indexOf(" ") !== -1
+    ? reverseBackStrName.split("-")[0]
     : reverseBackStrName;
   let removeFire = removeOther.replace("💥", "");
 

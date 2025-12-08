@@ -29,7 +29,7 @@ import {
   baseFixVsemi,
 } from "../../helpers/baseFix";
 import { defaultFixName } from "../../helpers/defaultFixName";
-import { returnFixPriceHi } from "../../helpers/fixFlags";
+import { returnFixPriceBase, returnFixPriceHi } from "../../helpers/fixFlags";
 import { getIdByNameTest } from "../../helpers/returnIDByNameTest";
 import {
   returnFixNameA18,
@@ -297,8 +297,8 @@ const processors = {
   },
   base: {
     processItem: (base) => ({
-      id: getIdByNameTest(defaultFixName(returnFixNameBase(base.name))),
-      name: returnFixNameBase(base.name),
+      id: getIdByNameTest(defaultFixName(returnFixPriceBase(base, returnFixNameBase(base.name)))),
+      name: returnFixPriceBase(base, returnFixNameBase(base.name)),
       stockPrice: base.price,
       provider: "База",
     }),

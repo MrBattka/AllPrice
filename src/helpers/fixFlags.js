@@ -182,3 +182,17 @@ export const returnFixPriceHi = (el, prod) => {
     return prod;
   }
 };
+
+export const checkFixPriceBase = (el) => {
+  return flags.reduce(
+    (acc, current) => acc && el.name.indexOf(current) === -1,
+    true
+  );
+};
+export const returnFixPriceBase = (el, prod) => {
+  if (checkFixPriceBase(el)) {
+    return `${prod} - `;
+  } else {
+    return changeFlag(prod);
+  }
+};

@@ -50,7 +50,7 @@ import {
   returnNameInArrHi,
   returnStockPriceHi,
 } from "../Hi/helpers/helpers";
-import { returnFixPriceHi } from "../../helpers/fixFlags";
+import { returnFixPriceBase, returnFixPriceHi } from "../../helpers/fixFlags";
 import {
   fixNameMihonor,
   returnNameInArrMihonor,
@@ -299,8 +299,8 @@ const processors = {
   },
   base: {
     processItem: (base) => ({
-      id: getIdByNameTest(defaultFixName(returnFixNameBase(base.name))),
-      name: returnFixNameBase(base.name),
+      id: getIdByNameTest(defaultFixName(returnFixPriceBase(base, returnFixNameBase(base.name)))),
+      name: returnFixPriceBase(base, returnFixNameBase(base.name)),
       stockPrice: base.price,
       provider: "База",
     }),

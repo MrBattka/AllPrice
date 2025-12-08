@@ -5,6 +5,7 @@ import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { returnFixNameBase } from "./helpers/helpers";
+import { returnFixPriceBase } from "../../helpers/fixFlags";
 
 const IndexBase = ({ el, baseData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,13 +19,13 @@ const IndexBase = ({ el, baseData }) => {
       baseFixBase(base)
     ) {
       return (
-        getIdByName(defaultFixName(returnFixNameBase(base.name))) !==
-          "No match" &&
+        getIdByName(defaultFixName(returnFixPriceBase(base, returnFixNameBase(base.name)))) !==
+        "No match" &&
         base.price &&
         baseFixBase(base) &&
         resultArr.push({
-          id: getIdByName(defaultFixName(returnFixNameBase(base.name))),
-          name: returnFixNameBase(base.name),
+          id: getIdByName(defaultFixName(returnFixPriceBase(base, returnFixNameBase(base.name)))),
+          name: returnFixPriceBase(base, returnFixNameBase(base.name)),
           stockPrice: base.price,
           provider: "База",
         })
