@@ -3679,7 +3679,10 @@
         "8/128",
         "blue"
       ],
-      "exclude": []
+      "exclude": [
+        "m1",
+        "x1"
+      ]
     },
     "37120": {
       "include": [
@@ -3687,7 +3690,10 @@
         "8/128",
         "gray"
       ],
-      "exclude": []
+      "exclude": [
+        "m1",
+        "x1"
+      ]
     },
     "37119": {
       "include": [
@@ -3695,7 +3701,10 @@
         "8/256",
         "blue"
       ],
-      "exclude": []
+      "exclude": [
+        "m1",
+        "x1"
+      ]
     },
     "37118": {
       "include": [
@@ -3703,7 +3712,10 @@
         "8/256",
         "gray"
       ],
-      "exclude": []
+      "exclude": [
+        "m1",
+        "x1"
+      ]
     },
     "30200": {
       "include": [
@@ -6677,5 +6689,139 @@
       "exclude": [
         "5g"
       ]
+    },
+    "42009": {
+      "include": [
+        "poco f8 pro",
+        "12/256",
+        "black"
+      ],
+      "exclude": []
+    },
+    "42029": {
+      "include": [
+        "poco f8 pro",
+        "12/256",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "42041": {
+      "include": [
+        "poco f8 pro",
+        "12/256",
+        "silver"
+      ],
+      "exclude": []
+    },
+    "42025": {
+      "include": [
+        "poco f8 pro",
+        "12/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "42028": {
+      "include": [
+        "poco f8 pro",
+        "12/512",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "42027": {
+      "include": [
+        "poco f8 pro",
+        "12/512",
+        "silver"
+      ],
+      "exclude": []
+    },
+    "42010": {
+      "include": [
+        "poco f8 ultra",
+        "12/256",
+        "black"
+      ],
+      "exclude": []
+    },
+    "42033": {
+      "include": [
+        "poco f8 ultra",
+        "12/256",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "42031": {
+      "include": [
+        "poco f8 ultra",
+        "16/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "42032": {
+      "include": [
+        "poco f8 ultra",
+        "16/512",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "42040": {
+      "include": [
+        "poco pad",
+        "m1",
+        "8/256",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "42035": {
+      "include": [
+        "poco pad",
+        "m1",
+        "8/256",
+        "gray"
+      ],
+      "exclude": []
+    },
+    "42058": {
+      "include": [
+        "poco pad",
+        "x1",
+        "8/256",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "42036": {
+      "include": [
+        "poco pad",
+        "x1",
+        "8/256",
+        "gray"
+      ],
+      "exclude": []
+    },
+    "42057": {
+      "include": [
+        "poco pad",
+        "x1",
+        "8/512",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "42056": {
+      "include": [
+        "poco pad",
+        "x1",
+        "8/512",
+        "gray"
+      ],
+      "exclude": []
     }
   }

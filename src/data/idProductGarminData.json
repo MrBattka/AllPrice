@@ -2314,5 +2314,90 @@
             "silicone"
         ],
         "exclude": []
+    },
+    "42013": {
+        "include": [
+            "lily 2",
+            "cream",
+            "coconut"
+        ],
+        "exclude": [
+            "active",
+            "classic"
+        ]
+    },
+    "42012": {
+        "include": [
+            "lily 2",
+            "metallic",
+            "lilac"
+        ],
+        "exclude": [
+            "active",
+            "classic"
+        ]
+    },
+    "42019": {
+        "include": [
+            "lily 2",
+            "active",
+            "jasper",
+            "jasper"
+        ],
+        "exclude": []
+    },
+    "42018": {
+        "include": [
+            "lily 2",
+            "active",
+            "lunar",
+            "bone"
+        ],
+        "exclude": []
+    },
+    "41746": {
+        "include": [
+            "lily 2",
+            "active",
+            "silver",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "42016": {
+        "include": [
+            "lily 2",
+            "classic",
+            "cream",
+            "coffee"
+        ],
+        "exclude": []
+    },
+    "42014": {
+        "include": [
+            "lily 2",
+            "classic",
+            "cream",
+            "tan"
+        ],
+        "exclude": []
+    },
+    "42015": {
+        "include": [
+            "lily 2",
+            "classic",
+            "dark",
+            "mulberry"
+        ],
+        "exclude": []
+    },
+    "42017": {
+        "include": [
+            "lily 2",
+            "classic",
+            "silver",
+            "sage"
+        ],
+        "exclude": []
     }
 }

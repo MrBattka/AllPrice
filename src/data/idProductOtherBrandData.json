@@ -1363,6 +1363,7 @@
     "38771": {
         "include": [
             "oneplus watch 3",
+            "46",
             "black"
         ],
         "exclude": []
@@ -1370,6 +1371,7 @@
     "38793": {
         "include": [
             "oneplus watch 3",
+            "46",
             "silver"
         ],
         "exclude": []

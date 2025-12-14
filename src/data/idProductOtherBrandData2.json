@@ -8670,5 +8670,167 @@
             "trans"
         ],
         "exclude": []
+    },
+    "41751": {
+        "include": [
+            "nothing phone ",
+            "3a",
+            "lite",
+            "8/128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42023": {
+        "include": [
+            "nothing phone ",
+            "3a",
+            "lite",
+            "8/128",
+            "white"
+        ],
+        "exclude": []
+    },
+    "42021": {
+        "include": [
+            "nothing phone ",
+            "3a",
+            "lite",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42022": {
+        "include": [
+            "nothing phone ",
+            "3a",
+            "lite",
+            "8/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "42038": {
+        "include": [
+            "honor 500",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "42047": {
+        "include": [
+            "honor 500",
+            "12/256",
+            "silver"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "42048": {
+        "include": [
+            "honor 500",
+            "12/256",
+            "blue"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "42053": {
+        "include": [
+            "honor 500",
+            "12/256",
+            "pink"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "42043": {
+        "include": [
+            "honor 500",
+            "12/512",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "42046": {
+        "include": [
+            "honor 500",
+            "12/512",
+            "silver"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "42049": {
+        "include": [
+            "honor 500",
+            "12/512",
+            "blue"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "42052": {
+        "include": [
+            "honor 500",
+            "12/512",
+            "pink"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    }
+
+    ,
+    "42044": {
+        "include": [
+            "honor 500",
+            "16/512",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "42045": {
+        "include": [
+            "honor 500",
+            "16/512",
+            "silver"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "42050": {
+        "include": [
+            "honor 500",
+            "16/512",
+            "blue"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "42051": {
+        "include": [
+            "honor 500",
+            "16/512",
+            "pink"
+        ],
+        "exclude": [
+            "pro"
+        ]
     }
 }
