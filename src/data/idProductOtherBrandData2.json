@@ -4,7 +4,9 @@
             "xbox",
             " x "
         ],
-        "exclude": []
+        "exclude": [
+            "digital"
+        ]
     },
     "24537": {
         "include": [
