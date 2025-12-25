@@ -15,7 +15,7 @@ export const fixNameInfinity = (name) => {
   const fix2TB = fix1TB.replace("2 TB", "2TB");
   const fixAirPods = fix2TB.replace("Air Pods", "AirPods");
   const fixeSIM = fixAirPods.replace("eSIM", "🇺🇸");
-  const fixeSIM1 = fixeSIM.replace("(e-sim)", "🇺🇸");
+  const fixeSIM1 = fixeSIM.indexOf("🇺🇸") === -1 ? fixeSIM.replace("(e-sim)", "🇺🇸") : fixeSIM
   const fix2SIM = fixeSIM1.replace("(2-sim)", "dual");
   const fixStarlight = fix2SIM.replace("Starting", "Starlight")
   return fixStarlight;
@@ -140,7 +140,8 @@ export const returnStockPriceInfinity = (name) => {
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceZA = replaceKR.replace("🇿🇦", "");
   let replace2Sim = replaceZA.replace("2sim", "");
-  let replaceBuds3White = replace2Sim.replace("Buds 3 White", "");
+  let replaceESim = replace2Sim.replace("(e-sim)", "");
+  let replaceBuds3White = replaceESim.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
     "Tab S9FE 8/256 Lavender 5G",
     ""
