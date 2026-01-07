@@ -72,19 +72,86 @@ export const fixNameNarod = (name) => {
   const fix256G = fix128G.replace("256G ", "256 ");
   const fix8Pro = fix256G.replace("8Pro", "8 Pro");
   const fixFE = fix8Pro.replace(" FF ", " FE ");
-  
-  
-  const fixWhite1 = fixFE.replace("Белый", "White");
+  const fixA56 = fixFE.replace("А56", "A56");
+  const fixA36 = fixA56.replace("А36", "A36");
+  const fixA26 = fixA36.replace("А26", "A26");
+  const fixA17 = fixA26.replace("A176/128", "A17 6/128");
+  const fixWhite1 = fixA17.replace("Белый", "White");
   const fixSnow = fixWhite1.indexOf("PIXEL") !== -1 ? fixWhite1.replace("WHITE", "Snow") : fixWhite1
   const fixBay = fixSnow.indexOf("Pixel") !== -1 ? fixSnow.replace("Галубой", "Bay") : fixSnow
   const fixBay1 = fixBay.indexOf("Pixel") !== -1 ? fixBay.replace("Голубой", "Bay") : fixBay
   const fixCreamZFlip6 = fixBay1.indexOf("Flip") !== -1 ? fixBay1.replace("Бежевый", "Cream") : fixBay1
+
+  const replace5G =
+    fixCreamZFlip6.indexOf("M55 ") !== -1 ||
+   fixCreamZFlip6.indexOf("A25 ") !== -1 ||
+   fixCreamZFlip6.indexOf("A35 ") !== -1 ||
+   fixCreamZFlip6.indexOf("A55 ") !== -1 ||
+   fixCreamZFlip6.indexOf("A26 ") !== -1 ||
+   fixCreamZFlip6.indexOf("A36 ") !== -1 ||
+   fixCreamZFlip6.indexOf("A56 ") !== -1 ||
+   fixCreamZFlip6.indexOf("S24 ") !== -1 ||
+   fixCreamZFlip6.indexOf("S25 ") !== -1 ||
+   fixCreamZFlip6.indexOf("Mi 1") !== -1 ||
+   fixCreamZFlip6.indexOf("POCO") !== -1 ||
+   fixCreamZFlip6.indexOf("X7 ") !== -1
+      ? fixCreamZFlip6.replace("5G", "")
+      : fixCreamZFlip6;
   
-  return fixCreamZFlip6;
+  return replace5G;
+};
+
+const checkFlags = (str) => {
+  let checkSpace1 = str[str.length - 1] === " " ? str.slice(0, -1) : str;
+  let checkSpace2 =
+    checkSpace1[checkSpace1.length - 1] === " "
+      ? checkSpace1.slice(0, -1)
+      : checkSpace1;
+  let checkSpace3 =
+    checkSpace2[checkSpace2.length - 1] === " "
+      ? checkSpace2.slice(0, -1)
+      : checkSpace2;
+  let checkSpace4 =
+    checkSpace3[checkSpace3.length - 1] === " "
+      ? checkSpace3.slice(0, -1)
+      : checkSpace3;
+
+  if (
+    checkSpace4.slice(-4) === `🇯🇵` ||
+    checkSpace4.slice(-4) === "🇮🇳" ||
+    checkSpace4.slice(-4) === "🇪🇺" ||
+    checkSpace4.slice(-4) === "🇦🇪" ||
+    checkSpace4.slice(-4) === "🇧🇷" ||
+    checkSpace4.slice(-4) === "🇻🇳" ||
+    checkSpace4.slice(-4) === "🇰🇼" ||
+    checkSpace4.slice(-4) === "🇺🇸" ||
+    checkSpace4.slice(-4) === "🇭🇰" ||
+    checkSpace4.slice(-4) === "🇬🇧" ||
+    checkSpace4.slice(-4) === "🇨🇳" ||
+    checkSpace4.slice(-4) === "🇹🇼" ||
+    checkSpace4.slice(-4) === "🇷🇺" ||
+    checkSpace4.slice(-4) === "🇦🇺" ||
+    checkSpace4.slice(-4) === "🇨🇦" ||
+    checkSpace4.slice(-4) === "🇨🇱" ||
+    checkSpace4.slice(-4) === "🇹🇭" ||
+    checkSpace4.slice(-4) === "🇸🇬" ||
+    checkSpace4.slice(-4) === "🇲🇾" ||
+    checkSpace4.slice(-4) === "🇨🇫" ||
+    checkSpace4.slice(-4) === "🇰🇿" ||
+    checkSpace4.slice(-4) === "🇰🇷" ||
+    checkSpace4.slice(-4) === "🇬🇺"
+  ) {
+    return (
+      checkSpace4.slice(-4) + checkSpace4.substring(0, checkSpace4.length - 4)
+    );
+  } else {
+    return checkSpace4;
+  }
 };
 
 export const returnNameNarod = (name) => {
-  let reverseStrName = name.split("").reverse().join("");
+  let replaceFlag = checkFlags(name);
+  let reverseStrName = replaceFlag.split("").reverse().join("");
   let splitPrice =
     reverseStrName.indexOf(" ") != -1
       ? /\s(.+)/.exec(reverseStrName)[1]
