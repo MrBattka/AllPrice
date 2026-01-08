@@ -18,6 +18,7 @@ import {
   baseFixMiHonor,
   baseFixMiOpts,
   baseFixMTA,
+  baseFixNarod,
   baseFixOther,
   baseFixRacmag,
   baseFixReSale,
@@ -149,6 +150,7 @@ import {
 } from "../Trub/helpers/helpers";
 import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 import { getIdByNameTest } from "../../helpers/returnIDByNameTest";
+import { returnNameNarod, returnStockPriceNarod } from "../Narod/helpers/helpers";
 
 const processors = {
   superprice: {
@@ -272,6 +274,15 @@ const processors = {
         provider: "Re:Sale",
       },
     filters: [baseFixReSale],
+  },
+  narod: {
+    processItem: (narod) => ({
+      id: getIdByNameTest(defaultFixName(returnNameNarod(narod.name))),
+      name: returnNameNarod(narod.name),
+      stockPrice: returnStockPriceNarod(narod.name),
+      provider: "Народ",
+    }),
+    filters: [baseFixNarod],
   },
   f51: {
     processItem: (f51) => ({
@@ -492,6 +503,7 @@ const AllPriceWithID = ({
   artiData,
   electrozonData,
   resaleData,
+  narodData,
   f51Data,
   discountData,
   baseData,
@@ -526,6 +538,7 @@ const AllPriceWithID = ({
     results.push(...processData(artiData, processors.arti, isOpen));
     results.push(...processData(electrozonData, processors.electrozon, isOpen));
     results.push(...processData(resaleData, processors.resale, isOpen));
+    results.push(...processData(narodData, processors.narod, isOpen));
     results.push(...processData(f51Data, processors.f51, isOpen));
     results.push(...processData(discountData, processors.discount, isOpen));
     results.push(...processData(baseData, processors.base, isOpen));
@@ -559,6 +572,7 @@ const AllPriceWithID = ({
     artiData,
     electrozonData,
     resaleData,
+    narodData,
     f51Data,
     discountData,
     baseData,
