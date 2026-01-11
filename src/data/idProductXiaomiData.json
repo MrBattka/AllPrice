@@ -4103,7 +4103,7 @@
         "6/128",
         "gray"
       ],
-      "exclude": []
+      "exclude": ["redmi pad pro 2"]
     },
     "36747": {
       "include": [
@@ -4111,7 +4111,7 @@
         "6/128",
         "blue"
       ],
-      "exclude": []
+      "exclude": ["redmi pad pro 2"]
     },
     "36748": {
       "include": [
@@ -4119,7 +4119,7 @@
         "6/128",
         "green"
       ],
-      "exclude": []
+      "exclude": ["redmi pad pro 2"]
     },
     "36750": {
       "include": [
@@ -4127,7 +4127,7 @@
         "8/128",
         "gray"
       ],
-      "exclude": []
+      "exclude": ["redmi pad pro 2"]
     },
     "36749": {
       "include": [
@@ -4135,7 +4135,7 @@
         "8/128",
         "blue"
       ],
-      "exclude": []
+      "exclude": ["redmi pad pro 2"]
     },
     "36751": {
       "include": [
@@ -4143,7 +4143,7 @@
         "8/128",
         "green"
       ],
-      "exclude": []
+      "exclude": ["redmi pad pro 2"]
     },
     "36753": {
       "include": [
@@ -4151,7 +4151,7 @@
         "8/256",
         "gray"
       ],
-      "exclude": []
+      "exclude": ["redmi pad pro 2"]
     },
     "36752": {
       "include": [
@@ -4159,7 +4159,7 @@
         "8/256",
         "blue"
       ],
-      "exclude": []
+      "exclude": ["redmi pad pro 2"]
     },
     "36754": {
       "include": [
@@ -4167,7 +4167,7 @@
         "8/256",
         "green"
       ],
-      "exclude": []
+      "exclude": ["redmi pad pro 2"]
     },
     "27369": {
       "include": [

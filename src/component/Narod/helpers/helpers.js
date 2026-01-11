@@ -139,7 +139,9 @@ const checkFlags = (str) => {
     checkSpace4.slice(-4) === "🇨🇫" ||
     checkSpace4.slice(-4) === "🇰🇿" ||
     checkSpace4.slice(-4) === "🇰🇷" ||
-    checkSpace4.slice(-4) === "🇬🇺"
+    checkSpace4.slice(-4) === "🇬🇺" ||
+    checkSpace4.slice(-4) === "🇳🇿" ||
+    checkSpace4.slice(-4) === "🇿🇦"
   ) {
     return (
       checkSpace4.slice(-4) + checkSpace4.substring(0, checkSpace4.length - 4)
@@ -189,7 +191,10 @@ export const returnStockPriceNarod = (name) => {
   let replaceGU = replaceKR.replace("🇬🇺", "");
   let replacePA = replaceGU.replace("🇵🇦", "");
   let replaceMC = replacePA.replace("🇲🇨", "");
-  const replaceDot = replaceMC.replace(".", "");
+  let replaceNZ = replaceMC.replace("🇳🇿", "");
+  let replaceZA = replaceNZ.replace("🇿🇦", "");
+  
+  const replaceDot = replaceZA.replace(".", "");
   const replaceRub = replaceDot.replace("₽", "");
 
   let reverseStrName = replaceRub.split("").reverse().join("");
@@ -223,7 +228,11 @@ export const returnExtraPriceS5 = (name) => {
   let replaceCF = replaceMY.replace("🇨🇫", "");
   let replaceKZ = replaceCF.replace("🇰🇿", "");
   let replaceKR = replaceKZ.replace("🇰🇷", "");
-  let replaceBuds3White = replaceKR.replace("Buds 3 White", "");
+  let replaceNZ = replaceKR.replace("🇳🇿", "");
+  let replaceZA = replaceNZ.replace("🇿🇦", "");
+
+
+  let replaceBuds3White = replaceZA.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
     "Tab S9FE 8/256 Lavender 5G",
     ""
