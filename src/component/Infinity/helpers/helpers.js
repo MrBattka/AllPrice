@@ -171,6 +171,7 @@ export const returnStockPriceInfinity = (name) => {
   let removeDot =
     removeFire.indexOf(",") !== -1 ? removeFire.replace(",", "") : removeFire;
   let removeUS = removeDot.replace("🇺🇸", "");
-  const fixFlags1 = checkFlags(removeUS);
+  let removeDot1 = removeUS.replace(".", "");
+  const fixFlags1 = checkFlags(removeDot1);
   return fixFlags1;
 };
