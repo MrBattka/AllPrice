@@ -24,7 +24,8 @@ const IndexGarminNotID = ({ el, garminData }) => {
     ) {
       return (
         getIdByName(defaultFixName(fixNameGarmin(garmin.name))) === "No match" &&
-        returnStockPriceGarmin(garmin.name) &&
+        returnStockPriceGarmin(garmin.name) && 
+        returnStockPriceGarmin(fixNameGarmin(garmin.name)).indexOf("00") !== -1 &&
         resultArr.push({
           id: getIdByName(defaultFixName(
             returnFixNameProductGarmin(fixNameGarmin(garmin.name)))

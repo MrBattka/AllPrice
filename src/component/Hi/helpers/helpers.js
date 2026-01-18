@@ -205,7 +205,7 @@ export const returnStockPriceHi = (name) => {
 
   let removeStick = s.replace("-", "")
   
-  let fixZero1 = removeStick.replace("50600️", "50600");
+  let fixZero1 = removeStick.replace("0️", "0");
 
   return fixZero1.replace(" ", "");
 };

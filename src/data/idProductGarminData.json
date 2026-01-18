@@ -58,7 +58,7 @@
             "gen 2",
             "47",
             "black",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro"
@@ -83,7 +83,7 @@
             "47",
             "slate",
             "gray",
-            "black band"
+            "black"
         ],
         "exclude": []
     },
@@ -95,7 +95,7 @@
             "51",
             "slate",
             "gray",
-            "black band"
+            "black"
         ],
         "exclude": []
     },
@@ -107,7 +107,7 @@
             "42",
             "carbon",
             "gray dic",
-            "black band"
+            "black"
         ],
         "exclude": []
     },
@@ -141,7 +141,7 @@
             "47",
             "carbon",
             "gray dic",
-            "black band"
+            "black"
         ],
         "exclude": []
     },
@@ -164,7 +164,7 @@
             "51",
             "carbon",
             "gray dic",
-            "black band"
+            "black"
         ],
         "exclude": []
     },
@@ -197,7 +197,7 @@
             "solar",
             "gray dic",
             "carbon",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro"
@@ -209,7 +209,7 @@
             "sapphire",
             "solar",
             "slate gray",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro"
@@ -221,7 +221,7 @@
             "sapphire",
             "solar",
             "black dic",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro"
@@ -284,7 +284,7 @@
             "solar",
             "carbon",
             "gray dic",
-            "black band"
+            "black"
         ],
         "exclude": []
     },
@@ -303,7 +303,7 @@
             "fenix 7 pro",
             "solar",
             "slate gray",
-            "black band"
+            "black"
         ],
         "exclude": [
             "sapphire"
@@ -316,7 +316,7 @@
             "solar",
             "carbon",
             "gray dic",
-            "black band"
+            "black"
         ],
         "exclude": []
     },
@@ -348,7 +348,7 @@
             "sapphire",
             "carbon",
             "gray dic",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro"
@@ -611,7 +611,7 @@
             "fenix 7s",
             "solar",
             "slate gray",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro",
@@ -627,7 +627,7 @@
             "solar",
             "aus",
             "slate gray",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro",
@@ -640,7 +640,7 @@
             "solar",
             "emea",
             "slate gray",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro",
@@ -653,7 +653,7 @@
             "solar",
             "enz",
             "slate gray",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro",
@@ -665,7 +665,7 @@
             "fenix 7x",
             "solar",
             "slate gray",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro",
@@ -679,7 +679,7 @@
             "sapphire",
             "carbon",
             "gray dic",
-            "black band"
+            "black"
         ],
         "exclude": []
     },
@@ -699,7 +699,7 @@
             "solar",
             "no wi-fi",
             "slate gray",
-            "black band"
+            "black"
         ],
         "exclude": [
             "sapphire"
@@ -710,7 +710,7 @@
             "fenix 7x",
             "solar",
             "slate gray",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro",
@@ -723,7 +723,7 @@
             "solar",
             "sapphire",
             "black dic",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro"
@@ -736,7 +736,7 @@
             "sapphire",
             "carbon",
             "gray dic",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro"
@@ -998,7 +998,7 @@
             "amoled",
             "51",
             "slate gray",
-            "black band"
+            "black"
         ],
         "exclude": [
             "pro",
@@ -2073,7 +2073,7 @@
             "42",
             "slate gray",
             "translucent",
-            "black/black band"
+            "black/black"
         ],
         "exclude": []
     },
@@ -2111,7 +2111,7 @@
             "47",
             "indigo",
             "translucent",
-            "black/black band"
+            "black/black"
         ],
         "exclude": []
     },
