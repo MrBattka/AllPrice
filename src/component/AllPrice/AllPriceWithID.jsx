@@ -152,6 +152,49 @@ import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 import { getIdByNameTest } from "../../helpers/returnIDByNameTest";
 import { returnNameNarod, returnStockPriceNarod } from "../Narod/helpers/helpers";
 
+
+const isSeparator = (str) => /^[-—]{10,}$/.test(str.trim());
+const isMetadata = (str) => /G-Opt,|GadgetPark/.test(str);
+const hasPrice = (str) => /-\s*\d{2,}\s*\d{0,3}/.test(str);
+
+const extractArticle = (str) => {
+  const match = str.trim().match(/010-\d{5,6}-\d{2}/);
+  return match ? match[0] : "";
+};
+
+const processGarminData = (garminData) => {
+  const processedItems = [];
+  if (!garminData || !Array.isArray(garminData)) return [];
+
+  for (let i = 0; i < garminData.length; i++) {
+    const item = garminData[i];
+    if (!item?.name || typeof item.name !== "string") continue;
+
+    const name = item.name.trim();
+
+    if (isSeparator(name) || isMetadata(name)) continue;
+
+    if (hasPrice(name)) {
+      let article = "";
+
+      if (i + 1 < garminData.length) {
+        const nextItem = garminData[i + 1];
+        if (nextItem?.name && typeof nextItem.name === "string") {
+          const nextName = nextItem.name.trim();
+          if (nextName.includes("Артикул:") || nextName.match(/010-/)) {
+            article = extractArticle(nextName);
+            i++; // пропускаем строку с артикулом
+          }
+        }
+      }
+
+      processedItems.push({ name, article });
+    }
+  }
+
+  return processedItems;
+};
+
 const processors = {
   superprice: {
     processItem: (superprice) => ({
@@ -174,16 +217,16 @@ const processors = {
     filters: [baseFixVsemi],
   },
   unimtrn: {
-      processItem: (unimtrn) => ({
-        id: getIdByNameTest(
-          defaultFixName(fixNameUnimtrn(unimtrn.name))
-        ),
-        name: parseNamePrice(unimtrn),
-        stockPrice: parsePrice(unimtrn),
-        provider: "Метреон",
-      }),
-      filters: [baseFix],
-    },
+    processItem: (unimtrn) => ({
+      id: getIdByNameTest(
+        defaultFixName(fixNameUnimtrn(unimtrn.name))
+      ),
+      name: parseNamePrice(unimtrn),
+      stockPrice: parsePrice(unimtrn),
+      provider: "Метреон",
+    }),
+    filters: [baseFix],
+  },
   hi: {
     processItem: (hi) => ({
       id: getIdByNameTest(
@@ -208,15 +251,24 @@ const processors = {
     filters: [baseFixMiHonor],
   },
   garmin: {
-    processItem: (garmin) => ({
-      id: getIdByNameTest(
-        defaultFixName(returnFixNameProductGarmin(fixNameGarmin(garmin.name)))
-      ),
-      name: returnFixNameProductGarmin(fixNameGarmin(garmin.name)),
-      stockPrice: returnStockPriceGarmin(fixNameGarmin(garmin.name)),
-      provider: "Garmin",
-    }),
-    filters: [baseFixGarmin],
+    processItem: (garmin) => {
+      const cleanName = fixNameGarmin(garmin.name);
+      const fullName = returnFixNameProductGarmin(cleanName, garmin.article);
+      const stockPrice = returnStockPriceGarmin(garmin.name);
+
+      if (!stockPrice) return null;
+
+      const id = getIdByNameTest(defaultFixName(fullName));
+      if (id === "No match") return null;
+
+      return {
+        id,
+        name: fullName,
+        stockPrice,
+        provider: "Garmin",
+      };
+    },
+    filters: () => true, // фильтрация уже в processGarminData
   },
   S5: {
     processItem: (S5) => ({
@@ -265,7 +317,7 @@ const processors = {
   resale: {
     processItem: (resale) =>
       returnStockPriceReSale(returnFixNameReSale(resale.name)).indexOf("00") !==
-        -1 && {
+      -1 && {
         id: getIdByNameTest(
           defaultFixName(returnNameReSale(returnFixNameReSale(resale.name)))
         ),
@@ -527,12 +579,19 @@ const AllPriceWithID = ({
   const allPriceArr = useMemo(() => {
     const results = [];
 
+    const processedGarmin = processGarminData(dataGarmin);
+
     results.push(...processData(dataSuperprice, processors.superprice, isOpen));
     results.push(...processData(dataVsemi, processors.vsemi, isOpen));
     results.push(...processData(dataUnimtrn, processors.unimtrn, isOpen));
     results.push(...processData(dataHi, processors.hi, isOpen));
     results.push(...processData(dataMihonor, processors.mihonor, isOpen));
-    results.push(...processData(dataGarmin, processors.garmin, isOpen));
+    results.push(
+      ...processedGarmin
+        .map((item) => processors.garmin.processItem(item))
+        .filter(Boolean),
+        isOpen
+    );
     results.push(...processData(S5Data, processors.S5, isOpen));
     results.push(...processData(racmagData, processors.racmag, isOpen));
     results.push(...processData(artiData, processors.arti, isOpen));
