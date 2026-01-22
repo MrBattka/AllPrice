@@ -5,35 +5,48 @@ import idProductGarminData from "../data/idProductGarminData.json";
 import idProductOtherBrandData from "../data/idProductOtherBrandData.json";
 import idProductOtherBrandData2 from "../data/idProductOtherBrandData2.json";
 import { memoize } from "lodash";
+import { articleToIdMap } from "../data/articleToIdMap";
 
 const checkEntry = (name, entry) => {
   const [id, params] = entry;
   const isAllNecessaryIncluded = params.include.every(
-    (item) => name.indexOf(item) !== -1
+    (item) => name.includes(item)
   );
   const isAllExcludeNotInName = params.exclude.every(
-    (item) => name.indexOf(item) === -1
+    (item) => !name.includes(item)
   );
-  if (isAllNecessaryIncluded && isAllExcludeNotInName) return id;
-  return null;
+  return isAllNecessaryIncluded && isAllExcludeNotInName ? id : null;
 };
 
 export const getIdByName = memoize((name) => {
-  const toLowerCase = name.toLowerCase();
+  const lowerName = name.toLowerCase();
+
+  // Шаг 1: Поиск по ключевым словам (как раньше)
   const entries = Object.entries({
     ...idProductAppleData,
     ...idProductSamsungData,
     ...idProductXiaomiData,
     ...idProductGarminData,
     ...idProductOtherBrandData,
-    ...idProductOtherBrandData2
+    ...idProductOtherBrandData2,
   });
 
-  return (
-    entries
-      .map((entry) => checkEntry(toLowerCase, entry))
-      .filter((i) => i !== null)[0] ?? "No match"
-  );
-})
+  const foundById = entries
+    .map((entry) => checkEntry(lowerName, entry))
+    .find((id) => id !== null);
 
+  if (foundById) {
+    return foundById;
+  }
 
+  // Шаг 2: Поиск по артикулу
+  const articleMatch = lowerName.match(/010-\d{5,6}-\d{2}/i);
+  if (articleMatch) {
+    const article = articleMatch[0].toUpperCase(); // нормализуем
+    if (articleToIdMap[article]) {
+      return articleToIdMap[article];
+    }
+  }
+
+  return "No match";
+});
