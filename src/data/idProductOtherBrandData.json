@@ -4629,5 +4629,328 @@
             "pro",
             "ultra"
         ]
+    },
+    "42124": {
+        "include": [
+            "oneplus 15r",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42168": {
+        "include": [
+            "oneplus 15r",
+            "12/256",
+            "purple"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42167": {
+        "include": [
+            "oneplus 15r",
+            "12/256",
+            "green"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42165": {
+        "include": [
+            "oneplus 15r",
+            "12/512",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42169": {
+        "include": [
+            "oneplus 15r",
+            "12/512",
+            "purple"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42166": {
+        "include": [
+            "oneplus 15r",
+            "12/512",
+            "green"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42116": {
+        "include": [
+            "ace 6t",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42152": {
+        "include": [
+            "ace 6t",
+            "12/256",
+            "green"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42149": {
+        "include": [
+            "ace 6t",
+            "12/256",
+            "purple"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42142": {
+        "include": [
+            "ace 6t",
+            "12/512",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42153": {
+        "include": [
+            "ace 6t",
+            "12/512",
+            "green"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42148": {
+        "include": [
+            "ace 6t",
+            "12/512",
+            "purple"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42145": {
+        "include": [
+            "ace 6t",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42155": {
+        "include": [
+            "ace 6t",
+            "16/1tb",
+            "green"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42146": {
+        "include": [
+            "ace 6t",
+            "16/1tb",
+            "purple"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42144": {
+        "include": [
+            "ace 6t",
+            "16/256",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42151": {
+        "include": [
+            "ace 6t",
+            "16/256",
+            "green"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42150": {
+        "include": [
+            "ace 6t",
+            "16/256",
+            "purple"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42143": {
+        "include": [
+            "ace 6t",
+            "16/512",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42154": {
+        "include": [
+            "ace 6t",
+            "16/512",
+            "green"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42147": {
+        "include": [
+            "ace 6t",
+            "16/512",
+            "purple"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "42161": {
+        "include": [
+            "oneplus pad go 2",
+            "8/128",
+            "purple"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42238": {
+        "include": [
+            "oneplus pad go 2",
+            "8/128",
+            "purple",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "42119": {
+        "include": [
+            "oneplus pad go 2",
+            "8/128",
+            "black"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42163": {
+        "include": [
+            "oneplus pad go 2",
+            "8/128",
+            "black",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "42237": {
+        "include": [
+            "oneplus pad go 2",
+            "8/256",
+            "purple",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "42236": {
+        "include": [
+            "oneplus pad go 2",
+            "8/256",
+            "black",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "42160": {
+        "include": [
+            "oneplus pad go 2",
+            "8/256",
+            "purple"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42159": {
+        "include": [
+            "oneplus pad go 2",
+            "8/256",
+            "black"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42117": {
+        "include": [
+            "oneplus watch 3 lite",
+            "43",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42157": {
+        "include": [
+            "oneplus watch 3 lite",
+            "43",
+            "steel"
+        ],
+        "exclude": []
     }
 }

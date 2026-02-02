@@ -4103,7 +4103,9 @@
         "6/128",
         "gray"
       ],
-      "exclude": ["redmi pad pro 2"]
+      "exclude": [
+        "redmi pad pro 2"
+      ]
     },
     "36747": {
       "include": [
@@ -4111,7 +4113,9 @@
         "6/128",
         "blue"
       ],
-      "exclude": ["redmi pad pro 2"]
+      "exclude": [
+        "redmi pad pro 2"
+      ]
     },
     "36748": {
       "include": [
@@ -4119,7 +4123,9 @@
         "6/128",
         "green"
       ],
-      "exclude": ["redmi pad pro 2"]
+      "exclude": [
+        "redmi pad pro 2"
+      ]
     },
     "36750": {
       "include": [
@@ -4127,7 +4133,9 @@
         "8/128",
         "gray"
       ],
-      "exclude": ["redmi pad pro 2"]
+      "exclude": [
+        "redmi pad pro 2"
+      ]
     },
     "36749": {
       "include": [
@@ -4135,7 +4143,9 @@
         "8/128",
         "blue"
       ],
-      "exclude": ["redmi pad pro 2"]
+      "exclude": [
+        "redmi pad pro 2"
+      ]
     },
     "36751": {
       "include": [
@@ -4143,7 +4153,9 @@
         "8/128",
         "green"
       ],
-      "exclude": ["redmi pad pro 2"]
+      "exclude": [
+        "redmi pad pro 2"
+      ]
     },
     "36753": {
       "include": [
@@ -4151,7 +4163,9 @@
         "8/256",
         "gray"
       ],
-      "exclude": ["redmi pad pro 2"]
+      "exclude": [
+        "redmi pad pro 2"
+      ]
     },
     "36752": {
       "include": [
@@ -4159,7 +4173,9 @@
         "8/256",
         "blue"
       ],
-      "exclude": ["redmi pad pro 2"]
+      "exclude": [
+        "redmi pad pro 2"
+      ]
     },
     "36754": {
       "include": [
@@ -4167,7 +4183,9 @@
         "8/256",
         "green"
       ],
-      "exclude": ["redmi pad pro 2"]
+      "exclude": [
+        "redmi pad pro 2"
+      ]
     },
     "27369": {
       "include": [
@@ -5905,145 +5923,169 @@
     },
     "40694": {
       "include": [
-        "note 15 12/256 black"
+        "note 15 12/256 black",
+        "5g"
       ],
       "exclude": []
     },
     "40702": {
       "include": [
-        "note 15 12/256 blue"
+        "note 15 12/256 blue",
+        "5g"
       ],
       "exclude": []
     },
     "40695": {
       "include": [
-        "note 15 12/256 white"
+        "note 15 12/256 white",
+        "5g"
       ],
       "exclude": []
     },
     "40609": {
       "include": [
-        "note 15 6/128 black"
+        "note 15 6/128 black",
+        "5g"
       ],
       "exclude": []
     },
     "40699": {
       "include": [
-        "note 15 6/128 blue"
+        "note 15 6/128 blue",
+        "5g"
       ],
       "exclude": []
     },
     "40698": {
       "include": [
-        "note 15 6/128 white"
+        "note 15 6/128 white",
+        "5g"
       ],
       "exclude": []
     },
     "40692": {
       "include": [
-        "note 15 8/128 black"
+        "note 15 8/128 black",
+        "5g"
       ],
       "exclude": []
     },
     "40700": {
       "include": [
-        "note 15 8/128 blue"
+        "note 15 8/128 blue",
+        "5g"
       ],
       "exclude": []
     },
     "40697": {
       "include": [
-        "note 15 8/128 white"
+        "note 15 8/128 white",
+        "5g"
       ],
       "exclude": []
     },
     "40693": {
       "include": [
-        "note 15 8/256 black"
+        "note 15 8/256 black",
+        "5g"
       ],
       "exclude": []
     },
     "40701": {
       "include": [
-        "note 15 8/256 blue"
+        "note 15 8/256 blue",
+        "5g"
       ],
       "exclude": []
     },
     "40696": {
       "include": [
-        "note 15 8/256 white"
+        "note 15 8/256 white",
+        "5g"
       ],
       "exclude": []
     },
     "40704": {
       "include": [
-        "note 15 pro 12/256 black"
+        "note 15 pro 12/256 black",
+        "5g"
       ],
       "exclude": []
     },
     "40711": {
       "include": [
-        "note 15 pro 12/256 blue"
+        "note 15 pro 12/256 blue",
+        "5g"
       ],
       "exclude": []
     },
     "40707": {
       "include": [
-        "note 15 pro 12/256 purple"
+        "note 15 pro 12/256 purple",
+        "5g"
       ],
       "exclude": []
     },
     "40712": {
       "include": [
-        "note 15 pro 12/256 white"
+        "note 15 pro 12/256 white",
+        "5g"
       ],
       "exclude": []
     },
     "40705": {
       "include": [
-        "note 15 pro 12/512 black"
+        "note 15 pro 12/512 black",
+        "5g"
       ],
       "exclude": []
     },
     "40721": {
       "include": [
-        "note 15 pro 12/512 blue"
+        "note 15 pro 12/512 blue",
+        "5g"
       ],
       "exclude": []
     },
     "40706": {
       "include": [
-        "note 15 pro 12/512 purple"
+        "note 15 pro 12/512 purple",
+        "5g"
       ],
       "exclude": []
     },
     "40713": {
       "include": [
-        "note 15 pro 12/512 white"
+        "note 15 pro 12/512 white",
+        "5g"
       ],
       "exclude": []
     },
     "40610": {
       "include": [
-        "note 15 pro 8/256 black"
+        "note 15 pro 8/256 black",
+        "5g"
       ],
       "exclude": []
     },
     "40709": {
       "include": [
-        "note 15 pro 8/256 blue"
+        "note 15 pro 8/256 blue",
+        "5g"
       ],
       "exclude": []
     },
     "40708": {
       "include": [
-        "note 15 pro 8/256 purple"
+        "note 15 pro 8/256 purple",
+        "5g"
       ],
       "exclude": []
     },
     "40714": {
       "include": [
-        "note 15 pro 8/256 white"
+        "note 15 pro 8/256 white",
+        "5g"
       ],
       "exclude": []
     },
@@ -6823,5 +6865,720 @@
         "gray"
       ],
       "exclude": []
+    },
+    "42130": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "black",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42234": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "black"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42214": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "purple",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42250": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "purple"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42209": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "green",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42245": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "green"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42208": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42244": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "white"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42204": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "black",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42241": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "black"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42212": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "purple",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42248": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "purple"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42211": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "green",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42247": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "green"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42206": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42242": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "white"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42203": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "black",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42240": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "black"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42213": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "purple",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42249": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "purple"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42210": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "green",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42246": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "green"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42207": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42243": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "white"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42216": {
+      "include": [
+        "poco m8",
+        "6/128",
+        "black"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42222": {
+      "include": [
+        "poco m8",
+        "6/128",
+        "green"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42223": {
+      "include": [
+        "poco m8",
+        "6/128",
+        "silver"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42217": {
+      "include": [
+        "poco m8",
+        "8/128",
+        "black"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42221": {
+      "include": [
+        "poco m8",
+        "8/128",
+        "green"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42224": {
+      "include": [
+        "poco m8",
+        "8/128",
+        "silver"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42131": {
+      "include": [
+        "poco m8",
+        "8/256",
+        "black"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42220": {
+      "include": [
+        "poco m8",
+        "8/256",
+        "green"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42225": {
+      "include": [
+        "poco m8",
+        "8/256",
+        "silver"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42218": {
+      "include": [
+        "poco m8",
+        "8/512",
+        "black"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42219": {
+      "include": [
+        "poco m8",
+        "8/512",
+        "green"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42226": {
+      "include": [
+        "poco m8",
+        "8/512",
+        "silver"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "42228": {
+      "include": [
+        "poco m8 pro",
+        "12/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "42229": {
+      "include": [
+        "poco m8 pro",
+        "12/512",
+        "green"
+      ],
+      "exclude": []
+    },
+    "42231": {
+      "include": [
+        "poco m8 pro",
+        "12/512",
+        "silver"
+      ],
+      "exclude": []
+    },
+    "42133": {
+      "include": [
+        "poco m8 pro",
+        "8/256",
+        "black"
+      ],
+      "exclude": []
+    },
+    "42230": {
+      "include": [
+        "poco m8 pro",
+        "8/256",
+        "green"
+      ],
+      "exclude": []
+    },
+    "42232": {
+      "include": [
+        "poco m8 pro",
+        "8/256",
+        "silver"
+      ],
+      "exclude": []
+    },
+    "42126": {
+      "include": [
+        "note 15",
+        "6/128",
+        "black"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42191": {
+      "include": [
+        "note 15",
+        "6/128",
+        "green"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42181": {
+      "include": [
+        "note 15",
+        "6/128",
+        "blue"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42182": {
+      "include": [
+        "note 15",
+        "6/128",
+        "purple"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42174": {
+      "include": [
+        "note 15",
+        "6/256",
+        "black"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42190": {
+      "include": [
+        "note 15",
+        "6/256",
+        "green"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42179": {
+      "include": [
+        "note 15",
+        "6/256",
+        "blue"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42184": {
+      "include": [
+        "note 15",
+        "6/256",
+        "purple"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42173": {
+      "include": [
+        "note 15",
+        "8/128",
+        "black"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42192": {
+      "include": [
+        "note 15",
+        "8/128",
+        "green"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42180": {
+      "include": [
+        "note 15",
+        "8/128",
+        "blue"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42183": {
+      "include": [
+        "note 15",
+        "8/128",
+        "purple"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42175": {
+      "include": [
+        "note 15",
+        "8/256",
+        "black"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42189": {
+      "include": [
+        "note 15",
+        "8/256",
+        "green"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42178": {
+      "include": [
+        "note 15",
+        "8/256",
+        "blue"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42185": {
+      "include": [
+        "note 15",
+        "8/256",
+        "purple"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42176": {
+      "include": [
+        "note 15",
+        "8/512",
+        "black"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42188": {
+      "include": [
+        "note 15",
+        "8/512",
+        "green"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42177": {
+      "include": [
+        "note 15",
+        "8/512",
+        "blue"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42187": {
+      "include": [
+        "note 15",
+        "8/512",
+        "purple"
+      ],
+      "exclude": [
+        "5g",
+        "pro"
+      ]
+    },
+    "42194": {
+      "include": [
+        "note 15 pro",
+        "12/256",
+        "black"
+      ],
+      "exclude": [
+        "5g",
+        "pro +"
+      ]
+    },
+    "42197": {
+      "include": [
+        "note 15 pro",
+        "12/256",
+        "blue"
+      ],
+      "exclude": [
+        "5g",
+        "pro +"
+      ]
+    },
+    "42200": {
+      "include": [
+        "note 15 pro",
+        "12/256",
+        "titanium"
+      ],
+      "exclude": [
+        "5g",
+        "pro +"
+      ]
+    },
+    "42195": {
+      "include": [
+        "note 15 pro",
+        "12/512",
+        "black"
+      ],
+      "exclude": [
+        "5g",
+        "pro +"
+      ]
+    },
+    "42196": {
+      "include": [
+        "note 15 pro",
+        "12/512",
+        "blue"
+      ],
+      "exclude": [
+        "5g",
+        "pro +"
+      ]
+    },
+    "42201": {
+      "include": [
+        "note 15 pro",
+        "12/512",
+        "titanium"
+      ],
+      "exclude": [
+        "5g",
+        "pro +"
+      ]
+    },
+    "42128": {
+      "include": [
+        "note 15 pro",
+        "8/256",
+        "black"
+      ],
+      "exclude": [
+        "5g",
+        "pro +"
+      ]
+    },
+    "42198": {
+      "include": [
+        "note 15 pro",
+        "8/256",
+        "blue"
+      ],
+      "exclude": [
+        "5g",
+        "pro +"
+      ]
+    },
+    "42199": {
+      "include": [
+        "note 15 pro",
+        "8/256",
+        "titanium"
+      ],
+      "exclude": [
+        "5g",
+        "pro +"
+      ]
     }
   }

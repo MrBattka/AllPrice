@@ -1902,8 +1902,8 @@
             "venu 3 ",
             "45",
             "steel bezel",
-            "black case",
-            "silicone band"
+            "black",
+            "silicone"
         ],
         "exclude": [
             "pro",
@@ -2397,6 +2397,39 @@
             "classic",
             "silver",
             "sage"
+        ],
+        "exclude": []
+    },
+    "42103": {
+        "include": [
+            "marq ",
+            "athlete",
+            "gen 2"
+        ],
+        "exclude": []
+    },
+    "42105": {
+        "include": [
+            "marq ",
+            "adventurer",
+            "gen 2",
+            "steel"
+        ],
+        "exclude": []
+    },
+    "42107": {
+        "include": [
+            "marq ",
+            "golfer",
+            "gen 2"
+        ],
+        "exclude": []
+    },
+    "42109": {
+        "include": [
+            "venu",
+            "x1",
+            "gold"
         ],
         "exclude": []
     }

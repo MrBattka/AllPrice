@@ -9370,5 +9370,49 @@
       "galaxy buds 3 fe gray"
     ],
     "exclude": []
+  },
+  "42111": {
+    "include": [
+      "z trifold",
+      "16/512",
+      "black"
+    ],
+    "exclude": []
+  },
+  "42136": {
+    "include": [
+      "z trifold",
+      "16/512",
+      "black"
+    ],
+    "exclude": []
+  },
+  "42113": {
+    "include": [
+      "a07 5g 4/128",
+      "black"
+    ],
+    "exclude": []
+  },
+  "42140": {
+    "include": [
+      "a07 5g 4/128",
+      "purple"
+    ],
+    "exclude": []
+  },
+  "42138": {
+    "include": [
+      "a07 5g 6/128",
+      "black"
+    ],
+    "exclude": []
+  },
+  "42139": {
+    "include": [
+      "a07 5g 6/128",
+      "purple"
+    ],
+    "exclude": []
   }
 }
