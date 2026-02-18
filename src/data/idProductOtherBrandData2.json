@@ -41,13 +41,35 @@
             "slim",
             "disc"
         ],
-        "exclude": []
+        "exclude": [
+            "825"
+        ]
     },
     "30946": {
         "include": [
             "ps 5",
             "slim",
             "digital"
+        ],
+        "exclude": [
+            "825"
+        ]
+    },
+    "42305": {
+        "include": [
+            "ps 5",
+            "slim",
+            "disc",
+            "825"
+        ],
+        "exclude": []
+    },
+    "42304": {
+        "include": [
+            "ps 5",
+            "slim",
+            "digital",
+            "825"
         ],
         "exclude": []
     },
@@ -4637,7 +4659,7 @@
     "18848": {
         "include": [
             "яндекс",
-            "2",
+            " 2 ",
             "бел"
         ],
         "exclude": [
@@ -8801,9 +8823,7 @@
         "exclude": [
             "pro"
         ]
-    }
-
-    ,
+    },
     "42044": {
         "include": [
             "honor 500",

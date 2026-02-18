@@ -381,14 +381,20 @@ const processors = {
     filters: [baseFixOther],
   },
   miopts: {
-    processItem: (miopts) => ({
-      id: getIdByNameTest(
-        defaultFixName(returnNameInArrMiOpts(fixNameMiOpts(miopts.name)))
-      ),
-      name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
-      stockPrice: returnStockPriceMiOpts(fixNameMiOpts(miopts.name)),
-      provider: "MiOpts",
-    }),
+    processItem: (miopts) => (
+      miopts.name &&
+      typeof miopts.name === "string" &&
+      returnStockPriceMiOpts(fixNameMiOpts(miopts.name)) > 1000 &&
+      (returnNameInArrMiOpts(miopts.name).indexOf("GB") !== -1 ||
+        returnNameInArrMiOpts(miopts.name).indexOf("TRB") !== -1) &&
+      {
+        id: getIdByNameTest(
+          defaultFixName(returnNameInArrMiOpts(fixNameMiOpts(miopts.name)))
+        ),
+        name: returnNameInArrMiOpts(fixNameMiOpts(miopts.name)),
+        stockPrice: returnStockPriceMiOpts(fixNameMiOpts(miopts.name)),
+        provider: "MiOpts",
+      }),
     filters: [baseFixMiOpts],
   },
   lowPrice: {
@@ -590,7 +596,7 @@ const AllPriceWithID = ({
       ...processedGarmin
         .map((item) => processors.garmin.processItem(item))
         .filter(Boolean),
-        isOpen
+      isOpen
     );
     results.push(...processData(S5Data, processors.S5, isOpen));
     results.push(...processData(racmagData, processors.racmag, isOpen));

@@ -47,17 +47,21 @@ const checkFlags = (str, str2) => {
 
 export const returnNameInArrMiOpts = (name) => {
   const removeDoubleSpace = name.replace(/\s+/g, " ");
-
   let stickToSpace =
-    removeDoubleSpace.indexOf("-") != -1
+    removeDoubleSpace.indexOf("-") !== -1
       ? removeDoubleSpace.replace("-", " ")
       : removeDoubleSpace;
+
   let reverseStrName = stickToSpace.split("").reverse().join("");
-  
-  let splitPrice =
-    reverseStrName.indexOf(" ") !== -1 && reverseStrName !== null
-      ? /\s(.+)/.exec(reverseStrName)[1]
-      : removeDoubleSpace;
+
+  // Проверяем наличие пробела и извлекаем часть после него
+  let splitPrice = null;
+  if (reverseStrName && reverseStrName.length > 7 && reverseStrName.indexOf(" ") !== -1) {
+    const match = /\s(.+)/.exec(reverseStrName);
+    splitPrice = match ? match[1] : ""; // Если нет совпадения — пустая строка
+  } else {
+    splitPrice = removeDoubleSpace;
+  }
 
   let reverseBackStrName = splitPrice.split("").reverse().join("");
   const reverseFlags = checkFlags(removeDoubleSpace, reverseBackStrName);
