@@ -4630,7 +4630,7 @@
     "40311": {
       "include": [
         "redmi 15 ",
-        "4/128",
+        "6/128",
         "purple"
       ],
       "exclude": [
@@ -4640,7 +4640,7 @@
     "40313": {
       "include": [
         "redmi 15 ",
-        "4/128",
+        "6/128",
         "black"
       ],
       "exclude": [
@@ -4650,7 +4650,7 @@
     "40312": {
       "include": [
         "redmi 15 ",
-        "4/128",
+        "6/128",
         "gray"
       ],
       "exclude": [
@@ -6089,175 +6089,321 @@
     },
     "40704": {
       "include": [
-        "note 15 pro 12/256 black",
+        "note 15 pro ",
+        "12/256",
+        "black",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
     "40711": {
       "include": [
-        "note 15 pro 12/256 blue",
+        "note 15 pro ",
+        "12/256",
+        "blue",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
     "40707": {
       "include": [
-        "note 15 pro 12/256 purple",
+        "note 15 pro ",
+        "12/256",
+        "purple",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
-    "40712": {
+    "40707": {
       "include": [
-        "note 15 pro 12/256 white",
+        "note 15 pro ",
+        "12/256",
+        "white",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
     "40705": {
       "include": [
-        "note 15 pro 12/512 black",
+        "note 15 pro ",
+        "12/512",
+        "black",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
     "40721": {
       "include": [
-        "note 15 pro 12/512 blue",
+        "note 15 pro ",
+        "12/512",
+        "blue",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
     "40706": {
       "include": [
-        "note 15 pro 12/512 purple",
+        "note 15 pro ",
+        "12/512",
+        "purple",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
     "40713": {
       "include": [
-        "note 15 pro 12/512 white",
+        "note 15 pro ",
+        "12/512",
+        "white",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
     "40610": {
       "include": [
-        "note 15 pro 8/256 black",
+        "note 15 pro ",
+        "8/256",
+        "black",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
     "40709": {
       "include": [
-        "note 15 pro 8/256 blue",
+        "note 15 pro ",
+        "8/256",
+        "blue",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
     "40708": {
       "include": [
-        "note 15 pro 8/256 purple",
+        "note 15 pro ",
+        "8/256",
+        "purple",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
     },
     "40714": {
       "include": [
-        "note 15 pro 8/256 white",
+        "note 15 pro ",
+        "8/256",
+        "white",
         "5g"
       ],
-      "exclude": []
+      "exclude": [
+        "pro +"
+      ]
+    },
+    "42277": {
+      "include": [
+        "note 15 pro ",
+        "8/512",
+        "black",
+        "5g"
+      ],
+      "exclude": [
+        "pro +"
+      ]
+    },
+    "42278": {
+      "include": [
+        "note 15 pro ",
+        "8/512",
+        "blue",
+        "5g"
+      ],
+      "exclude": [
+        "pro +"
+      ]
+    },
+    "42279": {
+      "include": [
+        "note 15 pro ",
+        "8/512",
+        "purple",
+        "5g"
+      ],
+      "exclude": [
+        "pro +"
+      ]
+    },
+    "42280": {
+      "include": [
+        "note 15 pro ",
+        "8/512",
+        "white",
+        "5g"
+      ],
+      "exclude": [
+        "pro +"
+      ]
     },
     "40611": {
       "include": [
-        "note 15 pro + 12/256 black"
+        "note 15 pro +",
+        "12/256",
+        "black"
       ],
       "exclude": []
     },
     "40723": {
       "include": [
-        "note 15 pro + 12/256 blue"
+        "note 15 pro +",
+        "12/256",
+        "blue"
       ],
       "exclude": []
     },
     "40722": {
       "include": [
-        "note 15 pro + 12/256 purple"
+        "note 15 pro +",
+        "12/256",
+        "purple"
       ],
       "exclude": []
     },
     "40731": {
       "include": [
-        "note 15 pro + 12/256 white"
+        "note 15 pro +",
+        "12/256",
+        "white"
       ],
       "exclude": []
     },
     "40716": {
       "include": [
-        "note 15 pro + 12/512 black"
+        "note 15 pro +",
+        "12/512",
+        "black"
       ],
       "exclude": []
     },
     "40724": {
       "include": [
-        "note 15 pro + 12/512 blue"
+        "note 15 pro +",
+        "12/512",
+        "blue"
       ],
       "exclude": []
     },
     "40720": {
       "include": [
-        "note 15 pro + 12/512 purple"
+        "note 15 pro +",
+        "12/512",
+        "purple"
       ],
       "exclude": []
     },
     "40730": {
       "include": [
-        "note 15 pro + 12/512 white"
+        "note 15 pro +",
+        "12/512",
+        "white"
+      ],
+      "exclude": []
+    },
+    "42285": {
+      "include": [
+        "note 15 pro +",
+        "8/256",
+        "black"
+      ],
+      "exclude": []
+    },
+    "42286": {
+      "include": [
+        "note 15 pro +",
+        "8/256",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "42287": {
+      "include": [
+        "note 15 pro +",
+        "8/256",
+        "brown"
       ],
       "exclude": []
     },
     "40726": {
       "include": [
-        "note 15 pro + 16/1tb blue"
+        "note 15 pro +",
+        "16/1tb",
+        "blue"
       ],
       "exclude": []
     },
     "40718": {
       "include": [
-        "note 15 pro + 16/1tb purple"
+        "note 15 pro +",
+        "16/1tb",
+        "purple"
       ],
       "exclude": []
     },
     "40727": {
       "include": [
-        "note 15 pro + 16/1tb white"
+        "note 15 pro +",
+        "16/1tb",
+        "white"
       ],
       "exclude": []
     },
     "40717": {
       "include": [
-        "note 15 pro + 16/512 black"
+        "note 15 pro +",
+        "16/512",
+        "black"
       ],
       "exclude": []
     },
     "40725": {
       "include": [
-        "note 15 pro + 16/512 blue"
+        "note 15 pro +",
+        "16/512",
+        "blue"
       ],
       "exclude": []
     },
     "40719": {
       "include": [
-        "note 15 pro + 16/512 purple"
+        "note 15 pro +",
+        "16/512",
+        "purple"
       ],
       "exclude": []
     },
     "40729": {
       "include": [
-        "note 15 pro + 16/512 white"
+        "note 15 pro +",
+        "16/512",
+        "white"
       ],
       "exclude": []
     },
@@ -7681,6 +7827,28 @@
       "exclude": [
         "5g",
         "pro +"
+      ]
+    },
+    "42282": {
+      "include": [
+        "poco f7",
+        "12/512",
+        "white"
+      ],
+      "exclude": [
+        "ultra",
+        "pro"
+      ]
+    },
+    "42283": {
+      "include": [
+        "poco f7",
+        "12/256",
+        "white"
+      ],
+      "exclude": [
+        "ultra",
+        "pro"
       ]
     }
   }

@@ -2432,5 +2432,24 @@
             "gold"
         ],
         "exclude": []
+    },
+    "39248": {
+        "include": [
+            "epix pro",
+            "gen 2",
+            "sapphire",
+            "47",
+            "carbon gray",
+            "black"
+        ],
+        "exclude": []
+    },
+    "38330": {
+        "include": [
+            "marq",
+            "adventurer",
+            "gen 2"
+        ],
+        "exclude": []
     }
 }

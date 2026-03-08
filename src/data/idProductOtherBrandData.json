@@ -4952,5 +4952,209 @@
             "steel"
         ],
         "exclude": []
+    },
+    "40353": {
+        "include": [
+            "hd17",
+            "r pro",
+            "pink rose gold"
+        ],
+        "exclude": []
+    },
+    "40352": {
+        "include": [
+            "hd17",
+            "r pro",
+            "jasper plum"
+        ],
+        "exclude": []
+    },
+    "40347": {
+        "include": [
+            "hd16",
+            "nural",
+            "platina",
+            "topaz"
+        ],
+        "exclude": []
+    },
+    "40351": {
+        "include": [
+            "hd16",
+            "nural",
+            "pink",
+            "rose"
+        ],
+        "exclude": []
+    },
+    "40348": {
+        "include": [
+            "hd16",
+            "nural",
+            "strawberry",
+            "bronze"
+        ],
+        "exclude": []
+    },
+    "40346": {
+        "include": [
+            "hd16",
+            "nural",
+            "blue",
+            "topaz"
+        ],
+        "exclude": []
+    },
+    "40345": {
+        "include": [
+            "hd18",
+            "professional",
+            "blue",
+            "topaz"
+        ],
+        "exclude": []
+    },
+    "42255": {
+        "include": [
+            "pixel watch 4 ",
+            "45",
+            "moonstone"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42256": {
+        "include": [
+            "pixel watch 4 ",
+            "41",
+            "silver"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42259": {
+        "include": [
+            "pixel watch 4 ",
+            "41",
+            "moonstone"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42260": {
+        "include": [
+            "pixel watch 4 ",
+            "41",
+            "gold"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42261": {
+        "include": [
+            "pixel watch 4 ",
+            "41",
+            "black"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42262": {
+        "include": [
+            "pixel watch 4 ",
+            "45",
+            "silver"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42263": {
+        "include": [
+            "pixel watch 4 ",
+            "45",
+            "black"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "42266": {
+        "include": [
+            "pixel watch 4 ",
+            "41",
+            "moonstone",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "42488": {
+        "include": [
+            "pixel 10a",
+            "8/128",
+            "berry"
+        ],
+        "exclude": []
+    },
+    "42491": {
+        "include": [
+            "pixel 10a",
+            "8/128",
+            "fog"
+        ],
+        "exclude": []
+    },
+    "42487": {
+        "include": [
+            "pixel 10a",
+            "8/128",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "42363": {
+        "include": [
+            "pixel 10a",
+            "8/128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42489": {
+        "include": [
+            "pixel 10a",
+            "8/256",
+            "berry"
+        ],
+        "exclude": []
+    },
+    "42490": {
+        "include": [
+            "pixel 10a",
+            "8/256",
+            "fog"
+        ],
+        "exclude": []
+    },
+    "42486": {
+        "include": [
+            "pixel 10a",
+            "8/256",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "42485": {
+        "include": [
+            "pixel 10a",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
     }
 }

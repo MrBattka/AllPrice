@@ -295,6 +295,8 @@ export const defaultFixName = (el) => {
   const fixeSim1 =
     (fixPixeJade.indexOf("17 256") !== -1 ||
       fixPixeJade.indexOf("17 512") !== -1 ||
+    fixPixeJade.indexOf("17e 256") !== -1 ||
+    fixPixeJade.indexOf("17e 512") !== -1 ||
       fixPixeJade.indexOf("17 pro 256") !== -1 ||
       fixPixeJade.indexOf("17 pro 512") !== -1 ||
       fixPixeJade.indexOf("17 pro 1tb") !== -1 ||
@@ -309,6 +311,8 @@ export const defaultFixName = (el) => {
   const fixeSim41 =
     (fixeSim1.indexOf("17 256") !== -1 ||
       fixeSim1.indexOf("17 512") !== -1 ||
+    fixeSim1.indexOf("17e 256") !== -1 ||
+    fixeSim1.indexOf("17e 512") !== -1 ||
       fixeSim1.indexOf("17 pro 256") !== -1 ||
       fixeSim1.indexOf("17 pro 512") !== -1 ||
       fixeSim1.indexOf("17 pro 1tb") !== -1 ||
@@ -323,6 +327,8 @@ export const defaultFixName = (el) => {
   const fixeSim =
     (fixeSim41.indexOf("17 256") !== -1 ||
       fixeSim41.indexOf("17 512") !== -1 ||
+    fixeSim41.indexOf("17e 256") !== -1 ||
+    fixeSim41.indexOf("17e 512") !== -1 ||
       fixeSim41.indexOf("17 pro 256") !== -1 ||
       fixeSim41.indexOf("17 pro 512") !== -1 ||
       fixeSim41.indexOf("17 pro 1tb") !== -1 ||
@@ -337,6 +343,8 @@ export const defaultFixName = (el) => {
   const fixDualSim =
     (fixeSim.indexOf("17 256") !== -1 ||
       fixeSim.indexOf("17 512") !== -1 ||
+    fixeSim.indexOf("17e 256") !== -1 ||
+    fixeSim.indexOf("17e 512") !== -1 ||
       fixeSim.indexOf("17 pro 256") !== -1 ||
       fixeSim.indexOf("17 pro 512") !== -1 ||
       fixeSim.indexOf("17 pro 1tb") !== -1 ||
@@ -351,6 +359,8 @@ export const defaultFixName = (el) => {
   const fixeSim0 =
     (fixDualSim.indexOf("17 256") !== -1 ||
       fixDualSim.indexOf("17 512") !== -1 ||
+    fixDualSim.indexOf("17e 256") !== -1 ||
+    fixDualSim.indexOf("17e 512") !== -1 ||
       fixDualSim.indexOf("17 pro 256") !== -1 ||
       fixDualSim.indexOf("17 pro 512") !== -1 ||
       fixDualSim.indexOf("17 pro 1tb") !== -1 ||
@@ -364,6 +374,8 @@ export const defaultFixName = (el) => {
   const fixeSim2 =
     (fixeSim0.indexOf("17 256") !== -1 ||
       fixeSim0.indexOf("17 512") !== -1 ||
+    fixeSim0.indexOf("17e 256") !== -1 ||
+    fixeSim0.indexOf("17e 512") !== -1 ||
       fixeSim0.indexOf("17 pro 256") !== -1 ||
       fixeSim0.indexOf("17 pro 512") !== -1 ||
       fixeSim0.indexOf("17 pro 1tb") !== -1 ||
@@ -377,6 +389,8 @@ export const defaultFixName = (el) => {
   const fixeSim3 =
     (fixeSim2.indexOf("17 256") !== -1 ||
       fixeSim2.indexOf("17 512") !== -1 ||
+    fixeSim2.indexOf("17e 256") !== -1 ||
+    fixeSim2.indexOf("17e 512") !== -1 ||
       fixeSim2.indexOf("17 pro 256") !== -1 ||
       fixeSim2.indexOf("17 pro 512") !== -1 ||
       fixeSim2.indexOf("17 pro 1tb") !== -1 ||
@@ -390,6 +404,8 @@ export const defaultFixName = (el) => {
   const fixeSim4 =
     (fixeSim3.indexOf("17 256") !== -1 ||
       fixeSim3.indexOf("17 512") !== -1 ||
+    fixeSim3.indexOf("17e 256") !== -1 ||
+    fixeSim3.indexOf("17e 512") !== -1 ||
       fixeSim3.indexOf("17 pro 256") !== -1 ||
       fixeSim3.indexOf("17 pro 512") !== -1 ||
       fixeSim3.indexOf("17 pro 1tb") !== -1 ||
@@ -403,6 +419,8 @@ export const defaultFixName = (el) => {
   const fixeSim5 =
     (fixeSim4.indexOf("17 256") !== -1 ||
       fixeSim4.indexOf("17 512") !== -1 ||
+    fixeSim4.indexOf("17e 256") !== -1 ||
+    fixeSim4.indexOf("17e 512") !== -1 ||
       fixeSim4.indexOf("17 pro 256") !== -1 ||
       fixeSim4.indexOf("17 pro 512") !== -1 ||
       fixeSim4.indexOf("17 pro 1tb") !== -1 ||
@@ -416,6 +434,8 @@ export const defaultFixName = (el) => {
   const fixeSim6 =
     (fixeSim5.indexOf("17 256") !== -1 ||
       fixeSim5.indexOf("17 512") !== -1 ||
+    fixeSim5.indexOf("17e 256") !== -1 ||
+    fixeSim5.indexOf("17e 512") !== -1 ||
       fixeSim5.indexOf("17 pro 256") !== -1 ||
       fixeSim5.indexOf("17 pro 512") !== -1 ||
       fixeSim5.indexOf("17 pro 1tb") !== -1 ||
@@ -429,6 +449,8 @@ export const defaultFixName = (el) => {
   const fixeSim7 =
     (fixeSim6.indexOf("17 256") !== -1 ||
       fixeSim6.indexOf("17 512") !== -1 ||
+    fixeSim6.indexOf("17e 256") !== -1 ||
+    fixeSim6.indexOf("17e 512") !== -1 ||
       fixeSim6.indexOf("17 pro 256") !== -1 ||
       fixeSim6.indexOf("17 pro 512") !== -1 ||
       fixeSim6.indexOf("17 pro 1tb") !== -1 ||
@@ -442,6 +464,8 @@ export const defaultFixName = (el) => {
   const fixeSim8 =
     (fixeSim7.indexOf("17 256") !== -1 ||
       fixeSim7.indexOf("17 512") !== -1 ||
+    fixeSim7.indexOf("17e 256") !== -1 ||
+    fixeSim7.indexOf("17e 512") !== -1 ||
       fixeSim7.indexOf("17 pro 256") !== -1 ||
       fixeSim7.indexOf("17 pro 512") !== -1 ||
       fixeSim7.indexOf("17 pro 1tb") !== -1 ||
@@ -455,6 +479,8 @@ export const defaultFixName = (el) => {
   const fixeSim9 =
     (fixeSim8.indexOf("17 256") !== -1 ||
       fixeSim8.indexOf("17 512") !== -1 ||
+    fixeSim8.indexOf("17e 256") !== -1 ||
+    fixeSim8.indexOf("17e 512") !== -1 ||
       fixeSim8.indexOf("17 pro 256") !== -1 ||
       fixeSim8.indexOf("17 pro 512") !== -1 ||
       fixeSim8.indexOf("17 pro 1tb") !== -1 ||
@@ -468,6 +494,8 @@ export const defaultFixName = (el) => {
   const fixeSim110 =
     (fixeSim9.indexOf("17 256") !== -1 ||
       fixeSim9.indexOf("17 512") !== -1 ||
+    fixeSim9.indexOf("17e 256") !== -1 ||
+    fixeSim9.indexOf("17e 512") !== -1 ||
       fixeSim9.indexOf("17 pro 256") !== -1 ||
       fixeSim9.indexOf("17 pro 512") !== -1 ||
       fixeSim9.indexOf("17 pro 1tb") !== -1 ||
@@ -481,6 +509,8 @@ export const defaultFixName = (el) => {
   const fixeSim11 =
     (fixeSim110.indexOf("17 256") !== -1 ||
       fixeSim110.indexOf("17 512") !== -1 ||
+    fixeSim110.indexOf("17e 256") !== -1 ||
+    fixeSim110.indexOf("17e 512") !== -1 ||
       fixeSim110.indexOf("17 pro 256") !== -1 ||
       fixeSim110.indexOf("17 pro 512") !== -1 ||
       fixeSim110.indexOf("17 pro 1tb") !== -1 ||
@@ -506,6 +536,8 @@ export const defaultFixName = (el) => {
     fixMajor5.indexOf("xperia") !== -1 ||
     fixMajor5.indexOf("17 256") !== -1 ||
     fixMajor5.indexOf("17 512") !== -1 ||
+    fixMajor5.indexOf("17e 256") !== -1 ||
+    fixMajor5.indexOf("17e 512") !== -1 ||
     fixMajor5.indexOf("17 pro 256") !== -1 ||
     fixMajor5.indexOf("17 pro 512") !== -1 ||
     fixMajor5.indexOf("17 pro 1tb") !== -1 ||
@@ -519,6 +551,8 @@ export const defaultFixName = (el) => {
   const fixApple2Sim =
     fixXperiaCN.indexOf("17 256") !== -1 ||
     fixXperiaCN.indexOf("17 512") !== -1 ||
+    fixXperiaCN.indexOf("17e 256") !== -1 ||
+    fixXperiaCN.indexOf("17e 512") !== -1 ||
     fixXperiaCN.indexOf("17 pro 256") !== -1 ||
     fixXperiaCN.indexOf("17 pro 512") !== -1 ||
     fixXperiaCN.indexOf("17 pro 1tb") !== -1 ||
@@ -532,6 +566,8 @@ export const defaultFixName = (el) => {
   const fixApple2Sim2 =
     fixApple2Sim.indexOf("17 256") !== -1 ||
     fixApple2Sim.indexOf("17 512") !== -1 ||
+    fixApple2Sim.indexOf("17e 256") !== -1 ||
+    fixApple2Sim.indexOf("17e 512") !== -1 ||
     fixApple2Sim.indexOf("17 pro 256") !== -1 ||
     fixApple2Sim.indexOf("17 pro 512") !== -1 ||
     fixApple2Sim.indexOf("17 pro 1tb") !== -1 ||
@@ -621,13 +657,15 @@ export const defaultFixName = (el) => {
   const fixS24Plus1 = fixS24Plus.replace("s24 +", "S24+");
   const fixS25Plus = fixS24Plus1.replace("s25 plus", "S25+");
   const fixS25Plus1 = fixS25Plus.replace("s25 +", "S25+");
+  const fixS26Plus = fixS25Plus1.replace("s26 plus", "S26+");
+  const fixS26Plus1 = fixS26Plus.replace("s26 +", "S26+");
   const fixA07Gray =
-    fixS25Plus1.indexOf("a07 4/64") !== -1 ||
-    fixS25Plus1.indexOf("a07 4/128") !== -1 ||
-    fixS25Plus1.indexOf("a07 6/128") !== -1 ||
-    fixS25Plus1.indexOf("a07 8/256") !== -1
-      ? fixS25Plus1.replace("black", "gray")
-      : fixS25Plus1;
+    fixS26Plus1.indexOf("a07 4/64") !== -1 ||
+    fixS26Plus1.indexOf("a07 4/128") !== -1 ||
+    fixS26Plus1.indexOf("a07 6/128") !== -1 ||
+    fixS26Plus1.indexOf("a07 8/256") !== -1
+      ? fixS26Plus1.replace("black", "gray")
+      : fixS26Plus1;
 
   const fixS25Icyblue =
     fixA07Gray.indexOf("s25") !== -1
