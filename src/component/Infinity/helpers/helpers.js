@@ -1,4 +1,3 @@
-import { newPrice } from "../../../helpers/NewPrice";
 
 export const fixNameInfinity = (name) => {
   const replaceHeadphone = name.replace("🎧", "");
@@ -8,7 +7,11 @@ export const fixNameInfinity = (name) => {
     "Pencil 1-gen (USB-C)",
     "Pencil USB C "
   );
-  const replaceGb = replaceGen.replace("Gb ", "");
+  const fixPencil = replaceGen.replace(
+    "Pencil (USB-C)",
+    "Pencil USB C "
+  );
+  const replaceGb = fixPencil.replace("Gb ", "");
   const replaceGB = replaceGb.replace("GB ", "");
   const replace2Sim = replaceGB.replace("2sim", "");
   const fix1TB = replace2Sim.replace("1 TB", "1TB");
@@ -81,7 +84,9 @@ const checkFlags = (str) => {
 export const returnNameInArrInfinity = (name) => {
   const fixFlags = checkFlags(name);
 
-  let reverseStrName = fixFlags.split("").reverse().join("");
+  const removeStick = fixFlags.replace("Wi-Fi", "WiFi")
+
+  let reverseStrName = removeStick.split("").reverse().join("");
   let splitPrice =
     reverseStrName.indexOf(" ") !== -1
       ? /\s(.+)/.exec(reverseStrName)[1]
@@ -111,7 +116,9 @@ export const returnNameInArrInfinity = (name) => {
 
   let reverseBackStrName = splitPrice1.split("").reverse().join("");
 
-  return reverseBackStrName;
+  const backStick = reverseBackStrName.replace("WiFi", "Wi-Fi")
+
+  return backStick;
 };
 
 export const returnStockPriceInfinity = (name) => {
@@ -172,6 +179,7 @@ export const returnStockPriceInfinity = (name) => {
     removeFire.indexOf(",") !== -1 ? removeFire.replace(",", "") : removeFire;
   let removeUS = removeDot.replace("🇺🇸", "");
   let removeDot1 = removeUS.replace(".", "");
-  const fixFlags1 = checkFlags(removeDot1);
+  let removeStick = removeDot1.replace("-", "");
+  const fixFlags1 = checkFlags(removeStick);
   return fixFlags1;
 };

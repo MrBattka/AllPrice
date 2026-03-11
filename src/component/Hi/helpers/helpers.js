@@ -2,7 +2,8 @@ import { newPrice } from "../../../helpers/NewPrice";
 
 export const returnNameInArrHi = (name) => {
   let fixUSBC = name.replace("USB-C", "USBC");
-  let fixTYPEC = fixUSBC.replace("TYPE-C", "USBC");
+  let replaceInfo = fixUSBC.indexOf("Bot:") !== -1 ? fixUSBC.split("Bot:")[1] : fixUSBC
+  let fixTYPEC = replaceInfo.replace("TYPE-C", "USBC");
   let fixWiFi = fixTYPEC.replace("Wi-Fi", "WiFi");
   let fixZero = fixWiFi.replace("🛩️", "");
 

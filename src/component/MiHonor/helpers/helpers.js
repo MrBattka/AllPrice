@@ -45,7 +45,10 @@ export const returnStockPriceMihonor = (name) => {
   let splitPrice = removeRUB.indexOf(" ") !== -1 ? removeRUB.split(' ')[0] : removeRUB
   let reverseBackStrName = splitPrice.split("").reverse().join("");
 
-  return reverseBackStrName;
+  let replaceDubleRub = reverseBackStrName.replace("₽₽", "")
+  let replaceRub = replaceDubleRub.replace("₽", "")
+
+  return replaceRub;
 };
 
 export const fixNameMihonor = (name) => {

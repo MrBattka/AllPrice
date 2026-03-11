@@ -15,6 +15,7 @@ export const returnFixNameSunrise = (name) => {
 
 
 export const returnNameInArrSunrise = (name) => {
+  
   let checkSpace2 =
     name[name.length - 1] === " "
       ? name.slice(0, -1)
@@ -55,6 +56,7 @@ export const returnStockPriceSunrise = (name) => {
   let reverseBackStrName = removeStick.split("").reverse().join("");
   let replaceCase = reverseBackStrName.replace(" [без кейса]", "");
   let replaceWithCase = replaceCase.replace(" [с кейсом]", "");
+  let removePhoto = replaceWithCase.indexOf("фото") !== -1 ? replaceWithCase.split('фото')[0] : replaceWithCase
 
-  return returnFixNameSunrise(replaceWithCase);
+  return returnFixNameSunrise(removePhoto);
 };

@@ -346,7 +346,9 @@ const processors = {
     filters: [baseFixF51],
   },
   discount: {
-    processItem: (discount) => ({
+    processItem: (discount) => (
+      returnStockPriceDiscount(returnFixNameDiscount(discount.name)).indexOf("00") !== -1 &&
+      {
       id: getIdByNameTest(
         defaultFixName(
           returnNameInArrDiscount(returnFixNameDiscount(discount.name))
