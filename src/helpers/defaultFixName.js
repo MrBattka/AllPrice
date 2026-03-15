@@ -30,10 +30,20 @@ export const defaultFixName = (el) => {
     fixUltra2.indexOf("ul 2") !== -1
       ? fixUltra2.replace("ob", "ocean band")
       : fixUltra2;
-  const fixUltra2TL =
-    fixUltra2OB.indexOf("ul 2") !== -1
-      ? fixUltra2OB.replace("tl", "trail loop")
+
+  const fixMagicPhantom =
+    fixUltra2OB.indexOf("magic") !== -1
+      ? fixUltra2OB.replace("phantom", "black")
       : fixUltra2OB;
+  const fixMagicSubzero =
+    fixMagicPhantom.indexOf("magic") !== -1
+      ? fixMagicPhantom.replace("subzero", "silver")
+      : fixMagicPhantom;
+
+  const fixUltra2TL =
+    fixMagicSubzero.indexOf("ul 2") !== -1
+      ? fixMagicSubzero.replace("tl", "trail loop")
+      : fixMagicSubzero;
   const fixUltra2AL =
     fixUltra2TL.indexOf("ul 2") !== -1
       ? fixUltra2TL.replace("al", "alpine loop")
@@ -68,9 +78,7 @@ export const defaultFixName = (el) => {
     fixCH.indexOf("14 512 white") !== -1 ||
     fixCH.indexOf("14 plus 128 white") !== -1 ||
     fixCH.indexOf("14 plus 256 white") !== -1 ||
-    fixCH.indexOf("14 plus 512 white") !== -1 ||
-    fixCH.indexOf("se3 64") !== -1 ||
-    fixCH.indexOf("se3 128") !== -1
+    fixCH.indexOf("14 plus 512 white") !== -1
       ? fixCH.replace("white", "starlight")
       : fixCH;
   const fixMidnight =
@@ -91,9 +99,7 @@ export const defaultFixName = (el) => {
     fixStarlight.indexOf("14 plus 512 black") !== -1 ||
     fixStarlight.indexOf("15 plus 128 black") !== -1 ||
     fixStarlight.indexOf("15 plus 256 black") !== -1 ||
-    fixStarlight.indexOf("15 plus 512 black") !== -1 ||
-    fixStarlight.indexOf("se3 64") !== -1 ||
-    fixStarlight.indexOf("se3 128") !== -1
+    fixStarlight.indexOf("15 plus 512 black") !== -1
       ? fixStarlight.replace("black", "midnight")
       : fixStarlight;
 

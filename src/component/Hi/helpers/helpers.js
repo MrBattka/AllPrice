@@ -5,6 +5,7 @@ export const returnNameInArrHi = (name) => {
   let replaceInfo = fixUSBC.indexOf("Bot:") !== -1 ? fixUSBC.split("Bot:")[1] : fixUSBC
   let fixTYPEC = replaceInfo.replace("TYPE-C", "USBC");
   let fixWiFi = fixTYPEC.replace("Wi-Fi", "WiFi");
+  
   let fixZero = fixWiFi.replace("🛩️", "");
 
   let reverseStrName = fixZero.split("").reverse().join("");

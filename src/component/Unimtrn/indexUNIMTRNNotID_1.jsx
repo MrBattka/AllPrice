@@ -49,7 +49,7 @@ const IndexUnimtrnNotID_1 = ({ el, unimtrnData }) => {
               id: getIdByName(
                 defaultFixName(fixNameUnimtrn(unimtrn.name))
               ),
-              name: parseNamePrice(unimtrn),
+              name: fixNameUnimtrn(parseNamePrice(unimtrn)),
               extraPrice: parsePrice(unimtrn),
               stockPrice: parsePrice(unimtrn),
               provider: "Unimtrn",

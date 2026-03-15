@@ -66,7 +66,8 @@ export const fixNameUnimtrn = (el) => {
   const fixAWU2 = fixAW8Space.replace(awu2, "Ultra 2");
   const fixAWSE = fixAWU2.replace(awSE, "SE");
   const fixApple = fixAWSE.replace(apple, "");
-  const fixmb = fixApple.replace(mb, "");
+  const fixJetblack = fixApple.replace("Jetblack", "Jet black");
+  const fixmb = fixJetblack.replace(mb, "");
   const fixIpad = fixmb.replace(ipad, "(2022) 🇺🇸");
   const fixIpadUs = fixIpad.replace(fixFlagUs, "(2022)🇺🇸🇯🇵🇦🇺");
   const fixIpadJp = fixIpadUs.replace(fixFlagJp, "(2022)🇺🇸🇯🇵");
@@ -84,7 +85,8 @@ export const fixNameUnimtrn = (el) => {
   const fix266 = fix166.replace("266", "26");
   const fix366 = fix266.replace("366", "36");
   const fix566 = fix366.replace("566", "56");
-  const fixMGN63 = fix566.replace(MGN63, "Air M1 256 Gold MGND3");
+  const fixGB = fix566.replace("Gb", "");
+  const fixMGN63 = fixGB.replace(MGN63, "Air M1 256 Gold MGND3");
   const fixMGN93 = fixMGN63.replace(MGN93, "Air M1 256 Silver MGN93");
   const fixMGND3 = fixMGN93.replace(MGND3, "Air M1 256 Space Grey MGN63");
   const fixHeapdphone = fixMGND3.replace(heapdphone, "Headphone");

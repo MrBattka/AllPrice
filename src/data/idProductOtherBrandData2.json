@@ -4,9 +4,7 @@
             "xbox",
             " x "
         ],
-        "exclude": [
-            "digital"
-        ]
+        "exclude": []
     },
     "24537": {
         "include": [
@@ -211,6 +209,13 @@
         "include": [
             "quest 3s",
             "128"
+        ],
+        "exclude": []
+    },
+    "38692": {
+        "include": [
+            "quest 3s",
+            "256"
         ],
         "exclude": []
     },
@@ -3586,6 +3591,66 @@
             "blue"
         ],
         "exclude": []
+    },
+    "40403": {
+        "include": [
+            "honor 400 lite",
+            "12/256",
+            "green"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "40399": {
+        "include": [
+            "honor 400 lite",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "40404": {
+        "include": [
+            "honor 400 lite",
+            "12/256",
+            "gray"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "40402": {
+        "include": [
+            "honor 400 lite",
+            "8/256",
+            "green"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "40401": {
+        "include": [
+            "honor 400 lite",
+            "8/256",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "40405": {
+        "include": [
+            "honor 400 lite",
+            "8/256",
+            "gray"
+        ],
+        "exclude": [
+            "pro"
+        ]
     },
     "40102": {
         "include": [
@@ -8532,8 +8597,7 @@
         "include": [
             "redmagic 11 pro",
             "12/256",
-            "black",
-            "cryo"
+            "black"
         ],
         "exclude": [
             "plus"
@@ -8543,8 +8607,7 @@
         "include": [
             "redmagic 11 pro",
             "24/1tb",
-            "black",
-            "cryo"
+            "black"
         ],
         "exclude": [
             "plus"
@@ -8554,8 +8617,7 @@
         "include": [
             "redmagic 11 pro",
             "16/512",
-            "black",
-            "cryo"
+            "black"
         ],
         "exclude": [
             "plus"
@@ -8595,7 +8657,7 @@
         "include": [
             "redmagic 11 pro",
             "12/256",
-            "black"
+            "nightfreeze"
         ],
         "exclude": [
             "cryo",
@@ -8606,7 +8668,7 @@
         "include": [
             "redmagic 11 pro",
             "24/1tb",
-            "black"
+            "nightfreeze"
         ],
         "exclude": [
             "cryo",
@@ -8617,7 +8679,7 @@
         "include": [
             "redmagic 11 pro",
             "16/512",
-            "black"
+            "nightfreeze"
         ],
         "exclude": [
             "cryo",
