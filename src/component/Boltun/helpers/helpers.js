@@ -10,25 +10,25 @@ export const returnFixNameBoltun = (name) => {
   const fixSony = fixNatural.replace("Sony Xperia", "Dual 🇭🇰 Sony Xperia");
   const fix17256 = fixSony.replace("17 256 eSim", "eSim 17 256");
   const fix17512 = fix17256.replace("17 512 eSim", "eSim 17 512");
-  const fix172561 = fix17512.replace("17 256 Nano Sim+eSim", "Sim+eSim 17 256");
+  const fix172561 = fix17512.replace("17 256 Nano Sim + eSim", "Sim + eSim 17 256");
   const fix175121 = fix172561.replace(
-    "17 512 Nano Sim+eSim",
-    "Sim+eSim 17 512"
+    "17 512 Nano Sim + eSim",
+    "Sim + eSim 17 512"
   );
   const fix17Pro256 = fix175121.replace("17 Pro 256 eSim", "eSim 17 Pro 256");
   const fix17Pro512 = fix17Pro256.replace("17 Pro 512 eSim", "eSim 17 Pro 512");
   const fix17Pro1tb = fix17Pro512.replace("17 Pro 1Tb eSim", "eSim 17 Pro 1Tb");
   const fix17Pro2561 = fix17Pro1tb.replace(
-    "17 Pro 256 Nano Sim+eSim",
-    "Sim+eSim 17 Pro 256"
+    "17 Pro 256 Nano Sim + eSim",
+    "Sim + eSim 17 Pro 256"
   );
   const fix17Pro5121 = fix17Pro2561.replace(
-    "17 Pro 512 Nano Sim+eSim",
-    "Sim+eSim 17 Pro 512"
+    "17 Pro 512 Nano Sim + eSim",
+    "Sim + eSim 17 Pro 512"
   );
   const fix17Pro1tb1 = fix17Pro5121.replace(
-    "17 Pro 1Tb Nano Sim+eSim",
-    "Sim+eSim 17 Pro 1Tb"
+    "17 Pro 1Tb Nano Sim + eSim",
+    "Sim + eSim 17 Pro 1Tb"
   );
   const fix17ProMax256 = fix17Pro1tb1.replace(
     "17 Pro Max 256 eSim",
@@ -47,23 +47,33 @@ export const returnFixNameBoltun = (name) => {
     "eSim 17 Pro Max 2Tb"
   );
   const fix17ProMax2561 = fix17ProMax2tb.replace(
-    "17 Pro Max 256 Nano Sim+eSim",
-    "Sim+eSim 17 Pro Max 256"
+    "17 Pro Max 256 Nano Sim + eSim",
+    "Sim + eSim 17 Pro Max 256"
   );
   const fix17ProMax5121 = fix17ProMax2561.replace(
-    "17 Pro Max 512 Nano Sim+eSim",
-    "Sim+eSim 17 Pro Max 512"
+    "17 Pro Max 512 Nano Sim + eSim",
+    "Sim + eSim 17 Pro Max 512"
   );
   const fix17ProMax1tb1 = fix17ProMax5121.replace(
-    "17 Pro Max 1Tb Nano Sim+eSim",
-    "Sim+eSim 17 Pro Max 1Tb"
+    "17 Pro Max 1Tb Nano Sim + eSim",
+    "Sim + eSim 17 Pro Max 1Tb"
   );
-  const fix17ProMax2tb1 = fix17ProMax1tb1.replace(
-    "17 Pro Max 2Tb Nano Sim+eSim",
-    "Sim+eSim 17 Pro Max 2Tb"
+  const fix17ProMax1tb11 = fix17ProMax1tb1.replace(
+    "17 Pro Max 1TB Nano Sim + eSim",
+    "Sim + eSim 17 Pro Max 1TB"
+  );
+  const fix17ProMax2tb1 = fix17ProMax1tb11.replace(
+    "17 Pro Max 2Tb Nano Sim + eSim",
+    "Sim + eSim 17 Pro Max 2Tb"
+  );
+  const fix17ProMax2tb11 = fix17ProMax2tb1.replace(
+    "17 Pro Max 2TB Nano Sim + eSim",
+    "Sim + eSim 17 Pro Max 2TB"
   );
 
-  const fixNubiaPadProWhite = fix17ProMax1tb1.replace(
+  const fixiPhone1Sim = fix17ProMax2tb11.replace("Nano Sim + eSim", "🇮🇳")
+
+  const fixNubiaPadProWhite = fixiPhone1Sim.replace(
     "Silver",
     "White"
   );
@@ -71,6 +81,24 @@ export const returnFixNameBoltun = (name) => {
     "Black",
     "Gray"
   );
+  const fixCE5 = fixNubiaPadProBlack.replace(
+    "CE 5",
+    "CE5"
+  );
 
-  return fixNubiaPadProBlack;
+  const fixs25Silver = fixCE5.indexOf("S25 ") !== -1 ?
+   fixCE5.replace(
+    "White",
+    "Silver"
+  ) : fixCE5
+
+  
+  const fix17PMWhite = (fixs25Silver.indexOf("iPhone") !== -1 &&
+   fixs25Silver.indexOf("17 Pro") !== -1) ?
+   fixs25Silver.replace(
+    "White",
+    "Silver"
+  ): fixs25Silver
+
+  return fix17PMWhite;
 };

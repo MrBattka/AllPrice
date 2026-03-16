@@ -181,7 +181,11 @@ export const returnFixNameReSale = (name) => {
   const replacePointPlugSpace = replacePoint.replace(" 🔌", "");
   const replacePointPlug = replacePointPlugSpace.replace("🔌", "");
   const fixAWS = replacePointPlug.replace("Apple Watch Series ", "S");
-  const fixMouse = fixAWS.replace("🐭", "");
+  const fix17ProWhite = (fixAWS.indexOf("17 Pro 256") !== -1 || fixAWS.indexOf("17 Pro 512") !== -1 ||
+    fixAWS.indexOf("17 Pro 1TB") !== -1) ? fixAWS.replace("White", "silver") : fixAWS
+  const fix17ProMaxWhite = (fix17ProWhite.indexOf("17 Pro Max 256") !== -1 || fix17ProWhite.indexOf("17 Pro Max 512") !== -1 ||
+    fix17ProWhite.indexOf("17 Pro Max 1TB") !== -1 || fix17ProWhite.indexOf("17 Pro Max 2TB") !== -1) ? fix17ProWhite.replace("White", "silver") : fix17ProWhite
+  const fixMouse = fix17ProMaxWhite.replace("🐭", "");
   const fixHeadphone = fixMouse.replace("🎧", "");
   const fixPencil = fixHeadphone.replace("✏️", "");
   const fixPint = fixPencil.replace("•", "");
@@ -189,8 +193,9 @@ export const returnFixNameReSale = (name) => {
   const replaceSM = fixAW.replace("SM-", "SM");
   const replaceG = replaceSM.replace("G-", "G");
   const fixUSBC = replaceG.replace("Type-C", "Type C");
+  const fix1TB = fixUSBC.replace("1024", "1TB");
   // const replaceDash = fixUSBC.replace(" –", "");
-  const fixSimESim = fixUSBC.replace("Sim-e", "Sim+e");
+  const fixSimESim = fix1TB.replace("Sim-e", "Sim+e");
   const fixSFold5 = fixSimESim.replace("Fold5", "Fold 5");
   const fixSFold6 = fixSFold5.replace("Fold6", "Fold 6");
   const fixLTE = fixSFold6.replace("Wi-Fi + Cellular", "LTE");
@@ -243,15 +248,15 @@ export const returnFixNameReSale = (name) => {
 
   const fix5G =
     fixAWUltraBlack.indexOf("A25") !== -1 ||
-    fixAWUltraBlack.indexOf("A26") !== -1 ||
-    fixAWUltraBlack.indexOf("M35") !== -1 ||
-    fixAWUltraBlack.indexOf("A36") !== -1 ||
-    fixAWUltraBlack.indexOf("M56") !== -1 ||
-    fixAWUltraBlack.indexOf("M55") !== -1 ||
-    fixAWUltraBlack.indexOf("A55") !== -1 ||
-    fixAWUltraBlack.indexOf("A56") !== -1 ||
-    fixAWUltraBlack.indexOf("Note 14 Pro +") !== -1 ||
-    fixAWUltraBlack.indexOf("S21") !== -1
+      fixAWUltraBlack.indexOf("A26") !== -1 ||
+      fixAWUltraBlack.indexOf("M35") !== -1 ||
+      fixAWUltraBlack.indexOf("A36") !== -1 ||
+      fixAWUltraBlack.indexOf("M56") !== -1 ||
+      fixAWUltraBlack.indexOf("M55") !== -1 ||
+      fixAWUltraBlack.indexOf("A55") !== -1 ||
+      fixAWUltraBlack.indexOf("A56") !== -1 ||
+      fixAWUltraBlack.indexOf("Note 14 Pro +") !== -1 ||
+      fixAWUltraBlack.indexOf("S21") !== -1
       ? fixAWUltraBlack.replace("5G ", "")
       : fixAWUltraBlack;
 

@@ -7,19 +7,19 @@ export const defaultFixName = (el) => {
       : removeDoubleSpace;
   const fixAirPodsMax22 =
     fixAirPodsUSB.indexOf("airpods max") !== -1 &&
-    fixAirPodsUSB.indexOf("usb") !== -1
+      fixAirPodsUSB.indexOf("usb") !== -1
       ? fixAirPodsUSB.replace("usb", "2")
       : fixAirPodsUSB;
   const fixSE2Black =
     fixAirPodsMax22.indexOf("se2") !== -1 &&
-    fixAirPodsMax22.indexOf("s8") !== -1 &&
-    fixAirPodsMax22.indexOf("s9") !== -1
+      fixAirPodsMax22.indexOf("s8") !== -1 &&
+      fixAirPodsMax22.indexOf("s9") !== -1
       ? fixAirPodsMax22.replace("black", "midnight")
       : fixAirPodsMax22;
   const fixSE2White =
     fixSE2Black.indexOf("se2") !== -1 &&
-    fixSE2Black.indexOf("s8") !== -1 &&
-    fixSE2Black.indexOf("s9") !== -1
+      fixSE2Black.indexOf("s8") !== -1 &&
+      fixSE2Black.indexOf("s9") !== -1
       ? fixSE2Black.replace("white", "starlight")
       : fixSE2Black;
   const fixUltra2 =
@@ -30,20 +30,223 @@ export const defaultFixName = (el) => {
     fixUltra2.indexOf("ul 2") !== -1
       ? fixUltra2.replace("ob", "ocean band")
       : fixUltra2;
+  const fixipadPro11Gray =
+    fixUltra2OB.indexOf("pro 11") !== -1 &&
+      (fixUltra2OB.indexOf("m4") !== -1 ||
+        fixUltra2OB.indexOf("m5") !== -1)
+      ? fixUltra2OB.replace("gray", "black")
+      : fixUltra2OB;
+  const fixiPhoneGray =
+    fixipadPro11Gray.indexOf("iphone") !== -1
+      ? fixipadPro11Gray.replace("gray", "black")
+      : fixipadPro11Gray;
+  const fixiPhone1Sim =
+    fixiPhoneGray.indexOf("iphone") !== -1
+      ? fixiPhoneGray.replace("nano sim + esim", "🇮🇳")
+      : fixiPhoneGray;
+  const fixiPhone17Orange =
+    fixiPhone1Sim.indexOf("iphone") !== -1
+      ? fixiPhone1Sim.replace("cosmic ", "")
+      : fixiPhone1Sim;
+
+  const fixGrey = fixiPhone17Orange.replace("grey", "gray")
+  const fixMagic7ProWhite =
+    (fixGrey.indexOf("magic 7 pro") !== -1 ||
+      fixGrey.indexOf("magic 8 pro") !== -1)
+      ? fixGrey.replace("gray", "white")
+      : fixGrey;
+
+  const fixMagic7ProGreen =
+    fixMagic7ProWhite.indexOf("magic 8 pro") !== -1
+      ? fixMagic7ProWhite.replace("cyan", "green")
+      : fixMagic7ProWhite;
+  const fixUltra3Ob =
+    fixMagic7ProGreen.indexOf("ultra 3") !== -1
+      ? fixMagic7ProGreen.replace("ocean", "ob")
+      : fixMagic7ProGreen;
+  const fixbuds3black1 =
+    fixUltra3Ob.indexOf("buds 3") !== -1 &&
+      fixUltra3Ob.indexOf("buds 3 fe") === -1
+      ? fixUltra3Ob.replace("black", "silver")
+      : fixUltra3Ob;
+  const fixbuds3black2 =
+    fixbuds3black1.indexOf("buds 3") !== -1 &&
+      fixbuds3black1.indexOf("buds 3 fe") === -1
+      ? fixbuds3black1.replace("gray", "silver")
+      : fixbuds3black1;
+
+  const fixBuds3White =
+    (fixbuds3black2.indexOf("buds 3 white") !== -1) &&
+      fixbuds3black2[0] === "b"
+      ? fixbuds3black2.replace("buds 3 white", "galaxy buds 3 white")
+      : fixbuds3black2;
+  const fixBuds3Silver =
+    fixBuds3White.indexOf("buds 3 silver") !== -1 &&
+      fixBuds3White[0] === "b"
+      ? fixBuds3White.replace("buds 3 silver", "galaxy buds 3 silver")
+      : fixBuds3White;
+  const fixBuds3FEWhite =
+    (fixBuds3Silver.indexOf("buds 3 fe gray") !== -1) &&
+      fixBuds3Silver[0] === "b"
+      ? fixBuds3Silver.replace("buds 3 fe gray", "galaxy buds 3 fe gray")
+      : fixBuds3Silver;
+  const fixBuds3FESilver =
+    fixBuds3FEWhite.indexOf("buds 3 fe black") !== -1 &&
+      fixBuds3FEWhite[0] === "b"
+      ? fixBuds3FEWhite.replace("buds 3 fe black", "galaxy buds 3 fe black")
+      : fixBuds3FEWhite;
+  const fixBuds3ProWhite =
+    (fixBuds3FESilver.indexOf("buds 3 pro white") !== -1) &&
+      fixBuds3FESilver[0] === "b"
+      ? fixBuds3FESilver.replace("buds 3 pro white", "galaxy buds 3 pro white")
+      : fixBuds3FESilver;
+  const fixBuds3ProSilver =
+    fixBuds3ProWhite.indexOf("buds 3 pro silver") !== -1 &&
+      fixBuds3ProWhite[0] === "b"
+      ? fixBuds3ProWhite.replace("buds 3 pro silver", "galaxy buds 3 pro silver")
+      : fixBuds3ProWhite;
+
+  const fixMagic11Pro =
+    fixBuds3ProSilver.indexOf("magic 11 pro") !== -1
+      ? fixBuds3ProSilver.replace("cryo", "black")
+      : fixBuds3ProSilver;
+  const fixS25UltraSilver =
+    (fixMagic11Pro.indexOf("s25 ultra") !== -1 ||
+      fixMagic11Pro.indexOf("s25 fe") !== -1)
+      ? fixMagic11Pro.replace("silver", "white")
+      : fixMagic11Pro;
+  const fixS25UltraGold =
+    fixS25UltraSilver.indexOf("s25 ") !== -1
+      ? fixS25UltraSilver.replace("gold", "pink")
+      : fixS25UltraSilver;
+
+  const fixMagicV5Gray =
+    (fixS25UltraGold.indexOf("magic v5") !== -1 ||
+      fixS25UltraGold.indexOf("pura 80") !== -1 ||
+      fixS25UltraGold.indexOf("oneplus 13") !== -1 ||
+      fixS25UltraGold.indexOf("oneplus 15") !== -1 ||
+      fixS25UltraGold.indexOf("ace 6t") !== -1 ||
+      fixS25UltraGold.indexOf("a26 ") !== -1 ||
+      fixS25UltraGold.indexOf("a36 ") !== -1 ||
+      fixS25UltraGold.indexOf("s25 fe") !== -1 ||
+      fixS25UltraGold.indexOf("mi pad 8") !== -1 ||
+      fixS25UltraGold.indexOf("poco f7") !== -1 ||
+      fixS25UltraGold.indexOf("z70 ultra") !== -1 ||
+      fixS25UltraGold.indexOf("honor 400") !== -1) &&
+      fixS25UltraGold.indexOf("mi pad 8 pro") === -1
+      ? fixS25UltraGold.replace("gray", "black")
+      : fixS25UltraGold;
+  const fixOnePlus15Purple =
+    fixMagicV5Gray.indexOf("oneplus 15") !== -1
+      ? fixMagicV5Gray.replace("viol", "purple")
+      : fixMagicV5Gray;
+  const fixExtreme = fixOnePlus15Purple.replace("extrime", "extreme")
+
+  const fixOnePlusAce5 =
+    fixExtreme.indexOf("ace 5") !== -1
+      ? fixExtreme.replace("silver", "titan")
+      : fixExtreme;
+  const fixOnePlusAce6Gray =
+    (fixOnePlusAce5.indexOf("ace 6 ") !== -1 ||
+      fixOnePlusAce5.indexOf("s25+") !== -1)
+      ? fixOnePlusAce5.replace("gray", "silver")
+      : fixOnePlusAce5;
+  const fixPura80Gold =
+    fixOnePlusAce6Gray.indexOf("pura 80") !== -1
+      ? fixOnePlusAce6Gray.replace("yellow", "gold")
+      : fixOnePlusAce6Gray;
+  const fixShadow =
+    fixPura80Gold.indexOf("redmagic 10 pro") !== -1
+      ? fixPura80Gold.replace("shadow", "black")
+      : fixPura80Gold;
+  const fixMidnightNote14 =
+    fixShadow.indexOf("note 14") !== -1
+      ? fixShadow.replace("midnight", "black")
+      : fixShadow;
+  const fixPixel10White =
+    fixMidnightNote14.indexOf("pixel 10") !== -1
+      ? fixMidnightNote14.replace("white", "porcelain")
+      : fixMidnightNote14;
+  const fixPixel10Green =
+    fixPixel10White.indexOf("pixel 10") !== -1
+      ? fixPixel10White.replace("jade", "green")
+      : fixPixel10White;
+  const fixHonorGold =
+    fixPixel10Green.indexOf("honor 400") !== -1
+      ? fixPixel10Green.replace("yellow", "gold")
+      : fixPixel10Green;
+
+  const fixOnePlusBlue =
+    fixHonorGold.indexOf("oneplus") !== -1
+      ? fixHonorGold.replace("noir", "black")
+      : fixHonorGold;
+  const fixS10Gray =
+    fixOnePlusBlue.indexOf("tab s10") !== -1
+      ? fixOnePlusBlue.replace("black", "gray")
+      : fixOnePlusBlue;
+  const fixOnePlusBlack =
+    fixS10Gray.indexOf("oneplus") !== -1
+      ? fixS10Gray.replace("ocean", "blue")
+      : fixS10Gray;
+  const fixOnePlusSilver =
+    fixOnePlusBlack.indexOf("oneplus") !== -1
+      ? fixOnePlusBlack.replace("astral", "silver")
+      : fixOnePlusBlack;
+
+  const fixOnePlus13White = fixOnePlusSilver.replace("arctic", "white")
 
   const fixMagicPhantom =
-    fixUltra2OB.indexOf("magic") !== -1
-      ? fixUltra2OB.replace("phantom", "black")
-      : fixUltra2OB;
+    fixOnePlus13White.indexOf("magic") !== -1
+      ? fixOnePlus13White.replace("phantom", "black")
+      : fixOnePlus13White;
   const fixMagicSubzero =
     fixMagicPhantom.indexOf("magic") !== -1
       ? fixMagicPhantom.replace("subzero", "silver")
       : fixMagicPhantom;
+  const fixMi17Black =
+    fixMagicSubzero.indexOf("mi 17") !== -1
+      ? fixMagicSubzero.replace("gray", "black")
+      : fixMagicSubzero;
+  const fixNote14Green =
+    fixMi17Black.indexOf("note 14") !== -1
+      ? fixMi17Black.replace("green", "blue")
+      : fixMi17Black;
+  const fixNote15Color =
+    fixNote14Green.indexOf("note 15") !== -1
+      ? fixNote14Green.replace("color", "titan")
+      : fixNote14Green;
+  const fixNote15ProPlus =
+    fixNote15Color.indexOf("note 15") !== -1
+      ? fixNote15Color.replace("pro+", "pro +")
+      : fixNote15Color;
+  const fixNote15ProGray =
+    fixNote15ProPlus.indexOf("note 15 pro") !== -1
+      ? fixNote15ProPlus.replace("gray", "titan")
+      : fixNote15ProPlus;
+  const fixNote15ProPlus1 =
+    fixNote15ProGray.indexOf("note 15 pro") !== -1
+      ? fixNote15ProGray.replace("pro plus", "pro +")
+      : fixNote15ProGray;
+  const fixipad11White =
+    (fixNote15ProPlus1.indexOf("ipad 11") !== -1 ||
+      fixNote15ProPlus1.indexOf("tab s11") !== -1)
+      ? fixNote15ProPlus1.replace("white", "silver")
+      : fixNote15ProPlus1;
+  const fixipadPro11White =
+    fixipad11White.indexOf("ipad pro 11") !== -1
+      ? fixipad11White.replace("white", "silver")
+      : fixipad11White;
+
+  const fixNote14PoPlusGold =
+    (fixipadPro11White.indexOf("note 15 pro +") !== -1 ||
+      fixipadPro11White.indexOf("z70 ultra") !== -1)
+      ? fixipadPro11White.replace("gold", "brown")
+      : fixipadPro11White;
 
   const fixUltra2TL =
-    fixMagicSubzero.indexOf("ul 2") !== -1
-      ? fixMagicSubzero.replace("tl", "trail loop")
-      : fixMagicSubzero;
+    fixNote14PoPlusGold.indexOf("ul 2") !== -1
+      ? fixNote14PoPlusGold.replace("tl", "trail loop")
+      : fixNote14PoPlusGold;
   const fixUltra2AL =
     fixUltra2TL.indexOf("ul 2") !== -1
       ? fixUltra2TL.replace("al", "alpine loop")
@@ -68,38 +271,38 @@ export const defaultFixName = (el) => {
     fixHK.indexOf("🇨🇳") !== -1 ? fixHK.replace("🇨🇳", " dual ") : fixHK;
   const fixStarlight =
     fixCH.indexOf("13 128 white") !== -1 ||
-    fixCH.indexOf("13 256 white") !== -1 ||
-    fixCH.indexOf("13 512 white") !== -1 ||
-    fixCH.indexOf("13 mini 512 white") !== -1 ||
-    fixCH.indexOf("13 mini 512 white") !== -1 ||
-    fixCH.indexOf("13 mini 512 white") !== -1 ||
-    fixCH.indexOf("14 128 white") !== -1 ||
-    fixCH.indexOf("14 256 white") !== -1 ||
-    fixCH.indexOf("14 512 white") !== -1 ||
-    fixCH.indexOf("14 plus 128 white") !== -1 ||
-    fixCH.indexOf("14 plus 256 white") !== -1 ||
-    fixCH.indexOf("14 plus 512 white") !== -1
+      fixCH.indexOf("13 256 white") !== -1 ||
+      fixCH.indexOf("13 512 white") !== -1 ||
+      fixCH.indexOf("13 mini 512 white") !== -1 ||
+      fixCH.indexOf("13 mini 512 white") !== -1 ||
+      fixCH.indexOf("13 mini 512 white") !== -1 ||
+      fixCH.indexOf("14 128 white") !== -1 ||
+      fixCH.indexOf("14 256 white") !== -1 ||
+      fixCH.indexOf("14 512 white") !== -1 ||
+      fixCH.indexOf("14 plus 128 white") !== -1 ||
+      fixCH.indexOf("14 plus 256 white") !== -1 ||
+      fixCH.indexOf("14 plus 512 white") !== -1
       ? fixCH.replace("white", "starlight")
       : fixCH;
   const fixMidnight =
     fixStarlight.indexOf("13 128 black") !== -1 ||
-    fixStarlight.indexOf("13 256 black") !== -1 ||
-    fixStarlight.indexOf("13 512 black") !== -1 ||
-    fixStarlight.indexOf("13 mini 512 black") !== -1 ||
-    fixStarlight.indexOf("13 mini 512 black") !== -1 ||
-    fixStarlight.indexOf("13 mini 512 black") !== -1 ||
-    fixStarlight.indexOf("14 128 black") !== -1 ||
-    fixStarlight.indexOf("14 256 black") !== -1 ||
-    fixStarlight.indexOf("14 512 black") !== -1 ||
-    fixStarlight.indexOf("15 128 black") !== -1 ||
-    fixStarlight.indexOf("15 256 black") !== -1 ||
-    fixStarlight.indexOf("15 512 black") !== -1 ||
-    fixStarlight.indexOf("14 plus 128 black") !== -1 ||
-    fixStarlight.indexOf("14 plus 256 black") !== -1 ||
-    fixStarlight.indexOf("14 plus 512 black") !== -1 ||
-    fixStarlight.indexOf("15 plus 128 black") !== -1 ||
-    fixStarlight.indexOf("15 plus 256 black") !== -1 ||
-    fixStarlight.indexOf("15 plus 512 black") !== -1
+      fixStarlight.indexOf("13 256 black") !== -1 ||
+      fixStarlight.indexOf("13 512 black") !== -1 ||
+      fixStarlight.indexOf("13 mini 512 black") !== -1 ||
+      fixStarlight.indexOf("13 mini 512 black") !== -1 ||
+      fixStarlight.indexOf("13 mini 512 black") !== -1 ||
+      fixStarlight.indexOf("14 128 black") !== -1 ||
+      fixStarlight.indexOf("14 256 black") !== -1 ||
+      fixStarlight.indexOf("14 512 black") !== -1 ||
+      fixStarlight.indexOf("15 128 black") !== -1 ||
+      fixStarlight.indexOf("15 256 black") !== -1 ||
+      fixStarlight.indexOf("15 512 black") !== -1 ||
+      fixStarlight.indexOf("14 plus 128 black") !== -1 ||
+      fixStarlight.indexOf("14 plus 256 black") !== -1 ||
+      fixStarlight.indexOf("14 plus 512 black") !== -1 ||
+      fixStarlight.indexOf("15 plus 128 black") !== -1 ||
+      fixStarlight.indexOf("15 plus 256 black") !== -1 ||
+      fixStarlight.indexOf("15 plus 512 black") !== -1
       ? fixStarlight.replace("black", "midnight")
       : fixStarlight;
 
@@ -113,12 +316,12 @@ export const defaultFixName = (el) => {
   const fixLime = fixA36Lime.replace("lime", "Yellow");
   const fixGraphite =
     fixLime.indexOf("s22") === -1 ||
-    fixLime.indexOf("s23") === -1 ||
-    fixLime.indexOf("s23") === -1 ||
-    fixLime.indexOf("buds 2") === -1 ||
-    fixLime.indexOf("epix") === -1 ||
-    fixLime.indexOf("fenix") === -1 ||
-    fixLime.indexOf("instinct") === -1
+      fixLime.indexOf("s23") === -1 ||
+      fixLime.indexOf("s23") === -1 ||
+      fixLime.indexOf("buds 2") === -1 ||
+      fixLime.indexOf("epix") === -1 ||
+      fixLime.indexOf("fenix") === -1 ||
+      fixLime.indexOf("instinct") === -1
       ? fixLime.replace("graphite", "Black")
       : fixLime;
   const fixNavyBlack =
@@ -166,7 +369,7 @@ export const defaultFixName = (el) => {
 
   const fixPad6sProBlack =
     fixPadSEGray.indexOf("pad 6s pro") !== -1 ||
-    fixPadSEGray.indexOf("mi pad 7") !== -1
+      fixPadSEGray.indexOf("mi pad 7") !== -1
       ? fixPadSEGray.replace("gray", "Black")
       : fixPadSEGray;
 
@@ -227,7 +430,7 @@ export const defaultFixName = (el) => {
       : fixNordSilver;
   const fixNordObsidian =
     fixNordOasis.indexOf("nord ") !== -1 ||
-    fixNordOasis.indexOf("pixel ") !== -1
+      fixNordOasis.indexOf("pixel ") !== -1
       ? fixNordOasis.replace("obsidian", "black")
       : fixNordOasis;
   const fixNordCeladon =
@@ -301,8 +504,8 @@ export const defaultFixName = (el) => {
   const fixeSim1 =
     (fixPixeJade.indexOf("17 256") !== -1 ||
       fixPixeJade.indexOf("17 512") !== -1 ||
-    fixPixeJade.indexOf("17e 256") !== -1 ||
-    fixPixeJade.indexOf("17e 512") !== -1 ||
+      fixPixeJade.indexOf("17e 256") !== -1 ||
+      fixPixeJade.indexOf("17e 512") !== -1 ||
       fixPixeJade.indexOf("17 pro 256") !== -1 ||
       fixPixeJade.indexOf("17 pro 512") !== -1 ||
       fixPixeJade.indexOf("17 pro 1tb") !== -1 ||
@@ -310,15 +513,15 @@ export const defaultFixName = (el) => {
       fixPixeJade.indexOf("17 pro max 512") !== -1 ||
       fixPixeJade.indexOf("17 pro max 1tb") !== -1 ||
       fixPixeJade.indexOf("17 pro max 2tb") !== -1) &&
-    fixPixeJade.indexOf("+") === -1
+      fixPixeJade.indexOf("+") === -1
       ? fixPixeJade.replace("esim", "🇺🇸")
       : fixPixeJade;
 
   const fixeSim41 =
     (fixeSim1.indexOf("17 256") !== -1 ||
       fixeSim1.indexOf("17 512") !== -1 ||
-    fixeSim1.indexOf("17e 256") !== -1 ||
-    fixeSim1.indexOf("17e 512") !== -1 ||
+      fixeSim1.indexOf("17e 256") !== -1 ||
+      fixeSim1.indexOf("17e 512") !== -1 ||
       fixeSim1.indexOf("17 pro 256") !== -1 ||
       fixeSim1.indexOf("17 pro 512") !== -1 ||
       fixeSim1.indexOf("17 pro 1tb") !== -1 ||
@@ -326,15 +529,15 @@ export const defaultFixName = (el) => {
       fixeSim1.indexOf("17 pro max 512") !== -1 ||
       fixeSim1.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim1.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim1.indexOf("+") === -1
+      fixeSim1.indexOf("+") === -1
       ? fixeSim1.replace("e-sim", "🇺🇸")
       : fixeSim1;
 
   const fixeSim =
     (fixeSim41.indexOf("17 256") !== -1 ||
       fixeSim41.indexOf("17 512") !== -1 ||
-    fixeSim41.indexOf("17e 256") !== -1 ||
-    fixeSim41.indexOf("17e 512") !== -1 ||
+      fixeSim41.indexOf("17e 256") !== -1 ||
+      fixeSim41.indexOf("17e 512") !== -1 ||
       fixeSim41.indexOf("17 pro 256") !== -1 ||
       fixeSim41.indexOf("17 pro 512") !== -1 ||
       fixeSim41.indexOf("17 pro 1tb") !== -1 ||
@@ -342,15 +545,15 @@ export const defaultFixName = (el) => {
       fixeSim41.indexOf("17 pro max 512") !== -1 ||
       fixeSim41.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim41.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim41.indexOf("+") !== -1
+      fixeSim41.indexOf("+") !== -1
       ? fixeSim41.replace("+", "🇮🇳")
       : fixeSim41;
 
   const fixDualSim =
     (fixeSim.indexOf("17 256") !== -1 ||
       fixeSim.indexOf("17 512") !== -1 ||
-    fixeSim.indexOf("17e 256") !== -1 ||
-    fixeSim.indexOf("17e 512") !== -1 ||
+      fixeSim.indexOf("17e 256") !== -1 ||
+      fixeSim.indexOf("17e 512") !== -1 ||
       fixeSim.indexOf("17 pro 256") !== -1 ||
       fixeSim.indexOf("17 pro 512") !== -1 ||
       fixeSim.indexOf("17 pro 1tb") !== -1 ||
@@ -358,15 +561,15 @@ export const defaultFixName = (el) => {
       fixeSim.indexOf("17 pro max 512") !== -1 ||
       fixeSim.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim.indexOf("🇨🇳") !== -1
+      fixeSim.indexOf("🇨🇳") !== -1
       ? fixeSim.replace("🇨🇳", "dual")
       : fixeSim;
 
   const fixeSim0 =
     (fixDualSim.indexOf("17 256") !== -1 ||
       fixDualSim.indexOf("17 512") !== -1 ||
-    fixDualSim.indexOf("17e 256") !== -1 ||
-    fixDualSim.indexOf("17e 512") !== -1 ||
+      fixDualSim.indexOf("17e 256") !== -1 ||
+      fixDualSim.indexOf("17e 512") !== -1 ||
       fixDualSim.indexOf("17 pro 256") !== -1 ||
       fixDualSim.indexOf("17 pro 512") !== -1 ||
       fixDualSim.indexOf("17 pro 1tb") !== -1 ||
@@ -374,14 +577,14 @@ export const defaultFixName = (el) => {
       fixDualSim.indexOf("17 pro max 512") !== -1 ||
       fixDualSim.indexOf("17 pro max 1tb") !== -1 ||
       fixDualSim.indexOf("17 pro max 2tb") !== -1) &&
-    fixDualSim.indexOf("🇧🇭") !== -1
+      fixDualSim.indexOf("🇧🇭") !== -1
       ? fixDualSim.replace("🇧🇭", "🇺🇸")
       : fixDualSim;
   const fixeSim2 =
     (fixeSim0.indexOf("17 256") !== -1 ||
       fixeSim0.indexOf("17 512") !== -1 ||
-    fixeSim0.indexOf("17e 256") !== -1 ||
-    fixeSim0.indexOf("17e 512") !== -1 ||
+      fixeSim0.indexOf("17e 256") !== -1 ||
+      fixeSim0.indexOf("17e 512") !== -1 ||
       fixeSim0.indexOf("17 pro 256") !== -1 ||
       fixeSim0.indexOf("17 pro 512") !== -1 ||
       fixeSim0.indexOf("17 pro 1tb") !== -1 ||
@@ -389,14 +592,14 @@ export const defaultFixName = (el) => {
       fixeSim0.indexOf("17 pro max 512") !== -1 ||
       fixeSim0.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim0.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim0.indexOf("🇨🇦") !== -1
+      fixeSim0.indexOf("🇨🇦") !== -1
       ? fixeSim0.replace("🇨🇦", "🇺🇸")
       : fixeSim0;
   const fixeSim3 =
     (fixeSim2.indexOf("17 256") !== -1 ||
       fixeSim2.indexOf("17 512") !== -1 ||
-    fixeSim2.indexOf("17e 256") !== -1 ||
-    fixeSim2.indexOf("17e 512") !== -1 ||
+      fixeSim2.indexOf("17e 256") !== -1 ||
+      fixeSim2.indexOf("17e 512") !== -1 ||
       fixeSim2.indexOf("17 pro 256") !== -1 ||
       fixeSim2.indexOf("17 pro 512") !== -1 ||
       fixeSim2.indexOf("17 pro 1tb") !== -1 ||
@@ -404,14 +607,14 @@ export const defaultFixName = (el) => {
       fixeSim2.indexOf("17 pro max 512") !== -1 ||
       fixeSim2.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim2.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim2.indexOf("🇬🇺") !== -1
+      fixeSim2.indexOf("🇬🇺") !== -1
       ? fixeSim2.replace("🇬🇺", "🇺🇸")
       : fixeSim2;
   const fixeSim4 =
     (fixeSim3.indexOf("17 256") !== -1 ||
       fixeSim3.indexOf("17 512") !== -1 ||
-    fixeSim3.indexOf("17e 256") !== -1 ||
-    fixeSim3.indexOf("17e 512") !== -1 ||
+      fixeSim3.indexOf("17e 256") !== -1 ||
+      fixeSim3.indexOf("17e 512") !== -1 ||
       fixeSim3.indexOf("17 pro 256") !== -1 ||
       fixeSim3.indexOf("17 pro 512") !== -1 ||
       fixeSim3.indexOf("17 pro 1tb") !== -1 ||
@@ -419,14 +622,14 @@ export const defaultFixName = (el) => {
       fixeSim3.indexOf("17 pro max 512") !== -1 ||
       fixeSim3.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim3.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim3.indexOf("🇯🇵") !== -1
+      fixeSim3.indexOf("🇯🇵") !== -1
       ? fixeSim3.replace("🇯🇵", "🇺🇸")
       : fixeSim3;
   const fixeSim5 =
     (fixeSim4.indexOf("17 256") !== -1 ||
       fixeSim4.indexOf("17 512") !== -1 ||
-    fixeSim4.indexOf("17e 256") !== -1 ||
-    fixeSim4.indexOf("17e 512") !== -1 ||
+      fixeSim4.indexOf("17e 256") !== -1 ||
+      fixeSim4.indexOf("17e 512") !== -1 ||
       fixeSim4.indexOf("17 pro 256") !== -1 ||
       fixeSim4.indexOf("17 pro 512") !== -1 ||
       fixeSim4.indexOf("17 pro 1tb") !== -1 ||
@@ -434,14 +637,14 @@ export const defaultFixName = (el) => {
       fixeSim4.indexOf("17 pro max 512") !== -1 ||
       fixeSim4.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim4.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim4.indexOf("🇰🇼") !== -1
+      fixeSim4.indexOf("🇰🇼") !== -1
       ? fixeSim4.replace("🇰🇼", "🇺🇸")
       : fixeSim4;
   const fixeSim6 =
     (fixeSim5.indexOf("17 256") !== -1 ||
       fixeSim5.indexOf("17 512") !== -1 ||
-    fixeSim5.indexOf("17e 256") !== -1 ||
-    fixeSim5.indexOf("17e 512") !== -1 ||
+      fixeSim5.indexOf("17e 256") !== -1 ||
+      fixeSim5.indexOf("17e 512") !== -1 ||
       fixeSim5.indexOf("17 pro 256") !== -1 ||
       fixeSim5.indexOf("17 pro 512") !== -1 ||
       fixeSim5.indexOf("17 pro 1tb") !== -1 ||
@@ -449,14 +652,14 @@ export const defaultFixName = (el) => {
       fixeSim5.indexOf("17 pro max 512") !== -1 ||
       fixeSim5.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim5.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim5.indexOf("🇲🇽") !== -1
+      fixeSim5.indexOf("🇲🇽") !== -1
       ? fixeSim5.replace("🇲🇽", "🇺🇸")
       : fixeSim5;
   const fixeSim7 =
     (fixeSim6.indexOf("17 256") !== -1 ||
       fixeSim6.indexOf("17 512") !== -1 ||
-    fixeSim6.indexOf("17e 256") !== -1 ||
-    fixeSim6.indexOf("17e 512") !== -1 ||
+      fixeSim6.indexOf("17e 256") !== -1 ||
+      fixeSim6.indexOf("17e 512") !== -1 ||
       fixeSim6.indexOf("17 pro 256") !== -1 ||
       fixeSim6.indexOf("17 pro 512") !== -1 ||
       fixeSim6.indexOf("17 pro 1tb") !== -1 ||
@@ -464,14 +667,14 @@ export const defaultFixName = (el) => {
       fixeSim6.indexOf("17 pro max 512") !== -1 ||
       fixeSim6.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim6.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim6.indexOf("🇴🇲") !== -1
+      fixeSim6.indexOf("🇴🇲") !== -1
       ? fixeSim6.replace("🇴🇲", "🇺🇸")
       : fixeSim6;
   const fixeSim8 =
     (fixeSim7.indexOf("17 256") !== -1 ||
       fixeSim7.indexOf("17 512") !== -1 ||
-    fixeSim7.indexOf("17e 256") !== -1 ||
-    fixeSim7.indexOf("17e 512") !== -1 ||
+      fixeSim7.indexOf("17e 256") !== -1 ||
+      fixeSim7.indexOf("17e 512") !== -1 ||
       fixeSim7.indexOf("17 pro 256") !== -1 ||
       fixeSim7.indexOf("17 pro 512") !== -1 ||
       fixeSim7.indexOf("17 pro 1tb") !== -1 ||
@@ -479,14 +682,14 @@ export const defaultFixName = (el) => {
       fixeSim7.indexOf("17 pro max 512") !== -1 ||
       fixeSim7.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim7.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim7.indexOf("🇶🇦") !== -1
+      fixeSim7.indexOf("🇶🇦") !== -1
       ? fixeSim7.replace("🇶🇦", "🇺🇸")
       : fixeSim7;
   const fixeSim9 =
     (fixeSim8.indexOf("17 256") !== -1 ||
       fixeSim8.indexOf("17 512") !== -1 ||
-    fixeSim8.indexOf("17e 256") !== -1 ||
-    fixeSim8.indexOf("17e 512") !== -1 ||
+      fixeSim8.indexOf("17e 256") !== -1 ||
+      fixeSim8.indexOf("17e 512") !== -1 ||
       fixeSim8.indexOf("17 pro 256") !== -1 ||
       fixeSim8.indexOf("17 pro 512") !== -1 ||
       fixeSim8.indexOf("17 pro 1tb") !== -1 ||
@@ -494,14 +697,14 @@ export const defaultFixName = (el) => {
       fixeSim8.indexOf("17 pro max 512") !== -1 ||
       fixeSim8.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim8.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim8.indexOf("🇸🇦") !== -1
+      fixeSim8.indexOf("🇸🇦") !== -1
       ? fixeSim8.replace("🇸🇦", "🇺🇸")
       : fixeSim8;
   const fixeSim110 =
     (fixeSim9.indexOf("17 256") !== -1 ||
       fixeSim9.indexOf("17 512") !== -1 ||
-    fixeSim9.indexOf("17e 256") !== -1 ||
-    fixeSim9.indexOf("17e 512") !== -1 ||
+      fixeSim9.indexOf("17e 256") !== -1 ||
+      fixeSim9.indexOf("17e 512") !== -1 ||
       fixeSim9.indexOf("17 pro 256") !== -1 ||
       fixeSim9.indexOf("17 pro 512") !== -1 ||
       fixeSim9.indexOf("17 pro 1tb") !== -1 ||
@@ -509,14 +712,14 @@ export const defaultFixName = (el) => {
       fixeSim9.indexOf("17 pro max 512") !== -1 ||
       fixeSim9.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim9.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim9.indexOf("🇦🇪") !== -1
+      fixeSim9.indexOf("🇦🇪") !== -1
       ? fixeSim9.replace("🇦🇪", "🇺🇸")
       : fixeSim9;
   const fixeSim11 =
     (fixeSim110.indexOf("17 256") !== -1 ||
       fixeSim110.indexOf("17 512") !== -1 ||
-    fixeSim110.indexOf("17e 256") !== -1 ||
-    fixeSim110.indexOf("17e 512") !== -1 ||
+      fixeSim110.indexOf("17e 256") !== -1 ||
+      fixeSim110.indexOf("17e 512") !== -1 ||
       fixeSim110.indexOf("17 pro 256") !== -1 ||
       fixeSim110.indexOf("17 pro 512") !== -1 ||
       fixeSim110.indexOf("17 pro 1tb") !== -1 ||
@@ -524,7 +727,7 @@ export const defaultFixName = (el) => {
       fixeSim110.indexOf("17 pro max 512") !== -1 ||
       fixeSim110.indexOf("17 pro max 1tb") !== -1 ||
       fixeSim110.indexOf("17 pro max 2tb") !== -1) &&
-    fixeSim110.indexOf("🇻🇮") !== -1
+      fixeSim110.indexOf("🇻🇮") !== -1
       ? fixeSim110.replace("🇻🇮", "🇺🇸")
       : fixeSim110;
 
@@ -540,47 +743,47 @@ export const defaultFixName = (el) => {
     fixMajor4.indexOf("major") !== -1 ? fixMajor4.replace("v", "5") : fixMajor4;
   const fixXperiaCN =
     fixMajor5.indexOf("xperia") !== -1 ||
-    fixMajor5.indexOf("17 256") !== -1 ||
-    fixMajor5.indexOf("17 512") !== -1 ||
-    fixMajor5.indexOf("17e 256") !== -1 ||
-    fixMajor5.indexOf("17e 512") !== -1 ||
-    fixMajor5.indexOf("17 pro 256") !== -1 ||
-    fixMajor5.indexOf("17 pro 512") !== -1 ||
-    fixMajor5.indexOf("17 pro 1tb") !== -1 ||
-    fixMajor5.indexOf("17 pro max 256") !== -1 ||
-    fixMajor5.indexOf("17 pro max 1tb") !== -1 ||
-    fixMajor5.indexOf("17 pro max 512") !== -1 ||
-    fixMajor5.indexOf("17 pro max 2tb") !== -1
+      fixMajor5.indexOf("17 256") !== -1 ||
+      fixMajor5.indexOf("17 512") !== -1 ||
+      fixMajor5.indexOf("17e 256") !== -1 ||
+      fixMajor5.indexOf("17e 512") !== -1 ||
+      fixMajor5.indexOf("17 pro 256") !== -1 ||
+      fixMajor5.indexOf("17 pro 512") !== -1 ||
+      fixMajor5.indexOf("17 pro 1tb") !== -1 ||
+      fixMajor5.indexOf("17 pro max 256") !== -1 ||
+      fixMajor5.indexOf("17 pro max 1tb") !== -1 ||
+      fixMajor5.indexOf("17 pro max 512") !== -1 ||
+      fixMajor5.indexOf("17 pro max 2tb") !== -1
       ? fixMajor5.replace("🇨🇳", "dual")
       : fixMajor5;
 
   const fixApple2Sim =
     fixXperiaCN.indexOf("17 256") !== -1 ||
-    fixXperiaCN.indexOf("17 512") !== -1 ||
-    fixXperiaCN.indexOf("17e 256") !== -1 ||
-    fixXperiaCN.indexOf("17e 512") !== -1 ||
-    fixXperiaCN.indexOf("17 pro 256") !== -1 ||
-    fixXperiaCN.indexOf("17 pro 512") !== -1 ||
-    fixXperiaCN.indexOf("17 pro 1tb") !== -1 ||
-    fixXperiaCN.indexOf("17 pro max 256") !== -1 ||
-    fixXperiaCN.indexOf("17 pro max 1tb") !== -1 ||
-    fixXperiaCN.indexOf("17 pro max 512") !== -1 ||
-    fixXperiaCN.indexOf("17 pro max 2tb") !== -1
+      fixXperiaCN.indexOf("17 512") !== -1 ||
+      fixXperiaCN.indexOf("17e 256") !== -1 ||
+      fixXperiaCN.indexOf("17e 512") !== -1 ||
+      fixXperiaCN.indexOf("17 pro 256") !== -1 ||
+      fixXperiaCN.indexOf("17 pro 512") !== -1 ||
+      fixXperiaCN.indexOf("17 pro 1tb") !== -1 ||
+      fixXperiaCN.indexOf("17 pro max 256") !== -1 ||
+      fixXperiaCN.indexOf("17 pro max 1tb") !== -1 ||
+      fixXperiaCN.indexOf("17 pro max 512") !== -1 ||
+      fixXperiaCN.indexOf("17 pro max 2tb") !== -1
       ? fixXperiaCN.replace("2sim", "dual")
       : fixXperiaCN;
 
   const fixApple2Sim2 =
     fixApple2Sim.indexOf("17 256") !== -1 ||
-    fixApple2Sim.indexOf("17 512") !== -1 ||
-    fixApple2Sim.indexOf("17e 256") !== -1 ||
-    fixApple2Sim.indexOf("17e 512") !== -1 ||
-    fixApple2Sim.indexOf("17 pro 256") !== -1 ||
-    fixApple2Sim.indexOf("17 pro 512") !== -1 ||
-    fixApple2Sim.indexOf("17 pro 1tb") !== -1 ||
-    fixApple2Sim.indexOf("17 pro max 256") !== -1 ||
-    fixApple2Sim.indexOf("17 pro max 1tb") !== -1 ||
-    fixApple2Sim.indexOf("17 pro max 512") !== -1 ||
-    fixApple2Sim.indexOf("17 pro max 2tb") !== -1
+      fixApple2Sim.indexOf("17 512") !== -1 ||
+      fixApple2Sim.indexOf("17e 256") !== -1 ||
+      fixApple2Sim.indexOf("17e 512") !== -1 ||
+      fixApple2Sim.indexOf("17 pro 256") !== -1 ||
+      fixApple2Sim.indexOf("17 pro 512") !== -1 ||
+      fixApple2Sim.indexOf("17 pro 1tb") !== -1 ||
+      fixApple2Sim.indexOf("17 pro max 256") !== -1 ||
+      fixApple2Sim.indexOf("17 pro max 1tb") !== -1 ||
+      fixApple2Sim.indexOf("17 pro max 512") !== -1 ||
+      fixApple2Sim.indexOf("17 pro max 2tb") !== -1
       ? fixApple2Sim.replace("2-sim", "dual")
       : fixApple2Sim;
 
@@ -667,9 +870,10 @@ export const defaultFixName = (el) => {
   const fixS26Plus1 = fixS26Plus.replace("s26 +", "S26+");
   const fixA07Gray =
     fixS26Plus1.indexOf("a07 4/64") !== -1 ||
-    fixS26Plus1.indexOf("a07 4/128") !== -1 ||
-    fixS26Plus1.indexOf("a07 6/128") !== -1 ||
-    fixS26Plus1.indexOf("a07 8/256") !== -1
+      fixS26Plus1.indexOf("a07 4/128") !== -1 ||
+      fixS26Plus1.indexOf("a07 6/128") !== -1 ||
+      fixS26Plus1.indexOf("a07 8/256") !== -1 ||
+      fixS26Plus1.indexOf("tab s11") !== -1
       ? fixS26Plus1.replace("black", "gray")
       : fixS26Plus1;
 

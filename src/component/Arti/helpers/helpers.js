@@ -145,11 +145,14 @@ export const returnFixNameArti = (name) => {
   const fixF956B = fixs916b.replace("F956B ", "");
   const fixS721B = fixF956B.replace("S721B ", "");
   const fixF741B = fixS721B.replace("F741B ", "");
-  const fixAirPods4 = fixF741B.replace("AirPods4", "AirPods 4");
+  const fix16Pro = fixF741B.replace("16P ", "16 Pro");
+  const fix16ProMax = fix16Pro.replace("16PM ", "16 Pro Max");
+  const fixAirPods4 = fix16ProMax.replace("AirPods4", "AirPods 4");
   const fix5 = fixAirPods4.replace("5️⃣", " 5 ");
   const fix6 = fix5.replace("6️⃣", " 6 ");
+  const fixS25Gray = fix6.indexOf("S25 ") !== -1 && fix6.indexOf("Ultra") === -1 ? fix6.replace("Gray", "Silver") : fix6
 
-  return fix6;
+  return fixS25Gray;
 };
 
 export const returnNameArti = (name) => {

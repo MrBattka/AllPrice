@@ -165,7 +165,7 @@
         "include": [
             "rog phone 9 fe",
             "12/256",
-            "black"
+            "gray"
         ],
         "exclude": []
     },
@@ -1704,6 +1704,25 @@
         ],
         "exclude": []
     },
+
+    
+    "36940": {
+        "include": [
+            "oneplus 12r",
+            "8/256",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "36941": {
+        "include": [
+            "oneplus 12r",
+            "8/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+
     "35885": {
         "include": [
             "oneplus 12r",
@@ -1835,7 +1854,7 @@
     "37792": {
         "include": [
             "oneplus 13r",
-            "16/512",
+            "12/256",
             "black"
         ],
         "exclude": []

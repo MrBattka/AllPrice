@@ -26,8 +26,9 @@ export const returnFixNameBonus = (name) => {
   const fixWatch6 = fix13ProPlus.replace("Watch6", "Watch 6");
   const fixWatch7 = fixWatch6.replace("Watch7", "Watch 7");
   const replaceMM = fixWatch7.replace("mm", "");
+  const fixLime = replaceMM.indexOf("A36") !== -1 ? replaceMM.replace("лайм", "Green") : replaceMM
 
-  const fixBlue = replaceMM.replace("Синий", "Blue");
+  const fixBlue = fixLime.replace("Синий", "Blue");
   const fixRed = fixBlue.replace("Красный", "Red");
   const fixPurple = fixRed.replace("Фиолетовый", "Purple");
   const fixGreen = fixPurple.replace("Зеленый", "Green");

@@ -1245,91 +1245,97 @@
     },
     "37307": {
       "include": [
-        "mini",
+        "mini 7 ",
         "128",
-        "blue",
-        " 7"
+        "blue"
       ],
       "exclude": []
     },
     "37310": {
       "include": [
-        "mini",
+        "mini 7 ",
         "256",
-        "blue",
-        " 7"
+        "blue"
       ],
       "exclude": []
     },
     "37311": {
       "include": [
-        "mini",
+        "mini 7 ",
         "512",
-        "blue",
-        " 7"
+        "blue"
       ],
       "exclude": []
     },
     "37320": {
       "include": [
-        "mini",
+        "mini 7 ",
         "128",
-        "purple",
-        " 7"
+        "purple"
       ],
       "exclude": []
     },
     "37317": {
       "include": [
-        "mini",
+        "mini 7 ",
         "128",
-        "gray",
-        " 7"
+        "gray"
       ],
       "exclude": []
     },
     "37313": {
       "include": [
-        "mini",
+        "mini 7 ",
         "256",
-        "gray",
-        " 7"
+        "gray"
+      ],
+      "exclude": []
+    },
+    "37314": {
+      "include": [
+        "mini 7 ",
+        "512",
+        "gray"
       ],
       "exclude": []
     },
     "37318": {
       "include": [
-        "mini",
+        "mini 7 ",
         "256",
-        "purple",
-        " 7"
+        "purple"
       ],
       "exclude": []
     },
     "37321": {
       "include": [
-        "mini",
+        "mini 7 ",
         "256",
-        "starlight",
-        " 7"
+        "starlight"
+      ],
+      "exclude": []
+    },
+    "37312": {
+      "include": [
+        "mini 7 ",
+        "128",
+        "starlight"
       ],
       "exclude": []
     },
     "37319": {
       "include": [
-        "mini",
+        "mini 7 ",
         "512",
-        "purple",
-        " 7"
+        "purple"
       ],
       "exclude": []
     },
     "37322": {
       "include": [
-        "mini",
+        "mini 7 ",
         "512",
-        "starlight",
-        " 7"
+        "starlight"
       ],
       "exclude": []
     },

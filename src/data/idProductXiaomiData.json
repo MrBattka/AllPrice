@@ -361,7 +361,7 @@
     },
     "36291": {
       "include": [
-        "poco f6 12/512 titanium"
+        "poco f6 12/512 titan"
       ],
       "exclude": []
     },
@@ -379,7 +379,7 @@
     },
     "36285": {
       "include": [
-        "poco f6 8/256 titanium"
+        "poco f6 8/256 titan"
       ],
       "exclude": []
     },
@@ -2196,7 +2196,7 @@
       "include": [
         "note 14 pro",
         "8/128",
-        "green",
+        "blue",
         "5g"
       ],
       "exclude": [
@@ -2229,7 +2229,7 @@
       "include": [
         "note 14 pro",
         "8/256",
-        "green",
+        "blue",
         "5g"
       ],
       "exclude": [
@@ -2262,7 +2262,7 @@
       "include": [
         "note 14 pro",
         "12/256",
-        "green",
+        "blue",
         "5g"
       ],
       "exclude": [
@@ -2295,7 +2295,7 @@
       "include": [
         "note 14 pro",
         "12/512",
-        "green",
+        "blue",
         "5g"
       ],
       "exclude": [
@@ -2341,7 +2341,7 @@
       "include": [
         "note 14",
         "6/128",
-        "green"
+        "blue"
       ],
       "exclude": [
         "note 14 pro",
@@ -2437,7 +2437,7 @@
       "include": [
         "note 14",
         "8/256",
-        "green"
+        "blue"
       ],
       "exclude": [
         "note 14 pro",
@@ -2473,7 +2473,7 @@
       "include": [
         "note 14",
         "6/128",
-        "green",
+        "blue",
         "5g"
       ],
       "exclude": [
@@ -2509,7 +2509,7 @@
       "include": [
         "note 14",
         "8/128",
-        "green",
+        "blue",
         "5g"
       ],
       "exclude": [
@@ -2545,7 +2545,7 @@
       "include": [
         "note 14",
         "8/256",
-        "green",
+        "blue",
         "5g"
       ],
       "exclude": [
@@ -2581,7 +2581,7 @@
       "include": [
         "note 14",
         "12/256",
-        "green",
+        "blue",
         "5g"
       ],
       "exclude": [
@@ -3005,7 +3005,7 @@
     },
     "30606": {
       "include": [
-        "mi 14 pro 12/256 titanium"
+        "mi 14 pro 12/256 titan"
       ],
       "exclude": []
     },
@@ -3029,7 +3029,7 @@
     },
     "30607": {
       "include": [
-        "mi 14 pro 16/1tb titanium"
+        "mi 14 pro 16/1tb titan"
       ],
       "exclude": []
     },
@@ -3053,7 +3053,7 @@
     },
     "30608": {
       "include": [
-        "mi 14 pro 16/512 titanium"
+        "mi 14 pro 16/512 titan"
       ],
       "exclude": []
     },
@@ -3071,7 +3071,7 @@
     },
     "35853": {
       "include": [
-        "mi 14 ultra 12/256 titanium gray"
+        "mi 14 ultra 12/256 titan gray"
       ],
       "exclude": []
     },
@@ -3095,7 +3095,7 @@
     },
     "35854": {
       "include": [
-        "mi 14 ultra 16/1tb titanium gray"
+        "mi 14 ultra 16/1tb titan gray"
       ],
       "exclude": []
     },
@@ -3119,7 +3119,7 @@
     },
     "35855": {
       "include": [
-        "mi 14 ultra 16/512 titanium gray"
+        "mi 14 ultra 16/512 titan gray"
       ],
       "exclude": []
     },
@@ -6154,7 +6154,7 @@
       "include": [
         "note 15 pro ",
         "12/256",
-        "titanium",
+        "titan",
         "5g"
       ],
       "exclude": [
@@ -6198,7 +6198,7 @@
       "include": [
         "note 15 pro ",
         "12/512",
-        "white",
+        "titan",
         "5g"
       ],
       "exclude": [
@@ -6242,7 +6242,7 @@
       "include": [
         "note 15 pro ",
         "8/256",
-        "white",
+        "titan",
         "5g"
       ],
       "exclude": [
@@ -6286,7 +6286,7 @@
       "include": [
         "note 15 pro ",
         "8/512",
-        "white",
+        "titan",
         "5g"
       ],
       "exclude": [
@@ -6313,7 +6313,7 @@
       "include": [
         "note 15 pro +",
         "12/256",
-        "purple"
+        "brown"
       ],
       "exclude": []
     },
@@ -6345,7 +6345,7 @@
       "include": [
         "note 15 pro +",
         "12/512",
-        "purple"
+        "brown"
       ],
       "exclude": []
     },
@@ -6393,7 +6393,7 @@
       "include": [
         "note 15 pro +",
         "16/1tb",
-        "purple"
+        "brown"
       ],
       "exclude": []
     },
@@ -6425,7 +6425,7 @@
       "include": [
         "note 15 pro +",
         "16/512",
-        "purple"
+        "brown"
       ],
       "exclude": []
     },
@@ -6761,145 +6761,169 @@
     },
     "41091": {
       "include": [
-        "mi pad 8 12/256 black"
+        "mi pad 8 12/256",
+        "black"
       ],
       "exclude": []
     },
     "41090": {
       "include": [
-        "mi pad 8 12/256 blue"
+        "mi pad 8 12/256",
+        "blue"
       ],
       "exclude": []
     },
     "41092": {
       "include": [
-        "mi pad 8 12/256 green"
+        "mi pad 8 12/256",
+        "green"
       ],
       "exclude": []
     },
     "41069": {
       "include": [
-        "mi pad 8 8/128 black"
+        "mi pad 8 8/128",
+        "black"
       ],
       "exclude": []
     },
     "41068": {
       "include": [
-        "mi pad 8 8/128 blue"
+        "mi pad 8 8/128",
+        "blue"
       ],
       "exclude": []
     },
     "41074": {
       "include": [
-        "mi pad 8 8/128 green"
+        "mi pad 8 8/128",
+        "green"
       ],
       "exclude": []
     },
     "41070": {
       "include": [
-        "mi pad 8 8/256 black"
+        "mi pad 8 8/256",
+        "black"
       ],
       "exclude": []
     },
     "41067": {
       "include": [
-        "mi pad 8 8/256 blue"
+        "mi pad 8 8/256",
+        "blue"
       ],
       "exclude": []
     },
     "41073": {
       "include": [
-        "mi pad 8 8/256 green"
+        "mi pad 8 8/256",
+        "green"
       ],
       "exclude": []
     },
     "41012": {
       "include": [
-        "mi pad 8 pro 12/256 blue"
+        "mi 8 pro 12/256",
+        "blue"
       ],
       "exclude": []
     },
     "41082": {
       "include": [
-        "mi pad 8 pro 12/256 gray"
+        "mi pad 8 pro 12/256",
+        "gray"
       ],
       "exclude": []
     },
     "41087": {
       "include": [
-        "mi pad 8 pro 12/256 green"
+        "mi pad 8 pro 12/256",
+        "green"
       ],
       "exclude": []
     },
     "41076": {
       "include": [
-        "mi pad 8 pro 12/512 blue"
+        "mi pad 8 pro 12/512",
+        "blue"
       ],
       "exclude": []
     },
     "41083": {
       "include": [
-        "mi pad 8 pro 12/512 gray"
+        "mi pad 8 pro 12/512",
+        "gray"
       ],
       "exclude": []
     },
     "41086": {
       "include": [
-        "mi pad 8 pro 12/512 green"
+        "mi pad 8 pro 12/512",
+        "green"
       ],
       "exclude": []
     },
     "41077": {
       "include": [
-        "mi pad 8 pro 16/512 blue"
+        "mi pad 8 pro 16/512",
+        "blue"
       ],
       "exclude": []
     },
     "41084": {
       "include": [
-        "mi pad 8 pro 16/512 gray"
+        "mi pad 8 pro 16/512",
+        "gray"
       ],
       "exclude": []
     },
     "41085": {
       "include": [
-        "mi pad 8 pro 16/512 green"
+        "mi pad 8 pro 16/512",
+        "green"
       ],
       "exclude": []
     },
     "41079": {
       "include": [
-        "mi pad 8 pro 8/128 blue"
+        "mi pad 8 pro 8/128",
+        "blue"
       ],
       "exclude": []
     },
     "41080": {
       "include": [
-        "mi pad 8 pro 8/128 gray"
+        "mi pad 8 pro 8/128",
+        "gray"
       ],
       "exclude": []
     },
     "41089": {
       "include": [
-        "mi pad 8 pro 8/128 green"
+        "mi pad 8 pro 8/128",
+        "green"
       ],
       "exclude": []
     },
     "41078": {
       "include": [
-        "mi pad 8 pro 8/256 blue"
+        "mi pad 8 pro 8/256",
+        "blue"
       ],
       "exclude": []
     },
     "41081": {
       "include": [
-        "mi pad 8 pro 8/256 gray"
+        "mi pad 8 pro 8/256",
+        "gray"
       ],
       "exclude": []
     },
     "41088": {
       "include": [
-        "mi pad 8 pro 8/256 green"
+        "mi pad 8 pro 8/256",
+        "green"
       ],
       "exclude": []
     },
@@ -7826,7 +7850,7 @@
       "include": [
         "note 15 pro",
         "12/256",
-        "titanium"
+        "titan"
       ],
       "exclude": [
         "5g",
@@ -7859,7 +7883,7 @@
       "include": [
         "note 15 pro",
         "12/512",
-        "titanium"
+        "titan"
       ],
       "exclude": [
         "5g",
@@ -7892,7 +7916,7 @@
       "include": [
         "note 15 pro",
         "8/256",
-        "titanium"
+        "titan"
       ],
       "exclude": [
         "5g",

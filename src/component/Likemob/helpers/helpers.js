@@ -10,7 +10,8 @@ export const returnFixNameLikemob = (name) => {
   const replace375 = replaceRU.replace("3.75 ", "");
   const fix15Plus = replace375.replace("15+", "15 plus");
   const fix24FE = fix15Plus.replace("S24FE", "S24 FE");
-  const fix1TB = fix24FE.replace("1T ", "1tb ");
+  const fix25FE = fix24FE.replace("S25FE", "S25 FE");
+  const fix1TB = fix25FE.replace("1T ", "1tb ");
   const fixFlip = fix1TB.replace("Flip", "Z Flip");
   const fixFold = fixFlip.replace("Fold", "Z Fold");
   const fixNote14Plus = fixFold.replace("14 Pro+", "14 pro +");
@@ -21,7 +22,10 @@ export const returnFixNameLikemob = (name) => {
   const fixSE2 = fixWatch7.replace("SE(Gen 2)", "se2 ");
   const fixWatchS11 = fixSE2.replace("Watch 11", "S11");
   const fixWatchMM = fixWatchS11.replace("mm", "");
-  return fixWatchMM;
+  const fixNacy = fixWatchMM.replace("Navi", "Navy");
+  const fixNightfreeze = fixNacy.replace("Nighfreeze", "Nightfreeze");
+  
+  return fixNightfreeze;
 };
 
 export const returnNameInArrLikemob = (name) => {

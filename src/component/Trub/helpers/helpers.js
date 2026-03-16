@@ -23,7 +23,8 @@ export const fixNameTrub = (name) => {
   const fixS23FE = fixS24FE.replace("S23FE", "S23 FE");
   const fixS22FE = fixS23FE.replace("S22FE", "S22 FE");
   const fixS21FE = fixS22FE.replace("S21FE", "S21 FE");
-  const fixS20FE = fixS21FE.replace("S20FE", "S20 FE");
+  const fixNightfreeze = fixS21FE.replace("night freeze", "Nightfreeze");
+  const fixS20FE = fixNightfreeze.replace("S20FE", "S20 FE");
   const fixS23Plus = fixS20FE.replace("S23 Plus", "S23+");
   const fixS22Plus = fixS23Plus.replace("S22 Plus", "S22+");
   const fixS21Plus = fixS22Plus.replace("S21 Plus", "S21+");
@@ -57,47 +58,51 @@ export const fixNameTrub = (name) => {
       : fixGoldRu.replace("Серый", "Gray");
   const fixBlackRu = fixGrayRu.replace("Черный", "Black");
   const fixBlueRu = fixBlackRu.replace("Голубой", "Blue");
-  const fixPinkRu = fixBlueRu.replace("Розовый", "Pink");
-  const fixGray = fixPinkRu.replace("Grey", "Gray");
+  const fixWatch8 = fixBlueRu.replace("Watch (2025) 8", "Watch 8");
+  const fix2TB = fixWatch8.replace("2 tb", "2TB");
+  const fixPinkRu = fix2TB.replace("Розовый", "Pink");
+  const fixNothingPhone3 = fixPinkRu.replace("Nothing Phone (3)", "Nothing Phone 3");
   
+  const fixGray = fixNothingPhone3.replace("Grey", "Gray");
+
   const fixA =
-  fixGray.indexOf("А16") !== -1 ||
-    fixGray.indexOf("А25") !== -1 ||
-    fixGray.indexOf("А26") !== -1 ||
-    fixGray.indexOf("А35") !== -1 ||
-    fixGray.indexOf("А36") !== -1 ||
-    fixGray.indexOf("А55") !== -1 ||
-    fixGray.indexOf("А56") !== -1
+    fixGray.indexOf("А16") !== -1 ||
+      fixGray.indexOf("А25") !== -1 ||
+      fixGray.indexOf("А26") !== -1 ||
+      fixGray.indexOf("А35") !== -1 ||
+      fixGray.indexOf("А36") !== -1 ||
+      fixGray.indexOf("А55") !== -1 ||
+      fixGray.indexOf("А56") !== -1
       ? fixGray.replace("А", "A")
       : fixGray;
-      const fixA5G =
-      fixA.indexOf("A25") !== -1 ||
+  const fixA5G =
+    fixA.indexOf("A25") !== -1 ||
       fixA.indexOf("A26") !== -1 ||
       fixA.indexOf("A35") !== -1 ||
       fixA.indexOf("A36") !== -1 ||
       fixA.indexOf("A55") !== -1 ||
       fixA.indexOf("A56") !== -1
-        ? fixA.replace("5G ", "")
-        : fixA;
+      ? fixA.replace("5G ", "")
+      : fixA;
   const replace1Sim = fixA5G.replace("1sim", "");
   const fixPixel5G =
-    replace1Sim.indexOf("Pixel") != -1 ||
-    replace1Sim.indexOf("M55") != -1 ||
-    replace1Sim.indexOf("S21") != -1 ||
-    replace1Sim.indexOf("А36") != -1 ||
-    replace1Sim.indexOf("А56") != -1 ||
-    replace1Sim.indexOf("А25") != -1 ||
-    replace1Sim.indexOf("А26") != -1 ||
-    replace1Sim.indexOf("А35") != -1 ||
-    replace1Sim.indexOf("А54") != -1 ||
-    replace1Sim.indexOf("S22") != -1 ||
-    replace1Sim.indexOf("S23") != -1 ||
-    replace1Sim.indexOf("S24") != -1 ||
-    replace1Sim.indexOf("S25") != -1
+    replace1Sim.indexOf("Pixel") !== -1 ||
+      replace1Sim.indexOf("M55") !== -1 ||
+      replace1Sim.indexOf("S21") !== -1 ||
+      replace1Sim.indexOf("А36") !== -1 ||
+      replace1Sim.indexOf("А56") !== -1 ||
+      replace1Sim.indexOf("А25") !== -1 ||
+      replace1Sim.indexOf("А26") !== -1 ||
+      replace1Sim.indexOf("А35") !== -1 ||
+      replace1Sim.indexOf("А54") !== -1 ||
+      replace1Sim.indexOf("S22") !== -1 ||
+      replace1Sim.indexOf("S23") !== -1 ||
+      replace1Sim.indexOf("S24") !== -1 ||
+      replace1Sim.indexOf("S25") !== -1
       ? replace1Sim.replace("5G ", "")
       : replace1Sim;
 
-      const fixSE2 = fixPixel5G.replace(
+  const fixSE2 = fixPixel5G.replace(
     "SE 2",
     "SE2"
   );
@@ -105,8 +110,10 @@ export const fixNameTrub = (name) => {
     "SE 3",
     "SE3"
   );
+  
+  const fixSE32022 = fixSE3.replace("SE3 (2022)", "SE3");
 
-  return fixSE3;
+  return fixSE32022;
 };
 
 const checkFlags = (str) => {

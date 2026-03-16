@@ -474,7 +474,12 @@ const processData = (data, processor, isOpen) => {
       const processed = processor.processItem(item);
       return processed.id === "No match" && isOpen ? processed : null;
     })
-    .filter(Boolean);
+    .filter(Boolean)
+    .filter((item) => {
+      // Проверяем, что stockPrice заканчивается на "00"
+      const priceStr = String(item.stockPrice).trim();
+      return priceStr.endsWith('00') && !isNaN(parseFloat(priceStr));
+    });
 };
 
 const AllPriceNotID = ({
