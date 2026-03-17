@@ -23,7 +23,8 @@ export const returnFixNameBonus = (name) => {
       : replacePoint;
   const fix14ProPlus = replace5G.replace("Note 14 Pro+", "Note 14 Pro +");
   const fix13ProPlus = fix14ProPlus.replace("Note 13 Pro+", "Note 13 Pro +");
-  const fixWatch6 = fix13ProPlus.replace("Watch6", "Watch 6");
+  const fixA06Gold = fix13ProPlus.replace("Золотистый", "Gold");
+  const fixWatch6 = fixA06Gold.replace("Watch6", "Watch 6");
   const fixWatch7 = fixWatch6.replace("Watch7", "Watch 7");
   const replaceMM = fixWatch7.replace("mm", "");
   const fixLime = replaceMM.indexOf("A36") !== -1 ? replaceMM.replace("лайм", "Green") : replaceMM
@@ -73,6 +74,8 @@ export const returnFixNameBonus = (name) => {
     fixSilver1.indexOf("A55 ") !== -1
       ? fixSilver1.replace("голубой", "Light Blue")
       : fixSilver1.replace("голубой", "Iceblue");
+      
+  const fixTabA11Gray = fixLightBlue1.indexOf("Tab A11") !== -1 ? fixLightBlue1.replace("Graphite", "Gray") : fixLightBlue1
 
-  return fixLightBlue1;
+  return fixTabA11Gray;
 };

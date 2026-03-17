@@ -21,7 +21,8 @@ export const returnFixNameLikemob = (name) => {
   const fixWatch7 = fixLTE.replace("Watch7", "Watch 7");
   const fixSE2 = fixWatch7.replace("SE(Gen 2)", "se2 ");
   const fixWatchS11 = fixSE2.replace("Watch 11", "S11");
-  const fixWatchMM = fixWatchS11.replace("mm", "");
+  const fixWatch8 = fixWatchS11.replace("Watch8", "Watch 8");
+  const fixWatchMM = fixWatch8.replace("mm", "");
   const fixNacy = fixWatchMM.replace("Navi", "Navy");
   const fixNightfreeze = fixNacy.replace("Nighfreeze", "Nightfreeze");
   

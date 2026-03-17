@@ -229,7 +229,9 @@ export const defaultFixName = (el) => {
       : fixNote15ProGray;
   const fixipad11White =
     (fixNote15ProPlus1.indexOf("ipad 11") !== -1 ||
-      fixNote15ProPlus1.indexOf("tab s11") !== -1)
+      fixNote15ProPlus1.indexOf("tab s11") !== -1 ||
+      fixNote15ProPlus1.indexOf("poco m7") !== -1 ||
+      fixNote15ProPlus1.indexOf("1000xm5") !== -1)
       ? fixNote15ProPlus1.replace("white", "silver")
       : fixNote15ProPlus1;
   const fixipadPro11White =

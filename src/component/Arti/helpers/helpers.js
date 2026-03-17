@@ -145,7 +145,13 @@ export const returnFixNameArti = (name) => {
   const fixF956B = fixs916b.replace("F956B ", "");
   const fixS721B = fixF956B.replace("S721B ", "");
   const fixF741B = fixS721B.replace("F741B ", "");
-  const fix16Pro = fixF741B.replace("16P ", "16 Pro");
+  const fixAirPodsPro2 = fixF741B.replace("AirPods Pro2", "AirPods Pro 2");
+  const fixAirPodsPro3 = fixAirPodsPro2.replace("AirPods Pro3", "AirPods Pro 3");
+  const fixZFold7 = fixAirPodsPro3.replace("Z Fold7⃣", "Z Fold 7");
+  const fixIcyblue = fixZFold7.replace("❄", "Icyblue");
+  const fixPro11 = fixIcyblue.replace("iPad Pro1️⃣", "iPad Pro 1");
+  
+  const fix16Pro = fixPro11.replace("16P ", "16 Pro");
   const fix16ProMax = fix16Pro.replace("16PM ", "16 Pro Max");
   const fixAirPods4 = fix16ProMax.replace("AirPods4", "AirPods 4");
   const fix5 = fixAirPods4.replace("5️⃣", " 5 ");

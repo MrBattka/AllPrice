@@ -14,7 +14,8 @@ export const returnNameF51 = (name) => {
   const fixCE4 = fixCE5.replace("CE 4", "CE4");
   const fixACE5 = fixCE4.replace("ACE5", "Ace 5");
   const fixSilver = fixACE5.replace("Slver", "Silver");
-  const fixAce5 = fixSilver.replace("Ace5", "Ace 5");
+  const fixSilver1 = fixSilver.replace("Siver", "Silver");
+  const fixAce5 = fixSilver1.replace("Ace5", "Ace 5");
   const fixBrown = fixAce5.replace("Brow", "Brown");
   const fixSony = fixBrown.replace("Sony Xperia", "Dual 🇭🇰 Sony Xperia");
   const fixSony1 = fixSony.replace("Sony  Xperia", "Dual 🇭🇰 Sony Xperia");

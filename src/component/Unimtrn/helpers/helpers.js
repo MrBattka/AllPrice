@@ -437,9 +437,10 @@ export const fixNameUnimtrn = (el) => {
   const fixProMaxx = fixMoonlightWhite.replace("ProMax", "Pro Max");
   const fixGongKong = fixProMaxx.replace("🇭🇰 Гонконг", "🇭🇰");
   const fixCPH2581 = fixGongKong.replace("CPH2581 ", "");
-  const fixJade = fixCPH2581.replace("Jade ", "");
+  const fixJade = fixCPH2581.replace("Jade", "Green");
   const fixNote13NFC = fixJade.replace("Note 13 NFC", "Note 13");
-  const fixAir11M4 = fixNote13NFC.replace("Air 11 (2024)", "Air 11 M2");
+  const fixRogAlly = fixNote13NFC.replace("Xbox Х Ally", "Xbox X Ally");
+  const fixAir11M4 = fixRogAlly.replace("Air 11 (2024)", "Air 11 M2");
   const fixAir11Gray =
     fixAir11M4.indexOf("Air 11") != -1 && fixAir11M4.indexOf("Black") != -1
       ? fixAir11M4.replace("Black", "Gray")

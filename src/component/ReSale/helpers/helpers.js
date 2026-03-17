@@ -190,7 +190,8 @@ export const returnFixNameReSale = (name) => {
   const fixPencil = fixHeadphone.replace("✏️", "");
   const fixPint = fixPencil.replace("•", "");
   const fixAW = fixPint.replace("Apple Watch ", "");
-  const replaceSM = fixAW.replace("SM-", "SM");
+  const fixLavender = fixAW.replace("Lavander", "Lavender");
+  const replaceSM = fixLavender.replace("SM-", "SM");
   const replaceG = replaceSM.replace("G-", "G");
   const fixUSBC = replaceG.replace("Type-C", "Type C");
   const fix1TB = fixUSBC.replace("1024", "1TB");

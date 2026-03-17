@@ -1,23 +1,31 @@
 {
     "30134": {
         "include": [
-            "rog ally",
+            "rog",
+            "ally",
             "16/256",
             "white"
         ],
-        "exclude": []
+        "exclude": [
+            " x "
+        ]
     },
     "27653": {
         "include": [
-            "rog ally",
+            "rog",
+            "ally",
             "16/512",
             "white"
         ],
-        "exclude": []
+        "exclude": [
+            " x "
+        ]
     },
     "36185": {
         "include": [
-            "rog ally x",
+            "rog",
+            "ally",
+            " x ",
             "12/1tb",
             "black"
         ],
@@ -1704,8 +1712,6 @@
         ],
         "exclude": []
     },
-
-    
     "36940": {
         "include": [
             "oneplus 12r",
@@ -1722,7 +1728,6 @@
         ],
         "exclude": []
     },
-
     "35885": {
         "include": [
             "oneplus 12r",

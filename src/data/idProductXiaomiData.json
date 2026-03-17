@@ -6503,7 +6503,14 @@
     "41044": {
       "include": [
         "mi 17 12/256",
-        "white"
+        "green"
+      ],
+      "exclude": []
+    },
+    "42559": {
+      "include": [
+        "mi 17 16/1tb",
+        "green"
       ],
       "exclude": []
     },
@@ -6531,7 +6538,7 @@
     "41043": {
       "include": [
         "mi 17 12/512",
-        "white"
+        "green"
       ],
       "exclude": []
     },
@@ -6559,7 +6566,7 @@
     "41041": {
       "include": [
         "mi 17 16/512",
-        "white"
+        "green"
       ],
       "exclude": []
     },
