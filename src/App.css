@@ -27,13 +27,35 @@ input {
   color: #d5d5d5;
 }
 
+.custom-file-upload1 {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  background-color: rgb(192, 2, 151);
+  color: #d5d5d5;
+  margin-right: 90px;
+  margin-top: -80px;
+  /* width: 200px; */
+  /* margin: 0 auto; */
+}
+
 .custom-file-upload:hover {
   background-color: rgb(146, 7, 116);
   box-shadow: 0 0 10px white;
   transition: 0.5s;
 }
 
+.custom-file-upload1:hover {
+  background-color: rgb(146, 7, 116);
+  box-shadow: 0 0 10px white;
+  transition: 0.5s;
+}
+
 .custom-file-upload:active {
+  box-shadow: none;
+}
+
+.custom-file-upload1:active {
   box-shadow: none;
 }
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { read, utils } from "xlsx";
+import { read, utils, writeFile } from "xlsx";
 import "../App.css";
 import IndexA18 from "./A18/IndexA18";
 import IndexA18NotID from "./A18/IndexA18NotID";
@@ -68,6 +68,12 @@ import IndexUnimtrn_1 from "./Unimtrn/indexUNIMTRN_1";
 import IndexVseMi from "./VseMi/indexVseMi";
 import IndexVseMiNotID from "./VseMi/indexVseMiNotID";
 import AllPriceNotID from "./AllPrice/AllPriceNotID";
+import idProductAppleData from "../data/idProductAppleData.json"
+import idProductXiaomiData from "../data/idProductXiaomiData.json"
+import idProductSamsungData from "../data/idProductSamsungData.json"
+import idProductGarminData from "../data/idProductGarminData.json"
+import idProductOtherBrandData from "../data/idProductOtherBrandData.json"
+import idProductOtherBrandData2 from "../data/idProductOtherBrandData2.json"
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -139,6 +145,43 @@ const IndexAllPrice = () => {
   const store77 = [];
 
   const allItems = [];
+
+  const exportJSONToExcel = (jsonData, fileName = "data", sheetName = "Sheet1") => {
+    // Создаём рабочую книгу
+    const workbook = utils.book_new();
+
+    // Преобразуем JSON в лист
+    const worksheet = utils.json_to_sheet(jsonData);
+
+    // Добавляем лист в книгу
+    utils.book_append_sheet(workbook, worksheet, sheetName);
+
+    // Экспортируем файл
+    writeFile(workbook, `${fileName}.xlsx`);
+  };
+
+  const handleExport = (apple, samsung, xiaomi, garmin, other1, other2) => {
+    const combinedData = {
+      ...apple,
+      ...samsung,
+      ...xiaomi,
+      ...garmin,
+      ...other1,
+      ...other2
+    };
+
+    const dataArray = Object.keys(combinedData).map(key => {
+    const item = combinedData[key];
+      return {
+        ID: key,
+        Include: Array.isArray(item.include) ? item.include.join(", ") : "",
+        Exclude: Array.isArray(item.exclude) ? item.exclude.join(", ") : ""
+      };
+    });
+
+
+    exportJSONToExcel(dataArray, "Выгрузка ID", "Товары");
+  };
 
   const returnNewMiopt = (arr) => {
     for (let i = 0; i < arr.length; i++) {
@@ -500,6 +543,12 @@ const IndexAllPrice = () => {
         </div>
       </div>
       <div className="wrapper_cat">
+        <div className="flexbox">
+          <button onClick={() => handleExport(idProductAppleData, idProductSamsungData, idProductXiaomiData, 
+                        idProductGarminData, idProductOtherBrandData, idProductOtherBrandData2)} className="custom-file-upload1">
+            Выгрузить ID
+          </button>
+        </div>
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
         {/* Метры */}
