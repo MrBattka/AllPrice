@@ -20,6 +20,8 @@ export const fixNameLowPrice = (name) => {
     fixMilanese.indexOf("A26 ") !== -1 ||
     fixMilanese.indexOf("A36 ") !== -1 ||
     fixMilanese.indexOf("A56 ") !== -1 ||
+    fixMilanese.indexOf("A37 ") !== -1 ||
+    fixMilanese.indexOf("A57 ") !== -1 ||
     fixMilanese.indexOf("S24 ") !== -1 ||
     fixMilanese.indexOf("S25 ") !== -1 ||
     fixMilanese.indexOf("Mi 1") !== -1 ||

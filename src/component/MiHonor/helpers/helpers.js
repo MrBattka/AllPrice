@@ -5,8 +5,8 @@ const fixFlags = (str) => {
 
   let current = str;
   for (let i = 1; i < str.length; i++) {
-      current = current.slice(4) + ' ' + current[0] + current[1] + current[2] + current[3];
-      result.push(current)
+    current = current.slice(4) + ' ' + current[0] + current[1] + current[2] + current[3];
+    result.push(current)
   }
   return result[0];
 }
@@ -80,14 +80,15 @@ export const fixNameMihonor = (name) => {
   const removeA174G = fix161024.replace("A17 4G", "A17");
   const fixBLCK = removeA174G.replace("BLACК", "Black");
   const fixZFlip7FE = fixBLCK.replace("Z FLIP 7FE", "Z Flip 7 fe");
-  
+
   const fixProPlus = fixZFlip7FE.replace("PRO PLUS", "Pro +");
   const remove8256 = fixProPlus.replace("8+256", "8/256");
 
   const fixMi = returnNameInArrMihonor(name.toLowerCase())[0] === "M" ? remove8256.replace("MI ", "XIAOMI ") : remove8256
 
   const fixA5G = (fixMi.indexOf("A25") !== -1 || fixMi.indexOf("A26") !== -1 || fixMi.indexOf("A35") !== -1 ||
-  fixMi.indexOf("A36") !== -1 || fixMi.indexOf("A55") !== -1 || fixMi.indexOf("A56") !== -1) ? fixMi.replace("5G ", "") : fixMi
+    fixMi.indexOf("A36") !== -1 || fixMi.indexOf("A55") !== -1 || fixMi.indexOf("A56") !== -1
+    || fixMi.indexOf("A57") !== -1 || fixMi.indexOf("A37") !== -1) ? fixMi.replace("5G ", "") : fixMi
 
   const remove874g = fixA5G.replace("8.7 4G ", "");
   const remove874wifi = remove874g.replace("8.7 WI FI ", "");
@@ -112,6 +113,6 @@ export const fixNameMihonor = (name) => {
   const fixNote14ProPlus = fix364.replace("NOTE 14 PRO PLUS", "NOTE 14 PRO +");
   const replace5G = (fixNote14ProPlus.indexOf("X7") !== -1) ? fixNote14ProPlus.replace("5G ", "") : fixNote14ProPlus
   const fix12512 = replace5G.replace("12+ 512", "12/512");
-  
+
   return fix12512;
 };

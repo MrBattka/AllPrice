@@ -81,7 +81,9 @@ export const fixNameTrub = (name) => {
       fixA.indexOf("A35") !== -1 ||
       fixA.indexOf("A36") !== -1 ||
       fixA.indexOf("A55") !== -1 ||
-      fixA.indexOf("A56") !== -1
+      fixA.indexOf("A56") !== -1 ||
+      fixA.indexOf("A37") !== -1 ||
+      fixA.indexOf("A57") !== -1
       ? fixA.replace("5G ", "")
       : fixA;
   const replace1Sim = fixA5G.replace("1sim", "");

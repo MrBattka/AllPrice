@@ -127,6 +127,8 @@ export const fixNameMiOpts = (name) => {
     replaceGB.indexOf("A26 ") !== -1 ||
     replaceGB.indexOf("A36 ") !== -1 ||
     replaceGB.indexOf("A56 ") !== -1 ||
+    replaceGB.indexOf("A37 ") !== -1 ||
+    replaceGB.indexOf("A57 ") !== -1 ||
     replaceGB.indexOf("S24 ") !== -1 ||
     replaceGB.indexOf("S25 ") !== -1 ||
     replaceGB.indexOf("Mi 1") !== -1 ||

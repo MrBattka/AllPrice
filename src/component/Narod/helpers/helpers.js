@@ -90,6 +90,8 @@ export const fixNameNarod = (name) => {
    fixCreamZFlip6.indexOf("A26 ") !== -1 ||
    fixCreamZFlip6.indexOf("A36 ") !== -1 ||
    fixCreamZFlip6.indexOf("A56 ") !== -1 ||
+   fixCreamZFlip6.indexOf("A37 ") !== -1 ||
+   fixCreamZFlip6.indexOf("A57 ") !== -1 ||
    fixCreamZFlip6.indexOf("S24 ") !== -1 ||
    fixCreamZFlip6.indexOf("S25 ") !== -1 ||
    fixCreamZFlip6.indexOf("Mi 1") !== -1 ||

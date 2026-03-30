@@ -13,7 +13,12 @@ export const returnFixNameBase = (name) => {
     fixNordCE3.indexOf("A53") ||
     fixNordCE3.indexOf("A55") ||
     fixNordCE3.indexOf("A35") ||
-    fixNordCE3.indexOf("A25")
+    fixNordCE3.indexOf("A56") ||
+    fixNordCE3.indexOf("A36") ||
+    fixNordCE3.indexOf("A57") ||
+    fixNordCE3.indexOf("A37") ||
+    fixNordCE3.indexOf("A25") ||
+    fixNordCE3.indexOf("A26")
       ? fixNordCE3.replace("5G ", "")
       : fixNordCE3;
   const fix14Plus = replace5G.replace("iPhone 14 +", "iPhone 14 Plus");
