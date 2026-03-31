@@ -68,7 +68,7 @@ export const returnFixNameBonus = (name) => {
   const fixMint1 = fixViolet1.replace("мятный", "Mint");
   const fixLilac1 = fixMint1.replace("сирень", "Lilac");
   const fixGraphite1 = fixLilac1.replace("графит", "Graphite");
-  const fixGold1 = fixGraphite1.replace("золотой", "Gold");
+  const fixGold1 = fixGraphite1.replace("золот", "Gold");
   const fixSilver1 = fixGold1.replace("серебро", "Silver");
   const fixLightBlue1 =
     fixSilver1.indexOf("A55 ") !== -1

@@ -8,7 +8,10 @@ export const returnFixNameRacmag = (name) => {
   const fix14C = replaceProPlus.replace("Redmi 14С", "Redmi 14C");
   const fixBlue = fix14C.replace("Bluе", "Blue");
   const replaceAwesome = fixBlue.replace("Awesome ", "");
-  const replaceSE = replaceAwesome.replace("SE 8.7", "SE");
+  const fixHonor400 = (replaceAwesome.indexOf("400 8/") !== -1 || replaceAwesome.indexOf("400 12/") !== -1 || 
+  replaceAwesome.indexOf("400 Pro") !== -1) ?
+    replaceAwesome.replace("400", "Honor 400") : replaceAwesome
+  const replaceSE = fixHonor400.replace("SE 8.7", "SE");
   const replaceNoteBlue =
     replaceSE.indexOf("Note ") !== -1
       ? replaceSE.replace("Ice Blue", "Blue")

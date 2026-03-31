@@ -10,15 +10,15 @@ export const returnFixNameBase = (name) => {
   const fixiPhone16Plus = fixPlus.indexOf("iPhone") !== -1 ? fixPlus.replace("16 +", "16 Plus") : fixPlus
   const fixNordCE3 = fixiPhone16Plus.replace("Nord CE 3", "Nord CE3");
   const replace5G =
-    fixNordCE3.indexOf("A53") ||
-    fixNordCE3.indexOf("A55") ||
-    fixNordCE3.indexOf("A35") ||
-    fixNordCE3.indexOf("A56") ||
-    fixNordCE3.indexOf("A36") ||
-    fixNordCE3.indexOf("A57") ||
-    fixNordCE3.indexOf("A37") ||
-    fixNordCE3.indexOf("A25") ||
-    fixNordCE3.indexOf("A26")
+    (fixNordCE3.indexOf("A53") !== -1 ||
+      fixNordCE3.indexOf("A55") !== -1 ||
+      fixNordCE3.indexOf("A35") !== -1 ||
+      fixNordCE3.indexOf("A56") !== -1 ||
+      fixNordCE3.indexOf("A36") !== -1 ||
+      fixNordCE3.indexOf("A57") !== -1 ||
+      fixNordCE3.indexOf("A37") !== -1 ||
+      fixNordCE3.indexOf("A25") !== -1 ||
+      fixNordCE3.indexOf("A26") !== -1)
       ? fixNordCE3.replace("5G ", "")
       : fixNordCE3;
   const fix14Plus = replace5G.replace("iPhone 14 +", "iPhone 14 Plus");

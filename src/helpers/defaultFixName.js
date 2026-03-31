@@ -227,13 +227,18 @@ export const defaultFixName = (el) => {
     fixNote15ProGray.indexOf("note 15 pro") !== -1
       ? fixNote15ProGray.replace("pro plus", "pro +")
       : fixNote15ProGray;
-  const fixipad11White =
-    (fixNote15ProPlus1.indexOf("ipad 11") !== -1 ||
-      fixNote15ProPlus1.indexOf("tab s11") !== -1 ||
-      fixNote15ProPlus1.indexOf("poco m7") !== -1 ||
-      fixNote15ProPlus1.indexOf("1000xm5") !== -1)
-      ? fixNote15ProPlus1.replace("white", "silver")
+  const fixS25UltraJetblack =
+    fixNote15ProPlus1.indexOf("s25 ultra") !== -1
+      ? fixNote15ProPlus1.replace("jetblack", "jet black")
       : fixNote15ProPlus1;
+  const fixipad11White =
+    (fixS25UltraJetblack.indexOf("ipad 11") !== -1 ||
+      fixS25UltraJetblack.indexOf("tab s11") !== -1 ||
+      fixS25UltraJetblack.indexOf("poco m7") !== -1 ||
+      fixS25UltraJetblack.indexOf("1000xm5") !== -1 ||
+      fixS25UltraJetblack.indexOf("honor 400") !== -1)
+      ? fixS25UltraJetblack.replace("white", "silver")
+      : fixS25UltraJetblack;
   const fixipadPro11White =
     fixipad11White.indexOf("ipad pro 11") !== -1
       ? fixipad11White.replace("white", "silver")

@@ -19,7 +19,8 @@ export const returnFixNameL27 = (name) => {
   const fixMouse = fix12Pro.replace("Maus ", "Mouse ");
   const fixMouse1 = fixMouse.replace("Mause", "Mouse");
   const fixSE2 = fixMouse1.replace("SE 2024", "SE2");
-  const fixAirPods = fixSE2.replace("АirPods", "AirPods");
+  const fix2T = fixSE2.replace(" 2T ", " 2Tb ");
+  const fixAirPods = fix2T.replace("АirPods", "AirPods");
   
   return fixAirPods;
 };
