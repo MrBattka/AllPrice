@@ -39,6 +39,7 @@ export const fixNameSuperPrice = (name) => {
     fixXperia5G.indexOf("Pixel") != -1 ||
     fixXperia5G.indexOf("M55") != -1 ||
     fixXperia5G.indexOf("S21") != -1 ||
+    fixXperia5G.indexOf("A26") != -1 ||
     fixXperia5G.indexOf("A36") != -1 ||
     fixXperia5G.indexOf("A56") != -1 ||
     fixXperia5G.indexOf("A37") != -1 ||
@@ -50,7 +51,8 @@ export const fixNameSuperPrice = (name) => {
     "12/512 Platinum Silver"
   );
   const fixPhantomBlack = fixSilver.replace("Phantom Black", "Black");
-  const fixMidnightBlack = fixPhantomBlack.replace("Midnight Black", "Black");
+  const fixTabA11Plus = fixPhantomBlack.replace("Tab A11 Plus", "Tab A11 +");
+  const fixMidnightBlack = fixTabA11Plus.replace("Midnight Black", "Black");
   const fixWatch8 = fixMidnightBlack.replace("Watch8", "Watch 8");
   const fixNote13Iceblue = fixWatch8.replace(
     "Note 13 8/256 Iceblue",
