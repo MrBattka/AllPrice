@@ -5929,7 +5929,7 @@
     },
     "40612": {
       "include": [
-        "c85",
+        "c85 ",
         "6/128",
         "black"
       ],
@@ -5937,7 +5937,7 @@
     },
     "40689": {
       "include": [
-        "c85",
+        "c85 ",
         "6/128",
         "green"
       ],
@@ -5945,7 +5945,7 @@
     },
     "40688": {
       "include": [
-        "c85",
+        "c85 ",
         "6/128",
         "purple"
       ],
@@ -5953,7 +5953,7 @@
     },
     "40686": {
       "include": [
-        "c85",
+        "c85 ",
         "8/256",
         "black"
       ],
@@ -5961,7 +5961,7 @@
     },
     "40690": {
       "include": [
-        "c85",
+        "c85 ",
         "8/256",
         "green"
       ],
@@ -5969,7 +5969,7 @@
     },
     "40687": {
       "include": [
-        "c85",
+        "c85 ",
         "8/256",
         "purple"
       ],
@@ -7951,5 +7951,327 @@
         "ultra",
         "pro"
       ]
+    },
+    "42893": {
+      "include": [
+        "c85x",
+        "4/64",
+        "black"
+      ],
+      "exclude": []
+    },
+    "42920": {
+      "include": [
+        "c85x",
+        "4/128",
+        "black"
+      ],
+      "exclude": []
+    },
+    "42922": {
+      "include": [
+        "c85x",
+        "4/64",
+        "green"
+      ],
+      "exclude": []
+    },
+    "42921": {
+      "include": [
+        "c85x",
+        "4/128",
+        "green"
+      ],
+      "exclude": []
+    },
+    "42923": {
+      "include": [
+        "c85x",
+        "4/64",
+        "gold"
+      ],
+      "exclude": []
+    },
+    "42924": {
+      "include": [
+        "c85x",
+        "4/128",
+        "gold"
+      ],
+      "exclude": []
+    },
+    "42910": {
+      "include": [
+        "poco x8 pro",
+        "8/256",
+        "black"
+      ],
+      "exclude": [
+        "max"
+      ]
+    },
+    "43005": {
+      "include": [
+        "poco x8 pro",
+        "8/512",
+        "black"
+      ],
+      "exclude": [
+        "max"
+      ]
+    },
+    "43006": {
+      "include": [
+        "poco x8 pro",
+        "12/512",
+        "black"
+      ],
+      "exclude": [
+        "max"
+      ]
+    },
+    "43009": {
+      "include": [
+        "poco x8 pro",
+        "8/256",
+        "white"
+      ],
+      "exclude": [
+        "max"
+      ]
+    },
+    "43008": {
+      "include": [
+        "poco x8 pro",
+        "8/512",
+        "white"
+      ],
+      "exclude": [
+        "max"
+      ]
+    },
+    "43007": {
+      "include": [
+        "poco x8 pro",
+        "12/512",
+        "white"
+      ],
+      "exclude": [
+        "max"
+      ]
+    },
+    "43010": {
+      "include": [
+        "poco x8 pro",
+        "8/256",
+        "green"
+      ],
+      "exclude": [
+        "max"
+      ]
+    },
+    "43011": {
+      "include": [
+        "poco x8 pro",
+        "8/512",
+        "green"
+      ],
+      "exclude": [
+        "max"
+      ]
+    },
+    "43012": {
+      "include": [
+        "poco x8 pro",
+        "12/512",
+        "green"
+      ],
+      "exclude": [
+        "max"
+      ]
+    },
+    "42914": {
+      "include": [
+        "poco x8 pro max",
+        "12/256",
+        "black"
+      ],
+      "exclude": []
+    },
+    "43013": {
+      "include": [
+        "poco x8 pro max",
+        "12/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "43015": {
+      "include": [
+        "poco x8 pro max",
+        "12/256",
+        "white"
+      ],
+      "exclude": []
+    },
+    "43014": {
+      "include": [
+        "poco x8 pro max",
+        "12/512",
+        "white"
+      ],
+      "exclude": []
+    },
+    "43016": {
+      "include": [
+        "poco x8 pro max",
+        "12/256",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43017": {
+      "include": [
+        "poco x8 pro max",
+        "12/512",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43059": {
+      "include": [
+        "redmi 15a",
+        "4/64",
+        "black"
+      ],
+      "exclude": []
+    },
+    "43062": {
+      "include": [
+        "redmi 15a",
+        "4/128",
+        "black"
+      ],
+      "exclude": []
+    },
+    "43063": {
+      "include": [
+        "redmi 15a",
+        "6/128",
+        "black"
+      ],
+      "exclude": []
+    },
+    "43066": {
+      "include": [
+        "redmi 15a",
+        "4/64",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43065": {
+      "include": [
+        "redmi 15a",
+        "4/128",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43064": {
+      "include": [
+        "redmi 15a",
+        "6/128",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43067": {
+      "include": [
+        "redmi 15a",
+        "4/64",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "43068": {
+      "include": [
+        "redmi 15a",
+        "4/128",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "43069": {
+      "include": [
+        "redmi 15a",
+        "6/128",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "43060": {
+      "include": [
+        "redmi a7 pro",
+        "4/64",
+        "black"
+      ],
+      "exclude": []
+    },
+    "43070": {
+      "include": [
+        "redmi a7 pro",
+        "4/128",
+        "black"
+      ],
+      "exclude": []
+    },
+    "43074": {
+      "include": [
+        "redmi a7 pro",
+        "4/64",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43071": {
+      "include": [
+        "redmi a7 pro",
+        "4/128",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43075": {
+      "include": [
+        "redmi a7 pro",
+        "4/64",
+        "green"
+      ],
+      "exclude": []
+    },
+    "43076": {
+      "include": [
+        "redmi a7 pro",
+        "4/128",
+        "green"
+      ],
+      "exclude": []
+    },
+    "43078": {
+      "include": [
+        "redmi a7 pro",
+        "4/64",
+        "orange"
+      ],
+      "exclude": []
+    },
+    "43077": {
+      "include": [
+        "redmi a7 pro",
+        "4/128",
+        "orange"
+      ],
+      "exclude": []
     }
   }

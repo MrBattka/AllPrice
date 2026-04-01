@@ -10797,5 +10797,191 @@
       "chark"
     ],
     "exclude": []
+  },
+  "42901": {
+    "include": [
+      "watch 8",
+      "40",
+      "black"
+    ],
+    "exclude": [
+      "lte"
+    ]
+  },
+  "42911": {
+    "include": [
+      "watch 8",
+      "44",
+      "black"
+    ],
+    "exclude": [
+      "lte"
+    ]
+  },
+  "42913": {
+    "include": [
+      "watch 8",
+      "40",
+      "silver"
+    ],
+    "exclude": [
+      "lte"
+    ]
+  },
+  "42912": {
+    "include": [
+      "watch 8",
+      "44",
+      "silver"
+    ],
+    "exclude": [
+      "lte"
+    ]
+  },
+  "42891": {
+    "include": [
+      "galaxy buds 4 pro",
+      "black"
+    ],
+    "exclude": []
+  },
+  "42896": {
+    "include": [
+      "galaxy buds 4 pro",
+      "white"
+    ],
+    "exclude": []
+  },
+  "42857": {
+    "include": [
+      "galaxy buds 4",
+      "black"
+    ],
+    "exclude": [
+      "pro"
+    ]
+  },
+  "42890": {
+    "include": [
+      "galaxy buds 4",
+      "white"
+    ],
+    "exclude": [
+      "pro"
+    ]
+  },
+  "42898": {
+    "include": [
+      "tab a11 +",
+      "6/128",
+      "gray",
+      "lte"
+    ],
+    "exclude": []
+  },
+  "42899": {
+    "include": [
+      "tab a11 +",
+      "6/128",
+      "gray"
+    ],
+    "exclude": [
+      "lte"
+    ]
+  },
+  "42974": {
+    "include": [
+      "tab a11 +",
+      "6/256",
+      "gray"
+    ],
+    "exclude": [
+      "lte"
+    ]
+  },
+  "42975": {
+    "include": [
+      "tab a11 +",
+      "8/256",
+      "gray"
+    ],
+    "exclude": [
+      "lte"
+    ]
+  },
+  "42978": {
+    "include": [
+      "tab a11 +",
+      "6/128",
+      "silver"
+    ],
+    "exclude": [
+      "lte"
+    ]
+  },
+  "42977": {
+    "include": [
+      "tab a11 +",
+      "6/256",
+      "silver"
+    ],
+    "exclude": [
+      "lte"
+    ]
+  },
+  "42976": {
+    "include": [
+      "tab a11 +",
+      "8/256",
+      "silver"
+    ],
+    "exclude": [
+      "lte"
+    ]
+  },
+  "42980": {
+    "include": [
+      "tab a11 +",
+      "6/256",
+      "gray",
+      "lte"
+    ],
+    "exclude": []
+  },
+  "42981": {
+    "include": [
+      "tab a11 +",
+      "8/256",
+      "gray",
+      "lte"
+    ],
+    "exclude": []
+  },
+  "42984": {
+    "include": [
+      "tab a11 +",
+      "6/128",
+      "silver",
+      "lte"
+    ],
+    "exclude": []
+  },
+  "42983": {
+    "include": [
+      "tab a11 +",
+      "6/256",
+      "silver",
+      "lte"
+    ],
+    "exclude": []
+  },
+  "42982": {
+    "include": [
+      "tab a11 +",
+      "8/256",
+      "silver",
+      "lte"
+    ],
+    "exclude": []
   }
 }

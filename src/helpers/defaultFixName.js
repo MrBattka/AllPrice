@@ -223,10 +223,14 @@ export const defaultFixName = (el) => {
     fixNote15ProPlus.indexOf("note 15 pro") !== -1
       ? fixNote15ProPlus.replace("gray", "titan")
       : fixNote15ProPlus;
-  const fixNote15ProPlus1 =
-    fixNote15ProGray.indexOf("note 15 pro") !== -1
-      ? fixNote15ProGray.replace("pro plus", "pro +")
+  const fixMagicPrism =
+    fixNote15ProGray.indexOf("magic 11 air") !== -1
+      ? fixNote15ProGray.replace("prism", "white")
       : fixNote15ProGray;
+  const fixNote15ProPlus1 =
+    fixMagicPrism.indexOf("note 15 pro") !== -1
+      ? fixMagicPrism.replace("pro plus", "pro +")
+      : fixMagicPrism;
   const fixS25UltraJetblack =
     fixNote15ProPlus1.indexOf("s25 ultra") !== -1
       ? fixNote15ProPlus1.replace("jetblack", "jet black")
@@ -744,8 +748,9 @@ export const defaultFixName = (el) => {
   const fixUL3 = fixAL.replace("ul ", "ultra ");
   const fixPS51 = fixUL3.replace("ps5", "ps 5");
   const fixPS52 = fixPS51.replace("playstation 5", "ps 5");
+  const fixPS = fixPS52.replace("playstation", "ps");
   const fixMajor4 =
-    fixPS52.indexOf("major") !== -1 ? fixPS52.replace("iv", "4") : fixPS52;
+    fixPS.indexOf("major") !== -1 ? fixPS.replace("iv", "4") : fixPS;
   const fixMajor5 =
     fixMajor4.indexOf("major") !== -1 ? fixMajor4.replace("v", "5") : fixMajor4;
   const fixXperiaCN =

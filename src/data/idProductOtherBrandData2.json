@@ -9181,5 +9181,420 @@
             "white"
         ],
         "exclude": []
+    },
+    "42895": {
+        "include": [
+            "honor 600",
+            "lite",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42930": {
+        "include": [
+            "honor 600",
+            "lite",
+            "8/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "42931": {
+        "include": [
+            "honor 600",
+            "lite",
+            "12/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "42933": {
+        "include": [
+            "honor 600",
+            "lite",
+            "8/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "42932": {
+        "include": [
+            "honor 600",
+            "lite",
+            "12/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "42934": {
+        "include": [
+            "honor 600",
+            "lite",
+            "8/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "42935": {
+        "include": [
+            "honor 600",
+            "lite",
+            "12/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "42936": {
+        "include": [
+            "honor 600",
+            "lite",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42904": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42985": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42986": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42987": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42991": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "42990": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "42989": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "42988": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "42992": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "12/256",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "42993": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "12/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "42994": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "16/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "42995": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "16/1tb",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "42999": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "12/256",
+            "red"
+        ],
+        "exclude": []
+    },
+    "42998": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "12/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "42997": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "16/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "42996": {
+        "include": [
+            "nubia",
+            "z80 ultra",
+            "16/1tb",
+            "red"
+        ],
+        "exclude": []
+    },
+    "42906": {
+        "include": [
+            "redmagic 11 air",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43001": {
+        "include": [
+            "redmagic 11 air",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43003": {
+        "include": [
+            "redmagic 11 air",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43002": {
+        "include": [
+            "redmagic 11 air",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "42908": {
+        "include": [
+            "ps",
+            "vr 2"
+        ],
+        "exclude": []
+    },
+    "42916": {
+        "include": [
+            "honor magic v6",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43027": {
+        "include": [
+            "honor magic v6",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43038": {
+        "include": [
+            "honor magic v6",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43039": {
+        "include": [
+            "honor magic v6",
+            "12/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43028": {
+        "include": [
+            "honor magic v6",
+            "12/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43029": {
+        "include": [
+            "honor magic v6",
+            "12/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43041": {
+        "include": [
+            "honor magic v6",
+            "16/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43040": {
+        "include": [
+            "honor magic v6",
+            "16/1tb",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43036": {
+        "include": [
+            "honor magic v6",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43037": {
+        "include": [
+            "honor magic v6",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43035": {
+        "include": [
+            "honor magic v6",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43034": {
+        "include": [
+            "honor magic v6",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43031": {
+        "include": [
+            "honor magic v6",
+            "12/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43030": {
+        "include": [
+            "honor magic v6",
+            "12/256",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43032": {
+        "include": [
+            "honor magic v6",
+            "16/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43033": {
+        "include": [
+            "honor magic v6",
+            "16/1tb",
+            "red"
+        ],
+        "exclude": []
+    },
+    "42918": {
+        "include": [
+            "magicpad 4",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43052": {
+        "include": [
+            "magicpad 4",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43057": {
+        "include": [
+            "magicpad 4",
+            "12/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43053": {
+        "include": [
+            "magicpad 4",
+            "16/512",
+            "gray"
+        ],
+        "exclude": []
     }
 }
