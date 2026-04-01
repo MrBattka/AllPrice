@@ -74,6 +74,8 @@ import idProductSamsungData from "../data/idProductSamsungData.json"
 import idProductGarminData from "../data/idProductGarminData.json"
 import idProductOtherBrandData from "../data/idProductOtherBrandData.json"
 import idProductOtherBrandData2 from "../data/idProductOtherBrandData2.json"
+import IndexUnimtrn from "./Unimtrn/indexUNIMTRN";
+import IndexUnimtrnNotID from "./Unimtrn/indexUNIMTRNNotID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -212,19 +214,19 @@ const IndexAllPrice = () => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
   });
 
-  // dataUNIMTRN.map((unimtrnEl) => {
-  //   (unimtrnEl.Товар || unimtrnEl.Модификация) &&
-  //     unimtrn.push({
-  //       name: unimtrnEl.Товар || unimtrnEl.Модификация,
-  //       price: unimtrnEl.Стоимость || unimtrnEl.Cтоимость || unimtrnEl.Цена,
-  //     });
-  // });
-
   dataUNIMTRN.map((unimtrnEl) => {
-    unimtrnEl.Metr &&
-      typeof unimtrnEl.Metr === "string" &&
-      unimtrn.push({ name: unimtrnEl.Metr });
+    (unimtrnEl.Товар || unimtrnEl.Модификация) &&
+      unimtrn.push({
+        name: unimtrnEl.Товар || unimtrnEl.Модификация,
+        price: unimtrnEl.Стоимость || unimtrnEl.Cтоимость || unimtrnEl.Цена,
+      });
   });
+
+  // dataUNIMTRN.map((unimtrnEl) => {
+  //   unimtrnEl.Metr &&
+  //     typeof unimtrnEl.Metr === "string" &&
+  //     unimtrn.push({ name: unimtrnEl.Metr });
+  // });
 
   dataMihonor.map((mihonorEl) => {
     mihonorEl.MiHonor &&
@@ -552,8 +554,8 @@ const IndexAllPrice = () => {
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
         {/* Метры */}
-        <IndexUnimtrn_1 el={dataUNIMTRN} unimtrnData={unimtrn} />
-        <IndexUnimtrnNotID_1 el={dataUNIMTRN} unimtrnData={unimtrn} />
+        <IndexUnimtrn el={dataUNIMTRN} unimtrnData={unimtrn} />
+        <IndexUnimtrnNotID el={dataUNIMTRN} unimtrnData={unimtrn} />
         {/* MiHonor */}
         <IndexMiHonor el={dataMihonor} mihonorData={mihonor} />
         <IndexMiHonorNotID el={dataMihonor} mihonorData={mihonor} />

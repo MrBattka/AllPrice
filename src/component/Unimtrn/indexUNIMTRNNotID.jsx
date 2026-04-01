@@ -7,22 +7,22 @@ import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
 import { fixNameUnimtrn } from "./helpers/helpers";
 
-const IndexUnimtrnNotID = ({ el, dataUNIMTRN }) => {
+const IndexUnimtrnNotID = ({ el, unimtrnData }) => {
   const [isOpen, setIsOpen] = useState(false);
   const resultArr = [];
 
-  el.map((unimtrn) => {
+  unimtrnData.map((unimtrn) => {
     if (
+      unimtrn.name &&
       baseFix(unimtrn) &&
-      getIdByName(defaultFixName(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)))) ===
+      getIdByName(defaultFixName(fixNameUnimtrn(unimtrn.name))) ===
         "No match" &&
-      (unimtrn.Товар || unimtrn.Модификация) &&
       isOpen
     ) {
       resultArr.push({
-        id: getIdByName(defaultFixName(returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)))),
-        name: returnFixPrice(unimtrn, fixNameUnimtrn(unimtrn)),
-        stockPrice: unimtrn.Стоимость || unimtrn.Cтоимость || unimtrn.Цена,
+        id: getIdByName(defaultFixName(fixNameUnimtrn(unimtrn.name))),
+        name: fixNameUnimtrn(unimtrn.name),
+        stockPrice: unimtrn.price,
         provider: "Метреон",
       });
     }
