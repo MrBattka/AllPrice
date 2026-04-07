@@ -179,7 +179,8 @@ export const returnStockPriceInfinity = (name) => {
     removeFire.indexOf(",") !== -1 ? removeFire.replace(",", "") : removeFire;
   let removeUS = removeDot.replace("🇺🇸", "");
   let removeDot1 = removeUS.replace(".", "");
-  let removeStick = removeDot1.replace("-", "");
+  let removeSpace = removeDot1.replace(" ", "");
+  let removeStick = removeSpace.replace("-", "");
   const fixFlags1 = checkFlags(removeStick);
   return fixFlags1;
 };

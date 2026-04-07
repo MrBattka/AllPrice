@@ -941,6 +941,8 @@ export const defaultFixName = (el) => {
     fixHonorBlack.indexOf("honor") !== -1
       ? fixHonorBlack.replace("зелёный", "green")
       : fixHonorBlack;
+   const fixA37Chark = fixHonorGreen.indexOf("a37 ") !== -1 ? fixHonorGreen.replace("black", "chark") : fixHonorGreen   
+   const fixA37Green = fixA37Chark.indexOf("a37 ") !== -1 ? fixA37Chark.replace("green", "gray") : fixA37Chark  
 
-  return fixHonorGreen;
+  return fixA37Green;
 };
