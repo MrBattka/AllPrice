@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders admin layout or main content', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  // Проверим, например, наличие логотипа (если он в DOM)
+  const imgElement = screen.getByAltText('Logo');
+  expect(imgElement).toBeInTheDocument();
+
+  // Или заголовок из Header
+  // expect(screen.getByText(/Управление прайсами/i)).toBeInTheDocument();
 });
