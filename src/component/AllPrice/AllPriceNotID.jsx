@@ -169,17 +169,17 @@ const processors = {
     }),
     filters: [baseFixVsemi],
   },
-  unimtrn: {
-    processItem: (unimtrn) => ({
-      id: getIdByNameTest(
-        defaultFixName(fixNameUnimtrn(unimtrn.name))
-      ),
-      name: fixNameUnimtrn(unimtrn.name),
-      stockPrice: unimtrn.price,
-      provider: "Метреон",
-    }),
-    filters: [baseFix],
-  },
+    unimtrn: {
+      processItem: (unimtrn) => ({
+        id: getIdByNameTest(
+          defaultFixName(fixNameUnimtrn(parseNamePrice(unimtrn)))
+        ),
+        name: fixNameUnimtrn(parseNamePrice(unimtrn)),
+        stockPrice: parsePrice(unimtrn),
+        provider: "Метреон",
+      }),
+      filters: [baseFix],
+    },
   hi: {
     processItem: (hi) => ({
       id: getIdByNameTest(

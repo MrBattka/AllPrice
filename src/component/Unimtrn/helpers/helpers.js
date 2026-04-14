@@ -1,6 +1,14 @@
 export const fixNameUnimtrn = (el) => {
-  const fixGb = el.replace("GB", "");
-  const removeDoubleSpace = fixGb.replace(/\s+/g, " ");
+  const fixGB = el.replace("GB", "");
+  const fixGb = fixGB.replace("Gb", "");
+  const fixA175 = fixGb.replace("175", "17");
+  const fixA266 = fixA175.replace("266", "26");
+  const fixA366 = fixA266.replace("366", "36");
+  const fixA376 = fixA366.replace("376", "36");
+  const fixA566 = fixA376.replace("566", "56");
+  const fixS921E = fixA566.replace("S921E ", "");
+   
+  const removeDoubleSpace = fixS921E.replace(/\s+/g, " ");
   return removeDoubleSpace;
 };
 
@@ -63,5 +71,6 @@ export const parsePrice = (item) => {
   let name = priceMatch ? s.slice(0, s.length - priceMatch[0].length).trim() : s;
   name = name.replace(/[\u{1F1E6}-\u{1F1FF}\u{1F300}-\u{1F6FF}]+$/u, "").trim();
   if (!name) return null;
+  if(!price) return null
   return price;
 }

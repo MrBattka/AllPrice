@@ -41,13 +41,13 @@ const IndexUnimtrn_1 = ({ el, unimtrnData }) => {
         if (
           unimtrn.name &&
           getIdByName(
-            defaultFixName(fixNameUnimtrn(unimtrn.name))
+            defaultFixName(fixNameUnimtrn(parseNamePrice(unimtrn)))
           ) !== "No match" &&
           baseFix(unimtrn)
         ) {
           resultArr.push({
             id: getIdByName(
-              defaultFixName(fixNameUnimtrn(unimtrn.name))
+              defaultFixName(fixNameUnimtrn(parseNamePrice(unimtrn)))
             ),
             name: fixNameUnimtrn(parseNamePrice(unimtrn)),
             extraPrice: parsePrice(unimtrn),
