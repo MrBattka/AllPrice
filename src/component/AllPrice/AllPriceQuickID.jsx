@@ -171,12 +171,12 @@ const processors = {
     }),
     filters: [baseFixVsemi],
   },
-  unimtrn: {
+    unimtrn: {
       processItem: (unimtrn) => ({
         id: getIdByNameQuickID(
-          defaultFixName(fixNameUnimtrn(unimtrn.name))
+          defaultFixName(fixNameUnimtrn(parseNamePrice(unimtrn)))
         ),
-        name: parseNamePrice(unimtrn),
+        name: fixNameUnimtrn(parseNamePrice(unimtrn)),
         stockPrice: parsePrice(unimtrn),
         provider: "Метреон",
       }),
@@ -578,6 +578,7 @@ const AllPriceQuickID = ({
     AMTData,
     boltunData,
   }).some((arr) => arr?.length > 2);
+  
 
   return (
     <div>

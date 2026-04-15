@@ -50,7 +50,6 @@ const IndexUnimtrn_1 = ({ el, unimtrnData }) => {
               defaultFixName(fixNameUnimtrn(parseNamePrice(unimtrn)))
             ),
             name: fixNameUnimtrn(parseNamePrice(unimtrn)),
-            extraPrice: parsePrice(unimtrn),
             stockPrice: parsePrice(unimtrn),
             provider: "Unimtrn",
           });

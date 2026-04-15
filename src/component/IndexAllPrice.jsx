@@ -654,7 +654,7 @@ const IndexAllPrice = () => {
         <AllPriceQuickID
           dataSuperprice={superprice}
           dataVsemi={vsemi}
-          dataUnimtrn={dataUNIMTRN}
+          dataUnimtrn={unimtrn}
           dataHi={hi}
           dataMihonor={mihonor}
           dataGarmin={garmin}
