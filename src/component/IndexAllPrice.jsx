@@ -214,19 +214,19 @@ const IndexAllPrice = () => {
     hiEl.Hi && typeof hiEl.Hi === "string" && hi.push({ name: hiEl.Hi });
   });
 
-  // dataUNIMTRN.map((unimtrnEl) => {
-  //   (unimtrnEl.Товар || unimtrnEl.Модификация) &&
-  //     unimtrn.push({
-  //       name: unimtrnEl.Товар || unimtrnEl.Модификация,
-  //       price: unimtrnEl.Стоимость || unimtrnEl.Cтоимость || unimtrnEl.Цена,
-  //     });
-  // });
-
   dataUNIMTRN.map((unimtrnEl) => {
-    unimtrnEl.Metr &&
-      typeof unimtrnEl.Metr === "string" &&
-      unimtrn.push({ name: unimtrnEl.Metr });
+    (unimtrnEl.Товар || unimtrnEl.Модификация) &&
+      unimtrn.push({
+        name: unimtrnEl.Товар || unimtrnEl.Модификация,
+        price: unimtrnEl.Стоимость || unimtrnEl.Cтоимость || unimtrnEl.Цена,
+      });
   });
+
+  // dataUNIMTRN.map((unimtrnEl) => {
+  //   unimtrnEl.Metr &&
+  //     typeof unimtrnEl.Metr === "string" &&
+  //     unimtrn.push({ name: unimtrnEl.Metr });
+  // });
 
   dataMihonor.map((mihonorEl) => {
     mihonorEl.MiHonor &&
@@ -554,8 +554,8 @@ const IndexAllPrice = () => {
         <IndexHi el={dataHi} hi={hi} />
         <IndexHiNotID el={dataHi} hi={hi} />
         {/* Метры */}
-        <IndexUnimtrn_1 el={dataUNIMTRN} unimtrnData={unimtrn} />
-        <IndexUnimtrnNotID_1 el={dataUNIMTRN} unimtrnData={unimtrn} />
+        <IndexUnimtrn el={dataUNIMTRN} unimtrnData={unimtrn} />
+        <IndexUnimtrnNotID el={dataUNIMTRN} unimtrnData={unimtrn} />
         {/* MiHonor */}
         <IndexMiHonor el={dataMihonor} mihonorData={mihonor} />
         <IndexMiHonorNotID el={dataMihonor} mihonorData={mihonor} />

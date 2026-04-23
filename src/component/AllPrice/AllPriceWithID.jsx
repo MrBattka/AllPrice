@@ -219,10 +219,10 @@ const processors = {
   unimtrn: {
     processItem: (unimtrn) => ({
       id: getIdByNameTest(
-        defaultFixName(fixNameUnimtrn(parseNamePrice(unimtrn)))
+        defaultFixName(fixNameUnimtrn(unimtrn.name))
       ),
-      name: fixNameUnimtrn(parseNamePrice(unimtrn)),
-      stockPrice: parsePrice(unimtrn),
+      name: fixNameUnimtrn(unimtrn.name),
+      stockPrice: unimtrn.price,
       provider: "Метреон",
     }),
     filters: [baseFix],
