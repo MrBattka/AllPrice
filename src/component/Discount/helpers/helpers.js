@@ -97,7 +97,8 @@ export const returnFixNameDiscount = (name) => {
   const fixViolet = fixBlack.replace("Фиолетовый", "Purple");
   const fixStarlight = fixViolet.replace("Strarlight", "Starlight");
   const replaceA356 = fixStarlight.replace("(A356) ", "");
-  const fixGray = replaceA356.replace("Grey", "Gray");
+  const fixLavander = replaceA356.replace("Lavander", "Lavender");
+  const fixGray = fixLavander.replace("Grey", "Gray");
   const replace5g =
     fixGray.indexOf("SM") !== -1 ||
     fixGray.indexOf("A3") !== -1 ||

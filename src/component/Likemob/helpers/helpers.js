@@ -25,8 +25,10 @@ export const returnFixNameLikemob = (name) => {
   const fixWatchMM = fixWatch8.replace("mm", "");
   const fixNacy = fixWatchMM.replace("Navi", "Navy");
   const fixNightfreeze = fixNacy.replace("Nighfreeze", "Nightfreeze");
+  const fixLavander = fixNightfreeze.replace("Lavander", "Lavender");
+  const fixSE3 = fixLavander.replace("SE(Gen 3)", "SE3");
   
-  return fixNightfreeze;
+  return fixSE3;
 };
 
 export const returnNameInArrLikemob = (name) => {

@@ -21,8 +21,10 @@ export const returnFixNameL27 = (name) => {
   const fixSE2 = fixMouse1.replace("SE 2024", "SE2");
   const fix2T = fixSE2.replace(" 2T ", " 2Tb ");
   const fixAirPods = fix2T.replace("АirPods", "AirPods");
+  const fix17e = fixAirPods.replace("17е", "17e");
+
   
-  return fixAirPods;
+  return fix17e;
 };
 
 const checkFlags = (str) => {

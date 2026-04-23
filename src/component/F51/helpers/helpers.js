@@ -80,6 +80,15 @@ export const returnNameF51 = (name) => {
   const fix128 = fix256.replace("1128", "128")
   const fixS10Plus = fix128.replace("S10+", "S10 +")
   const fixBuds = fixS10Plus.replace("Samsung Buds", "Galaxy Buds")
+  const fixLemon = fixBuds.replace("Limongrass", "Lemongrass")
+  const fixObsidian = fixLemon.replace("bsidian", "Obsidian")
+  const fixObsidain = fixObsidian.replace("Obsidain", "Obsidian")
+  const fixCMFWatch = fixObsidain.replace("Nothing Watch PRO", "CMF Watch PRO")
+  const fixRedMagic = fixCMFWatch.replace("Red Magic", "RedMagic")
+  
+  const fixGeen = fixRedMagic.replace("Geen", "Green")
+  const fixPRO = fixGeen.replace("PRO", "Pro")
+  const fixMote15PeoSilver = fixPRO.indexOf("Note 15 Pro") !== -1 ? fixPRO.replace("Silver", "Titan") : fixPRO
 
-  return fixBuds;
+  return fixMote15PeoSilver;
 };

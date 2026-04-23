@@ -10,7 +10,8 @@ export const fixNameLowPrice = (name) => {
   const fix1Tb = fixGray.replace("1 Tb", "1Tb");
   const fixMouse = fix1Tb.replace("Mause", "Mouse");
   const fixWiFi1 = fixMouse.replace("WIFI", "Wi-Fi");
-  const fixWiFi2 = fixWiFi1.replace("WiFi", "Wi-Fi");
+  const fixU3 = fixWiFi1.replace("U3", "Ultra 3");
+  const fixWiFi2 = fixU3.replace("WiFi", "Wi-Fi");
   const fixMilanese = fixWiFi2.replace("Milanse", "Milanese");
   const replace5G =
     fixMilanese.indexOf("M55 ") !== -1 ||

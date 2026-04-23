@@ -2,18 +2,18 @@ export const defaultFixName = (el) => {
   const name = el.toLowerCase();
   const removeDoubleSpace = name.replace(/\s+/g, " ");
   const fixESim =
-  removeDoubleSpace.indexOf("e-sim") !== -1
-    ? removeDoubleSpace.replace("e-sim", "esim")
-    : removeDoubleSpace;
+    removeDoubleSpace.indexOf("e-sim") !== -1
+      ? removeDoubleSpace.replace("e-sim", "esim")
+      : removeDoubleSpace;
   const fixDualSim1 =
-  fixESim.indexOf("2sim") !== -1
-    ? fixESim.replace("2sim", "dual")
-    : fixESim;
-  const fixPinkGold =fixDualSim1.replace("pink gold", "gold")
+    fixESim.indexOf("2sim") !== -1
+      ? fixESim.replace("2sim", "dual")
+      : fixESim;
+  const fixPinkGold = fixDualSim1.replace("pink gold", "gold")
   const fixDualSim2 =
-  fixPinkGold.indexOf("2-sim") !== -1
-    ? fixPinkGold.replace("2-sim", "dual")
-    : fixPinkGold;
+    fixPinkGold.indexOf("2-sim") !== -1
+      ? fixPinkGold.replace("2-sim", "dual")
+      : fixPinkGold;
   const fixAirPodsUSB =
     fixDualSim2.indexOf("airpods pro 2") !== -1
       ? fixDualSim2.replace("type", "usb")
@@ -258,7 +258,8 @@ export const defaultFixName = (el) => {
       ? fixS25UltraJetblack.replace("white", "silver")
       : fixS25UltraJetblack;
   const fixipadPro11White =
-    fixipad11White.indexOf("ipad pro 11") !== -1
+    (fixipad11White.indexOf("ipad pro 11") !== -1 ||
+      fixipad11White.indexOf("watch 8") !== -1)
       ? fixipad11White.replace("white", "silver")
       : fixipad11White;
 
@@ -389,7 +390,7 @@ export const defaultFixName = (el) => {
       ? fixTeal1.replace("blue", "Green")
       : fixTeal1;
 
-  
+
 
   const fixPad6sProBlack =
     fixTeal2.indexOf("pad 6s pro") !== -1 ||
@@ -487,10 +488,18 @@ export const defaultFixName = (el) => {
       : fixOnePlusAstral;
   const fixSeafoam = fixOnePlusTrail.replace("seafoam", "green");
   const fixBlack = fixSeafoam.replace("stormy", "black");
-  const fixPixelSnow =
-    fixBlack.indexOf("pixel") !== -1
-      ? fixBlack.replace("snow", "white")
+  const fixPixelWatch4Gold =
+    fixBlack.indexOf("pixel watch 4") !== -1
+      ? fixBlack.replace("porcelain", "silver")
       : fixBlack;
+  const fixPixelWatch4Lemon =
+    fixPixelWatch4Gold.indexOf("pixel watch 4") !== -1
+      ? fixPixelWatch4Gold.replace("lemongrass", "Gold")
+      : fixPixelWatch4Gold;
+  const fixPixelSnow =
+    fixPixelWatch4Lemon.indexOf("pixel") !== -1
+      ? fixPixelWatch4Lemon.replace("snow", "white")
+      : fixPixelWatch4Lemon;
   const fixCharcoal = fixPixelSnow.replace("charcoal", "black");
   const fixPixelSea =
     fixCharcoal.indexOf("pixel") !== -1
@@ -508,14 +517,19 @@ export const defaultFixName = (el) => {
     fixPixelBay.indexOf("pixel") !== -1
       ? fixPixelBay.replace("porcelain", "gold")
       : fixPixelBay;
+  const fixGalaxyWatchUltra = fixPixelPorcelain.replace("watch ultra", "watch 8 ultra")
   const fixPixelAloe =
-    fixPixelPorcelain.indexOf("pixel") !== -1
-      ? fixPixelPorcelain.replace("aloe", "green")
-      : fixPixelPorcelain;
-  const fixPixelPeony =
-    fixPixelAloe.indexOf("pixel") !== -1
-      ? fixPixelAloe.replace("peony", "pink")
+    fixGalaxyWatchUltra.indexOf("pixel") !== -1
+      ? fixGalaxyWatchUltra.replace("aloe", "green")
+      : fixGalaxyWatchUltra;
+  const fixA26Peach =
+    fixPixelAloe.indexOf("a26") !== -1
+      ? fixPixelAloe.replace("peach", "pink")
       : fixPixelAloe;
+  const fixPixelPeony =
+    fixA26Peach.indexOf("pixel") !== -1
+      ? fixA26Peach.replace("peony", "pink")
+      : fixA26Peach;
   const fixPixelIris =
     fixPixelPeony.indexOf("pixel") !== -1
       ? fixPixelPeony.replace("iris", "purple")
@@ -835,10 +849,14 @@ export const defaultFixName = (el) => {
     "lightspeed",
     "white"
   );
+  const fixPixel10ProWhite = fixRedmagicLightspeed.indexOf("pixel 10 pro") !== -1 ? fixRedmagicLightspeed.replace(
+    "white",
+    "moon"
+  ) : fixRedmagicLightspeed
   const fixMagicV3Red =
-    fixRedmagicLightspeed.indexOf("magic v3") !== -1
-      ? fixRedmagicLightspeed.replace("brown", "red")
-      : fixRedmagicLightspeed;
+    fixPixel10ProWhite.indexOf("magic v3") !== -1
+      ? fixPixel10ProWhite.replace("brown", "red")
+      : fixPixel10ProWhite;
   const fixYandex =
     fixMagicV3Red.indexOf("станция") !== -1
       ? fixMagicV3Red.replace("станция", "яндекс")
@@ -898,6 +916,7 @@ export const defaultFixName = (el) => {
       fixS26Plus1.indexOf("a07 4/128") !== -1 ||
       fixS26Plus1.indexOf("a07 6/128") !== -1 ||
       fixS26Plus1.indexOf("a07 8/256") !== -1 ||
+      fixS26Plus1.indexOf("a57 ") !== -1 ||
       fixS26Plus1.indexOf("tab s11") !== -1
       ? fixS26Plus1.replace("black", "gray")
       : fixS26Plus1;
@@ -953,17 +972,17 @@ export const defaultFixName = (el) => {
     fixHonorBlack.indexOf("honor") !== -1
       ? fixHonorBlack.replace("зелёный", "green")
       : fixHonorBlack;
-   const fixA37Chark = fixHonorGreen.indexOf("a37 ") !== -1 ? fixHonorGreen.replace("black", "chark") : fixHonorGreen   
-   const fixA37Green = fixA37Chark.indexOf("a37 ") !== -1 ? fixA37Chark.replace("green", "gray") : fixA37Chark  
-   const fixPadSEGray =
+  const fixA37Chark = fixHonorGreen.indexOf("a37 ") !== -1 ? fixHonorGreen.replace("black", "chark") : fixHonorGreen
+  const fixA37Green = fixA37Chark.indexOf("a37 ") !== -1 ? fixA37Chark.replace("green", "gray") : fixA37Chark
+  const fixPadSEGray =
     fixA37Green.indexOf("pad se") !== -1
       ? fixA37Green.replace("graphite", "gray")
       : fixA37Green;
-   
+
   const fixPadSEBlack =
-  fixPadSEGray.indexOf("pad se") !== -1
-    ? fixPadSEGray.replace("black", "gray")
-    : fixPadSEGray;
+    fixPadSEGray.indexOf("pad se") !== -1
+      ? fixPadSEGray.replace("black", "gray")
+      : fixPadSEGray;
 
   return fixPadSEBlack;
 };

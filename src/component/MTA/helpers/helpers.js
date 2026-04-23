@@ -11,7 +11,8 @@ export const returnFixNameMTA = (name) => {
   
   const fixS25Plus = fixS2TB.replace("S25 Plus", "S25+");
   const fixSGray = fixS25Plus.replace("Grey", "Gray");
-  const fixS25FE = fixSGray.replace("S25FE", "S25 FE");
+  const fixtitan = fixSGray.replace("Titamiun", "Titanium");
+  const fixS25FE = fixtitan.replace("S25FE", "S25 FE");
   const replace5G =
     fixS25FE.indexOf("SM") !== -1 ? fixS25FE.replace("5G", "") : fixS25FE;
   return replace5G;

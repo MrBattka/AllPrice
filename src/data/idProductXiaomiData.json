@@ -7063,7 +7063,7 @@
     },
     "42009": {
       "include": [
-        "poco f8 pro",
+        "f8 pro",
         "12/256",
         "black"
       ],
@@ -7071,7 +7071,7 @@
     },
     "42029": {
       "include": [
-        "poco f8 pro",
+        "f8 pro",
         "12/256",
         "blue"
       ],
@@ -7079,7 +7079,7 @@
     },
     "42041": {
       "include": [
-        "poco f8 pro",
+        "f8 pro",
         "12/256",
         "silver"
       ],
@@ -7087,7 +7087,7 @@
     },
     "42025": {
       "include": [
-        "poco f8 pro",
+        "f8 pro",
         "12/512",
         "black"
       ],
@@ -7095,7 +7095,7 @@
     },
     "42028": {
       "include": [
-        "poco f8 pro",
+        "f8 pro",
         "12/512",
         "blue"
       ],
@@ -7103,7 +7103,7 @@
     },
     "42027": {
       "include": [
-        "poco f8 pro",
+        "f8 pro",
         "12/512",
         "silver"
       ],
@@ -7111,7 +7111,7 @@
     },
     "42010": {
       "include": [
-        "poco f8 ultra",
+        "f8 ultra",
         "12/256",
         "black"
       ],
@@ -7119,7 +7119,7 @@
     },
     "42033": {
       "include": [
-        "poco f8 ultra",
+        "f8 ultra",
         "12/256",
         "blue"
       ],
@@ -7127,7 +7127,7 @@
     },
     "42031": {
       "include": [
-        "poco f8 ultra",
+        "f8 ultra",
         "16/512",
         "black"
       ],
@@ -7135,7 +7135,7 @@
     },
     "42032": {
       "include": [
-        "poco f8 ultra",
+        "f8 ultra",
         "16/512",
         "blue"
       ],

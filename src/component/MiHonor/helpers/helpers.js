@@ -113,6 +113,7 @@ export const fixNameMihonor = (name) => {
   const fixNote14ProPlus = fix364.replace("NOTE 14 PRO PLUS", "NOTE 14 PRO +");
   const replace5G = (fixNote14ProPlus.indexOf("X7") !== -1) ? fixNote14ProPlus.replace("5G ", "") : fixNote14ProPlus
   const fix12512 = replace5G.replace("12+ 512", "12/512");
+  const fixLavander = fix12512.replace("LAVANDER", "Lavender");
 
-  return fix12512;
+  return fixLavander;
 };

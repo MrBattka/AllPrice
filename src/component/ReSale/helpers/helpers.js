@@ -205,7 +205,8 @@ export const returnFixNameReSale = (name) => {
   const fixMM = fixS24Plus.replace("mm", "");
   const fixGB = fixMM.replace("GB", "");
   const fixZflip5 = fixGB.replace("Flip5", "Flip 5");
-  const fixZflip6 = fixZflip5.replace("Flip6", "Flip 6");
+  const fixVR2 = fixZflip5.replace("VR2", "vr 2");
+  const fixZflip6 = fixVR2.replace("Flip6", "Flip 6");
   const fixZflip7 = fixZflip6.replace("Flip7", "Flip 7");
   const fixZFold7 = fixZflip7.replace("Fold7", "Fold 7");
   const fixDualSenseBlack = fixZFold7.replace("Чёрный", "dualsense Black ");

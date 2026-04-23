@@ -49,7 +49,8 @@ export const fixNameVseMi = (name) => {
   const fixPixel = fixgrey.replace("Google Pixel", "Pixel");
   const fix5GObsidian = fixPixel.replace("5G Obsidian", "Obsidian");
   const fixMiPad = fix5GObsidian.replace("Mi Pad", "Xiaomi Pad");
-  const fixOceanTeal = fixMiPad.replace("Ocean Teal", "teal");
+  const fixVR2 = fixMiPad.replace("VR2", "vr 2");
+  const fixOceanTeal = fixVR2.replace("Ocean Teal", "teal");
   const fixPoco5g =
     fixOceanTeal.indexOf("Poco") != -1
       ? fixOceanTeal.replace("5G", "")

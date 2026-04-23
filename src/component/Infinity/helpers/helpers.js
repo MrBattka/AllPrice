@@ -11,8 +11,8 @@ export const fixNameInfinity = (name) => {
     "Pencil (USB-C)",
     "Pencil USB C "
   );
-  const replaceGb = fixPencil.replace("Gb ", "");
-  const replaceGB = replaceGb.replace("GB ", "");
+  const replaceGb = fixPencil.replace("Gb", "");
+  const replaceGB = replaceGb.replace("GB", "");
   const replace2Sim = replaceGB.replace("2sim", "");
   const fix1TB = replace2Sim.replace("1 TB", "1TB");
   const fix2TB = fix1TB.replace("2 TB", "2TB");

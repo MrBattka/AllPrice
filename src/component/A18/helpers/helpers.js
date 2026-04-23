@@ -21,8 +21,10 @@ export const returnFixNameA18 = (name) => {
   const fixCE4 = fixLTE.replace("CE 4", "CE4");
   const fixIris = fixCE4.replace("Irbis", "iris");
   const fixS10Plus1 = fixIris.replace("S10 Plus", "S10 +");
-  const fixS10FEPlus = fixS10Plus1.replace("S10FE Plus", "S10 FE +");
-  const fixProPlus = fixS10FEPlus.replace("Pro Plus", "Pro +");
+  const fixFrost = fixS10Plus1.replace("Fros ", "Frost ");
+  const fixS10FEPlus = fixFrost.replace("S10FE Plus", "S10 FE +");
+  const fixLavander = fixS10FEPlus.replace("Lavander", "lavender");
+  const fixProPlus = fixLavander.replace("Pro Plus", "Pro +");
 
   const fixSnow =
     fixProPlus.indexOf("Pixel") !== -1
