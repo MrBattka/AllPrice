@@ -4973,12 +4973,6 @@
       ],
       "exclude": []
     },
-    "27983": {
-      "include": [
-        "mqku3"
-      ],
-      "exclude": []
-    },
     "27984": {
       "include": [
         "mqkw3"
@@ -13972,6 +13966,7 @@
         "natural",
         "black",
         "al"
-      ]
+      ],
+      "exclude": []
     }
   }
