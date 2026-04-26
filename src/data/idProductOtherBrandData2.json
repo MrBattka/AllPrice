@@ -6542,7 +6542,7 @@
         ],
         "exclude": []
     },
-    "38172": {
+    "38341": {
         "include": [
             "pura 70 pro 12/512 purple"
         ],
@@ -9443,7 +9443,9 @@
             "12/256",
             "black"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43027": {
         "include": [
@@ -9451,7 +9453,9 @@
             "12/512",
             "black"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43038": {
         "include": [
@@ -9459,7 +9463,9 @@
             "16/512",
             "black"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43039": {
         "include": [
@@ -9467,7 +9473,9 @@
             "12/1tb",
             "black"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43028": {
         "include": [
@@ -9475,7 +9483,9 @@
             "12/512",
             "gold"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43029": {
         "include": [
@@ -9483,7 +9493,9 @@
             "12/256",
             "gold"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43041": {
         "include": [
@@ -9491,7 +9503,9 @@
             "16/512",
             "gold"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43040": {
         "include": [
@@ -9499,7 +9513,9 @@
             "16/1tb",
             "gold"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43036": {
         "include": [
@@ -9507,7 +9523,9 @@
             "12/512",
             "white"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43037": {
         "include": [
@@ -9515,7 +9533,9 @@
             "12/256",
             "white"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43035": {
         "include": [
@@ -9523,7 +9543,9 @@
             "16/512",
             "white"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43034": {
         "include": [
@@ -9531,7 +9553,9 @@
             "16/1tb",
             "white"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43031": {
         "include": [
@@ -9539,7 +9563,9 @@
             "12/512",
             "red"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43030": {
         "include": [
@@ -9547,7 +9573,9 @@
             "12/256",
             "red"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43032": {
         "include": [
@@ -9555,7 +9583,9 @@
             "16/512",
             "red"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "43033": {
         "include": [
@@ -9563,7 +9593,9 @@
             "16/1tb",
             "red"
         ],
-        "exclude": []
+        "exclude": [
+            "dual"
+        ]
     },
     "42918": {
         "include": [
@@ -9596,5 +9628,529 @@
             "gray"
         ],
         "exclude": []
+    },
+    "42333": {
+        "include": [
+            "honor 500 pro",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42342": {
+        "include": [
+            "honor 500 pro",
+            "12/256",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "42349": {
+        "include": [
+            "honor 500 pro",
+            "12/256",
+            "pink"
+        ],
+        "exclude": []
+    },
+    "42341": {
+        "include": [
+            "honor 500 pro",
+            "12/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "42335": {
+        "include": [
+            "honor 500 pro",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42343": {
+        "include": [
+            "honor 500 pro",
+            "12/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "42348": {
+        "include": [
+            "honor 500 pro",
+            "12/512",
+            "pink"
+        ],
+        "exclude": []
+    },
+    "42340": {
+        "include": [
+            "honor 500 pro",
+            "12/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "42337": {
+        "include": [
+            "honor 500 pro",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42345": {
+        "include": [
+            "honor 500 pro",
+            "16/1tb",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "42346": {
+        "include": [
+            "honor 500 pro",
+            "16/1tb",
+            "pink"
+        ],
+        "exclude": []
+    },
+    "42338": {
+        "include": [
+            "honor 500 pro",
+            "16/1tb",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "42336": {
+        "include": [
+            "honor 500 pro",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "42344": {
+        "include": [
+            "honor 500 pro",
+            "16/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "42347": {
+        "include": [
+            "honor 500 pro",
+            "16/512",
+            "pink"
+        ],
+        "exclude": []
+    },
+    "42339": {
+        "include": [
+            "honor 500 pro",
+            "16/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "42915": {
+        "include": [
+            "honor magic v6",
+            "12/256",
+            "black",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43024": {
+        "include": [
+            "honor magic v6",
+            "12/512",
+            "black",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43043": {
+        "include": [
+            "honor magic v6",
+            "16/512",
+            "black",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43044": {
+        "include": [
+            "honor magic v6",
+            "16/1tb",
+            "black",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43020": {
+        "include": [
+            "honor magic v6",
+            "12/512",
+            "gold",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43021": {
+        "include": [
+            "honor magic v6",
+            "12/256",
+            "gold",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43046": {
+        "include": [
+            "honor magic v6",
+            "16/512",
+            "gold",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43045": {
+        "include": [
+            "honor magic v6",
+            "16/1tb",
+            "gold",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43023": {
+        "include": [
+            "honor magic v6",
+            "12/512",
+            "white",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43022": {
+        "include": [
+            "honor magic v6",
+            "12/256",
+            "white",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43056": {
+        "include": [
+            "honor magic v6",
+            "16/512",
+            "white",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43049": {
+        "include": [
+            "honor magic v6",
+            "16/1tb",
+            "white",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43025": {
+        "include": [
+            "honor magic v6",
+            "12/512",
+            "red",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43026": {
+        "include": [
+            "honor magic v6",
+            "12/256",
+            "red",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43047": {
+        "include": [
+            "honor magic v6",
+            "16/512",
+            "red",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "43048": {
+        "include": [
+            "honor magic v6",
+            "16/1tb",
+            "red",
+            "dual"
+        ],
+        "exclude": []
+    },
+    "42535": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42542": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "12/256",
+            "blue"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42541": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "12/256",
+            "pink"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42536": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42512": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/128",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42544": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/128",
+            "blue"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42539": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/128",
+            "pink"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42538": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/128",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42534": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/256",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42543": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/256",
+            "blue"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42540": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/256",
+            "pink"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42537": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/256",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "lite"
+        ]
+    },
+    "42547": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "12/256",
+            "black",
+            "pro"
+        ],
+        "exclude": [
+            "lite"
+        ]
+    },
+    "42553": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "12/256",
+            "pink",
+            "pro"
+        ],
+        "exclude": [
+            "lite"
+        ]
+    },
+    "42554": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "12/256",
+            "silver",
+            "pro"
+        ],
+        "exclude": [
+            "lite"
+        ]
+    },
+    "42514": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/128",
+            "black",
+            "pro"
+        ],
+        "exclude": [
+            "lite"
+        ]
+    },
+    "42551": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/128",
+            "pink",
+            "pro"
+        ],
+        "exclude": [
+            "lite"
+        ]
+    },
+    "42550": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/128",
+            "silver",
+            "pro"
+        ],
+        "exclude": [
+            "lite"
+        ]
+    },
+    "42546": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/256",
+            "black",
+            "pro"
+        ],
+        "exclude": [
+            "lite"
+        ]
+    },
+    "42552": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/256",
+            "pink",
+            "pro"
+        ],
+        "exclude": [
+            "lite"
+        ]
+    },
+    "42549": {
+        "include": [
+            "nothing phone ",
+            "4a",
+            "8/256",
+            "silver",
+            "pro"
+        ],
+        "exclude": [
+            "lite"
+        ]
     }
 }

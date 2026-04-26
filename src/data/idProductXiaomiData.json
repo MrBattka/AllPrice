@@ -3749,7 +3749,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30203": {
@@ -3760,7 +3761,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30206": {
@@ -3771,7 +3773,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30201": {
@@ -3782,7 +3785,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30204": {
@@ -3793,7 +3797,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30207": {
@@ -3804,7 +3809,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30202": {
@@ -3815,7 +3821,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30205": {
@@ -3826,7 +3833,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30208": {
@@ -3837,7 +3845,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30966": {
@@ -3848,7 +3857,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30967": {
@@ -3859,7 +3869,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "30968": {
@@ -3870,7 +3881,8 @@
       ],
       "exclude": [
         "huawei",
-        "mate"
+        "mate",
+        "8.7"
       ]
     },
     "27380": {
@@ -5810,7 +5822,8 @@
       "include": [
         "poco m7",
         "6/128",
-        "green"
+        "green",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -5821,7 +5834,8 @@
       "include": [
         "poco m7",
         "6/128",
-        "silver"
+        "silver",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -5832,7 +5846,8 @@
       "include": [
         "poco m7",
         "8/256",
-        "silver"
+        "silver",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -5843,7 +5858,8 @@
       "include": [
         "poco m7",
         "8/128",
-        "silver"
+        "silver",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -5854,7 +5870,8 @@
       "include": [
         "poco m7",
         "6/128",
-        "blue"
+        "blue",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -5865,7 +5882,8 @@
       "include": [
         "poco m7",
         "6/128",
-        "black"
+        "black",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -5876,7 +5894,8 @@
       "include": [
         "poco m7",
         "8/256",
-        "blue"
+        "blue",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -5887,7 +5906,8 @@
       "include": [
         "poco m7",
         "8/256",
-        "black"
+        "black",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -5898,7 +5918,8 @@
       "include": [
         "poco m7",
         "8/128",
-        "green"
+        "green",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -5909,7 +5930,8 @@
       "include": [
         "poco m7",
         "8/128",
-        "blue"
+        "blue",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -5920,7 +5942,8 @@
       "include": [
         "poco m7",
         "8/128",
-        "black"
+        "black",
+        "5g"
       ],
       "exclude": [
         "pro",
@@ -8273,5 +8296,355 @@
         "orange"
       ],
       "exclude": []
+    },
+    "42555": {
+      "include": [
+        "mi 17 16/1tb",
+        "pink"
+      ],
+      "exclude": []
+    },
+    "42557": {
+      "include": [
+        "mi 17 16/1tb",
+        "black"
+      ],
+      "exclude": []
+    },
+    "42558": {
+      "include": [
+        "mi 17 16/1tb",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "41163": {
+      "include": [
+        "poco m7",
+        "6/128",
+        "blue"
+      ],
+      "exclude": [
+        "pro",
+        "ultra",
+        "5g"
+      ]
+    },
+    "41157": {
+      "include": [
+        "poco m7",
+        "6/128",
+        "black"
+      ],
+      "exclude": [
+        "pro",
+        "ultra",
+        "5g"
+      ]
+    },
+    "41162": {
+      "include": [
+        "poco m7",
+        "8/128",
+        "blue"
+      ],
+      "exclude": [
+        "pro",
+        "ultra",
+        "5g"
+      ]
+    },
+    "43080": {
+      "include": [
+        "poco m7",
+        "8/128",
+        "black"
+      ],
+      "exclude": [
+        "pro",
+        "ultra",
+        "5g"
+      ]
+    },
+    "42311": {
+      "include": [
+        "redmi 15 ",
+        "4/256",
+        "black",
+        "5g"
+      ],
+      "exclude": []
+    },
+    "42315": {
+      "include": [
+        "redmi 15 ",
+        "4/256",
+        "green",
+        "5g"
+      ],
+      "exclude": []
+    },
+    "42312": {
+      "include": [
+        "redmi 15 ",
+        "4/256",
+        "gray",
+        "5g"
+      ],
+      "exclude": []
+    },
+    "42309": {
+      "include": [
+        "redmi 15 ",
+        "8/128",
+        "black",
+        "5g"
+      ],
+      "exclude": []
+    },
+    "42314": {
+      "include": [
+        "redmi 15 ",
+        "8/128",
+        "green",
+        "5g"
+      ],
+      "exclude": []
+    },
+    "42313": {
+      "include": [
+        "redmi 15 ",
+        "8/128",
+        "gray",
+        "5g"
+      ],
+      "exclude": []
+    },
+    "43083": {
+      "include": [
+        "redmi 15c",
+        "6/128",
+        "gray"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "43086": {
+      "include": [
+        "redmi 15c",
+        "6/128",
+        "green"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "43089": {
+      "include": [
+        "redmi 15c",
+        "6/128",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "43092": {
+      "include": [
+        "redmi 15c",
+        "6/128",
+        "orange"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "43084": {
+      "include": [
+        "redmi 15c",
+        "8/128",
+        "gray"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "43087": {
+      "include": [
+        "redmi 15c",
+        "8/128",
+        "green"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "43090": {
+      "include": [
+        "redmi 15c",
+        "8/128",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "43093": {
+      "include": [
+        "redmi 15c",
+        "8/128",
+        "orange"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "36886": {
+      "include": [
+        "pad se ",
+        "8.7",
+        "4/128",
+        "green"
+      ],
+      "exclude": [
+        "huawei",
+        "mate"
+      ]
+    },
+    "36882": {
+      "include": [
+        "pad se ",
+        "8.7",
+        "4/128",
+        "gray"
+      ],
+      "exclude": [
+        "huawei",
+        "mate"
+      ]
+    },
+    "36889": {
+      "include": [
+        "pad se ",
+        "8.7",
+        "4/128",
+        "blue"
+      ],
+      "exclude": [
+        "huawei",
+        "mate"
+      ]
+    },
+    "36887": {
+      "include": [
+        "pad se ",
+        "8.7",
+        "64",
+        "green"
+      ],
+      "exclude": [
+        "huawei",
+        "mate"
+      ]
+    },
+    "36899": {
+      "include": [
+        "pad se ",
+        "8.7",
+        "64",
+        "gray"
+      ],
+      "exclude": [
+        "huawei",
+        "mate"
+      ]
+    },
+    "36890": {
+      "include": [
+        "pad se ",
+        "8.7",
+        "64",
+        "blue"
+      ],
+      "exclude": [
+        "huawei",
+        "mate"
+      ]
+    },
+    "36888": {
+      "include": [
+        "pad se ",
+        "8.7",
+        "6/128",
+        "green"
+      ],
+      "exclude": [
+        "huawei",
+        "mate"
+      ]
+    },
+    "36885": {
+      "include": [
+        "pad se ",
+        "8.7",
+        "6/128",
+        "gray"
+      ],
+      "exclude": [
+        "huawei",
+        "mate"
+      ]
+    },
+    "36891": {
+      "include": [
+        "pad se ",
+        "8.7",
+        "6/128",
+        "blue"
+      ],
+      "exclude": [
+        "huawei",
+        "mate"
+      ]
+    },
+    "23942": {
+      "include": [
+        "redmi pad ",
+        "4/128",
+        "gray"
+      ],
+      "exclude": [
+        "huawei",
+        "mate",
+        "pro",
+        "pad 2"
+      ]
+    },
+    "23948": {
+      "include": [
+        "redmi pad ",
+        "4/128",
+        "green"
+      ],
+      "exclude": [
+        "huawei",
+        "mate",
+        "pro",
+        "pad 2"
+      ]
+    },
+    "23945": {
+      "include": [
+        "redmi pad ",
+        "4/128",
+        "silver"
+      ],
+      "exclude": [
+        "huawei",
+        "mate",
+        "pro",
+        "pad 2"
+      ]
     }
   }
