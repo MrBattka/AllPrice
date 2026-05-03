@@ -1752,102 +1752,6 @@
         ],
         "exclude": []
     },
-    "34438": {
-        "include": [
-            "oneplus 12 ",
-            "12/256",
-            "black"
-        ],
-        "exclude": []
-    },
-    "34440": {
-        "include": [
-            "oneplus 12 ",
-            "12/256",
-            "green"
-        ],
-        "exclude": []
-    },
-    "34444": {
-        "include": [
-            "oneplus 12 ",
-            "12/256",
-            "silver"
-        ],
-        "exclude": []
-    },
-    "34439": {
-        "include": [
-            "oneplus 12 ",
-            "16/1tb",
-            "black"
-        ],
-        "exclude": []
-    },
-    "34441": {
-        "include": [
-            "oneplus 12 ",
-            "16/1tb",
-            "green"
-        ],
-        "exclude": []
-    },
-    "34445": {
-        "include": [
-            "oneplus 12 ",
-            "16/1tb",
-            "silver"
-        ],
-        "exclude": []
-    },
-    "34437": {
-        "include": [
-            "oneplus 12 ",
-            "16/512",
-            "black"
-        ],
-        "exclude": []
-    },
-    "34442": {
-        "include": [
-            "oneplus 12 ",
-            "16/512",
-            "green"
-        ],
-        "exclude": []
-    },
-    "34446": {
-        "include": [
-            "oneplus 12 ",
-            "16/512",
-            "silver"
-        ],
-        "exclude": []
-    },
-    "34436": {
-        "include": [
-            "oneplus 12 ",
-            "24/1tb",
-            "black"
-        ],
-        "exclude": []
-    },
-    "34443": {
-        "include": [
-            "oneplus 12 ",
-            "24/1tb",
-            "green"
-        ],
-        "exclude": []
-    },
-    "34447": {
-        "include": [
-            "oneplus 12 ",
-            "24/1tb",
-            "silver"
-        ],
-        "exclude": []
-    },
     "37804": {
         "include": [
             "oneplus 13r",
@@ -2322,39 +2226,6 @@
         "include": [
             "ace 5",
             "16/512",
-            "white"
-        ],
-        "exclude": [
-            "pro",
-            "ultra"
-        ]
-    },
-    "38045": {
-        "include": [
-            "ace 5",
-            "16/1tb",
-            "gray"
-        ],
-        "exclude": [
-            "pro",
-            "ultra"
-        ]
-    },
-    "38046": {
-        "include": [
-            "ace 5",
-            "16/1tb",
-            "green"
-        ],
-        "exclude": [
-            "pro",
-            "ultra"
-        ]
-    },
-    "38047": {
-        "include": [
-            "ace 5",
-            "16/1tb",
             "white"
         ],
         "exclude": [
@@ -4160,42 +4031,6 @@
     "41540": {
         "include": [
             "ph05"
-        ],
-        "exclude": []
-    },
-    "41203": {
-        "include": [
-            "ace 5",
-            "12/256",
-            "extreme",
-            "blue"
-        ],
-        "exclude": []
-    },
-    "41187": {
-        "include": [
-            "ace 5",
-            "12/512",
-            "extreme",
-            "black"
-        ],
-        "exclude": []
-    },
-    "41204": {
-        "include": [
-            "ace 5",
-            "12/512",
-            "extreme",
-            "blue"
-        ],
-        "exclude": []
-    },
-    "41206": {
-        "include": [
-            "ace 5",
-            "16/256",
-            "extreme",
-            "black"
         ],
         "exclude": []
     },
