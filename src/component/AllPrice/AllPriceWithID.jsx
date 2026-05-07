@@ -151,6 +151,7 @@ import {
 import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 import { getIdByNameTest } from "../../helpers/returnIDByNameTest";
 import { returnNameNarod, returnStockPriceNarod } from "../Narod/helpers/helpers";
+import { returnFixNameUniSale, returnFixPriceUniSale } from "../UniSale/helpers/helpers";
 
 
 const isSeparator = (str) => /^[-—]{10,}$/.test(str.trim());
@@ -532,6 +533,15 @@ const processors = {
     }),
     filters: [baseFixBoltun],
   },
+  uniSale: {
+    processItem: (uniSale) => ({
+      id: getIdByNameTest(defaultFixName(returnFixNameUniSale(uniSale.name))),
+      name: returnFixNameUniSale(uniSale.name),
+      stockPrice: returnFixPriceUniSale(uniSale.price),
+      provider: "UniSale",
+    }),
+    filters: [],
+  },
 };
 
 const processData = (data, processor, isOpen) => {
@@ -581,6 +591,7 @@ const AllPriceWithID = ({
   a18Data,
   AMTData,
   boltunData,
+  uniSaleData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -623,6 +634,7 @@ const AllPriceWithID = ({
     results.push(...processData(a18Data, processors.A18, isOpen));
     results.push(...processData(AMTData, processors.amt, isOpen));
     results.push(...processData(boltunData, processors.boltun, isOpen));
+    results.push(...processData(uniSaleData, processors.uniSale, isOpen));
 
     return results;
   }, [isOpen]);
@@ -657,6 +669,7 @@ const AllPriceWithID = ({
     a18Data,
     AMTData,
     boltunData,
+    uniSaleData
   }).some((arr) => arr?.length > 2);
 
   return (

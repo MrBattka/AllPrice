@@ -147,6 +147,7 @@ import {
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
 import style from "../styles.module.css";
+import { returnFixNameUniSale, returnFixPriceUniSale } from "../UniSale/helpers/helpers";
 
 const processors = {
   superprice: {
@@ -458,6 +459,15 @@ const processors = {
     }),
     filters: [baseFixBoltun],
   },
+  uniSale: {
+      processItem: (uniSale) => ({
+        id: getIdByNameTest(defaultFixName(returnFixNameUniSale(uniSale.name))),
+        name: returnFixNameUniSale(uniSale.name),
+        stockPrice: returnFixPriceUniSale(uniSale.price),
+        provider: "UniSale",
+      }),
+      filters: [],
+    },
 };
 
 const processData = (data, processor, isOpen) => {
@@ -511,6 +521,7 @@ const AllPriceNotID = ({
   a18Data,
   AMTData,
   boltunData,
+  unisaleData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -545,6 +556,7 @@ const AllPriceNotID = ({
     results.push(...processData(a18Data, processors.A18, isOpen));
     results.push(...processData(AMTData, processors.amt, isOpen));
     results.push(...processData(boltunData, processors.boltun, isOpen));
+    results.push(...processData(unisaleData, processors.uniSale, isOpen));
 
     return results;
   }, [isOpen]);
@@ -578,6 +590,7 @@ const AllPriceNotID = ({
     a18Data,
     AMTData,
     boltunData,
+    unisaleData
   }).some((arr) => arr?.length > 2);
 
   return (

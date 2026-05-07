@@ -76,6 +76,8 @@ import idProductOtherBrandData from "../data/idProductOtherBrandData.json"
 import idProductOtherBrandData2 from "../data/idProductOtherBrandData2.json"
 import IndexUnimtrn from "./Unimtrn/indexUNIMTRN";
 import IndexUnimtrnNotID from "./Unimtrn/indexUNIMTRNNotID";
+import IndexUniSale from "./UniSale/IndexUniSale";
+import IndexUniSaleNotID from "./UniSale/IndexUniSaleNotID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -112,6 +114,7 @@ const IndexAllPrice = () => {
   const [dataAMT, setDataAMT] = useState([]);
   const [dataBoltun, setDataBoltun] = useState([]);
   const [dataStore77, setDataStore77] = useState([]);
+  const [dataUniSale, setDataUniSale] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -145,6 +148,7 @@ const IndexAllPrice = () => {
   const amt = [];
   const boltun = [];
   const store77 = [];
+  const uniSale = [];
 
   const allItems = [];
 
@@ -437,6 +441,12 @@ const IndexAllPrice = () => {
       store77.push({ name: store77El.name, price: store77El.price });
   });
 
+  dataUniSale.map((uniSaleEl) => {
+    uniSaleEl.name &&
+      uniSaleEl.name.length &&
+      uniSale.push({ name: uniSaleEl.name, price: uniSaleEl.price });
+  });
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -511,6 +521,8 @@ const IndexAllPrice = () => {
           setDataBoltun(rowBoltun);
           const rowStore77 = utils.sheet_to_json(wb.Sheets[sheets[31]]);
           setDataStore77(rowStore77);
+          const rowUniSale = utils.sheet_to_json(wb.Sheets[sheets[32]]);
+          setDataUniSale(rowUniSale);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -650,6 +662,9 @@ const IndexAllPrice = () => {
         {/* Store 77 */}
         <IndexStore77 el={dataStore77} store77Data={store77} />
         <IndexStore77NotID el={dataStore77} store77Data={store77} />
+        {/* UniSale */}
+        <IndexUniSale el={dataUniSale} uniSaleData={uniSale} />
+        <IndexUniSaleNotID el={dataUniSale} uniSaleData={uniSale} />
         {/* Quick Price */}
         <AllPriceQuickID
           dataSuperprice={superprice}
@@ -683,6 +698,7 @@ const IndexAllPrice = () => {
           a18Data={a18}
           AMTData={amt}
           boltunData={boltun}
+          uniSaleData={uniSale}
         />
         {/* All Price */}
         <AllPriceWithID
@@ -717,6 +733,7 @@ const IndexAllPrice = () => {
           a18Data={a18}
           AMTData={amt}
           boltunData={boltun}
+          uniSaleData={uniSale}
         />
         <AllPriceNotID
           dataSuperprice={superprice}
@@ -750,6 +767,7 @@ const IndexAllPrice = () => {
           a18Data={a18}
           AMTData={amt}
           boltunData={boltun}
+          uniSaleData={uniSale}
         />
       </div>
     </div>
