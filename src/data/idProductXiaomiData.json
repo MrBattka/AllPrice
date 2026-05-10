@@ -5822,8 +5822,7 @@
       "include": [
         "poco m7",
         "6/128",
-        "green",
-        "5g"
+        "green"
       ],
       "exclude": [
         "pro",
@@ -5834,8 +5833,7 @@
       "include": [
         "poco m7",
         "6/128",
-        "silver",
-        "5g"
+        "silver"
       ],
       "exclude": [
         "pro",
@@ -5846,8 +5844,7 @@
       "include": [
         "poco m7",
         "8/256",
-        "silver",
-        "5g"
+        "silver"
       ],
       "exclude": [
         "pro",
@@ -5858,8 +5855,7 @@
       "include": [
         "poco m7",
         "8/128",
-        "silver",
-        "5g"
+        "silver"
       ],
       "exclude": [
         "pro",
@@ -5870,8 +5866,7 @@
       "include": [
         "poco m7",
         "6/128",
-        "blue",
-        "5g"
+        "blue"
       ],
       "exclude": [
         "pro",
@@ -5882,8 +5877,7 @@
       "include": [
         "poco m7",
         "6/128",
-        "black",
-        "5g"
+        "black"
       ],
       "exclude": [
         "pro",
@@ -5894,8 +5888,7 @@
       "include": [
         "poco m7",
         "8/256",
-        "blue",
-        "5g"
+        "blue"
       ],
       "exclude": [
         "pro",
@@ -5906,8 +5899,7 @@
       "include": [
         "poco m7",
         "8/256",
-        "black",
-        "5g"
+        "black"
       ],
       "exclude": [
         "pro",
@@ -5918,8 +5910,7 @@
       "include": [
         "poco m7",
         "8/128",
-        "green",
-        "5g"
+        "green"
       ],
       "exclude": [
         "pro",
@@ -5930,8 +5921,7 @@
       "include": [
         "poco m7",
         "8/128",
-        "blue",
-        "5g"
+        "blue"
       ],
       "exclude": [
         "pro",
@@ -5942,8 +5932,7 @@
       "include": [
         "poco m7",
         "8/128",
-        "black",
-        "5g"
+        "black"
       ],
       "exclude": [
         "pro",

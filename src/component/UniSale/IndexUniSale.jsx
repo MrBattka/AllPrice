@@ -33,7 +33,7 @@ const IndexUniSale = ({ el, uniSaleData }) => {
       <div>
         {el.length > 1 && (
           <span className={style.title} onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "Store 77 ▲" : "Store 77 ▼"}
+            {isOpen ? "Юнисейл ▲" : "Юнисейл ▼"}
           </span>
         )}
       </div>
