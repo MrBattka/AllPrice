@@ -6987,5 +6987,520 @@
       "exclude": [
         "dual"
       ]
+    },
+    "41005": {
+      "include": [
+        "mi 17 12/256",
+        "black"
+      ],
+      "exclude": []
+    },
+    "41036": {
+      "include": [
+        "mi 17 12/256",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "41037": {
+      "include": [
+        "mi 17 12/256",
+        "pink"
+      ],
+      "exclude": []
+    },
+    "41044": {
+      "include": [
+        "mi 17 12/256",
+        "green"
+      ],
+      "exclude": []
+    },
+    "42559": {
+      "include": [
+        "mi 17 16/1tb",
+        "green"
+      ],
+      "exclude": []
+    },
+    "41032": {
+      "include": [
+        "mi 17 12/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "41042": {
+      "include": [
+        "mi 17 12/512",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "41038": {
+      "include": [
+        "mi 17 12/512",
+        "pink"
+      ],
+      "exclude": []
+    },
+    "41043": {
+      "include": [
+        "mi 17 12/512",
+        "green"
+      ],
+      "exclude": []
+    },
+    "41033": {
+      "include": [
+        "mi 17 16/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "41040": {
+      "include": [
+        "mi 17 16/512",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "41039": {
+      "include": [
+        "mi 17 16/512",
+        "pink"
+      ],
+      "exclude": []
+    },
+    "41041": {
+      "include": [
+        "mi 17 16/512",
+        "green"
+      ],
+      "exclude": []
+    },
+    "41006": {
+      "include": [
+        "mi 17 pro 12/256",
+        "black"
+      ],
+      "exclude": []
+    },
+    "41061": {
+      "include": [
+        "mi 17 pro 12/256",
+        "green"
+      ],
+      "exclude": []
+    },
+    "41053": {
+      "include": [
+        "mi 17 pro 12/256",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "41052": {
+      "include": [
+        "mi 17 pro 12/256",
+        "white"
+      ],
+      "exclude": []
+    },
+    "41046": {
+      "include": [
+        "mi 17 pro 12/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "41060": {
+      "include": [
+        "mi 17 pro 12/512",
+        "green"
+      ],
+      "exclude": []
+    },
+    "41054": {
+      "include": [
+        "mi 17 pro 12/512",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "41051": {
+      "include": [
+        "mi 17 pro 12/512",
+        "white"
+      ],
+      "exclude": []
+    },
+    "41048": {
+      "include": [
+        "mi 17 pro 16/1tb",
+        "black"
+      ],
+      "exclude": []
+    },
+    "41058": {
+      "include": [
+        "mi 17 pro 16/1tb",
+        "green"
+      ],
+      "exclude": []
+    },
+    "41056": {
+      "include": [
+        "mi 17 pro 16/1tb",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "41049": {
+      "include": [
+        "mi 17 pro 16/1tb",
+        "white"
+      ],
+      "exclude": []
+    },
+    "41151": {
+      "include": [
+        "mi 17 pro 16/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "41059": {
+      "include": [
+        "mi 17 pro 16/512",
+        "green"
+      ],
+      "exclude": []
+    },
+    "41055": {
+      "include": [
+        "mi 17 pro 16/512",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "41050": {
+      "include": [
+        "mi 17 pro 16/512",
+        "white"
+      ],
+      "exclude": []
+    },
+    "41007": {
+      "include": [
+        "mi 17 pro max 12/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "41105": {
+      "include": [
+        "mi 17 pro max 12/512",
+        "green"
+      ],
+      "exclude": []
+    },
+    "41100": {
+      "include": [
+        "mi 17 pro max 12/512",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "41099": {
+      "include": [
+        "mi 17 pro max 12/512",
+        "white"
+      ],
+      "exclude": []
+    },
+    "41095": {
+      "include": [
+        "mi 17 pro max 16/1tb",
+        "black"
+      ],
+      "exclude": []
+    },
+    "41103": {
+      "include": [
+        "mi 17 pro max 16/1tb",
+        "green"
+      ],
+      "exclude": []
+    },
+    "41102": {
+      "include": [
+        "mi 17 pro max 16/1tb",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "41097": {
+      "include": [
+        "mi 17 pro max 16/1tb",
+        "white"
+      ],
+      "exclude": []
+    },
+    "41094": {
+      "include": [
+        "mi 17 pro max 16/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "41104": {
+      "include": [
+        "mi 17 pro max 16/512",
+        "green"
+      ],
+      "exclude": []
+    },
+    "41101": {
+      "include": [
+        "mi 17 pro max 16/512",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "41098": {
+      "include": [
+        "mi 17 pro max 16/512",
+        "white"
+      ],
+      "exclude": []
+    },
+    "42130": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "black",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42234": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "black"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42214": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "purple",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42250": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "purple"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42209": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "green",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42245": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "green"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42208": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42244": {
+      "include": [
+        "mi 17 ultra",
+        "12/512",
+        "white"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42204": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "black",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42241": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "black"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42212": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "purple",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42248": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "purple"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42211": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "green",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42247": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "green"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42206": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42242": {
+      "include": [
+        "mi 17 ultra",
+        "16/1tb",
+        "white"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42203": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "black",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42240": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "black"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42213": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "purple",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42249": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "purple"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42210": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "green",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42246": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "green"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
+    },
+    "42207": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "42243": {
+      "include": [
+        "mi 17 ultra",
+        "16/512",
+        "white"
+      ],
+      "exclude": [
+        "🇨🇳"
+      ]
     }
   }
