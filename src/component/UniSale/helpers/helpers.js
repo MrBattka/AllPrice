@@ -1,4 +1,12 @@
 export const returnFixNameUniSale = (name) => {
+
+  let str = typeof name === 'string' ? name : String(name);
+
+  // Если при конвертации получили "null" или "undefined", можно вернуть пустую строку
+  if (str === 'null' || str === 'undefined') {
+    return '';
+  }
+  
   const replaceGb = name.replace("Gb", "");
   const replaceGB = replaceGb.replace("GB", "");
   const replaceSpaceBlack = replaceGB.replace("Space Black", "Black");

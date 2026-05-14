@@ -1,4 +1,7 @@
 export const baseFix = (el) => {
+  
+  if (!el || el.length <3 || typeof el !== "string") return false;
+  
   return el[0] !== "(" &&
     el.name?.indexOf("airpods") != -1 &&
     (el.name?.indexOf("left") != -1 ||
@@ -88,6 +91,7 @@ export const baseFix = (el) => {
         el.name?.indexOf("потерто") == -1 &&
         el.name?.indexOf("экран") == -1 &&
         el.name?.indexOf("Realme") == -1 &&
+        el.name?.indexOf("Актив") == -1 &&
         el.name?.indexOf("уцен") == -1 &&
         el.name?.indexOf("RFB") == -1 &&
         el.name?.indexOf("обме") == -1 &&
@@ -197,7 +201,8 @@ export const baseFixHi = (el) => {
         el.name?.indexOf("Дисковод") == -1 &&
         el.name?.indexOf("зарядн") == -1 &&
         el.name?.indexOf("CPO") == -1 &&
-        el.name?.indexOf("FreeBuds") == -1;
+        el.name?.indexOf("FreeBuds") == -1 &&
+        el.name?.indexOf("Актив") == -1;
 };
 
 export const baseFixMiHonor = (el) => {
@@ -2585,3 +2590,47 @@ export const baseFixStore77 = (el) => {
         toLowerCase.indexOf("ремешок") == -1;
 };
 
+export const baseFixUnisale = (el) => {
+  
+  if (!el || el.length <3 || typeof el !== "string") return false;
+
+  let toLowerCase = el.toLowerCase();
+
+  const isAirpodsPart =
+    toLowerCase.includes("airpods") &&
+    (toLowerCase.includes("left") ||
+      toLowerCase.includes("левый") ||
+      toLowerCase.includes("right") ||
+      toLowerCase.includes("правый") ||
+      toLowerCase.includes("case") ||
+      toLowerCase.includes("кейс") ||
+      toLowerCase.includes("box"));
+
+  if (isAirpodsPart) {
+    return false;
+  }
+
+  const excludedKeywords = [
+    "отдельности", "adapter", "игры", "остальн",
+    "airpods 2 l ", "airpods 2 r ", "airpods 2 box",
+    "airpods 3 l ", "airpods 3 r ", "airpods 3 box",
+    "airpods pro 2023 box", "airpods pro 2023 l ", "airpods pro 2023 r",
+    "распак", "ремонт", "потертости", "скол", "пятна", "замена", "пиксель",
+    "на экране", "мятый", "мятый", "открытый", "дефект", "вскрыт", "реболл",
+    "no charger", "открыт", "без пломб", "прошит", "угол", "потерто", "экран",
+    "актив", "realme", "обменка", "rfb", "уцен", "обме", "короб", "пломба",
+    " r ", "airpods 2  l", "airpods 2  r", "airpods 3   r", "airpods 3   l",
+    "airpods 4   r", "airpods 4   l", "airpods 4  box", "airpods 3  box",
+    "airpods pro l", "airpods pro r", "airpods pro 2 type-c  l", "airpods pro 2 type-c   r",
+    "freebuds", "pixel buds", "oneplus buds", "дисковод", "уценка", "✅",
+    "трубный", "наличие", "чехол", "asis", "cpo", "зарядн", "☑️", "ремешок"
+  ];
+
+  for (let word of excludedKeywords) {
+    if (toLowerCase.includes(word)) {
+      return false;
+    }
+  }
+
+  return el; // ✅ возвращаем объект, если прошёл проверку
+};

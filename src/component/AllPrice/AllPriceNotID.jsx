@@ -26,6 +26,7 @@ import {
   baseFixSunrise,
   baseFixSuperPrice,
   baseFixTrub,
+  baseFixUnisale,
   baseFixVsemi,
 } from "../../helpers/baseFix";
 import { defaultFixName } from "../../helpers/defaultFixName";
@@ -461,8 +462,8 @@ const processors = {
   },
   uniSale: {
       processItem: (uniSale) => ({
-        id: getIdByNameTest(defaultFixName(returnFixNameUniSale(uniSale.name))),
-        name: returnFixNameUniSale(uniSale.name),
+        id: getIdByNameTest(baseFixUnisale(returnFixNameUniSale(uniSale.name))),
+        name: baseFixUnisale(returnFixNameUniSale(uniSale.name)),
         stockPrice: returnFixPriceUniSale(uniSale.price),
         provider: "UniSale",
       }),

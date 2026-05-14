@@ -28,6 +28,7 @@ import {
   baseFixSunrise,
   baseFixSuperPrice,
   baseFixTrub,
+  baseFixUnisale,
   baseFixVsemi,
 } from "../../helpers/baseFix";
 import { defaultFixName } from "../../helpers/defaultFixName";
@@ -534,14 +535,16 @@ const processors = {
     filters: [baseFixBoltun],
   },
   uniSale: {
-    processItem: (uniSale) => ({
-      id: getIdByNameTest(defaultFixName(returnFixNameUniSale(uniSale.name))),
-      name: returnFixNameUniSale(uniSale.name),
-      stockPrice: returnFixPriceUniSale(uniSale.price),
-      provider: "UniSale",
-    }),
-    filters: [],
-  },
+      processItem: (uniSale) => 
+        baseFixUnisale(returnFixNameUniSale(uniSale.name)) &&
+        ({
+        id: getIdByNameTest(baseFixUnisale(returnFixNameUniSale(uniSale.name))),
+        name: baseFixUnisale(returnFixNameUniSale(uniSale.name)),
+        stockPrice: returnFixPriceUniSale(uniSale.price),
+        provider: "UniSale",
+      }),
+      filters: [],
+    },
 };
 
 const processData = (data, processor, isOpen) => {
