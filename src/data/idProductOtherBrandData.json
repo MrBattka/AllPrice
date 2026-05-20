@@ -5015,5 +5015,267 @@
             "black"
         ],
         "exclude": []
+    },
+    "43199": {
+        "include": [
+            "nord 6",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43247": {
+        "include": [
+            "nord 6",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43248": {
+        "include": [
+            "nord 6",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43250": {
+        "include": [
+            "nord 6",
+            "12/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43251": {
+        "include": [
+            "nord 6",
+            "12/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43249": {
+        "include": [
+            "nord 6",
+            "8/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43253": {
+        "include": [
+            "nord 6",
+            "12/256",
+            "mint"
+        ],
+        "exclude": []
+    },
+    "43252": {
+        "include": [
+            "nord 6",
+            "12/512",
+            "mint"
+        ],
+        "exclude": []
+    },
+    "43254": {
+        "include": [
+            "nord 6",
+            "8/256",
+            "mint"
+        ],
+        "exclude": []
+    },
+    "43198": {
+        "include": [
+            "oneplus 15t",
+            "12/256",
+            "brown"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43256": {
+        "include": [
+            "oneplus 15t",
+            "12/512",
+            "brown"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43257": {
+        "include": [
+            "oneplus 15t",
+            "16/512",
+            "brown"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43258": {
+        "include": [
+            "oneplus 15t",
+            "16/1tb",
+            "brown"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43259": {
+        "include": [
+            "oneplus 15t",
+            "16/256",
+            "brown"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43264": {
+        "include": [
+            "oneplus 15t",
+            "12/256",
+            "green"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43263": {
+        "include": [
+            "oneplus 15t",
+            "12/512",
+            "green"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43261": {
+        "include": [
+            "oneplus 15t",
+            "16/512",
+            "green"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43262": {
+        "include": [
+            "oneplus 15t",
+            "16/1tb",
+            "green"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43260": {
+        "include": [
+            "oneplus 15t",
+            "16/256",
+            "green"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43265": {
+        "include": [
+            "oneplus 15t",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43266": {
+        "include": [
+            "oneplus 15t",
+            "12/512",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43268": {
+        "include": [
+            "oneplus 15t",
+            "16/512",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43269": {
+        "include": [
+            "oneplus 15t",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43267": {
+        "include": [
+            "oneplus 15t",
+            "16/256",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43202": {
+        "include": [
+            "oneplus pad 4",
+            "8/256",
+            "glow"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43292": {
+        "include": [
+            "oneplus pad 4",
+            "8/256",
+            "mint"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43293": {
+        "include": [
+            "oneplus pad 4",
+            "12/512",
+            "glow"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43294": {
+        "include": [
+            "oneplus pad 4",
+            "12/512",
+            "mint"
+        ],
+        "exclude": [
+            "pro"
+        ]
     }
 }

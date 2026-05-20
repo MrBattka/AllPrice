@@ -225,6 +225,7 @@ const IndexAllPrice = () => {
         price: unimtrnEl.Стоимость || unimtrnEl.Cтоимость || unimtrnEl.Цена,
       });
   });
+  
 
   // dataUNIMTRN.map((unimtrnEl) => {
   //   unimtrnEl.Metr &&

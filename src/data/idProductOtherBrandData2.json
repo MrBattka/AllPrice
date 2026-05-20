@@ -9195,5 +9195,227 @@
         "exclude": [
             "lite"
         ]
+    },
+    "43188": {
+        "include": [
+            "honor 600",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43222": {
+        "include": [
+            "honor 600",
+            "12/512",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43223": {
+        "include": [
+            "honor 600",
+            "8/512",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43224": {
+        "include": [
+            "honor 600",
+            "8/256",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43225": {
+        "include": [
+            "honor 600",
+            "8/128",
+            "black"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43230": {
+        "include": [
+            "honor 600",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43231": {
+        "include": [
+            "honor 600",
+            "12/512",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43229": {
+        "include": [
+            "honor 600",
+            "8/512",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43228": {
+        "include": [
+            "honor 600",
+            "8/256",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43226": {
+        "include": [
+            "honor 600",
+            "8/128",
+            "white"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43233": {
+        "include": [
+            "honor 600",
+            "12/256",
+            "orange"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43232": {
+        "include": [
+            "honor 600",
+            "12/512",
+            "orange"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43234": {
+        "include": [
+            "honor 600",
+            "8/512",
+            "orange"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43235": {
+        "include": [
+            "honor 600",
+            "8/256",
+            "orange"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43236": {
+        "include": [
+            "honor 600",
+            "8/128",
+            "orange"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "43187": {
+        "include": [
+            "honor 600 pro",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43238": {
+        "include": [
+            "honor 600 pro",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43239": {
+        "include": [
+            "honor 600 pro",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43242": {
+        "include": [
+            "honor 600 pro",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43241": {
+        "include": [
+            "honor 600 pro",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43240": {
+        "include": [
+            "honor 600 pro",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43243": {
+        "include": [
+            "honor 600 pro",
+            "12/256",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "43244": {
+        "include": [
+            "honor 600 pro",
+            "12/512",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "43245": {
+        "include": [
+            "honor 600 pro",
+            "16/1tb",
+            "orange"
+        ],
+        "exclude": []
     }
 }

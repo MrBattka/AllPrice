@@ -21,7 +21,8 @@ export const fixNameInfinity = (name) => {
   const fixeSIM1 = fixeSIM.indexOf("🇺🇸") === -1 ? fixeSIM.replace("(e-sim)", "🇺🇸") : fixeSIM
   const fix2SIM = fixeSIM1.replace("(2-sim)", "dual");
   const fixStarlight = fix2SIM.replace("Starting", "Starlight")
-  return fixStarlight;
+  const removeFire = fixStarlight.replace("💥", "");
+  return removeFire;
 };
 
 const checkFlags = (str) => {
@@ -83,8 +84,10 @@ const checkFlags = (str) => {
 
 export const returnNameInArrInfinity = (name) => {
   const fixFlags = checkFlags(name);
+  
+  const removeFire = fixFlags.replace("💥", "");
 
-  const removeStick = fixFlags.replace("Wi-Fi", "WiFi")
+  const removeStick = removeFire.replace("Wi-Fi", "WiFi")
 
   let reverseStrName = removeStick.split("").reverse().join("");
   let splitPrice =
@@ -181,6 +184,8 @@ export const returnStockPriceInfinity = (name) => {
   let removeDot1 = removeUS.replace(".", "");
   let removeSpace = removeDot1.replace(" ", "");
   let removeStick = removeSpace.replace("-", "");
-  const fixFlags1 = checkFlags(removeStick);
+  let remove2024 = removeStick.replace("(2024)", "");
+
+  const fixFlags1 = checkFlags(remove2024);
   return fixFlags1;
 };

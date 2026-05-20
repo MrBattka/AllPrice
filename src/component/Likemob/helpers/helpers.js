@@ -97,9 +97,10 @@ export const returnStockPriceLikemob = (name) => {
   //   : reverseBackStrName;
   let fixWiFi = toLowerCase.replace("wi-fi", "wifi");
   let fixUSBC = fixWiFi.replace("usb-c", "usbc");
+  let fixNEW = fixUSBC.replace("new", "");
 
   let splitPrice =
-    fixUSBC.indexOf("-") !== -1 ? fixUSBC.split("-")[1] : fixUSBC;
+    fixNEW.indexOf("-") !== -1 ? fixNEW.split("-")[1] : fixNEW;
 
   return splitPrice;
 };

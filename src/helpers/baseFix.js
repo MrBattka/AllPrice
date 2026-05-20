@@ -1,8 +1,8 @@
 export const baseFix = (el) => {
   
-  if (!el || el.length <3 || typeof el !== "string") return false;
+  // if (!el || el.length <3 || typeof el !== "string") return false;
   
-  return el[0] !== "(" &&
+  return (
     el.name?.indexOf("airpods") != -1 &&
     (el.name?.indexOf("left") != -1 ||
       el.name?.indexOf("левый") != -1 ||
@@ -26,42 +26,11 @@ export const baseFix = (el) => {
         el.name?.indexOf("Grip Case") == -1 &&
         el.name?.indexOf("Sult Case") == -1 &&
         el.name?.indexOf("Folio") == -1 &&
-        el.name?.indexOf("Smart Tag") == -1 &&
-        el.name?.indexOf("Vision Pro") == -1 &&
-        el.name?.indexOf("Rog AMD") == -1 &&
         el.name?.indexOf("AeroActive Cooler") == -1 &&
-        el.name?.indexOf("Beats") == -1 &&
-        el.name?.indexOf("Blackview") == -1 &&
-        el.name?.indexOf("DJI") == -1 &&
         el.name?.indexOf("Media Mod") == -1 &&
         el.name?.indexOf("Съемные") == -1 &&
-        el.name?.indexOf("HERO 11 mini") == -1 &&
-        el.name?.indexOf("HERO 12 Creator Edition") == -1 &&
-        el.name?.indexOf("HERO 12 Special Bundle") == -1 &&
         el.name?.indexOf("freebuds") == -1 &&
         el.name?.indexOf("Soundgear") == -1 &&
-        el.name?.indexOf("Go 3") == -1 &&
-        el.name?.indexOf("Nothing") == -1 &&
-        el.name?.indexOf("Oculus") == -1 &&
-        el.name?.indexOf("OnePlus Pad") == -1 &&
-        el.name?.indexOf("OnePlus Buds") == -1 &&
-        el.name?.indexOf("Pico ") == -1 &&
-        el.name?.indexOf("Pixel Tablet") == -1 &&
-        el.name?.indexOf("Pixel Watch") == -1 &&
-        el.name?.indexOf("Backbone") == -1 &&
-        el.name?.indexOf("VR2") == -1 &&
-        el.name?.indexOf("DualSense") == -1 &&
-        el.name?.indexOf("Buds") == -1 &&
-        el.name?.indexOf("Watch 4") == -1 &&
-        el.name?.indexOf("Watch 5") == -1 &&
-        el.name?.indexOf("Watch 6") == -1 &&
-        el.name?.indexOf("Xperia 1 V ") == -1 &&
-        el.name?.indexOf("Steam Desk") == -1 &&
-        el.name?.indexOf("Steam Deck") == -1 &&
-        el.name?.indexOf("Tecno") == -1 &&
-        el.name?.indexOf("Nubia Flip") == -1 &&
-        el.name?.indexOf("Nubia Neo") == -1 &&
-        el.name?.indexOf("Wireless") == -1 &&
         el.name?.indexOf("царапин") == -1 &&
         el.name?.indexOf("ремонт") == -1 &&
         el.name?.indexOf("потертости") == -1 &&
@@ -99,17 +68,12 @@ export const baseFix = (el) => {
         el.name?.indexOf("ремешок") == -1 &&
         el.name?.indexOf("blackview") == -1 &&
         el.name?.indexOf("Asis") == -1 &&
-        el.name?.indexOf("FreeBuds") == -1 &&
-        el.name?.indexOf("Pixel Buds") == -1 &&
-        el.name?.indexOf("OnePlus Buds") == -1 &&
         el.name?.indexOf("Дисковод") == -1 &&
         el.name?.indexOf("зарядн") == -1 &&
         el.name?.indexOf("Asis") == -1 &&
         el.name?.indexOf("Asis") == -1 &&
         el.name?.indexOf("ASIS") == -1 &&
-        el.name?.indexOf("CPO") == -1 &&
-        el.name &&
-        el !== "Товар";
+        el.name?.indexOf("CPO") == -1)
 };
 
 export const baseFixHi = (el) => {
@@ -1759,6 +1723,7 @@ export const baseFixSunrise = (el) => {
         toLowerCase?.indexOf("прошит") == -1 &&
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
+        toLowerCase?.indexOf("active") == -1 &&
         toLowerCase?.indexOf("актив") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
         toLowerCase.indexOf("обменка") == -1 &&

@@ -55,7 +55,11 @@ export const returnStockPriceSunrise = (name) => {
     ? checkSpace4.split("-")[0]
     : checkSpace4;
   let reverseBackStrName = removeStick.split("").reverse().join("");
-  let replaceCase = reverseBackStrName.replace(" [без кейса]", "");
+  let replaceMR = reverseBackStrName.replace("мк", "");
+  let replaceSmile1 = replaceMR.replace("🤠", "");
+  let replaceSmile2 = replaceSmile1.replace("🤩", "");
+  
+  let replaceCase = replaceSmile2.replace(" [без кейса]", "");
   let replaceWithCase = replaceCase.replace(" [с кейсом]", "");
   let removePhoto = replaceWithCase.indexOf("фото") !== -1 ? replaceWithCase.split('фото')[0] : replaceWithCase
 

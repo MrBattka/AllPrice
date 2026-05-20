@@ -59,7 +59,8 @@
         "blue"
       ],
       "exclude": [
-        "sky"
+        "sky",
+        "2026"
       ]
     },
     "36588": {
@@ -68,7 +69,9 @@
         "2",
         "green"
       ],
-      "exclude": []
+      "exclude": [
+        "2026"
+      ]
     },
     "36595": {
       "include": [
@@ -76,7 +79,9 @@
         "2",
         "midnight"
       ],
-      "exclude": []
+      "exclude": [
+        "2026"
+      ]
     },
     "36596": {
       "include": [
@@ -84,7 +89,9 @@
         "2",
         "starlight"
       ],
-      "exclude": []
+      "exclude": [
+        "2026"
+      ]
     },
     "36597": {
       "include": [
@@ -92,7 +99,9 @@
         "2",
         "orange"
       ],
-      "exclude": []
+      "exclude": [
+        "2026"
+      ]
     },
     "36589": {
       "include": [
@@ -100,7 +109,9 @@
         "2",
         "pink"
       ],
-      "exclude": []
+      "exclude": [
+        "2026"
+      ]
     },
     "36594": {
       "include": [
@@ -108,7 +119,9 @@
         "2",
         "purple"
       ],
-      "exclude": []
+      "exclude": [
+        "2026"
+      ]
     },
     "36590": {
       "include": [
@@ -116,7 +129,9 @@
         "2",
         "silver"
       ],
-      "exclude": []
+      "exclude": [
+        "2026"
+      ]
     },
     "36591": {
       "include": [
@@ -124,7 +139,9 @@
         "2",
         "sky blue"
       ],
-      "exclude": []
+      "exclude": [
+        "2026"
+      ]
     },
     "36592": {
       "include": [
@@ -132,7 +149,9 @@
         "2",
         "gray"
       ],
-      "exclude": []
+      "exclude": [
+        "2026"
+      ]
     },
     "18979": {
       "include": [
@@ -2274,7 +2293,9 @@
         "128",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36207": {
       "include": [
@@ -2283,7 +2304,9 @@
         "128",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36172": {
       "include": [
@@ -2292,7 +2315,9 @@
         "128",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36206": {
       "include": [
@@ -2301,7 +2326,9 @@
         "128",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36401": {
       "include": [
@@ -2350,7 +2377,9 @@
         "1tb",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36218": {
       "include": [
@@ -2359,7 +2388,9 @@
         "1tb",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36219": {
       "include": [
@@ -2368,7 +2399,9 @@
         "1tb",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36220": {
       "include": [
@@ -2377,7 +2410,9 @@
         "1tb",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36405": {
       "include": [
@@ -2426,7 +2461,9 @@
         "256",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36210": {
       "include": [
@@ -2435,7 +2472,9 @@
         "256",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36211": {
       "include": [
@@ -2444,7 +2483,9 @@
         "256",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36212": {
       "include": [
@@ -2453,7 +2494,9 @@
         "256",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36409": {
       "include": [
@@ -2502,7 +2545,9 @@
         "512",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36214": {
       "include": [
@@ -2511,7 +2556,9 @@
         "512",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36215": {
       "include": [
@@ -2520,7 +2567,9 @@
         "512",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36216": {
       "include": [
@@ -2528,8 +2577,10 @@
         "m2",
         "512",
         "starlight"
-      ], 
-      "exclude": ["5g"]
+      ],
+      "exclude": [
+        "5g"
+      ]
     },
     "36413": {
       "include": [
@@ -2578,7 +2629,9 @@
         "128",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38471": {
       "include": [
@@ -2587,7 +2640,9 @@
         "128",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38472": {
       "include": [
@@ -2596,7 +2651,9 @@
         "128",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38473": {
       "include": [
@@ -2605,7 +2662,9 @@
         "128",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38502": {
       "include": [
@@ -2654,7 +2713,9 @@
         "1tb",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38495": {
       "include": [
@@ -2663,7 +2724,9 @@
         "1tb",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38496": {
       "include": [
@@ -2672,7 +2735,9 @@
         "1tb",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38497": {
       "include": [
@@ -2681,7 +2746,9 @@
         "1tb",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38526": {
       "include": [
@@ -2730,7 +2797,9 @@
         "256",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38479": {
       "include": [
@@ -2739,7 +2808,9 @@
         "256",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38480": {
       "include": [
@@ -2748,7 +2819,9 @@
         "256",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38481": {
       "include": [
@@ -2757,7 +2830,9 @@
         "256",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38510": {
       "include": [
@@ -2806,7 +2881,9 @@
         "512",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38487": {
       "include": [
@@ -2815,7 +2892,9 @@
         "512",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38488": {
       "include": [
@@ -2824,7 +2903,9 @@
         "512",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38489": {
       "include": [
@@ -2833,7 +2914,9 @@
         "512",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38518": {
       "include": [
@@ -2882,7 +2965,9 @@
         "128",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38536": {
       "include": [
@@ -2891,7 +2976,9 @@
         "128",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38537": {
       "include": [
@@ -2900,7 +2987,9 @@
         "128",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38538": {
       "include": [
@@ -2909,7 +2998,9 @@
         "128",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38567": {
       "include": [
@@ -2958,7 +3049,9 @@
         "1tb",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38560": {
       "include": [
@@ -2967,7 +3060,9 @@
         "1tb",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38561": {
       "include": [
@@ -2976,7 +3071,9 @@
         "1tb",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38562": {
       "include": [
@@ -2985,7 +3082,9 @@
         "1tb",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38591": {
       "include": [
@@ -3034,7 +3133,9 @@
         "256",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38544": {
       "include": [
@@ -3043,7 +3144,9 @@
         "256",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38545": {
       "include": [
@@ -3052,7 +3155,9 @@
         "256",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38546": {
       "include": [
@@ -3061,7 +3166,9 @@
         "256",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38575": {
       "include": [
@@ -3110,7 +3217,9 @@
         "512",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38552": {
       "include": [
@@ -3119,7 +3228,9 @@
         "512",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38553": {
       "include": [
@@ -3128,7 +3239,9 @@
         "512",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38554": {
       "include": [
@@ -3137,7 +3250,9 @@
         "512",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38583": {
       "include": [
@@ -3186,7 +3301,9 @@
         "1tb",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36456": {
       "include": [
@@ -3195,7 +3312,9 @@
         "1tb",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36454": {
       "include": [
@@ -3204,7 +3323,9 @@
         "1tb",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36457": {
       "include": [
@@ -3213,7 +3334,9 @@
         "1tb",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36232": {
       "include": [
@@ -3262,7 +3385,9 @@
         "128",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36460": {
       "include": [
@@ -3271,7 +3396,9 @@
         "128",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36458": {
       "include": [
@@ -3280,7 +3407,9 @@
         "128",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36461": {
       "include": [
@@ -3289,7 +3418,9 @@
         "128",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "38657": {
       "include": [
@@ -3338,7 +3469,9 @@
         "256",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36464": {
       "include": [
@@ -3347,7 +3480,9 @@
         "256",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36462": {
       "include": [
@@ -3356,7 +3491,9 @@
         "256",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36465": {
       "include": [
@@ -3365,7 +3502,9 @@
         "256",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36224": {
       "include": [
@@ -3414,7 +3553,9 @@
         "512",
         "blue"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36468": {
       "include": [
@@ -3423,7 +3564,9 @@
         "512",
         "purple"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36466": {
       "include": [
@@ -3432,7 +3575,9 @@
         "512",
         "gray"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36469": {
       "include": [
@@ -3441,7 +3586,9 @@
         "512",
         "starlight"
       ],
-      "exclude": ["5g"]
+      "exclude": [
+        "5g"
+      ]
     },
     "36228": {
       "include": [
@@ -12121,6 +12268,46 @@
         "natural",
         "black",
         "al"
+      ],
+      "exclude": []
+    },
+    "43272": {
+      "include": [
+        "airpods max 2",
+        "2026",
+        "midnight"
+      ],
+      "exclude": []
+    },
+    "43300": {
+      "include": [
+        "airpods max 2",
+        "2026",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43301": {
+      "include": [
+        "airpods max 2",
+        "2026",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "43302": {
+      "include": [
+        "airpods max 2",
+        "2026",
+        "starlight"
+      ],
+      "exclude": []
+    },
+    "43303": {
+      "include": [
+        "airpods max 2",
+        "2026",
+        "orange"
       ],
       "exclude": []
     }
