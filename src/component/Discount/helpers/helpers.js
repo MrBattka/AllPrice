@@ -85,8 +85,11 @@ export const returnFixNameDiscount = (name) => {
   const replace2Sim = fixWiFi2.replace("2Sim", "");
   const replace = replace2Sim.replace("наша вилка", "");
   const fixPurple = replace.replace("Pruple", "Purple");
+  const fix1TB = fixPurple.replace("/1024 ", "/1TB ");
+  const fixiPadAir11 = fix1TB.replace("iPad Air 8 11 ", "iPad Air 11 ");
+  
 
-  const fixAir11 = fixPurple.replace("iPad Air 11", "iPad Air 11 M2");
+  const fixAir11 = fixiPadAir11.replace("iPad Air 11", "iPad Air 11 M2");
   const fixAir13 = fixAir11.replace("iPad Air 13", "iPad Air 13 M2");
   const fixPro11 = fixAir13.replace("iPad Pro 11", "iPad Pro 11 M4");
   const fixPro13 = fixPro11.replace("iPad Pro 13", "iPad Pro 13 M4");

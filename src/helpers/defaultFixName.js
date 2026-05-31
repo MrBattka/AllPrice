@@ -133,26 +133,31 @@ export const defaultFixName = (el) => {
       ? fixMagic11Pro.replace("silver", "white")
       : fixMagic11Pro;
   const fixS25UltraGold =
-    fixS25UltraSilver.indexOf("s25 ") !== -1
+    (fixS25UltraSilver.indexOf("s25 ") !== -1 ||
+      fixS25UltraSilver.indexOf("s26 ") !== -1)
       ? fixS25UltraSilver.replace("gold", "pink")
       : fixS25UltraSilver;
+  const fixS26Gold =
+      fixS25UltraGold.indexOf("s26 ") !== -1
+      ? fixS25UltraGold.replace("pink", "gold")
+      : fixS25UltraGold;
 
   const fixMagicV5Gray =
-    (fixS25UltraGold.indexOf("magic v5") !== -1 ||
-      fixS25UltraGold.indexOf("pura 80") !== -1 ||
-      fixS25UltraGold.indexOf("oneplus 13") !== -1 ||
-      fixS25UltraGold.indexOf("oneplus 15") !== -1 ||
-      fixS25UltraGold.indexOf("ace 6t") !== -1 ||
-      fixS25UltraGold.indexOf("a26 ") !== -1 ||
-      fixS25UltraGold.indexOf("a36 ") !== -1 ||
-      fixS25UltraGold.indexOf("s25 fe") !== -1 ||
-      fixS25UltraGold.indexOf("mi pad 8") !== -1 ||
-      fixS25UltraGold.indexOf("poco f7") !== -1 ||
-      fixS25UltraGold.indexOf("z70 ultra") !== -1 ||
-      fixS25UltraGold.indexOf("honor 400") !== -1) &&
-      fixS25UltraGold.indexOf("mi pad 8 pro") === -1
-      ? fixS25UltraGold.replace("gray", "black")
-      : fixS25UltraGold;
+    (fixS26Gold.indexOf("magic v5") !== -1 ||
+      fixS26Gold.indexOf("pura 80") !== -1 ||
+      fixS26Gold.indexOf("oneplus 13") !== -1 ||
+      fixS26Gold.indexOf("oneplus 15") !== -1 ||
+      fixS26Gold.indexOf("ace 6t") !== -1 ||
+      fixS26Gold.indexOf("a26 ") !== -1 ||
+      fixS26Gold.indexOf("a36 ") !== -1 ||
+      fixS26Gold.indexOf("s25 fe") !== -1 ||
+      fixS26Gold.indexOf("mi pad 8") !== -1 ||
+      fixS26Gold.indexOf("poco f7") !== -1 ||
+      fixS26Gold.indexOf("z70 ultra") !== -1 ||
+      fixS26Gold.indexOf("honor 400") !== -1) &&
+      fixS26Gold.indexOf("mi pad 8 pro") === -1
+      ? fixS26Gold.replace("gray", "black")
+      : fixS26Gold;
   const fixOnePlus15Purple =
     fixMagicV5Gray.indexOf("oneplus 15") !== -1
       ? fixMagicV5Gray.replace("viol", "purple")

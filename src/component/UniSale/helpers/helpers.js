@@ -26,9 +26,13 @@ export const returnFixNameUniSale = (name) => {
   const fixSE21 = fixSE3.replace("SE 2 (2024)", "SE2")
   const fixSE31 = fixSE21.replace("SE 3 (2025)", "SE3")
   const replaceMM = fixSE31.replace("mm", "")
+  const fixYandex = replaceMM.replace("Yandex", "Яндекс")
+  const fixDisc = fixYandex.replace("Disk", "Disc")
+  const fix1TB = fixDisc.replace("/1024 ", "/1TB ")
+  const fixZFLIP = fix1TB.replace("zflip", "z flip")
   
   
-  return replaceMM;
+  return fixZFLIP;
 };
 
 export const returnFixPriceUniSale = (price) => {

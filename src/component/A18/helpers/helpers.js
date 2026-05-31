@@ -24,12 +24,17 @@ export const returnFixNameA18 = (name) => {
   const fixFrost = fixS10Plus1.replace("Fros ", "Frost ");
   const fixS10FEPlus = fixFrost.replace("S10FE Plus", "S10 FE +");
   const fixLavander = fixS10FEPlus.replace("Lavander", "lavender");
-  const fixProPlus = fixLavander.replace("Pro Plus", "Pro +");
+  const fixTabA11Plus = fixLavander.replace("Tab A11 Plus", "Tab A11 +");
+  const fixProPlus = fixTabA11Plus.replace("Pro Plus", "Pro +");
 
-  const fixSnow =
-    fixProPlus.indexOf("Pixel") !== -1
-      ? fixProPlus.replace("White", "Snow")
+  const fixX8Pro =
+    fixProPlus.indexOf("X8 Pro") !== -1
+      ? fixProPlus.replace("X8 Pro", "Poco X8 Pro")
       : fixProPlus;
+  const fixSnow =
+    fixX8Pro.indexOf("Pixel") !== -1
+      ? fixX8Pro.replace("White", "Snow")
+      : fixX8Pro;
   const fixObsidian =
     fixSnow.indexOf("Pixel") !== -1
       ? fixSnow.replace("Black", "Obsidian")

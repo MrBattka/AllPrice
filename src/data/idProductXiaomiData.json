@@ -835,109 +835,163 @@
     },
     "37796": {
       "include": [
-        "poco x7 8/128 black"
+        "poco x7 ",
+        "8/128",
+        "black"
       ],
-      "exclude": []
+      "exclude": [
+        "pro"
+      ]
     },
     "37817": {
       "include": [
-        "poco x7 8/128 green"
+        "poco x7 ",
+        "8/128",
+        "green"
       ],
-      "exclude": []
+      "exclude": [
+        "pro"
+      ]
     },
     "37818": {
       "include": [
-        "poco x7 8/128 silver"
+        "poco x7 ",
+        "8/128",
+        "silver"
       ],
-      "exclude": []
+      "exclude": [
+        "pro"
+      ]
     },
     "37822": {
       "include": [
-        "poco x7 8/256 black"
+        "poco x7 ",
+        "8/256",
+        "black"
       ],
-      "exclude": []
+      "exclude": [
+        "pro"
+      ]
     },
     "37823": {
       "include": [
-        "poco x7 8/256 green"
+        "poco x7 ",
+        "8/256",
+        "green"
       ],
-      "exclude": []
+      "exclude": [
+        "pro"
+      ]
     },
     "37824": {
       "include": [
-        "poco x7 8/256 silver"
+        "poco x7 ",
+        "8/256",
+        "silver"
       ],
-      "exclude": []
+      "exclude": [
+        "pro"
+      ]
     },
     "37828": {
       "include": [
-        "poco x7 12/512 black"
+        "poco x7 ",
+        "12/512",
+        "black"
       ],
-      "exclude": []
+      "exclude": [
+        "pro"
+      ]
     },
     "37829": {
       "include": [
-        "poco x7 12/512 green"
+        "poco x7 ",
+        "12/512",
+        "green"
       ],
-      "exclude": []
+      "exclude": [
+        "pro"
+      ]
     },
     "37830": {
       "include": [
-        "poco x7 12/512 silver"
+        "poco x7 ",
+        "12/512",
+        "silver"
       ],
-      "exclude": []
+      "exclude": [
+        "pro"
+      ]
     },
     "37833": {
       "include": [
-        "poco x7 pro 8/256 black"
+        "poco x7 pro",
+        "8/256",
+        "black"
       ],
       "exclude": []
     },
     "37834": {
       "include": [
-        "poco x7 pro 8/256 yellow"
+        "poco x7 pro",
+        "8/256",
+        "yellow"
       ],
       "exclude": []
     },
     "37841": {
       "include": [
-        "poco x7 pro 8/256 green"
+        "poco x7 pro",
+        "8/256",
+        "green"
       ],
       "exclude": []
     },
     "37840": {
       "include": [
-        "poco x7 pro 12/256 black"
+        "poco x7 pro",
+        "12/256",
+        "black"
       ],
       "exclude": []
     },
     "37837": {
       "include": [
-        "poco x7 pro 12/256 yellow"
+        "poco x7 pro",
+        "12/256",
+        "yellow"
       ],
       "exclude": []
     },
     "37842": {
       "include": [
-        "poco x7 pro 12/256 green"
+        "poco x7 pro",
+        "12/256",
+        "green"
       ],
       "exclude": []
     },
     "37846": {
       "include": [
-        "poco x7 pro 12/512 black"
+        "poco x7 pro",
+        "12/512",
+        "black"
       ],
       "exclude": []
     },
     "37847": {
       "include": [
-        "poco x7 pro 12/512 yellow"
+        "poco x7 pro",
+        "12/512",
+        "yellow"
       ],
       "exclude": []
     },
     "37848": {
       "include": [
-        "poco x7 pro 12/512 green"
+        "poco x7 pro",
+        "12/512",
+        "green"
       ],
       "exclude": []
     },

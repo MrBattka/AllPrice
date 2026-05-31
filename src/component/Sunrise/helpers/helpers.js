@@ -10,8 +10,9 @@ export const returnFixNameSunrise = (name) => {
   const replaceS8Year = replaceFlash.replace("S8 2022", "S8")
   const replaceS9Year = replaceS8Year.replace("S9 2023", "S9")
   const fixSE2 = replaceS9Year.replace("SE 2024", "SE2")
+  const fix1TB = fixSE2.replace("/1 ", "/1TB ")
 
-  return fixSE2;
+  return fix1TB;
 };
 
 

@@ -3,7 +3,8 @@ import { newPrice } from "../../../helpers/NewPrice";
 export const fixNameLowPrice = (name) => {
   const fixFlip6 = name.replace("Flip6", "Flip 6");
   const fixWiFi = fixFlip6.replace(" Wi ", " Wi-Fi ");
-  const fixSE3 = fixWiFi.replace("SE 3", "SE3");
+  const fixGB = fixWiFi.replace("GB", "");
+  const fixSE3 = fixGB.replace("SE 3", "SE3");
   const fix16ProMax = fixSE3.replace("Prо Maх", "16 Pro Max");
   const fix16Pro = fix16ProMax.replace("16 Prо", "16 Pro");
   const fixGray = fix16Pro.replace("Grey", "Gray");

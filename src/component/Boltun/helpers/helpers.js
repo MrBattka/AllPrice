@@ -8,7 +8,8 @@ export const returnFixNameBoltun = (name) => {
   const replaceNanoSim = replaceSpaceGray.replace("nano SIM + eSIM ", "");
   const fixNatural = replaceNanoSim.replace("Narural", "Natural");
   const fixSony = fixNatural.replace("Sony Xperia", "Dual 🇭🇰 Sony Xperia");
-  const fix17256 = fixSony.replace("17 256 eSim", "eSim 17 256");
+  const fixTabS10Plus = fixSony.replace("Tab S10+", "Tab S10 +");
+  const fix17256 = fixTabS10Plus.replace("17 256 eSim", "eSim 17 256");
   const fix17512 = fix17256.replace("17 512 eSim", "eSim 17 512");
   const fix172561 = fix17512.replace("17 256 Nano Sim + eSim", "Sim + eSim 17 256");
   const fix175121 = fix172561.replace(

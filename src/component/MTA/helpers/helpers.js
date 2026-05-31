@@ -8,8 +8,8 @@ export const returnFixNameMTA = (name) => {
   const fixS23FE = fixS24Plus.replace("S23FE", "S23 FE");
   const fixS24FE = fixS23FE.replace("S24FE", "S24 FE");
   const fixS2TB = fixS24FE.replace("2 TB", "2TB");
-  
-  const fixS25Plus = fixS2TB.replace("S25 Plus", "S25+");
+  const fixTabA11Plus = fixS2TB.replace("Tab A11+", "Tab A11 +");
+  const fixS25Plus = fixTabA11Plus.replace("S25 Plus", "S25+");
   const fixSGray = fixS25Plus.replace("Grey", "Gray");
   const fixtitan = fixSGray.replace("Titamiun", "Titanium");
   const fixS25FE = fixtitan.replace("S25FE", "S25 FE");
