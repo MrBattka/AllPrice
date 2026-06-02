@@ -1,11 +1,4 @@
 export const returnFixNameUniSale = (name) => {
-
-  let str = typeof name === 'string' ? name : String(name);
-
-  // Если при конвертации получили "null" или "undefined", можно вернуть пустую строку
-  if (str === 'null' || str === 'undefined') {
-    return '';
-  }
   
   const replaceGb = name.replace("Gb", "");
   const replaceGB = replaceGb.replace("GB", "");
@@ -30,9 +23,9 @@ export const returnFixNameUniSale = (name) => {
   const fixDisc = fixYandex.replace("Disk", "Disc")
   const fix1TB = fixDisc.replace("/1024 ", "/1TB ")
   const fixZFLIP = fix1TB.replace("zflip", "z flip")
+  const fixWiFiLTE = fixZFLIP.replace("Wi-Fi + LTE", "5G")
   
-  
-  return fixZFLIP;
+  return fixWiFiLTE;
 };
 
 export const returnFixPriceUniSale = (price) => {
