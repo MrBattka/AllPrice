@@ -258,8 +258,7 @@ export const defaultFixName = (el) => {
       fixS25UltraJetblack.indexOf("tab s11") !== -1 ||
       fixS25UltraJetblack.indexOf("poco m7") !== -1 ||
       fixS25UltraJetblack.indexOf("1000xm5") !== -1 ||
-      fixS25UltraJetblack.indexOf("honor 400") !== -1 ||
-      fixS25UltraJetblack.indexOf("s26 ultra") !== -1)
+      fixS25UltraJetblack.indexOf("honor 400") !== -1)
       ? fixS25UltraJetblack.replace("white", "silver")
       : fixS25UltraJetblack;
   const fixipadPro11White =
