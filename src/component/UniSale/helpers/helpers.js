@@ -24,8 +24,10 @@ export const returnFixNameUniSale = (name) => {
   const fix1TB = fixDisc.replace("/1024 ", "/1TB ")
   const fixZFLIP = fix1TB.replace("zflip", "z flip")
   const fixWiFiLTE = fixZFLIP.replace("Wi-Fi + LTE", "5G")
-  
-  return fixWiFiLTE;
+  const fixS26Plus = fixWiFiLTE.replace("s26 Plus", "S26+")
+  const fixS25Plus = fixS26Plus.replace("s25 Plus", "S25+")
+
+  return fixS25Plus;
 };
 
 export const returnFixPriceUniSale = (price) => {
