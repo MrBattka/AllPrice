@@ -5277,5 +5277,245 @@
         "exclude": [
             "pro"
         ]
+    },
+    "43401": {
+        "include": [
+            "oneplus ace 6 ultra",
+            "12/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43321": {
+        "include": [
+            "oneplus ace 6 ultra",
+            "12/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43400": {
+        "include": [
+            "oneplus ace 6 ultra",
+            "12/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43393": {
+        "include": [
+            "oneplus ace 6 ultra",
+            "12/512",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43399": {
+        "include": [
+            "oneplus ace 6 ultra",
+            "16/1tb",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43395": {
+        "include": [
+            "oneplus ace 6 ultra",
+            "16/1tb",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43397": {
+        "include": [
+            "oneplus ace 6 ultra",
+            "16/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43396": {
+        "include": [
+            "oneplus ace 6 ultra",
+            "16/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43398": {
+        "include": [
+            "oneplus ace 6 ultra",
+            "16/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43394": {
+        "include": [
+            "oneplus ace 6 ultra",
+            "16/512",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43409": {
+        "include": [
+            "oppo find x9 ultra",
+            "12/256",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "43410": {
+        "include": [
+            "oppo find x9 ultra",
+            "12/256",
+            "glacier"
+        ],
+        "exclude": []
+    },
+    "43322": {
+        "include": [
+            "oppo find x9 ultra",
+            "12/256",
+            "umber"
+        ],
+        "exclude": []
+    },
+    "43408": {
+        "include": [
+            "oppo find x9 ultra",
+            "12/512",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "43411": {
+        "include": [
+            "oppo find x9 ultra",
+            "12/512",
+            "glacier"
+        ],
+        "exclude": []
+    },
+    "43403": {
+        "include": [
+            "oppo find x9 ultra",
+            "12/512",
+            "umber"
+        ],
+        "exclude": []
+    },
+    "43406": {
+        "include": [
+            "oppo find x9 ultra",
+            "16/1tb",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "43413": {
+        "include": [
+            "oppo find x9 ultra",
+            "16/1tb",
+            "glacier"
+        ],
+        "exclude": []
+    },
+    "43405": {
+        "include": [
+            "oppo find x9 ultra",
+            "16/1tb",
+            "umber"
+        ],
+        "exclude": []
+    },
+    "43407": {
+        "include": [
+            "oppo find x9 ultra",
+            "16/512",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "43412": {
+        "include": [
+            "oppo find x9 ultra",
+            "16/512",
+            "glacier"
+        ],
+        "exclude": []
+    },
+    "43404": {
+        "include": [
+            "oppo find x9 ultra",
+            "16/512",
+            "umber"
+        ],
+        "exclude": []
+    },
+    "43324": {
+        "include": [
+            "oppo reno15 pro",
+            "12/256",
+            "brown"
+        ],
+        "exclude": []
+    },
+    "43421": {
+        "include": [
+            "oppo reno15 pro",
+            "12/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43419": {
+        "include": [
+            "oppo reno15 pro",
+            "12/512",
+            "brown"
+        ],
+        "exclude": []
+    },
+    "43420": {
+        "include": [
+            "oppo reno15 pro",
+            "12/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43417": {
+        "include": [
+            "oppo reno15 pro max",
+            "12/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43323": {
+        "include": [
+            "oppo reno15 pro max",
+            "12/256",
+            "brown"
+        ],
+        "exclude": []
+    },
+    "43416": {
+        "include": [
+            "oppo reno15 pro max",
+            "12/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43415": {
+        "include": [
+            "oppo reno15 pro max",
+            "12/512",
+            "brown"
+        ],
+        "exclude": []
     }
 }

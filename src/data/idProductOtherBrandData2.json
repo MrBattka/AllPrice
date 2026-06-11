@@ -9417,5 +9417,1610 @@
             "orange"
         ],
         "exclude": []
+    },
+    "43444": {
+        "include": [
+            "nova 15 max",
+            "8/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43329": {
+        "include": [
+            "nova 15 max",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43443": {
+        "include": [
+            "nova 15 max",
+            "8/256",
+            "cyan"
+        ],
+        "exclude": []
+    },
+    "43326": {
+        "include": [
+            "pura x max",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43437": {
+        "include": [
+            "pura x max",
+            "12/256",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43429": {
+        "include": [
+            "pura x max",
+            "12/256",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "43327": {
+        "include": [
+            "pura x max",
+            "12/256",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "43430": {
+        "include": [
+            "pura x max",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43439": {
+        "include": [
+            "pura x max",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43436": {
+        "include": [
+            "pura x max",
+            "12/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43428": {
+        "include": [
+            "pura x max",
+            "12/512",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "43423": {
+        "include": [
+            "pura x max",
+            "12/512",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "43431": {
+        "include": [
+            "pura x max",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43441": {
+        "include": [
+            "pura x max",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43434": {
+        "include": [
+            "pura x max",
+            "16/1tb",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43426": {
+        "include": [
+            "pura x max",
+            "16/1tb",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "43425": {
+        "include": [
+            "pura x max",
+            "16/1tb",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "43433": {
+        "include": [
+            "pura x max",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43440": {
+        "include": [
+            "pura x max",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43435": {
+        "include": [
+            "pura x max",
+            "16/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43427": {
+        "include": [
+            "pura x max",
+            "16/512",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "43424": {
+        "include": [
+            "pura x max",
+            "16/512",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "43432": {
+        "include": [
+            "pura x max",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43331": {
+        "include": [
+            "jbl boombox 4",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43566": {
+        "include": [
+            "jbl boombox 4",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43565": {
+        "include": [
+            "jbl boombox 4",
+            "squad"
+        ],
+        "exclude": []
+    },
+    "43570": {
+        "include": [
+            "surface laptop 13",
+            "16/256",
+            "ocean"
+        ],
+        "exclude": []
+    },
+    "43571": {
+        "include": [
+            "surface laptop 13",
+            "16/256",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43455": {
+        "include": [
+            "surface laptop 13",
+            "16/256",
+            "violet"
+        ],
+        "exclude": []
+    },
+    "43569": {
+        "include": [
+            "surface laptop 13",
+            "16/512",
+            "ocean"
+        ],
+        "exclude": []
+    },
+    "43572": {
+        "include": [
+            "surface laptop 13",
+            "16/512",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43568": {
+        "include": [
+            "surface laptop 13",
+            "16/512",
+            "violet"
+        ],
+        "exclude": []
+    },
+    "43575": {
+        "include": [
+            "surface laptop 13.8",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43579": {
+        "include": [
+            "surface laptop 13.8",
+            "16/1tb",
+            "dune"
+        ],
+        "exclude": []
+    },
+    "43586": {
+        "include": [
+            "surface laptop 13.8",
+            "16/1tb",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43584": {
+        "include": [
+            "surface laptop 13.8",
+            "16/1tb",
+            "sapphire"
+        ],
+        "exclude": []
+    },
+    "43456": {
+        "include": [
+            "surface laptop 13.8",
+            "16/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43581": {
+        "include": [
+            "surface laptop 13.8",
+            "16/256",
+            "dune"
+        ],
+        "exclude": []
+    },
+    "43588": {
+        "include": [
+            "surface laptop 13.8",
+            "16/256",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43583": {
+        "include": [
+            "surface laptop 13.8",
+            "16/256",
+            "sapphire"
+        ],
+        "exclude": []
+    },
+    "43574": {
+        "include": [
+            "surface laptop 13.8",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43580": {
+        "include": [
+            "surface laptop 13.8",
+            "16/512",
+            "dune"
+        ],
+        "exclude": []
+    },
+    "43587": {
+        "include": [
+            "surface laptop 13.8",
+            "16/512",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43582": {
+        "include": [
+            "surface laptop 13.8",
+            "16/512",
+            "sapphire"
+        ],
+        "exclude": []
+    },
+    "43576": {
+        "include": [
+            "surface laptop 13.8",
+            "32/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43578": {
+        "include": [
+            "surface laptop 13.8",
+            "32/1tb",
+            "dune"
+        ],
+        "exclude": []
+    },
+    "43577": {
+        "include": [
+            "surface laptop 13.8",
+            "32/1tb",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43585": {
+        "include": [
+            "surface laptop 13.8",
+            "32/1tb",
+            "sapphire"
+        ],
+        "exclude": []
+    },
+    "43590": {
+        "include": [
+            "surface laptop 15",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43595": {
+        "include": [
+            "surface laptop 15",
+            "16/1tb",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43592": {
+        "include": [
+            "surface laptop 15",
+            "16/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43593": {
+        "include": [
+            "surface laptop 15",
+            "16/256",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43457": {
+        "include": [
+            "surface laptop 15",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43594": {
+        "include": [
+            "surface laptop 15",
+            "16/512",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43591": {
+        "include": [
+            "surface laptop 15",
+            "32/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43596": {
+        "include": [
+            "surface laptop 15",
+            "32/1tb",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43601": {
+        "include": [
+            "surface pro 12",
+            "16/1tb",
+            "ocean"
+        ],
+        "exclude": []
+    },
+    "43606": {
+        "include": [
+            "surface pro 12",
+            "16/1tb",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43600": {
+        "include": [
+            "surface pro 12",
+            "16/1tb",
+            "violet"
+        ],
+        "exclude": []
+    },
+    "43603": {
+        "include": [
+            "surface pro 12",
+            "16/256",
+            "ocean"
+        ],
+        "exclude": []
+    },
+    "43604": {
+        "include": [
+            "surface pro 12",
+            "16/256",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43599": {
+        "include": [
+            "surface pro 12",
+            "16/256",
+            "violet"
+        ],
+        "exclude": []
+    },
+    "43602": {
+        "include": [
+            "surface pro 12",
+            "16/512",
+            "ocean"
+        ],
+        "exclude": []
+    },
+    "43605": {
+        "include": [
+            "surface pro 12",
+            "16/512",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43598": {
+        "include": [
+            "surface pro 12",
+            "16/512",
+            "violet"
+        ],
+        "exclude": []
+    },
+    "43608": {
+        "include": [
+            "surface pro 13",
+            "16/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43612": {
+        "include": [
+            "surface pro 13",
+            "16/256",
+            "dune"
+        ],
+        "exclude": []
+    },
+    "43619": {
+        "include": [
+            "surface pro 13",
+            "16/256",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43613": {
+        "include": [
+            "surface pro 13",
+            "16/256",
+            "sapphire"
+        ],
+        "exclude": []
+    },
+    "43459": {
+        "include": [
+            "surface pro 13",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43611": {
+        "include": [
+            "surface pro 13",
+            "16/512",
+            "dune"
+        ],
+        "exclude": []
+    },
+    "43618": {
+        "include": [
+            "surface pro 13",
+            "16/512",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43614": {
+        "include": [
+            "surface pro 13",
+            "16/512",
+            "sapphire"
+        ],
+        "exclude": []
+    },
+    "43609": {
+        "include": [
+            "surface pro 13",
+            "32/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43610": {
+        "include": [
+            "surface pro 13",
+            "32/1tb",
+            "dune"
+        ],
+        "exclude": []
+    },
+    "43617": {
+        "include": [
+            "surface pro 13",
+            "32/1tb",
+            "platinum"
+        ],
+        "exclude": []
+    },
+    "43616": {
+        "include": [
+            "surface pro 13",
+            "32/1tb",
+            "sapphire"
+        ],
+        "exclude": []
+    },
+    "43390": {
+        "include": [
+            "motorola edge 70 pro",
+            "12/256",
+            "coffee"
+        ],
+        "exclude": []
+    },
+    "43378": {
+        "include": [
+            "motorola edge 70 pro",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43384": {
+        "include": [
+            "motorola edge 70 pro",
+            "12/256",
+            "tea"
+        ],
+        "exclude": []
+    },
+    "43381": {
+        "include": [
+            "motorola edge 70 pro",
+            "12/256",
+            "titan"
+        ],
+        "exclude": []
+    },
+    "43387": {
+        "include": [
+            "motorola edge 70 pro",
+            "12/256",
+            "zinfandel"
+        ],
+        "exclude": []
+    },
+    "43389": {
+        "include": [
+            "motorola edge 70 pro",
+            "12/512",
+            "coffee"
+        ],
+        "exclude": []
+    },
+    "43315": {
+        "include": [
+            "motorola edge 70 pro",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43383": {
+        "include": [
+            "motorola edge 70 pro",
+            "12/512",
+            "tea"
+        ],
+        "exclude": []
+    },
+    "43382": {
+        "include": [
+            "motorola edge 70 pro",
+            "12/512",
+            "titan"
+        ],
+        "exclude": []
+    },
+    "43388": {
+        "include": [
+            "motorola edge 70 pro",
+            "12/512",
+            "zinfandel"
+        ],
+        "exclude": []
+    },
+    "43391": {
+        "include": [
+            "motorola edge 70 pro",
+            "8/256",
+            "coffee"
+        ],
+        "exclude": []
+    },
+    "43379": {
+        "include": [
+            "motorola edge 70 pro",
+            "8/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43385": {
+        "include": [
+            "motorola edge 70 pro",
+            "8/256",
+            "tea"
+        ],
+        "exclude": []
+    },
+    "43380": {
+        "include": [
+            "motorola edge 70 pro",
+            "8/256",
+            "titan"
+        ],
+        "exclude": []
+    },
+    "43386": {
+        "include": [
+            "motorola edge 70 pro",
+            "8/256",
+            "zinfandel"
+        ],
+        "exclude": []
+    },
+    "43333": {
+        "include": [
+            "motorola razr 70 ultra",
+            "16/512",
+            "cocoa"
+        ],
+        "exclude": []
+    },
+    "43312": {
+        "include": [
+            "motorola razr 70 ultra",
+            "16/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43360": {
+        "include": [
+            "motorola razr fold",
+            "12/256",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43361": {
+        "include": [
+            "motorola razr fold",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43359": {
+        "include": [
+            "motorola razr fold",
+            "16/1tb",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43363": {
+        "include": [
+            "motorola razr fold",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43314": {
+        "include": [
+            "motorola razr fold",
+            "16/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43362": {
+        "include": [
+            "motorola razr fold",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43353": {
+        "include": [
+            "motorola signature",
+            "12/256",
+            "carbon"
+        ],
+        "exclude": []
+    },
+    "43357": {
+        "include": [
+            "motorola signature",
+            "12/256",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "43352": {
+        "include": [
+            "motorola signature",
+            "12/512",
+            "carbon"
+        ],
+        "exclude": []
+    },
+    "43356": {
+        "include": [
+            "motorola signature",
+            "12/512",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "43351": {
+        "include": [
+            "motorola signature",
+            "16/1tb",
+            "carbon"
+        ],
+        "exclude": []
+    },
+    "43355": {
+        "include": [
+            "motorola signature",
+            "16/1tb",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "43313": {
+        "include": [
+            "motorola signature",
+            "16/512",
+            "carbon"
+        ],
+        "exclude": []
+    },
+    "43354": {
+        "include": [
+            "motorola signature",
+            "16/512",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "43342": {
+        "include": [
+            "xperia 1 viii",
+            "12/256",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43317": {
+        "include": [
+            "xperia 1 viii",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43341": {
+        "include": [
+            "xperia 1 viii",
+            "12/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43349": {
+        "include": [
+            "xperia 1 viii",
+            "12/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43343": {
+        "include": [
+            "xperia 1 viii",
+            "12/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43335": {
+        "include": [
+            "xperia 1 viii",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43340": {
+        "include": [
+            "xperia 1 viii",
+            "12/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43348": {
+        "include": [
+            "xperia 1 viii",
+            "12/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43345": {
+        "include": [
+            "xperia 1 viii",
+            "16/1tb",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43337": {
+        "include": [
+            "xperia 1 viii",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43338": {
+        "include": [
+            "xperia 1 viii",
+            "16/1tb",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43346": {
+        "include": [
+            "xperia 1 viii",
+            "16/1tb",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43344": {
+        "include": [
+            "xperia 1 viii",
+            "16/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43336": {
+        "include": [
+            "xperia 1 viii",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43339": {
+        "include": [
+            "xperia 1 viii",
+            "16/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43347": {
+        "include": [
+            "xperia 1 viii",
+            "16/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43557": {
+        "include": [
+            "vivo iqoo 15 ultra",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43560": {
+        "include": [
+            "vivo iqoo 15 ultra",
+            "16/1tb",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43555": {
+        "include": [
+            "vivo iqoo 15 ultra",
+            "16/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43562": {
+        "include": [
+            "vivo iqoo 15 ultra",
+            "16/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43556": {
+        "include": [
+            "vivo iqoo 15 ultra",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43561": {
+        "include": [
+            "vivo iqoo 15 ultra",
+            "16/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43558": {
+        "include": [
+            "vivo iqoo 15 ultra",
+            "24/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43559": {
+        "include": [
+            "vivo iqoo 15 ultra",
+            "24/1tb",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43550": {
+        "include": [
+            "vivo iqoo 15r",
+            "12/256",
+            "knight"
+        ],
+        "exclude": []
+    },
+    "43553": {
+        "include": [
+            "vivo iqoo 15r",
+            "12/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43551": {
+        "include": [
+            "vivo iqoo 15r",
+            "12/512",
+            "knight"
+        ],
+        "exclude": []
+    },
+    "43552": {
+        "include": [
+            "vivo iqoo 15r",
+            "12/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43452": {
+        "include": [
+            "vivo iqoo 15r",
+            "8/256",
+            "knight"
+        ],
+        "exclude": []
+    },
+    "43554": {
+        "include": [
+            "vivo iqoo 15r",
+            "8/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43448": {
+        "include": [
+            "vivo iqoo 15t",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43506": {
+        "include": [
+            "vivo iqoo 15t",
+            "12/256",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43507": {
+        "include": [
+            "vivo iqoo 15t",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43498": {
+        "include": [
+            "vivo iqoo 15t",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43505": {
+        "include": [
+            "vivo iqoo 15t",
+            "12/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43508": {
+        "include": [
+            "vivo iqoo 15t",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43501": {
+        "include": [
+            "vivo iqoo 15t",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43502": {
+        "include": [
+            "vivo iqoo 15t",
+            "16/1tb",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43511": {
+        "include": [
+            "vivo iqoo 15t",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43499": {
+        "include": [
+            "vivo iqoo 15t",
+            "16/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43504": {
+        "include": [
+            "vivo iqoo 15t",
+            "16/256",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43509": {
+        "include": [
+            "vivo iqoo 15t",
+            "16/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43500": {
+        "include": [
+            "vivo iqoo 15t",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43503": {
+        "include": [
+            "vivo iqoo 15t",
+            "16/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43510": {
+        "include": [
+            "vivo iqoo 15t",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43546": {
+        "include": [
+            "vivo iqoo z11x",
+            "6/128",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43545": {
+        "include": [
+            "vivo iqoo z11x",
+            "6/128",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43451": {
+        "include": [
+            "vivo iqoo z11x",
+            "6/128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43547": {
+        "include": [
+            "vivo iqoo z11x",
+            "8/128",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43544": {
+        "include": [
+            "vivo iqoo z11x",
+            "8/128",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43541": {
+        "include": [
+            "vivo iqoo z11x",
+            "8/128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43548": {
+        "include": [
+            "vivo iqoo z11x",
+            "8/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43543": {
+        "include": [
+            "vivo iqoo z11x",
+            "8/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43542": {
+        "include": [
+            "vivo iqoo z11x",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43449": {
+        "include": [
+            "vivo x300 ultra",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43520": {
+        "include": [
+            "vivo x300 ultra",
+            "12/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43519": {
+        "include": [
+            "vivo x300 ultra",
+            "12/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43513": {
+        "include": [
+            "vivo x300 ultra",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43521": {
+        "include": [
+            "vivo x300 ultra",
+            "12/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43518": {
+        "include": [
+            "vivo x300 ultra",
+            "12/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43515": {
+        "include": [
+            "vivo x300 ultra",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43523": {
+        "include": [
+            "vivo x300 ultra",
+            "16/1tb",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43516": {
+        "include": [
+            "vivo x300 ultra",
+            "16/1tb",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43514": {
+        "include": [
+            "vivo x300 ultra",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43522": {
+        "include": [
+            "vivo x300 ultra",
+            "16/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43517": {
+        "include": [
+            "vivo x300 ultra",
+            "16/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43450": {
+        "include": [
+            "vivo x300s",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43539": {
+        "include": [
+            "vivo x300s",
+            "12/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43532": {
+        "include": [
+            "vivo x300s",
+            "12/256",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43531": {
+        "include": [
+            "vivo x300s",
+            "12/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43525": {
+        "include": [
+            "vivo x300s",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43538": {
+        "include": [
+            "vivo x300s",
+            "12/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43533": {
+        "include": [
+            "vivo x300s",
+            "12/512",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43530": {
+        "include": [
+            "vivo x300s",
+            "12/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43527": {
+        "include": [
+            "vivo x300s",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43536": {
+        "include": [
+            "vivo x300s",
+            "16/1tb",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43535": {
+        "include": [
+            "vivo x300s",
+            "16/1tb",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43528": {
+        "include": [
+            "vivo x300s",
+            "16/1tb",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43526": {
+        "include": [
+            "vivo x300s",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43537": {
+        "include": [
+            "vivo x300s",
+            "16/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43534": {
+        "include": [
+            "vivo x300s",
+            "16/512",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43529": {
+        "include": [
+            "vivo x300s",
+            "16/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43464": {
+        "include": [
+            "redmagic 11s pro",
+            "12/256",
+            "nightfreeze"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "43486": {
+        "include": [
+            "redmagic 11s pro",
+            "12/256",
+            "subzero"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "43484": {
+        "include": [
+            "redmagic 11s pro",
+            "16/512",
+            "nightfreeze"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "43485": {
+        "include": [
+            "redmagic 11s pro",
+            "16/512",
+            "subzero"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "43465": {
+        "include": [
+            "redmagic 11s pro plus",
+            "12/256",
+            "transparent black"
+        ],
+        "exclude": []
+    },
+    "43492": {
+        "include": [
+            "redmagic 11s pro plus",
+            "12/256",
+            "transparent silver"
+        ],
+        "exclude": []
+    },
+    "43489": {
+        "include": [
+            "redmagic 11s pro plus",
+            "16/1tb",
+            "transparent black"
+        ],
+        "exclude": []
+    },
+    "43490": {
+        "include": [
+            "redmagic 11s pro plus",
+            "16/1tb",
+            "transparent silver"
+        ],
+        "exclude": []
+    },
+    "43488": {
+        "include": [
+            "redmagic 11s pro plus",
+            "16/512",
+            "transparent black"
+        ],
+        "exclude": []
+    },
+    "43491": {
+        "include": [
+            "redmagic 11s pro plus",
+            "16/512",
+            "transparent silver"
+        ],
+        "exclude": []
     }
 }

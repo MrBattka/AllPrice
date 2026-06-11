@@ -9019,5 +9019,437 @@
         "blue"
       ],
       "exclude": []
+    },
+    "43446": {
+      "include": [
+        "poco pad c1",
+        "4/64",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43496": {
+      "include": [
+        "poco pad c1",
+        "4/64",
+        "gray"
+      ],
+      "exclude": []
+    },
+    "43494": {
+      "include": [
+        "poco pad c1",
+        "6/128",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43495": {
+      "include": [
+        "poco pad c1",
+        "6/128",
+        "gray"
+      ],
+      "exclude": []
+    },
+    "43461": {
+      "include": [
+        "mi 17t",
+        "12/256",
+        "black"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "pro"
+      ]
+    },
+    "43470": {
+      "include": [
+        "mi 17t",
+        "12/256",
+        "blue"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "pro"
+      ]
+    },
+    "43473": {
+      "include": [
+        "mi 17t",
+        "12/256",
+        "opal white"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "pro"
+      ]
+    },
+    "43469": {
+      "include": [
+        "mi 17t",
+        "12/256",
+        "violet"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "pro"
+      ]
+    },
+    "43467": {
+      "include": [
+        "mi 17t",
+        "12/512",
+        "black"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "pro"
+      ]
+    },
+    "43471": {
+      "include": [
+        "mi 17t",
+        "12/512",
+        "blue"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "pro"
+      ]
+    },
+    "43472": {
+      "include": [
+        "mi 17t",
+        "12/512",
+        "opal white"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "pro"
+      ]
+    },
+    "43468": {
+      "include": [
+        "mi 17t",
+        "12/512",
+        "violet"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "pro"
+      ]
+    },
+    "43476": {
+      "include": [
+        "mi 17t pro",
+        "12/1tb",
+        "black"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "max"
+      ]
+    },
+    "43477": {
+      "include": [
+        "mi 17t pro",
+        "12/1tb",
+        "blue"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "max"
+      ]
+    },
+    "43482": {
+      "include": [
+        "mi 17t pro",
+        "12/1tb",
+        "violet"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "max"
+      ]
+    },
+    "43462": {
+      "include": [
+        "mi 17t pro",
+        "12/256",
+        "black"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "max"
+      ]
+    },
+    "43479": {
+      "include": [
+        "mi 17t pro",
+        "12/256",
+        "blue"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "max"
+      ]
+    },
+    "43480": {
+      "include": [
+        "mi 17t pro",
+        "12/256",
+        "violet"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "max"
+      ]
+    },
+    "43475": {
+      "include": [
+        "mi 17t pro",
+        "12/512",
+        "black"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "max"
+      ]
+    },
+    "43478": {
+      "include": [
+        "mi 17t pro",
+        "12/512",
+        "blue"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "max"
+      ]
+    },
+    "43481": {
+      "include": [
+        "mi 17t pro",
+        "12/512",
+        "violet"
+      ],
+      "exclude": [
+        "🇭🇰",
+        "🇨🇳",
+        "max"
+      ]
+    },
+    "43621": {
+      "include": [
+        "mi 17 ",
+        "12/256",
+        "pink",
+        "🇨🇳"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "43629": {
+      "include": [
+        "mi 17 ",
+        "12/256",
+        "blue",
+        "🇨🇳"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "43637": {
+      "include": [
+        "mi 17 ",
+        "12/256",
+        "green",
+        "🇨🇳"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "43630": {
+      "include": [
+        "mi 17 ",
+        "12/256",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "43623": {
+      "include": [
+        "mi 17 ",
+        "12/512",
+        "pink",
+        "🇨🇳"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "43628": {
+      "include": [
+        "mi 17 ",
+        "12/512",
+        "blue",
+        "🇨🇳"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "43636": {
+      "include": [
+        "mi 17 ",
+        "12/512",
+        "green",
+        "🇨🇳"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "43631": {
+      "include": [
+        "mi 17 ",
+        "12/512",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": [
+        "pro"
+      ]
+    },
+    "43367": {
+      "include": [
+        "mi 17 max",
+        "12/256",
+        "black",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43368": {
+      "include": [
+        "mi 17 max",
+        "12/256",
+        "blue",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43375": {
+      "include": [
+        "mi 17 max",
+        "12/256",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43319": {
+      "include": [
+        "mi 17 max",
+        "12/512",
+        "black",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43369": {
+      "include": [
+        "mi 17 max",
+        "12/512",
+        "blue",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43376": {
+      "include": [
+        "mi 17 max",
+        "12/512",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43366": {
+      "include": [
+        "mi 17 max",
+        "16/256",
+        "black",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43371": {
+      "include": [
+        "mi 17 max",
+        "16/256",
+        "blue",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43372": {
+      "include": [
+        "mi 17 max",
+        "16/256",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43365": {
+      "include": [
+        "mi 17 max",
+        "16/512",
+        "black",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43370": {
+      "include": [
+        "mi 17 max",
+        "16/512",
+        "blue",
+        "🇨🇳"
+      ],
+      "exclude": []
+    },
+    "43373": {
+      "include": [
+        "mi 17 max",
+        "16/512",
+        "white",
+        "🇨🇳"
+      ],
+      "exclude": []
     }
   }
