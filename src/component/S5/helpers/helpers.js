@@ -121,7 +121,8 @@ const checkFlags = (str) => {
     checkSpace4.slice(-4) === "🇨🇫" ||
     checkSpace4.slice(-4) === "🇰🇿" ||
     checkSpace4.slice(-4) === "🇰🇷" ||
-    checkSpace4.slice(-4) === "🇬🇺"
+    checkSpace4.slice(-4) === "🇬🇺" ||
+    checkSpace4.slice(-4) === "🇮🇩"
   ) {
     return (
       checkSpace4.slice(-4) + checkSpace4.substring(0, checkSpace4.length - 4)
@@ -199,7 +200,8 @@ export const returnStockPriceS5 = (name) => {
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceZA = replaceKR.replace("🇿🇦", "");
   let replacePY = replaceZA.replace("🇵🇾", "");
-  let replaceSim = replacePY.replace("1Sim+Esim", "");
+  let replaceID = replacePY.replace("🇮🇩", "");
+  let replaceSim = replaceID.replace("1Sim+Esim", "");
   let replaceCar = replaceSim.replace("🚘", "");
   let replaceBuds3White = replaceCar.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
@@ -216,7 +218,7 @@ export const returnStockPriceS5 = (name) => {
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let splitPrice =
-    checkSpace4.indexOf("-") != -1 ? checkSpace4.split("-")[0] : checkSpace4;
+    checkSpace4.indexOf("- ") != -1 ? checkSpace4.split("- ")[0] : checkSpace4;
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 

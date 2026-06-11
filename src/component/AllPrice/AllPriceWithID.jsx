@@ -547,6 +547,9 @@ const processors = {
     },
 };
 
+
+
+
 const processData = (data, processor, isOpen) => {
   if (!data || !Array.isArray(data) || !processor) return [];
 
@@ -639,7 +642,14 @@ const AllPriceWithID = ({
     results.push(...processData(boltunData, processors.boltun, isOpen));
     results.push(...processData(uniSaleData, processors.uniSale, isOpen));
 
-    return results;
+    const sanitizedResults = results.map(item => ({
+    ...item,
+    stockPrice: typeof item.stockPrice === 'number'
+      ? item.stockPrice
+      : Number(String(item.stockPrice).replace(/\D/g, '')) || null
+    }));
+    
+    return sanitizedResults;
   }, [isOpen]);
 
   const hasData = Object.values({
