@@ -46,8 +46,8 @@ const IndexUnimtrn = ({ el, unimtrnData }) => {
           return (
             getIdByName(defaultFixName(fixNameUnimtrn(unimtrn.name))) !== 'No match' &&
             resultArr.push({
-              id: getIdByName(defaultFixName(returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)))),
-              name: returnNameInArrUnimtrn(fixNameUnimtrn(unimtrn.name)),
+              id: getIdByName(defaultFixName(fixNameUnimtrn(unimtrn.name))),
+              name: fixNameUnimtrn(unimtrn.name),
               stockPrice: unimtrn.price,
               provider: "Метреон",
             })

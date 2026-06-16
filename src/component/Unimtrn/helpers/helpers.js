@@ -21,8 +21,8 @@ const cleanString = (str) => str
   .trim();
 
 export const returnNameInArrUnimtrn = (name) => {
-  const cleaned = cleanString(name);
-  const reversed = reverseString(cleaned);
+  // const cleaned = cleanString(name);
+  const reversed = reverseString(name);
   const trimmed = reversed.replace(/^\s+/, '');
   const partAfterFirstSpace = trimmed.includes(' ')
     ? trimmed.slice(trimmed.indexOf(' ') + 1)
@@ -31,8 +31,8 @@ export const returnNameInArrUnimtrn = (name) => {
 };
 
 export const returnStockPriceUnimtrn = (name) => {
-  const cleaned = cleanString(name);
-  const reversed = reverseString(cleaned);
+  // const cleaned = cleanString(name);
+  const reversed = reverseString(name);
   const trimmed = reversed.replace(/^\s+/, '');
   const pricePart = trimmed.split(' ')[0];
   return reverseString(pricePart);

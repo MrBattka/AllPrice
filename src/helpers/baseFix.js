@@ -72,6 +72,7 @@ export const baseFix = (el) => {
         el.name?.indexOf("зарядн") == -1 &&
         el.name?.indexOf("Asis") == -1 &&
         el.name?.indexOf("Asis") == -1 &&
+        el.name?.indexOf("Active") == -1 &&
         el.name?.indexOf("ASIS") == -1 &&
         el.name?.indexOf("CPO") == -1)
 };
