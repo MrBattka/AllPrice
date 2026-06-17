@@ -2589,7 +2589,8 @@ export const baseFixUnisale = (el) => {
     "airpods 4   r", "airpods 4   l", "airpods 4  box", "airpods 3  box",
     "airpods pro l", "airpods pro r", "airpods pro 2 type-c  l", "airpods pro 2 type-c   r",
     "freebuds", "pixel buds", "oneplus buds", "дисковод", "уценка", "✅",
-    "трубный", "наличие", "чехол", "asis", "cpo", "зарядн", "☑️", "ремешок", "мятая"
+    "трубный", "наличие", "чехол", "asis", "cpo", "зарядн", "☑️", "ремешок", "мятая",
+    "коцка"
   ];
 
   for (let word of excludedKeywords) {
