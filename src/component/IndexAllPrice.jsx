@@ -417,9 +417,9 @@ const IndexAllPrice = () => {
   });
 
   dataRootOpt.map((rootOptEl) => {
-    rootOptEl.НАИМЕНОВАНИЕ &&
-      rootOptEl.НАИМЕНОВАНИЕ.length &&
-      rootOpt.push({ name: rootOptEl.НАИМЕНОВАНИЕ, price: rootOptEl.ЦЕНА });
+    rootOptEl.root &&
+      rootOptEl.root.length &&
+      rootOpt.push({ name: rootOptEl.root });
   });
 
   dataA18.map((a18El) => {

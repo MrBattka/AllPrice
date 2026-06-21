@@ -117,7 +117,7 @@ import {
   returnNameReSale,
   returnStockPriceReSale,
 } from "../ReSale/helpers/helpers";
-import { returnFixNameRootOpt } from "../RootOPT/helpers/helpers";
+import { returnFixNameRootOpt, returnNameInArrRoot, returnStockPriceRoot } from "../RootOPT/helpers/helpers";
 import {
   fixNameS5,
   returnNameInArrS5,
@@ -423,11 +423,9 @@ const processors = {
   },
   rootOpt: {
     processItem: (rootOpt) => ({
-      id: getIdByNameQuickID(
-        defaultFixName(returnFixNameRootOpt(rootOpt.name))
-      ),
-      name: returnFixNameRootOpt(rootOpt.name),
-      stockPrice: rootOpt.price,
+      id: getIdByNameQuickID(defaultFixName(returnFixNameRootOpt(returnNameInArrRoot(rootOpt.name)))),
+      name: returnFixNameRootOpt(returnNameInArrRoot(rootOpt.name)),
+      stockPrice: returnStockPriceRoot(rootOpt.name),
       provider: "RootOPT",
     }),
     filters: [baseFixRootOpt],

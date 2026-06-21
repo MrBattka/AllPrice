@@ -49,8 +49,13 @@ export const returnFixNameRootOpt = (name) => {
   const fixGold = fixGraphite.replace("Золотой", "Gold");
   const fixTb = fixGold.replace(" ТБ", "Tb");
   const fixDot = fixTb.replace(",", "");
-  const fixFold6 = fixDot.replace("Fold6", "Fold 6");
-  const fixFlip6 = fixFold6.replace("Flip6", "Flip 6");
+  const fix121 = fixDot.replace("12/1T ", "12/1TB ");
+  const fix161 = fix121.replace("16/1T ", "16/1TB ");
+  const fixDot121T = fix161.replace("12/1 ", "12/1TB ");
+  const fixFold6 = fixDot121T.replace("Fold6", "Fold 6");
+  const fixProMax = fixFold6.replace("ProMax", "Pro Max");
+  const fixS11 = fixProMax.replace("Series 11", "S11");
+  const fixFlip6 = fixS11.replace("Flip6", "Flip 6");
   const fixSilver = fixFlip6.replace("Серебро", "Silver");
   const fixS25Icyblue =
     fixSilver.indexOf("S25") !== -1
@@ -75,4 +80,56 @@ export const returnFixNameRootOpt = (name) => {
     const fixMagic7Pro = fixMi15.replace("Magic7 Pro", "Magic 7 Pro")
 
   return fixMagic7Pro;
+};
+
+
+export const returnNameInArrRoot = (name) => {
+
+  const removeDoubleSpace = name.replace(/\s+/g, " ");
+  let stickToSpace =
+    removeDoubleSpace.indexOf("-") !== -1
+      ? removeDoubleSpace.replace("-", " ")
+      : removeDoubleSpace;
+
+  let reverseStrName = stickToSpace.split("").reverse().join("");
+
+  let splitPrice = null;
+  if (reverseStrName && reverseStrName.length > 7 && reverseStrName.indexOf(" ") !== -1) {
+    const match = /\s(.+)/.exec(reverseStrName);
+    splitPrice = match ? match[1] : "";
+  } else {
+    splitPrice = removeDoubleSpace;
+  }
+
+  let reverseBackStrName = splitPrice.split("").reverse().join("");
+
+  return reverseBackStrName;
+};
+
+export const returnStockPriceRoot = (name) => {
+
+  let reverseStrName = name.split("").reverse().join("");
+
+  let checkSpace1 =
+    reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
+  let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
+  let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
+  let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
+
+  let reverseBackStrName = checkSpace4.split("").reverse().join("");
+
+  let fixWiFi = reverseBackStrName.replace("Wi-Fi", "WiFi");
+  let fixUSBC = fixWiFi.replace("usb-c", "usbc");
+  let fixNEW = fixUSBC.replace("new", "");
+  let fixWH1 = fixNEW.replace("WH-1", "WH1");
+  let fixStick1 = fixWH1.replace(" — ", "-");
+  
+  let fixStick = fixStick1.replace("- ", "-");
+
+  let splitPrice =
+    fixStick.indexOf("-") !== -1 ? fixStick.split("-")[1] : fixStick;
+  let splitPrice2 =
+    splitPrice.indexOf(" ") !== -1 ? /\s(.+)/.exec(splitPrice)[1] : splitPrice
+
+  return splitPrice2;
 };

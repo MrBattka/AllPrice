@@ -4,7 +4,7 @@ import { defaultFixName } from "../../helpers/defaultFixName";
 import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
-import { returnFixNameRootOpt } from "./helpers/helpers";
+import { returnFixNameRootOpt, returnNameInArrRoot, returnStockPriceRoot } from "./helpers/helpers";
 
 const IndexRootOpt = ({ el, rootOptData }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,16 +15,14 @@ const IndexRootOpt = ({ el, rootOptData }) => {
       rootOpt.name &&
       typeof rootOpt.name === "string" &&
       baseFixRootOpt(rootOpt) &&
-      rootOpt.price !== "ожидается" &&
       isOpen
     ) {
       return (
-        getIdByName(defaultFixName(returnFixNameRootOpt(rootOpt.name))) !== "No match" &&
-        rootOpt.price &&
+        getIdByName(defaultFixName(returnFixNameRootOpt(returnNameInArrRoot(rootOpt.name)))) !== "No match" &&
         resultArr.push({
-          id: getIdByName(defaultFixName(returnFixNameRootOpt(rootOpt.name))),
-          name: returnFixNameRootOpt(rootOpt.name),
-          stockPrice: rootOpt.price,
+          id: getIdByName(defaultFixName(returnFixNameRootOpt(returnNameInArrRoot(rootOpt.name)))),
+          name: returnNameInArrRoot(returnFixNameRootOpt(rootOpt.name)),
+          stockPrice: returnStockPriceRoot(rootOpt.name),
           provider: "RootOPT",
         })
       );

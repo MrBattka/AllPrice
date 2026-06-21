@@ -138,7 +138,7 @@ import {
   returnStockPriceMTA,
 } from "../MTA/helpers/helpers";
 import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
-import { returnFixNameRootOpt } from "../RootOPT/helpers/helpers";
+import { returnFixNameRootOpt, returnNameInArrRoot, returnStockPriceRoot } from "../RootOPT/helpers/helpers";
 import {
   returnFixNameA18,
   returnNameInArrA18,
@@ -495,9 +495,9 @@ const processors = {
   },
   rootOpt: {
     processItem: (rootOpt) => ({
-      id: getIdByNameTest(defaultFixName(returnFixNameRootOpt(rootOpt.name))),
-      name: returnFixNameRootOpt(rootOpt.name),
-      stockPrice: rootOpt.price,
+      id: getIdByNameTest(defaultFixName(returnFixNameRootOpt(returnNameInArrRoot(rootOpt.name)))),
+      name: returnFixNameRootOpt(returnNameInArrRoot(rootOpt.name)),
+      stockPrice: returnStockPriceRoot(rootOpt.name),
       provider: "RootOPT",
     }),
     filters: [baseFixRootOpt],
