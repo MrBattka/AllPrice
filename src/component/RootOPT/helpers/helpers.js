@@ -120,7 +120,8 @@ export const returnStockPriceRoot = (name) => {
 
   let fixWiFi = reverseBackStrName.replace("Wi-Fi", "WiFi");
   let fixUSBC = fixWiFi.replace("usb-c", "usbc");
-  let fixNEW = fixUSBC.replace("new", "");
+  let fixSM = fixUSBC.replace("SM-", "SM ");
+  let fixNEW = fixSM.replace("new", "");
   let fixWH1 = fixNEW.replace("WH-1", "WH1");
   let fixStick1 = fixWH1.replace(" — ", "-");
   
