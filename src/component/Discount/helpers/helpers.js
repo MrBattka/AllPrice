@@ -88,12 +88,8 @@ export const returnFixNameDiscount = (name) => {
   const fix1TB = fixPurple.replace("/1024 ", "/1TB ");
   const fixiPadAir11 = fix1TB.replace("iPad Air 8 11 ", "iPad Air 11 ");
   
-
-  const fixAir11 = fixiPadAir11.replace("iPad Air 11", "iPad Air 11 M2");
-  const fixAir13 = fixAir11.replace("iPad Air 13", "iPad Air 13 M2");
-  const fixPro11 = fixAir13.replace("iPad Pro 11", "iPad Pro 11 M4");
-  const fixPro13 = fixPro11.replace("iPad Pro 13", "iPad Pro 13 M4");
-  const fixPS5Pro = fixPro13.replace("PlayStation Pro", "PlayStation 5 Pro");
+  const fixiPadAir13 = fixiPadAir11.replace("iPad Air 8 13 ", "iPad Air 13 ");
+  const fixPS5Pro = fixiPadAir13.replace("PlayStation Pro", "PlayStation 5 Pro");
   const fixPS5Disc = fixPS5Pro.replace("Disk", "Disc");
   const fixWhite = fixPS5Disc.replace("Белый", "White");
   const fixBlack = fixWhite.replace("Черный", "Black");
