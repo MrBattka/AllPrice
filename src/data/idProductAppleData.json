@@ -7139,141 +7139,89 @@
       "include": [
         "15 128 midnight"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28227": {
       "include": [
         "15 128 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28230": {
       "include": [
         "15 128 green"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28236": {
       "include": [
         "15 128 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28233": {
       "include": [
         "15 128 yellow"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28225": {
       "include": [
         "15 256 midnight"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28228": {
       "include": [
         "15 256 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28231": {
       "include": [
         "15 256 green"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28237": {
       "include": [
         "15 256 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28234": {
       "include": [
         "15 256 yellow"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28226": {
       "include": [
         "15 512 midnight"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28229": {
       "include": [
         "15 512 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28232": {
       "include": [
         "15 512 green"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28238": {
       "include": [
         "15 512 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28235": {
       "include": [
         "15 512 yellow"
-      ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
-    },
-    "30331": {
-      "include": [
-        "15 plus 128 yellow",
-        "🇺🇸"
       ],
       "exclude": []
     },
@@ -7281,785 +7229,257 @@
       "include": [
         "15 plus 128 midnight"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28242": {
       "include": [
         "15 plus 128 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28245": {
       "include": [
         "15 plus 128 green"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28248": {
       "include": [
         "15 plus 128 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28251": {
       "include": [
         "15 plus 128 yellow"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28240": {
       "include": [
         "15 plus 256 midnight"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28243": {
       "include": [
         "15 plus 256 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28246": {
       "include": [
         "15 plus 256 green"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28249": {
       "include": [
         "15 plus 256 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28252": {
       "include": [
         "15 plus 256 yellow"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28241": {
       "include": [
         "15 plus 512 midnight"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28244": {
       "include": [
         "15 plus 512 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28247": {
       "include": [
         "15 plus 512 green"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28250": {
       "include": [
         "15 plus 512 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28253": {
       "include": [
         "15 plus 512 yellow"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28257": {
       "include": [
         "15 pro 1tb black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28258": {
       "include": [
         "15 pro 1tb blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28262": {
       "include": [
         "15 pro 1tb natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28266": {
       "include": [
         "15 pro 1tb white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28254": {
       "include": [
         "15 pro 128 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28259": {
       "include": [
         "15 pro 128 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28263": {
       "include": [
         "15 pro 128 natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28267": {
       "include": [
         "15 pro 128 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28255": {
       "include": [
         "15 pro 256 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28260": {
       "include": [
         "15 pro 256 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28264": {
       "include": [
         "15 pro 256 natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28268": {
       "include": [
         "15 pro 256 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28256": {
       "include": [
         "15 pro 512 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28261": {
       "include": [
         "15 pro 512 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28265": {
       "include": [
         "15 pro 512 natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28269": {
       "include": [
         "15 pro 512 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28272": {
       "include": [
         "15 pro max 1tb black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28273": {
       "include": [
         "15 pro max 1tb blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28276": {
       "include": [
         "15 pro max 1tb natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28279": {
       "include": [
         "15 pro max 1tb white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28270": {
       "include": [
         "15 pro max 256 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28274": {
       "include": [
         "15 pro max 256 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28277": {
       "include": [
         "15 pro max 256 natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28280": {
       "include": [
         "15 pro max 256 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28271": {
       "include": [
         "15 pro max 512 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28275": {
       "include": [
         "15 pro max 512 blue"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28278": {
       "include": [
         "15 pro max 512 natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "28281": {
       "include": [
         "15 pro max 512 white"
-      ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
-    },
-    "30309": {
-      "include": [
-        "15 128 midnight",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30313": {
-      "include": [
-        "15 128 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30314": {
-      "include": [
-        "15 128 green",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30315": {
-      "include": [
-        "15 128 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30316": {
-      "include": [
-        "15 128 yellow",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30317": {
-      "include": [
-        "15 256 midnight",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30318": {
-      "include": [
-        "15 256 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30319": {
-      "include": [
-        "15 256 green",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30320": {
-      "include": [
-        "15 256 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30321": {
-      "include": [
-        "15 256 yellow",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30322": {
-      "include": [
-        "15 512 midnight",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30323": {
-      "include": [
-        "15 512 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30324": {
-      "include": [
-        "15 512 green",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30325": {
-      "include": [
-        "15 512 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30326": {
-      "include": [
-        "15 512 yellow",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30327": {
-      "include": [
-        "15 plus 128 midnight",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30328": {
-      "include": [
-        "15 plus 128 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30329": {
-      "include": [
-        "15 plus 128 green",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30330": {
-      "include": [
-        "15 plus 128 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30332": {
-      "include": [
-        "15 plus 256 midnight",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30333": {
-      "include": [
-        "15 plus 256 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30334": {
-      "include": [
-        "15 plus 256 green",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30335": {
-      "include": [
-        "15 plus 256 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30336": {
-      "include": [
-        "15 plus 256 yellow",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30337": {
-      "include": [
-        "15 plus 512 midnight",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30338": {
-      "include": [
-        "15 plus 512 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30339": {
-      "include": [
-        "15 plus 512 green",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30340": {
-      "include": [
-        "15 plus 512 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30341": {
-      "include": [
-        "15 plus 512 yellow",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30346": {
-      "include": [
-        "15 pro 128 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30347": {
-      "include": [
-        "15 pro 128 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30348": {
-      "include": [
-        "15 pro 128 natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30349": {
-      "include": [
-        "15 pro 128 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30350": {
-      "include": [
-        "15 pro 256 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30351": {
-      "include": [
-        "15 pro 256 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30352": {
-      "include": [
-        "15 pro 256 natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30353": {
-      "include": [
-        "15 pro 256 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30354": {
-      "include": [
-        "15 pro 512 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30355": {
-      "include": [
-        "15 pro 512 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30356": {
-      "include": [
-        "15 pro 512 natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30357": {
-      "include": [
-        "15 pro 512 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30342": {
-      "include": [
-        "15 pro 1tb black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30343": {
-      "include": [
-        "15 pro 1tb blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30344": {
-      "include": [
-        "15 pro 1tb natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30345": {
-      "include": [
-        "15 pro 1tb white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30362": {
-      "include": [
-        "15 pro max 256 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30363": {
-      "include": [
-        "15 pro max 256 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30364": {
-      "include": [
-        "15 pro max 256 natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30365": {
-      "include": [
-        "15 pro max 256 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30366": {
-      "include": [
-        "15 pro max 512 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30367": {
-      "include": [
-        "15 pro max 512 blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30368": {
-      "include": [
-        "15 pro max 512 natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30369": {
-      "include": [
-        "15 pro max 512 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30358": {
-      "include": [
-        "15 pro max 1tb black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30359": {
-      "include": [
-        "15 pro max 1tb blue",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30360": {
-      "include": [
-        "15 pro max 1tb natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "30361": {
-      "include": [
-        "15 pro max 1tb white",
-        "🇺🇸"
       ],
       "exclude": []
     },
@@ -8067,981 +7487,383 @@
       "include": [
         "16 128 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36618": {
       "include": [
         "16 128 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36617": {
       "include": [
         "16 128 teal"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36615": {
       "include": [
         "16 128 ultramarine"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36616": {
       "include": [
         "16 128 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36619": {
       "include": [
         "16 256 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36620": {
       "include": [
         "16 256 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36621": {
       "include": [
         "16 256 teal"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36622": {
       "include": [
         "16 256 ultramarine"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36623": {
       "include": [
         "16 256 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36624": {
       "include": [
         "16 512 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36625": {
       "include": [
         "16 512 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36626": {
       "include": [
         "16 512 teal"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36627": {
       "include": [
         "16 512 ultramarine"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36628": {
       "include": [
         "16 512 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36612": {
       "include": [
         "16 plus 128 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36630": {
       "include": [
         "16 plus 128 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36629": {
       "include": [
         "16 plus 128 teal"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36632": {
       "include": [
         "16 plus 128 ultramarine"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36631": {
       "include": [
         "16 plus 128 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36633": {
       "include": [
         "16 plus 256 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36634": {
       "include": [
         "16 plus 256 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36635": {
       "include": [
         "16 plus 256 teal"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36636": {
       "include": [
         "16 plus 256 ultramarine"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36637": {
       "include": [
         "16 plus 256 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36638": {
       "include": [
         "16 plus 512 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36639": {
       "include": [
         "16 plus 512 pink"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36640": {
       "include": [
         "16 plus 512 teal"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36641": {
       "include": [
         "16 plus 512 ultramarine"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36642": {
       "include": [
         "16 plus 512 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36655": {
       "include": [
         "16 pro 1tb black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36645": {
       "include": [
         "16 pro 1tb desert"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36661": {
       "include": [
         "16 pro 1tb natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36658": {
       "include": [
         "16 pro 1tb white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "38662": {
       "include": [
         "16 pro 128 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36652": {
       "include": [
         "16 pro 128 desert"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36659": {
       "include": [
         "16 pro 128 natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36657": {
       "include": [
         "16 pro 128 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36653": {
       "include": [
         "16 pro 256 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36650": {
       "include": [
         "16 pro 256 desert"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36660": {
       "include": [
         "16 pro 256 natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36613": {
       "include": [
         "16 pro 256 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36654": {
       "include": [
         "16 pro 512 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36651": {
       "include": [
         "16 pro 512 desert"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36644": {
       "include": [
         "16 pro 512 natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "39418": {
       "include": [
         "16 pro 512 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36664": {
       "include": [
         "16 pro max 1tb black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36673": {
       "include": [
         "16 pro max 1tb desert"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36665": {
       "include": [
         "16 pro max 1tb natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "38663": {
       "include": [
         "16 pro max 1tb white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36662": {
       "include": [
         "16 pro max 256 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36675": {
       "include": [
         "16 pro max 256 desert"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36667": {
       "include": [
         "16 pro max 256 natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "38664": {
       "include": [
         "16 pro max 256 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36663": {
       "include": [
         "16 pro max 512 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36676": {
       "include": [
         "16 pro max 512 desert"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "36668": {
       "include": [
         "16 pro max 512 natural"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "38665": {
       "include": [
         "16 pro max 512 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "38256": {
       "include": [
         "16e 128 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "38257": {
       "include": [
         "16e 128 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "38258": {
       "include": [
         "16e 256 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "38259": {
       "include": [
         "16e 256 white"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "38262": {
       "include": [
         "16e 512 black"
       ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
+      "exclude": []
     },
     "38263": {
       "include": [
         "16e 512 white"
-      ],
-      "exclude": [
-        "🇺🇸",
-        "dual"
-      ]
-    },
-    "39259": {
-      "include": [
-        "16 128 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39261": {
-      "include": [
-        "16 128 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39268": {
-      "include": [
-        "16 128 teal",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39271": {
-      "include": [
-        "16 128 ultramarine",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39278": {
-      "include": [
-        "16 128 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39281": {
-      "include": [
-        "16 256 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39288": {
-      "include": [
-        "16 256 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39293": {
-      "include": [
-        "16 256 teal",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39295": {
-      "include": [
-        "16 256 ultramarine",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39302": {
-      "include": [
-        "16 256 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39318": {
-      "include": [
-        "16 512 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39327": {
-      "include": [
-        "16 512 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39330": {
-      "include": [
-        "16 512 teal",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39334": {
-      "include": [
-        "16 512 ultramarine",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39340": {
-      "include": [
-        "16 512 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39473": {
-      "include": [
-        "16 plus 128 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39478": {
-      "include": [
-        "16 plus 128 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39490": {
-      "include": [
-        "16 plus 128 teal",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39501": {
-      "include": [
-        "16 plus 128 ultramarine",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39504": {
-      "include": [
-        "16 plus 128 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39514": {
-      "include": [
-        "16 plus 256 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39518": {
-      "include": [
-        "16 plus 256 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39520": {
-      "include": [
-        "16 plus 256 teal",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39532": {
-      "include": [
-        "16 plus 256 ultramarine",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39531": {
-      "include": [
-        "16 plus 256 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39507": {
-      "include": [
-        "16 plus 512 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39508": {
-      "include": [
-        "16 plus 512 pink",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39509": {
-      "include": [
-        "16 plus 512 teal",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39510": {
-      "include": [
-        "16 plus 512 ultramarine",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39511": {
-      "include": [
-        "16 plus 512 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39443": {
-      "include": [
-        "16 pro 1tb black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39457": {
-      "include": [
-        "16 pro 1tb desert",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39463": {
-      "include": [
-        "16 pro 1tb natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39469": {
-      "include": [
-        "16 pro 1tb white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39358": {
-      "include": [
-        "16 pro 128 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39364": {
-      "include": [
-        "16 pro 128 desert",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39366": {
-      "include": [
-        "16 pro 128 natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39373": {
-      "include": [
-        "16 pro 128 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39375": {
-      "include": [
-        "16 pro 256 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39381": {
-      "include": [
-        "16 pro 256 desert",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39383": {
-      "include": [
-        "16 pro 256 natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39389": {
-      "include": [
-        "16 pro 256 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39391": {
-      "include": [
-        "16 pro 512 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39397": {
-      "include": [
-        "16 pro 512 desert",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39413": {
-      "include": [
-        "16 pro 512 natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39426": {
-      "include": [
-        "16 pro 512 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39458": {
-      "include": [
-        "16 pro max 1tb black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39459": {
-      "include": [
-        "16 pro max 1tb desert",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39460": {
-      "include": [
-        "16 pro max 1tb natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39461": {
-      "include": [
-        "16 pro max 1tb white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39434": {
-      "include": [
-        "16 pro max 256 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39435": {
-      "include": [
-        "16 pro max 256 desert",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39436": {
-      "include": [
-        "16 pro max 256 natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39437": {
-      "include": [
-        "16 pro max 256 white",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39449": {
-      "include": [
-        "16 pro max 512 black",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39450": {
-      "include": [
-        "16 pro max 512 desert",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39451": {
-      "include": [
-        "16 pro max 512 natural",
-        "🇺🇸"
-      ],
-      "exclude": []
-    },
-    "39452": {
-      "include": [
-        "16 pro max 512 white",
-        "🇺🇸"
       ],
       "exclude": []
     },
