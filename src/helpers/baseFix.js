@@ -56,6 +56,8 @@ export const baseFix = (el) => {
         el.name?.indexOf("упаковка") == -1 &&
         el.name?.indexOf("вскрыт") == -1 &&
         el.name?.indexOf("угол") == -1 &&
+        el.name?.indexOf("Внутри") == -1 &&
+        el.name?.indexOf("внутри") == -1 &&
         el.name?.indexOf("прошит") == -1 &&
         el.name?.indexOf("потерто") == -1 &&
         el.name?.indexOf("экран") == -1 &&
@@ -1259,6 +1261,7 @@ export const baseFixBase = (el) => {
         toLowerCase?.indexOf("экран") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
         toLowerCase?.indexOf("актив") == -1 &&
+        toLowerCase?.indexOf("включ") == -1 &&
         toLowerCase.indexOf("обменка") == -1 &&
         toLowerCase?.indexOf("rfb") == -1 &&
         toLowerCase?.indexOf("уцен") == -1 &&

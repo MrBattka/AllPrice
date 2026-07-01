@@ -145,7 +145,8 @@ export const returnStockPriceLowPrice = (name) => {
   let replaceKR = replaceKZ.replace("🇰🇷", "");
   let replaceZA = replaceKR.replace("🇿🇦", "");
   let fixStick = replaceZA.replace("–", "-");
-  let feixWiFi = fixStick.replace("Wi-Fi", "WiFi")
+  let fixRub1 = fixStick.replace(" ₽", "");
+  let feixWiFi = fixRub1.replace("Wi-Fi", "WiFi")
   let replaceUSBC = feixWiFi.replace("USB-C", "USBC");
   let replaceBuds3White = replaceUSBC.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
