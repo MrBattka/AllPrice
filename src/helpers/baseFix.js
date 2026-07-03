@@ -227,6 +227,7 @@ export const baseFixMiHonor = (el) => {
         toLowerCase?.indexOf("прошит") == -1 &&
         toLowerCase?.indexOf("потерто") == -1 &&
         toLowerCase?.indexOf("экран") == -1 &&
+        toLowerCase?.indexOf("inoi") == -1 &&
         toLowerCase?.indexOf("realme") == -1 &&
         toLowerCase?.indexOf("актив") == -1 &&
         toLowerCase.indexOf("обменка") == -1 &&
