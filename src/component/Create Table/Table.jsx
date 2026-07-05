@@ -12,8 +12,8 @@ const COLUMNS = [
     accessor: "name",
   },
   {
-    Header: "Price",
-    accessor: "price",
+    Header: "Stock price",
+    accessor: "stockPrice",
   },
   {
     Header: "Provider",
