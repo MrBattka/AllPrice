@@ -153,6 +153,7 @@ import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
 import { getIdByNameTest } from "../../helpers/returnIDByNameTest";
 import { returnNameNarod, returnStockPriceNarod } from "../Narod/helpers/helpers";
 import { returnFixNameUniSale, returnFixPriceUniSale } from "../UniSale/helpers/helpers";
+import { getIdsAndNamesFromAvitoString } from "../../helpers/returnIDByNameFromAvito";
 
 
 const isSeparator = (str) => /^[-—]{10,}$/.test(str.trim());
@@ -545,6 +546,21 @@ const processors = {
       }),
       filters: [],
     },
+  avito: {
+    processItem: (avito) => {
+      if (!avito.id) return null;
+      const foundProducts = getIdsAndNamesFromAvitoString(avito.id);
+      return foundProducts.length
+        ? foundProducts.map((product) => ({
+            id: product.id,
+            name: product.name,
+            stockPrice: avito.price || "—",
+            provider: "Avito",
+          }))
+        : null;
+    },
+    filters: [],
+},
 };
 
 
@@ -554,17 +570,25 @@ const processData = (data, processor, isOpen) => {
   if (!data || !Array.isArray(data) || !processor) return [];
 
   return data
-    .filter(
-      (item) =>
-        item.name &&
-        typeof item.name === "string" &&
-        processor.filters.every((fn) => fn(item))
-    )
-    .map((item) => {
-      const processed = processor.processItem(item);
-      return processed.id !== "No match" && isOpen ? processed : null;
+    .filter((item) => {
+      if (!processor.filters.every((fn) => fn(item))) return false;
+      return processor.filters.length === 0
+        ? true
+        : item?.name && typeof item.name === "string";
     })
-    .filter(Boolean);
+    .flatMap((item) => {
+      const processed = processor.processItem(item);
+      if (!processed || !isOpen) return [];
+
+      const processedItems = Array.isArray(processed) ? processed : [processed];
+
+      return processedItems.filter(
+        (entry) =>
+          entry &&
+          entry.id !== "No match" &&
+          entry.id !== undefined
+      );
+    });
 };
 
 const AllPriceWithID = ({
@@ -597,9 +621,11 @@ const AllPriceWithID = ({
   a18Data,
   AMTData,
   boltunData,
-  uniSaleData
+  uniSaleData,
+  avitoData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
+console.log(avitoData);
 
   const allPriceArr = useMemo(() => {
     const results = [];
@@ -641,6 +667,7 @@ const AllPriceWithID = ({
     results.push(...processData(AMTData, processors.amt, isOpen));
     results.push(...processData(boltunData, processors.boltun, isOpen));
     results.push(...processData(uniSaleData, processors.uniSale, isOpen));
+    results.push(...processData(avitoData, processors.avito, isOpen));
 
     const sanitizedResults = results.map(item => ({
     ...item,
@@ -682,7 +709,8 @@ const AllPriceWithID = ({
     a18Data,
     AMTData,
     boltunData,
-    uniSaleData
+    uniSaleData,
+    avitoData
   }).some((arr) => arr?.length > 2);
 
   return (

@@ -78,6 +78,7 @@ import IndexUnimtrn from "./Unimtrn/indexUNIMTRN";
 import IndexUnimtrnNotID from "./Unimtrn/indexUNIMTRNNotID";
 import IndexUniSale from "./UniSale/IndexUniSale";
 import IndexUniSaleNotID from "./UniSale/IndexUniSaleNotID";
+import IndexAvito from "./Avito/IndexAvito";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -115,6 +116,7 @@ const IndexAllPrice = () => {
   const [dataBoltun, setDataBoltun] = useState([]);
   const [dataStore77, setDataStore77] = useState([]);
   const [dataUniSale, setDataUniSale] = useState([]);
+  const [dataAvito, setDataAvito] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -149,6 +151,7 @@ const IndexAllPrice = () => {
   const boltun = [];
   const store77 = [];
   const uniSale = [];
+  const avito = [];
 
   const allItems = [];
 
@@ -447,6 +450,11 @@ const IndexAllPrice = () => {
       uniSaleEl.name.length &&
       uniSale.push({ name: uniSaleEl.name, price: uniSaleEl.price });
   });
+  dataAvito.map((avitoEl) => {
+    avitoEl.name &&
+      avitoEl.name.length &&
+      avito.push({ id: avitoEl.id, name: avitoEl.name, price: avitoEl.price });
+  });
 
   const handleImport = ($event) => {
     const files = $event.target.files;
@@ -524,6 +532,8 @@ const IndexAllPrice = () => {
           setDataStore77(rowStore77);
           const rowUniSale = utils.sheet_to_json(wb.Sheets[sheets[32]]);
           setDataUniSale(rowUniSale);
+          const rowAvito = utils.sheet_to_json(wb.Sheets[sheets[33]]);
+          setDataAvito(rowAvito);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -666,6 +676,8 @@ const IndexAllPrice = () => {
         {/* UniSale */}
         <IndexUniSale el={dataUniSale} uniSaleData={uniSale} />
         <IndexUniSaleNotID el={dataUniSale} uniSaleData={uniSale} />
+        {/* Avito */}
+        <IndexAvito el={dataAvito} avitoData={avito} />
         {/* Quick Price */}
         <AllPriceQuickID
           dataSuperprice={superprice}
@@ -735,6 +747,7 @@ const IndexAllPrice = () => {
           AMTData={amt}
           boltunData={boltun}
           uniSaleData={uniSale}
+          avitoData={avito}
         />
         <AllPriceNotID
           dataSuperprice={superprice}
