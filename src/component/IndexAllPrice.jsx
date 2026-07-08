@@ -79,6 +79,8 @@ import IndexUnimtrnNotID from "./Unimtrn/indexUNIMTRNNotID";
 import IndexUniSale from "./UniSale/IndexUniSale";
 import IndexUniSaleNotID from "./UniSale/IndexUniSaleNotID";
 import IndexAvito from "./Avito/IndexAvito";
+import IndexTrubkoved from "./Trubkoved/IndexTrubkoved";
+import IndexTrubkovedNotID from "./Trubkoved/IndexTrubkovedNotID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -117,6 +119,7 @@ const IndexAllPrice = () => {
   const [dataStore77, setDataStore77] = useState([]);
   const [dataUniSale, setDataUniSale] = useState([]);
   const [dataAvito, setDataAvito] = useState([]);
+  const [dataTrubkoved, setDataTrubkoved] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -152,6 +155,7 @@ const IndexAllPrice = () => {
   const store77 = [];
   const uniSale = [];
   const avito = [];
+  const trubkoved = [];
 
   const allItems = [];
 
@@ -450,10 +454,17 @@ const IndexAllPrice = () => {
       uniSaleEl.name.length &&
       uniSale.push({ name: uniSaleEl.name, price: uniSaleEl.price });
   });
+
   dataAvito.map((avitoEl) => {
     avitoEl.name &&
       avitoEl.name.length &&
       avito.push({ id: avitoEl.id, name: avitoEl.name, price: avitoEl.price });
+  });
+
+  dataTrubkoved.map((trubkovedEl) => {
+    trubkovedEl.name &&
+      trubkovedEl.name.length &&
+      trubkoved.push({ name: trubkovedEl.name, price: trubkovedEl.price });
   });
 
   const handleImport = ($event) => {
@@ -534,6 +545,8 @@ const IndexAllPrice = () => {
           setDataUniSale(rowUniSale);
           const rowAvito = utils.sheet_to_json(wb.Sheets[sheets[33]]);
           setDataAvito(rowAvito);
+          const rowTrubkoved = utils.sheet_to_json(wb.Sheets[sheets[34]]);
+          setDataTrubkoved(rowTrubkoved);
         }
       };
       reader.readAsArrayBuffer(file);
@@ -671,13 +684,16 @@ const IndexAllPrice = () => {
         <IndexBoltun el={dataBoltun} boltunData={boltun} />
         <IndexBoltunNotID el={dataBoltun} boltunData={boltun} />
         {/* Store 77 */}
-        <IndexStore77 el={dataStore77} store77Data={store77} />
-        <IndexStore77NotID el={dataStore77} store77Data={store77} />
+        {/* <IndexStore77 el={dataStore77} store77Data={store77} />
+        <IndexStore77NotID el={dataStore77} store77Data={store77} /> */}
         {/* UniSale */}
         <IndexUniSale el={dataUniSale} uniSaleData={uniSale} />
         <IndexUniSaleNotID el={dataUniSale} uniSaleData={uniSale} />
         {/* Avito */}
         <IndexAvito el={dataAvito} avitoData={avito} />
+        {/* UniSale */}
+        <IndexTrubkoved el={dataTrubkoved} trubkovedData={trubkoved} />
+        <IndexTrubkovedNotID el={dataTrubkoved} trubkovedData={trubkoved} />
         {/* Quick Price */}
         <AllPriceQuickID
           dataSuperprice={superprice}
@@ -710,6 +726,7 @@ const IndexAllPrice = () => {
           rootOptData={rootOpt}
           a18Data={a18}
           AMTData={amt}
+          store77Data={store77}
           boltunData={boltun}
           uniSaleData={uniSale}
         />
@@ -745,9 +762,11 @@ const IndexAllPrice = () => {
           rootOptData={rootOpt}
           a18Data={a18}
           AMTData={amt}
+          store77Data={store77}
           boltunData={boltun}
           uniSaleData={uniSale}
           avitoData={avito}
+          trubkovedData={trubkoved}
         />
         <AllPriceNotID
           dataSuperprice={superprice}
@@ -780,6 +799,7 @@ const IndexAllPrice = () => {
           rootOptData={rootOpt}
           a18Data={a18}
           AMTData={amt}
+          store77Data={store77}
           boltunData={boltun}
           uniSaleData={uniSale}
         />

@@ -28,6 +28,7 @@ import {
   baseFixSunrise,
   baseFixSuperPrice,
   baseFixTrub,
+  baseFixTrubkoved,
   baseFixUnisale,
   baseFixVsemi,
 } from "../../helpers/baseFix";
@@ -154,6 +155,8 @@ import { getIdByNameTest } from "../../helpers/returnIDByNameTest";
 import { returnNameNarod, returnStockPriceNarod } from "../Narod/helpers/helpers";
 import { returnFixNameUniSale, returnFixPriceUniSale } from "../UniSale/helpers/helpers";
 import { getIdsAndNamesFromAvitoString } from "../../helpers/returnIDByNameFromAvito";
+import { returnFixNameStore77 } from "../Store77/helpers/helpers";
+import { returnFixNameTrubkoved } from "../Trubkoved/helpers/helpers";
 
 
 const isSeparator = (str) => /^[-—]{10,}$/.test(str.trim());
@@ -535,6 +538,15 @@ const processors = {
     }),
     filters: [baseFixBoltun],
   },
+  // store77: {
+  //   processItem: (store77) => ({
+  //     id: getIdByNameTest(defaultFixName(returnFixNameStore77(store77.name))),
+  //     name: returnFixNameStore77(store77.name),
+  //     stockPrice: store77.price,
+  //     provider: "Store 77",
+  //   }),
+  //   filters: [baseFixBoltun],
+  // },
   uniSale: {
       processItem: (uniSale) => 
         baseFixUnisale(returnFixNameUniSale(uniSale.name)) &&
@@ -560,7 +572,18 @@ const processors = {
         : null;
     },
     filters: [],
-},
+  },
+  trubkoved: {
+      processItem: (trubkoved) => 
+        baseFixTrubkoved(returnFixNameUniSale(trubkoved.name)) &&
+        ({
+        id: getIdByNameTest(defaultFixName(returnFixNameTrubkoved(trubkoved.name))),
+        name: returnFixNameTrubkoved(trubkoved.name),
+        stockPrice: trubkoved.price,
+        provider: "Трубковед",
+      }),
+      filters: [],
+    },
 };
 
 
@@ -621,11 +644,12 @@ const AllPriceWithID = ({
   a18Data,
   AMTData,
   boltunData,
+  store77Data,
   uniSaleData,
-  avitoData
+  avitoData,
+  trubkovedData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-console.log(avitoData);
 
   const allPriceArr = useMemo(() => {
     const results = [];
@@ -666,8 +690,10 @@ console.log(avitoData);
     results.push(...processData(a18Data, processors.A18, isOpen));
     results.push(...processData(AMTData, processors.amt, isOpen));
     results.push(...processData(boltunData, processors.boltun, isOpen));
+    results.push(...processData(store77Data, processors.store77, isOpen));
     results.push(...processData(uniSaleData, processors.uniSale, isOpen));
     results.push(...processData(avitoData, processors.avito, isOpen));
+    results.push(...processData(trubkovedData, processors.trubkoved, isOpen));
 
     const sanitizedResults = results.map(item => ({
     ...item,
@@ -708,9 +734,11 @@ console.log(avitoData);
     rootOptData,
     a18Data,
     AMTData,
+    store77Data,
     boltunData,
     uniSaleData,
-    avitoData
+    avitoData,
+    trubkovedData
   }).some((arr) => arr?.length > 2);
 
   return (

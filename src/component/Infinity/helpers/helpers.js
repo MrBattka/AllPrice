@@ -157,8 +157,9 @@ export const returnStockPriceInfinity = (name) => {
     ""
   );
   let replaceSick = replaceS9feLavander.replace("-", "");
+  let replaceFire = replaceSick.replace("🔥", "")
 
-  let reverseStrName = replaceSick.split("").reverse().join("");
+  let reverseStrName = replaceFire.split("").reverse().join("");
 
   let checkSpace1 =
     reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
