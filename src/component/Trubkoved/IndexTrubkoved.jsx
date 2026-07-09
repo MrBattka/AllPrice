@@ -1,10 +1,10 @@
 import { useState } from "react";
+import { baseFixTrubkoved } from "../../helpers/baseFix";
 import { defaultFixName } from "../../helpers/defaultFixName";
 import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
-import { returnFixNameTrubkoved, returnFixNameUniSale, returnFixPriceUniSale } from "./helpers/helpers";
-import { baseFixTrubkoved, baseFixUnisale } from "../../helpers/baseFix";
+import { returnFixNameTrubkoved } from "./helpers/helpers";
 
 const IndexTrubkoved = ({ el, trubkovedData }) => {
   const [isOpen, setIsOpen] = useState(false);

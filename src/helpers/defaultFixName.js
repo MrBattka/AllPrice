@@ -377,8 +377,9 @@ export const defaultFixName = (el) => {
       : fixBuds2Pro;
 
   const fixLavender = fixPencil1.replace("lavender", "Purple");
+  const fixCN = fixLavender.replace("CN", "🇨🇳")
 
-  const fixViolet = fixLavender.replace("violet", "Purple");
+  const fixViolet = fixCN.replace("violet", "Purple");
 
   const fixLunar =
     fixViolet.indexOf("poco") !== -1

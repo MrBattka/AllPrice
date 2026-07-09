@@ -1,6 +1,21 @@
+const moveCnToStart = (value) => {
+  if (typeof value !== "string") {
+    return value;
+  }
+
+  const trimmedValue = value.trim();
+  const match = trimmedValue.match(/^(.*?)(?:\s+)?(CN|🇨🇳)$/);
+
+  if (!match) {
+    return trimmedValue;
+  }
+
+  return `${match[2]} ${match[1].trim()}`.trim();
+};
+
 export const returnFixNameTrubkoved = (name) => {
-  
-  const replaceGb = name.replace("Gb", "");
+  const CNToStart = moveCnToStart(name)
+  const replaceGb = CNToStart.replace("Gb", "");
   const replaceGB = replaceGb.replace("GB", "");
   const replaceSpaceBlack = replaceGB.replace("Space Black", "Black");
   const replaceSpaceGray = replaceSpaceBlack.replace("Space Gray", "Gray");
@@ -33,8 +48,9 @@ export const returnFixNameTrubkoved = (name) => {
   const fix2TB = fix1TB1.replace("2 ТБ", "2TB")
   const fixse3 = fix2TB.replace("SE 3", "SE3")
   const fixS11 = fixse3.replace("Apple Watch Series 11", "S11")
+  const fixCN = fixS11.replace("CN", "🇨🇳")
   
-  const fixAir13 = fixS11.replace("Air 13\"", "Air 13")
+  const fixAir13 = fixCN.replace("Air 13\"", "Air 13")
   const fixAir11 = fixAir13.replace("Air 13\"", "Air 11")
   const fixTB = fixAir11.replace(" ТБ,", "TB")
   const fixGB = fixTB.replace(" ГБ,", "")
@@ -61,17 +77,4 @@ export const returnFixNameTrubkoved = (name) => {
   const fixSemeSim = fixуSim.replace("eSIM nano SIM", "(Sim+eSim)")
 
   return fixSemeSim;
-};
-
-export const returnFixPriceUniSale = (price) => {
-  let priceStr;
-  if (typeof price === "number") {
-    priceStr = String(price);
-  } else if (typeof price !== "string") {
-    return price;
-  } else {
-    priceStr = price;
-  }
-
-  return priceStr.replace(/\s/g, "");
 };
