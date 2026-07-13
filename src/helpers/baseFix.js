@@ -1234,6 +1234,16 @@ export const baseFixBase = (el) => {
         toLowerCase.indexOf('"a-"') == -1 &&
         toLowerCase.indexOf('"b-"') == -1 &&
         toLowerCase.indexOf('"c-"') == -1 &&
+
+        toLowerCase.indexOf('"а"') == -1 &&
+        toLowerCase.indexOf('"в"') == -1 &&
+        toLowerCase.indexOf('"с"') == -1 &&
+        toLowerCase.indexOf('"а+"') == -1 &&
+        toLowerCase.indexOf('"в+"') == -1 &&
+        toLowerCase.indexOf('"с+"') == -1 &&
+        toLowerCase.indexOf('"а-"') == -1 &&
+        toLowerCase.indexOf('"в-"') == -1 &&
+        toLowerCase.indexOf('"с-"') == -1 &&
         toLowerCase?.indexOf("царапин") == -1 &&
         toLowerCase?.indexOf("ремонт") == -1 &&
         toLowerCase?.indexOf("потертости") == -1 &&
