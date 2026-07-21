@@ -1,3 +1,4 @@
+
 export const returnNameF51 = (name) => {
   const replaceGb = name.replace("Gb", "");
   const replac4G = replaceGb.replace("4G", "");
@@ -91,4 +92,146 @@ export const returnNameF51 = (name) => {
   const fixMote15PeoSilver = fixPRO.indexOf("Note 15 Pro") !== -1 ? fixPRO.replace("Silver", "Titan") : fixPRO
 
   return fixMote15PeoSilver;
+};
+
+const checkFlags = (str) => {
+  let checkSpace1 = str[str.length - 1] === " " ? str.slice(0, -1) : str;
+  let checkSpace2 =
+    checkSpace1[checkSpace1.length - 1] === " "
+      ? checkSpace1.slice(0, -1)
+      : checkSpace1;
+  let checkSpace3 =
+    checkSpace2[checkSpace2.length - 1] === " "
+      ? checkSpace2.slice(0, -1)
+      : checkSpace2;
+  let checkSpace4 =
+    checkSpace3[checkSpace3.length - 1] === " "
+      ? checkSpace3.slice(0, -1)
+      : checkSpace3;
+
+  if (
+    checkSpace4.slice(-4) === `🇯🇵` ||
+    checkSpace4.slice(-4) === "🇮🇳" ||
+    checkSpace4.slice(-4) === "🇪🇺" ||
+    checkSpace4.slice(-4) === "🇦🇪" ||
+    checkSpace4.slice(-4) === "🇧🇷" ||
+    checkSpace4.slice(-4) === "🇻🇳" ||
+    checkSpace4.slice(-4) === "🇰🇼" ||
+    checkSpace4.slice(-4) === "🇺🇸" ||
+    checkSpace4.slice(-4) === "🇭🇰" ||
+    checkSpace4.slice(-4) === "🇬🇧" ||
+    checkSpace4.slice(-4) === "🇨🇳" ||
+    checkSpace4.slice(-4) === "🇹🇼" ||
+    checkSpace4.slice(-4) === "🇷🇺" ||
+    checkSpace4.slice(-4) === "🇦🇺" ||
+    checkSpace4.slice(-4) === "🇨🇦" ||
+    checkSpace4.slice(-4) === "🇨🇱" ||
+    checkSpace4.slice(-4) === "🇹🇭" ||
+    checkSpace4.slice(-4) === "🇸🇬" ||
+    checkSpace4.slice(-4) === "🇲🇾" ||
+    checkSpace4.slice(-4) === "🇨🇫" ||
+    checkSpace4.slice(-4) === "🇰🇿" ||
+    checkSpace4.slice(-4) === "🇰🇷" ||
+    checkSpace4.slice(-4) === "🇬🇺" ||
+    checkSpace4.slice(-4) === "🇮🇩"
+  ) {
+    return (
+      checkSpace4.slice(-4) + checkSpace4.substring(0, checkSpace4.length - 4)
+    );
+  } else if (
+    checkSpace4.slice(-6) === "(esim)" ||
+    checkSpace4.slice(-6) === "(2sim)"
+  ) {
+    return (
+      checkSpace4.slice(-6) + checkSpace4.substring(0, checkSpace4.length - 6)
+    );
+  } else {
+    return checkSpace4;
+  }
+};
+
+export const returnNameInArrF51 = (name) => {
+  const fixFlags = checkFlags(name);
+
+  let reverseStrName = fixFlags.split("").reverse().join("");
+  let splitPrice =
+    reverseStrName.indexOf(" ") !== -1
+      ? /\s(.+)/.exec(reverseStrName)[1]
+      : reverseStrName;
+  // let replaceStick = /\s(.+)/.exec(splitPrice)[1];
+
+  let checkSpace1 = splitPrice[0] === " " ? splitPrice.slice(1) : splitPrice;
+  let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
+  let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
+  let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
+
+  // let splitPrice =
+  //   checkSpace4.indexOf(" ") != -1 ? checkSpace4.split(" ")[0] : checkSpace4;
+
+  let reverseBackStrName = splitPrice.split("").reverse().join("");
+
+  return reverseBackStrName;
+};
+
+export const returnStockPriceF51 = (name) => {
+  let replaceEU = name.replace("🇪🇺", "");
+  let replaceAE = replaceEU.replace("🇦🇪", "");
+  let replaceIN = replaceAE.replace("🇮🇳", "");
+  let replaceBR = replaceIN.replace("🇧🇷", "");
+  let replaceJP = replaceBR.replace("🇯🇵", "");
+  let replaceVN = replaceJP.replace("🇻🇳", "");
+  let replaceKW = replaceVN.replace("🇰🇼", "");
+  let replaceUS = replaceKW.replace("🇺🇸", "");
+  let replaceHK = replaceUS.replace("🇭🇰", "");
+  let replaceGB = replaceHK.replace("🇬🇧", "");
+  let replaceCN = replaceGB.replace("🇨🇳", "");
+  let replaceTW = replaceCN.replace("🇹🇼", "");
+  let replaceBU = replaceTW.replace("🇷🇺", "");
+  let replaceAU = replaceBU.replace("🇦🇺", "");
+  let replaceCA = replaceAU.replace("🇨🇦", "");
+  let replaceCL = replaceCA.replace("🇨🇱", "");
+  let replaceTH = replaceCL.replace("🇹🇭", "");
+  let replaceSG = replaceTH.replace("🇸🇬", "");
+  let replaceMY = replaceSG.replace("🇲🇾", "");
+  let replaceCF = replaceMY.replace("🇨🇫", "");
+  let replaceKZ = replaceCF.replace("🇰🇿", "");
+  let replaceKR = replaceKZ.replace("🇰🇷", "");
+  let replaceZA = replaceKR.replace("🇿🇦", "");
+  let replacePY = replaceZA.replace("🇵🇾", "");
+  let replaceID = replacePY.replace("🇮🇩", "");
+
+  
+  let replaceRub = replaceID.replace("₽", "");
+  let replaceGT = replaceRub.replace("🇬🇹", "");
+  let replaceLT = replaceGT.replace("🇱🇹", "");
+  let replacePA = replaceLT.replace("🇵🇦", "");
+  let replaceSA = replacePA.replace("🇸🇦", "");
+  let replaceSim = replaceSA.replace("1Sim+Esim", "");
+  let replaceCar = replaceSim.replace("🚘", "");
+  let replaceBuds3White = replaceCar.replace("Buds 3 White", "");
+  let replaceS9feLavander = replaceBuds3White.replace(
+    "Tab S9FE 8/256 Lavender 5G",
+    ""
+  );
+  let checkSpace11 =
+    replaceS9feLavander[0] === " " ? replaceS9feLavander.slice(1) : replaceS9feLavander;
+  let checkSpace21 = checkSpace11[0] === " " ? checkSpace11.slice(1) : checkSpace11;
+  let checkSpace31 = checkSpace21[0] === " " ? checkSpace21.slice(1) : checkSpace21;
+  let checkSpace41 = checkSpace31[0] === " " ? checkSpace31.slice(1) : checkSpace31;
+  let checkSpace51 = checkSpace41[0] === " " ? checkSpace41.slice(1) : checkSpace41;
+
+  let reverseStrName = checkSpace51.split("").reverse().join("");
+
+  let checkSpace1 =
+    reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
+  let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
+  let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
+  let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
+
+  let splitPrice =
+    checkSpace4.indexOf(" ") !== -1 ? checkSpace4.split(" ")[0] : checkSpace4;
+
+  let reverseBackStrName = splitPrice.split("").reverse().join("");
+
+  return reverseBackStrName;
 };

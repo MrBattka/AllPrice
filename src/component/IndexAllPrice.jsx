@@ -329,10 +329,10 @@ const IndexAllPrice = () => {
   });
 
   dataF51.map((F51El) => {
-    F51El.Товар &&
-      F51El.Товар.length > 7 &&
-      typeof F51El.Товар === "string" &&
-      f51.push({ name: F51El.Товар, price: F51El.Цена, country: F51El.Страна });
+    F51El.F51 &&
+      F51El.F51.length > 7 &&
+      typeof F51El.F51 === "string" &&
+      f51.push({ name: F51El.F51 });
   });
   dataDiscount.map((discountEl) => {
     discountEl.Discount &&

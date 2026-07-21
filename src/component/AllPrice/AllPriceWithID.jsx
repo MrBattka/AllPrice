@@ -86,7 +86,7 @@ import {
   returnNameReSale,
   returnStockPriceReSale,
 } from "../ReSale/helpers/helpers";
-import { returnNameF51 } from "../F51/helpers/helpers";
+import { returnNameF51, returnNameInArrF51, returnStockPriceF51 } from "../F51/helpers/helpers";
 import {
   returnFixNameDiscount,
   returnNameInArrDiscount,
@@ -344,9 +344,9 @@ const processors = {
   },
   f51: {
     processItem: (f51) => ({
-      id: getIdByNameTest(defaultFixName(returnNameF51(f51.name))),
-      name: returnNameF51(f51.name),
-      stockPrice: f51.price,
+      id: getIdByNameTest(defaultFixName(returnNameInArrF51(returnNameF51(f51.name)))),
+      name: returnNameInArrF51(returnNameF51(f51.name)),
+      stockPrice: returnStockPriceF51(f51.name),
       provider: "F51",
     }),
     filters: [baseFixF51],
@@ -695,14 +695,29 @@ const AllPriceWithID = ({
     results.push(...processData(avitoData, processors.avito, isOpen));
     results.push(...processData(trubkovedData, processors.trubkoved, isOpen));
 
-    const sanitizedResults = results.map(item => ({
-    ...item,
-    stockPrice: typeof item.stockPrice === 'number'
-      ? item.stockPrice
-      : Number(String(item.stockPrice).replace(/\D/g, '')) || null
-    }));
-    
-    return sanitizedResults;
+    return results
+      .map(item => {
+        const rawPrice = item.stockPrice;
+        let parsedPrice = null;
+      
+        if (
+          rawPrice == null ||
+          rawPrice === "—" ||
+          rawPrice === false ||
+          typeof rawPrice === "boolean"
+        ) {
+          parsedPrice = null;
+        } else {
+          const numeric = Number(String(rawPrice).replace(/\D/g, ""));
+          parsedPrice = isNaN(numeric) ? null : numeric;
+        }
+      
+        return {
+          ...item,
+          stockPrice: parsedPrice,
+        };
+      })
+      .filter(item => item.stockPrice !== null && item.stockPrice > 0);
   }, [isOpen]);
 
   const hasData = Object.values({

@@ -1083,6 +1083,8 @@ export const baseFixF51 = (el) => {
         toLowerCase?.indexOf("замена") == -1 &&
         toLowerCase?.indexOf("пиксель") == -1 &&
         toLowerCase?.indexOf("на экране") == -1 &&
+        toLowerCase?.indexOf("идеал") == -1 &&
+        toLowerCase?.indexOf("акб") == -1 &&
         toLowerCase?.indexOf("мятый") == -1 &&
         toLowerCase?.indexOf("Мятый") == -1 &&
         toLowerCase?.indexOf("открытый") == -1 &&
