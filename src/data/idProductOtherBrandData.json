@@ -3901,7 +3901,8 @@
         "include": [
             "pixel watch 4",
             "41",
-            "black"
+            "black",
+            "5g"
         ],
         "exclude": []
     },
@@ -3909,7 +3910,8 @@
         "include": [
             "pixel watch 4",
             "41",
-            "silver"
+            "silver",
+            "5g"
         ],
         "exclude": []
     },
@@ -3917,7 +3919,8 @@
         "include": [
             "pixel watch 4",
             "41",
-            "gold"
+            "gold",
+            "5g"
         ],
         "exclude": []
     },
@@ -3925,7 +3928,8 @@
         "include": [
             "pixel watch 4",
             "45",
-            "black"
+            "black",
+            "5g"
         ],
         "exclude": []
     },
@@ -3933,7 +3937,8 @@
         "include": [
             "pixel watch 4",
             "45",
-            "silver"
+            "silver",
+            "5g"
         ],
         "exclude": []
     },
@@ -3941,7 +3946,8 @@
         "include": [
             "pixel watch 4",
             "45",
-            "moon"
+            "moon",
+            "5g"
         ],
         "exclude": []
     },
@@ -3949,7 +3955,8 @@
         "include": [
             "pixel watch 4",
             "41",
-            "moon"
+            "moon",
+            "5g"
         ],
         "exclude": []
     },
