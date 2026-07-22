@@ -19,8 +19,7 @@ const IndexS5 = ({ el, S5Data }) => {
       S5.name &&
       typeof S5.name === "string" &&
       baseFixS5(S5) &&
-      isOpen &&
-      returnStockPriceS5(fixNameS5(S5.name)).indexOf("0") != -1
+      isOpen
     ) {
       return (
         getIdByName(defaultFixName(fixNameS5(S5.name))) !== "No match" &&

@@ -1469,6 +1469,7 @@ export const baseFixMiOpts = (el) => {
         toLowerCase.indexOf("asis") == -1 &&
         toLowerCase.indexOf("asis") == -1 &&
         toLowerCase.indexOf("cpo") == -1 &&
+        toLowerCase.indexOf("inoi") == -1 &&
         toLowerCase.indexOf("asis") == -1 &&
         toLowerCase.indexOf("дисковод") == -1 &&
         toLowerCase.indexOf("ремешок") == -1;

@@ -203,7 +203,8 @@ export const returnStockPriceS5 = (name) => {
   let replaceID = replacePY.replace("🇮🇩", "");
   let replaceSim = replaceID.replace("1Sim+Esim", "");
   let replaceCar = replaceSim.replace("🚘", "");
-  let replaceBuds3White = replaceCar.replace("Buds 3 White", "");
+  let fixStickPrice = replaceCar.replace("k-", "k -")
+  let replaceBuds3White = fixStickPrice.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
     "Tab S9FE 8/256 Lavender 5G",
     ""
@@ -218,7 +219,7 @@ export const returnStockPriceS5 = (name) => {
   let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
 
   let splitPrice =
-    checkSpace4.indexOf("- ") != -1 ? checkSpace4.split("- ")[0] : checkSpace4;
+    checkSpace4.indexOf("- ") !== -1 ? checkSpace4.split("- ")[0] : checkSpace4;
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 
@@ -279,7 +280,8 @@ export const returnExtraPriceS5 = (name) => {
   let replaceCF = replaceMY.replace("🇨🇫", "");
   let replaceKZ = replaceCF.replace("🇰🇿", "");
   let replaceKR = replaceKZ.replace("🇰🇷", "");
-  let replaceBuds3White = replaceKR.replace("Buds 3 White", "");
+  let fixStickPrice = replaceKR.replace("k-", "k -")
+  let replaceBuds3White = fixStickPrice.replace("Buds 3 White", "");
   let replaceS9feLavander = replaceBuds3White.replace(
     "Tab S9FE 8/256 Lavender 5G",
     ""
@@ -288,9 +290,9 @@ export const returnExtraPriceS5 = (name) => {
   let reverseStrName = replaceS9feLavander.split("").reverse().join("");
 
   let splitPrice =
-    reverseStrName.indexOf("-") != -1
+    reverseStrName.indexOf("-") !== -1
       ? reverseStrName.split("-")[0]
-      : reverseStrName.split(" ")[0];
+      : reverseStrName.split(" ")[1];
   let replaceSpace = splitPrice.replace(" ", "");
   let replaceDoubleSpace = replaceSpace.replace(" ", "");
 

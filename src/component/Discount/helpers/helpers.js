@@ -96,7 +96,11 @@ export const returnFixNameDiscount = (name) => {
   const fixViolet = fixBlack.replace("Фиолетовый", "Purple");
   const fixStarlight = fixViolet.replace("Strarlight", "Starlight");
   const replaceA356 = fixStarlight.replace("(A356) ", "");
-  const fixLavander = replaceA356.replace("Lavander", "Lavender");
+  const replacePS51 = replaceA356.replace(" 🇭🇰2118А 2рев", "");
+  const replacePS52 = replacePS51.replace("1рев 2000a", "");
+  const replacePS53 = replacePS52.replace("1рев 2000в", "");
+  
+  const fixLavander = replacePS53.replace("Lavander", "Lavender");
   const fixGray = fixLavander.replace("Grey", "Gray");
   const replace5g =
     fixGray.indexOf("SM") !== -1 ||

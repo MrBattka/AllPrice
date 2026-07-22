@@ -197,7 +197,18 @@ export const returnStockPriceLowPrice = (name) => {
   let fixeSim = fix1Sim.replace("Esim", "");
   let replacePoint = fixeSim.replace(".", "");
   let replaceCar = replacePoint.replace("🚛", "");
-  
 
-  return replaceCar;
+  let removePriceLow10k = (() => {
+    const productName = returnNameInArrLowPrice(name);
+    if (productName.includes("Garmin")) {
+      const priceStr = replaceCar.trim();
+      // Проверка: если длина строки цены < 5, или цена как число < 10000
+      if (priceStr.length < 5) return "None";
+      const priceNum = parseFloat(priceStr.replace(",", "."));
+      if (!isNaN(priceNum) && priceNum < 10000) return "None";
+    }
+    return replaceCar;
+  })();
+
+  return removePriceLow10k;
 };
