@@ -491,61 +491,61 @@ const IndexAllPrice = () => {
           setDataGarmin(rowGarmin);
           const rowS5 = utils.sheet_to_json(wb.Sheets[sheets[6]]);
           setDataS5(rowS5);
-          const rowRPTrade = utils.sheet_to_json(wb.Sheets[sheets[7]]);
-          setDataRPTrade(rowRPTrade);
-          const rowRacmag = utils.sheet_to_json(wb.Sheets[sheets[8]]);
+          // const rowRPTrade = utils.sheet_to_json(wb.Sheets[sheets[7]]);
+          // setDataRPTrade(rowRPTrade);
+          const rowRacmag = utils.sheet_to_json(wb.Sheets[sheets[7]]);
           setDataRacmag(rowRacmag);
-          const rowArti = utils.sheet_to_json(wb.Sheets[sheets[9]]);
+          const rowArti = utils.sheet_to_json(wb.Sheets[sheets[8]]);
           setDataArti(rowArti);
-          const rowElectrozon = utils.sheet_to_json(wb.Sheets[sheets[10]]);
+          const rowElectrozon = utils.sheet_to_json(wb.Sheets[sheets[9]]);
           setDataElectrozon(rowElectrozon);
-          const rowReSale = utils.sheet_to_json(wb.Sheets[sheets[11]]);
+          const rowReSale = utils.sheet_to_json(wb.Sheets[sheets[10]]);
           setDataReSale(rowReSale);
-          const rowTagir = utils.sheet_to_json(wb.Sheets[sheets[12]]);
-          setDataTagir(rowTagir);
-          const rowNarod = utils.sheet_to_json(wb.Sheets[sheets[13]]);
+          // const rowTagir = utils.sheet_to_json(wb.Sheets[sheets[12]]);
+          // setDataTagir(rowTagir);
+          const rowNarod = utils.sheet_to_json(wb.Sheets[sheets[11]]);
           setDataNarod(rowNarod);
-          const rowF51 = utils.sheet_to_json(wb.Sheets[sheets[14]]);
+          const rowF51 = utils.sheet_to_json(wb.Sheets[sheets[12]]);
           setDataF51(rowF51);
-          const rowDiscount = utils.sheet_to_json(wb.Sheets[sheets[15]]);
+          const rowDiscount = utils.sheet_to_json(wb.Sheets[sheets[13]]);
           setDataDiscount(rowDiscount);
-          const rowBase = utils.sheet_to_json(wb.Sheets[sheets[16]]);
+          const rowBase = utils.sheet_to_json(wb.Sheets[sheets[14]]);
           setDataBase(rowBase);
-          const rowOther = utils.sheet_to_json(wb.Sheets[sheets[17]]);
+          const rowOther = utils.sheet_to_json(wb.Sheets[sheets[15]]);
           setDataOther(rowOther);
-          const rowMiopts = utils.sheet_to_json(wb.Sheets[sheets[18]]);
+          const rowMiopts = utils.sheet_to_json(wb.Sheets[sheets[16]]);
           setDataMiopts(rowMiopts);
-          const rowLowPrice = utils.sheet_to_json(wb.Sheets[sheets[19]]);
-          setDataLowPrice(rowLowPrice);
-          const rowL27 = utils.sheet_to_json(wb.Sheets[sheets[20]]);
+          // const rowLowPrice = utils.sheet_to_json(wb.Sheets[sheets[19]]);
+          // setDataLowPrice(rowLowPrice);
+          const rowL27 = utils.sheet_to_json(wb.Sheets[sheets[17]]);
           setDataL27(rowL27);
-          const rowSunrise = utils.sheet_to_json(wb.Sheets[sheets[21]]);
+          const rowSunrise = utils.sheet_to_json(wb.Sheets[sheets[18]]);
           setDataSunrise(rowSunrise);
-          const rowInfinity = utils.sheet_to_json(wb.Sheets[sheets[22]]);
+          const rowInfinity = utils.sheet_to_json(wb.Sheets[sheets[19]]);
           setDataInfinity(rowInfinity);
-          const rowLikemob = utils.sheet_to_json(wb.Sheets[sheets[23]]);
+          const rowLikemob = utils.sheet_to_json(wb.Sheets[sheets[20]]);
           setDataLikemob(rowLikemob);
-          const rowBigAp = utils.sheet_to_json(wb.Sheets[sheets[24]]);
-          setDataBigAp(rowBigAp);
-          const rowMTA = utils.sheet_to_json(wb.Sheets[sheets[25]]);
-          setDataMTA(rowMTA);
-          const rowBonus = utils.sheet_to_json(wb.Sheets[sheets[26]]);
-          setDataBonus(rowBonus);
-          const rowRootOpt = utils.sheet_to_json(wb.Sheets[sheets[27]]);
+          // const rowBigAp = utils.sheet_to_json(wb.Sheets[sheets[24]]);
+          // setDataBigAp(rowBigAp);
+          // const rowMTA = utils.sheet_to_json(wb.Sheets[sheets[25]]);
+          // setDataMTA(rowMTA);
+          // const rowBonus = utils.sheet_to_json(wb.Sheets[sheets[26]]);
+          // setDataBonus(rowBonus);
+          const rowRootOpt = utils.sheet_to_json(wb.Sheets[sheets[21]]);
           setDataRootOpt(rowRootOpt);
-          const rowA18 = utils.sheet_to_json(wb.Sheets[sheets[28]]);
+          const rowA18 = utils.sheet_to_json(wb.Sheets[sheets[22]]);
           setDataA18(rowA18);
-          const rowAMT = utils.sheet_to_json(wb.Sheets[sheets[29]]);
+          const rowAMT = utils.sheet_to_json(wb.Sheets[sheets[23]]);
           setDataAMT(rowAMT);
-          const rowBoltun = utils.sheet_to_json(wb.Sheets[sheets[30]]);
+          const rowBoltun = utils.sheet_to_json(wb.Sheets[sheets[24]]);
           setDataBoltun(rowBoltun);
-          const rowStore77 = utils.sheet_to_json(wb.Sheets[sheets[31]]);
-          setDataStore77(rowStore77);
-          const rowUniSale = utils.sheet_to_json(wb.Sheets[sheets[32]]);
+          // const rowStore77 = utils.sheet_to_json(wb.Sheets[sheets[31]]);
+          // setDataStore77(rowStore77);
+          const rowUniSale = utils.sheet_to_json(wb.Sheets[sheets[25]]);
           setDataUniSale(rowUniSale);
-          const rowAvito = utils.sheet_to_json(wb.Sheets[sheets[33]]);
-          setDataAvito(rowAvito);
-          const rowTrubkoved = utils.sheet_to_json(wb.Sheets[sheets[34]]);
+          // const rowAvito = utils.sheet_to_json(wb.Sheets[sheets[33]]);
+          // setDataAvito(rowAvito);
+          const rowTrubkoved = utils.sheet_to_json(wb.Sheets[sheets[26]]);
           setDataTrubkoved(rowTrubkoved);
         }
       };
@@ -612,8 +612,8 @@ const IndexAllPrice = () => {
         <IndexS5 el={dataS5} S5Data={S5} />
         <IndexS5NotID el={dataS5} S5Data={S5} />
         {/* RPTrade */}
-        <IndexRPTrade el={dataRPTrade} rptradeData={rptrade} />
-        <IndexRPTradeNotID el={dataRPTrade} rptradeData={rptrade} />
+        {/* <IndexRPTrade el={dataRPTrade} rptradeData={rptrade} />
+        <IndexRPTradeNotID el={dataRPTrade} rptradeData={rptrade} /> */}
         {/* Рацмаг */}
         <IndexRacmag el={dataRacmag} racmagData={racmag} />
         <IndexRacmagNotID el={dataRacmag} racmagData={racmag} />
@@ -627,8 +627,8 @@ const IndexAllPrice = () => {
         <IndexReSale el={dataReSale} resaleData={resale} />
         <IndexReSaleNotID el={dataReSale} resaleData={resale} />
         {/* Тагир */}
-        <IndexTagir el={dataTagir} tagirData={tagir} />
-        <IndexTagirNotID el={dataTagir} tagirData={tagir} />
+        {/* <IndexTagir el={dataTagir} tagirData={tagir} />
+        <IndexTagirNotID el={dataTagir} tagirData={tagir} /> */}
         {/* Народ */}
         <IndexNarod el={dataNarod} narodData={narod} />
         <IndexNarodNotID el={dataNarod} narodData={narod} />
@@ -648,8 +648,8 @@ const IndexAllPrice = () => {
         <IndexMiOpts el={dataMiopts} mioptsData={miopts} />
         <IndexMiOptsNotID el={dataMiopts} mioptsData={miopts} />
         {/* LowPriceApple */}
-        <IndexLowPrice el={dataLowPrice} lowPriceData={lowprice} />
-        <IndexLowPriceNotID el={dataLowPrice} lowPriceData={lowprice} />
+        {/* <IndexLowPrice el={dataLowPrice} lowPriceData={lowprice} />
+        <IndexLowPriceNotID el={dataLowPrice} lowPriceData={lowprice} /> */}
         {/* Л27-28 */}
         <IndexL27 el={dataL27} l27Data={l27} />
         <IndexL27NotID el={dataL27} l27Data={l27} />
@@ -663,14 +663,14 @@ const IndexAllPrice = () => {
         <IndexLikemob el={dataLikemob} likemobData={likemob} />
         <IndexLikemobNotID el={dataLikemob} likemobData={likemob} />
         {/* BigAp */}
-        <IndexBigAp el={dataBigAp} bigApData={bigAp} />
-        <IndexBigApNotID el={dataBigAp} bigApData={bigAp} />
+        {/* <IndexBigAp el={dataBigAp} bigApData={bigAp} />
+        <IndexBigApNotID el={dataBigAp} bigApData={bigAp} /> */}
         {/* MTA Store */}
-        <IndexMTA el={dataMTA} mtaData={mta} />
-        <IndexMTANotID el={dataMTA} mtaData={mta} />
+        {/* <IndexMTA el={dataMTA} mtaData={mta} />
+        <IndexMTANotID el={dataMTA} mtaData={mta} /> */}
         {/* Bonus OPT */}
-        <IndexBonus el={dataBonus} bonusData={bonus} />
-        <IndexBonusNotID el={dataBonus} bonusData={bonus} />
+        {/* <IndexBonus el={dataBonus} bonusData={bonus} />
+        <IndexBonusNotID el={dataBonus} bonusData={bonus} /> */}
         {/* Root OPT */}
         <IndexRootOpt el={dataRootOpt} rootOptData={rootOpt} />
         <IndexRootOptNotID el={dataRootOpt} rootOptData={rootOpt} />
@@ -690,7 +690,7 @@ const IndexAllPrice = () => {
         <IndexUniSale el={dataUniSale} uniSaleData={uniSale} />
         <IndexUniSaleNotID el={dataUniSale} uniSaleData={uniSale} />
         {/* Avito */}
-        <IndexAvito el={dataAvito} avitoData={avito} />
+        {/* <IndexAvito el={dataAvito} avitoData={avito} /> */}
         {/* UniSale */}
         <IndexTrubkoved el={dataTrubkoved} trubkovedData={trubkoved} />
         <IndexTrubkovedNotID el={dataTrubkoved} trubkovedData={trubkoved} />
@@ -703,26 +703,20 @@ const IndexAllPrice = () => {
           dataMihonor={mihonor}
           dataGarmin={garmin}
           S5Data={S5}
-          rptradeData={rptrade}
           racmagData={racmag}
           electrozonData={electrozon}
           artiData={arti}
           resaleData={resale}
-          tagirData={tagir}
           narodData={narod}
           f51Data={f51}
           discountData={discount}
           baseData={deleteDoubleProduct}
           otherData={other}
           mioptsData={miopts}
-          lowPriceData={lowprice}
           l27Data={l27}
           sunriseData={sunrise}
           infinityData={infinity}
           likemobData={likemob}
-          mtaData={mta}
-          bonusData={bonus}
-          bigApData={bigAp}
           rootOptData={rootOpt}
           a18Data={a18}
           AMTData={amt}
@@ -739,33 +733,26 @@ const IndexAllPrice = () => {
           dataMihonor={mihonor}
           dataGarmin={garmin}
           S5Data={S5}
-          rptradeData={rptrade}
           racmagData={racmag}
           electrozonData={electrozon}
           artiData={arti}
           resaleData={resale}
-          tagirData={tagir}
           narodData={narod}
           f51Data={f51}
           discountData={discount}
           baseData={deleteDoubleProduct}
           otherData={other}
           mioptsData={miopts}
-          lowPriceData={lowprice}
           l27Data={l27}
           sunriseData={sunrise}
           infinityData={infinity}
           likemobData={likemob}
-          mtaData={mta}
-          bonusData={bonus}
-          bigApData={bigAp}
           rootOptData={rootOpt}
           a18Data={a18}
           AMTData={amt}
           store77Data={store77}
           boltunData={boltun}
           uniSaleData={uniSale}
-          avitoData={avito}
           trubkovedData={trubkoved}
         />
         <AllPriceNotID
@@ -776,26 +763,20 @@ const IndexAllPrice = () => {
           dataMihonor={mihonor}
           dataGarmin={garmin}
           S5Data={S5}
-          rptradeData={rptrade}
           racmagData={racmag}
           electrozonData={electrozon}
           artiData={arti}
           resaleData={resale}
-          tagirData={tagir}
           narodData={narod}
           f51Data={f51}
           discountData={discount}
           baseData={deleteDoubleProduct}
           otherData={other}
           mioptsData={miopts}
-          lowPriceData={lowprice}
           l27Data={l27}
           sunriseData={sunrise}
           infinityData={infinity}
           likemobData={likemob}
-          mtaData={mta}
-          bonusData={bonus}
-          bigApData={bigAp}
           rootOptData={rootOpt}
           a18Data={a18}
           AMTData={amt}
