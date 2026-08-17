@@ -9492,5 +9492,111 @@
         "dual"
       ],
       "exclude": []
+    },
+    "43705": {
+      "include": [
+        "redmi 17c",
+        "4/128",
+        "black"
+      ],
+      "exclude": []
+    },
+    "43735": {
+      "include": [
+        "redmi 17c",
+        "4/128",
+        "red"
+      ],
+      "exclude": []
+    },
+    "43736": {
+      "include": [
+        "redmi 17c",
+        "4/64",
+        "black"
+      ],
+      "exclude": []
+    },
+    "43738": {
+      "include": [
+        "redmi 17c",
+        "4/64",
+        "red"
+      ],
+      "exclude": []
+    },
+    "43739": {
+      "include": [
+        "redmi 17c",
+        "4/128",
+        "red"
+      ],
+      "exclude": []
+    },
+    "43740": {
+      "include": [
+        "redmi 17c",
+        "4/128",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43741": {
+      "include": [
+        "redmi 17c",
+        "4/64",
+        "blue"
+      ],
+      "exclude": []
+    },
+    "43945": {
+      "include": [
+        "poco m8",
+        "12/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "43946": {
+      "include": [
+        "poco m8",
+        "12/512",
+        "green"
+      ],
+      "exclude": []
+    },
+    "43947": {
+      "include": [
+        "poco m8",
+        "12/512",
+        "silver"
+      ],
+      "exclude": []
+    },
+    "43937": {
+      "include": [
+        "mi 17 ",
+        "12/512",
+        "black",
+        "dual"
+      ],
+      "exclude": [
+        "pro",
+        "max",
+        "ultra"
+      ]
+    },
+    "43938": {
+      "include": [
+        "mi 17 ",
+        "12/256",
+        "black",
+        "dual"
+      ],
+      "exclude": [
+        "pro",
+        "max",
+        "ultra"
+      ]
     }
   }

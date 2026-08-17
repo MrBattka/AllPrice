@@ -138,7 +138,7 @@ export const defaultFixName = (el) => {
       ? fixS25UltraSilver.replace("gold", "pink")
       : fixS25UltraSilver;
   const fixS26Gold =
-      fixS25UltraGold.indexOf("s26 ") !== -1
+    fixS25UltraGold.indexOf("s26 ") !== -1
       ? fixS25UltraGold.replace("pink", "gold")
       : fixS25UltraGold;
 
@@ -969,10 +969,13 @@ export const defaultFixName = (el) => {
     fixOpenSwimOrange.indexOf("honor") !== -1
       ? fixOpenSwimOrange.replace("белый", "white")
       : fixOpenSwimOrange;
+
+  const fixZFlip8 = fixHonorWhite.replace("z flip8", "z flip 8")
+  const fixZFold8 = fixZFlip8.replace("z fold8", "z fold 8")
   const fixHonorBlack =
-    fixHonorWhite.indexOf("honor") !== -1
-      ? fixHonorWhite.replace("чёрный", "black")
-      : fixHonorWhite;
+    fixZFold8.indexOf("honor") !== -1
+      ? fixZFold8.replace("чёрный", "black")
+      : fixZFold8;
   const fixHonorGreen =
     fixHonorBlack.indexOf("honor") !== -1
       ? fixHonorBlack.replace("зелёный", "green")

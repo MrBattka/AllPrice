@@ -9992,5 +9992,381 @@
     "exclude": [
       "dual"
     ]
+  },
+  "43703": {
+    "include": [
+      "a27",
+      "8/256",
+      "black"
+    ],
+    "exclude": []
+  },
+  "43743": {
+    "include": [
+      "a27",
+      "8/128",
+      "black"
+    ],
+    "exclude": []
+  },
+  "43744": {
+    "include": [
+      "a27",
+      "6/128",
+      "black"
+    ],
+    "exclude": []
+  },
+  "43745": {
+    "include": [
+      "a27",
+      "6/128",
+      "blue"
+    ],
+    "exclude": []
+  },
+  "43746": {
+    "include": [
+      "a27",
+      "8/128",
+      "blue"
+    ],
+    "exclude": []
+  },
+  "43747": {
+    "include": [
+      "a27",
+      "8/256",
+      "blue"
+    ],
+    "exclude": []
+  },
+  "43748": {
+    "include": [
+      "a27",
+      "8/256",
+      "pink"
+    ],
+    "exclude": []
+  },
+  "43749": {
+    "include": [
+      "a27",
+      "8/128",
+      "pink"
+    ],
+    "exclude": []
+  },
+  "43750": {
+    "include": [
+      "a27",
+      "6/128",
+      "pink"
+    ],
+    "exclude": []
+  },
+  "43955": {
+    "include": [
+      "z fold 8",
+      "12/256",
+      "graphite"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43970": {
+    "include": [
+      "z fold 8",
+      "12/512",
+      "graphite"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43971": {
+    "include": [
+      "z fold 8",
+      "12/1tb",
+      "graphite"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43972": {
+    "include": [
+      "z fold 8",
+      "16/1tb",
+      "graphite"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43973": {
+    "include": [
+      "z fold 8",
+      "16/1tb",
+      "cream"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43974": {
+    "include": [
+      "z fold 8",
+      "12/1tb",
+      "cream"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43975": {
+    "include": [
+      "z fold 8",
+      "12/512",
+      "cream"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43976": {
+    "include": [
+      "z fold 8",
+      "12/256",
+      "cream"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43977": {
+    "include": [
+      "z fold 8",
+      "12/256",
+      "lavender"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43978": {
+    "include": [
+      "z fold 8",
+      "12/512",
+      "lavender"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43979": {
+    "include": [
+      "z fold 8",
+      "12/1tb",
+      "lavender"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43980": {
+    "include": [
+      "z fold 8",
+      "16/1tb",
+      "lavender"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43981": {
+    "include": [
+      "z fold 8",
+      "16/1tb",
+      "pistachio"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43982": {
+    "include": [
+      "z fold 8",
+      "12/1tb",
+      "pistachio"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43983": {
+    "include": [
+      "z fold 8",
+      "12/512",
+      "pistachio"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43984": {
+    "include": [
+      "z fold 8",
+      "12/256",
+      "pistachio"
+    ],
+    "exclude": [
+      "ultra"
+    ]
+  },
+  "43956": {
+    "include": [
+      "z fold 8 ultra",
+      "12/256",
+      "graphite"
+    ],
+    "exclude": []
+  },
+  "43986": {
+    "include": [
+      "z fold 8 ultra",
+      "12/512",
+      "graphite"
+    ],
+    "exclude": []
+  },
+  "43987": {
+    "include": [
+      "z fold 8 ultra",
+      "16/512",
+      "graphite"
+    ],
+    "exclude": []
+  },
+  "43988": {
+    "include": [
+      "z fold 8 ultra",
+      "16/1tb",
+      "graphite"
+    ],
+    "exclude": []
+  },
+  "43989": {
+    "include": [
+      "z fold 8 ultra",
+      "16/1tb",
+      "cream"
+    ],
+    "exclude": []
+  },
+  "43990": {
+    "include": [
+      "z fold 8 ultra",
+      "16/512",
+      "cream"
+    ],
+    "exclude": []
+  },
+  "43991": {
+    "include": [
+      "z fold 8 ultra",
+      "12/512",
+      "cream"
+    ],
+    "exclude": []
+  },
+  "43992": {
+    "include": [
+      "z fold 8 ultra",
+      "12/256",
+      "cream"
+    ],
+    "exclude": []
+  },
+  "43993": {
+    "include": [
+      "z fold 8 ultra",
+      "12/256",
+      "violet"
+    ],
+    "exclude": []
+  },
+  "43994": {
+    "include": [
+      "z fold 8 ultra",
+      "12/512",
+      "violet"
+    ],
+    "exclude": []
+  },
+  "43995": {
+    "include": [
+      "z fold 8 ultra",
+      "16/512",
+      "violet"
+    ],
+    "exclude": []
+  },
+  "43996": {
+    "include": [
+      "z fold 8 ultra",
+      "16/1tb",
+      "violet"
+    ],
+    "exclude": []
+  },
+  "43958": {
+    "include": [
+      "z flip 8",
+      "12/256",
+      "graphite"
+    ],
+    "exclude": []
+  },
+  "43999": {
+    "include": [
+      "z flip 8",
+      "12/512",
+      "graphite"
+    ],
+    "exclude": []
+  },
+  "44000": {
+    "include": [
+      "z flip 8",
+      "12/512",
+      "cream"
+    ],
+    "exclude": []
+  },
+  "44001": {
+    "include": [
+      "z flip 8",
+      "12/256",
+      "cream"
+    ],
+    "exclude": []
+  },
+  "44002": {
+    "include": [
+      "z flip 8",
+      "12/256",
+      "pink"
+    ],
+    "exclude": []
+  },
+  "44003": {
+    "include": [
+      "z flip 8",
+      "12/512",
+      "pink"
+    ],
+    "exclude": []
   }
 }

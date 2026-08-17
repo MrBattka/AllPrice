@@ -11043,5 +11043,1654 @@
             "transparent silver"
         ],
         "exclude": []
+    },
+    "43684": {
+        "include": [
+            "mate 70 air",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43897": {
+        "include": [
+            "mate 70 air",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43898": {
+        "include": [
+            "mate 70 air",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43899": {
+        "include": [
+            "mate 70 air",
+            "16/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43900": {
+        "include": [
+            "mate 70 air",
+            "16/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43901": {
+        "include": [
+            "mate 70 air",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43902": {
+        "include": [
+            "mate 70 air",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43903": {
+        "include": [
+            "mate 70 air",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43904": {
+        "include": [
+            "mate 70 air",
+            "12/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43905": {
+        "include": [
+            "mate 70 air",
+            "12/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43906": {
+        "include": [
+            "mate 70 air",
+            "16/512",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43907": {
+        "include": [
+            "mate 70 air",
+            "16/256",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43685": {
+        "include": [
+            "mate 70 pro+",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43889": {
+        "include": [
+            "mate 70 pro+",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43890": {
+        "include": [
+            "mate 70 pro+",
+            "16/1tb",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43891": {
+        "include": [
+            "mate 70 pro+",
+            "16/512",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43892": {
+        "include": [
+            "mate 70 pro+",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43893": {
+        "include": [
+            "mate 70 pro+",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43894": {
+        "include": [
+            "mate 70 pro+",
+            "16/1tb",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43895": {
+        "include": [
+            "mate 70 pro+",
+            "16/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43686": {
+        "include": [
+            "mate 70 pro",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43873": {
+        "include": [
+            "mate 70 pro",
+            "12/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43874": {
+        "include": [
+            "mate 70 pro",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43876": {
+        "include": [
+            "mate 70 pro",
+            "12/256",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43877": {
+        "include": [
+            "mate 70 pro",
+            "12/512",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43878": {
+        "include": [
+            "mate 70 pro",
+            "12/1tb",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43879": {
+        "include": [
+            "mate 70 pro",
+            "16/512",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43880": {
+        "include": [
+            "mate 70 pro",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43881": {
+        "include": [
+            "mate 70 pro",
+            "12/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43882": {
+        "include": [
+            "mate 70 pro",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43883": {
+        "include": [
+            "mate 70 pro",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43884": {
+        "include": [
+            "mate 70 pro",
+            "12/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43885": {
+        "include": [
+            "mate 70 pro",
+            "12/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43886": {
+        "include": [
+            "mate 70 pro",
+            "12/1tb",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43887": {
+        "include": [
+            "mate 70 pro",
+            "16/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43689": {
+        "include": [
+            "mate 70 rs ultimate",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43865": {
+        "include": [
+            "mate 70 rs ultimate",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43866": {
+        "include": [
+            "mate 70 rs ultimate",
+            "16/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43867": {
+        "include": [
+            "mate 70 rs ultimate",
+            "16/1tb",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43868": {
+        "include": [
+            "mate 70 rs ultimate",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43869": {
+        "include": [
+            "mate 70 rs ultimate",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43690": {
+        "include": [
+            "mate x5",
+            "16/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43845": {
+        "include": [
+            "mate x5",
+            "16/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43846": {
+        "include": [
+            "mate x5",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43847": {
+        "include": [
+            "mate x5",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43848": {
+        "include": [
+            "mate x5",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43849": {
+        "include": [
+            "mate x5",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43850": {
+        "include": [
+            "mate x5",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43851": {
+        "include": [
+            "mate x5",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43852": {
+        "include": [
+            "mate x5",
+            "16/1tb",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43853": {
+        "include": [
+            "mate x5",
+            "16/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43854": {
+        "include": [
+            "mate x5",
+            "12/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43855": {
+        "include": [
+            "mate x5",
+            "12/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43856": {
+        "include": [
+            "mate x5",
+            "12/256",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43857": {
+        "include": [
+            "mate x5",
+            "12/512",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43858": {
+        "include": [
+            "mate x5",
+            "16/512",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43859": {
+        "include": [
+            "mate x5",
+            "16/1tb",
+            "purple"
+        ],
+        "exclude": []
+    },
+    "43860": {
+        "include": [
+            "mate x5",
+            "16/1tb",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43861": {
+        "include": [
+            "mate x5",
+            "16/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43862": {
+        "include": [
+            "mate x5",
+            "12/512",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43863": {
+        "include": [
+            "mate x5",
+            "12/256",
+            "gold"
+        ],
+        "exclude": []
+    },
+    "43692": {
+        "include": [
+            "honor x70",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43828": {
+        "include": [
+            "honor x70",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43829": {
+        "include": [
+            "honor x70",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43830": {
+        "include": [
+            "honor x70",
+            "8/128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43831": {
+        "include": [
+            "honor x70",
+            "8/128",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43832": {
+        "include": [
+            "honor x70",
+            "8/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43833": {
+        "include": [
+            "honor x70",
+            "12/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43834": {
+        "include": [
+            "honor x70",
+            "12/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43835": {
+        "include": [
+            "honor x70",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43837": {
+        "include": [
+            "honor x70",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43838": {
+        "include": [
+            "honor x70",
+            "8/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43839": {
+        "include": [
+            "honor x70",
+            "8/128",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43840": {
+        "include": [
+            "honor x70",
+            "8/128",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43841": {
+        "include": [
+            "honor x70",
+            "8/256",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43842": {
+        "include": [
+            "honor x70",
+            "12/256",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43843": {
+        "include": [
+            "honor x70",
+            "12/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43694": {
+        "include": [
+            "huawei nova 16",
+            "12/256",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "43784": {
+        "include": [
+            "huawei nova 16",
+            "12/512",
+            "black"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "43785": {
+        "include": [
+            "huawei nova 16",
+            "12/512",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "43786": {
+        "include": [
+            "huawei nova 16",
+            "12/256",
+            "white"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "43787": {
+        "include": [
+            "huawei nova 16",
+            "12/256",
+            "blue"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "43788": {
+        "include": [
+            "huawei nova 16",
+            "12/512",
+            "blue"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "43789": {
+        "include": [
+            "huawei nova 16",
+            "12/512",
+            "blue-pink"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "43790": {
+        "include": [
+            "huawei nova 16",
+            "12/256",
+            "blue-pink"
+        ],
+        "exclude": [
+            "pro",
+            "ultra"
+        ]
+    },
+    "43695": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43792": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43793": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43794": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43795": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43796": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43797": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/256",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43798": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43799": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/1tb",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43800": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/1tb",
+            "blue-pink"
+        ],
+        "exclude": []
+    },
+    "43801": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/512",
+            "blue-pink"
+        ],
+        "exclude": []
+    },
+    "43802": {
+        "include": [
+            "huawei nova 16 pro",
+            "12/256",
+            "blue-pink"
+        ],
+        "exclude": []
+    },
+    "43696": {
+        "include": [
+            "huawei nova 16 ultra",
+            "12/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43775": {
+        "include": [
+            "huawei nova 16 ultra",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43776": {
+        "include": [
+            "huawei nova 16 ultra",
+            "12/1tb",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43777": {
+        "include": [
+            "huawei nova 16 ultra",
+            "12/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43778": {
+        "include": [
+            "huawei nova 16 ultra",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43779": {
+        "include": [
+            "huawei nova 16 ultra",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43780": {
+        "include": [
+            "huawei nova 16 ultra",
+            "12/256",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43781": {
+        "include": [
+            "huawei nova 16 ultra",
+            "12/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43782": {
+        "include": [
+            "huawei nova 16 ultra",
+            "12/1tb",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "43698": {
+        "include": [
+            "motorola edge 70",
+            "8/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43768": {
+        "include": [
+            "motorola edge 70",
+            "12/256",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43769": {
+        "include": [
+            "motorola edge 70",
+            "12/512",
+            "gray"
+        ],
+        "exclude": []
+    },
+    "43770": {
+        "include": [
+            "motorola edge 70",
+            "12/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43771": {
+        "include": [
+            "motorola edge 70",
+            "12/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43772": {
+        "include": [
+            "motorola edge 70",
+            "12/256",
+            "dancer"
+        ],
+        "exclude": []
+    },
+    "43773": {
+        "include": [
+            "motorola edge 70",
+            "12/512",
+            "dancer"
+        ],
+        "exclude": []
+    },
+    "43699": {
+        "include": [
+            "razr 70",
+            "8/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43755": {
+        "include": [
+            "razr 70",
+            "8/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43756": {
+        "include": [
+            "razr 70",
+            "8/128",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43757": {
+        "include": [
+            "razr 70",
+            "8/128",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43758": {
+        "include": [
+            "razr 70",
+            "8/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43759": {
+        "include": [
+            "razr 70",
+            "8/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43760": {
+        "include": [
+            "razr 70",
+            "8/512",
+            "hematite"
+        ],
+        "exclude": []
+    },
+    "43761": {
+        "include": [
+            "razr 70",
+            "8/256",
+            "hematite"
+        ],
+        "exclude": []
+    },
+    "43762": {
+        "include": [
+            "razr 70",
+            "8/128",
+            "hematite"
+        ],
+        "exclude": []
+    },
+    "43752": {
+        "include": [
+            "razr 70+",
+            "12/512",
+            "mountain view"
+        ],
+        "exclude": []
+    },
+    "43753": {
+        "include": [
+            "razr 70+",
+            "12/256",
+            "mountain view"
+        ],
+        "exclude": []
+    },
+    "43707": {
+        "include": [
+            "honor x80 pro max",
+            "12/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43719": {
+        "include": [
+            "honor x80 pro max",
+            "8/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43720": {
+        "include": [
+            "honor x80 pro max",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43721": {
+        "include": [
+            "honor x80 pro max",
+            "8/128",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43722": {
+        "include": [
+            "honor x80 pro max",
+            "8/128",
+            "orange-gold"
+        ],
+        "exclude": []
+    },
+    "43723": {
+        "include": [
+            "honor x80 pro max",
+            "8/256",
+            "orange-gold"
+        ],
+        "exclude": []
+    },
+    "43725": {
+        "include": [
+            "honor x80 pro max",
+            "12/512",
+            "orange-gold"
+        ],
+        "exclude": []
+    },
+    "43726": {
+        "include": [
+            "honor x80 pro max",
+            "12/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43727": {
+        "include": [
+            "honor x80 pro max",
+            "8/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43728": {
+        "include": [
+            "honor x80 pro max",
+            "8/256",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43729": {
+        "include": [
+            "honor x80 pro max",
+            "8/128",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43730": {
+        "include": [
+            "honor x80 pro max",
+            "8/128",
+            "opal white"
+        ],
+        "exclude": []
+    },
+    "43731": {
+        "include": [
+            "honor x80 pro max",
+            "8/256",
+            "opal white"
+        ],
+        "exclude": []
+    },
+    "43732": {
+        "include": [
+            "honor x80 pro max",
+            "8/512",
+            "orange-gold"
+        ],
+        "exclude": []
+    },
+    "43733": {
+        "include": [
+            "honor x80 pro max",
+            "8/512",
+            "opal white"
+        ],
+        "exclude": []
+    },
+    "43734": {
+        "include": [
+            "honor x80 pro max",
+            "12/512",
+            "opal white"
+        ],
+        "exclude": []
+    },
+    "43701": {
+        "include": [
+            "razr 60 pro",
+            "12/256",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43710": {
+        "include": [
+            "razr 60 pro",
+            "12/512",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43711": {
+        "include": [
+            "razr 60 pro",
+            "16/1tb",
+            "green"
+        ],
+        "exclude": []
+    },
+    "43712": {
+        "include": [
+            "razr 60 pro",
+            "16/1tb",
+            "pink"
+        ],
+        "exclude": []
+    },
+    "43713": {
+        "include": [
+            "razr 60 pro",
+            "12/512",
+            "pink"
+        ],
+        "exclude": []
+    },
+    "43714": {
+        "include": [
+            "razr 60 pro",
+            "12/256",
+            "pink"
+        ],
+        "exclude": []
+    },
+    "43715": {
+        "include": [
+            "razr 60 pro",
+            "12/256",
+            "brown"
+        ],
+        "exclude": []
+    },
+    "43716": {
+        "include": [
+            "razr 60 pro",
+            "12/512",
+            "brown"
+        ],
+        "exclude": []
+    },
+    "43717": {
+        "include": [
+            "razr 60 pro",
+            "16/1tb",
+            "brown"
+        ],
+        "exclude": []
+    },
+    "43708": {
+        "include": [
+            "nubia air pro",
+            "8/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43928": {
+        "include": [
+            "nubia air pro",
+            "8/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "43929": {
+        "include": [
+            "nubia air pro",
+            "8/256",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43930": {
+        "include": [
+            "nubia air pro",
+            "8/512",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43912": {
+        "include": [
+            "jackery",
+            "300w plus"
+        ],
+        "exclude": []
+    },
+    "43913": {
+        "include": [
+            "jackery",
+            "1000w pro 2"
+        ],
+        "exclude": []
+    },
+    "43914": {
+        "include": [
+            "ecoflow river",
+            "3"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "43915": {
+        "include": [
+            "ecoflow river",
+            "3 max plus"
+        ],
+        "exclude": []
+    },
+    "43916": {
+        "include": [
+            "dji power",
+            "1000 mini"
+        ],
+        "exclude": []
+    },
+    "43917": {
+        "include": [
+            "dji power",
+            "1000 v2"
+        ],
+        "exclude": []
+    },
+    "43918": {
+        "include": [
+            "allpowers r1500",
+            "lite"
+        ],
+        "exclude": []
+    },
+    "43919": {
+        "include": [
+            "ecoflow delta",
+            "3 classic"
+        ],
+        "exclude": []
+    },
+    "43920": {
+        "include": [
+            "ecoflow delta",
+            "3 max"
+        ],
+        "exclude": [
+            "plus"
+        ]
+    },
+    "43921": {
+        "include": [
+            "ecoflow delta",
+            "3 max plus"
+        ],
+        "exclude": []
+    },
+    "43922": {
+        "include": [
+            "ecoflow delta",
+            "3 ultra"
+        ],
+        "exclude": []
+    },
+    "43923": {
+        "include": [
+            "ecoflow",
+            "панель",
+            "160w"
+        ],
+        "exclude": []
+    },
+    "43924": {
+        "include": [
+            "ecoflow",
+            "панель",
+            "220w"
+        ],
+        "exclude": []
+    },
+    "43932": {
+        "include": [
+            "wf-1000xm5",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43940": {
+        "include": [
+            "wf-1000xm5",
+            "pink"
+        ],
+        "exclude": []
+    },
+    "43941": {
+        "include": [
+            "wf-1000xm5",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43933": {
+        "include": [
+            "wf-1000xm6",
+            "black"
+        ],
+        "exclude": []
+    },
+    "43943": {
+        "include": [
+            "wf-1000xm6",
+            "silver"
+        ],
+        "exclude": []
+    },
+    "43964": {
+        "include": [
+            "jackery",
+            "1000w plus"
+        ],
+        "exclude": []
+    },
+    "43965": {
+        "include": [
+            "jackery",
+            "2000w pro 2"
+        ],
+        "exclude": []
+    },
+    "43966": {
+        "include": [
+            "ecoflow river",
+            "2 max"
+        ],
+        "exclude": []
+    },
+    "43967": {
+        "include": [
+            "ecoflow river",
+            "3 plus"
+        ],
+        "exclude": []
+    },
+    "43968": {
+        "include": [
+            "ecoflow delta",
+            "3 plus"
+        ],
+        "exclude": []
+    },
+    "43997": {
+        "include": [
+            "ecoflow delta",
+            "2"
+        ],
+        "exclude": [
+            "plus",
+            "max"
+        ]
+    },
+    "43960": {
+        "include": [
+            "oppo find x9 pro",
+            "12/256",
+            "charcoal"
+        ],
+        "exclude": []
+    },
+    "44021": {
+        "include": [
+            "oppo find x9 pro",
+            "12/512",
+            "charcoal"
+        ],
+        "exclude": []
+    },
+    "44022": {
+        "include": [
+            "oppo find x9 pro",
+            "16/512",
+            "charcoal"
+        ],
+        "exclude": []
+    },
+    "44023": {
+        "include": [
+            "oppo find x9 pro",
+            "16/1tb",
+            "charcoal"
+        ],
+        "exclude": []
+    },
+    "44024": {
+        "include": [
+            "oppo find x9 pro",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "44025": {
+        "include": [
+            "oppo find x9 pro",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "44026": {
+        "include": [
+            "oppo find x9 pro",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "44027": {
+        "include": [
+            "oppo find x9 pro",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "44028": {
+        "include": [
+            "oppo find x9 pro",
+            "12/256",
+            "red"
+        ],
+        "exclude": []
+    },
+    "44029": {
+        "include": [
+            "oppo find x9 pro",
+            "12/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "44030": {
+        "include": [
+            "oppo find x9 pro",
+            "16/512",
+            "red"
+        ],
+        "exclude": []
+    },
+    "44031": {
+        "include": [
+            "oppo find x9 pro",
+            "16/1tb",
+            "red"
+        ],
+        "exclude": []
+    },
+    "43962": {
+        "include": [
+            "oppo find x9s pro",
+            "12/256",
+            "titanium"
+        ],
+        "exclude": []
+    },
+    "44005": {
+        "include": [
+            "oppo find x9s pro",
+            "12/512",
+            "titanium"
+        ],
+        "exclude": []
+    },
+    "44006": {
+        "include": [
+            "oppo find x9s pro",
+            "16/512",
+            "titanium"
+        ],
+        "exclude": []
+    },
+    "44007": {
+        "include": [
+            "oppo find x9s pro",
+            "16/1tb",
+            "titanium"
+        ],
+        "exclude": []
+    },
+    "44008": {
+        "include": [
+            "oppo find x9s pro",
+            "16/1tb",
+            "white"
+        ],
+        "exclude": []
+    },
+    "44009": {
+        "include": [
+            "oppo find x9s pro",
+            "16/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "44010": {
+        "include": [
+            "oppo find x9s pro",
+            "12/512",
+            "white"
+        ],
+        "exclude": []
+    },
+    "44011": {
+        "include": [
+            "oppo find x9s pro",
+            "12/256",
+            "white"
+        ],
+        "exclude": []
+    },
+    "44012": {
+        "include": [
+            "oppo find x9s pro",
+            "12/256",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "44013": {
+        "include": [
+            "oppo find x9s pro",
+            "12/512",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "44014": {
+        "include": [
+            "oppo find x9s pro",
+            "16/512",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "44015": {
+        "include": [
+            "oppo find x9s pro",
+            "16/1tb",
+            "orange"
+        ],
+        "exclude": []
+    },
+    "44016": {
+        "include": [
+            "oppo find x9s pro",
+            "16/1tb",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "44017": {
+        "include": [
+            "oppo find x9s pro",
+            "16/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "44018": {
+        "include": [
+            "oppo find x9s pro",
+            "12/512",
+            "blue"
+        ],
+        "exclude": []
+    },
+    "44019": {
+        "include": [
+            "oppo find x9s pro",
+            "12/256",
+            "blue"
+        ],
+        "exclude": []
     }
 }
