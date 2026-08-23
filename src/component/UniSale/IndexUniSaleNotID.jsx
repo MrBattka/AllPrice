@@ -3,7 +3,7 @@ import { defaultFixName } from "../../helpers/defaultFixName";
 import { getIdByName } from "../../helpers/returnIDByName";
 import BasicTable from "../Create Table/Table";
 import style from "../styles.module.css";
-import { returnFixNameUniSale, returnFixPriceUniSale } from "./helpers/helpers";
+import { returnFixNameUniSale, returnNameInArrUniSale, returnStockPriceUniSale } from "./helpers/helpers";
 import { baseFixUnisale } from "../../helpers/baseFix";
 
 const IndexUniSaleNotID = ({ el, uniSaleData }) => {
@@ -15,21 +15,20 @@ const IndexUniSaleNotID = ({ el, uniSaleData }) => {
       uniSale.name.length > 3 &&
       typeof uniSale.name === "string" &&
       typeof uniSale.name !== "undefined" &&
-      baseFixUnisale(returnFixNameUniSale(uniSale.name)) &&
+      baseFixUnisale(returnNameInArrUniSale(returnFixNameUniSale(uniSale.name))) &&
       isOpen
     ) {
       return (
-        getIdByName(defaultFixName(baseFixUnisale(returnFixNameUniSale(uniSale.name)))) === "No match" &&
-        uniSale.price &&
+        getIdByName(defaultFixName(returnNameInArrUniSale(returnFixNameUniSale(uniSale.name)))) === "No match" &&
         resultArr.push({
-          id: getIdByName(defaultFixName(baseFixUnisale(returnFixNameUniSale(uniSale.name)))),
-          name: baseFixUnisale(returnFixNameUniSale(uniSale.name)),
-          stockPrice: returnFixPriceUniSale(uniSale.price),
+          id: getIdByName(defaultFixName(returnNameInArrUniSale(returnFixNameUniSale(uniSale.name)))),
+          name: returnNameInArrUniSale(returnFixNameUniSale(uniSale.name)),
+          stockPrice: returnStockPriceUniSale(returnFixNameUniSale(uniSale.name)),
           provider: "UniSale",
         })
       );
     }
-  })
+  });
 
   return (
     <div>

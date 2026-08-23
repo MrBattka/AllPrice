@@ -452,7 +452,7 @@ const IndexAllPrice = () => {
   dataUniSale.map((uniSaleEl) => {
     uniSaleEl.name &&
       uniSaleEl.name.length &&
-      uniSale.push({ name: uniSaleEl.name, price: uniSaleEl.price });
+      uniSale.push({ name: uniSaleEl.name });
   });
 
   dataAvito.map((avitoEl) => {

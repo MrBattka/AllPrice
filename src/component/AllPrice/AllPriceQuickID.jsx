@@ -134,12 +134,11 @@ import {
   returnNameInArrTrub,
   returnStockPriceTrub,
 } from "../Trub/helpers/helpers";
+import { returnFixNameUniSale, returnNameInArrUniSale, returnStockPriceUniSale } from "../UniSale/helpers/helpers";
 import {
   fixNameUnimtrn,
   parseNamePrice,
-  parsePrice,
-  returnNameInArrUnimtrn,
-  returnStockPriceUnimtrn,
+  parsePrice
 } from "../Unimtrn/helpers/helpers";
 import {
   fixNameVseMi,
@@ -147,7 +146,6 @@ import {
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
 import style from "../styles.module.css";
-import { returnFixNameUniSale, returnFixPriceUniSale } from "../UniSale/helpers/helpers";
 
 const processors = {
   superprice: {
@@ -464,8 +462,8 @@ const processors = {
   uniSale: {
     processItem: (uniSale) => ({
       id: getIdByNameQuickID(defaultFixName(returnFixNameUniSale(uniSale.name))),
-      name: returnFixNameUniSale(uniSale.name),
-      stockPrice: returnFixPriceUniSale(uniSale.price),
+      name: returnNameInArrUniSale(returnFixNameUniSale(uniSale.name)),
+      stockPrice: returnStockPriceUniSale(returnFixNameUniSale(uniSale.name)),
       provider: "UniSale",
     }),
     filters: [],

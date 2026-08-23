@@ -26,19 +26,67 @@ export const returnFixNameUniSale = (name) => {
   const fixWiFiLTE = fixZFLIP.replace("Wi-Fi + LTE", "5G")
   const fixS26Plus = fixWiFiLTE.replace("s26 Plus", "S26+")
   const fixS25Plus = fixS26Plus.replace("s25 Plus", "S25+")
+  const fixESim = fixS25Plus.replace("E-Sim", "eSim")
+  const fixDualSim = fixESim.replace("Dual-Sim", "Dual")
 
-  return fixS25Plus;
+  return fixDualSim;
 };
 
-export const returnFixPriceUniSale = (price) => {
-  let priceStr;
-  if (typeof price === "number") {
-    priceStr = String(price);
-  } else if (typeof price !== "string") {
-    return price;
-  } else {
-    priceStr = price;
-  }
+// export const returnFixPriceUniSale = (price) => {
+//   let priceStr;
+//   if (typeof price === "number") {
+//     priceStr = String(price);
+//   } else if (typeof price !== "string") {
+//     return price;
+//   } else {
+//     priceStr = price;
+//   }
 
-  return priceStr.replace(/\s/g, "");
+//   return priceStr.replace(/\s/g, "");
+// };
+
+
+
+export const returnNameInArrUniSale = (name) => {
+
+  let reverseStrName = name.split("").reverse().join("");
+
+  let checkSpace1 =
+    reverseStrName[0] === " " ? reverseStrName.slice(1) : reverseStrName;
+  let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
+  let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
+  let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
+
+  let splitPrice =
+    checkSpace4.indexOf("-") !== -1
+      ? /\s(.+)/.exec(checkSpace4)[1]
+      : checkSpace4;
+  // let replaceStick = /\s(.+)/.exec(splitPrice)[1];
+
+  let reverseBackStrName = splitPrice.split("").reverse().join("");
+
+  return reverseBackStrName;
+};
+
+export const returnStockPriceUniSale = (name) => {
+
+  let reverseBackStrName = name.split("").reverse().join("");
+
+  let checkSpace1 =
+    reverseBackStrName[0] === " "
+      ? reverseBackStrName.slice(1)
+      : reverseBackStrName;
+  let checkSpace2 = checkSpace1[0] === " " ? checkSpace1.slice(1) : checkSpace1;
+  let checkSpace3 = checkSpace2[0] === " " ? checkSpace2.slice(1) : checkSpace2;
+  let checkSpace4 = checkSpace3[0] === " " ? checkSpace3.slice(1) : checkSpace3;
+
+  let removeOther = checkSpace4.indexOf(" ")
+    ? checkSpace4.split(" ")[0]
+    : checkSpace4;
+
+  let reverseStrName = removeOther.split("").reverse().join("");
+  
+  let replace1 = reverseStrName.replace("`", "")
+
+  return replace1;
 };

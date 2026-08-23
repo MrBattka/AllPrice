@@ -9,7 +9,6 @@ import {
   baseFixDiscount,
   baseFixElectrozon,
   baseFixF51,
-  baseFixGarmin,
   baseFixHi,
   baseFixInfinity,
   baseFixL27,
@@ -23,140 +22,133 @@ import {
   baseFixRacmag,
   baseFixReSale,
   baseFixRootOpt,
-  baseFixRPTrade,
   baseFixS5,
   baseFixSunrise,
   baseFixSuperPrice,
   baseFixTrub,
   baseFixTrubkoved,
   baseFixUnisale,
-  baseFixVsemi,
+  baseFixVsemi
 } from "../../helpers/baseFix";
 import { defaultFixName } from "../../helpers/defaultFixName";
-import { fixNameSuperPrice } from "../SuperPrice/helpers/helpers";
-import {
-  fixNameVseMi,
-  returnNameInArrVseMi,
-  returnStockPriceVseMi,
-} from "../VseMi/helpers/helpers";
-import style from "../styles.module.css";
-import TableAllPrice from "../CreateAllPriceTable/TableAllPrice";
-import {
-  fixNameUnimtrn,
-  parseNamePrice,
-  parsePrice,
-  returnNameInArrUnimtrn,
-  returnStockPriceUnimtrn,
-} from "../Unimtrn/helpers/helpers";
-import {
-  fixNameHi,
-  returnNameInArrHi,
-  returnStockPriceHi,
-} from "../Hi/helpers/helpers";
 import { returnFixPriceBase, returnFixPriceHi } from "../../helpers/fixFlags";
-import {
-  fixNameMihonor,
-  returnNameInArrMihonor,
-  returnStockPriceMihonor,
-} from "../MiHonor/helpers/helpers";
-import {
-  fixNameGarmin,
-  returnFixNameProductGarmin,
-  returnStockPriceGarmin,
-} from "../Garmin/helpers/helpers";
-import {
-  fixNameS5,
-  returnNameInArrS5,
-  returnStockPriceS5,
-} from "../S5/helpers/helpers";
-import { returnFixNameRPTrade } from "../RPTrade/helpers/helpers";
-import {
-  returnFixNameRacmag,
-  returnNameInArrRacmag,
-  returnStockPriceRacmag,
-} from "../Racmag/helpers/helpers";
-import {
-  returnFixNameArti,
-  returnNameArti,
-  returnStockPriceArti,
-} from "../Arti/helpers/helpers";
-import { returnFixNameElectrozon } from "../Electrozon/helpers/helpers";
-import {
-  returnFixNameReSale,
-  returnNameReSale,
-  returnStockPriceReSale,
-} from "../ReSale/helpers/helpers";
-import { returnNameF51, returnNameInArrF51, returnStockPriceF51 } from "../F51/helpers/helpers";
-import {
-  returnFixNameDiscount,
-  returnNameInArrDiscount,
-  returnStockPriceDiscount,
-} from "../Discount/helpers/helpers";
-import { returnFixNameBase } from "../Base/helpers/helpers";
-import {
-  returnFixNameOther,
-  returnNameInArrOther,
-  returnStockPriceOther,
-} from "../Other/helpers/helpers";
-import {
-  fixNameMiOpts,
-  returnNameInArrMiOpts,
-  returnStockPriceMiOpts,
-} from "../MiOpts/helpers/helpers";
-import {
-  fixNameLowPrice,
-  returnNameInArrLowPrice,
-  returnStockPriceLowPrice,
-} from "../LowPriceApple/helpers/helpers";
-import {
-  returnFixNameL27,
-  returnNameInArrL27,
-  returnStockPriceL27,
-} from "../L27/helpers/helpers";
-import {
-  returnFixNameSunrise,
-  returnNameInArrSunrise,
-  returnStockPriceSunrise,
-} from "../Sunrise/helpers/helpers";
-import {
-  fixNameInfinity,
-  returnNameInArrInfinity,
-  returnStockPriceInfinity,
-} from "../Infinity/helpers/helpers";
-import {
-  returnFixNameLikemob,
-  returnNameInArrLikemob,
-  returnStockPriceLikemob,
-} from "../Likemob/helpers/helpers";
-import {
-  returnFixNameBigAp,
-  returnNameInArrBigAp,
-  returnStockPriceBigAp,
-} from "../BigAp/helpers/helpers";
-import {
-  returnFixNameMTA,
-  returnNameInArrMTA,
-  returnStockPriceMTA,
-} from "../MTA/helpers/helpers";
-import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
-import { returnFixNameRootOpt, returnNameInArrRoot, returnStockPriceRoot } from "../RootOPT/helpers/helpers";
+import { getIdsAndNamesFromAvitoString } from "../../helpers/returnIDByNameFromAvito";
+import { getIdByNameTest } from "../../helpers/returnIDByNameTest";
 import {
   returnFixNameA18,
   returnNameInArrA18,
   returnStockPriceA18,
 } from "../A18/helpers/helpers";
 import {
+  returnFixNameArti,
+  returnNameArti,
+  returnStockPriceArti,
+} from "../Arti/helpers/helpers";
+import { returnFixNameBase } from "../Base/helpers/helpers";
+import {
+  returnFixNameBigAp,
+  returnNameInArrBigAp,
+  returnStockPriceBigAp,
+} from "../BigAp/helpers/helpers";
+import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
+import { returnFixNameBonus } from "../BonusOPT/helpers/helpers";
+import TableAllPrice from "../CreateAllPriceTable/TableAllPrice";
+import {
+  returnFixNameDiscount,
+  returnNameInArrDiscount,
+  returnStockPriceDiscount,
+} from "../Discount/helpers/helpers";
+import { returnFixNameElectrozon } from "../Electrozon/helpers/helpers";
+import { returnNameF51, returnNameInArrF51, returnStockPriceF51 } from "../F51/helpers/helpers";
+import {
+  fixNameGarmin,
+  returnFixNameProductGarmin,
+  returnStockPriceGarmin,
+} from "../Garmin/helpers/helpers";
+import {
+  fixNameHi,
+  returnNameInArrHi,
+  returnStockPriceHi,
+} from "../Hi/helpers/helpers";
+import {
+  fixNameInfinity,
+  returnNameInArrInfinity,
+  returnStockPriceInfinity,
+} from "../Infinity/helpers/helpers";
+import {
+  returnFixNameL27,
+  returnNameInArrL27,
+  returnStockPriceL27,
+} from "../L27/helpers/helpers";
+import {
+  returnFixNameLikemob,
+  returnNameInArrLikemob,
+  returnStockPriceLikemob,
+} from "../Likemob/helpers/helpers";
+import {
+  fixNameLowPrice,
+  returnNameInArrLowPrice,
+  returnStockPriceLowPrice,
+} from "../LowPriceApple/helpers/helpers";
+import {
+  returnFixNameMTA,
+  returnNameInArrMTA,
+  returnStockPriceMTA,
+} from "../MTA/helpers/helpers";
+import {
+  fixNameMihonor,
+  returnNameInArrMihonor,
+  returnStockPriceMihonor,
+} from "../MiHonor/helpers/helpers";
+import {
+  fixNameMiOpts,
+  returnNameInArrMiOpts,
+  returnStockPriceMiOpts,
+} from "../MiOpts/helpers/helpers";
+import { returnNameNarod, returnStockPriceNarod } from "../Narod/helpers/helpers";
+import {
+  returnFixNameOther,
+  returnNameInArrOther,
+  returnStockPriceOther,
+} from "../Other/helpers/helpers";
+import {
+  returnFixNameRacmag,
+  returnNameInArrRacmag,
+  returnStockPriceRacmag,
+} from "../Racmag/helpers/helpers";
+import {
+  returnFixNameReSale,
+  returnNameReSale,
+  returnStockPriceReSale,
+} from "../ReSale/helpers/helpers";
+import { returnFixNameRootOpt, returnNameInArrRoot, returnStockPriceRoot } from "../RootOPT/helpers/helpers";
+import {
+  fixNameS5,
+  returnNameInArrS5,
+  returnStockPriceS5,
+} from "../S5/helpers/helpers";
+import {
+  returnFixNameSunrise,
+  returnNameInArrSunrise,
+  returnStockPriceSunrise,
+} from "../Sunrise/helpers/helpers";
+import { fixNameSuperPrice } from "../SuperPrice/helpers/helpers";
+import {
   fixNameTrub,
   returnNameInArrTrub,
   returnStockPriceTrub,
 } from "../Trub/helpers/helpers";
-import { returnFixNameBoltun } from "../Boltun/helpers/helpers";
-import { getIdByNameTest } from "../../helpers/returnIDByNameTest";
-import { returnNameNarod, returnStockPriceNarod } from "../Narod/helpers/helpers";
-import { returnFixNameUniSale, returnFixPriceUniSale } from "../UniSale/helpers/helpers";
-import { getIdsAndNamesFromAvitoString } from "../../helpers/returnIDByNameFromAvito";
-import { returnFixNameStore77 } from "../Store77/helpers/helpers";
 import { returnFixNameTrubkoved } from "../Trubkoved/helpers/helpers";
+import { returnFixNameUniSale, returnNameInArrUniSale, returnStockPriceUniSale } from "../UniSale/helpers/helpers";
+import {
+  fixNameUnimtrn
+} from "../Unimtrn/helpers/helpers";
+import {
+  fixNameVseMi,
+  returnNameInArrVseMi,
+  returnStockPriceVseMi,
+} from "../VseMi/helpers/helpers";
+import style from "../styles.module.css";
 
 
 const isSeparator = (str) => /^[-—]{10,}$/.test(str.trim());
@@ -552,8 +544,8 @@ const processors = {
         baseFixUnisale(returnFixNameUniSale(uniSale.name)) &&
         ({
         id: getIdByNameTest(baseFixUnisale(returnFixNameUniSale(uniSale.name))),
-        name: baseFixUnisale(returnFixNameUniSale(uniSale.name)),
-        stockPrice: returnFixPriceUniSale(uniSale.price),
+        name: returnNameInArrUniSale(returnFixNameUniSale(uniSale.name)),
+        stockPrice: returnStockPriceUniSale(returnFixNameUniSale(uniSale.name)),
         provider: "UniSale",
       }),
       filters: [],
