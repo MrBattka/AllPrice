@@ -353,7 +353,9 @@ export const defaultFixName = (el) => {
       fixLime.indexOf("fenix") === -1 ||
       fixLime.indexOf("instinct") === -1 ||
       fixLime.indexOf("watch 8") === -1 ||
-      fixLime.indexOf("pad se") === -1
+      fixLime.indexOf("pad se") === -1 ||
+      fixLime.indexOf("flip") === -1 ||
+      fixLime.indexOf("fold") === -1
       ? fixLime.replace("graphite", "Black")
       : fixLime;
   const fixNavyBlack =

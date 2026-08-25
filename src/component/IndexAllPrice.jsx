@@ -81,6 +81,8 @@ import IndexUniSaleNotID from "./UniSale/IndexUniSaleNotID";
 import IndexAvito from "./Avito/IndexAvito";
 import IndexTrubkoved from "./Trubkoved/IndexTrubkoved";
 import IndexTrubkovedNotID from "./Trubkoved/IndexTrubkovedNotID";
+import IndexAppleGod from "./AppleGod/IndexAppleGod";
+import IndexAppleGodNotID from "./AppleGod/IndexAppleGodID";
 
 const IndexAllPrice = () => {
   const allPrice = [];
@@ -120,6 +122,7 @@ const IndexAllPrice = () => {
   const [dataUniSale, setDataUniSale] = useState([]);
   const [dataAvito, setDataAvito] = useState([]);
   const [dataTrubkoved, setDataTrubkoved] = useState([]);
+  const [dataAppleGod, setDataAppleGod] = useState([]);
 
   const unimtrn = [];
   const hi = [];
@@ -156,6 +159,7 @@ const IndexAllPrice = () => {
   const uniSale = [];
   const avito = [];
   const trubkoved = [];
+  const appleGod = [];
 
   const allItems = [];
 
@@ -467,6 +471,13 @@ const IndexAllPrice = () => {
       trubkoved.push({ name: trubkovedEl.name, price: trubkovedEl.price });
   });
 
+  dataAppleGod.map((appleGodEl) => {
+    appleGodEl.name &&
+      appleGodEl.name.length &&
+      appleGod.push({ name: appleGodEl.name, price: appleGodEl.price });
+  });
+  
+
   const handleImport = ($event) => {
     const files = $event.target.files;
     if (files.length) {
@@ -539,19 +550,23 @@ const IndexAllPrice = () => {
           setDataAMT(rowAMT);
           const rowBoltun = utils.sheet_to_json(wb.Sheets[sheets[24]]);
           setDataBoltun(rowBoltun);
-          // const rowStore77 = utils.sheet_to_json(wb.Sheets[sheets[31]]);
-          // setDataStore77(rowStore77);
           const rowUniSale = utils.sheet_to_json(wb.Sheets[sheets[25]]);
           setDataUniSale(rowUniSale);
           // const rowAvito = utils.sheet_to_json(wb.Sheets[sheets[33]]);
           // setDataAvito(rowAvito);
           const rowTrubkoved = utils.sheet_to_json(wb.Sheets[sheets[26]]);
           setDataTrubkoved(rowTrubkoved);
+          const rowStore77 = utils.sheet_to_json(wb.Sheets[sheets[28]]);
+          setDataStore77(rowStore77);
+          const rowAppleGod = utils.sheet_to_json(wb.Sheets[sheets[27]]);
+          setDataAppleGod(rowAppleGod);
         }
       };
       reader.readAsArrayBuffer(file);
     }
   };
+
+  console.log(dataStore77);
 
   return (
     <div className="wrapper_control">
@@ -684,8 +699,8 @@ const IndexAllPrice = () => {
         <IndexBoltun el={dataBoltun} boltunData={boltun} />
         <IndexBoltunNotID el={dataBoltun} boltunData={boltun} />
         {/* Store 77 */}
-        {/* <IndexStore77 el={dataStore77} store77Data={store77} />
-        <IndexStore77NotID el={dataStore77} store77Data={store77} /> */}
+        <IndexStore77 el={dataStore77} store77Data={store77} />
+        <IndexStore77NotID el={dataStore77} store77Data={store77} />
         {/* UniSale */}
         <IndexUniSale el={dataUniSale} uniSaleData={uniSale} />
         <IndexUniSaleNotID el={dataUniSale} uniSaleData={uniSale} />
@@ -694,6 +709,9 @@ const IndexAllPrice = () => {
         {/* UniSale */}
         <IndexTrubkoved el={dataTrubkoved} trubkovedData={trubkoved} />
         <IndexTrubkovedNotID el={dataTrubkoved} trubkovedData={trubkoved} />
+        {/* AppleGod */}
+        <IndexAppleGod el={dataAppleGod} appleGodData={appleGod} />
+        <IndexAppleGodNotID el={dataAppleGod} appleGodData={appleGod} />
         {/* Quick Price */}
         <AllPriceQuickID
           dataSuperprice={superprice}

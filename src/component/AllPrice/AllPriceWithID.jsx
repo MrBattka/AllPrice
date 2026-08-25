@@ -149,6 +149,7 @@ import {
   returnStockPriceVseMi,
 } from "../VseMi/helpers/helpers";
 import style from "../styles.module.css";
+import { returnFixNameStore77 } from "../Store77/helpers/helpers";
 
 
 const isSeparator = (str) => /^[-—]{10,}$/.test(str.trim());
@@ -530,15 +531,15 @@ const processors = {
     }),
     filters: [baseFixBoltun],
   },
-  // store77: {
-  //   processItem: (store77) => ({
-  //     id: getIdByNameTest(defaultFixName(returnFixNameStore77(store77.name))),
-  //     name: returnFixNameStore77(store77.name),
-  //     stockPrice: store77.price,
-  //     provider: "Store 77",
-  //   }),
-  //   filters: [baseFixBoltun],
-  // },
+  store77: {
+    processItem: (store77) => ({
+      id: getIdByNameTest(defaultFixName(returnFixNameStore77(store77.name))),
+      name: returnFixNameStore77(store77.name),
+      stockPrice: store77.price,
+      provider: "Store 77",
+    }),
+    filters: [baseFixBoltun],
+  },
   uniSale: {
       processItem: (uniSale) => 
         baseFixUnisale(returnFixNameUniSale(uniSale.name)) &&
