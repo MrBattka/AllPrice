@@ -9598,5 +9598,852 @@
         "max",
         "ultra"
       ]
+    },
+    "44129": {
+      "include": [
+        "redmi 17",
+        "4/128",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44193": {
+      "include": [
+        "redmi 17",
+        "6/128",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44194": {
+      "include": [
+        "redmi 17",
+        "6/256",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44195": {
+      "include": [
+        "redmi 17",
+        "4/256",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44196": {
+      "include": [
+        "redmi 17",
+        "4/256",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44197": {
+      "include": [
+        "redmi 17",
+        "4/128",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44198": {
+      "include": [
+        "redmi 17",
+        "6/128",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44199": {
+      "include": [
+        "redmi 17",
+        "6/256",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44200": {
+      "include": [
+        "redmi 17",
+        "6/256",
+        "orange"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44201": {
+      "include": [
+        "redmi 17",
+        "6/128",
+        "orange"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44202": {
+      "include": [
+        "redmi 17",
+        "4/128",
+        "orange"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44203": {
+      "include": [
+        "redmi 17",
+        "4/256",
+        "orange"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44131": {
+      "include": [
+        "redmi 17",
+        "4/128",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44205": {
+      "include": [
+        "redmi 17",
+        "6/128",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44207": {
+      "include": [
+        "redmi 17",
+        "6/256",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44208": {
+      "include": [
+        "redmi 17",
+        "4/256",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44209": {
+      "include": [
+        "redmi 17",
+        "6/256",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44210": {
+      "include": [
+        "redmi 17",
+        "6/128",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44211": {
+      "include": [
+        "redmi 17",
+        "4/128",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44212": {
+      "include": [
+        "redmi 17",
+        "4/256",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44213": {
+      "include": [
+        "redmi 17",
+        "4/256",
+        "purple"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44214": {
+      "include": [
+        "redmi 17",
+        "4/128",
+        "purple"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44215": {
+      "include": [
+        "redmi 17",
+        "6/128",
+        "purple"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44216": {
+      "include": [
+        "redmi 17",
+        "6/256",
+        "purple"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44217": {
+      "include": [
+        "redmi 17",
+        "6/256",
+        "green"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44218": {
+      "include": [
+        "redmi 17",
+        "6/128",
+        "green"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44219": {
+      "include": [
+        "redmi 17",
+        "4/128",
+        "green"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44220": {
+      "include": [
+        "redmi 17",
+        "4/256",
+        "green"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44222": {
+      "include": [
+        "redmi 17",
+        "8/256",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44223": {
+      "include": [
+        "redmi 17",
+        "8/256",
+        "blue"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44224": {
+      "include": [
+        "redmi 17",
+        "8/256",
+        "purple"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44225": {
+      "include": [
+        "redmi 17",
+        "8/256",
+        "green"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44189": {
+      "include": [
+        "note 17",
+        "6/128",
+        "black",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44190": {
+      "include": [
+        "note 17",
+        "6/128",
+        "black",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44229": {
+      "include": [
+        "note 17",
+        "6/256",
+        "black",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44230": {
+      "include": [
+        "note 17",
+        "4/256",
+        "black",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44231": {
+      "include": [
+        "note 17",
+        "4/128",
+        "black",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44232": {
+      "include": [
+        "note 17",
+        "4/128",
+        "purple",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44233": {
+      "include": [
+        "note 17",
+        "4/256",
+        "purple",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44234": {
+      "include": [
+        "note 17",
+        "6/256",
+        "purple",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44235": {
+      "include": [
+        "note 17",
+        "6/128",
+        "purple",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44236": {
+      "include": [
+        "note 17",
+        "6/128",
+        "teal",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44237": {
+      "include": [
+        "note 17",
+        "6/256",
+        "teal",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44238": {
+      "include": [
+        "note 17",
+        "4/256",
+        "teal",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44239": {
+      "include": [
+        "note 17",
+        "4/128",
+        "teal",
+        "4g"
+      ],
+      "exclude": []
+    },
+    "44241": {
+      "include": [
+        "note 17",
+        "6/256",
+        "black"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44242": {
+      "include": [
+        "note 17",
+        "8/256",
+        "black"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44243": {
+      "include": [
+        "note 17",
+        "8/256",
+        "purple"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44244": {
+      "include": [
+        "note 17",
+        "6/256",
+        "purple"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44245": {
+      "include": [
+        "note 17",
+        "6/128",
+        "purple"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44246": {
+      "include": [
+        "note 17",
+        "6/128",
+        "teal"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44247": {
+      "include": [
+        "note 17",
+        "6/256",
+        "teal"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44248": {
+      "include": [
+        "note 17",
+        "8/256",
+        "teal"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44188": {
+      "include": [
+        "note 17 pro",
+        "6/128",
+        "black"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44251": {
+      "include": [
+        "note 17 pro",
+        "6/256",
+        "black"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44252": {
+      "include": [
+        "note 17 pro",
+        "8/256",
+        "black"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44253": {
+      "include": [
+        "note 17 pro",
+        "8/512",
+        "black"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44254": {
+      "include": [
+        "note 17 pro",
+        "12/256",
+        "black"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44255": {
+      "include": [
+        "note 17 pro",
+        "12/256",
+        "blue"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44256": {
+      "include": [
+        "note 17 pro",
+        "8/256",
+        "blue"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44257": {
+      "include": [
+        "note 17 pro",
+        "8/512",
+        "blue"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44258": {
+      "include": [
+        "note 17 pro",
+        "6/256",
+        "blue"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44259": {
+      "include": [
+        "note 17 pro",
+        "6/128",
+        "blue"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44260": {
+      "include": [
+        "note 17 pro",
+        "6/128",
+        "orange"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44261": {
+      "include": [
+        "note 17 pro",
+        "6/256",
+        "orange"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44262": {
+      "include": [
+        "note 17 pro",
+        "8/256",
+        "orange"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44263": {
+      "include": [
+        "note 17 pro",
+        "8/512",
+        "orange"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44264": {
+      "include": [
+        "note 17 pro",
+        "12/256",
+        "orange"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44265": {
+      "include": [
+        "note 17 pro",
+        "12/256",
+        "purple"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44266": {
+      "include": [
+        "note 17 pro",
+        "6/256",
+        "purple"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44267": {
+      "include": [
+        "note 17 pro",
+        "6/128",
+        "purple"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44268": {
+      "include": [
+        "note 17 pro",
+        "8/256",
+        "purple"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44269": {
+      "include": [
+        "note 17 pro",
+        "8/512",
+        "purple"
+      ],
+      "exclude": [
+        "4g"
+      ]
+    },
+    "44191": {
+      "include": [
+        "note 17 pro max",
+        "8/128",
+        "black"
+      ],
+      "exclude": [
+        "5g"
+      ]
+    },
+    "44271": {
+      "include": [
+        "note 17 pro max",
+        "8/256",
+        "black"
+      ],
+      "exclude": []
+    },
+    "44272": {
+      "include": [
+        "note 17 pro max",
+        "8/512",
+        "black"
+      ],
+      "exclude": []
+    },
+    "44273": {
+      "include": [
+        "note 17 pro max",
+        "12/256",
+        "black"
+      ],
+      "exclude": []
+    },
+    "44274": {
+      "include": [
+        "note 17 pro max",
+        "12/256",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "44275": {
+      "include": [
+        "note 17 pro max",
+        "8/256",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "44276": {
+      "include": [
+        "note 17 pro max",
+        "8/512",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "44277": {
+      "include": [
+        "note 17 pro max",
+        "8/128",
+        "purple"
+      ],
+      "exclude": []
+    },
+    "44278": {
+      "include": [
+        "note 17 pro max",
+        "8/128",
+        "green"
+      ],
+      "exclude": []
+    },
+    "44279": {
+      "include": [
+        "note 17 pro max",
+        "8/256",
+        "green"
+      ],
+      "exclude": []
+    },
+    "44280": {
+      "include": [
+        "note 17 pro max",
+        "8/512",
+        "green"
+      ],
+      "exclude": []
+    },
+    "44281": {
+      "include": [
+        "note 17 pro max",
+        "12/256",
+        "green"
+      ],
+      "exclude": []
+    },
+    "44282": {
+      "include": [
+        "note 17 pro max",
+        "12/256",
+        "pink"
+      ],
+      "exclude": []
+    },
+    "44283": {
+      "include": [
+        "note 17 pro max",
+        "8/256",
+        "pink"
+      ],
+      "exclude": []
+    },
+    "44284": {
+      "include": [
+        "note 17 pro max",
+        "8/512",
+        "pink"
+      ],
+      "exclude": []
+    },
+    "44285": {
+      "include": [
+        "note 17 pro max",
+        "8/128",
+        "pink"
+      ],
+      "exclude": []
     }
   }

@@ -1,5 +1,3 @@
-import { newPrice } from "../../../helpers/NewPrice";
-
 export const returnFixNameSunrise = (name) => {
   const replaceFork = name.replace("🔌", "")
   const replaceMM = replaceFork.replace("mm", "")

@@ -1,5 +1,3 @@
-import { newPrice } from "../../../helpers/NewPrice";
-
 export const returnFixNameLikemob = (name) => {
   const replaceCar = name.replace("🚚", "");
   const replaceLaptop = replaceCar.replace("Ноутбук ", "");

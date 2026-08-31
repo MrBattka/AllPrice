@@ -5524,5 +5524,503 @@
             "brown"
         ],
         "exclude": []
+    },
+    "44127": {
+        "include": [
+            "jbl",
+            "boombox",
+            "4",
+            "white"
+        ],
+        "exclude": []
+    },
+    "44119": {
+        "include": [
+            "pixel watch 5",
+            "41",
+            "black",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "44172": {
+        "include": [
+            "pixel watch 5",
+            "41",
+            "silver",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "44173": {
+        "include": [
+            "pixel watch 5",
+            "41",
+            "black"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "44174": {
+        "include": [
+            "pixel watch 5",
+            "41",
+            "silver"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "44175": {
+        "include": [
+            "pixel watch 5",
+            "41",
+            "gold",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "44176": {
+        "include": [
+            "pixel watch 5",
+            "41",
+            "gold"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "44177": {
+        "include": [
+            "pixel watch 5",
+            "41",
+            "pyrite",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "44178": {
+        "include": [
+            "pixel watch 5",
+            "41",
+            "pyrite"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "44179": {
+        "include": [
+            "pixel watch 5",
+            "44",
+            "pyrite",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "44180": {
+        "include": [
+            "pixel watch 5",
+            "44",
+            "pyrite"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "44181": {
+        "include": [
+            "pixel watch 5",
+            "44",
+            "silver",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "44182": {
+        "include": [
+            "pixel watch 5",
+            "44",
+            "silver"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "44183": {
+        "include": [
+            "pixel watch 5",
+            "44",
+            "black",
+            "5g"
+        ],
+        "exclude": []
+    },
+    "44184": {
+        "include": [
+            "pixel watch 5",
+            "44",
+            "black"
+        ],
+        "exclude": [
+            "5g"
+        ]
+    },
+    "44123": {
+        "include": [
+            "pixel 11",
+            "12/256",
+            "obsidian"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "44133": {
+        "include": [
+            "pixel 11",
+            "12/512",
+            "obsidian"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "44134": {
+        "include": [
+            "pixel 11",
+            "12/512",
+            "hibiscus"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "44135": {
+        "include": [
+            "pixel 11",
+            "12/256",
+            "hibiscus"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "44136": {
+        "include": [
+            "pixel 11",
+            "12/256",
+            "pistachio"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "44137": {
+        "include": [
+            "pixel 11",
+            "12/512",
+            "pistachio"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "44138": {
+        "include": [
+            "pixel 11",
+            "12/512",
+            "frost"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "44139": {
+        "include": [
+            "pixel 11",
+            "12/256",
+            "frost"
+        ],
+        "exclude": [
+            "pro"
+        ]
+    },
+    "44122": {
+        "include": [
+            "pixel 11 pro",
+            "16/1TB",
+            "obsidian"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44141": {
+        "include": [
+            "pixel 11 pro",
+            "16/512",
+            "obsidian"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44142": {
+        "include": [
+            "pixel 11 pro",
+            "12/256",
+            "obsidian"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44143": {
+        "include": [
+            "pixel 11 pro",
+            "12/256",
+            "canyon"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44144": {
+        "include": [
+            "pixel 11 pro",
+            "16/512",
+            "canyon"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44145": {
+        "include": [
+            "pixel 11 pro",
+            "16/1TB",
+            "canyon"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44146": {
+        "include": [
+            "pixel 11 pro",
+            "16/1TB",
+            "fog"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44147": {
+        "include": [
+            "pixel 11 pro",
+            "16/512",
+            "fog"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44148": {
+        "include": [
+            "pixel 11 pro",
+            "12/256",
+            "fog"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44150": {
+        "include": [
+            "pixel 11 pro",
+            "12/256",
+            "olive"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44151": {
+        "include": [
+            "pixel 11 pro",
+            "16/512",
+            "olive"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44152": {
+        "include": [
+            "pixel 11 pro",
+            "16/1TB",
+            "olive"
+        ],
+        "exclude": [
+            "pro",
+            "fold"
+        ]
+    },
+    "44124": {
+        "include": [
+            "pixel 11 pro xl",
+            "12/256",
+            "obsidian"
+        ],
+        "exclude": []
+    },
+    "44154": {
+        "include": [
+            "pixel 11 pro xl",
+            "16/512",
+            "obsidian"
+        ],
+        "exclude": []
+    },
+    "44155": {
+        "include": [
+            "pixel 11 pro xl",
+            "16/1TB",
+            "obsidian"
+        ],
+        "exclude": []
+    },
+    "44156": {
+        "include": [
+            "pixel 11 pro xl",
+            "16/1TB",
+            "canyon"
+        ],
+        "exclude": []
+    },
+    "44157": {
+        "include": [
+            "pixel 11 pro xl",
+            "16/512",
+            "canyon"
+        ],
+        "exclude": []
+    },
+    "44158": {
+        "include": [
+            "pixel 11 pro xl",
+            "12/256",
+            "canyon"
+        ],
+        "exclude": []
+    },
+    "44159": {
+        "include": [
+            "pixel 11 pro xl",
+            "12/256",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "44160": {
+        "include": [
+            "pixel 11 pro xl",
+            "16/512",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "44161": {
+        "include": [
+            "pixel 11 pro xl",
+            "16/1TB",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "44162": {
+        "include": [
+            "pixel 11 pro xl",
+            "16/1TB",
+            "fog"
+        ],
+        "exclude": []
+    },
+    "44163": {
+        "include": [
+            "pixel 11 pro xl",
+            "16/512",
+            "fog"
+        ],
+        "exclude": []
+    },
+    "44164": {
+        "include": [
+            "pixel 11 pro xl",
+            "12/256",
+            "fog"
+        ],
+        "exclude": []
+    },
+    "44125": {
+        "include": [
+            "pixel 11 pro fold",
+            "16/1TB",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "44165": {
+        "include": [
+            "pixel 11 pro fold",
+            "16/512",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "44166": {
+        "include": [
+            "pixel 11 pro fold",
+            "16/256",
+            "olive"
+        ],
+        "exclude": []
+    },
+    "44167": {
+        "include": [
+            "pixel 11 pro fold",
+            "16/256",
+            "obsidian"
+        ],
+        "exclude": []
+    },
+    "44168": {
+        "include": [
+            "pixel 11 pro fold",
+            "16/512",
+            "obsidian"
+        ],
+        "exclude": []
+    },
+    "44169": {
+        "include": [
+            "pixel 11 pro fold",
+            "16/1TB",
+            "obsidian"
+        ],
+        "exclude": []
     }
 }
