@@ -772,6 +772,7 @@ const IndexAllPrice = () => {
           boltunData={boltun}
           uniSaleData={uniSale}
           trubkovedData={trubkoved}
+          applegodData={appleGod}
         />
         <AllPriceNotID
           dataSuperprice={superprice}

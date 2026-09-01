@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import {
   baseFix,
+  baseFixAppleGod,
   baseFixArti,
   baseFixBase,
   baseFixBigAp,
@@ -150,6 +151,7 @@ import {
 } from "../VseMi/helpers/helpers";
 import style from "../styles.module.css";
 import { returnFixNameStore77 } from "../Store77/helpers/helpers";
+import { returnFixNameAppleGod } from "../AppleGod/helpers/helpers";
 
 
 const isSeparator = (str) => /^[-—]{10,}$/.test(str.trim());
@@ -577,6 +579,17 @@ const processors = {
       }),
       filters: [],
     },
+  applegod: {
+      processItem: (applegod) => 
+        baseFixAppleGod(applegod) &&
+        ({
+        id: getIdByNameTest(defaultFixName(returnFixNameAppleGod(applegod.name))),
+        name: returnFixNameAppleGod(applegod.name),
+        stockPrice: applegod.price,
+        provider: "Apple God",
+      }),
+      filters: [],
+    },
 };
 
 
@@ -640,7 +653,8 @@ const AllPriceWithID = ({
   store77Data,
   uniSaleData,
   avitoData,
-  trubkovedData
+  trubkovedData,
+  applegodData
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -687,6 +701,7 @@ const AllPriceWithID = ({
     results.push(...processData(uniSaleData, processors.uniSale, isOpen));
     results.push(...processData(avitoData, processors.avito, isOpen));
     results.push(...processData(trubkovedData, processors.trubkoved, isOpen));
+    results.push(...processData(applegodData, processors.applegod, isOpen));
 
     return results
       .map(item => {
@@ -746,7 +761,8 @@ const AllPriceWithID = ({
     boltunData,
     uniSaleData,
     avitoData,
-    trubkovedData
+    trubkovedData,
+    applegodData
   }).some((arr) => arr?.length > 2);
 
   return (
